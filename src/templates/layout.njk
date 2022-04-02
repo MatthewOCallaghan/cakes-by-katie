@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>{{ pages[page].title }}</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Licorice&family=Open+Sans:ital,wght@0,300;0,500;1,300;1,400&display=swap" rel="stylesheet">
+
+        <!-- build:css css/{{ page }}.min.css -->
+        <link rel="stylesheet" type="text/css" href="css/global.css">
+        <link rel="stylesheet" type="text/css" href="{{ "css/" ~ page ~ ".css"}}">
+        <!-- endbuild -->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% if pages[page].description %}<meta name="description" content="{{ pages[page].description }}">{% endif %}
+
+        <script src="https://kit.fontawesome.com/c57fec537e.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="{{ "#about" if page == "index" else "index.html#about" }}">About</a>
+                <a href="contact.html">Contact</a>
+                <div class="logo-container">
+                    <div class="logo-background">
+                        <img src="images/logo.svg" alt="Logo" height="100%" width="100%" />
+                    </div>
+                </div>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="testimonials.html">Testimonials</a>
+            </nav>
+
+            {# Hamburger (https://jonsuh.com/hamburgers/) #}
+            <button id="nav-toggle" class="hamburger">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </header>
+
+        <main>
+            {% block main %}{% endblock %}
+        </main>
+
+        <footer>
+            <div>
+                <h3>About me</h3>
+                <p><small>I'm an aspiring and self-taught baker and cake decorator who lives in Thatcham, West Berkshire.</small></p>
+            </div>
+            <div>
+                <h3>Let's talk</h3>
+                <div class="contact-grid">
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                    <p><small>West Berkshire, UK</small></p>
+                    <i class="far fa-envelope" aria-hidden="true"></i>
+                    <p><small><a href="mailto:katie@cakesbykatie.co.uk">katie@cakesbykatie.co.uk</a></small></p>
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                    <p><small><a href="https://www.instagram.com/cakesbykatieoc" target="_blank">@cakesbykatieoc</a></small></p>
+                </div>
+            </div>
+            <div>
+                <p><small>&copy; 2022 Katie&nbsp;O'Callaghan</small></p>
+            </div>
+        </footer>
+
+        <!-- build:js js/{{ page }}.min.js -->
+        <script type="text/javascript" src="js/nav-menu.js" defer></script>
+        {% block scripts %}{% endblock %}
+        <!-- endbuild -->
+    </body>
+</html>

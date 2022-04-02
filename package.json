@@ -1,0 +1,49 @@
+{
+  "name": "cakes-by-katie",
+  "version": "1.0.0",
+  "description": "Code for website [cakesbykatie.co.uk](https://www.cakesbykatie.co.uk).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatthewOCallaghan/cakes-by-katie.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatthewOCallaghan/cakes-by-katie/issues"
+  },
+  "homepage": "https://github.com/MatthewOCallaghan/cakes-by-katie#readme",
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "autoprefixer": "^10.4.1",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "browser-sync": "^2.27.7",
+    "cssnano": "^5.0.14",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-cache": "^1.1.3",
+    "gulp-data": "^1.3.1",
+    "gulp-html-prettify": "^0.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-nunjucks-render": "^2.2.3",
+    "gulp-postcss": "^9.0.1",
+    "gulp-purgecss": "^4.1.3",
+    "gulp-rev-all": "^3.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sharp-responsive": "^0.3.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-useref": "^5.0.0",
+    "sass": "^1.45.1"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

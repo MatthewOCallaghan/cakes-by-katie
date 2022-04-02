@@ -1,0 +1,69 @@
+{% set page = "index" %}
+{% extends "layout.njk" %}
+
+{% block main %}
+    <div id="header-video">
+
+    </div>
+    <section id="about">
+        Hi I'm Katie…
+
+I'm a cake maker based in Thatcham, West Berkshire. I started baking and decorating cakes as a hobby from a young age with the dream that I could turn my passion into a career. Now I have a full time job as a cake decorator for a local celebration cake company, and I have started this business on the side with the aim to go full time in the near future.
+
+As I only produce cakes part time, I am unable to take a lot of orders so if you are interested in me making a cake for your celebration please contact me as early as possible.
+
+I offer a wide range of flavours, and can cater for certain dietary requirements like dairy and gluten free.
+
+can the hi I’m Katie be in the pink and fancy font like it is currently please 
+
+    </section>
+
+    <section id="portfolio">
+        <div id="grid">
+            {% from "macros/picture.njk" import pictureElement with context %}
+            {% for item in portfolioSample %}
+                {{ pictureElement("portfolio/" + portfolio[item].image, portfolio[item].name) }}
+            {% endfor %}
+        </div>
+        <a class="button">See more</a>
+    </section>
+
+    <section id="testimonials">
+        <div class="slideshow">
+            <div class="container">
+                <button class="slideshow-back">
+                    ❮
+                </button>
+
+                <div class="reel" style="width: {{ testimonials.length * 100 }}%;">
+                    {% for testimonial in testimonials %}
+                        <div class="item" style="width: {{ 100 / testimonials.length }}%;">
+                            <div class="image">
+                                {{ pictureElement("portfolio/" + portfolio[testimonial.cake].image, portfolio[testimonial.cake].name) }}
+                            </div>
+                            <div class="quote">
+                                <blockquote>{{ testimonial.text }}</blockquote>
+                                <span>{{ testimonial.name }}, {{ testimonial.location }}</span>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+
+                <button class="slideshow-forward">
+                    ❯
+                </button>
+            </div>
+
+            <div class="indicators">
+                {% for testimonial in testimonials %}
+                    <button></button>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+
+{% block scripts %}
+    <script type="text/javascript" src="js/slideshow.js" defer></script>
+{% endblock %}

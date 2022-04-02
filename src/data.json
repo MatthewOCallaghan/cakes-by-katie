@@ -1,0 +1,71 @@
+{
+    "pages": {
+        "index": {
+            "title": "Cakes by Katie",
+            "description": "Description of Cakes by Katie here"
+        }
+    },
+    "imageFormats": {
+        "widths": [640, 768, 1024, 1366, 1600, 1920],
+        "formats": ["webp", "avif", "png"]
+    },
+    "portfolio": {
+        "chocoholic": {
+            "image": "Chocoholic.JPG",
+            "name": "Chocoholic"
+        },
+        "football": {
+            "image": "Football.jpg",
+            "name": "Football"
+        },
+        "rose-gold-18th-cupcakes": {
+            "image": "Rose-Gold-18th-cupcakes.jpg",
+            "name": "Rose gold 18th cupcakes"
+        },
+        "roses-18th": {
+            "image": "Roses-18th.jpg",
+            "name": "Roses 18th"
+        },
+        "christmas": {
+            "image": "Christmas.jpg",
+            "name": "Christmas"
+        },
+        "floral-80th": {
+            "image": "Floral-80th.jpg",
+            "name": "Floral 80th"
+        },
+        "grandpa-shed": {
+            "image": "Grandpa-shed.jpg",
+            "name": "Grandpa's shed"
+        },
+        "guinness": {
+            "image": "Guinness.jpg",
+            "name": "Guinness"
+        },
+        "lfc": {
+            "image": "Liverpool-FC.jpg",
+            "name": "Liverpool FC"
+        }
+    },
+    "portfolioSample": ["chocoholic", "football", "rose-gold-18th-cupcakes", "roses-18th", "christmas", "floral-80th", "grandpa-shed", "guinness", "lfc"],
+    "testimonials": [
+        {
+            "cake": "chocoholic",
+            "text": "Just to feedback that we were blown away by Alice's cake. You had really listened to our ideas and understood the effect we were looking for. Everyone commented on the cake and Alice will always remember her 6th birthday cake. Thanks for helping make her day so special.",
+            "name": "Mel",
+            "location": "Reading"
+        },
+        {
+            "cake": "football",
+            "text": "Katie's cake not only looked amazing but it tasted delicious and kept really well, when we didn't eat it all on 1st cutting. Her design ideas were spot on and it was difficult to choose the best one!",
+            "name": "Mel",
+            "location": "Reading"
+        },
+        {
+            "cake": "christmas",
+            "text": "Katie is an outstanding baker! We have used her services for birthday cakes for our boys and an anniversary cake for parents. Her cakes taste delicious and look amazing. Katie takes the time to design the cake to your requirements and communicates very clearly with her customers. Her cakes are decorated to an extremely professional standard. We would recommend Katie without hesitation and can guarantee you won't be disappointed!",
+            "name": "Lisa",
+            "location": "Reading"
+        }
+    ]
+}
