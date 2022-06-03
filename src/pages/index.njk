@@ -1,6 +1,14 @@
 {% set page = "index" %}
 {% extends "layout.njk" %}
 
+{% block head %}
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+{% endblock %}
+
 {% block main %}
     <div id="header-video">
 
@@ -14,7 +22,7 @@ As I only produce cakes part time, I am unable to take a lot of orders so if you
 
 I offer a wide range of flavours, and can cater for certain dietary requirements like dairy and gluten free.
 
-can the hi I’m Katie be in the pink and fancy font like it is currently please 
+can the hi I'm Katie be in the pink and fancy font like it is currently please 
 
     </section>
 
@@ -29,15 +37,15 @@ can the hi I’m Katie be in the pink and fancy font like it is currently please
     </section>
 
     <section id="testimonials">
-        <div class="slideshow">
-            <div class="container">
-                <button class="slideshow-back">
-                    ❮
-                </button>
 
-                <div class="reel" style="width: {{ testimonials.length * 100 }}%;">
-                    {% for testimonial in testimonials %}
-                        <div class="item" style="width: {{ 100 / testimonials.length }}%;">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                {% for testimonial in testimonials %}
+                    <div class="swiper-slide">
+                        <div class="item">
                             <div class="image">
                                 {{ pictureElement("portfolio/" + portfolio[testimonial.cake].image, portfolio[testimonial.cake].name) }}
                             </div>
@@ -46,19 +54,16 @@ can the hi I’m Katie be in the pink and fancy font like it is currently please
                                 <span>{{ testimonial.name }}, {{ testimonial.location }}</span>
                             </div>
                         </div>
-                    {% endfor %}
-                </div>
-
-                <button class="slideshow-forward">
-                    ❯
-                </button>
-            </div>
-
-            <div class="indicators">
-                {% for testimonial in testimonials %}
-                    <button></button>
+                    </div>
                 {% endfor %}
             </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
     </section>
 {% endblock %}

@@ -11,6 +11,8 @@
         <link rel="stylesheet" type="text/css" href="{{ "css/" ~ page ~ ".css"}}">
         <!-- endbuild -->
 
+        {% block head %}{% endblock %}
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         {% if pages[page].description %}<meta name="description" content="{{ pages[page].description }}">{% endif %}
 

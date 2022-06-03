@@ -24,6 +24,7 @@ import processData from 'gulp-data';
 import sharpResponsive from 'gulp-sharp-responsive';
 // const ftp = require('vinyl-ftp');
 // const logger = require('fancy-log');
+const mode = require('gulp-mode')();
 
 const browserSyncInstance = browserSync.create();
 const sass = gulpSass(sassCompiler);
@@ -81,6 +82,10 @@ function processNunjucks() {
 
     }
 
+    if (process.env.NODE_ENV !== 'production') {
+        data.development = true;
+    }
+
     return src('src/pages/**/*.njk')
         .pipe(processData(data))
         .pipe(nunjucksRender({
@@ -100,7 +105,7 @@ const createImageFormatsAndSizes = () => {
     const formats = data.imageFormats.formats;
 
     return src('src/images-src/**/*')
-            .pipe(gulpIf(['**/*.*', '!*.svg'], cache(sharpResponsive({
+            .pipe(mode.production(gulpIf(['**/*.*', '!*.svg'], cache(sharpResponsive({
                 // includeOriginalFile: true,
                 formats: widths.map(width => 
                     formats.map(format => ({
@@ -109,7 +114,7 @@ const createImageFormatsAndSizes = () => {
                         rename: { suffix: `-${width}`}
                     }))
                 ).flat()
-            }))))
+            })))))
             .pipe(dest('src/images'))
             .pipe(browserSyncInstance.reload({
                 stream: true

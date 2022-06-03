@@ -31,94 +31,56 @@
 
 #testimonials {
   background: #F7CAC9;
-  padding: 20px;
+  padding: 20px 0;
 }
-#testimonials .slideshow .container {
-  position: relative;
-  overflow: hidden;
-  height: 230px;
-  width: 1200px;
-  max-width: 100%;
-  margin: auto;
+#testimonials .swiper {
+  height: 300px;
 }
-#testimonials .slideshow .container::before, #testimonials .slideshow .container::after {
-  content: "";
-  z-index: 1;
-  width: 30px;
-  height: 100%;
-  top: 0;
+#testimonials .swiper .swiper-wrapper {
+  height: calc(100% - 13px);
 }
-#testimonials .slideshow .container::before {
-  left: 0;
-  background: linear-gradient(to right, #F7CAC9, #fff0);
-}
-#testimonials .slideshow .container::after {
-  right: 0;
-  background: linear-gradient(to left, #F7CAC9, #fff0);
-}
-#testimonials .slideshow .container button {
-  position: absolute;
-  background: none;
-  padding: 0;
-  border: none;
-  top: 0;
-  transition: background-color 0.4s;
-  background-color: #0000;
-  height: 100%;
-  width: 30px;
-  cursor: pointer;
-  z-index: 2;
+#testimonials .swiper .swiper-button-prev, #testimonials .swiper .swiper-button-next {
   color: #fff;
 }
-#testimonials .slideshow .container button:hover {
-  background-color: #ffffff4a;
+#testimonials .swiper .swiper-pagination {
+  position: static;
+  margin-top: 5px;
 }
-#testimonials .slideshow .container button.slideshow-back {
-  left: 0;
-  text-shadow: 1px 1px 1px #0000001f;
+#testimonials .swiper .swiper-pagination .swiper-pagination-bullet-active {
+  background: #fff;
 }
-#testimonials .slideshow .container button.slideshow-forward {
-  right: 0;
-  text-shadow: -1px 1px 1px #0000001f;
-}
-#testimonials .slideshow .container .reel {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
+#testimonials .swiper .item {
   height: 100%;
-  transition: transform 1s ease-in-out;
-}
-#testimonials .slideshow .container .reel .item {
-  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 35px 5px;
   gap: 40px;
+  overflow: hidden;
 }
-#testimonials .slideshow .container .reel .item .image {
+#testimonials .swiper .item .image {
   max-width: 40%;
   height: 100%;
   display: flex;
   justify-content: center;
 }
-#testimonials .slideshow .container .reel .item .image picture {
+#testimonials .swiper .item .image picture {
   display: flex;
   justify-self: center;
   align-items: center;
 }
-#testimonials .slideshow .container .reel .item .image img {
+#testimonials .swiper .item .image img {
   max-width: 100%;
   max-height: 100%;
   width: auto;
   height: auto;
 }
-#testimonials .slideshow .container .reel .item .quote {
+#testimonials .swiper .item .quote {
   width: 40%;
   color: #6d6d6d;
 }
-#testimonials .slideshow .container .reel .item .quote blockquote {
+#testimonials .swiper .item .quote blockquote {
   text-align: center;
   quotes: "“" "”";
   position: relative;
@@ -127,61 +89,57 @@
   font-style: italic;
   font-weight: 400;
 }
-#testimonials .slideshow .container .reel .item .quote blockquote::before, #testimonials .slideshow .container .reel .item .quote blockquote::after {
+#testimonials .swiper .item .quote blockquote::before, #testimonials .swiper .item .quote blockquote::after {
   position: absolute;
   color: white;
   font-family: "Licorice", cursive;
   font-size: 300%;
 }
-#testimonials .slideshow .container .reel .item .quote blockquote::before {
+#testimonials .swiper .item .quote blockquote::before {
   content: open-quote;
   top: 0;
   left: 0;
 }
-#testimonials .slideshow .container .reel .item .quote blockquote::after {
+#testimonials .swiper .item .quote blockquote::after {
   content: close-quote;
   bottom: 0;
   right: 0;
   line-height: 0px;
 }
-#testimonials .slideshow .container .reel .item .quote span {
+#testimonials .swiper .item .quote span {
   display: block;
   text-align: right;
   padding-right: 10px;
 }
-#testimonials .slideshow .indicators {
-  display: flex;
-  gap: 5px;
-  justify-content: center;
-  margin-top: 15px;
-}
-#testimonials .slideshow .indicators button {
-  width: 10px;
-  height: 10px;
-  background-color: transparent;
-  border: 1px solid #999;
-  border-radius: 10px;
-  transition: all 0.3s;
-  padding: 0;
-  cursor: pointer;
-}
-#testimonials .slideshow .indicators button.selected {
-  background-color: #fff;
-  border-color: #fff;
-}
-@media only screen and (max-width: 700px) {
-  #testimonials .slideshow .container {
+@media only screen and (max-width: 900px) {
+  #testimonials .swiper {
     height: 400px;
   }
-  #testimonials .slideshow .container .reel .item {
+  #testimonials .swiper .item {
     flex-direction: column;
+    gap: 20px;
   }
-  #testimonials .slideshow .container .reel .item .image {
-    max-height: 40%;
-    max-width: 100%;
+  #testimonials .swiper .item .image {
+    max-width: none;
+    max-height: none;
+    width: auto;
+    height: 40%;
+    flex-grow: 1;
   }
-  #testimonials .slideshow .container .reel .item .quote {
-    width: 100%;
-    max-height: 40%;
+  #testimonials .swiper .item .quote {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  #testimonials .swiper {
+    height: 600px;
+  }
+}
+@media only screen and (min-width: 1150px) {
+  #testimonials .swiper-button-prev {
+    left: 25px;
+  }
+  #testimonials .swiper-button-next {
+    right: 25px;
   }
 }
