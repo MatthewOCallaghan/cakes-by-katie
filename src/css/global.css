@@ -392,6 +392,10 @@ header nav a {
   text-align: center;
   font-family: "Licorice", sans-serif;
   font-size: 1.5rem;
+  transition: color 0.3s;
+}
+header nav a:hover {
+  color: #fff;
 }
 header .logo-container {
   width: 130px;
@@ -508,15 +512,24 @@ footer {
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
-  color: #F7CAC9;
+  justify-content: center;
+  color: #fff;
+  gap: 30px 40px;
 }
 footer > div {
   width: 33%;
-  padding: 10px;
   text-align: center;
+  min-width: 180px;
+  max-width: 300px;
 }
 footer h3 {
-  margin-top: 0;
+  font-family: "Licorice", sans-serif;
+  color: #F7CAC9;
+  font-size: 150%;
+  margin: 0 0 10px;
+}
+footer p {
+  margin: 0;
 }
 footer .contact-grid {
   display: grid;
@@ -528,4 +541,14 @@ footer .contact-grid {
 }
 footer .contact-grid p {
   margin: 0;
+}
+footer .copyright-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (min-width: 1200px) {
+  footer {
+    padding: 30px;
+  }
 }
