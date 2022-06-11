@@ -24,13 +24,13 @@
             <nav>
                 <a href="{{ "#about" if page == "index" else "index.html#about" }}">About</a>
                 <a href="contact.html">Contact</a>
-                <div class="logo-container">
+                <a class="logo-container" href="index.html">
                     <div class="logo-background">
                         <img src="images/logo.svg" alt="Logo" height="100%" width="100%" />
                     </div>
-                </div>
+                </a>
                 <a href="portfolio.html">Portfolio</a>
-                <a href="testimonials.html">Testimonials</a>
+                <a href="{{ "#testimonials" if page == "index" else "index.html#testimonials" }}">Testimonials</a>
             </nav>
 
             {# Hamburger (https://jonsuh.com/hamburgers/) #}

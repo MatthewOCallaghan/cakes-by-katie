@@ -362,6 +362,7 @@ section {
   color: #F7CAC9;
   position: relative;
   cursor: pointer;
+  text-decoration: none;
 }
 .button::before {
   content: "";
@@ -394,8 +395,10 @@ header nav a {
   font-size: 1.5rem;
   transition: color 0.3s;
 }
-header nav a:hover {
-  color: #fff;
+@media (hover: hover) {
+  header nav a:hover {
+    color: #fff;
+  }
 }
 header .logo-container {
   width: 130px;
@@ -530,6 +533,14 @@ footer h3 {
 }
 footer p {
   margin: 0;
+}
+footer a {
+  text-decoration: underline;
+}
+@media (hover: hover) {
+  footer a:hover {
+    text-decoration: none;
+  }
 }
 footer .contact-grid {
   display: grid;

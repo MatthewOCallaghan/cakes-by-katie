@@ -1,0 +1,156 @@
+@use "mixins";
+@use "variables";
+
+.portfolio-grid {
+
+    width: 100%;
+
+    .grid-item {
+        // Width for Magic Grid
+        $minColumns: 3;
+        width: min(200px,calc((100% - ($minColumns * 5px)) / 3));
+
+        // Remove button styles
+        background: none;
+        padding: 0;
+        border: none;
+
+        overflow: hidden;
+        height: min-content;
+        cursor: pointer;
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #fff;
+            transition: opacity .3s;
+            opacity: 0;
+        }
+
+        @include mixins.hover {
+            &::after {
+                opacity: .2;
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+#portfolio-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background: #000000e6;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+    #modal-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: none;
+        padding: 8px 15px;
+        color: #fff;
+        cursor: pointer;
+        border: 1px solid #fff;
+        transition: all .3s;
+
+        @include mixins.hover {
+            border-color: variables.$pink;
+            color: variables.$pink;
+        }
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+        width: 100%;
+
+        > div {
+            max-width: 40%;
+            min-width: 300px;
+        }
+
+        .images {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            #selected-image {
+                max-width: 100%;
+                max-height: 400px;
+
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                    display: block;
+                    margin: auto;
+
+                    border: 1px solid variables.$pink;
+                }
+            }
+
+            #thumbs {
+                display: flex;
+                height: 80px;
+                gap: 15px;
+                margin-top: 20px;
+                max-width: 100%;
+                overflow-x: auto;
+                overflow-y: hidden;
+
+                button {
+                    background: none;
+                    padding: 0;
+                    border: none;
+                    cursor: pointer;
+
+                    img {
+                        height: 80px;
+                        width: auto;
+
+                        border: 1px solid #fff;//variables.$pink;
+                    }
+                }
+                
+            }
+        }
+
+        .text {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1 {
+                font-family: variables.$handwriting;
+                font-size: 3em;
+                color: variables.$pink;
+            }
+        }
+    }
+}
+
+body.portfolio-modal-open {
+    overflow: hidden;
+
+    #portfolio-modal {
+        display: flex;
+    }
+}

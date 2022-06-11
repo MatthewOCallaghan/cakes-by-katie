@@ -1,0 +1,199 @@
+<html>
+
+<head>
+    <title>Portfolio | Cakes by Katie</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Licorice&family=Open+Sans:ital,wght@0,300;0,500;1,300;1,400&display=swap" rel="stylesheet">
+
+    <!-- build:css css/portfolio.min.css -->
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+    <!-- endbuild -->
+
+
+    <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Showcasing my work">
+
+    <script src="https://kit.fontawesome.com/c57fec537e.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html#about">About</a>
+            <a href="contact.html">Contact</a>
+            <a class="logo-container" href="index.html">
+                <div class="logo-background">
+                    <img src="images/logo.svg" alt="Logo" height="100%" width="100%" />
+                </div>
+            </a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="index.html#testimonials">Testimonials</a>
+        </nav>
+
+
+        <button id="nav-toggle" class="hamburger">
+            <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </header>
+
+    <main>
+
+
+
+        <div class="portfolio-grid">
+
+            <button class="grid-item" data-name="Chocoholic" data-images="Chocoholic.JPG" data-description="Wonderfully clever and witty description of the cake here">
+
+                <picture>
+
+                    <img src="images/portfolio/Chocoholic.JPG" alt="Chocoholic" />
+
+                </picture>
+
+            </button>
+
+            <button class="grid-item" data-name="Football" data-images="Football.jpg" data-description="">
+
+                <picture>
+
+                    <img src="images/portfolio/Football.jpg" alt="Football" />
+
+                </picture>
+
+            </button>
+
+            <button class="grid-item" data-name="Rose gold 18th cupcakes" data-images="Rose-Gold-18th-cupcakes.jpg" data-description="Wonderfully clever and witty description of the cake here">
+
+                <picture>
+
+                    <img src="images/portfolio/Rose-Gold-18th-cupcakes.jpg" alt="Rose gold 18th cupcakes" />
+
+                </picture>
+
+            </button>
+
+            <button class="grid-item" data-name="Roses 18th" data-images="Roses-18th.jpg" data-description="Wonderfully clever and witty description of the cake here">
+
+                <picture>
+
+                    <img src="images/portfolio/Roses-18th.jpg" alt="Roses 18th" />
+
+                </picture>
+
+            </button>
+
+            <button class="grid-item" data-name="Christmas" data-images="Christmas.jpg,Football.jpg,Rose-Gold-18th-cupcakes.jpg,Roses-18th.jpg" data-description="Wonderfully clever and witty description of the cake here">
+
+                <picture>
+
+                    <img src="images/portfolio/Christmas.jpg" alt="Christmas" />
+
+                </picture>
+
+            </button>
+
+            <button class="grid-item" data-name="Floral 80th" data-images="Floral-80th.jpg" data-description="Wonderfully clever and witty description of the cake here">
+
+                <picture>
+
+                    <img src="images/portfolio/Floral-80th.jpg" alt="Floral 80th" />
+
+                </picture>
+
+            </button>
+
+            <button class="grid-item" data-name="Grandpa&#39;s shed" data-images="Grandpa-shed.jpg" data-description="Wonderfully clever and witty description of the cake here">
+
+                <picture>
+
+                    <img src="images/portfolio/Grandpa-shed.jpg" alt="Grandpa&#39;s shed" />
+
+                </picture>
+
+            </button>
+
+            <button class="grid-item" data-name="Guinness" data-images="Guinness.jpg" data-description="Wonderfully clever and witty description of the cake here">
+
+                <picture>
+
+                    <img src="images/portfolio/Guinness.jpg" alt="Guinness" />
+
+                </picture>
+
+            </button>
+
+            <button class="grid-item" data-name="Liverpool FC" data-images="Liverpool-FC.jpg" data-description="Wonderfully clever and witty description of the cake here">
+
+                <picture>
+
+                    <img src="images/portfolio/Liverpool-FC.jpg" alt="Liverpool FC" />
+
+                </picture>
+
+            </button>
+
+        </div>
+
+
+        <div id="portfolio-modal">
+            <button id="modal-close">Close</button>
+            <div class="container">
+                <div class="images">
+                    <div id="selected-image"></div>
+                    <div id="thumbs"></div>
+                </div>
+                <div class="text">
+                    <h1 id="title"></h1>
+                    <p id="description"></p>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div>
+            <h3>About me</h3>
+            <p><small>I'm an aspiring and self-taught baker and cake decorator who lives in Thatcham, West Berkshire.</small>
+            </p>
+        </div>
+        <div>
+            <h3>Let's talk</h3>
+            <div class="contact-grid">
+                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                <p><small>West Berkshire, UK</small>
+                </p>
+                <i class="far fa-envelope" aria-hidden="true"></i>
+                <p><small><a href="mailto:katie@cakesbykatie.co.uk">katie@cakesbykatie.co.uk</a></small>
+                </p>
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+                <p><small><a href="https://www.instagram.com/cakesbykatieoc" target="_blank">@cakesbykatieoc</a></small>
+                </p>
+            </div>
+        </div>
+        <div class="copyright-container">
+            <p><small>&copy; 2022 Katie&nbsp;O'Callaghan</small>
+            </p>
+        </div>
+    </footer>
+
+    <!-- build:js js/portfolio.min.js -->
+    <script type="text/javascript" src="js/nav-menu.js" defer></script>
+
+    <script type="text/javascript" src="js/portfolioGrid.js" defer></script>
+    <script type="text/javascript" src="js/portfolioModal.js" defer></script>
+
+    <!-- endbuild -->
+</body>
+
+</html>

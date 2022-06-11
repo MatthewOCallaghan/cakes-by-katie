@@ -3,48 +3,56 @@
         "index": {
             "title": "Cakes by Katie",
             "description": "Description of Cakes by Katie here"
+        },
+        "portfolio": {
+            "title": "Portfolio | Cakes by Katie",
+            "description": "Showcasing my work"
         }
-    },
-    "imageFormats": {
-        "widths": [640, 768, 1024, 1366, 1600, 1920],
-        "formats": ["webp", "avif", "png"]
     },
     "portfolio": {
         "chocoholic": {
-            "image": "Chocoholic.JPG",
-            "name": "Chocoholic"
+            "images": ["Chocoholic.JPG"],
+            "name": "Chocoholic",
+            "description": "Wonderfully clever and witty description of the cake here"
         },
         "football": {
-            "image": "Football.jpg",
+            "images": ["Football.jpg"],
             "name": "Football"
         },
         "rose-gold-18th-cupcakes": {
-            "image": "Rose-Gold-18th-cupcakes.jpg",
-            "name": "Rose gold 18th cupcakes"
+            "images": ["Rose-Gold-18th-cupcakes.jpg"],
+            "name": "Rose gold 18th cupcakes",
+            "description": "Wonderfully clever and witty description of the cake here"
         },
         "roses-18th": {
-            "image": "Roses-18th.jpg",
-            "name": "Roses 18th"
+            "images": ["Roses-18th.jpg"],
+            "name": "Roses 18th",
+            "description": "Wonderfully clever and witty description of the cake here"
         },
         "christmas": {
-            "image": "Christmas.jpg",
-            "name": "Christmas"
+            "images": ["Christmas.jpg", "Football.jpg", "Rose-Gold-18th-cupcakes.jpg", "Roses-18th.jpg"],
+            "name": "Christmas",
+            "description": "Wonderfully clever and witty description of the cake here"
         },
         "floral-80th": {
-            "image": "Floral-80th.jpg",
-            "name": "Floral 80th"
+            "images": ["Floral-80th.jpg"],
+            "name": "Floral 80th",
+            "description": "Wonderfully clever and witty description of the cake here"
         },
         "grandpa-shed": {
-            "image": "Grandpa-shed.jpg",
-            "name": "Grandpa's shed"
+            "images": ["Grandpa-shed.jpg"],
+            "name": "Grandpa's shed",
+            "description": "Wonderfully clever and witty description of the cake here"
         },
         "guinness": {
-            "image": "Guinness.jpg",
-            "name": "Guinness"
+            "images": ["Guinness.jpg"],
+            "name": "Guinness",
+            "description": "Wonderfully clever and witty description of the cake here"
         },
         "lfc": {
-            "image": "Liverpool-FC.jpg",
-            "name": "Liverpool FC"
+            "images": ["Liverpool-FC.jpg"],
+            "name": "Liverpool FC",
+            "description": "Wonderfully clever and witty description of the cake here"
         }
     },
     "portfolioSample": ["chocoholic", "football", "rose-gold-18th-cupcakes", "roses-18th", "christmas", "floral-80th", "grandpa-shed", "guinness", "lfc"],

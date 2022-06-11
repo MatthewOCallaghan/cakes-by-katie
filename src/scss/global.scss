@@ -1,6 +1,7 @@
 @use "sass:math";
 
 @use "variables";
+@use "mixins";
 
 @import 'normalize.css/normalize';
 
@@ -29,6 +30,7 @@ section {
     color: variables.$pink;
     position: relative;
     cursor: pointer;
+    text-decoration: none;
 
     &::before {
         content: "";
@@ -68,10 +70,10 @@ header {
             font-family: variables.$handwriting;
             font-size: 1.5rem;
             transition: color .3s;
-        }
-
-        a:hover {
-            color: #fff;
+            
+            @include mixins.hover {
+                color: #fff;
+            }
         }
     }
 
@@ -230,6 +232,14 @@ footer {
 
     p {
         margin: 0;
+    }
+
+    a {
+        text-decoration: underline;
+
+        @include mixins.hover {
+            text-decoration: none;
+        }
     }
 
     .contact-grid {

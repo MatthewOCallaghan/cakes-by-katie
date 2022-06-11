@@ -24,6 +24,8 @@ import processData from 'gulp-data';
 import sharpResponsive from 'gulp-sharp-responsive';
 // const ftp = require('vinyl-ftp');
 // const logger = require('fancy-log');
+import { FORMATS, getSizesAttribute, getSrcsetAttribute, WIDTHS } from './utils/images';
+import { removeExtension } from './utils/files';
 const mode = require('gulp-mode')();
 
 const browserSyncInstance = browserSync.create();
@@ -54,20 +56,11 @@ function processNunjucks() {
 
     const manageEnvironment = function(environment) {
 
-        // Get filename without extension
-        environment.addFilter('removeExtension', function(filename) {
-            return filename.split('.')[0];
-        });
+        environment.addFilter('removeExtension', removeExtension);
 
-        // Get srcset attribute for <source> element
-        environment.addFilter('createSrcset', function(sizes, name, extension) {
-            return sizes.map(size => `${name}-${size}.${extension} ${size}w`).join(', ');
-        });
+        environment.addFilter('createSrcset', getSrcsetAttribute);
 
-        // Get sizes attribute for <source> element
-        environment.addFilter('createSizes', function(sizes) {
-            return sizes.slice(0, sizes.length - 1).map(size => `(max-width: ${size}px) ${size}px`).concat(`${sizes[sizes.length - 1]}px`).join(', ');
-        });
+        environment.addFilter('createSizes', getSizesAttribute);
 
         // Get object with details of specific project from work array
         // environment.addFilter('getWorkInfo', function(work, page) {
@@ -85,6 +78,10 @@ function processNunjucks() {
     if (process.env.NODE_ENV !== 'production') {
         data.development = true;
     }
+    data.imageFormats = {
+        widths: WIDTHS,
+        formats: FORMATS
+    };
 
     return src('src/pages/**/*.njk')
         .pipe(processData(data))

@@ -4,6 +4,29 @@
   aspect-ratio: 16/9;
 }
 
+#about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+#about picture {
+  width: 40%;
+  min-width: 150px;
+  max-width: min(100%, 30vh);
+}
+#about picture img {
+  width: 100%;
+}
+#about div {
+  width: 40%;
+  min-width: 150px;
+  text-align: center;
+}
+#about div h1 {
+  font-family: "Licorice", sans-serif;
+}
+
 #portfolio {
   display: flex;
   flex-direction: column;

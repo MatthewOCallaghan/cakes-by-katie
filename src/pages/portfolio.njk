@@ -1,0 +1,42 @@
+{% set page = "portfolio" %}
+{% extends "layout.njk" %}
+
+{% block head %}
+    <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
+{% endblock %}
+
+{% from "macros/picture.njk" import pictureElement with context %}
+
+{% block main %}
+
+    {# Grid of images #}
+    <div class="portfolio-grid">
+        {% for key, item in portfolio %}
+            <button class="grid-item" data-name="{{ item.name }}" data-images="{{ item.images  }}" data-description="{{ item.description }}">
+                {{ pictureElement("portfolio/" + item.images[0], item.name) }}
+            </button>
+        {% endfor %}
+    </div>
+
+    {# Modal #}
+    <div id="portfolio-modal">
+        <button id="modal-close">Close</button>
+        <div class="container">
+            <div class="images">
+                <div id="selected-image"></div>
+                <div id="thumbs"></div>
+            </div>
+            <div class="text">
+                <h1 id="title"></h1>
+                <p id="description"></p>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+
+{% block scripts %}
+    <script type="text/javascript" src="js/portfolioGrid.js" defer></script>
+    <script type="text/javascript" src="js/portfolioModal.js" defer></script>
+{% endblock %}

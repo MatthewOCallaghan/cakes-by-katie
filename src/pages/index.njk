@@ -9,31 +9,36 @@
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 {% endblock %}
 
+{% from "macros/picture.njk" import pictureElement with context %}
+
 {% block main %}
     <div id="header-video">
 
     </div>
     <section id="about">
-        Hi I'm Katie…
+            {{ pictureElement("katie.jpg", "Katie")}}
 
-I'm a cake maker based in Thatcham, West Berkshire. I started baking and decorating cakes as a hobby from a young age with the dream that I could turn my passion into a career. Now I have a full time job as a cake decorator for a local celebration cake company, and I have started this business on the side with the aim to go full time in the near future.
+            <div>
+                <h1>Hi, I'm Katie…</h1>
 
-As I only produce cakes part time, I am unable to take a lot of orders so if you are interested in me making a cake for your celebration please contact me as early as possible.
+                <p>I'm a cake maker based in Thatcham, West Berkshire. I started baking and decorating cakes as a hobby from a young age with the dream that I could turn my passion into a career. Now I have a full time job as a cake decorator for a local celebration cake company, and I have started this business on the side with the aim to go full time in the near future.</p>
 
-I offer a wide range of flavours, and can cater for certain dietary requirements like dairy and gluten free.
+                <p>As I only produce cakes part time, I am unable to take a lot of orders so if you are interested in me making a cake for your celebration please contact me as early as possible.</p>
 
-can the hi I'm Katie be in the pink and fancy font like it is currently please 
-
+                <p>I offer a wide range of flavours, and can cater for certain dietary requirements like dairy and gluten free.</p>
+            </div>
     </section>
 
     <section id="portfolio">
         <div id="grid">
-            {% from "macros/picture.njk" import pictureElement with context %}
+            
             {% for item in portfolioSample %}
-                {{ pictureElement("portfolio/" + portfolio[item].image, portfolio[item].name) }}
+                {{ pictureElement("portfolio/" + portfolio[item].images[0], portfolio[item].name) }}
             {% endfor %}
         </div>
-        <a class="button">See more</a>
+        <a class="button" href="portfolio.html" >See more</a>
+
+        <div></div>
     </section>
 
     <section id="testimonials">
@@ -47,7 +52,7 @@ can the hi I'm Katie be in the pink and fancy font like it is currently please
                     <div class="swiper-slide">
                         <div class="item">
                             <div class="image">
-                                {{ pictureElement("portfolio/" + portfolio[testimonial.cake].image, portfolio[testimonial.cake].name) }}
+                                {{ pictureElement("portfolio/" + portfolio[testimonial.cake].images[0], portfolio[testimonial.cake].name) }}
                             </div>
                             <div class="quote">
                                 <blockquote>{{ testimonial.text }}</blockquote>
