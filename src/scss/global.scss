@@ -5,6 +5,8 @@
 
 @import 'normalize.css/normalize';
 
+$mobileNavMaxWidth: 600px;
+
 * {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
@@ -45,15 +47,11 @@ section {
 }
 
 header {
-    $mobileNavMaxWidth: 600px;
     $logoDiameter: 130px;
-    // @media only screen and (max-width: $mobileNavMaxWidth) {
-    //     $logoDiameter: 110px;
-    // }
-
+    $headerHeight: 50px;
 
     background: variables.$black;
-    height: 50px;
+    height: $headerHeight;
     width: 100%;
     color: variables.$pink;
     
@@ -75,22 +73,30 @@ header {
                 color: #fff;
             }
         }
+
+        .logo-container {
+            width: $logoDiameter;
+            height: 100%;
+            position: relative;
+    
+            .logo-background {
+                background: variables.$black;
+                position: absolute;
+                left: 0;
+                top: 5px;
+                height: $logoDiameter;
+                z-index: 1;
+                border-radius: $logoDiameter;
+            }
+        }
     }
 
-    .logo-container {
-        width: $logoDiameter;
-        height: 100%;
-        position: relative;
-
-        .logo-background {
-            background: variables.$black;
-            position: absolute;
-            left: 0;
-            top: 5px;
-            height: $logoDiameter;
-            z-index: 1;
-            border-radius: $logoDiameter;
-        }
+    #mobile-nav-header {
+        display: none;
+        width: 100%;
+        height: $headerHeight;
+        justify-content: flex-end;
+        padding: 0 20px;
     }
 
     .hamburger {
@@ -101,10 +107,7 @@ header {
         margin: 0;
         border: none;
         cursor: pointer;
-
-        // Just for debugging
-        // This can be deleted
-        $multiplier: 1;
+        position: relative;
 
         .hamburger-box {
             width: 40px;
@@ -125,84 +128,110 @@ header {
                 @include line;
                 top: 50%;
                 margin-top: -2px;
-                transition: transform (.22s * $multiplier) cubic-bezier(.55,.055,.675,.19);
+                transition: transform (.22s) cubic-bezier(.55,.055,.675,.19);
 
                 &::before {
                     top: -10px;
                     content: "";
                     @include line;
-                    transition: top (.1s * $multiplier) ease-in (.25s * $multiplier);
+                    transition: top (.1s) ease-in (.25s);
                 }
 
                 &::after {
                     bottom: -10px;
                     content: "";
                     @include line;
-                    transition: bottom (.1s * $multiplier) ease-in (.25s * $multiplier),transform (.22s * $multiplier) cubic-bezier(.55,.055,.675,.19);
-                }
-            }
-        }
-
-        &.nav-open {
-
-            .hamburger-box .hamburger-inner {
-                transition-delay: .12s * $multiplier;
-                transition-timing-function: cubic-bezier(.215,.61,.355,1);
-                transform: rotate(225deg);
-
-                &::before {
-                    top: 0;
-                    transition: top (.1s * $multiplier) ease-out,opacity (.1s * $multiplier) ease-out (.12s * $multiplier);
-                    opacity: 0;
-                }
-
-                &::after {
-                    bottom: 0;
-                    transition: bottom (.1s * $multiplier) ease-out,transform (.22s * $multiplier) cubic-bezier(.215,.61,.355,1) (.12s * $multiplier);
-                    transform: rotate(-90deg);
+                    transition: bottom (.1s) ease-in (.25s),transform (.22s) cubic-bezier(.55,.055,.675,.19);
                 }
             }
         }
     }
 
-    @media only screen and (max-width: $mobileNavMaxWidth) {
-        position: relative;
-        display: flex;
+    #mobile-nav-image {
+        flex-grow: 1;
+        width: 100%;
+        display: none;
         justify-content: flex-end;
-        padding-right: 20px;
+        align-items: flex-end;
+        padding: 20px;
 
-        .logo-container {
-            position: absolute;
-            top: 0;
-            left: 5px;
+        img {
+            height: 200px;
+            max-height: 100%;
+            width: auto;
+        }
+    }
+
+    @media only screen and (max-width: $mobileNavMaxWidth) {
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+
+        #mobile-nav-header {
+            display: flex;
         }
 
         nav {
+            display: none;
+            gap: 30px;
 
             a {
-                display: none;
-            }
-
-            &.expand {
-                a {
-                    display: block;
-                }
-
-                display: flex;
-                flex-direction: column;
-                padding-top: $logoDiameter + 20px;
-                height: 100vh;
                 width: 100%;
-                background: #000;
-                top: 0;
-                left: 0;
-                position: absolute;
-                justify-content: flex-start;
+                font-size: 2rem;
             }
+
+            .logo-container {
+                order: -1;
+                margin: 30px 0;
+
+                .logo-background {
+                    position: static;
+                }
+            }
+        }
+        
+        .hamburger {
+            display: block;
+        }
+    }
+}
+
+@media only screen and (max-width: $mobileNavMaxWidth) {
+    body.nav-open {
+
+        header {
+            height: 100vh;
         }
 
         .hamburger {
-            display: block;
+            .hamburger-box .hamburger-inner {
+                transition-delay: .12s;
+                transition-timing-function: cubic-bezier(.215,.61,.355,1);
+                transform: rotate(225deg);
+
+                &::before {
+                    top: 0;
+                    transition: top (.1s) ease-out,opacity (.1s) ease-out (.12s);
+                    opacity: 0;
+                }
+
+                &::after {
+                    bottom: 0;
+                    transition: bottom (.1s) ease-out,transform (.22s) cubic-bezier(.215,.61,.355,1) (.12s);
+                    transform: rotate(-90deg);
+                }
+            }
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+        }
+
+        #mobile-nav-image {
+            display: flex;
         }
     }
 }

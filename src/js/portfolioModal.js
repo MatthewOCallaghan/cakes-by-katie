@@ -16,7 +16,6 @@ const openModal = ({ target }) => {
     const thumbs = modal.querySelector('#thumbs');
     if (images.length > 1) {
         removeAllChildren(thumbs);
-        console.log(images);
         images.forEach(image => {
             console.log(image);
             const button = document.createElement('button');

@@ -16,7 +16,7 @@
             "description": "Wonderfully clever and witty description of the cake here"
         },
         "football": {
-            "images": ["Football.jpg"],
+            "images": ["Football.jpg", "Liverpool-FC.jpg", "Parker-penguin.jpg"],
             "name": "Football"
         },
         "rose-gold-18th-cupcakes": {
@@ -53,6 +53,11 @@
             "images": ["Liverpool-FC.jpg"],
             "name": "Liverpool FC",
             "description": "Wonderfully clever and witty description of the cake here"
+        },
+        "parker-penguin": {
+            "images": ["Parker-penguin.jpg", "Oreo-cake.jpg", "Oreo-cupcakes.jpg"],
+            "name": "Parker penguin",
+            "description": "Best cake ever! Best cake ever! Best cake ever! Best cake ever! Best cake ever! Best cake ever! Best cake ever! Best cake ever! Best cake ever! Best cake ever! Best cake ever!"
         }
     },
     "portfolioSample": ["chocoholic", "football", "rose-gold-18th-cupcakes", "roses-18th", "christmas", "floral-80th", "grandpa-shed", "guinness", "lfc"],

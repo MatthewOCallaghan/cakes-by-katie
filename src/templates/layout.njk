@@ -21,6 +21,16 @@
     </head>
     <body>
         <header>
+            
+            <div id="mobile-nav-header">
+                {# Hamburger (https://jonsuh.com/hamburgers/) #}
+                <button id="nav-toggle" class="hamburger">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+
             <nav>
                 <a href="{{ "#about" if page == "index" else "index.html#about" }}">About</a>
                 <a href="contact.html">Contact</a>
@@ -33,12 +43,10 @@
                 <a href="{{ "#testimonials" if page == "index" else "index.html#testimonials" }}">Testimonials</a>
             </nav>
 
-            {# Hamburger (https://jonsuh.com/hamburgers/) #}
-            <button id="nav-toggle" class="hamburger">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-            </button>
+            <div id="mobile-nav-image">
+                {% from "macros/picture.njk" import pictureElement with context %}
+                {{ pictureElement("mobile-nav-cake.png", "Parker penguin") }}
+            </div>
         </header>
 
         <main>

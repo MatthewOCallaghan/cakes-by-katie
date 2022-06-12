@@ -20,7 +20,7 @@
 }
 #about div {
   width: 40%;
-  min-width: 150px;
+  min-width: min(100%, 350px);
   text-align: center;
 }
 #about div h1 {

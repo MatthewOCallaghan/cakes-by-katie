@@ -1,6 +1,16 @@
+const NAV_OPEN_CLASS = 'nav-open';
+
 // Add onclick to nav toggler
-document.getElementById('nav-toggle').onclick = function() {
-	document.body.classList.toggle('nav-open');
-	document.getElementsByTagName('nav')[0].classList.toggle('expand');
-    document.getElementById('nav-toggle').classList.toggle('nav-open');
+document.querySelector('#nav-toggle').onclick = function() {
+	document.body.classList.toggle(NAV_OPEN_CLASS);
 };
+
+// Close nav menu when link to anchor clicked
+document.querySelectorAll('nav a').forEach(element => {
+	element.onclick = () => {
+		if (element.href.includes(window.location.pathname)) {
+			console.log('close')
+			document.body.classList.remove(NAV_OPEN_CLASS);
+		}	
+	}
+});

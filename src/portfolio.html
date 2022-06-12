@@ -25,6 +25,16 @@
 
 <body>
     <header>
+
+        <div id="mobile-nav-header">
+
+            <button id="nav-toggle" class="hamburger">
+                <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+
         <nav>
             <a href="index.html#about">About</a>
             <a href="contact.html">Contact</a>
@@ -37,12 +47,16 @@
             <a href="index.html#testimonials">Testimonials</a>
         </nav>
 
+        <div id="mobile-nav-image">
 
-        <button id="nav-toggle" class="hamburger">
-            <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-            </span>
-        </button>
+
+            <picture>
+
+                <img src="images/mobile-nav-cake.png" alt="Parker penguin" />
+
+            </picture>
+
+        </div>
     </header>
 
     <main>
@@ -61,7 +75,7 @@
 
             </button>
 
-            <button class="grid-item" data-name="Football" data-images="Football.jpg" data-description="">
+            <button class="grid-item" data-name="Football" data-images="Football.jpg,Liverpool-FC.jpg,Parker-penguin.jpg" data-description="">
 
                 <picture>
 
@@ -141,19 +155,29 @@
 
             </button>
 
+            <button class="grid-item" data-name="Parker penguin" data-images="Parker-penguin.jpg,Oreo-cake.jpg,Oreo-cupcakes.jpg" data-description="Best cake ever! Best cake ever! Best cake ever! Best cake ever! Best cake ever! Best cake ever! Best cake ever! Best cake ever! Best cake ever! Best cake ever! Best cake ever!">
+
+                <picture>
+
+                    <img src="images/portfolio/Parker-penguin.jpg" alt="Parker penguin" />
+
+                </picture>
+
+            </button>
+
         </div>
 
 
         <div id="portfolio-modal">
             <button id="modal-close">Close</button>
             <div class="container">
-                <div class="images">
-                    <div id="selected-image"></div>
-                    <div id="thumbs"></div>
-                </div>
                 <div class="text">
                     <h1 id="title"></h1>
                     <p id="description"></p>
+                </div>
+                <div class="images">
+                    <div id="selected-image"></div>
+                    <div id="thumbs"></div>
                 </div>
             </div>
         </div>
