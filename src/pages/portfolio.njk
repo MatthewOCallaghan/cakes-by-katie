@@ -15,8 +15,11 @@
             <button
                 class="grid-item"
                 data-name="{{ item.name }}"
-                data-images="{{ item.images  }}"
+                data-images="{{ item.images }}"
                 data-description="{{ item.description }}"
+                {% if item.videos %}
+                    data-videos="{{ item.videos | stringifyElements | join(';') }}"
+                {% endif %}
                 {% if item.testimonial %}
                     data-testimonial-quote="{{ item.testimonial.text }}"
                     data-testimonial-customer="{{ item.testimonial.name }}"

@@ -7,18 +7,34 @@ const openModal = ({ target }) => {
     const images = target.getAttribute('data-images').split(',');
     const name = target.getAttribute('data-name');
     const description = target.getAttribute('data-description');
+    const videos = target.getAttribute('data-videos')?.split(';').map(JSON.parse) ?? [];
     const testimonialQuote = target.getAttribute('data-testimonial-quote');
     const testimonialCustomer = target.getAttribute('data-testimonial-customer');
     const testimonialLocation = target.getAttribute('data-testimonial-location');
 
-    // Images
-    // Selected image
-    setSelectedImage(images[0], name);
+    // Images and videos
+    // Initial selected image/video
+    if (videos.length > 0) {
+        setSelectedVideo(videos[0].file);
+    } else {
+        setSelectedImage(images[0], name);
+    }    
 
     // Thumbs
     const thumbs = modal.querySelector('#thumbs');
-    if (images.length > 1) {
+    if (images.length > 1 || videos.length > 0) {
         removeAllChildren(thumbs);
+
+        // Videos
+        videos.forEach(({ file, thumb }) => {
+            const button = document.createElement('button');
+            button.classList.add('video-thumb');
+            button.addEventListener('click', () => setSelectedVideo(file));
+            thumbs.appendChild(button);
+            createPictureElement(button, thumb, name);
+        });
+
+        // Images
         images.forEach(image => {
             const button = document.createElement('button');
             button.addEventListener('click', () => setSelectedImage(image, name));
@@ -78,11 +94,29 @@ document.querySelectorAll('.portfolio-grid button.grid-item').forEach(element =>
     element.addEventListener('click', openModal);
 });
 
-
-const setSelectedImage = (filename, name) => {
+const setSelectedMedia = (isVideo, filename, name) => {
     const selectedImage = modal.querySelector('#selected-image');
     removeAllChildren(selectedImage);
-    createPictureElement(selectedImage, filename, name);
+
+    if (isVideo) {
+        const video = document.createElement('video');
+        video.src = `/videos/${filename}`;
+        video.controls = false;
+        video.loop = true;
+        video.autoplay = true;
+        video.playsInline = true;
+        selectedImage.appendChild(video);
+    } else {
+        createPictureElement(selectedImage, filename, name);
+    }
+}
+
+const setSelectedImage = (filename, name) => {
+    setSelectedMedia(false, filename, name);    
+}
+
+const setSelectedVideo = (filename) => {
+    setSelectedMedia(true, filename);
 }
 
 const removeAllChildren = element => {

@@ -9,6 +9,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
+  background: linear-gradient(to bottom, #F7CAC9, #fff0);
 }
 #about picture {
   width: 40%;

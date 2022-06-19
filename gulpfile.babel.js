@@ -62,6 +62,10 @@ function processNunjucks() {
 
         environment.addFilter('createSizes', getSizesAttribute);
 
+        environment.addFilter('stringifyElements', array => {
+            return array.map(JSON.stringify);
+        });
+
         // Get object with details of specific project from work array
         // environment.addFilter('getWorkInfo', function(work, page) {
         //     return work.filter(workItem => workItem.page === page)[0];

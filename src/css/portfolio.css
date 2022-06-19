@@ -74,7 +74,7 @@
   flex-direction: column;
   align-items: center;
 }
-#portfolio-modal .container .images #selected-image img {
+#portfolio-modal .container .images #selected-image img, #portfolio-modal .container .images #selected-image video {
   max-width: 100%;
   max-height: 60vh;
   display: block;
@@ -96,6 +96,31 @@
   border: none;
   cursor: pointer;
 }
+#portfolio-modal .container .images #thumbs button.video-thumb {
+  position: relative;
+}
+#portfolio-modal .container .images #thumbs button.video-thumb::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  top: calc(50% - 18px);
+  left: calc(50% - 18px);
+  background: #000000d1;
+  border-radius: 100%;
+}
+#portfolio-modal .container .images #thumbs button.video-thumb::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  top: calc(50% - 8px);
+  left: calc(50% - 3.3333333333px);
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 10px solid #ffffffd1;
+}
 #portfolio-modal .container .images #thumbs button img {
   height: 80px;
   width: auto;
@@ -111,6 +136,7 @@
   font-family: "Licorice", sans-serif;
   font-size: 3em;
   color: #F7CAC9;
+  margin-bottom: 0;
 }
 #portfolio-modal .container .text #testimonial {
   font-size: 90%;
