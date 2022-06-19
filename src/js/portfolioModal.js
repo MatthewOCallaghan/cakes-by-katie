@@ -7,6 +7,9 @@ const openModal = ({ target }) => {
     const images = target.getAttribute('data-images').split(',');
     const name = target.getAttribute('data-name');
     const description = target.getAttribute('data-description');
+    const testimonialQuote = target.getAttribute('data-testimonial-quote');
+    const testimonialCustomer = target.getAttribute('data-testimonial-customer');
+    const testimonialLocation = target.getAttribute('data-testimonial-location');
 
     // Images
     // Selected image
@@ -17,7 +20,6 @@ const openModal = ({ target }) => {
     if (images.length > 1) {
         removeAllChildren(thumbs);
         images.forEach(image => {
-            console.log(image);
             const button = document.createElement('button');
             button.addEventListener('click', () => setSelectedImage(image, name));
             thumbs.appendChild(button);
@@ -40,6 +42,26 @@ const openModal = ({ target }) => {
         p.style.display = 'initial';
     } else {
         p.style.display = 'none';
+    }
+
+    // Testimonial
+    const testimonial = modal.querySelector('#testimonial');
+    if (testimonialQuote) {
+        testimonial.style.display = 'block';
+        modal.querySelector('blockquote').innerText = testimonialQuote;
+        modal.querySelector('span').innerText = `${testimonialCustomer}, ${testimonialLocation}`;
+    } else {
+        testimonial.style.display = 'none';
+    }
+
+    // Layout
+    // Always show vertical layout if no description or testimonial
+    const container = modal.querySelector('.container');
+    const TITLE_ONLY_CLASS = 'title-only';
+    if (!description && !testimonialQuote) {
+        container.classList.add(TITLE_ONLY_CLASS);
+    } else {
+        container.classList.remove(TITLE_ONLY_CLASS);
     }
     
 

@@ -83,6 +83,8 @@ function processNunjucks() {
         formats: FORMATS
     };
 
+    data.testimonials = Object.entries(data.portfolio).reduce((acc, [cake, { testimonial }]) => testimonial ? acc.concat({ cake, ...testimonial }) : acc, []);
+
     return src('src/pages/**/*.njk')
         .pipe(processData(data))
         .pipe(nunjucksRender({

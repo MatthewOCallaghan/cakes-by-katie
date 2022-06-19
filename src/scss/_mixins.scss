@@ -5,3 +5,41 @@
         }
     }
 }
+
+@mixin testimonial-quote {
+    blockquote {
+        text-align: center;
+        quotes: '\201c' '\201d';
+        position: relative;
+        margin: 0;
+        padding: 15px;
+        font-style: italic;
+        font-weight: 400;
+
+        &::before, &::after {
+            position: absolute;
+            color: white;
+            font-family: 'Licorice', cursive;
+            font-size: 300%;
+        }
+
+        &::before {
+            content: open-quote;
+            top: 0;
+            left: 0;
+        }
+
+        &::after {
+            content: close-quote;
+            bottom: 0;
+            right: 0;
+            line-height: 0px;
+        }
+    }
+
+    span {
+        display: block;
+        text-align: right;
+        padding-right: 10px;
+    }
+}

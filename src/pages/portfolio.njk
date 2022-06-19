@@ -12,7 +12,17 @@
     {# Grid of images #}
     <div class="portfolio-grid">
         {% for key, item in portfolio %}
-            <button class="grid-item" data-name="{{ item.name }}" data-images="{{ item.images  }}" data-description="{{ item.description }}">
+            <button
+                class="grid-item"
+                data-name="{{ item.name }}"
+                data-images="{{ item.images  }}"
+                data-description="{{ item.description }}"
+                {% if item.testimonial %}
+                    data-testimonial-quote="{{ item.testimonial.text }}"
+                    data-testimonial-customer="{{ item.testimonial.name }}"
+                    data-testimonial-location="{{ item.testimonial.location }}"
+                {% endif %}
+            >
                 {{ pictureElement("portfolio/" + item.images[0], item.name) }}
             </button>
         {% endfor %}
@@ -25,6 +35,10 @@
             <div class="text">
                 <h1 id="title"></h1>
                 <p id="description"></p>
+                <div id="testimonial">
+                    <blockquote></blockquote>
+                    <span></span>
+                </div>
             </div>
             <div class="images">
                 <div id="selected-image"></div>

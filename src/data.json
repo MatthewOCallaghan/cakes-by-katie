@@ -13,11 +13,21 @@
         "chocoholic": {
             "images": ["Chocoholic.JPG"],
             "name": "Chocoholic",
-            "description": "Wonderfully clever and witty description of the cake here"
+            "description": "Wonderfully clever and witty description of the cake here",
+            "testimonial": {
+                "text": "Just to feedback that we were blown away by Alice's cake. You had really listened to our ideas and understood the effect we were looking for. Everyone commented on the cake and Alice will always remember her 6th birthday cake. Thanks for helping make her day so special.",
+                "name": "Mel",
+                "location": "Reading"
+            }
         },
         "football": {
             "images": ["Football.jpg", "Liverpool-FC.jpg", "Parker-penguin.jpg"],
-            "name": "Football"
+            "name": "Football",
+            "testimonial": {
+                "text": "Katie's cake not only looked amazing but it tasted delicious and kept really well, when we didn't eat it all on 1st cutting. Her design ideas were spot on and it was difficult to choose the best one!",
+                "name": "Mel",
+                "location": "Reading"
+            }
         },
         "rose-gold-18th-cupcakes": {
             "images": ["Rose-Gold-18th-cupcakes.jpg"],
@@ -32,7 +42,12 @@
         "christmas": {
             "images": ["Christmas.jpg", "Football.jpg", "Rose-Gold-18th-cupcakes.jpg", "Roses-18th.jpg"],
             "name": "Christmas",
-            "description": "Wonderfully clever and witty description of the cake here"
+            "description": "Wonderfully clever and witty description of the cake here",
+            "testimonial": {
+                "text": "Katie is an outstanding baker! We have used her services for birthday cakes for our boys and an anniversary cake for parents. Her cakes taste delicious and look amazing. Katie takes the time to design the cake to your requirements and communicates very clearly with her customers. Her cakes are decorated to an extremely professional standard. We would recommend Katie without hesitation and can guarantee you won't be disappointed!",
+                "name": "Lisa",
+                "location": "Reading"
+            }
         },
         "floral-80th": {
             "images": ["Floral-80th.jpg"],
@@ -41,8 +56,7 @@
         },
         "grandpa-shed": {
             "images": ["Grandpa-shed.jpg"],
-            "name": "Grandpa's shed",
-            "description": "Wonderfully clever and witty description of the cake here"
+            "name": "Grandpa's shed"
         },
         "guinness": {
             "images": ["Guinness.jpg"],
@@ -52,39 +66,28 @@
         "lfc": {
             "images": ["Liverpool-FC.jpg"],
             "name": "Liverpool FC",
-            "description": "Wonderfully clever and witty description of the cake here"
+            "description": "Wonderfully clever and witty description of the cake here",
+            "testimonial": {
+                "text": "Had the most amazing cake today made by Cakes by Katie from Thatcham it was just perfect in every way will most definitely be ordering more from her in the future",
+                "name": "Jane",
+                "location": "Kingsclere"
+            }
         },
         "parker-penguin": {
             "images": ["Parker-penguin.jpg", "Oreo-cake.jpg", "Oreo-cupcakes.jpg"],
             "name": "Parker penguin",
             "description": "Best cake ever! Best cake ever! Best cake ever! Best cake ever! Best cake ever! Best cake ever! Best cake ever! Best cake ever! Best cake ever! Best cake ever! Best cake ever!"
+        },
+        "daisy-80th": {
+            "images": ["daisy-80th.jpg"],
+            "name": "Daisy 80th",
+            "videos": [
+                {
+                    "thumb": "daisy-80th.jpg",
+                    "file": "daisy-80th.mp4"
+                }
+            ]
         }
     },
-    "portfolioSample": ["chocoholic", "football", "rose-gold-18th-cupcakes", "roses-18th", "christmas", "floral-80th", "grandpa-shed", "guinness", "lfc"],
-    "testimonials": [
-        {
-            "cake": "chocoholic",
-            "text": "Just to feedback that we were blown away by Alice's cake. You had really listened to our ideas and understood the effect we were looking for. Everyone commented on the cake and Alice will always remember her 6th birthday cake. Thanks for helping make her day so special.",
-            "name": "Mel",
-            "location": "Reading"
-        },
-        {
-            "cake": "football",
-            "text": "Katie's cake not only looked amazing but it tasted delicious and kept really well, when we didn't eat it all on 1st cutting. Her design ideas were spot on and it was difficult to choose the best one!",
-            "name": "Mel",
-            "location": "Reading"
-        },
-        {
-            "cake": "christmas",
-            "text": "Katie is an outstanding baker! We have used her services for birthday cakes for our boys and an anniversary cake for parents. Her cakes taste delicious and look amazing. Katie takes the time to design the cake to your requirements and communicates very clearly with her customers. Her cakes are decorated to an extremely professional standard. We would recommend Katie without hesitation and can guarantee you won't be disappointed!",
-            "name": "Lisa",
-            "location": "Reading"
-        },
-        {
-            "cake": "lfc",
-            "text": "Had the most amazing cake today made by Cakes by Katie from Thatcham it was just perfect in every way will most definitely be ordering more from her in the future",
-            "name": "Jane",
-            "location": "Kingsclere"
-        }
-    ]
+    "portfolioSample": ["chocoholic", "football", "rose-gold-18th-cupcakes", "roses-18th", "christmas", "floral-80th", "grandpa-shed", "guinness", "lfc"]
 }
