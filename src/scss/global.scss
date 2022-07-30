@@ -294,3 +294,25 @@ footer {
         padding: 30px;
     }
 }
+
+
+// Macros
+.page-title {
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    h1 {
+        font-family: variables.$handwriting;
+        color: variables.$pink;
+        font-size: 4em;
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    
+}

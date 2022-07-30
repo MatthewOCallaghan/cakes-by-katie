@@ -9,6 +9,9 @@
 
 {% block main %}
 
+    {% from "macros/page-title.njk" import pageTitle with context %}
+    {{ pageHeader("Portfolio") }}
+
     {# Grid of images #}
     <div class="portfolio-grid">
         {% for key, item in portfolio %}

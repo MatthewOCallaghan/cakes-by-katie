@@ -1,93 +1,507 @@
 {
-    "pages": {
-        "index": {
-            "title": "Cakes by Katie",
-            "description": "Description of Cakes by Katie here"
-        },
-        "portfolio": {
-            "title": "Portfolio | Cakes by Katie",
-            "description": "Showcasing my work"
-        }
+  "pages": {
+    "index": {
+      "title": "Cakes by Katie",
+      "description": "Description of Cakes by Katie here"
     },
     "portfolio": {
-        "chocoholic": {
-            "images": ["Chocoholic.JPG"],
-            "name": "Chocoholic",
-            "description": "Wonderfully clever and witty description of the cake here",
-            "testimonial": {
-                "text": "Just to feedback that we were blown away by Alice's cake. You had really listened to our ideas and understood the effect we were looking for. Everyone commented on the cake and Alice will always remember her 6th birthday cake. Thanks for helping make her day so special.",
-                "name": "Mel",
-                "location": "Reading"
-            }
-        },
-        "football": {
-            "images": ["Football.jpg", "Liverpool-FC.jpg", "Parker-penguin.jpg"],
-            "name": "Football",
-            "testimonial": {
-                "text": "Katie's cake not only looked amazing but it tasted delicious and kept really well, when we didn't eat it all on 1st cutting. Her design ideas were spot on and it was difficult to choose the best one!",
-                "name": "Mel",
-                "location": "Reading"
-            }
-        },
-        "rose-gold-18th-cupcakes": {
-            "images": ["Rose-Gold-18th-cupcakes.jpg"],
-            "name": "Rose gold 18th cupcakes",
-            "description": "Wonderfully clever and witty description of the cake here"
-        },
-        "roses-18th": {
-            "images": ["Roses-18th.jpg"],
-            "name": "Roses 18th",
-            "description": "Wonderfully clever and witty description of the cake here"
-        },
-        "christmas": {
-            "images": ["Christmas.jpg", "Football.jpg", "Rose-Gold-18th-cupcakes.jpg", "Roses-18th.jpg"],
-            "name": "Christmas",
-            "description": "Wonderfully clever and witty description of the cake here",
-            "testimonial": {
-                "text": "Katie is an outstanding baker! We have used her services for birthday cakes for our boys and an anniversary cake for parents. Her cakes taste delicious and look amazing. Katie takes the time to design the cake to your requirements and communicates very clearly with her customers. Her cakes are decorated to an extremely professional standard. We would recommend Katie without hesitation and can guarantee you won't be disappointed!",
-                "name": "Lisa",
-                "location": "Reading"
-            }
-        },
-        "floral-80th": {
-            "images": ["Floral-80th.jpg"],
-            "name": "Floral 80th",
-            "description": "Wonderfully clever and witty description of the cake here"
-        },
-        "grandpa-shed": {
-            "images": ["Grandpa-shed.jpg"],
-            "name": "Grandpa's shed"
-        },
-        "guinness": {
-            "images": ["Guinness.jpg"],
-            "name": "Guinness",
-            "description": "Wonderfully clever and witty description of the cake here"
-        },
-        "lfc": {
-            "images": ["Liverpool-FC.jpg"],
-            "name": "Liverpool FC",
-            "description": "Wonderfully clever and witty description of the cake here",
-            "testimonial": {
-                "text": "Had the most amazing cake today made by Cakes by Katie from Thatcham it was just perfect in every way will most definitely be ordering more from her in the future",
-                "name": "Jane",
-                "location": "Kingsclere"
-            }
-        },
-        "parker-penguin": {
-            "images": ["Parker-penguin.jpg", "Oreo-cake.jpg", "Oreo-cupcakes.jpg"],
-            "name": "Parker penguin",
-            "description": "Best cake ever! Best cake ever! Best cake ever! Best cake ever! Best cake ever! Best cake ever! Best cake ever! Best cake ever! Best cake ever! Best cake ever! Best cake ever!"
-        },
-        "daisy-80th": {
-            "images": ["daisy-80th.jpg"],
-            "name": "Daisy 80th",
-            "videos": [
-                {
-                    "thumb": "daisy-80th.jpg",
-                    "file": "daisy-80th.mp4"
-                }
-            ]
-        }
+      "title": "Portfolio | Cakes by Katie",
+      "description": "Showcasing my work"
+    }
+  },
+  "portfolio": {
+    "golden-anniversary": {
+      "images": [
+        "Golden-Anniversary.jpg"
+      ],
+      "name": "Golden Anniversary",
+      "testimonial": {
+        "text": "Just to say a Big Thank you for making us this superb wedding anniversary cake. We can see that you have gone that extra mile for us; everyone at the party just loved.",
+        "name": "Lilian & David",
+        "location": "Newbury"
+      }
     },
-    "portfolioSample": ["chocoholic", "football", "rose-gold-18th-cupcakes", "roses-18th", "christmas", "floral-80th", "grandpa-shed", "guinness", "lfc"]
+    "a-touch-of-pink": {
+      "images": [
+        "A-Touch-of-Pink.jpg"
+      ],
+      "name": "A Touch of Pink",
+      "videos": [
+        {
+          "thumb": "A-Touch-of-Pink.jpg",
+          "file": "A-Touch-of-Pink.mp4"
+        }
+      ]
+    },
+    "sun-sand-and-seashells": {
+      "images": [
+        "Sun-Sand-and-Seashells.jpg"
+      ],
+      "name": "Sun, Sand, and Seashells",
+      "testimonial": {
+        "text": "Thank you very much for the lovely cake, it was absolutely gorgeous in all the possible ways. Everybody really enjoyed it and admired your work",
+        "name": "Rosemary",
+        "location": "Thatcham"
+      },
+      "videos": [
+        {
+          "thumb": "Sun-Sand-and-Seashells.jpg",
+          "file": "Sun-Sand-and-Seashells.mp4"
+        }
+      ]
+    },
+    "shades-of-chocolate": {
+      "images": [
+        "Shades-of-Chocolate.jpg"
+      ],
+      "name": "Shades of Chocolate"
+    },
+    "shades-of-pink-and-gold-fault-line": {
+      "images": [
+        "Shades-of-Pink-and-Gold-Fault-Line.jpg"
+      ],
+      "name": "Shades of Pink and Gold Fault Line",
+      "videos": [
+        {
+          "thumb": "Shades-of-Pink-and-Gold-Fault-Line.jpg",
+          "file": "Shades-of-Pink-and-Gold-Fault-Line.mp4"
+        }
+      ]
+    },
+    "booties-and-bunting": {
+      "images": [
+        "Booties-and-Bunting.jpg"
+      ],
+      "name": "Booties and Bunting",
+      "videos": [
+        {
+          "thumb": "Booties-and-Bunting.jpg",
+          "file": "Booties-and-Bunting.mp4"
+        }
+      ]
+    },
+    "blue-speckle-mini-eggs": {
+      "images": [
+        "Blue-Speckle-Mini-Eggs.jpg"
+      ],
+      "name": "Blue Speckle Mini Eggs",
+      "videos": [
+        {
+          "thumb": "Blue-Speckle-Mini-Eggs.jpg",
+          "file": "Blue-Speckle-Mini-Eggs.mp4"
+        }
+      ]
+    },
+    "cream-mini-eggs": {
+      "images": [
+        "Cream-Mini-Eggs.jpg"
+      ],
+      "name": "Cream Mini Eggs",
+      "videos": [
+        {
+          "thumb": "Cream-Mini-Eggs.jpg",
+          "file": "Cream-Mini-Eggs.mp4"
+        }
+      ]
+    },
+    "galaxy": {
+      "images": [
+        "Galaxy.jpg"
+      ],
+      "name": "Galaxy",
+      "videos": [
+        {
+          "thumb": "Galaxy.jpg",
+          "file": "Galaxy.mp4"
+        }
+      ]
+    },
+    "pink-ombré-daisies": {
+      "images": [
+        "Pink-Ombré-Daisies.jpg"
+      ],
+      "name": "Pink Ombré with Daisies ",
+      "videos": [
+        {
+          "thumb": "Pink-Ombré-Daisies.jpg",
+          "file": "Pink-Ombré-Daisies.mp4"
+        }
+      ]
+    },
+    "sapphire-anniversary ": {
+      "images": [
+        "Sapphire-Anniversary.jpg"
+      ],
+      "name": "Sapphire Anniversary"
+    },
+    "90-not-out": {
+      "images": [
+        "90-Not-Out.jpg"
+      ],
+      "name": "90 Not Out"
+    },
+    "black-and-white": {
+      "images": [
+        "Black-and-White.jpg"
+      ],
+      "name": "Black and White",
+      "testimonial": {
+        "text": "Big thank you to Katie, for producing three amazing creations for me, some cupcakes for my daughters 18th birthday and a friends 50th, and a birthday cake for my daughter's birthday the following year, they were all delicious. On each occasion I gave Katie a brief or the birthday theme and she worked with me to design the toppers and gave me options to choose from, even a choice of flavours for the cupcakes. Katie added an extra special touch to each occasion, thank you and I would have no hesitation in recommending you to others in the future. \n",
+        "name": "Ellie",
+        "location": "Purley"
+      },
+      "videos": [
+        {
+          "thumb": "Black-and-White.jpg",
+          "file": "Black-and-White.mp4"
+        }
+      ]
+    },
+    "50s-and-tiaras ": {
+      "images": [
+        "50s-and-tiaras.jpg"
+      ],
+      "name": "50s and Tiaras"
+    },
+    "white-and-gold-choc-fudge": {
+      "images": [
+        "White-and-Gold-Choc-Fudge.jpg"
+      ],
+      "name": "White and Gold Chocolate Fudge",
+      "testimonial": {
+        "text": "Somebody brought some of Katie's cupcakes into the office one day, and we all enjoyed them so much that we decided to place a regular order. I've also used Katie a couple of times for special celebration cakes. They looked amazing, but more importantly tasted amazing too. Katie is now my go-to person for all my cake requirements. It's refreshing to see a young person with a business like this. Katie is really friendly and talented. So, give Katie a try - you won't be disappointed!",
+        "name": "Andy",
+        "location": "Reading"
+      },
+      "videos": [
+        {
+          "thumb": "White-and-Gold-Choc-Fudge.jpg",
+          "file": "White-and-Gold-Choc-Fudge.mp4"
+        }
+      ]
+    },
+    "ferrero-rocher-cake": {
+      "images": [
+        "Ferrero-Rocher-Cake.jpg"
+      ],
+      "name": "Ferrero Rocher Cake",
+      "videos": [
+        {
+          "thumb": "Ferrero-Rocher-Cake.jpg",
+          "file": "Ferrero-Rocher-Cake.mp4"
+        }
+      ]
+    },
+    "choc-fudge-cake": {
+      "images": [
+        "Choc-Fudge-Cake.jpg"
+      ],
+      "name": "Chocolate Fudge Cake",
+      "description": "The ultimate chocolate fudge cake; featuring hidden milky bar buttons, milky bar drip and milky bar button stars.",
+      "videos": [
+        {
+          "thumb": "Choc-Fudge-Cake.jpg",
+          "file": "Choc-Fudge-Cake.mp4"
+        }
+      ]
+    },
+    "celebration ": {
+      "images": [
+        "Celebration-Blue.jpg",
+        "Celebration-Pink.jpg",
+        "Celebration-Rose-Gold-Gin.jpg"
+      ],
+      "name": "Celebration",
+      "videos": [
+        {
+          "thumb": "Celebration-Blue.jpg",
+          "file": "Celebration-Blue.mp4"
+        },
+        {
+          "thumb": "Celebration-Pink.jpg",
+          "file": "Celebration-Pink.mp4"
+        }
+      ]
+    },
+    "cupcake-birthday-boxes": {
+      "images": [
+        "Mini-Cupcake-Birthday-Box.jpg",
+        "21st-Choc-Letters-Cupcakes.jpg",
+        "Rose-Gold-Age-Name-Cupcakes.jpg"
+      ],
+      "name": "Cupcake Birthday Boxes"
+    },
+    "oreo-cake": {
+      "images": [
+        "Oreo.jpg"
+      ],
+      "name": "Oreo",
+      "description": "Caution: Cake may break apart when twisted and dunked. But feel free to lick it - well only your slice."
+    },
+    "cupcake-assortment-boxes": {
+      "images": [
+        "12-Cupcake-Assortment-Box.jpg",
+        "4-Cupcake-Assortment-Box.jpg",
+        "Pink-and-White-Mix.jpg"
+      ],
+      "name": "Cupcake Assortment Boxes"
+    },
+    "oreo-cupcakes": {
+      "images": [
+        "Oreo-Cupcakes.jpg"
+      ],
+      "name": "Oreo Cupcakes",
+      "description": "Twist off the wrapper, lick off the icing, dunk in the milk - just like a real Oreo."
+    },
+    "lemon-and-pink-gin-cupcakes": {
+      "images": [
+        "Lemon-and-Pink-Gin-Mix.jpg",
+        "Lemon-and-Pink-Gin-White.jpg",
+        "Lemon-and-Pink-Gin-Pink.jpg"
+      ],
+      "name": "Lemon and Pink Gin Cupcakes",
+      "description": "For when it's not quite 5 O'clock … shall we?"
+    },
+    "smores-cupcakes": {
+      "images": [
+        "Smores-Cupcakes.jpg"
+      ],
+      "name": "S'mores Cupcakes",
+      "description": "Not just for the nights snuggled and singing round the campfire."
+    },
+    "salted-caramel-cupcakes": {
+      "images": [
+        "Salted-Caramel-Cupcakes.jpg"
+      ],
+      "name": "Salted Caramel Cupcakes",
+      "description": "Contains salted caramel - need I say more?"
+    },
+    "parker-penguin ": {
+      "images": [
+        "Parker-Penguin.jpg"
+      ],
+      "name": "Parker Penguin"
+    },
+    "carrot-cupcakes": {
+      "images": [
+        "Carrot-Cupcakes.jpg"
+      ],
+      "name": "Carrot Cupcakes"
+    },
+    "jammie-dodger-cake": {
+      "images": [
+        "Jammie-Dodger-Cake.jpg"
+      ],
+      "name": "Jammie Dodger Cake",
+      "description": "Bring back childhood memories one slice at a time."
+    },
+    "easter-surprise ": {
+      "images": [
+        "Easter-Surprise-Inside.jpg",
+        "Easter-Surprise.jpg"
+      ],
+      "name": "Easter Surprise",
+      "description": "You may have just stumbled upon the Easter Bunny's secret stash…"
+    },
+    "easter-nest-cupcakes": {
+      "images": [
+        "Easter-Nest-Cupcakes.jpg"
+      ],
+      "name": "Easter Nest Cupcakes",
+      "description": "The best type of eggs you will ever find in a nest - shame it's only at easter."
+    },
+    "death-by-choc": {
+      "images": [
+        "Death-By-Choc.jpg"
+      ],
+      "name": "Death by Chocolate",
+      "description": "Chocolate, chocolate, chocolate, chocolate, chocolate, chocolate, chocolate, chocolate, chocolate … oh and sprinkles!"
+    },
+    "st-patricks-day": {
+      "images": [
+        "St-Patricks-Day.jpg"
+      ],
+      "name": "St. Patrick's Day",
+      "description": " No need to hunt down the end of a rainbow when you can find some gold coins right here (psst they maybe chocolate coins instead)."
+    },
+    "cupcake-bouquet ": {
+      "images": [
+        "Cupcake-Bouquet-Flowers.jpg",
+        "Cupcake-Bouquet-Presentation.jpg"
+      ],
+      "name": "Cupcake Bouquet"
+    },
+    "double-drips": {
+      "images": [
+        "Double-Drips.jpg"
+      ],
+      "name": "Double Drips"
+    },
+    "choc-cake": {
+      "images": [
+        "Choc-Cake.jpg"
+      ],
+      "name": "Chocolate Cake"
+    },
+    "romantic-heart": {
+      "images": [
+        "Romantic-Heart.jpg"
+      ],
+      "name": "Romantic Heart",
+      "description": "Chocolate, strawberries, cake: what more do you need for a romantic night in? whether it's valentine's day, an anniversary or just to give to that special person in your life - you will need a cake like this to celebrate the occasion."
+    },
+    "reading-football-shirt": {
+      "images": [
+        "Reading-FC.jpg"
+      ],
+      "name": "Reading Football Shirt",
+      "description": "If you are in the Stephen Hunt for a Reading FC cake then you don't need to look any Shane Long-er. This shirt can be adapted for any team."
+    },
+    "wonder-woman": {
+      "images": [
+        "Wonder-Woman.jpg"
+      ],
+      "name": "Wonder Woman",
+      "description": "I would say have a Marvel at this cake - but we both know it's DC.",
+      "testimonial": {
+        "text": "We were blown away by Alices cake. You had really listen to our ideas and understood the effect we w're looking for. Everyone commented on the cake and Alice will always remember her 6th birthday cake. \nThanks for helping make her day so special. ",
+        "name": "Mel",
+        "location": "Reading"
+      }
+    },
+    "football-cupcakes": {
+      "images": [
+        "Football-Cupcakes.jpg"
+      ],
+      "name": "Football Cupcakes",
+      "description": "Why not score yourself some of these cupcakes?"
+    },
+    "DIY": {
+      "images": [
+        "Wooden-Plane.jpg",
+        "Saw-DIY.jpg",
+        "Marbled-DIY.jpg"
+      ],
+      "name": "DIY"
+    },
+    "choo-choo": {
+      "images": [
+        "Choo-Choo.jpg"
+      ],
+      "name": "Choo Choo\n",
+      "description": "All aboard! If you ask me for this cake, rest assured these are two trains that will show up on time.  There's no chance of me turning up with a replacement bus cake!  Designed for birthday twins Fenton and Lochlan, the carriages are carrying their favourite treats and travelling to imaginary towns Fentonville and Lockland.",
+      "testimonial": {
+        "text": "Katie is an outstanding baker!  We have used her services for birthday cakes for our boys and an anniversary cake for parents.  Her cakes taste delicious and look amazing.  Katie takes the time to design the cake to your requirements and communicates very clearly with her customers. Her cakes are decorated to an extremely professional standard.   We would recommend Katie without hesitation and can guarantee you won't be disappointed! \n",
+        "name": "Lisa",
+        "location": "Thatcham "
+      }
+    },
+    "coffee-mug": {
+      "images": [
+        "Coffee-Mug.jpg"
+      ],
+      "name": "Coffee Mug"
+    },
+    "afternoon-tea": {
+      "images": [
+        "Afternoon-Tea.jpg"
+      ],
+      "name": "Afternoon Tea"
+    },
+    "gift-roses": {
+      "images": [
+        "Gift-Roses-Pink.jpg",
+        "Gift-Roses-Lemon.jpg"
+      ],
+      "name": "Gift Roses",
+      "description": "This small cake is just enough for a few and enrobed in elegant buttercream roses with a cute gift tag just for that finishing touch."
+    },
+    "neapolitan": {
+      "images": [
+        "Neapolitan.jpg",
+        "Neapolitan-Age.jpg"
+      ],
+      "name": "Neapolitan"
+    },
+    "art-palette ": {
+      "images": [
+        "Art-Palette.jpg"
+      ],
+      "name": "Art Palette"
+    },
+    "gordons-gin": {
+      "images": [
+        "Gordons-Gin.jpg"
+      ],
+      "name": "Gordon's Gin",
+      "testimonial": {
+        "text": "Katie's cake not only looked amazing but it tasted delicious and kept really well, when we didn't eat it all on 1st cutting. Her design ideas were spot on and it was difficult to choose the best one!",
+        "name": "Mel",
+        "location": "Reading"
+      }
+    },
+    "birthday-heart": {
+      "images": [
+        "Birthday-Heart.jpg"
+      ],
+      "name": "Birthday Heart"
+    },
+    "our-story": {
+      "images": [
+        "Our-Story.jpg"
+      ],
+      "name": "Our Story"
+    },
+    "gucci": {
+      "images": [
+        "Gucci.jpg"
+      ],
+      "name": "Gucci",
+      "description": "Do they want something Gucci for their birthday? This is definitely the cheaper option!"
+    },
+    "guinness ": {
+      "images": [
+        "Guinness.jpg"
+      ],
+      "name": "Guinness",
+      "description": "Made of more - if 'more' is three layers of sponge, black and white fondant, an edible logo and a very cool antigravity effect."
+    },
+    "ps4-controller": {
+      "images": [
+        "PS4-Controller.jpg"
+      ],
+      "name": "PS4 Controller"
+    },
+    "friends": {
+      "images": [
+        "Friends.jpg"
+      ],
+      "name": "Friends",
+      "description": "OH. MY. GOD! Could this cake BE any more perfect for that Friends fan in your life - be they family, friend or your lobster (unless you're on a break)? Just don't offer any to Joey because he doesn't share food! Okay, I'm done now…"
+    },
+    "movie-glitz": {
+      "images": [
+        "Movie-Glitz.jpg"
+      ],
+      "name": "Movie Glitz"
+    },
+    "chocoholic ": {
+      "images": [
+        "Chocoholic.jpg"
+      ],
+      "name": "Chocoholic",
+      "description": "Chocolate fan? Then you'll love this two tiered chocolate fudge cake surrounded by white and milk chocolate fingers and topped with maltesers . Psst… there's even white chocolate buttons between the layers!"
+    }
+  },
+  "portfolioSample": [
+    "blue-speckle-mini-eggs",
+    "lemon-and-pink-gin-cupcakes",
+    "booties-and-bunting",
+    "shades-of-chocolate",
+    "a-touch-of-pink",
+    "sun-sand-and-seashells",
+    "golden-anniversary",
+    "shades-of-pink-and-gold-fault-line",
+    "cream-mini-eggs"
+  ]
 }

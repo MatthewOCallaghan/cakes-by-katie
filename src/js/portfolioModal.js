@@ -3,14 +3,16 @@ const modal = document.querySelector('#portfolio-modal');
 const MODAL_OPEN_CLASS = 'portfolio-modal-open';
 
 const openModal = ({ target }) => {
+
+    const button = target.closest('button');
     
-    const images = target.getAttribute('data-images').split(',');
-    const name = target.getAttribute('data-name');
-    const description = target.getAttribute('data-description');
-    const videos = target.getAttribute('data-videos')?.split(';').map(JSON.parse) ?? [];
-    const testimonialQuote = target.getAttribute('data-testimonial-quote');
-    const testimonialCustomer = target.getAttribute('data-testimonial-customer');
-    const testimonialLocation = target.getAttribute('data-testimonial-location');
+    const images = button.getAttribute('data-images').split(',');
+    const name = button.getAttribute('data-name');
+    const description = button.getAttribute('data-description');
+    const videos = button.getAttribute('data-videos')?.split(';').map(JSON.parse) ?? [];
+    const testimonialQuote = button.getAttribute('data-testimonial-quote');
+    const testimonialCustomer = button.getAttribute('data-testimonial-customer');
+    const testimonialLocation = button.getAttribute('data-testimonial-location');
 
     // Images and videos
     // Initial selected image/video

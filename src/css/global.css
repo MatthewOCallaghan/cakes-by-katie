@@ -592,3 +592,20 @@ footer .copyright-container {
     padding: 30px;
   }
 }
+
+.page-title {
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.page-title h1 {
+  font-family: "Licorice", sans-serif;
+  color: #F7CAC9;
+  font-size: 4em;
+}
+.page-title img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
