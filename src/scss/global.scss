@@ -46,8 +46,8 @@ section {
     }
 }
 
+$logoDiameter: 130px;
 header {
-    $logoDiameter: 130px;
     $headerHeight: 50px;
 
     background: variables.$black;
@@ -95,6 +95,7 @@ header {
         display: none;
         width: 100%;
         height: $headerHeight;
+        min-height: $headerHeight;
         justify-content: flex-end;
         padding: 0 20px;
     }
@@ -148,7 +149,6 @@ header {
     }
 
     #mobile-nav-image {
-        flex-grow: 1;
         width: 100%;
         display: none;
         justify-content: flex-end;
@@ -173,7 +173,7 @@ header {
 
         nav {
             display: none;
-            gap: 30px;
+            flex-grow: 1;
 
             a {
                 width: 100%;
@@ -182,7 +182,11 @@ header {
 
             .logo-container {
                 order: -1;
-                margin: 30px 0;
+                height: auto;
+                
+                @media only screen and (min-height: 700px) {
+                    margin-bottom: 30px;
+                }
 
                 .logo-background {
                     position: static;
@@ -306,6 +310,12 @@ footer {
         font-family: variables.$handwriting;
         color: variables.$pink;
         font-size: 4em;
+        padding: 0 30px;
+
+        width: calc(50% - ($logoDiameter / 2)); // Need to subtract half logo width
+        text-align: center;
+        // text-shadow: 1px 1px 0px variables.$pink, -1px -1px 0px variables.$pink, 0px 0px 20px #0000000d;
+        text-shadow: 1px 1px 0px variables.$pink, 2px 2px 0px #{variables.$pink}82, 2px 2px 0px #909090cc;
     }
 
     img {

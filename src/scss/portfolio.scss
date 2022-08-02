@@ -9,7 +9,12 @@
     .grid-item {
         // Width for Magic Grid
         $minColumns: 3;
-        width: min(200px,calc((100% - ($minColumns * 5px)) / 3));
+        width: min(
+            200px,
+            // For three columns, there are two 5px gaps
+            // Plus MagicGrid puts half the gutter either side as padding
+            calc((100% - ($minColumns * 5px)) / $minColumns)
+        );
 
         // Remove button styles
         background: none;
