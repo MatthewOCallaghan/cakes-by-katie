@@ -2,7 +2,6 @@
 {% extends "layout.njk" %}
 
 {% block head %}
-    <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
 {% endblock %}
 
 {% from "macros/picture.njk" import pictureElement with context %}
@@ -13,26 +12,28 @@
     {{ pageTitle("Portfolio") }}
 
     {# Grid of images #}
-    <div class="portfolio-grid">
-        {% for key, item in portfolio %}
-            <button
-                class="grid-item"
-                style="aspect-ratio: {{ mediaSizes[item.images[0]].width }} / {{ mediaSizes[item.images[0]].height }};"
-                data-name="{{ item.name }}"
-                data-images="{{ item.images }}"
-                data-description="{{ item.description }}"
-                {% if item.videos %}
-                    data-videos="{{ item.videos | stringifyElements | join(';') }}"
-                {% endif %}
-                {% if item.testimonial %}
-                    data-testimonial-quote="{{ item.testimonial.text }}"
-                    data-testimonial-customer="{{ item.testimonial.name }}"
-                    data-testimonial-location="{{ item.testimonial.location }}"
-                {% endif %}
-            >
-                {{ pictureElement("portfolio/" + item.images[0], item.name) }}
-            </button>
-        {% endfor %}
+    <div class="portfolio-grid-container">
+        <div class="portfolio-grid">
+            {% for key, item in portfolio %}
+                <button
+                    class="grid-item"
+                    style="aspect-ratio: {{ mediaSizes[item.images[0]].width / mediaSizes[item.images[0]].height }};"
+                    data-name="{{ item.name }}"
+                    data-images="{{ item.images }}"
+                    data-description="{{ item.description }}"
+                    {% if item.videos %}
+                        data-videos="{{ item.videos | stringifyElements | join(';') }}"
+                    {% endif %}
+                    {% if item.testimonial %}
+                        data-testimonial-quote="{{ item.testimonial.text }}"
+                        data-testimonial-customer="{{ item.testimonial.name }}"
+                        data-testimonial-location="{{ item.testimonial.location }}"
+                    {% endif %}
+                >
+                    {{ pictureElement("portfolio/" + item.images[0], item.name) }}
+                </button>
+            {% endfor %}
+        </div>
     </div>
 
     {# Modal #}
@@ -58,6 +59,6 @@
 
 
 {% block scripts %}
-    <script type="text/javascript" src="js/portfolioGrid.js" defer></script>
+    <script type="text/javascript" src="js/portfolioGrid.js"></script>
     <script type="text/javascript" src="js/portfolioModal.js" defer></script>
 {% endblock %}
