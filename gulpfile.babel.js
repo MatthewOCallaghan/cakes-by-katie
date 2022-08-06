@@ -24,9 +24,9 @@ import processData from 'gulp-data';
 import sharpResponsive from 'gulp-sharp-responsive';
 // const ftp = require('vinyl-ftp');
 // const logger = require('fancy-log');
+import sizeOf from 'image-size';
 import { FORMATS, getSizesAttribute, getSrcsetAttribute, WIDTHS } from './utils/images';
 import { removeExtension } from './utils/files';
-const mode = require('gulp-mode')();
 
 const browserSyncInstance = browserSync.create();
 const sass = gulpSass(sassCompiler);
@@ -79,15 +79,24 @@ function processNunjucks() {
 
     }
 
-    if (process.env.NODE_ENV !== 'production') {
-        data.development = true;
-    }
     data.imageFormats = {
         widths: WIDTHS,
-        formats: FORMATS
+        formats: FORMATS,
+        defaultFormat: FORMATS[FORMATS.length - 1]
     };
 
     data.testimonials = Object.entries(data.portfolio).reduce((acc, [cake, { testimonial }]) => testimonial ? acc.concat({ cake, ...testimonial }) : acc, []);
+
+    // Add size of each portfolio image used to data object
+    data.mediaSizes = {};
+    for (const cake in data.portfolio) {
+        const { images } = data.portfolio[cake];
+        images.forEach(image => {
+            if (!data.mediaSizes[image]) {
+                data.mediaSizes[image] = sizeOf(`src/images/portfolio/${image}`);
+            }
+        })
+    }
 
     return src('src/pages/**/*.njk')
         .pipe(processData(data))
@@ -102,14 +111,14 @@ function processNunjucks() {
         }));
 }
 
-const createImageFormatsAndSizes = () => {
+const createAndTransferNewImages = () => {
 
     const widths = data.imageFormats.widths;
     const formats = data.imageFormats.formats;
 
-    return src('src/images-src/**/*')
-            .pipe(mode.production(gulpIf(['**/*.*', '!*.svg'], cache(sharpResponsive({
-                // includeOriginalFile: true,
+    return src('src/new-images/**/*')
+            .pipe(gulpIf(['**/*.*', '!*.svg'], cache(sharpResponsive({
+                includeOriginalFile: true,
                 formats: widths.map(width => 
                     formats.map(format => ({
                         width,
@@ -117,18 +126,18 @@ const createImageFormatsAndSizes = () => {
                         rename: { suffix: `-${width}`}
                     }))
                 ).flat()
-            })))))
+            }))))
             .pipe(dest('src/images'))
             .pipe(browserSyncInstance.reload({
                 stream: true
             }));
 }
 
-const cleanImages = () => {
-    return del(['src/images/**/*', '!src/images']);
+const cleanNewImages = () => {
+    return del(['src/new-images/**/*', '!src/new-images']);
 }
 
-const processImages = series(cleanImages, createImageFormatsAndSizes);
+const processNewImages = series(createAndTransferNewImages, cleanNewImages);
 
 function reload(cb) {
     browserSyncInstance.reload();
@@ -139,7 +148,7 @@ function watchFiles() {
     watch('src/scss/**/*.scss', processSass);
     watch(['src/pages/**/*.njk', 'src/templates/**/*.njk', 'src/data.json'], processNunjucks);
     watch('src/js/**/*.js', reload);
-    watch('src/images-src/**/*', processImages);
+    watch('src/new-images/**/*', processNewImages);
 }
 
 // function buildFiles() {
@@ -199,6 +208,6 @@ export const clearCache = (cb) => {
 
 // export const build = series(cleanDist, parallel(processSass, processNunjucks, processImages), buildFiles);
 
-export default series(parallel(processSass, processNunjucks, processImages), setupBrowserSync, watchFiles);
+export default series(parallel(processSass, processNunjucks, processNewImages), setupBrowserSync, watchFiles);
 
 // exports.deploy = deploy;
