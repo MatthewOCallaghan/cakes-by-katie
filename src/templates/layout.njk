@@ -16,6 +16,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         {% if pages[page].description %}<meta name="description" content="{{ pages[page].description }}">{% endif %}
 
+        {# Favicons (put the relevant files in root directory of website) #}
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+
         <script src="https://kit.fontawesome.com/c57fec537e.js" crossorigin="anonymous"></script>
 
     </head>
@@ -56,7 +62,7 @@
         <footer>
             <div>
                 <h3>About me</h3>
-                <p><small>I'm an aspiring and self-taught baker and cake decorator who lives in Thatcham, West Berkshire.</small></p>
+                <p><small>I'm a cake decorator based in Thatcham, West Berkshire, offering a wide range of flavours.</small></p>
             </div>
             <div>
                 <h3>Let's talk</h3>

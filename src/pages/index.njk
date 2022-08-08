@@ -13,17 +13,22 @@
 
 {% block main %}
     <div id="header-video">
-
+        <video autoplay muted loop>
+            <source src="videos/landing.mp4" type="video/mp4">
+        </video>
     </div>
     <section id="about">
             {{ pictureElement("katie.jpg", "Katie")}}
 
             <div>
-                <h1>Hi, I'm Katie…</h1>
+                {# Inner div used to vertically centre content within outer div #}
+                <div>
+                    <h1>Hi, I'm Katie…</h1>
 
-                <p>I'm a cake maker based in Thatcham, West Berkshire. I started baking and decorating cakes as a hobby from a young age with the dream that I could turn my passion into a career. Whatever your occasion let me help make it special.</p>
+                    <p>I'm a cake maker based in Thatcham, West Berkshire. I started baking and decorating cakes as a hobby from a young age with the dream that I could turn my passion into a career. Whatever your occasion let me help make it special.</p>
 
-                <p>I offer a wide range of flavours, and can cater for certain dietary requirements like dairy and gluten free.</p>
+                    <p>I offer a wide range of flavours, and can cater for certain dietary requirements like dairy and gluten free.</p>
+                <div>
             </div>
     </section>
 
@@ -35,8 +40,6 @@
             {% endfor %}
         </div>
         <a class="button" href="portfolio.html" >See more</a>
-
-        <div></div>
     </section>
 
     <section id="testimonials">
@@ -49,7 +52,13 @@
                 {% for testimonial in testimonials %}
                     <div class="swiper-slide">
                         <div class="item">
-                            <div class="image">
+                            {% set aspectRatio = mediaSizes[portfolio[testimonial.cake].images[0]].width / mediaSizes[portfolio[testimonial.cake].images[0]].height %}
+                            <div
+                                class="image {{ "landscape" if aspectRatio > 1 else "portrait" }}"
+                                {# {% if aspectRatio > 1 %}
+                                    style="aspect-ratio: {{ aspectRatio }};"
+                                {% endif %} #}
+                            >
                                 {{ pictureElement("portfolio/" + portfolio[testimonial.cake].images[0], portfolio[testimonial.cake].name) }}
                             </div>
                             <div class="quote">
