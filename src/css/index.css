@@ -104,8 +104,18 @@
 #contact .contact-card h3:first-child {
   margin-top: 0;
 }
+#contact .contact-card i {
+  margin-right: 10px;
+  font-size: 70%;
+}
 #contact .contact-card a {
   color: #fff;
+  text-decoration: underline;
+}
+@media (hover: hover) {
+  #contact .contact-card a:hover {
+    text-decoration: none;
+  }
 }
 #contact .contact-card > div > div {
   border: 2px solid #000;
@@ -187,6 +197,7 @@
   height: 100%;
   display: flex;
   justify-content: center;
+  aspect-ratio: var(--aspect-ratio);
 }
 #testimonials .swiper .item .image picture {
   display: flex;
@@ -240,13 +251,27 @@
   }
   #testimonials .swiper .item {
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
+    /*
+        Layout is slightly complex.
+        We want text to take up whatever vertical height it needs.
+        Then display image as large as possible in remaining space.
+        However if those two combined don't take up full height, centre them vertically.
+
+        We achieve this by applying a small height on image that we know would always be safe,
+        and adding flex grow to it so that it expands as much as possible.
+
+        However, depending on the aspect ratio of the image, the containing div may grow to be far
+        taller than the image. This would cause the text to be pushed to bottom of slide with
+        a large gap above it to the image. To solve this we put a max-height on the image container
+        based on its aspect ratio.
+    */
   }
   #testimonials .swiper .item .image {
-    max-width: none;
-    max-height: none;
+    max-width: 100%;
+    max-height: calc((100vw - 90px) / var(--aspect-ratio));
     width: auto;
-    height: 40%;
+    height: 20%;
     flex-grow: 1;
   }
   #testimonials .swiper .item .quote {

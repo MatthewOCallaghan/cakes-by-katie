@@ -133,8 +133,18 @@
             }
         }
 
+        i {
+            margin-right: 10px;
+            font-size: 70%;
+        }
+
         a {
             color: #fff;
+            text-decoration: underline;
+
+            @include mixins.hover {
+                text-decoration: none;
+            }
         }
 
         > div > div {
@@ -196,18 +206,25 @@
     background: variables.$pink;
     padding: 20px 0;
 
+    // Left and right padding applied to each item in slideshow
+    $itemHorizontalPadding: 45px;
+
     .swiper {
 
+        // Needs a fixed height for slideshow to work
         height: 300px;
 
         .swiper-wrapper {
+            // Need to allow for pagination bullets
             height: calc(100% - 13px);
         }
 
         .swiper-button-prev, .swiper-button-next {
+            // Make arrow buttons white
             color: #fff;
         }
 
+        // Style pagination bullets
         .swiper-pagination {
             position: static;
             margin-top: 5px;
@@ -217,24 +234,27 @@
             }
         }
 
-        
-
         .item {
             height: 100%;
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 0 45px 10px;
+            padding: 0 $itemHorizontalPadding 10px;
             gap: 40px;
             overflow: hidden;
+
+            // Item displayed with horizontal layout on desktop
 
             .image {
                 max-width: 40%;
                 height: 100%;
                 display: flex;
                 justify-content: center;
-                // align-items: center;
+                
+                // --aspect-ratio variable gets set in style attribute
+                // This makes sure div is no wider than image on Safari and Firefox
+                aspect-ratio: var(--aspect-ratio);
 
                 picture {
                     display: flex;
@@ -255,46 +275,11 @@
                 color: #6d6d6d;
 
                 @include mixins.testimonial-quote;
-
-                // blockquote {
-                //     text-align: center;
-                //     quotes: '\201c' '\201d';
-                //     position: relative;
-                //     margin: 0;
-                //     padding: 15px;
-                //     font-style: italic;
-                //     font-weight: 400;
-
-                //     &::before, &::after {
-                //         position: absolute;
-                //         color: white;
-                //         font-family: 'Licorice', cursive;
-                //         font-size: 300%;
-                //     }
-
-                //     &::before {
-                //         content: open-quote;
-                //         top: 0;
-                //         left: 0;
-                //     }
-
-                //     &::after {
-                //         content: close-quote;
-                //         bottom: 0;
-                //         right: 0;
-                //         line-height: 0px;
-                //     }
-                // }
-
-                // span {
-                //     display: block;
-                //     text-align: right;
-                //     padding-right: 10px;
-                // }
             }
         }
     }
 
+    // For narrow screens, show item vertically with image above quote
     @media only screen and (max-width: 900px) {
 
         .swiper {
@@ -302,13 +287,31 @@
 
             .item {
                 flex-direction: column;
-                gap: 20px;
+                gap: 10px;
 
+                /*
+                    Layout is slightly complex.
+                    We want text to take up whatever vertical height it needs.
+                    Then display image as large as possible in remaining space.
+                    However if those two combined don't take up full height, centre them vertically.
+
+                    We achieve this by applying a small height on image that we know would always be safe,
+                    and adding flex grow to it so that it expands as much as possible.
+                    
+                    However, depending on the aspect ratio of the image, the containing div may grow to be far
+                    taller than the image. This would cause the text to be pushed to bottom of slide with
+                    a large gap above it to the image. To solve this we put a max-height on the image container
+                    based on its aspect ratio.
+                */
                 .image {
-                    max-width: none;
-                    max-height: none;
+                    max-width: 100%;
+
+                    // Max height = max width / aspect ratio
+                    // --aspect-ratio variable gets set in style attribute
+                    // Max width = Screen width - item left padding - item right padding
+                    max-height: calc((100vw - 2 * $itemHorizontalPadding) / var(--aspect-ratio));
                     width: auto;
-                    height: 40%;
+                    height: 20%;
                     flex-grow: 1;
                 }
 
@@ -319,6 +322,7 @@
         }
     }
 
+    // Needs a greater height on the narrowest of screens
     @media only screen and (max-width: 700px) {
 
         .swiper {
@@ -326,6 +330,7 @@
         }
     }
 
+    // Can allow a greater gap between arrow buttons and screen edge on wide devices
     @media only screen and (min-width: 1150px) {
 
         .swiper-button-prev {
