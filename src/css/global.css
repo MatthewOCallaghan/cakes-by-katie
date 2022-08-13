@@ -416,6 +416,7 @@ header nav .logo-container .logo-background {
   left: 0;
   top: 5px;
   height: 130px;
+  width: 100%;
   z-index: 1;
   border-radius: 130px;
 }
