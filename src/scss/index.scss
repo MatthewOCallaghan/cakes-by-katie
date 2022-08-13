@@ -3,6 +3,7 @@
 
 #header-video {
     width: 100%;
+    background: #fff;
 
     video {
         width: 100%;
@@ -16,7 +17,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px 40px;
-    background: linear-gradient(to bottom, variables.$pink, #fff0);
+    background: linear-gradient(to bottom, variables.$pink, #fff);
 
     picture {
         width: 40%;
@@ -50,6 +51,7 @@
     align-items: center;
     gap: 20px;
     padding-top: 5vw;
+    background: #fff;
 
     #grid {
         display: grid;
@@ -70,6 +72,122 @@
             object-position: center;
             width: 100%;
             height: 100%;
+        }
+    }
+}
+
+#contact {
+
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    // Background image
+    img {
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+    }
+
+    .contact-card {
+        max-width: 1400px;
+        min-width: min(1000px, 90%);
+        display: grid;
+        grid-template-columns: 50% 50%;
+        box-shadow: 0px 0px 11px 1px #7e7e7e78;
+
+        $card-padding: 20px;
+        $border-width: 2px;
+
+        // Background of first half
+        $colour1: variables.$pink;
+        // Background of second half
+        $colour2: #000;
+
+        h2, h3 {
+            font-family: variables.$handwriting;
+            margin: 0;
+            text-align: center;
+        }
+
+        // Heading in left card
+        h2 {
+            font-size: 3em;
+            color: $colour2;
+        }
+
+        // Heading in right card
+        h3 {
+            font-size: 2.34em;
+            margin: 30px 0 5px;
+            color: $colour1;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+        a {
+            color: #fff;
+        }
+
+        > div > div {
+            border: $border-width solid $colour2;
+            padding: $card-padding;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contact-card-first-half {
+            padding: $card-padding 0 $card-padding $card-padding;
+            background: $colour1;
+
+            .contact-card-first-half-inner {
+                border-right: none;
+            }
+        }
+
+        .contact-card-second-half {
+            padding: $card-padding $card-padding $card-padding 0;
+            background: $colour2;
+
+            .contact-card-second-half-inner {
+                border-color: $colour1;
+                border-left: none; 
+            }
+            
+        }
+
+        @media only screen and (max-width: 650px) {
+            grid-template-columns: auto;
+            grid-template-rows: auto auto;
+
+            .contact-card-first-half {
+                padding: $card-padding $card-padding 0;
+
+                .contact-card-first-half-inner {
+                    border-right: $border-width solid $colour2;
+                    border-bottom: none;
+                }
+            }
+
+            .contact-card-second-half {
+                padding: 0 $card-padding $card-padding;
+
+                .contact-card-second-half-inner {
+                    border-left: $border-width solid $colour1;
+                    border-top: none;
+                }
+            }
         }
     }
 }

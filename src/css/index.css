@@ -1,6 +1,7 @@
 @charset "UTF-8";
 #header-video {
   width: 100%;
+  background: #fff;
 }
 #header-video video {
   width: 100%;
@@ -13,7 +14,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px 40px;
-  background: linear-gradient(to bottom, #F7CAC9, #fff0);
+  background: linear-gradient(to bottom, #F7CAC9, #fff);
 }
 #about picture {
   width: 40%;
@@ -42,6 +43,7 @@
   align-items: center;
   gap: 20px;
   padding-top: 5vw;
+  background: #fff;
 }
 #portfolio #grid {
   display: grid;
@@ -60,6 +62,94 @@
   object-position: center;
   width: 100%;
   height: 100%;
+}
+
+#contact {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+#contact img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+#contact .contact-card {
+  max-width: 1400px;
+  min-width: min(1000px, 90%);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  box-shadow: 0px 0px 11px 1px #7e7e7e78;
+}
+#contact .contact-card h2, #contact .contact-card h3 {
+  font-family: "Licorice", sans-serif;
+  margin: 0;
+  text-align: center;
+}
+#contact .contact-card h2 {
+  font-size: 3em;
+  color: #000;
+}
+#contact .contact-card h3 {
+  font-size: 2.34em;
+  margin: 30px 0 5px;
+  color: #F7CAC9;
+}
+#contact .contact-card h3:first-child {
+  margin-top: 0;
+}
+#contact .contact-card a {
+  color: #fff;
+}
+#contact .contact-card > div > div {
+  border: 2px solid #000;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#contact .contact-card .contact-card-first-half {
+  padding: 20px 0 20px 20px;
+  background: #F7CAC9;
+}
+#contact .contact-card .contact-card-first-half .contact-card-first-half-inner {
+  border-right: none;
+}
+#contact .contact-card .contact-card-second-half {
+  padding: 20px 20px 20px 0;
+  background: #000;
+}
+#contact .contact-card .contact-card-second-half .contact-card-second-half-inner {
+  border-color: #F7CAC9;
+  border-left: none;
+}
+@media only screen and (max-width: 650px) {
+  #contact .contact-card {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+  #contact .contact-card .contact-card-first-half {
+    padding: 20px 20px 0;
+  }
+  #contact .contact-card .contact-card-first-half .contact-card-first-half-inner {
+    border-right: 2px solid #000;
+    border-bottom: none;
+  }
+  #contact .contact-card .contact-card-second-half {
+    padding: 0 20px 20px;
+  }
+  #contact .contact-card .contact-card-second-half .contact-card-second-half-inner {
+    border-left: 2px solid #F7CAC9;
+    border-top: none;
+  }
 }
 
 #testimonials {

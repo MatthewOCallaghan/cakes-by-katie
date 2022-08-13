@@ -39,7 +39,7 @@
 
             <nav>
                 <a href="{{ "#about" if page == "index" else "index.html#about" }}">About</a>
-                <a href="contact.html">Contact</a>
+                <a href="{{ "#contact" if page == "index" else "index.html#contact" }}">Contact</a>
                 <a class="logo-container" href="index.html">
                     <div class="logo-background">
                         <img src="images/logo.svg" alt="Logo" height="100%" width="100%" />
@@ -73,6 +73,8 @@
                     <p><small><a href="mailto:katie@cakesbykatie.co.uk">katie@cakesbykatie.co.uk</a></small></p>
                     <i class="fab fa-instagram" aria-hidden="true"></i>
                     <p><small><a href="https://www.instagram.com/cakesbykatieoc" target="_blank">@cakesbykatieoc</a></small></p>
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                    <p><small><a href="https://www.facebook.com/cakesbykatieoc" target="_blank">@cakesbykatieoc</a></small></p>
                 </div>
             </div>
             <div class="copyright-container">
