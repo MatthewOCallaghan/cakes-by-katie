@@ -1,3 +1,40 @@
+
+/* -------------------------------------------------------------------------- */
+/*         Copied from utils folder. Not sure how best to avoid this.         */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------- images.js ------------------------------- */
+
+// Get srcset attribute for <source> element
+const getSrcsetAttribute = (sizes, name, extension) =>
+    sizes.map(size => `${name}-${size}.${extension} ${size}w`).join(', ');
+
+
+// Get sizes attribute for <source> element
+const getSizesAttribute = (sizes) =>
+    sizes.slice(0, sizes.length - 1).map(size => `(max-width: ${size}px) ${size}px`).concat(`${sizes[sizes.length - 1]}px`).join(', ');
+
+// These should go from smallest file size to largest
+const FORMATS = ["avif", "webp"];
+
+const WIDTHS = [640, 768, 1024, 1366, 1600, 1920];
+
+/* ---------------------------- End of images.js ---------------------------- */
+
+/* -------------------------------- files.js -------------------------------- */
+
+// Get filename without extension
+const removeExtension = (filename) =>
+    filename.split('.')[0];
+
+/* ----------------------------- End of files.js ---------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                             End of copied code                             */
+/* -------------------------------------------------------------------------- */
+
+
+
 const modal = document.querySelector('#portfolio-modal');
 
 const MODAL_OPEN_CLASS = 'portfolio-modal-open';
@@ -102,7 +139,7 @@ const setSelectedMedia = (isVideo, filename, name) => {
 
     if (isVideo) {
         const video = document.createElement('video');
-        video.src = `/videos/${filename}`;
+        video.src = `videos/portfolio/${filename}`;
         video.controls = false;
         video.loop = true;
         video.autoplay = true;
@@ -130,8 +167,17 @@ const removeAllChildren = element => {
 const createPictureElement = (container, filename, alt) => {
     const picture = document.createElement('picture');
     container.appendChild(picture);
+
+    FORMATS.forEach(format => {
+        const source = document.createElement('source');
+        source.type = `image/${format}`;
+        source.srcset = getSrcsetAttribute(WIDTHS, `images/portfolio/${removeExtension(filename)}`, format);
+        source.sizes = getSizesAttribute(WIDTHS);
+        picture.appendChild(source);
+    });
+
     const img = document.createElement('img');
-    img.src = `/images/portfolio/${filename}`;
+    img.src = `images/portfolio/${filename}`;
     img.alt = alt;
     picture.appendChild(img);
 }

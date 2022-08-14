@@ -1,5 +1,3 @@
-
-
 // Get srcset attribute for <source> element
 export const getSrcsetAttribute = (sizes, name, extension) =>
     sizes.map(size => `${name}-${size}.${extension} ${size}w`).join(', ');

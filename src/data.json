@@ -116,15 +116,15 @@
         }
       ]
     },
-    "pink-ombré-daisies": {
+    "pink-ombre-daisies": {
       "images": [
-        "Pink-Ombré-Daisies.jpg"
+        "Pink-Ombre-Daisies.jpg"
       ],
       "name": "Pink Ombré with Daisies ",
       "videos": [
         {
-          "thumb": "Pink-Ombré-Daisies.jpg",
-          "file": "Pink-Ombré-Daisies.mp4"
+          "thumb": "Pink-Ombre-Daisies.jpg",
+          "file": "Pink-Ombre-Daisies.mp4"
         }
       ]
     },
@@ -248,7 +248,7 @@
     },
     "oreo-cupcakes": {
       "images": [
-        "Oreo-Cupcakes.jpg"
+        "Oreo-cupcakes.jpg"
       ],
       "name": "Oreo Cupcakes",
       "description": "Twist off the wrapper, lick off the icing, dunk in the milk - just like a real Oreo."
@@ -278,7 +278,7 @@
     },
     "parker-penguin ": {
       "images": [
-        "Parker-Penguin.jpg"
+        "Parker-penguin.jpg"
       ],
       "name": "Parker Penguin"
     },
