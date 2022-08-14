@@ -71,148 +71,165 @@
     z-index: 10;
     background: #000000e6;
     display: none;
-    justify-content: center;
-    align-items: center;
+    grid-template-rows: min-content 1fr;
     color: #fff;
 
-    #modal-close {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        background: none;
-        padding: 8px 15px;
-        color: #fff;
-        cursor: pointer;
-        border: 1px solid #fff;
-        transition: all .3s;
+    .close-button-container {
 
-        @include mixins.hover {
-            border-color: variables.$pink;
-            color: variables.$pink;
+        padding: 20px;
+        display: flex;
+        justify-content: flex-end;
+
+        #modal-close {
+            background: none;
+            padding: 8px 15px;
+            color: #fff;
+            cursor: pointer;
+            border: 1px solid #fff;
+            transition: all .3s;
+
+            @include mixins.hover {
+                border-color: variables.$pink;
+                color: variables.$pink;
+            }
         }
     }
 
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 50px;
-        width: 95%;
+    .scrollable-container {
 
-        .images {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        height: 100%;
+        max-height: 100%;
+        overflow-y: auto;
 
-            #selected-image {
-                // max-width: 100%;
-                // max-height: 60vh;
-
-                img, video {
-                    max-width: 100%;
-                    max-height: 60vh;//100%;
-                    display: block;
-                    margin: auto;
-
-                    border: 1px solid variables.$pink;
-                }
-            }
-
-            #thumbs {
-                display: flex;
-                height: 80px;
-                gap: 15px;
-                margin-top: 20px;
-                max-width: 100%;
-                overflow-x: auto;
-                overflow-y: hidden;
-
-                button {
-                    background: none;
-                    padding: 0;
-                    border: none;
-                    cursor: pointer;
-
-                    &.video-thumb {
-
-                        position: relative;
-
-                        &::before {
-                            $diameter: 36px;
-                            content: "";
-                            display: block;
-                            position: absolute;
-                            width: $diameter;
-                            height: $diameter;
-                            top: calc(50% - ($diameter / 2));
-                            left: calc(50% - ($diameter / 2));
-                            background: #000000d1;
-                            border-radius: 100%;
-                        }
-
-                        &::after {
-                            $height: 16px;
-                            $width: 10px;
-                            content: "";
-                            position: absolute;
-                            width: 0px;
-                            height: 0px;
-                            top: calc(50% - ($height / 2));
-                            left: calc(50% - ($width / 3));
-                            border-top: calc($height / 2) solid transparent;
-                            border-bottom: calc($height / 2) solid transparent;
-                            border-left: $width solid #ffffffd1;
-                        }
-
-                    }
-
-                    img {
-                        height: 80px;
-                        width: auto;
-
-                        border: 1px solid #fff;//variables.$pink;
-                    }
-                }
-                
-            }
-        }
-
-        .text {
-            text-align: center;
+        .container {
             display: flex;
             flex-direction: column;
             justify-content: center;
-
-            h1 {
-                font-family: variables.$handwriting;
-                font-size: 3em;
-                color: variables.$pink;
-                margin-bottom: 0;
+            padding: 0 5%;
+            min-height: 100%;
+            padding-bottom: 20px;
+            
+            gap: 50px;
+            @media only screen and (max-width: 800px) {
+                gap: 30px;
             }
-
-            #testimonial {
-                @include mixins.testimonial-quote;
-                font-size: 90%;
-            }
-        }
-
-        @media only screen and (min-width: 1200px) {
-            flex-direction: row;
 
             .images {
-                max-width: 45%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                #selected-image {
+                    // max-width: 100%;
+                    // max-height: 60vh;
+
+                    img, video {
+                        max-width: 100%;
+                        max-height: 60vh;//100%;
+                        display: block;
+                        margin: auto;
+
+                        border: 1px solid variables.$pink;
+                    }
+                }
+
+                #thumbs {
+                    display: flex;
+                    height: 80px;
+                    gap: 15px;
+                    margin-top: 20px;
+                    max-width: 100%;
+                    overflow-x: auto;
+                    overflow-y: hidden;
+
+                    button {
+                        background: none;
+                        padding: 0;
+                        border: none;
+                        cursor: pointer;
+
+                        &.video-thumb {
+
+                            position: relative;
+
+                            &::before {
+                                $diameter: 36px;
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                width: $diameter;
+                                height: $diameter;
+                                top: calc(50% - ($diameter / 2));
+                                left: calc(50% - ($diameter / 2));
+                                background: #000000d1;
+                                border-radius: 100%;
+                            }
+
+                            &::after {
+                                $height: 16px;
+                                $width: 10px;
+                                content: "";
+                                position: absolute;
+                                width: 0px;
+                                height: 0px;
+                                top: calc(50% - ($height / 2));
+                                left: calc(50% - ($width / 3));
+                                border-top: calc($height / 2) solid transparent;
+                                border-bottom: calc($height / 2) solid transparent;
+                                border-left: $width solid #ffffffd1;
+                            }
+
+                        }
+
+                        img {
+                            height: 80px;
+                            width: auto;
+
+                            border: 1px solid #fff;//variables.$pink;
+                        }
+                    }
+                    
+                }
             }
 
             .text {
-                max-width: 40%;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                h1 {
+                    font-family: variables.$handwriting;
+                    font-size: 3em;
+                    color: variables.$pink;
+                    margin: 0;
+                }
+
+                #testimonial {
+                    @include mixins.testimonial-quote;
+                    font-size: 90%;
+                }
             }
-        }
 
-        &.title-only {
-            flex-direction: column;
+            @media only screen and (min-width: 1200px) {
+                flex-direction: row;
 
-            .images, .text {
-                max-width: none;
+                .images {
+                    max-width: 45%;
+                }
+
+                .text {
+                    max-width: 40%;
+                }
+            }
+
+            &.title-only {
+                flex-direction: column;
+
+                .images, .text {
+                    max-width: none;
+                }
             }
         }
     }
@@ -222,6 +239,6 @@ body.portfolio-modal-open {
     overflow: hidden;
 
     #portfolio-modal {
-        display: flex;
+        display: grid;
     }
 }

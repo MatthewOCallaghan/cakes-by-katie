@@ -43,14 +43,15 @@
   z-index: 10;
   background: #000000e6;
   display: none;
-  justify-content: center;
-  align-items: center;
+  grid-template-rows: min-content 1fr;
   color: #fff;
 }
-#portfolio-modal #modal-close {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+#portfolio-modal .close-button-container {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+#portfolio-modal .close-button-container #modal-close {
   background: none;
   padding: 8px 15px;
   color: #fff;
@@ -59,31 +60,44 @@
   transition: all 0.3s;
 }
 @media (hover: hover) {
-  #portfolio-modal #modal-close:hover {
+  #portfolio-modal .close-button-container #modal-close:hover {
     border-color: #F7CAC9;
     color: #F7CAC9;
   }
 }
-#portfolio-modal .container {
+#portfolio-modal .scrollable-container {
+  height: 100%;
+  max-height: 100%;
+  overflow-y: auto;
+}
+#portfolio-modal .scrollable-container .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0 5%;
+  min-height: 100%;
+  padding-bottom: 20px;
   gap: 50px;
-  width: 95%;
 }
-#portfolio-modal .container .images {
+@media only screen and (max-width: 800px) {
+  #portfolio-modal .scrollable-container .container {
+    gap: 30px;
+  }
+}
+#portfolio-modal .scrollable-container .container .images {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
-#portfolio-modal .container .images #selected-image img, #portfolio-modal .container .images #selected-image video {
+#portfolio-modal .scrollable-container .container .images #selected-image img, #portfolio-modal .scrollable-container .container .images #selected-image video {
   max-width: 100%;
   max-height: 60vh;
   display: block;
   margin: auto;
   border: 1px solid #F7CAC9;
 }
-#portfolio-modal .container .images #thumbs {
+#portfolio-modal .scrollable-container .container .images #thumbs {
   display: flex;
   height: 80px;
   gap: 15px;
@@ -92,16 +106,16 @@
   overflow-x: auto;
   overflow-y: hidden;
 }
-#portfolio-modal .container .images #thumbs button {
+#portfolio-modal .scrollable-container .container .images #thumbs button {
   background: none;
   padding: 0;
   border: none;
   cursor: pointer;
 }
-#portfolio-modal .container .images #thumbs button.video-thumb {
+#portfolio-modal .scrollable-container .container .images #thumbs button.video-thumb {
   position: relative;
 }
-#portfolio-modal .container .images #thumbs button.video-thumb::before {
+#portfolio-modal .scrollable-container .container .images #thumbs button.video-thumb::before {
   content: "";
   display: block;
   position: absolute;
@@ -112,7 +126,7 @@
   background: #000000d1;
   border-radius: 100%;
 }
-#portfolio-modal .container .images #thumbs button.video-thumb::after {
+#portfolio-modal .scrollable-container .container .images #thumbs button.video-thumb::after {
   content: "";
   position: absolute;
   width: 0px;
@@ -123,27 +137,27 @@
   border-bottom: 8px solid transparent;
   border-left: 10px solid #ffffffd1;
 }
-#portfolio-modal .container .images #thumbs button img {
+#portfolio-modal .scrollable-container .container .images #thumbs button img {
   height: 80px;
   width: auto;
   border: 1px solid #fff;
 }
-#portfolio-modal .container .text {
+#portfolio-modal .scrollable-container .container .text {
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-#portfolio-modal .container .text h1 {
+#portfolio-modal .scrollable-container .container .text h1 {
   font-family: "Licorice", sans-serif;
   font-size: 3em;
   color: #F7CAC9;
-  margin-bottom: 0;
+  margin: 0;
 }
-#portfolio-modal .container .text #testimonial {
+#portfolio-modal .scrollable-container .container .text #testimonial {
   font-size: 90%;
 }
-#portfolio-modal .container .text #testimonial blockquote {
+#portfolio-modal .scrollable-container .container .text #testimonial blockquote {
   text-align: center;
   quotes: "“" "”";
   position: relative;
@@ -152,43 +166,43 @@
   font-style: italic;
   font-weight: 400;
 }
-#portfolio-modal .container .text #testimonial blockquote::before, #portfolio-modal .container .text #testimonial blockquote::after {
+#portfolio-modal .scrollable-container .container .text #testimonial blockquote::before, #portfolio-modal .scrollable-container .container .text #testimonial blockquote::after {
   position: absolute;
   color: white;
   font-family: "Licorice", cursive;
   font-size: 300%;
 }
-#portfolio-modal .container .text #testimonial blockquote::before {
+#portfolio-modal .scrollable-container .container .text #testimonial blockquote::before {
   content: open-quote;
   top: 0;
   left: 0;
 }
-#portfolio-modal .container .text #testimonial blockquote::after {
+#portfolio-modal .scrollable-container .container .text #testimonial blockquote::after {
   content: close-quote;
   bottom: 0;
   right: 0;
   line-height: 0px;
 }
-#portfolio-modal .container .text #testimonial span {
+#portfolio-modal .scrollable-container .container .text #testimonial span {
   display: block;
   text-align: right;
   padding-right: 10px;
 }
 @media only screen and (min-width: 1200px) {
-  #portfolio-modal .container {
+  #portfolio-modal .scrollable-container .container {
     flex-direction: row;
   }
-  #portfolio-modal .container .images {
+  #portfolio-modal .scrollable-container .container .images {
     max-width: 45%;
   }
-  #portfolio-modal .container .text {
+  #portfolio-modal .scrollable-container .container .text {
     max-width: 40%;
   }
 }
-#portfolio-modal .container.title-only {
+#portfolio-modal .scrollable-container .container.title-only {
   flex-direction: column;
 }
-#portfolio-modal .container.title-only .images, #portfolio-modal .container.title-only .text {
+#portfolio-modal .scrollable-container .container.title-only .images, #portfolio-modal .scrollable-container .container.title-only .text {
   max-width: none;
 }
 
@@ -196,5 +210,5 @@ body.portfolio-modal-open {
   overflow: hidden;
 }
 body.portfolio-modal-open #portfolio-modal {
-  display: flex;
+  display: grid;
 }

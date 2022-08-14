@@ -29,6 +29,16 @@
         <header>
             
             <div id="mobile-nav-header">
+                <div class="mobile-logo-container">
+                    {% if page === "index" %}
+                        <img src="images/cakes-by-katie.svg" alt="Logo" height="100%" width="auto" />
+                    {% else %}
+                        <a href="index.html">
+                            <img src="images/cakes-by-katie.svg" alt="Logo" height="100%" width="auto" />
+                        </a>
+                    {% endif %}
+                </div>
+
                 {# Hamburger (https://jonsuh.com/hamburgers/) #}
                 <button id="nav-toggle" class="hamburger">
                     <span class="hamburger-box">
