@@ -10,6 +10,18 @@
     }
   },
   "portfolio": {
+    "birthday-books": {
+      "images": [
+        "Birthday-Books.jpg"
+      ],
+      "name": "Birthday Books"
+    },
+    "flower-elegance": {
+      "images": [
+        "Flower-Elegance.jpg"
+      ],
+      "name": "Flower Elegance"
+    },
     "golden-anniversary": {
       "images": [
         "Golden-Anniversary.jpg"
@@ -58,13 +70,14 @@
     },
     "shades-of-pink-and-gold-fault-line": {
       "images": [
-        "Shades-of-Pink-and-Gold-Fault-Line.jpg"
+        "Shades-of-Pink-and-Gold-Fault-Line-Balls.jpg",
+        "Shades-of-Pink-and-Gold-Fault-Line-Flowers.jpg"
       ],
       "name": "Shades of Pink and Gold Fault Line",
       "videos": [
         {
-          "thumb": "Shades-of-Pink-and-Gold-Fault-Line.jpg",
-          "file": "Shades-of-Pink-and-Gold-Fault-Line.mp4"
+          "thumb": "Shades-of-Pink-and-Gold-Fault-Line-Balls.jpg",
+          "file": "Shades-of-Pink-and-Gold-Fault-Line-Balls.mp4"
         }
       ]
     },
