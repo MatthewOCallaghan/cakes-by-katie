@@ -23,6 +23,7 @@ import htmlPrettify from 'gulp-html-prettify';
 import processData from 'gulp-data';
 import sharpResponsive from 'gulp-sharp-responsive';
 import sizeOf from 'image-size';
+import getVideoDimensions from 'get-media-dimensions';
 import { FORMATS, getSizesAttribute, getSrcsetAttribute, WIDTHS } from './utils/images';
 import { removeExtension } from './utils/files';
 
@@ -44,6 +45,8 @@ function setupBrowserSync(cb) {
     cb();
 }
 
+
+
 function processSass() {
     return src('src/scss/**/*.scss')
             .pipe(sass({ includePaths: ['node_modules'] }))
@@ -51,6 +54,45 @@ function processSass() {
             .pipe(browserSyncInstance.reload({
                 stream: true
             }));
+}
+
+function setupData() {
+    data.imageFormats = {
+        widths: WIDTHS,
+        formats: FORMATS,
+        defaultFormat: FORMATS[FORMATS.length - 1]
+    };
+    
+    // Collect testimonials separately to make them easier to process
+    data.testimonials = Object.entries(data.portfolio).reduce((acc, [cake, { testimonial }]) => testimonial ? acc.concat({ cake, ...testimonial }) : acc, []);
+
+    // Get size of each portfolio image and video
+    let videoPromises = [];
+
+    for (const cake in data.portfolio) {
+        const { images, videos } = data.portfolio[cake];
+        images.forEach((src, index) => {
+            const { width, height } = sizeOf(`src/images/portfolio/${src}`); // sizeOf also gets orientation and file type
+            data.portfolio[cake].images[index] = { src, aspectRatio: width / height }; 
+        });
+        if (videos) {
+            videos.forEach(({ file, thumb }, index) => {
+                // Get thumb aspect ratio if it is not one of the images we have already measured
+                if (!images.find(({ src }) => src === thumb)) {
+                    const { width, height } = sizeOf(`src/images/portfolio/${src}`);
+                    data.portfolio[cake].videos[index].thumbAspectRatio = width / height;
+                }
+                videoPromises.push(
+                    getVideoDimensions(`src/videos/portfolio/${file}`, 'video') // getVideoDimensions also gets duration
+                        .then(({ width, height }) => {
+                            data.portfolio[cake].videos[index].aspectRatio = width / height;
+                        })
+                );
+            });
+        }
+    }
+
+    return Promise.all(videoPromises);
 }
 
 function processNunjucks() {
@@ -66,50 +108,19 @@ function processNunjucks() {
         environment.addFilter('stringifyElements', array => {
             return array.map(JSON.stringify);
         });
-
-        // Get object with details of specific project from work array
-        // environment.addFilter('getWorkInfo', function(work, page) {
-        //     return work.filter(workItem => workItem.page === page)[0];
-        // });
-
-        // Count properties in an object
-        // Used in work-template.njk
-        // environment.addFilter('countProperties', function(obj) {
-        //     return Object.keys(obj).length;
-        // });
-
-    }
-
-    data.imageFormats = {
-        widths: WIDTHS,
-        formats: FORMATS,
-        defaultFormat: FORMATS[FORMATS.length - 1]
-    };
-
-    data.testimonials = Object.entries(data.portfolio).reduce((acc, [cake, { testimonial }]) => testimonial ? acc.concat({ cake, ...testimonial }) : acc, []);
-
-    // Add size of each portfolio image used to data object
-    data.mediaSizes = {};
-    for (const cake in data.portfolio) {
-        const { images } = data.portfolio[cake];
-        images.forEach(image => {
-            if (!data.mediaSizes[image]) {
-                data.mediaSizes[image] = sizeOf(`src/images/portfolio/${image}`);
-            }
-        })
     }
 
     return src('src/pages/**/*.njk')
-        .pipe(processData(data))
-        .pipe(nunjucksRender({
-            path: ['src/templates/'],
-            manageEnv: manageEnvironment
-        }))
-        .pipe(htmlPrettify()) // Corrects indentation to make HTML more readable
-        .pipe(dest('src'))
-        .pipe(browserSyncInstance.reload({
-            stream: true
-        }));
+            .pipe(processData(data))
+            .pipe(nunjucksRender({
+                path: ['src/templates/'],
+                manageEnv: manageEnvironment
+            }))
+            .pipe(htmlPrettify()) // Corrects indentation to make HTML more readable
+            .pipe(dest('src'))
+            .pipe(browserSyncInstance.reload({
+                stream: true
+            }));
 }
 
 const createAndTransferNewImages = () => {
@@ -200,8 +211,8 @@ export const clearCache = (cb) => {
     return cache.clearAll(cb);
 }
 
-export const build = series(cleanDist, parallel(processSass, series(processNewImages, processNunjucks)), buildFiles);
+export const build = series(cleanDist, parallel(processSass, series(processNewImages, setupData, processNunjucks)), buildFiles);
 
-export default series(parallel(processSass, series(processNewImages, processNunjucks)), setupBrowserSync, watchFiles);
+export default series(parallel(processSass, series(processNewImages, setupData, processNunjucks)), setupBrowserSync, watchFiles);
 
 exports.deploy = deploy;

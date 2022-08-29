@@ -43,6 +43,7 @@
   },
   "dependencies": {
     "fancy-log": "^2.0.0",
+    "get-media-dimensions": "^2.0.2",
     "gulp-imagemin": "^7.1.0",
     "image-size": "^1.0.2",
     "normalize.css": "^8.0.1",

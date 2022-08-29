@@ -43,7 +43,7 @@ const openModal = ({ target }) => {
 
     const button = target.closest('button');
     
-    const images = button.getAttribute('data-images').split(',');
+    const images = button.getAttribute('data-images').split(';').map(JSON.parse);
     const name = button.getAttribute('data-name');
     const description = button.getAttribute('data-description');
     const videos = button.getAttribute('data-videos')?.split(';').map(JSON.parse) ?? [];
@@ -54,7 +54,7 @@ const openModal = ({ target }) => {
     // Images and videos
     // Initial selected image/video
     if (videos.length > 0) {
-        setSelectedVideo(videos[0].file);
+        setSelectedVideo(videos[0]);
     } else {
         setSelectedImage(images[0], name);
     }    
@@ -65,20 +65,24 @@ const openModal = ({ target }) => {
         removeAllChildren(thumbs);
 
         // Videos
-        videos.forEach(({ file, thumb }) => {
+        videos.forEach(video => {
             const button = document.createElement('button');
+            button.style.aspectRatio = video.thumbAspectRatio ?? images.find(({ src }) => src === video.thumb)?.aspectRatio;
             button.classList.add('video-thumb');
-            button.addEventListener('click', () => setSelectedVideo(file));
+            button.setAttribute('aria-label', 'View video');
+            button.addEventListener('click', () => setSelectedVideo(video));
             thumbs.appendChild(button);
-            createPictureElement(button, thumb, name);
+            createPictureElement(button, video.thumb, name);
         });
 
         // Images
-        images.forEach(image => {
+        images.forEach((image) => {
             const button = document.createElement('button');
+            button.style.aspectRatio = image.aspectRatio;
+            button.setAttribute('aria-label', 'View image');
             button.addEventListener('click', () => setSelectedImage(image, name));
             thumbs.appendChild(button);
-            createPictureElement(button, image, name);
+            createPictureElement(button, image.src, name);
         });
         thumbs.style.display = 'flex';
     } else {
@@ -133,9 +137,10 @@ document.querySelectorAll('.portfolio-grid button.grid-item').forEach(element =>
     element.addEventListener('click', openModal);
 });
 
-const setSelectedMedia = (isVideo, filename, name) => {
+const setSelectedMedia = (isVideo, filename, aspectRatio, name) => {
     const selectedImage = modal.querySelector('#selected-image');
     removeAllChildren(selectedImage);
+    selectedImage.style.setProperty('--aspect-ratio', aspectRatio);
 
     if (isVideo) {
         const video = document.createElement('video');
@@ -150,12 +155,12 @@ const setSelectedMedia = (isVideo, filename, name) => {
     }
 }
 
-const setSelectedImage = (filename, name) => {
-    setSelectedMedia(false, filename, name);    
+const setSelectedImage = ({ src, aspectRatio }, name) => {
+    setSelectedMedia(false, src, aspectRatio, name);    
 }
 
-const setSelectedVideo = (filename) => {
-    setSelectedMedia(true, filename);
+const setSelectedVideo = ({ file, aspectRatio }) => {
+    setSelectedMedia(true, file, aspectRatio);
 }
 
 const removeAllChildren = element => {

@@ -17,9 +17,9 @@
             {% for key, item in portfolio %}
                 <button
                     class="grid-item"
-                    style="aspect-ratio: {{ mediaSizes[item.images[0]].width / mediaSizes[item.images[0]].height }};"
+                    style="aspect-ratio: {{ item.images[0].aspectRatio }};"
                     data-name="{{ item.name }}"
-                    data-images="{{ item.images }}"
+                    data-images="{{ item.images | stringifyElements | join(';') }}"
                     data-description="{{ item.description }}"
                     {% if item.videos %}
                         data-videos="{{ item.videos | stringifyElements | join(';') }}"
@@ -30,7 +30,7 @@
                         data-testimonial-location="{{ item.testimonial.location }}"
                     {% endif %}
                 >
-                    {{ pictureElement("portfolio/" + item.images[0], item.name) }}
+                    {{ pictureElement("portfolio/" + item.images[0].src, item.name) }}
                 </button>
             {% endfor %}
         </div>

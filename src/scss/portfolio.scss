@@ -102,10 +102,12 @@
         overflow-y: auto;
 
         .container {
+            $horizontalPadding: 5vw;
+
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding: 0 5%;
+            padding: 0 $horizontalPadding;
             min-height: 100%;
             padding-bottom: 20px;
             
@@ -121,16 +123,21 @@
                 justify-content: center;
 
                 #selected-image {
-                    // max-width: 100%;
-                    // max-height: 60vh;
+                    // --aspect-ratio must be set in script
+                    width: min(100%, calc(60vh * var(--aspect-ratio)));
+                    aspect-ratio: var(--aspect-ratio);
+                    border: 1px solid variables.$pink;
+                    background: #000;
 
                     img, video {
-                        max-width: 100%;
-                        max-height: 60vh;//100%;
+                        width: 100%;
+                        height: 100%;
                         display: block;
                         margin: auto;
 
-                        border: 1px solid variables.$pink;
+                        // Above paths seems to be able to cause odd px difference between video and containing div
+                        // Use cover here so video always fills it
+                        object-fit: cover;
                     }
                 }
 
@@ -144,7 +151,7 @@
                     overflow-y: hidden;
 
                     button {
-                        background: none;
+                        background: #000;
                         padding: 0;
                         border: none;
                         cursor: pointer;
@@ -183,8 +190,8 @@
                         }
 
                         img {
-                            height: 80px;
-                            width: auto;
+                            height: 100%;
+                            width: 100%;
 
                             border: 1px solid #fff;//variables.$pink;
                         }
@@ -216,11 +223,15 @@
                 flex-direction: row;
 
                 .images {
-                    max-width: 45%;
+                    max-width: 40vw;
+
+                    #selected-image {
+                        width: min(40vw, calc(60vh * var(--aspect-ratio)));
+                    }
                 }
 
                 .text {
-                    max-width: 40%;
+                    max-width: 36vw;
                 }
             }
 

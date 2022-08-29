@@ -36,7 +36,7 @@
         <div id="grid">
             
             {% for item in portfolioSample %}
-                {{ pictureElement("portfolio/" + portfolio[item].images[0], portfolio[item].name) }}
+                {{ pictureElement("portfolio/" + portfolio[item].images[0].src, portfolio[item].name) }}
             {% endfor %}
         </div>
         <a class="button" href="portfolio.html" >See more</a>
@@ -73,15 +73,11 @@
                 {% for testimonial in testimonials %}
                     <div class="swiper-slide">
                         <div class="item">
-                            {% set aspectRatio = mediaSizes[portfolio[testimonial.cake].images[0]].width / mediaSizes[portfolio[testimonial.cake].images[0]].height %}
                             <div
-                                class="image {{ "landscape" if aspectRatio > 1 else "portrait" }}"
-                                style="--aspect-ratio: {{ aspectRatio }}"
-                                {# {% if aspectRatio > 1 %}
-                                    style="aspect-ratio: {{ aspectRatio }};"
-                                {% endif %} #}
+                                class="image"
+                                style="--aspect-ratio: {{ portfolio[testimonial.cake].images[0].aspectRatio }}"
                             >
-                                {{ pictureElement("portfolio/" + portfolio[testimonial.cake].images[0], portfolio[testimonial.cake].name) }}
+                                {{ pictureElement("portfolio/" + portfolio[testimonial.cake].images[0].src, portfolio[testimonial.cake].name) }}
                             </div>
                             <div class="quote">
                                 <blockquote>{{ testimonial.text }}</blockquote>
