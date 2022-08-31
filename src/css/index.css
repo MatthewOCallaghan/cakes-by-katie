@@ -8,6 +8,7 @@
   min-height: 50vh;
   max-height: calc(100vh - 50px);
   object-fit: cover;
+  display: flex;
 }
 
 #about {

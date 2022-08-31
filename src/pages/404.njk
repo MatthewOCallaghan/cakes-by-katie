@@ -1,0 +1,11 @@
+{% set page = "404" %}
+{% extends "layout.njk" %}
+
+{% block main %}
+
+    {% from "macros/page-title.njk" import pageTitle with context %}
+    {{ pageTitle("404") }}
+
+    <p class="not-found-message">Sorry, that page doesn't exist. <a href="/index.html">Return home.</a>
+
+{% endblock %}

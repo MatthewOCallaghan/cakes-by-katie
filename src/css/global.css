@@ -343,6 +343,15 @@ template {
   font-weight: 100;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+body main {
+  flex-grow: 1;
+}
+
 body.nav-open {
   overflow: hidden;
 }

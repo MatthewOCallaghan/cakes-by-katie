@@ -61,15 +61,15 @@ const positionItems = () => {
 
         // Add top and left values to position item
         // Column height in array already includes top gutter
-        item.style.top = columnHeights[columnIndex];
-        item.style.left = columnIndex * (itemWidth + GUTTER);
+        item.style.top = `${columnHeights[columnIndex]}px`;
+        item.style.left = `${columnIndex * (itemWidth + GUTTER)}px`;
 
         // Add to relevant element in array of column heights
         columnHeights[columnIndex] += itemHeight + GUTTER;
     }
 
     // Set container height to equal the largest column
-    container.style.height = Math.max(...columnHeights);
+    container.style.height = `${Math.max(...columnHeights)}px`;
 }
 
 // Position items initially

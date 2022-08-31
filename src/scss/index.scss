@@ -10,6 +10,10 @@
         min-height: 50vh;
         max-height: calc(100vh - 50px);
         object-fit: cover;
+
+        // #header-video will be a few px taller than video without this
+        // No idea why?
+        display: flex;
     }
 }
 
