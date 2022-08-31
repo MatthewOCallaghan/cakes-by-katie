@@ -10,6 +10,18 @@
     }
   },
   "portfolio": {
+    "bon-voyage": {
+      "images": [
+        "Bon-Voyage.jpg"
+      ],
+      "name": "Bon voyage"
+    },
+    "fresh-flowers-yellow-sunshine": {
+      "images": [
+        "Fresh-Flowers-Yellow-Sunshine.jpg"
+      ],
+      "name": "Fresh flowers yellow sunshine"
+    },
     "birthday-books": {
       "images": [
         "Birthday-Books.jpg"
@@ -289,7 +301,7 @@
       "name": "Salted Caramel Cupcakes",
       "description": "Contains salted caramel - need I say more?"
     },
-    "parker-penguin ": {
+    "parker-penguin": {
       "images": [
         "Parker-penguin.jpg"
       ],
@@ -507,14 +519,14 @@
     }
   },
   "portfolioSample": [
+    "birthday-books",
     "blue-speckle-mini-eggs",
-    "lemon-and-pink-gin-cupcakes",
-    "booties-and-bunting",
+    "fresh-flowers-yellow-sunshine",
     "shades-of-chocolate",
-    "a-touch-of-pink",
-    "sun-sand-and-seashells",
-    "golden-anniversary",
+    "parker-penguin",
+    "ferrero-rocher-cake",
+    "bon-voyage",
     "shades-of-pink-and-gold-fault-line",
-    "cream-mini-eggs"
+    "booties-and-bunting"
   ]
 }
