@@ -26,6 +26,7 @@
       "images": [
         "Birthday-Books.jpg"
       ],
+      "squareImage": "Birthday-Books-square.jpg",
       "name": "Birthday Books"
     },
     "flower-elegance": {
@@ -78,6 +79,7 @@
       "images": [
         "Shades-of-Chocolate.jpg"
       ],
+      "squareImage": "Shades-of-Chocolate-square.jpg",
       "name": "Shades of Chocolate"
     },
     "shades-of-pink-and-gold-fault-line": {
@@ -85,6 +87,7 @@
         "Shades-of-Pink-and-Gold-Fault-Line-Balls.jpg",
         "Shades-of-Pink-and-Gold-Fault-Line-Flowers.jpg"
       ],
+      "squareImage": "Shades-of-Pink-and-Gold-Fault-Line-Balls-square.jpg",
       "name": "Shades of Pink and Gold Fault Line",
       "videos": [
         {
@@ -97,6 +100,7 @@
       "images": [
         "Booties-and-Bunting.jpg"
       ],
+      "squareImage": "Booties-and-Bunting-square.jpg",
       "name": "Booties and Bunting",
       "videos": [
         {
@@ -109,6 +113,7 @@
       "images": [
         "Blue-Speckle-Mini-Eggs.jpg"
       ],
+      "squareImage": "Blue-Speckle-Mini-Eggs-square.jpg",
       "name": "Blue Speckle Mini Eggs",
       "videos": [
         {
@@ -209,6 +214,7 @@
       "images": [
         "Ferrero-Rocher-Cake.jpg"
       ],
+      "squareImage": "Ferrero-Rocher-Cake-square.jpg",
       "name": "Ferrero Rocher Cake",
       "videos": [
         {
@@ -305,6 +311,7 @@
       "images": [
         "Parker-penguin.jpg"
       ],
+      "squareImage": "Parker-Penguin-square.jpg",
       "name": "Parker Penguin"
     },
     "carrot-cupcakes": {

@@ -34,9 +34,8 @@
 
     <section id="portfolio">
         <div id="grid">
-            
             {% for item in portfolioSample %}
-                {{ pictureElement("portfolio/" + portfolio[item].images[0].src, portfolio[item].name) }}
+                {{ pictureElement("portfolio/" + (portfolio[item].squareImage if portfolio[item].squareImage else portfolio[item].images[0].src), portfolio[item].name) }}
             {% endfor %}
         </div>
         <a class="button" href="portfolio.html" >See more of my portfolio</a>
