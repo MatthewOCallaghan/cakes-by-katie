@@ -37,6 +37,8 @@ const removeExtension = (filename) =>
 
 const modal = document.querySelector('#portfolio-modal');
 
+const scrollableContainer = modal.querySelector('.scrollable-container');
+
 const MODAL_OPEN_CLASS = 'portfolio-modal-open';
 
 const openModal = ({ target }) => {
@@ -123,8 +125,11 @@ const openModal = ({ target }) => {
         container.classList.remove(TITLE_ONLY_CLASS);
     }
     
-
     document.body.classList.toggle(MODAL_OPEN_CLASS);
+
+    // Reset scroll
+    // Must be done after it is made visible
+    scrollableContainer.scrollTop = 0;
 }
 
 const closeModal = () => {

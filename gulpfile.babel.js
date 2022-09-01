@@ -196,11 +196,15 @@ function deploy() {
             // References only get set (by revAll) in build function, so even if a reference to a css or js file has changed, an HTML file's modified date will be the last time I directly edited it
             // Thus cannot use connection.newer() to filter new files as if an HTML file has not been edited but its CSS file has been, the HTML with the updated reference to the CSS file will not get deployed
             // Thus I am using a custom filter function that keeps files that are new (no equivalent remote file), HTML (so all HTML files get pushed - which is not many - as trying to work out which files have updated references is complicated), or newer than their remote versions
-            callback(null, !remoteFile || localFile.extname === '.html' || localFile.stat.mtime > remoteFile.ftp.date);
+            const emit = !remoteFile || localFile.extname === '.html' || localFile.stat.mtime > remoteFile.ftp.date;
+            // TODO: Only need to check modified date in line above if file has no hash in name
+            if (emit) {
+                console.log(localFile);
+            }
+            callback(null, emit);
         }))
         .pipe(connection.dest(remoteFolder)) // Deploy
         .pipe(connection.clean(['/**/*.js', '/**/*.css', '/images/**/*', '/videos/**/*'].map(p => remoteFolder + p), './dist', { base: remoteFolder })); // Remove remote files with no local version
-
 }
 
 function cleanDist() {

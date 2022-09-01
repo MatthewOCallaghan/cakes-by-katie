@@ -129,6 +129,11 @@
                     border: 1px solid variables.$pink;
                     background: #000;
 
+                    // Safari sometimes had a gap between video and border
+                    // Video covered the bottom border sometimes on Chrome
+                    // This solves both
+                    overflow: hidden;
+
                     img, video {
                         width: 100%;
                         height: 100%;
@@ -143,6 +148,7 @@
 
                 #thumbs {
                     display: flex;
+                    justify-content: center;
                     height: 80px;
                     gap: 15px;
                     margin-top: 20px;
@@ -155,6 +161,8 @@
                         padding: 0;
                         border: none;
                         cursor: pointer;
+                        height: 100%;
+                        overflow: hidden;
 
                         &.video-thumb {
 

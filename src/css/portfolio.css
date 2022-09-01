@@ -95,6 +95,7 @@
   aspect-ratio: var(--aspect-ratio);
   border: 1px solid #F7CAC9;
   background: #000;
+  overflow: hidden;
 }
 #portfolio-modal .scrollable-container .container .images #selected-image img, #portfolio-modal .scrollable-container .container .images #selected-image video {
   width: 100%;
@@ -105,6 +106,7 @@
 }
 #portfolio-modal .scrollable-container .container .images #thumbs {
   display: flex;
+  justify-content: center;
   height: 80px;
   gap: 15px;
   margin-top: 20px;
@@ -117,6 +119,8 @@
   padding: 0;
   border: none;
   cursor: pointer;
+  height: 100%;
+  overflow: hidden;
 }
 #portfolio-modal .scrollable-container .container .images #thumbs button.video-thumb {
   position: relative;
