@@ -178,6 +178,13 @@ function buildFiles() {
             .pipe(dest('dist'));
 }
 
+// View CSS rejected by PurgeCSS
+function rejectedCSS() {
+    return src(['src/css/*.css'])
+            .pipe(gulpIf('*.css', purgecss({ content: ['src/**/*.html', 'src/**/*.js'], rejected: true }))) // This should go in postcssPlugins but having tried briefly I couldn't get it to work
+            .pipe(dest('rejected-css'));
+}
+
 function deploy() {
     const config = require('./config');
 
@@ -220,3 +227,5 @@ export const build = series(cleanDist, parallel(processSass, series(processNewIm
 export default series(parallel(processSass, series(processNewImages, setupData, processNunjucks)), setupBrowserSync, watchFiles);
 
 exports.deploy = deploy;
+
+exports.rejectedCSS = rejectedCSS;

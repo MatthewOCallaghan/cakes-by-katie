@@ -256,6 +256,7 @@
             line-height: 0;
 
             .swiper-pagination-bullet-active {
+                /* purgecss ignore current */
                 background: #fff;
             }
         }

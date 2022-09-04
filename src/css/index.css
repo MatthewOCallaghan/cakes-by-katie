@@ -195,6 +195,7 @@
   line-height: 0;
 }
 #testimonials .swiper .swiper-pagination .swiper-pagination-bullet-active {
+  /* purgecss ignore current */
   background: #fff;
 }
 #testimonials .swiper .item {
