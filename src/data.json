@@ -13,17 +13,68 @@
     }
   },
   "portfolio": {
+    "pink-cascade": {
+      "images": [
+        "Pink-Cascade.jpg"
+      ],
+      "name": "Pink Cascade"
+    },
     "bon-voyage": {
       "images": [
-        "Bon-Voyage.jpg"
+        "Bon-Voyage.jpg",
+        "Bon-Voyage-Side-2.jpg",
+        "Bon-Voyage-Side-1.jpg",
+        "Bon-Voyage-Back.jpg"
       ],
-      "name": "Bon voyage"
+      "squareImage": "Bon-Voyage-square.jpg",
+      "name": "Bon Voyage",
+      "testimonial": {
+        "text": "I just wanted to say a very big thank you for the lovely \"old suitcase\" cake you made for my son's 30th birthday/bon voyage party. I know that I didn't give you much advanced notice and I'm so pleased you were able to make it. A lot of guests asked me where I had bought the cake from as they were very impressed by all the details in the decoration, plus it tasted really great when we cut in to it.",
+        "name": "Yvonne",
+        "location": "Thatcham"
+      }
+    },
+    "superhero-ombre": {
+      "images": [
+        "Superhero-Ombre.jpg"
+      ],
+      "name": "Superhero Ombré",
+      "testimonial": {
+        "text": "I just wanted to say thank you for such a great cake, it looked and tasted amazing and is almost gone already!! ",
+        "name": "Nicola",
+        "location": "Tadley"
+      }
+    },
+    "rose-mix": {
+      "images": [
+        "Rose-Mix.jpg",
+        "Rose-Mix-Triple.jpg",
+        "Rose-Mix-Single.jpg"
+      ],
+      "name": "Rose Mix"
+    },
+    "fresh-flowers-vibrant-pink": {
+      "images": [
+        "Fresh-Flowers-Vibrant-Pink.jpg"
+      ],
+      "name": "Fresh Flowers - Vibrant Pink",
+      "testimonial": {
+        "text": "Thank you so much for the lime birthday cake. It was beautifully presented and absolutely delicious.",
+        "name": "Caroline",
+        "location": "Midgham "
+      }
     },
     "fresh-flowers-yellow-sunshine": {
       "images": [
         "Fresh-Flowers-Yellow-Sunshine.jpg"
       ],
-      "name": "Fresh flowers yellow sunshine"
+      "squareImage": "Fresh-Flowers-Yellow-Sunshine-square.jpg",
+      "name": "Fresh Flowers - Yellow Sunshine",
+      "testimonial": {
+        "text": "The cake was a great success.  Everyone was very complimentary about it.  It tasted so good too.",
+        "name": "Vanessa",
+        "location": "Thatcham"
+      }
     },
     "birthday-books": {
       "images": [
