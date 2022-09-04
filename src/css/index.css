@@ -173,16 +173,26 @@
 }
 #testimonials .swiper {
   height: 300px;
+  --swiper-pagination-top-margin: 5px;
+  --swiper-pagination-bullet-size: 8px;
+}
+@media (hover: none) {
+  #testimonials .swiper {
+    --swiper-pagination-top-margin: 10px;
+    --swiper-pagination-bullet-size: 16px;
+    --swiper-pagination-bullet-horizontal-gap: 8px;
+  }
 }
 #testimonials .swiper .swiper-wrapper {
-  height: calc(100% - 13px);
+  height: calc(100% - var(--swiper-pagination-top-margin) - var(--swiper-pagination-bullet-size));
 }
 #testimonials .swiper .swiper-button-prev, #testimonials .swiper .swiper-button-next {
   color: #fff;
 }
 #testimonials .swiper .swiper-pagination {
   position: static;
-  margin-top: 5px;
+  margin-top: var(--swiper-pagination-top-margin);
+  line-height: 0;
 }
 #testimonials .swiper .swiper-pagination .swiper-pagination-bullet-active {
   background: #fff;
@@ -202,6 +212,7 @@
   height: 100%;
   display: flex;
   justify-content: center;
+  overflow: hidden;
   aspect-ratio: var(--aspect-ratio);
 }
 #testimonials .swiper .item .image picture {

@@ -227,9 +227,19 @@
         // Needs a fixed height for slideshow to work
         height: 300px;
 
+        --swiper-pagination-top-margin: 5px;
+        --swiper-pagination-bullet-size: 8px;
+
+        @media (hover: none) {
+            // Use larger bullets on touch devices
+            --swiper-pagination-top-margin: 10px;
+            --swiper-pagination-bullet-size: 16px;
+            --swiper-pagination-bullet-horizontal-gap: 8px;
+        }
+
         .swiper-wrapper {
             // Need to allow for pagination bullets
-            height: calc(100% - 13px);
+            height: calc(100% - var(--swiper-pagination-top-margin) - var(--swiper-pagination-bullet-size));
         }
 
         .swiper-button-prev, .swiper-button-next {
@@ -240,7 +250,10 @@
         // Style pagination bullets
         .swiper-pagination {
             position: static;
-            margin-top: 5px;
+            margin-top: var(--swiper-pagination-top-margin);
+
+            // Ensure height is purely just the bullets
+            line-height: 0;
 
             .swiper-pagination-bullet-active {
                 background: #fff;
@@ -264,6 +277,7 @@
                 height: 100%;
                 display: flex;
                 justify-content: center;
+                overflow: hidden;
                 
                 // --aspect-ratio variable gets set in style attribute
                 // This makes sure div is no wider than image on Safari and Firefox
