@@ -18,7 +18,7 @@
         </video>
     </div>
     <section id="about">
-            {{ pictureElement("katie.jpg", "Katie")}}
+            {{ pictureElement("katie.jpg", "Katie", "calc(max(min(40vw, 30vh), 200px))") }}
 
             <div>
                 {# Inner div used to vertically centre content within outer div #}
@@ -35,7 +35,7 @@
     <section id="portfolio">
         <div id="grid">
             {% for item in portfolioSample %}
-                {{ pictureElement("portfolio/" + (portfolio[item].squareImage if portfolio[item].squareImage else portfolio[item].images[0].src), portfolio[item].name) }}
+                {{ pictureElement("portfolio/" + (portfolio[item].squareImage if portfolio[item].squareImage else portfolio[item].images[0].src), portfolio[item].name, "calc(max(min(17vw, 17vh), min(100vw, 600px))") }}
             {% endfor %}
         </div>
         <a class="button" href="portfolio.html" >See more of my portfolio</a>
@@ -76,7 +76,7 @@
                                 class="image"
                                 style="--aspect-ratio: {{ portfolio[testimonial.cake].images[0].aspectRatio }}"
                             >
-                                {{ pictureElement("portfolio/" + portfolio[testimonial.cake].images[0].src, portfolio[testimonial.cake].name) }}
+                                {{ pictureElement("portfolio/" + portfolio[testimonial.cake].images[0].src, portfolio[testimonial.cake].name, { '900': '90vw', any: '45vw' }) }}
                             </div>
                             <div class="quote">
                                 <blockquote>{{ testimonial.text }}</blockquote>

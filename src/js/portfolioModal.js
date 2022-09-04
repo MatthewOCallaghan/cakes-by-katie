@@ -11,8 +11,29 @@ const getSrcsetAttribute = (sizes, name, extension) =>
 
 
 // Get sizes attribute for <source> element
-const getSizesAttribute = (sizes) =>
-    sizes.slice(0, sizes.length - 1).map(size => `(max-width: ${size}px) ${size}px`).concat(`${sizes[sizes.length - 1]}px`).join(', ');
+const getSizesAttribute = (recommendedSizes) => {
+
+    if (!recommendedSizes) {
+        return '100vw';
+    }
+
+    if (typeof recommendedSizes === 'string') {
+        return recommendedSizes;
+    }
+
+    const mediaConditions = Object.entries(recommendedSizes).reduce((acc, [maxScreenWidth, imageWidth]) => {
+        if (maxScreenWidth === 'any') {
+            return acc;
+        }
+
+        return acc.concat(`(max-width: ${maxScreenWidth}px) ${imageWidth}`);
+    }, []);
+
+    // Add wildcard
+    mediaConditions.push(recommendedSizes.any ?? '100vw');
+
+    return mediaConditions.join(', ');
+}
 
 // These should go from smallest file size to largest
 const FORMATS = ["avif", "webp"];
@@ -69,12 +90,13 @@ const openModal = ({ target }) => {
         // Videos
         videos.forEach(video => {
             const button = document.createElement('button');
-            button.style.aspectRatio = video.thumbAspectRatio ?? images.find(({ src }) => src === video.thumb)?.aspectRatio;
+            const thumbAspectRatio = video.thumbAspectRatio ?? images.find(({ src }) => src === video.thumb)?.aspectRatio;
+            button.style.aspectRatio = thumbAspectRatio;
             button.classList.add('video-thumb');
             button.setAttribute('aria-label', 'View video');
             button.addEventListener('click', () => setSelectedVideo(video));
             thumbs.appendChild(button);
-            createPictureElement(button, video.thumb, name);
+            createPictureElement(button, video.thumb, name, `${80 * thumbAspectRatio}px`);
         });
 
         // Images
@@ -84,7 +106,7 @@ const openModal = ({ target }) => {
             button.setAttribute('aria-label', 'View image');
             button.addEventListener('click', () => setSelectedImage(image, name));
             thumbs.appendChild(button);
-            createPictureElement(button, image.src, name);
+            createPictureElement(button, image.src, name, `${80 * image.aspectRatio}px`);
         });
         thumbs.style.display = 'flex';
     } else {
@@ -156,7 +178,7 @@ const setSelectedMedia = (isVideo, filename, aspectRatio, name) => {
         video.playsInline = true;
         selectedImage.appendChild(video);
     } else {
-        createPictureElement(selectedImage, filename, name);
+        createPictureElement(selectedImage, filename, name, { 1200: `min(100vw, ${60 * aspectRatio}vh)`, any: `min(40vw, ${60 * aspectRatio}vh)` });
     }
 }
 
@@ -174,7 +196,7 @@ const removeAllChildren = element => {
     }
 }
 
-const createPictureElement = (container, filename, alt) => {
+const createPictureElement = (container, filename, alt, recommendedSizes) => {
     const picture = document.createElement('picture');
     container.appendChild(picture);
 
@@ -182,7 +204,7 @@ const createPictureElement = (container, filename, alt) => {
         const source = document.createElement('source');
         source.type = `image/${format}`;
         source.srcset = getSrcsetAttribute(WIDTHS, `images/portfolio/${removeExtension(filename)}`, format);
-        source.sizes = getSizesAttribute(WIDTHS);
+        source.sizes = getSizesAttribute(recommendedSizes);
         picture.appendChild(source);
     });
 
