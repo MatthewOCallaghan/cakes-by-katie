@@ -295,11 +295,6 @@
     width: 100%;
   }
 }
-@media only screen and (max-width: 700px) {
-  #testimonials .swiper {
-    height: 600px;
-  }
-}
 @media only screen and (min-width: 1150px) {
   #testimonials .swiper-button-prev {
     left: 25px;
@@ -307,4 +302,9 @@
   #testimonials .swiper-button-next {
     right: 25px;
   }
+}
+#testimonials .testimonials-link-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
 }

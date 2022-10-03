@@ -5,7 +5,7 @@ const swiper = new Swiper('.swiper', {
     loop: true,
     // Automatic slideshow
     autoplay: {
-        delay: 13000,
+        delay: 10000, // Ms per slide
         disableOnInteraction: false,
         pauseOnMouseEnter: true
     },

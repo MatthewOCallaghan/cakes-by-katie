@@ -22,12 +22,36 @@
     <meta name="description" content="See all the high quality bespoke cakes and cupcakes I have made for birthdays, weddings, anniversaries, christenings and other occasions. I am based in Thatcham, West Berkshire, near Newbury and Reading.">
 
 
+    <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
     <script src="https://kit.fontawesome.com/c57fec537e.js" crossorigin="anonymous"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QMJVSRWWTY"></script>
+    <script>
+        if (/localhost/.test(window.location.pathname)) {
+                // Disable analytics in development
+                window['ga-disable-G-QMJVSRWWTY'] = true;
+            }
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-QMJVSRWWTY');
+    </script>
+
+    <script type="application/ld+json">
+        {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "url": "https://www.cakesbykatie.co.uk",
+                "logo": "https://www.cakesbykatie.co.uk/logo-with-background.svg"
+            }
+    </script>
 
 </head>
 
@@ -60,7 +84,7 @@
                 </div>
             </a>
             <a href="portfolio.html">Portfolio</a>
-            <a href="index.html#testimonials">Testimonials</a>
+            <a href="testimonials.html">Testimonials</a>
         </nav>
 
         <div id="mobile-nav-image">

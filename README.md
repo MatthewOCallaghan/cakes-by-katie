@@ -4,13 +4,10 @@ Code for website [cakesbykatie.co.uk](https://www.cakesbykatie.co.uk).
 
 # TODO
 
-- Fix pagination
-- Google Analytics
-- More content (e.g. about page, contact page, testimonials page)
+- More content (e.g. FAQs, page for each product and occasion)
 - Contact form
 - More CTA buttons
 - SEO (compare with competitors)
-- Check site on Lighthouse
-- Improve "See more" button against portfolio on home page
+- Improve button design (for portfolio and testimonials links on home page)
 - Links from cakes on home page to portfolio page modal
 - Maybe some text on top of header video (certainly a "Scroll down" button at least)

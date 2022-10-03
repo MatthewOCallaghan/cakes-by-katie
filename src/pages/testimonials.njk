@@ -1,0 +1,30 @@
+{% set page = "testimonials" %}
+{% extends "layout.njk" %}
+
+{% block main %}
+
+    {% from "macros/page-title.njk" import pageTitle with context %}
+    {{ pageTitle("Testimonials") }}
+
+    <div class="page-content">
+        <p>I'm proud to have received many fantastic testimonials from my lovely customers!</p>
+
+        {% for testimonial in testimonials %}
+            <div class="testimonial">
+                <div class="testimonial-inner">
+                    <div
+                        class="image"
+                    >
+                        {{ pictureElement("portfolio/" + portfolio[testimonial.cake].images[0].src, portfolio[testimonial.cake].name, { '800': 'calc(100vw - 120px)', '1100': 'calc(50vw - 60px)', any: '500px' }) }}
+                    </div>
+                    <div class="quote">
+                        <blockquote>{{ testimonial.text }}</blockquote>
+                        <span>{{ testimonial.name }}, {{ testimonial.location }}</span>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+
+    </div>
+
+{% endblock %}

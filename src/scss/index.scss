@@ -350,14 +350,6 @@
         }
     }
 
-    // Needs a greater height on the narrowest of screens
-    @media only screen and (max-width: 700px) {
-
-        .swiper {
-            height: 600px;
-        }
-    }
-
     // Can allow a greater gap between arrow buttons and screen edge on wide devices
     @media only screen and (min-width: 1150px) {
 
@@ -368,5 +360,12 @@
         .swiper-button-next {
             right: 25px;
         }
+    }
+
+
+    .testimonials-link-container {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
     }
 }

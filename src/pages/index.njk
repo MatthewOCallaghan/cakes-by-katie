@@ -69,14 +69,15 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                {% for testimonial in testimonials %}
+                {% for cake in featuredTestimonials %}
+                    {% set testimonial = portfolio[cake].testimonial %}
                     <div class="swiper-slide">
                         <div class="item">
                             <div
                                 class="image"
-                                style="--aspect-ratio: {{ portfolio[testimonial.cake].images[0].aspectRatio }}"
+                                style="--aspect-ratio: {{ portfolio[cake].images[0].aspectRatio }}"
                             >
-                                {{ pictureElement("portfolio/" + portfolio[testimonial.cake].images[0].src, portfolio[testimonial.cake].name, { '900': '90vw', any: '45vw' }) }}
+                                {{ pictureElement("portfolio/" + portfolio[cake].images[0].src, portfolio[cake].name, { '900': '90vw', any: '45vw' }) }}
                             </div>
                             <div class="quote">
                                 <blockquote>{{ testimonial.text }}</blockquote>
@@ -93,6 +94,15 @@
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="testimonials-link-container">
+            <a
+                class="button"
+                href="testimonials.html"
+            >
+                Read more testimonials
+            </a>
         </div>
     </section>
 {% endblock %}
