@@ -1,0 +1,47 @@
+{% set page = "faqs" %}
+{% extends "layout.njk" %}
+
+{% block head %}
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {% for faq in pages[page].questions %}
+                    {
+                        "@type": "Question",
+                        "name": "{{ faq.question }}",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "{{ faq.answer | safe }}"
+                        }
+                    }
+                {% endfor %}
+            ]
+        }
+    </script>
+{% endblock %}
+
+{% block main %}
+
+    {% from "macros/page-title.njk" import pageTitle with context %}
+    {{ pageTitle("FAQs") }}
+
+    <div class="page-content-container">
+        <p class="page-intro">Here are answers to the most common questions I receive from my customers. If you can't find what you're looking for, please <a href="index.html#contact">contact me</a>.</p>
+
+        {% for faq in pages[page].questions %}
+            <div class="question">
+                <h2 tabindex="0">{{ faq.question }}</h2>
+                <div class="answer">
+                    {{ faq.answer | safe }}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}
+
+{% block scripts %}
+    <script type="text/javascript" src="js/expandableFAQs.js" defer></script>
+{% endblock %}

@@ -358,6 +358,12 @@ body.nav-open {
 
 a {
   color: inherit;
+  text-decoration: underline;
+}
+@media (hover: hover) {
+  a:hover {
+    text-decoration: none;
+  }
 }
 
 section {
@@ -387,6 +393,16 @@ section {
   right: 5px;
   bottom: 5px;
   border: 1px solid #F7CAC9;
+}
+
+.page-content-container {
+  padding: 0 20px 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.page-intro {
+  margin: 30px 0;
 }
 
 header {
@@ -508,7 +524,7 @@ header #mobile-nav-image img {
   max-height: 100%;
   width: auto;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
   header {
     display: flex;
     flex-direction: column;
@@ -530,23 +546,34 @@ header #mobile-nav-image img {
     height: auto;
   }
 }
-@media only screen and (max-width: 600px) and (min-height: 700px) {
+@media only screen and (max-width: 750px) and (min-height: 700px) {
   header nav .logo-container {
     margin-bottom: 30px;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
   header nav .logo-container .logo-background {
     position: static;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
   header .hamburger {
     display: block;
   }
 }
+@media only screen and (max-height: 700px) {
+  header .logo-container {
+    width: 110px !important;
+  }
+  header .logo-container .logo-background {
+    height: 110px !important;
+  }
+  header #mobile-nav-image img {
+    height: 120px;
+  }
+}
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
   body.nav-open header {
     height: 100vh;
     border-bottom: none;
@@ -602,14 +629,6 @@ footer h3 {
 }
 footer p {
   margin: 0;
-}
-footer a {
-  text-decoration: underline;
-}
-@media (hover: hover) {
-  footer a:hover {
-    text-decoration: none;
-  }
 }
 footer .contact-grid {
   display: grid;

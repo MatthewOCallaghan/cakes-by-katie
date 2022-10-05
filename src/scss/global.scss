@@ -5,7 +5,7 @@
 
 @import 'normalize.css/normalize';
 
-$mobileNavMaxWidth: 600px;
+$mobileNavMaxWidth: 750px;
 
 * {
     box-sizing: border-box;
@@ -30,6 +30,11 @@ body.nav-open {
 
 a {
     color: inherit;
+    text-decoration: underline;
+
+    @include mixins.hover {
+        text-decoration: none;
+    }
 }
 
 section {
@@ -59,6 +64,16 @@ section {
         bottom: 5px;
         border: 1px solid variables.$pink;
     }
+}
+
+.page-content-container {
+    padding: 0 20px 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.page-intro {
+    margin: 30px 0;
 }
 
 $logoDiameter: 130px;
@@ -194,6 +209,7 @@ header {
         }
     }
 
+    // Mobile nav menu
     @media only screen and (max-width: $mobileNavMaxWidth) {
         display: flex;
         flex-direction: column;
@@ -230,8 +246,27 @@ header {
             display: block;
         }
     }
+
+    // All nav links do not fit on shortest phones (e.g. my SE) so reduce image
+    @media only screen and (max-height: 700px) {
+
+        .logo-container {
+            $smallestLogoDiameter: 110px !important;
+
+            width: $smallestLogoDiameter;
+
+            .logo-background {
+                height: $smallestLogoDiameter;
+            }
+        }
+
+        #mobile-nav-image img {
+            height: 120px;
+        }
+    }
 }
 
+// Mobile menu open
 @media only screen and (max-width: $mobileNavMaxWidth) {
     body.nav-open {
 
@@ -304,14 +339,6 @@ footer {
 
     p {
         margin: 0;
-    }
-
-    a {
-        text-decoration: underline;
-
-        @include mixins.hover {
-            text-decoration: none;
-        }
     }
 
     .contact-grid {

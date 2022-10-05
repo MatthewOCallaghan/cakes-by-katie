@@ -12,6 +12,44 @@
       "title": "Testimonials | Cakes by Katie",
       "description": "Read some of the glowing testimonials I have received for my bespoke cakes and cupcakes from my many wonderful customers."
     },
+    "faqs": {
+      "title": "Frequently Asked Questions | Cakes by Katie",
+      "descriptions": "Find the answers to some questions I commonly get asked by my customers.",
+      "questions": [
+        {
+          "question": "Where are you based?",
+          "answer": "<p>I'm based in Thatcham, West Berkshire, so I am in easy reach of Basingstoke, Newbury, Reading, and their surrounding vicinities such as Basildon, Bucklebury, Coldash, Didcot, Donnington, Hungerford, Pangbourne, Pearly, Sulhampstead, Tadley, Theale, Tidmarsh and Tilehurst.</p>"
+        },
+        {
+          "question": "What occasions do you cater for?",
+          "answer": "<p>I can make cakes for all occasions! Have you got a wedding, birthday or anniversary coming up? Maybe a religious occasion such as a christening, first communion or bar/bat mitzvah? Is there a little one involved - do you need a baby shower, gender reveal or cake smash cake? How about a cake to celebrate Christmas, Easter, Halloween or Valentine's Day? Or maybe you need something completely different? Get in touch with me at <a href=\"mailto:katie@cakesbykatie.co.uk\">katie@cakesbykatie.co.uk</a> and we'll start planning for your occasion!</p>"
+        },
+        {
+          "question": "What finishes do you provide?",
+          "answer": "<p>Cakes can be finished in either buttercream or fondant. I also provide semi naked cakes for weddings.</p>"
+        },
+        {
+          "question": "Do you cater for any special dietary requirements?",
+          "answer": "<p>Yes, I make gluten free and diary free cakes. I also offer a reduced flavour range for vegans. I encourage you to get in touch and we can discuss whatever requirements you have. Please note that whilst the cakes will be made using free from products, they're made in a kitchen where the allergens are present.</p>"
+        },
+        {
+          "question": "Do you deliver?",
+          "answer": "<p>Wedding cakes will be delivered and set up at the venue. All other cakes are on a collection basis, though exceptions can be made in certain circumstances for a fee.</p>"
+        },
+        {
+          "question": "What products do you offer?",
+          "answer": "<p>I offer celebration cakes and cupcakes in a range of flavours (I don't produce fresh cream or fresh fruit cakes).</p>"
+        },
+        {
+          "question": "How do I order a cake?",
+          "answer": "<p>Get in touch with me at <a href=\"mailto:katie@cakesbykatie.co.uk\">katie@cakesbykatie.co.uk</a> and we'll start discussing your perfect cake/cupcakes!</p>"
+        },
+        {
+          "question": "What cake design should I go for?",
+          "answer": "<p>Whether you know exactly what you want or have absolutely no idea, I'll work with you to create the perfect design for your occasion. If you're looking for inspiration why not check out my <a href=\"portfolio.html\">portfolio page</a>?</p>"
+        }
+      ]
+    },
     "404": {
       "title": "Page not found | Cakes by Katie"
     }

@@ -6,8 +6,8 @@
     {% from "macros/page-title.njk" import pageTitle with context %}
     {{ pageTitle("Testimonials") }}
 
-    <div class="page-content">
-        <p>I'm proud to have received many fantastic testimonials from my lovely customers!</p>
+    <div class="page-content-container">
+        <p class="page-intro">I'm proud to have received many fantastic testimonials from my lovely customers!</p>
 
         {% for testimonial in testimonials %}
             <div class="testimonial">

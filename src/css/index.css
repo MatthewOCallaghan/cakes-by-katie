@@ -111,12 +111,6 @@
 }
 #contact .contact-card a {
   color: #fff;
-  text-decoration: underline;
-}
-@media (hover: hover) {
-  #contact .contact-card a:hover {
-    text-decoration: none;
-  }
 }
 #contact .contact-card .contact-card-first-half, #contact .contact-card .contact-card-second-half {
   flex-basis: 0;

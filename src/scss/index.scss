@@ -144,11 +144,6 @@
 
         a {
             color: #fff;
-            text-decoration: underline;
-
-            @include mixins.hover {
-                text-decoration: none;
-            }
         }
 
         .contact-card-first-half, .contact-card-second-half {
