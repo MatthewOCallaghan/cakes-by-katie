@@ -53,6 +53,8 @@
 
     </head>
     <body>
+        {% from "macros/picture.njk" import pictureElement with context %}
+
         <header>
             
             <div id="mobile-nav-header">
@@ -89,7 +91,6 @@
             </nav>
 
             <div id="mobile-nav-image">
-                {% from "macros/picture.njk" import pictureElement with context %}
                 {{ pictureElement("mobile-nav-cake.png", "Parker penguin", "169px") }}
             </div>
         </header>
@@ -115,6 +116,20 @@
                     <i class="fab fa-facebook" aria-hidden="true"></i>
                     <p><small><a href="https://www.facebook.com/cakesbykatieoc" target="_blank">@cakesbykatieoc</a></small></p>
                 </div>
+            </div>
+            <div>
+                <h3>Navigation</h3>
+                <ul>
+                    <li><small><a href="index.html">Home</a></small></li>
+                    <li><small><a href="{{ "#about" if page == "index" else "index.html#about" }}">About</a></small></li>
+                    <li><small><a href="{{ "#contact" if page == "index" else "index.html#contact" }}">Contact</a></small></li>
+                    <li><small><a href="portfolio.html">Portfolio</a></small></li>
+                    <li><small><a href="testimonials.html">Testimonials</a></small></li>
+                    <li><small><a href="faqs.html">FAQs</a></small></li>
+                </ul>
+            </div>
+            <div class="hygiene-rating">
+                {{ pictureElement("hygiene-rating.jpg", "5* hygiene rating", "215px") }}
             </div>
             <div class="copyright-container">
                 <p><small>&copy; 2022 Katie&nbsp;O'Callaghan</small></p>
