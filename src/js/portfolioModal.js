@@ -152,6 +152,10 @@ const openModal = ({ target }) => {
     // Reset scroll
     // Must be done after it is made visible
     scrollableContainer.scrollTop = 0;
+
+    gtag?.('event', 'open_portfolio_modal', {
+        cake: name
+    });
 }
 
 const closeModal = () => {

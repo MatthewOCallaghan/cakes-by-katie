@@ -9,7 +9,6 @@ document.querySelector('#nav-toggle').onclick = function() {
 document.querySelectorAll('nav a').forEach(element => {
 	element.onclick = () => {
 		if (element.href.includes(window.location.pathname)) {
-			console.log('close')
 			document.body.classList.remove(NAV_OPEN_CLASS);
 		}	
 	}

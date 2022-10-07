@@ -14,7 +14,7 @@
     },
     "faqs": {
       "title": "Frequently Asked Questions | Cakes by Katie",
-      "descriptions": "Find the answers to some questions I commonly get asked by my customers.",
+      "description": "Find the answers to some questions I commonly get asked by my customers.",
       "questions": [
         {
           "question": "Where are you based?",
