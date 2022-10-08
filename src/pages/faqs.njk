@@ -15,7 +15,7 @@
                             "@type": "Answer",
                             "text": "{{ faq.answer | safe }}"
                         }
-                    }
+                    }{{ "," if not loop.last }}
                 {% endfor %}
             ]
         }
