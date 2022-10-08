@@ -377,22 +377,42 @@ section {
 
 .button {
   display: inline-block;
-  background: #000;
-  padding: 15px;
-  color: #F7CAC9;
+  background: none;
+  padding: 20px;
+  color: #000;
   position: relative;
   cursor: pointer;
   text-decoration: none;
+  border: 1px solid #f9bbb9;
+  font-family: "Licorice", sans-serif;
+  font-size: 1.6em;
+  z-index: 1;
+  min-width: 150px;
 }
 .button::before {
   content: "";
   display: block;
   position: absolute;
-  top: 5px;
-  left: 5px;
-  right: 5px;
-  bottom: 5px;
-  border: 1px solid #F7CAC9;
+  top: -10px;
+  left: 10px;
+  right: -10px;
+  bottom: 10px;
+  background: #F7CAC982;
+  z-index: -1;
+  transition: all 0.3s;
+}
+@media (hover: hover) {
+  .button:hover::before {
+    transform: translate(-10px, 10px);
+  }
+}
+
+.button-white {
+  border-color: #fff;
+  color: #000;
+}
+.button-white::before {
+  background: #ffffff82;
 }
 
 .page-content-container {

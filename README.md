@@ -4,7 +4,8 @@ Code for website [cakesbykatie.co.uk](https://www.cakesbykatie.co.uk).
 
 # TODO
 
-- More content (e.g. FAQs, page for each product and occasion)
+- Improve "About" section
+- More content (e.g. page for each product and occasion)
 - Contact form
 - More CTA buttons
 - SEO (compare with competitors)

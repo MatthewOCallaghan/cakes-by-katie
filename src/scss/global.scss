@@ -47,22 +47,46 @@ section {
 
 .button {
     display: inline-block;
-    background: #000;
-    padding: 15px;
-    color: variables.$pink;
+    background: none;
+    padding: 20px;
+    color: #000;
     position: relative;
     cursor: pointer;
     text-decoration: none;
+    border: 1px solid #f9bbb9;
+    font-family: variables.$handwriting;
+    font-size: 1.6em;
+    z-index: 1;
+    min-width: 150px;
+
+    $offset: 10px;
 
     &::before {
         content: "";
         display: block;
         position: absolute;
-        top: 5px;
-        left: 5px;
-        right: 5px;
-        bottom: 5px;
-        border: 1px solid variables.$pink;
+        top: -$offset;
+        left: $offset;
+        right: -$offset;
+        bottom: $offset;
+        background: #{variables.$pink}82;
+        z-index: -1;
+        transition: all .3s;
+    }
+
+    @include mixins.hover {
+        &::before {
+            transform: translate(-$offset, $offset);
+        }
+    }
+}
+
+.button-white {
+    border-color: #fff;
+    color: #000;
+
+    &::before {
+        background: #ffffff82;
     }
 }
 
