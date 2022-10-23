@@ -13,7 +13,7 @@
                         "name": "{{ faq.question }}",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "{{ faq.answer | safe }}"
+                            "text": "{{ faq.answer | safe | replace("\"", "\\\"") }}"
                         }
                     }{{ "," if not loop.last }}
                 {% endfor %}

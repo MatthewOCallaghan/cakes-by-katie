@@ -6,9 +6,11 @@ Code for website [cakesbykatie.co.uk](https://www.cakesbykatie.co.uk).
 
 - Improve "About" section
 - More content (e.g. page for each product and occasion)
+- Get ring pattern
 - Contact form
 - More CTA buttons
 - SEO (compare with competitors)
 - Improve button design (for portfolio and testimonials links on home page)
 - Links from cakes on home page to portfolio page modal
 - Maybe some text on top of header video (certainly a "Scroll down" button at least)
+- Only one FAQ open at a time
