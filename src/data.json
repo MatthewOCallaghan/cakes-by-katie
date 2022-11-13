@@ -55,6 +55,68 @@
     }
   },
   "portfolio": {
+    "birthday-beach-mix": {
+      "images": [
+        "Birthday-Beach-Mix.jpg",
+        "Birthday-Beach-Mix-Box.jpg"
+      ],
+      "name": "Birthday Beach Mix"
+    },
+    "deluxe-mix": {
+      "images": [
+        "Deluxe-Mix-Gift-Wrap.jpg",
+        "Deluxe-Mix-Open.jpg"
+      ],
+      "name": "Deluxe Mix",
+      "testimonial": {
+        "text": "The cupcakes were great thanks - very tasty and a great finish on them.",
+        "name": "Andy",
+        "location": "West Berkshire"
+      }
+    },
+    "ttmc-cupcakes": {
+      "images": [
+        "TTMC-Corporate-Cupcakes.jpg",
+        "TTMC-Stand.jpg"
+      ],
+      "name": "The Traffic Management Company Corporate Cupcakes"
+    },
+    "diamond-anniversary": {
+      "images": [
+        "Diamond-Anniversary.jpg"
+      ],
+      "name": "Diamond Anniversary"
+    },
+    "ready-set-go-kart": {
+      "images": [
+        "Ready-Set-Go-Kart.jpg"
+      ],
+      "name": "Ready Set Go-Kart"
+    },
+    "kirsten": {
+      "images": [
+        "Kirsten.jpg"
+      ],
+      "name": "Kirsten"
+    },
+    "hp-slytherin-edition": {
+      "images": [
+        "HP-Slytherin-Edition.jpg"
+      ],
+      "name": "Harry Potter - Slytherin Edition"
+    },
+    "come-fly-with-me": {
+      "images": [
+        "Come-Fly-With-Me.jpg"
+      ],
+      "name": "Come Fly With Me",
+      "videos": [
+        {
+          "thumb": "Come-Fly-With-Me.jpg",
+          "file": "Come-Fly-With-Me.mp4"
+        }
+      ]
+    },
     "pink-cascade": {
       "images": [
         "Pink-Cascade.jpg"
@@ -106,6 +168,12 @@
         "location": "Midgham "
       }
     },
+    "cocktails-and-seashells": {
+      "images": [
+        "Cocktails-and-Seashells.jpg"
+      ],
+      "name": "Cocktails and Seashells"
+    },
     "fresh-flowers-yellow-sunshine": {
       "images": [
         "Fresh-Flowers-Yellow-Sunshine.jpg"
@@ -115,7 +183,7 @@
       "testimonial": {
         "text": "The cake was a great success.  Everyone was very complimentary about it.  It tasted so good too.",
         "name": "Vanessa",
-        "location": "Thatcham"
+        "location": "Bucklebury"
       }
     },
     "birthday-books": {
@@ -129,7 +197,13 @@
       "images": [
         "Flower-Elegance.jpg"
       ],
-      "name": "Flower Elegance"
+      "name": "Flower Elegance",
+      "videos": [
+        {
+          "thumb": "Flower-Elegance.jpg",
+          "file": "Flower-Elegance.mp4"
+        }
+      ]
     },
     "golden-anniversary": {
       "images": [
@@ -423,7 +497,7 @@
       "name": "Jammie Dodger Cake",
       "description": "Bring back childhood memories one slice at a time."
     },
-    "easter-surprise ": {
+    "easter-surprise": {
       "images": [
         "Easter-Surprise-Inside.jpg",
         "Easter-Surprise.jpg"
