@@ -55,6 +55,62 @@
     }
   },
   "portfolio": {
+    "football-print-arsenal": {
+      "images": [
+        "Football-Print-Arsenal.jpg"
+      ],
+      "name": "Football Print - Arsenal"
+    },
+    "daisy-chain": {
+      "images": [
+        "Daisy-Chain.jpg"
+      ],
+      "name": "Daisy Chain"
+    },
+    "minecraft": {
+      "images": [
+        "Minecraft.jpg"
+      ],
+      "name": "Minecraft"
+    },
+    "pink-and-bluey": {
+      "images": [
+        "Pink-and-Bluey.jpg"
+      ],
+      "name": "Pink and Bluey"
+    },
+    "chocolate-decadence": {
+      "images": [
+        "Chocolate-Decadence.jpg"
+      ],
+      "name": "Chocolate Decadence"
+    },
+    "birthday-square": {
+      "images": [
+        "Birthday-Square.jpg"
+      ],
+      "name": "Birthday Square",
+      "testimonial": {
+        "text": "Thank you for the lovely chocolate cake it was so moist and delicious everyone enjoyed it",
+        "name": "Maureen",
+        "location": "Newbury"
+      }
+    },
+    "golden-drip-cake-with-age": {
+      "images": [
+        "Golden-Drip-Cake-with-Age.jpg"
+      ],
+      "name": "Golden Drip Cake with Age"
+    },
+    "psychedelic-symphony": {
+      "images": [
+        "Psychedelic-Symphony-Front.jpg",
+        "Psychedelic-Symphony-Side-L.jpg",
+        "Psychedelic-Symphony-Back.jpg",
+        "Psychedelic-Symphony-Side-R.jpg"
+      ],
+      "name": "Psychedelic Symphony"
+    },
     "birthday-beach-mix": {
       "images": [
         "Birthday-Beach-Mix.jpg",

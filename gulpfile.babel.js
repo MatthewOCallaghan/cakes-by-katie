@@ -146,7 +146,7 @@ const createAndTransferNewImages = () => {
 }
 
 const cleanNewImages = () => {
-    return del(['src/new-images/**/*', '!src/new-images']);
+    return del(['src/new-images/**/*.*', '!src/new-images']);
 }
 
 const processNewImages = series(createAndTransferNewImages, cleanNewImages);
@@ -230,3 +230,5 @@ export default series(parallel(processSass, series(processNewImages, setupData, 
 exports.deploy = deploy;
 
 exports.rejectedCSS = rejectedCSS;
+
+exports.clearCache = clearCache;
