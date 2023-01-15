@@ -466,6 +466,18 @@ header nav .logo-container .logo-background {
   z-index: 1;
   border-radius: 130px;
 }
+header nav #header-contact-link {
+  border: 1px solid #FFF;
+  padding-top: 5px;
+  color: #FFF;
+  transition: all 0.3s;
+}
+@media (hover: hover) {
+  header nav #header-contact-link:hover {
+    border-color: #F7CAC9;
+    color: #F7CAC9;
+  }
+}
 header #mobile-nav-header {
   display: none;
   width: 100%;
@@ -560,6 +572,9 @@ header #mobile-nav-image img {
   header nav a {
     width: 100%;
     font-size: 2rem;
+  }
+  header nav #header-contact-link {
+    width: 130px;
   }
   header nav .logo-container {
     order: -1;

@@ -145,6 +145,20 @@ header {
                 border-radius: $logoDiameter;
             }
         }
+
+        #header-contact-link {
+            border: 1px solid #FFF;
+            padding-top: 5px;
+            color: #FFF;
+
+            // Must include color and border-color in transition
+            transition: all .3s;
+
+            @include mixins.hover {
+                border-color: variables.$pink;
+                color: variables.$pink;
+            }            
+        }
     }
 
     #mobile-nav-header {
@@ -250,6 +264,10 @@ header {
             a {
                 width: 100%;
                 font-size: 2rem;
+            }
+
+            #header-contact-link {
+                width: 130px;
             }
 
             .logo-container {
