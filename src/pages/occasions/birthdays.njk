@@ -1,0 +1,70 @@
+{% set page = "birthdays" %}
+{% extends "layout.njk" %}
+
+{% block main %}
+
+    <div class="intro">
+        <div class="intro-inner">
+            <p>You can either send me your own design, choose a cake from my portfolio, or if you simply have a theme in mind or just don't know what you want, we can have a chat and I'll suggest some designs to ensure you get your perfect cake.</p>
+
+            <p>Birthday cakes can be finished in either buttercream or fondant and you can choose from an extensive list of sponge flavours.</p>
+
+            <p>Decorative choices include chocolate or coloured drips, fondant or real flowers, fondant models, airbrushing and edible images.</p>
+
+            <div class="cta">
+                <h3>Ready to order a birthday cake?</h3>
+                <a
+                    class="button"
+                    href="/#contact"
+                >
+                    Contact me
+                </a>
+            </div>
+        </div>
+    </div>
+
+    {% from "macros/picture.njk" import pictureElement with context %}
+    
+    <div class="product-types" >
+        {% from "macros/fixed-background.njk" import fixedBackground with context %}
+        {{ fixedBackground("marble-background.jpg", "Marble background image") }}
+
+        <h2>Some inspiration...</h2>
+        <p>Sentence here explaining that we're now going to talk through some of the types of birthday cakes they can order.<p>
+
+        {% for product in pages.birthdays.products %}
+            <section class="product">
+                <div class="product-text">
+                    <div class="product-sticky-text card {{  'card-pink' if loop.index0 % 2 == 0 else 'card-black' }}">
+                        <div class="card-inner">
+                            <h3>{{ product.name }}</h2>
+                            <p>{{ product.description }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-images">
+                    {% for cake in product.examples %}
+                        <div
+                            {% if portfolio[cake].videos[0] %}
+                                class="product-video"
+                                style="aspect-ratio:{{ portfolio[cake].videos[0].aspectRatio }};"
+                            {% endif %}
+                        >
+                            {{ pictureElement("portfolio/" + portfolio[cake].images[0].src, portfolio[cake].name, "50vw") }}
+
+                            {% if portfolio[cake].videos[0] %}
+                                <video
+                                    src="/videos/portfolio/{{ portfolio[cake].videos[0].file }}"
+                                    loop
+                                    autoplay
+                                    playsinline
+                                    muted
+                                />
+                            {% endif %}
+                        </div>
+                    {% endfor %}
+                </div>
+            </section>
+        {% endfor %}
+    </div>
+{% endblock %}

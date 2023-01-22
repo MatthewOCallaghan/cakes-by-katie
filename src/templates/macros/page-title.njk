@@ -1,7 +1,7 @@
-{% macro pageTitle(title) %}
+{% macro pageTitle(title, imagePath="marble-background.jpg", imageAlt="Marble background image") %}
 {% from "macros/picture.njk" import pictureElement with context %}
 <div class="page-title">
-    {{ pictureElement("marble-background.jpg", "Marble background image") }}
+    {{ pictureElement(imagePath, imageAlt) }}
     <h1>{{ title }}</h1>
 </div>
 {% endmacro %}

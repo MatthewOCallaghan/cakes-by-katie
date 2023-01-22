@@ -6,7 +6,10 @@
     },
     "portfolio": {
       "title": "Portfolio | Cakes by Katie",
-      "description": "See all the high quality bespoke cakes and cupcakes I have made for birthdays, weddings, anniversaries, christenings and other occasions. I am based in Thatcham, West Berkshire, near Newbury and Reading."
+      "description": "See all the high quality bespoke cakes and cupcakes I have made for birthdays, weddings, anniversaries, christenings and other occasions. I am based in Thatcham, West Berkshire, near Newbury and Reading.",
+      "heading": {
+        "text": "Portfolio"
+      }
     },
     "testimonials": {
       "title": "Testimonials | Cakes by Katie",
@@ -15,6 +18,9 @@
     "faqs": {
       "title": "Frequently Asked Questions | Cakes by Katie",
       "description": "Find the answers to some questions I commonly get asked by my customers.",
+      "heading": {
+        "text": "FAQs"
+      },
       "questions": [
         {
           "question": "Where are you based?",
@@ -51,7 +57,68 @@
       ]
     },
     "404": {
-      "title": "Page not found | Cakes by Katie"
+      "title": "Page not found | Cakes by Katie",
+      "heading": {
+        "text": "404"
+      }
+    },
+    "birthdays": {
+      "title": "Birthday cakes | Cakes by Katie",
+      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke birthday cakes in a wide range of flavours.",
+      "heading": {
+        "text": "Birthday cakes",
+        "image": {
+          "path": "/backgrounds/birthday-balloons.jpg",
+          "alt": "Birthday background"
+        }
+      },
+      "products": [
+        {
+          "name": "Themed cakes",
+          "description": "Themed cakes allow the design to be tailored to the recipient in terms of their likes, hobbies and personality for example.",
+          "examples": ["ready-set-go-kart", "hp-slytherin-edition", "birthday-books", "90-not-out"]
+        },
+        {
+          "name": "Carved cakes",
+          "description": "Cut to the desired shape, hand carved cakes bring to life the cake design.",
+          "examples": ["parker-penguin", "reading-football-shirt"]
+        },
+        {
+          "name": "Milestone Number cakes",
+          "description": "Cakes shaped as a number to celebrate every age including 21st, 30th, 40th, 50th, 60th, 70th, 80th, 90th and 100th.",
+          "examples": ["parker-penguin"]
+        },
+        {
+          "name": "Money cakes",
+          "description": "Money, attached to a cake topper, is inserted into clear film wallets encased in a plastic box that is hidden inside the cake. Just pull out the topper and the money roll is revealed! Great for a 21st or other milestone birthday.",
+          "examples": ["parker-penguin"]
+        },
+        {
+          "name": "Pinata cakes",
+          "description": "These cakes have a hidden surprise and have a special appeal to children. They can be filled with sweets or chocolate.",
+          "examples": ["easter-surprise"]
+        },
+        {
+          "name": "Buttercream cakes",
+          "description": "Buttercream cakes are finished completely in buttercream in either one or more colours to produce the desired effect. The finish can be smooth or textured.",
+          "examples": ["shades-of-chocolate", "shades-of-pink-and-gold-fault-line", "pink-ombre-daisies"]
+        },
+        {
+          "name": "Fondant cakes",
+          "description": "Cakes are covered in a smooth layer of sugarpaste and can be decorated with flowers, objects or figures modelled from fondant icing.",
+          "examples": ["flower-elegance", "wonder-woman", "come-fly-with-me"]
+        },
+        {
+          "name": "Airbrushing",
+          "description": "Airbrushing adds an exciting dimension to a fondant cake, introducing additional colour either as an abstract or block design. Blending the colours can also add depth.",
+          "examples": ["psychedelic-symphony"]
+        },
+        {
+          "name": "Edible images",
+          "description": "Edible images can be placed on either a buttercream or fondant finished cake. They offer greater design flexibility and are cheaper than fondant models. An edible image of a favourite photograph will also add that personal touch.",
+          "examples": ["superhero-ombre", "hp-slytherin-edition"]
+        }
+      ]
     }
   },
   "portfolio": {

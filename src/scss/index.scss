@@ -44,7 +44,7 @@
         justify-content: center;        
 
         h1 {
-            font-family: variables.$handwriting;
+            font-size: 2em;
         }
     }
 }
@@ -83,22 +83,11 @@
 
 #contact {
 
-    position: relative;
     overflow: hidden;
     display: flex;
     justify-content: center;
     padding-top: 40px;
     padding-bottom: 40px;
-
-    // Background image
-    img {
-        position: fixed;
-        top: 0;
-        left: 0;
-        min-width: 100%;
-        min-height: 100%;
-        z-index: -1;
-    }
 
     .contact-card {
         max-width: 1400px;
@@ -115,14 +104,12 @@
         $colour2: #000;
 
         h2, h3 {
-            font-family: variables.$handwriting;
             margin: 0;
             text-align: center;
         }
 
         // Heading in left card
         h2 {
-            font-size: 3em;
             color: $colour2;
         }
 

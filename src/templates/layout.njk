@@ -10,8 +10,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Licorice&family=Open+Sans:ital,wght@0,300;0,500;1,300;1,400&display=swap" rel="stylesheet">
 
         <!-- build:css css/{{ page }}.min.css -->
-        <link rel="stylesheet" type="text/css" href="css/global.css">
-        <link rel="stylesheet" type="text/css" href="{{ "css/" ~ page ~ ".css"}}">
+        <link rel="stylesheet" type="text/css" href="/css/global.css">
+        <link rel="stylesheet" type="text/css" href="{{ "/css/" ~ page ~ ".css"}}">
         <!-- endbuild -->
 
         {% block head %}{% endblock %}
@@ -60,10 +60,10 @@
             <div id="mobile-nav-header">
                 <div class="mobile-logo-container">
                     {% if page === "index" %}
-                        <img src="images/cakes-by-katie.svg" alt="Logo" height="100%" width="auto" />
+                        <img src="/images/cakes-by-katie.svg" alt="Logo" height="100%" width="auto" />
                     {% else %}
                         <a href="/">
-                            <img src="images/cakes-by-katie.svg" alt="Logo" height="100%" width="auto" />
+                            <img src="/images/cakes-by-katie.svg" alt="Logo" height="100%" width="auto" />
                         </a>
                     {% endif %}
                 </div>
@@ -82,7 +82,7 @@
                 <a href="/portfolio">Portfolio</a>
                 <a class="logo-container" href="/">
                     <div class="logo-background">
-                        <img src="images/logo.svg" alt="Logo" height="100%" width="100%" />
+                        <img src="/images/logo.svg" alt="Logo" height="100%" width="100%" />
                     </div>
                 </a>
                 <a href="/testimonials">Testimonials</a>
@@ -96,6 +96,15 @@
         </header>
 
         <main>
+            {% if pages[page].heading %}
+                {% from "macros/page-title.njk" import pageTitle with context %}
+                {% if pages[page].heading.image %}
+                    {{ pageTitle(pages[page].heading.text, pages[page].heading.image.path, pages[page].heading.image.alt) }}
+                {% else %}
+                    {{ pageTitle(pages[page].heading.text) }}
+                {% endif %}
+            {% endif %}
+
             {% block main %}{% endblock %}
         </main>
 
@@ -143,7 +152,7 @@
         </footer>
 
         <!-- build:js js/{{ page }}.min.js -->
-        <script type="text/javascript" src="js/nav-menu.js" defer></script>
+        <script type="text/javascript" src="/js/nav-menu.js" defer></script>
         {% block scripts %}{% endblock %}
         <!-- endbuild -->
     </body>

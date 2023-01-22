@@ -4,10 +4,10 @@
     {% for type in imageFormats.formats %}
         <source
             type="image/{{ type }}"
-            srcset="{{ imageFormats.widths | createSrcset("images/" + name, type) }}"
+            srcset="{{ imageFormats.widths | createSrcset("/images/" + name, type) }}"
             sizes="{{ recommendedSizes | createSizes }}"
         >
     {% endfor %}
-    <img src="images/{{ path }}" alt="{{ alt }}" />
+    <img src="/images/{{ path }}" alt="{{ alt }}" />
 </picture>
 {% endmacro %}

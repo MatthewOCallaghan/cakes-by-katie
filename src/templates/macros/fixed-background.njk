@@ -1,0 +1,6 @@
+{% macro fixedBackground(path, alt) %}
+{% from "macros/picture.njk" import pictureElement with context %}
+<div class="fixed-background-image">
+    {{ pictureElement(path, alt) }}
+</div>
+{% endmacro %}
