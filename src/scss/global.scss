@@ -537,6 +537,11 @@ footer {
         object-fit: cover;
     }
     
+    &.darkened {
+        img {
+            filter: brightness(0.8);
+        }
+    }
 }
 
 .fixed-background-image {

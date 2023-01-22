@@ -1,6 +1,7 @@
 {% macro pageTitle(title, imagePath="marble-background.jpg", imageAlt="Marble background image") %}
 {% from "macros/picture.njk" import pictureElement with context %}
-<div class="page-title">
+{# Darken the background image if it isn't the default marble one. This makes text stand out better. #}
+<div class="page-title{{ " darkened" if imagePath !== "marble-background.jpg"}}">
     {{ pictureElement(imagePath, imageAlt) }}
     <h1>{{ title }}</h1>
 </div>

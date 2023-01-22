@@ -796,6 +796,9 @@ footer .moc-container a svg {
   height: 100%;
   object-fit: cover;
 }
+.page-title.darkened img {
+  filter: brightness(0.8);
+}
 
 .fixed-background-image img {
   position: fixed;
