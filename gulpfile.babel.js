@@ -1,6 +1,6 @@
 // Uses Babel so we can use ES6 (explained at https://markgoodyear.com/2015/06/using-es6-with-gulp/)
 
-import data from './src/data.json';
+import fs from 'fs';
 import { src, dest, watch, series, parallel } from 'gulp';
 import browserSync from 'browser-sync';
 import gulpSass from 'gulp-sass';
@@ -30,6 +30,8 @@ import { removeExtension } from './utils/files';
 import ftp from 'vinyl-ftp';
 import logger from 'fancy-log';
 
+let data;
+
 const browserSyncInstance = browserSync.create();
 const sass = gulpSass(sassCompiler);
 
@@ -57,6 +59,8 @@ function processSass() {
 }
 
 function setupData() {
+    data = JSON.parse(fs.readFileSync('./src/data.json', 'utf8'));
+
     data.imageFormats = {
         widths: WIDTHS,
         formats: FORMATS,
@@ -158,7 +162,8 @@ function reload(cb) {
 
 function watchFiles() {
     watch('src/scss/**/*.scss', processSass);
-    watch(['src/pages/**/*.njk', 'src/templates/**/*.njk', 'src/data.json'], processNunjucks);
+    watch('src/data.json', series(setupData, processNunjucks));
+    watch(['src/pages/**/*.njk', 'src/templates/**/*.njk'], processNunjucks);
     watch('src/js/**/*.js', reload);
     watch('src/new-images/**/*', processNewImages);
 }
