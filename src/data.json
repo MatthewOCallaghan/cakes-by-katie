@@ -4,6 +4,13 @@
       "title": "Cakes by Katie",
       "description": "Cake maker in Thatcham, West Berkshire, who offers high quality bespoke cakes for birthdays, weddings, anniversaries, christenings, or any occasion."
     },
+    "about": {
+      "title": "About me | Cakes by Katie",
+      "description": "I'm a cake maker in Thatcham, West Berkshire, offering high quality bespoke cakes for birthdays, weddings, anniversaries, christenings, or any occasion.",
+      "heading": {
+        "text": "About me"
+      }
+    },
     "portfolio": {
       "title": "Portfolio | Cakes by Katie",
       "description": "See all the high quality bespoke cakes and cupcakes I have made for birthdays, weddings, anniversaries, christenings and other occasions. I am based in Thatcham, West Berkshire, near Newbury and Reading.",
@@ -60,17 +67,6 @@
       "title": "Page not found | Cakes by Katie",
       "heading": {
         "text": "404"
-      }
-    },
-    "weddings": {
-      "title": "Wedding cakes | Cakes by Katie",
-      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke wedding cakes in a wide range of flavours.",
-      "heading": {
-        "text": "Wedding cakes",
-        "image": {
-          "path": "/backgrounds/wedding.jpg",
-          "alt": "Wedding background"
-        }
       }
     },
     "birthdays": {
@@ -130,6 +126,17 @@
           "examples": ["superhero-ombre", "hp-slytherin-edition"]
         }
       ]
+    },
+    "weddings": {
+      "title": "Wedding cakes | Cakes by Katie",
+      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke wedding cakes in a wide range of flavours.",
+      "heading": {
+        "text": "Wedding cakes",
+        "image": {
+          "path": "/backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      }
     }
   },
   "portfolio": {
