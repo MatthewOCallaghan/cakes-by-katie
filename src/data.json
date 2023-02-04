@@ -81,31 +81,6 @@
       },
       "products": [
         {
-          "name": "Themed cakes",
-          "description": "Themed cakes allow the design to be tailored to the recipient in terms of their likes, hobbies and personality for example.",
-          "examples": ["ready-set-go-kart", "hp-slytherin-edition", "birthday-books", "90-not-out"]
-        },
-        {
-          "name": "Carved cakes",
-          "description": "Cut to the desired shape, hand carved cakes bring to life the cake design.",
-          "examples": ["parker-penguin", "reading-football-shirt"]
-        },
-        {
-          "name": "Milestone Number cakes",
-          "description": "Cakes shaped as a number to celebrate every age including 21st, 30th, 40th, 50th, 60th, 70th, 80th, 90th and 100th.",
-          "examples": ["parker-penguin"]
-        },
-        {
-          "name": "Money cakes",
-          "description": "Money, attached to a cake topper, is inserted into clear film wallets encased in a plastic box that is hidden inside the cake. Just pull out the topper and the money roll is revealed! Great for a 21st or other milestone birthday.",
-          "examples": ["parker-penguin"]
-        },
-        {
-          "name": "Pinata cakes",
-          "description": "These cakes have a hidden surprise and have a special appeal to children. They can be filled with sweets or chocolate.",
-          "examples": ["easter-surprise"]
-        },
-        {
           "name": "Buttercream cakes",
           "description": "Buttercream cakes are finished completely in buttercream in either one or more colours to produce the desired effect. The finish can be smooth or textured.",
           "examples": ["shades-of-chocolate", "shades-of-pink-and-gold-fault-line", "pink-ombre-daisies"]
@@ -116,14 +91,44 @@
           "examples": ["flower-elegance", "wonder-woman", "come-fly-with-me"]
         },
         {
+          "name": "Themed cakes",
+          "description": "Themed cakes allow the design to be tailored to the recipient in terms of their likes, hobbies and personality for example.",
+          "examples": ["ready-set-go-kart", "hp-slytherin-edition", "birthday-books", "90-not-out"]
+        },
+        {
+          "name": "Birthday cupcakes",
+          "description": "Birthday cupcakes are easy to share and customise with a decoration of your choice and available in both standard and deluxe flavours. If some of your party have dietary requirements, cupcakes are a good way to cater for them separately. Cupcakes can also make a special birthday gift and can be presented in a gift box finished with ribbon and a bow and candle.",
+          "examples": ["birthday-beach-mix"]
+        },
+        {
+          "name": "Carved cakes",
+          "description": "Cut to the desired shape, hand carved cakes bring to life the cake design.",
+          "examples": ["parker-penguin", "reading-football-shirt"]
+        },
+        {
+          "name": "Edible images",
+          "description": "Edible images can be placed on either a buttercream or fondant finished cake. They offer greater design flexibility and are cheaper than fondant models. An edible image of a favourite photograph will also add that personal touch.",
+          "examples": ["superhero-ombre", "pink-and-bluey", "football-print-arsenal"]
+        },
+        {
           "name": "Airbrushing",
           "description": "Airbrushing adds an exciting dimension to a fondant cake, introducing additional colour either as an abstract or block design. Blending the colours can also add depth.",
           "examples": ["psychedelic-symphony"]
         },
         {
-          "name": "Edible images",
-          "description": "Edible images can be placed on either a buttercream or fondant finished cake. They offer greater design flexibility and are cheaper than fondant models. An edible image of a favourite photograph will also add that personal touch.",
-          "examples": ["superhero-ombre", "hp-slytherin-edition"]
+          "name": "Pinata cakes",
+          "description": "These cakes have a hidden surprise and have a special appeal to children. They can be filled with sweets or chocolate.",
+          "examples": ["easter-surprise"]
+        },
+        {
+          "name": "Milestone Number cakes",
+          "description": "Cakes shaped as a number to celebrate every age including 21st, 30th, 40th, 50th, 60th, 70th, 80th, 90th and 100th.",
+          "examples": ["parker-penguin"]
+        },
+        {
+          "name": "Money cakes",
+          "description": "Money, attached to a cake topper, is inserted into clear film wallets encased in a plastic box that is hidden inside the cake. Just pull out the topper and the money roll is revealed! Great for a 21st or other milestone birthday.",
+          "examples": ["parker-penguin"]
         }
       ]
     },
