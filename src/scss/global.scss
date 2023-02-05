@@ -13,6 +13,10 @@ $mobileNavMaxWidth: 750px;
     font-weight: 100;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 // Keep footer at bottom
 body {
     display: flex;
