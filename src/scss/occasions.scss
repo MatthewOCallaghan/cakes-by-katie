@@ -41,14 +41,13 @@ section.occasion-links {
         margin: 30px auto;
         max-width: 1200px;
         justify-content: center;
-        gap: 30px;
+        gap: min(3vw, 30px);
 
         a {
-            $length: 200px;
-
             display: block;
-            width: $length;
-            max-width: 40%;
+            width: 20vw;
+            min-width: 160px;
+            max-width: 280px;
             aspect-ratio: 1;
             
             border-radius: 20px;
@@ -67,30 +66,45 @@ section.occasion-links {
             }
 
             &:nth-child(3) {
-                background: #bffcc6;
+                background: #f8df81;
+            }
+
+            &:nth-child(4) {
+                background: #ffabab;
+            }
+
+            &:nth-child(5) {
+                background: #adf7b6;
             }
 
             div.occasion-inner {
                 transition: all .5s;
+                display: grid;
+                grid-template-rows: 50% 1fr;
+                height: 100%;
 
                 h3 {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    height: $length * .5;
+                    height: 100%;
                     margin: 0;
                     text-shadow: 0 0 4px #00000036;
+                    font-size: max(3vw, 2em);
+                    padding: 0 10%;
+                    line-height: 90%;
                 }
                 
                 img {
                     width: 80%;
                     transition: all .5s;
+                    transform-origin: top;
                 }
             }
 
             @include mixins.hover {
                 div.occasion-inner {
-                    transform: translateY($length * - .35);
+                    transform: translateY(calc(10px - 50%));
 
                     img {
                         transform: scale(1.12);
