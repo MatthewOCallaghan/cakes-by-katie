@@ -3,6 +3,30 @@
 
 {% block main %}
 
-    
+    <div class="about-container">
+
+        {% from "macros/picture.njk" import pictureElement with context %}
+        {{ pictureElement("katie.jpg", "Katie", "calc(max(min(40vw, 30vh), 200px))") }}
+
+        <h2>Hi, I'm Katie...</h2>
+
+        <p>Thank you for visiting my website. I'm a cake maker based in Thatcham, near Newbury, West Berkshire.</p>
+
+        <p>I love making and decorating cakes.  I recently set up my own business, having worked for a celebration cake company for two years after leaving school,, where I honed and perfected my skills.</p>
+
+        <p>I make cakes and cupcakes for all occasions and would love to work with you to create your perfect cake(s).  I offer a wide range of flavours and also cater for certain dietary requirements such as gluten and dairy free.</p>
+
+        <p>Cupcakes also make the perfect gift and I offer a range of standard and deluxe cupcakes presented in an elegant gift box.</p>
+
+        <div class="cta">
+            <h3>Ready to order?</h3>
+            <a
+                class="button"
+                href="/#contact"
+            >
+                Contact me
+            </a>
+        </div>
+    </div>
 
 {% endblock %}
