@@ -1,0 +1,78 @@
+section.intro {
+  background: #FFF;
+  padding: 20px;
+}
+section.intro div.intro-inner {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+section.intro div.intro-inner div.cta {
+  padding: 20px;
+}
+section.intro div.intro-inner div.cta h3 {
+  margin-top: 0;
+}
+
+section.occasion-links {
+  padding: 0 20px;
+}
+section.occasion-links h2 {
+  text-align: center;
+  margin-bottom: 0;
+}
+section.occasion-links > p {
+  text-align: center;
+}
+section.occasion-links div.links-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px auto;
+  max-width: 1200px;
+  justify-content: center;
+  gap: 30px;
+}
+section.occasion-links div.links-container a {
+  display: block;
+  width: 200px;
+  max-width: 40%;
+  aspect-ratio: 1;
+  border-radius: 20px;
+  box-shadow: 0 0 4px 0 #00000030, inset 0 0 4px 0 #00000030;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  overflow: hidden;
+}
+section.occasion-links div.links-container a:nth-child(1) {
+  background: #ace7ff;
+}
+section.occasion-links div.links-container a:nth-child(2) {
+  background: #c5a3ff;
+}
+section.occasion-links div.links-container a:nth-child(3) {
+  background: #bffcc6;
+}
+section.occasion-links div.links-container a div.occasion-inner {
+  transition: all 0.5s;
+}
+section.occasion-links div.links-container a div.occasion-inner h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  margin: 0;
+  text-shadow: 0 0 4px #00000036;
+}
+section.occasion-links div.links-container a div.occasion-inner img {
+  width: 80%;
+  transition: all 0.5s;
+}
+@media (hover: hover) {
+  section.occasion-links div.links-container a:hover div.occasion-inner {
+    transform: translateY(-70px);
+  }
+  section.occasion-links div.links-container a:hover div.occasion-inner img {
+    transform: scale(1.12);
+  }
+}

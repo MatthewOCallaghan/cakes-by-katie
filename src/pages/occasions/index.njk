@@ -1,0 +1,71 @@
+{% set page = "occasions" %}
+{% extends "layout.njk" %}
+
+{% block main %}
+
+    <section class="intro">
+        <div class="intro-inner">
+            <p>Whatever the occasion, I can design and make your celebration cake, be it for a birthday, wedding, anniversary, corporate event, christening, baby shower, Easter, Christmas...etc.</p>
+
+            <p>If you have a design in mind, that's great, or you can choose a cake from my portfolio or let me design the cake for you.</p>
+
+            <p>Cakes can be finished in either buttercream or fondant and you can choose from an extensive list of sponge flavours. I can also cater for certain dietary requirements like dairy and gluten free.</p>
+
+            <p>Decorative choices include chocolate or coloured drips, fondant or real flowers, fondant models, airbrushing and edible images.</p>
+        
+            <div class="cta">
+                <h3>Ready to make your occasion special?</h3>
+                <a
+                    class="button"
+                    href="/#contact"
+                >
+                    Contact me
+                </a>
+            </div>
+        </div>
+    </section>
+
+    {% from "macros/picture.njk" import pictureElement with context %}
+    
+    <section class="occasion-links" >
+        {% from "macros/fixed-background.njk" import fixedBackground with context %}
+        {{ fixedBackground("marble-background.jpg", "Marble background image") }}
+
+        <h2>What's your occasion?</h2>
+        <p>I can cater for all occasions, but here are some of the most common...<p>
+        
+        {% from "macros/picture.njk" import pictureElement with context %}
+        
+        <div class="links-container">
+            <a href="/occasions/birthdays">
+                <div class="occasion-inner">
+                    <h3>Birthday</h3>
+
+                    
+                    {{ pictureElement("mobile-nav-cake.png", "Parker penguin birthday cake", "200px") }}
+                </div>
+            </a>
+
+            <a href="/occasions/weddings">
+                <div class="occasion-inner">
+                    <h3>Wedding</h3>
+
+                    
+                    {{ pictureElement("/occasions/wedding.png", "Wedding cake", "200px") }}
+                </div>
+            </a>
+
+            <a href="/occasions/corporate">
+                <div class="occasion-inner">
+                    <h3>Corporate</h3>
+
+                    
+                    {{ pictureElement("/occasions/corporate-cupcakes.png", "Corporate cupcakes", "200px") }}
+                </div>
+            </a>
+        </div>
+
+    </section>
+
+
+{% endblock %}

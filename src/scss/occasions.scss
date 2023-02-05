@@ -1,0 +1,102 @@
+@use "variables";
+@use "mixins";
+
+section.intro {
+    background: #FFF;
+
+    padding: 20px;
+
+    div.intro-inner {
+        max-width: 1100px;
+        margin: auto;
+        text-align: center;
+
+        div.cta {
+            h3 {
+                margin-top: 0;
+            }
+
+            padding: 20px;
+        }
+    }
+    
+}
+
+section.occasion-links {
+
+    padding: 0 20px;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    > p {
+        text-align: center;
+    }
+
+    div.links-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 30px auto;
+        max-width: 1200px;
+        justify-content: center;
+        gap: 30px;
+
+        a {
+            $length: 200px;
+
+            display: block;
+            width: $length;
+            max-width: 40%;
+            aspect-ratio: 1;
+            
+            border-radius: 20px;
+            box-shadow: 0 0 4px 0 #00000030, inset 0 0 4px 0 #00000030;
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+            overflow: hidden;
+
+            &:nth-child(1) {
+                background: #ace7ff;
+            }
+
+            &:nth-child(2) {
+                background: #c5a3ff;
+            }
+
+            &:nth-child(3) {
+                background: #bffcc6;
+            }
+
+            div.occasion-inner {
+                transition: all .5s;
+
+                h3 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: $length * .5;
+                    margin: 0;
+                    text-shadow: 0 0 4px #00000036;
+                }
+                
+                img {
+                    width: 80%;
+                    transition: all .5s;
+                }
+            }
+
+            @include mixins.hover {
+                div.occasion-inner {
+                    transform: translateY($length * - .35);
+
+                    img {
+                        transform: scale(1.12);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -69,6 +69,17 @@
         "text": "404"
       }
     },
+    "occasions": {
+      "title": "Occasions | Cakes by Katie",
+      "description": "I'm a cake maker in Thatcham, West Berkshire, offering high quality bespoke cakes for birthdays, weddings, anniversaries, christenings, or any occasion.",
+      "heading": {
+        "text": "Occasions",
+        "image": {
+          "path": "/backgrounds/confetti.jpg",
+          "alt": "Confetti background"
+        }
+      }
+    },
     "birthdays": {
       "title": "Birthday cakes | Cakes by Katie",
       "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke birthday cakes in a wide range of flavours.",
