@@ -158,9 +158,8 @@ section {
 }
 
 $logoDiameter: 130px;
+$headerHeight: 50px;
 header {
-    $headerHeight: 50px;
-
     background: variables.$black;
     height: $headerHeight;
     width: 100%;
@@ -516,15 +515,8 @@ footer {
         font-family: variables.$handwriting;
         color: variables.$pink;
         font-size: 4em;
-
-        width: calc(50% - ($logoDiameter / 2)); // Need to subtract half logo width
         text-align: center;
-        // text-shadow: 1px 1px 0px variables.$pink, -1px -1px 0px variables.$pink, 0px 0px 20px #0000000d;
         text-shadow: 1px 1px 0px variables.$pink, 2px 2px 0px #{variables.$pink}82, 2px 2px 0px #909090cc;
-
-        @media only screen and (max-width: $mobileNavMaxWidth) {
-            width: 100%;
-        }
     }
 
     img {
@@ -540,6 +532,14 @@ footer {
     &.darkened {
         img {
             filter: brightness(0.8);
+        }
+    }
+
+    @media only screen and (min-width: ($mobileNavMaxWidth + 1px)) {
+        padding-top: $logoDiameter - $headerHeight;
+
+        h1 {
+            margin-top: 1em;
         }
     }
 }

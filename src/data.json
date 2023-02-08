@@ -20,7 +20,14 @@
     },
     "testimonials": {
       "title": "Testimonials | Cakes by Katie",
-      "description": "Read some of the glowing testimonials I have received for my bespoke cakes and cupcakes from my many wonderful customers."
+      "description": "Read some of the glowing testimonials I have received for my bespoke cakes and cupcakes from my many wonderful customers.",
+      "heading": {
+        "text": "Testimonials",
+        "image": {
+          "path": "/backgrounds/writing.jpg",
+          "alt": "Writing background"
+        }
+      }
     },
     "faqs": {
       "title": "Frequently Asked Questions | Cakes by Katie",

@@ -778,14 +778,8 @@ footer .moc-container a svg {
   font-family: "Licorice", sans-serif;
   color: #F7CAC9;
   font-size: 4em;
-  width: calc(50% - 65px);
   text-align: center;
   text-shadow: 1px 1px 0px #F7CAC9, 2px 2px 0px #F7CAC982, 2px 2px 0px #909090cc;
-}
-@media only screen and (max-width: 750px) {
-  .page-title h1 {
-    width: 100%;
-  }
 }
 .page-title img {
   position: absolute;
@@ -798,6 +792,14 @@ footer .moc-container a svg {
 }
 .page-title.darkened img {
   filter: brightness(0.8);
+}
+@media only screen and (min-width: 751px) {
+  .page-title {
+    padding-top: 80px;
+  }
+  .page-title h1 {
+    margin-top: 1em;
+  }
 }
 
 .fixed-background-image img {

@@ -12,4 +12,3 @@ Code for website [cakesbykatie.co.uk](https://www.cakesbykatie.co.uk).
 - SEO (compare with competitors)
 - Links from cakes on home page to portfolio page modal
 - Maybe some text on top of header video (certainly a "Scroll down" button at least)
-- Only one FAQ open at a time
