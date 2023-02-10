@@ -15,7 +15,11 @@
       "title": "Portfolio | Cakes by Katie",
       "description": "See all the high quality bespoke cakes and cupcakes I have made for birthdays, weddings, anniversaries, christenings and other occasions. I am based in Thatcham, West Berkshire, near Newbury and Reading.",
       "heading": {
-        "text": "Portfolio"
+        "text": "Portfolio",
+        "image": {
+          "path": "/backgrounds/camera.jpg",
+          "alt": "Camera background"
+        }
       }
     },
     "testimonials": {
@@ -33,7 +37,11 @@
       "title": "Frequently Asked Questions | Cakes by Katie",
       "description": "Find the answers to some questions I commonly get asked by my customers.",
       "heading": {
-        "text": "FAQs"
+        "text": "FAQs",
+        "image": {
+          "path": "/backgrounds/question-mark.jpg",
+          "alt": "Question mark background"
+        }
       },
       "questions": [
         {
