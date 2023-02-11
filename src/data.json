@@ -95,8 +95,8 @@
         }
       }
     },
-    "birthdays": {
-      "title": "Birthday cakes | Cakes by Katie",
+    "birthday": {
+      "title": "Birthday cakes and cupcakes | Cakes by Katie",
       "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke birthday cakes in a wide range of flavours.",
       "heading": {
         "text": "Birthday cakes",
@@ -158,7 +158,7 @@
         }
       ]
     },
-    "weddings": {
+    "wedding": {
       "title": "Wedding cakes | Cakes by Katie",
       "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke wedding cakes in a wide range of flavours.",
       "heading": {
@@ -166,6 +166,17 @@
         "image": {
           "path": "/backgrounds/wedding.jpg",
           "alt": "Wedding background"
+        }
+      }
+    },
+    "anniversary": {
+      "title": "Anniversary cakes | Cakes by Katie",
+      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke anniversary cakes in a wide range of flavours.",
+      "heading": {
+        "text": "Anniversary cakes",
+        "image": {
+          "path": "/backgrounds/roses.jpg",
+          "alt": "Roses background"
         }
       }
     }
