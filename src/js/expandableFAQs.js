@@ -10,6 +10,17 @@ document.querySelectorAll('.question').forEach((element, index) => {
 
     const onClick = function() {
         const currentlyExpanded = title.getAttribute('aria-expanded') === 'true';
+
+        // If expanding, check if any other question is expanded
+        if (!currentlyExpanded) {
+            const expandedTitle = document.querySelector('h2[aria-expanded=true]');
+            // If another question is expanded, close it
+            if (expandedTitle) {
+                expandedTitle.setAttribute('aria-expanded', false);
+                expandedTitle.closest('.question').classList.toggle(EXPANDED);
+            }
+        }
+
         element.classList.toggle(EXPANDED);
         title.setAttribute('aria-expanded', currentlyExpanded ? 'false' : 'true');
 

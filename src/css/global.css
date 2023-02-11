@@ -343,6 +343,10 @@ template {
   font-weight: 100;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -600,10 +604,10 @@ header #mobile-nav-image {
   display: none;
   justify-content: flex-end;
   align-items: flex-end;
-  padding: 20px;
+  padding: 2.5vw;
 }
 header #mobile-nav-image img {
-  height: 200px;
+  height: 170px;
   max-height: 100%;
   width: auto;
 }
@@ -611,7 +615,7 @@ header #mobile-nav-image img {
   header {
     display: flex;
     flex-direction: column;
-    z-index: 1;
+    z-index: 100;
   }
   header #mobile-nav-header {
     display: flex;
@@ -661,7 +665,12 @@ header #mobile-nav-image img {
 
 @media only screen and (max-width: 750px) {
   body.nav-open header {
-    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
     border-bottom: none;
   }
   body.nav-open header #mobile-nav-header .mobile-logo-container {

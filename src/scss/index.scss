@@ -4,16 +4,164 @@
 #header-video {
     width: 100%;
     background: #000;
+    position: relative;
 
     video {
         width: 100%;
         min-height: 50vh;
         max-height: calc(100vh - 50px);
         object-fit: cover;
+        filter: brightness(0.5);
 
         // #header-video will be a few px taller than video without this
         // No idea why?
         display: flex;
+    }
+
+    .header-video-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        span.main-text {
+            font-size: 12vw;
+            margin: 0;
+            font-family: variables.$handwriting;
+            color: variables.$pink;
+            text-shadow: 0 0 4px #ffffff78;
+            // background: -webkit-linear-gradient(top, #f7cac9, #fff);
+            // -webkit-background-clip: text;
+            // -webkit-text-fill-color: transparent;
+
+            line-height: 80%;
+
+            @keyframes fade-in {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+
+            animation-name: fade-in;
+            animation-duration: 1s;
+            animation-delay: 1s;
+            animation-fill-mode: both;
+        }
+
+        span.text-divider {
+            display: block;
+            width: 85vw;
+            height: 1px;
+            background: #fff;
+            margin-top: 0.5vw;
+            margin-bottom: 1vw;
+
+            @keyframes in-to-out {
+                from {
+                    transform: scaleX(0);
+                }
+                to {
+                    opacity: scaleX(1);
+                }
+            }
+
+            animation-name: in-to-out;
+            animation-duration: 1s;
+            animation-delay: 2s;
+            animation-fill-mode: both;
+        }
+
+        span.secondary-text {
+            font-size: 1.8vw;
+            margin: 0;
+
+            @keyframes fade-in-up {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            animation-name: fade-in-up;
+            animation-duration: 0.8s;
+            animation-delay: 2.5s;
+            animation-fill-mode: both;
+        }
+
+        a.scroll-down-button {
+            position: absolute;
+            top: 82%;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+            
+            // SVG container
+            div {
+                width: 4vw;
+                height: 4vw;
+                border: 1px solid #fff7;
+                border-radius: 100px;
+                padding: 1vw;
+                transition: all .3s;
+            }
+            
+            @include mixins.hover {
+                div {
+                    color: #000;
+                    background: #fff;
+                }
+            }
+
+            // "Scroll down" text
+            span {
+                font-size: 70%;
+            }
+
+            // Animation
+            
+            @keyframes fade-in-down {
+                from {
+                    opacity: 0;
+                    transform: translateY(-20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            animation-name: fade-in-down;
+            animation-duration: 0.8s;
+            animation-delay: 3.5s;
+            animation-fill-mode: both;
+        }
+    }
+    
+    // Hide text on screens where video is too small and "About" section is already visible anyway
+    @media only screen and (max-width: 1100px) {
+        video {
+            filter: none;
+        }
+        
+        .header-video-text {
+            display: none;
+        }
     }
 }
 
