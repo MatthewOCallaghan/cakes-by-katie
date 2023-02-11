@@ -523,8 +523,15 @@ header nav .logo-container .logo-background {
 }
 header nav #header-contact-link {
   border: 1px solid #FFF;
-  padding-top: 5px;
   color: #FFF;
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+  font-weight: 300;
   transition: all 0.3s;
 }
 @media (hover: hover) {
@@ -630,6 +637,7 @@ header #mobile-nav-image img {
   }
   header nav #header-contact-link {
     width: 130px;
+    min-height: 40px;
   }
   header nav .logo-container {
     order: -1;

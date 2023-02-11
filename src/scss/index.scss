@@ -81,8 +81,10 @@
         }
 
         span.secondary-text {
-            font-size: 1.8vw;
+            font-size: 2vw;
             margin: 0;
+            font-family: 'Lato', sans-serif;
+            
 
             @keyframes fade-in-up {
                 from {
