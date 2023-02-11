@@ -152,8 +152,16 @@ header {
 
         #header-contact-link {
             border: 1px solid #FFF;
-            padding-top: 5px;
             color: #FFF;
+            font-family: 'Lato', sans-serif;
+            font-size: 1.2rem;
+            height: 34px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 0;
+            font-weight: 300;
+
 
             // Must include color and border-color in transition
             transition: all .3s;
@@ -272,6 +280,7 @@ header {
 
             #header-contact-link {
                 width: 130px;
+                min-height: 40px;
             }
 
             .logo-container {

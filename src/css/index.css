@@ -65,8 +65,9 @@
   }
 }
 #header-video .header-video-text span.secondary-text {
-  font-size: 1.8vw;
+  font-size: 2vw;
   margin: 0;
+  font-family: "Lato", sans-serif;
   animation-name: fade-in-up;
   animation-duration: 0.8s;
   animation-delay: 2.5s;
