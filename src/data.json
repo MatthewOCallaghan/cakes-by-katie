@@ -17,7 +17,7 @@
       "heading": {
         "text": "Portfolio",
         "image": {
-          "path": "/backgrounds/camera.jpg",
+          "path": "backgrounds/camera.jpg",
           "alt": "Camera background"
         }
       }
@@ -28,7 +28,7 @@
       "heading": {
         "text": "Testimonials",
         "image": {
-          "path": "/backgrounds/writing.jpg",
+          "path": "backgrounds/writing.jpg",
           "alt": "Writing background"
         }
       }
@@ -39,7 +39,7 @@
       "heading": {
         "text": "FAQs",
         "image": {
-          "path": "/backgrounds/question-mark.jpg",
+          "path": "backgrounds/question-mark.jpg",
           "alt": "Question mark background"
         }
       },
@@ -90,7 +90,7 @@
       "heading": {
         "text": "Occasions",
         "image": {
-          "path": "/backgrounds/confetti.jpg",
+          "path": "backgrounds/confetti.jpg",
           "alt": "Confetti background"
         }
       }
@@ -101,7 +101,7 @@
       "heading": {
         "text": "Birthday cakes",
         "image": {
-          "path": "/backgrounds/birthday-balloons.jpg",
+          "path": "backgrounds/birthday-balloons.jpg",
           "alt": "Birthday background"
         }
       },
@@ -164,7 +164,7 @@
       "heading": {
         "text": "Wedding cakes",
         "image": {
-          "path": "/backgrounds/wedding.jpg",
+          "path": "backgrounds/wedding.jpg",
           "alt": "Wedding background"
         }
       },
@@ -177,7 +177,7 @@
       "heading": {
         "text": "Anniversary cakes",
         "image": {
-          "path": "/backgrounds/roses.jpg",
+          "path": "backgrounds/roses.jpg",
           "alt": "Roses background"
         }
       },
@@ -191,7 +191,7 @@
       "heading": {
         "text": "Christening cakes, baby shower cakes and gender reveal cakes",
         "image": {
-          "path": "/backgrounds/baby-feet.jpg",
+          "path": "backgrounds/baby-feet.jpg",
           "alt": "Baby's feet background"
         }
       },
@@ -205,7 +205,7 @@
       "heading": {
         "text": "Corporate cakes and cupcakes",
         "image": {
-          "path": "/backgrounds/office.jpg",
+          "path": "backgrounds/office.jpg",
           "alt": "Office background"
         }
       },
@@ -219,7 +219,7 @@
       "heading": {
         "text": "Valentine's cakes",
         "image": {
-          "path": "/backgrounds/hearts.jpg",
+          "path": "backgrounds/hearts.jpg",
           "alt": "Hearts background"
         }
       },
@@ -233,7 +233,7 @@
       "heading": {
         "text": "Easter cakes",
         "image": {
-          "path": "/backgrounds/mini-eggs.jpg",
+          "path": "backgrounds/mini-eggs.jpg",
           "alt": "Mini eggs background"
         }
       },
@@ -246,7 +246,7 @@
       "heading": {
         "text": "Christmas cakes",
         "image": {
-          "path": "/backgrounds/christmas-tree.jpg",
+          "path": "backgrounds/christmas-tree.jpg",
           "alt": "Christmas tree background"
         }
       },
@@ -259,7 +259,7 @@
       "heading": {
         "text": "Afternoon tea cakes",
         "image": {
-          "path": "/backgrounds/tea-set.jpg",
+          "path": "backgrounds/tea-set.jpg",
           "alt": "Afternoon tea background"
         }
       },

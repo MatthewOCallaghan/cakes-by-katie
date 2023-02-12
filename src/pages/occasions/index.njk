@@ -75,7 +75,7 @@
                     title: 'Corporate',
                     imageSrc: 'corporate-cupcakes.png',
                     imageAlt: 'Corporate cupcakes',
-                    colour: '#adf7b6'
+                    colour: '#85ca5d'
                 },
                 {
                     page: 'valentines',
@@ -109,7 +109,7 @@
                 <a href="/occasions/{{ occasion.page }}" style="background:{{ occasion.colour }}">
                     <div class="occasion-inner">
                         <h3>{{ occasion.title }}</h3>
-                        {{ pictureElement("/cake-cutouts/" ~ occasion.imageSrc, occasion.imageAlt, "200px") }}
+                        {{ pictureElement("cake-cutouts/" ~ occasion.imageSrc, occasion.imageAlt, "200px") }}
                     </div>
                 </a>
             {% endfor %}
