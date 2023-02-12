@@ -250,8 +250,8 @@
           "alt": "Christmas tree background"
         }
       },
-      "exampleCake": "easter-surprise",
-      "productName": "Easter cake"
+      "exampleCake": "ruby-reindeer",
+      "productName": "Christmas cake"
     },
     "afternoon-tea": {
       "title": "Afternoon tea cakes and cupcakes | Cakes by Katie",
@@ -269,6 +269,13 @@
     }
   },
   "portfolio": {
+    "ruby-reindeer": {
+      "images": [
+        "Ruby-Front.jpg",
+        "Ruby-Top.jpg"
+      ],
+      "name": "Ruby reindeer"
+    },
     "football-print-arsenal": {
       "images": [
         "Football-Print-Arsenal.jpg"
