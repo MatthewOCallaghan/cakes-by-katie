@@ -11,7 +11,7 @@
 
             <p>Cakes can be finished in either buttercream or fondant and you can choose from an extensive list of sponge flavours. I can also cater for certain dietary requirements like dairy and gluten free.</p>
 
-            <p>Decorative choices include chocolate or coloured drips, fondant or real flowers, fondant models, airbrushing and edible images.</p>
+            <p>Decorative choices include chocolate or coloured drips, fondant or real flowers, fondant models, airbrushing, edible images and balloons.</p>
         
             <div class="cta">
                 <h3>Ready to make your occasion special?</h3>
@@ -35,88 +35,84 @@
         <p>I can cater for all occasions, but here are some of the most common...<p>
         
         {% from "macros/picture.njk" import pictureElement with context %}
+
+        
+
         
         <div class="links-container">
-            <a href="/occasions/birthday">
-                <div class="occasion-inner">
-                    <h3>Birthday</h3>
-
-                    
-                    {{ pictureElement("/cake-cutouts/parker-penguin.png", "Parker penguin birthday cake", "200px") }}
-                </div>
-            </a>
-
-            <a href="/occasions/wedding">
-                <div class="occasion-inner">
-                    <h3>Wedding</h3>
-
-                    
-                    {{ pictureElement("/cake-cutouts/wedding.png", "Wedding cake", "200px") }}
-                </div>
-            </a>
-
-            <a href="/occasions/anniversary">
-                <div class="occasion-inner">
-                    <h3>Anniversary</h3>
-
-                    
-                    {{ pictureElement("/cake-cutouts/anniversary-cake.png", "Anniversary cake", "200px") }}
-                </div>
-            </a>
-
-            <a href="/occasions/christening-and-baby-shower">
-                <div class="occasion-inner">
-                    <h3>Christening</h3>
-
-                    
-                    {{ pictureElement("/cake-cutouts/christening-cake.png", "Christening cake", "200px") }}
-                </div>
-            </a>
-
-            <a href="/occasions/corporate">
-                <div class="occasion-inner">
-                    <h3>Corporate</h3>
-
-                    
-                    {{ pictureElement("/cake-cutouts/corporate-cupcakes.png", "Corporate cupcakes", "200px") }}
-                </div>
-            </a>
-
-            <a href="/occasions/valentines">
-                <div class="occasion-inner">
-                    <h3>Valentine's</h3>
-
-                    
-                    {{ pictureElement("/cake-cutouts/valentines-cake.png", "Valentine's cale", "200px") }}
-                </div>
-            </a>
-
-            <a href="/occasions/easter">
-                <div class="occasion-inner">
-                    <h3>Easter</h3>
-
-                    
-                    {{ pictureElement("/cake-cutouts/easter-cake.png", "Easter cake", "200px") }}
-                </div>
-            </a>
-
-            <a href="/occasions/christmas">
-                <div class="occasion-inner">
-                    <h3>Christmas</h3>
-
-                    
-                    {{ pictureElement("/cake-cutouts/ruby-reindeer.png", "Christmas cake", "200px") }}
-                </div>
-            </a>
-
-            <a href="/occasions/afternoon-tea">
-                <div class="occasion-inner">
-                    <h3>Afternoon tea</h3>
-
-                    
-                    {{ pictureElement("/cake-cutouts/ferrero-rocher-cake.png", "Afternoon tea cake", "200px") }}
-                </div>
-            </a>
+            
+            {% for occasion in [
+                {
+                    page: 'birthday',
+                    title: 'Birthday',
+                    imageSrc: 'parker-penguin.png',
+                    imageAlt: 'Parker penguin birthday cake',
+                    colour: '#ace7ff'
+                },
+                {
+                    page: 'wedding',
+                    title: 'Wedding',
+                    imageSrc: 'wedding.png',
+                    imageAlt: 'Wedding cake',
+                    colour: '#c5a3ff'
+                },
+                {
+                    page: 'anniversary',
+                    title: 'Anniversary',
+                    imageSrc: 'anniversary-cake.png',
+                    imageAlt: 'Anniversary cake',
+                    colour: '#f8df81'
+                },
+                {
+                    page: 'christening-and-baby-shower',
+                    title: 'Christening',
+                    imageSrc: 'christening-cake.png',
+                    imageAlt: 'Christening cake',
+                    colour: '#fca669'
+                },
+                {
+                    page: 'corporate',
+                    title: 'Corporate',
+                    imageSrc: 'corporate-cupcakes.png',
+                    imageAlt: 'Corporate cupcakes',
+                    colour: '#adf7b6'
+                },
+                {
+                    page: 'valentines',
+                    title: "Valentine's",
+                    imageSrc: 'valentines-cake.png',
+                    imageAlt: "Valentine's cake",
+                    colour: '#ffb3c6'
+                },
+                {
+                    page: 'easter',
+                    title: 'Easter',
+                    imageSrc: 'easter-cake.png',
+                    imageAlt: 'Easter cake',
+                    colour: '#6eb5ff'
+                },
+                {
+                    page: 'christmas',
+                    title: 'Christmas',
+                    imageSrc: 'ruby-reindeer.png',
+                    imageAlt: 'Christmas cake',
+                    colour: '#ffabab'
+                },
+                {
+                    page: 'afternoon-tea',
+                    title: 'Afternoon tea',
+                    imageSrc: 'ferrero-rocher-cake.png',
+                    imageAlt: 'Afternoon tea cake',
+                    colour: '#eec9df'
+                }
+            ] %}
+                <a href="/occasions/{{ occasion.page }}" style="background:{{ occasion.colour }}">
+                    <div class="occasion-inner">
+                        <h3>{{ occasion.title }}</h3>
+                        {{ pictureElement("/cake-cutouts/" ~ occasion.imageSrc, occasion.imageAlt, "200px") }}
+                    </div>
+                </a>
+            {% endfor %}
         </div>
 
     </section>

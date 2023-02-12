@@ -57,42 +57,6 @@ section.occasion-links {
             text-align: center;
             overflow: hidden;
 
-            &:nth-child(1) {
-                background: #ace7ff;
-            }
-
-            &:nth-child(2) {
-                background: #c5a3ff;
-            }
-
-            &:nth-child(3) {
-                background: #f8df81;
-            }
-
-            &:nth-child(4) {
-                background: #fca669;
-            }
-
-            &:nth-child(5) {
-                background: #adf7b6;
-            }
-
-            &:nth-child(6) {
-                background: #ffb3c6;
-            }
-
-            &:nth-child(7) {
-                background: #6eb5ff;
-            }
-
-            &:nth-child(8) {
-                background: #ffabab;
-            }
-
-            &:nth-child(9) {
-                background: #eec9df;
-            }
-
             div.occasion-inner {
                 transition: all .5s;
                 display: grid;

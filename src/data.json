@@ -147,14 +147,14 @@
           "examples": ["easter-surprise"]
         },
         {
-          "name": "Milestone Number cakes",
-          "description": "Cakes shaped as a number to celebrate every age including 21st, 30th, 40th, 50th, 60th, 70th, 80th, 90th and 100th.",
-          "examples": ["parker-penguin"]
-        },
-        {
           "name": "Money cakes",
           "description": "Money, attached to a cake topper, is inserted into clear film wallets encased in a plastic box that is hidden inside the cake. Just pull out the topper and the money roll is revealed! Great for a 21st or other milestone birthday.",
-          "examples": ["parker-penguin"]
+          "examples": ["golden-drip-cake-with-age"]
+        },
+        {
+          "name": "Balloons",
+          "description": "Topping the cake with a balloon gives an extra touch.",
+          "examples": ["celebration-pink-gin", "celebration"]
         }
       ]
     },
@@ -529,10 +529,15 @@
       "squareImage": "Shades-of-Chocolate-square.jpg",
       "name": "Shades of Chocolate"
     },
-    "shades-of-pink-and-gold-fault-line": {
+    "shades-of-pink-and-gold-fault-line-flowers": {
       "images": [
-        "Shades-of-Pink-and-Gold-Fault-Line-Balls.jpg",
         "Shades-of-Pink-and-Gold-Fault-Line-Flowers.jpg"
+      ],
+      "name": "Shades of Pink and Gold Fault Line with flowers"
+    },
+    "shades-of-pink-and-gold-fault-line-balls": {
+      "images": [
+        "Shades-of-Pink-and-Gold-Fault-Line-Balls.jpg"
       ],
       "squareImage": "Shades-of-Pink-and-Gold-Fault-Line-Balls-square.jpg",
       "name": "Shades of Pink and Gold Fault Line",
@@ -683,11 +688,16 @@
         }
       ]
     },
-    "celebration ": {
+    "celebration-pink-gin": {
+      "images": [
+        "Celebration-Rose-Gold-Gin.jpg"
+      ],
+      "name": "Celebration - pink gin"
+    },
+    "celebration": {
       "images": [
         "Celebration-Blue.jpg",
-        "Celebration-Pink.jpg",
-        "Celebration-Rose-Gold-Gin.jpg"
+        "Celebration-Pink.jpg"
       ],
       "name": "Celebration",
       "videos": [
@@ -855,13 +865,23 @@
       "name": "Football Cupcakes",
       "description": "Why not score yourself some of these cupcakes?"
     },
-    "DIY": {
+    "nuts-and-bolts": {
       "images": [
-        "Wooden-Plane.jpg",
-        "Saw-DIY.jpg",
         "Marbled-DIY.jpg"
       ],
-      "name": "DIY"
+      "name": "Nuts and bolts"
+    },
+    "Woodwork": {
+      "images": [
+        "Saw-DIY.jpg"
+      ],
+      "name": "Woodwork"
+    },
+    "wooden-plane": {
+      "images": [
+        "Wooden-Plane.jpg"
+      ],
+      "name": "Wooden plane"
     },
     "choo-choo": {
       "images": [
@@ -980,7 +1000,7 @@
     "parker-penguin",
     "ferrero-rocher-cake",
     "bon-voyage",
-    "shades-of-pink-and-gold-fault-line",
+    "shades-of-pink-and-gold-fault-line-balls",
     "booties-and-bunting"
   ],
   "featuredTestimonials": ["superhero-ombre", "fresh-flowers-vibrant-pink", "golden-anniversary", "sun-sand-and-seashells", "gordons-gin"]

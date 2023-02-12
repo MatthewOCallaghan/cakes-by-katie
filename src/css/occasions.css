@@ -45,33 +45,6 @@ section.occasion-links div.links-container a {
   text-align: center;
   overflow: hidden;
 }
-section.occasion-links div.links-container a:nth-child(1) {
-  background: #ace7ff;
-}
-section.occasion-links div.links-container a:nth-child(2) {
-  background: #c5a3ff;
-}
-section.occasion-links div.links-container a:nth-child(3) {
-  background: #f8df81;
-}
-section.occasion-links div.links-container a:nth-child(4) {
-  background: #fca669;
-}
-section.occasion-links div.links-container a:nth-child(5) {
-  background: #adf7b6;
-}
-section.occasion-links div.links-container a:nth-child(6) {
-  background: #ffb3c6;
-}
-section.occasion-links div.links-container a:nth-child(7) {
-  background: #6eb5ff;
-}
-section.occasion-links div.links-container a:nth-child(8) {
-  background: #ffabab;
-}
-section.occasion-links div.links-container a:nth-child(9) {
-  background: #eec9df;
-}
 section.occasion-links div.links-container a div.occasion-inner {
   transition: all 0.5s;
   display: grid;
