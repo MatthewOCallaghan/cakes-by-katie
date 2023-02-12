@@ -1,30 +1,14 @@
 {% set page = "wedding" %}
-{% extends "layout.njk" %}
+{% extends "occasion.njk" %}
 
-{% block main %}
-    <div class="text">
-        {% from "macros/picture.njk" import pictureElement with context %}
-        {{ pictureElement("portfolio/Kirsten.jpg", "Example wedding cake", "50vw") }}
+{% block text %}
+    <p>We will work together to create your perfect wedding cake. If you have a specific design in mind that's great, otherwise I will suggest some designs.</p>
 
-        <p>We will work together to create your perfect wedding cake. If you have a specific design in mind that's great, otherwise I will suggest some designs.</p>
+    <p>Wedding cakes can be finished in either buttercream (fully covered, semi-naked or somewhere inbetween) or fondant and you can choose from an extensive list of sponge flavours. Flavour samples are available free of charge to help you choose (up to 5 flavours free of charge. Additional flavour samples can be ordered for a small charge).</p>
 
-        <p>Wedding cakes can be finished in either buttercream (fully covered, semi-naked or somewhere inbetween) or fondant and you can choose from an extensive list of sponge flavours. Flavour samples are available free of charge to help you choose (up to 5 flavours free of charge. Additional flavour samples can be ordered for a small charge).</p>
+    <p>If you choose to have fresh flowers on your wedding cake, I will speak to the florist to deal with timings on the day.</p>
 
-        <p>If you choose to have fresh flowers on your wedding cake, I will speak to the florist to deal with timings on the day.</p>
+    <p>Wedding cakes will be delivered and set up at your venue on your special day. I will liaise with the venue to arrange delivery.</p>
 
-        <p>Wedding cakes will be delivered and set up at your venue on your special day. I will liaise with the venue to arrange delivery.</p>
-
-        <p>Cake jars and fondant covered cookies make excellent wedding favours. Cake jars are finished with a spoon, decorated with ribbon or twine and the labelling can be tailored to match your wedding stationery/theme. Wedding favour sugar cookies are covered in fondant icing and can be shaped and decorated as required.  If you would like something different as a wedding favour, please let me know and I will do my best to accommodate your request.</p>
-
-    </div>
-
-    <div class="cta">
-        <h3>Ready to order a wedding cake?</h3>
-        <a
-            class="button"
-            href="/#contact"
-        >
-            Contact me
-        </a>
-    </div>
+    <p>Cake jars and fondant covered cookies make excellent wedding favours. Cake jars are finished with a spoon, decorated with ribbon or twine and the labelling can be tailored to match your wedding stationery/theme. Wedding favour sugar cookies are covered in fondant icing and can be shaped and decorated as required.  If you would like something different as a wedding favour, please let me know and I will do my best to accommodate your request.</p>
 {% endblock %}

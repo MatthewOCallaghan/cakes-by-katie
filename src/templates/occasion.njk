@@ -1,0 +1,31 @@
+{% set type = "occasion" %}
+{% extends "layout.njk" %}
+
+{% block main %}
+    <div class="text">
+        {% if pages[page].h2 %}
+            <h2>{{ pages[page].h2 }}</h2>
+        {% endif %}
+
+        {% from "macros/picture.njk" import pictureElement with context %}
+        {{ pictureElement("portfolio/" ~ portfolio[pages[page].exampleCake].images[0].src, pages[page].imageAlt if pages[page].imageAlt else "Example " ~ pages[page].productName, "50vw") }}
+
+        {% block text %}{% endblock %}
+    </div>
+
+    <div class="cta">
+        <h3>
+            {% if pages[page].ctaPrompt %}
+                {{ pages[page].ctaPrompt }}
+            {% else %}
+                Ready to order a{{ "n" if (pages[page].productName | first) in ['a', 'e', 'i', 'o', 'u'] }} {{ pages[page].productName }}?
+            {% endif %}
+        </h3>
+        <a
+            class="button"
+            href="/#contact"
+        >
+            Contact me
+        </a>
+    </div>
+{% endblock %}

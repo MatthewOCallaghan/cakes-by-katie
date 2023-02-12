@@ -11,7 +11,11 @@
 
         <!-- build:css css/{{ page }}.min.css -->
         <link rel="stylesheet" type="text/css" href="/css/global.css">
-        <link rel="stylesheet" type="text/css" href="{{ "/css/" ~ page ~ ".css"}}">
+        {% if type === "occasion" %}
+            <link rel="stylesheet" type="text/css" href="/css/occasion.css">
+        {% else %}
+            <link rel="stylesheet" type="text/css" href="{{ "/css/" ~ page ~ ".css"}}">
+        {% endif %}
         <!-- endbuild -->
 
         {% block head %}{% endblock %}

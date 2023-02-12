@@ -34,7 +34,7 @@
         <h2>Some inspiration...</h2>
         <p>Sentence here explaining that we're now going to talk through some of the types of birthday cakes they can order.<p>
 
-        {% for product in pages.birthdays.products %}
+        {% for product in pages[page].products %}
             <section class="product">
                 <div class="product-text">
                     <div class="product-sticky-text card {{  'card-pink' if loop.index0 % 2 == 0 else 'card-black' }}">

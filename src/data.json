@@ -167,7 +167,9 @@
           "path": "/backgrounds/wedding.jpg",
           "alt": "Wedding background"
         }
-      }
+      },
+      "exampleCake": "kirsten",
+      "productName": "wedding cake"
     },
     "anniversary": {
       "title": "Anniversary cakes | Cakes by Katie",
@@ -178,7 +180,92 @@
           "path": "/backgrounds/roses.jpg",
           "alt": "Roses background"
         }
-      }
+      },
+      "h2": "Make anniversaries more special with a celebration cake.",
+      "exampleCake": "diamond-anniversary",
+      "productName": "anniversary cake"
+    },
+    "christeningAndBabyShower": {
+      "title": "Cakes and cupcakes for christenings, baby showers and gender reveals | Cakes by Katie",
+      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke cakes and cupcakes for christenings, baby showers, and gender reveals in a wide range of flavours.",
+      "heading": {
+        "text": "Christening cakes, baby shower cakes and gender reveal cakes",
+        "image": {
+          "path": "/backgrounds/baby-feet.jpg",
+          "alt": "Baby's feet background"
+        }
+      },
+      "exampleCake": "booties-and-bunting",
+      "imageAlt": "Example christening cake",
+      "productName": "christening cake, baby shower cake, or gender reveal cake"
+    },
+    "corporate": {
+      "title": "Corporate cakes and cupcakes | Cakes by Katie",
+      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke cakes and cupcakes for corporate events in a wide range of flavours.",
+      "heading": {
+        "text": "Corporate cakes and cupcakes",
+        "image": {
+          "path": "/backgrounds/office.jpg",
+          "alt": "Office background"
+        }
+      },
+      "exampleCake": "ttmc-cupcakes",
+      "imageAlt": "Example corporate cupcakes",
+      "ctaPrompt": "Ready to order for your corporate event?"
+    },
+    "valentines": {
+      "title": "Valentine's cakes and cupcakes | Cakes by Katie",
+      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke Valentine's cakes and cupcakes in a wide range of flavours.",
+      "heading": {
+        "text": "Valentine's cakes",
+        "image": {
+          "path": "/backgrounds/hearts.jpg",
+          "alt": "Hearts background"
+        }
+      },
+      "exampleCake": "cupcake-bouquet",
+      "imageAlt": "Cupcake bouquet",
+      "productName": "Valentine's cake"
+    },
+    "easter": {
+      "title": "Easter cakes and cupcakes | Cakes by Katie",
+      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke Easter cakes and cupcakes in a wide range of flavours.",
+      "heading": {
+        "text": "Easter cakes",
+        "image": {
+          "path": "/backgrounds/mini-eggs.jpg",
+          "alt": "Mini eggs background"
+        }
+      },
+      "exampleCake": "easter-surprise",
+      "productName": "Easter cake"
+    },
+    "christmas": {
+      "title": "Christmas cakes and cupcakes | Cakes by Katie",
+      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke Christmas cakes and cupcakes in a wide range of flavours.",
+      "heading": {
+        "text": "Christmas cakes",
+        "image": {
+          "path": "/backgrounds/christmas-tree.jpg",
+          "alt": "Christmas tree background"
+        }
+      },
+      "exampleCake": "easter-surprise",
+      "productName": "Easter cake"
+    },
+    "afternoon-tea": {
+      "title": "Afternoon tea cakes and cupcakes | Cakes by Katie",
+      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke cakes and cupcakes for afternoon tea in a wide range of flavours.",
+      "heading": {
+        "text": "Afternoon tea cakes",
+        "image": {
+          "path": "/backgrounds/tea-set.jpg",
+          "alt": "Afternoon tea background"
+        }
+      },
+      "exampleCake": "ferrero-rocher-cake",
+      "ctaPrompt": "Ready to order a cake for afternoon tea?",
+      "imageAlt": "Ferrero rocher cake"
     }
   },
   "portfolio": {
@@ -503,7 +590,7 @@
       "images": [
         "Pink-Ombre-Daisies.jpg"
       ],
-      "name": "Pink Ombré with Daisies ",
+      "name": "Pink Ombré with Daisies",
       "videos": [
         {
           "thumb": "Pink-Ombre-Daisies.jpg",
@@ -709,7 +796,7 @@
       "name": "St. Patrick's Day",
       "description": " No need to hunt down the end of a rainbow when you can find some gold coins right here (psst they maybe chocolate coins instead)."
     },
-    "cupcake-bouquet ": {
+    "cupcake-bouquet": {
       "images": [
         "Cupcake-Bouquet-Flowers.jpg",
         "Cupcake-Bouquet-Presentation.jpg"

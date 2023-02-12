@@ -37,7 +37,8 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 4em;
+    // font-size: 4em;
+    font-size: 5em;
 }
 
 h2 {
@@ -532,7 +533,6 @@ footer {
     h1 {
         font-family: variables.$handwriting;
         color: variables.$pink;
-        font-size: 4em;
         text-align: center;
         text-shadow: 1px 1px 0px variables.$pink, 2px 2px 0px #{variables.$pink}82, 2px 2px 0px #909090cc;
     }
@@ -557,7 +557,7 @@ footer {
         padding-top: $logoDiameter - $headerHeight;
 
         h1 {
-            margin-top: 1em;
+            // margin-top: 1em;
         }
     }
 }
