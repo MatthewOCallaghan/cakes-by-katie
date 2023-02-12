@@ -97,7 +97,7 @@
     },
     "birthday": {
       "title": "Birthday cakes and cupcakes | Cakes by Katie",
-      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke birthday cakes in a wide range of flavours.",
+      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke birthday cakes and cupcakes in a wide range of flavours and catering for specific dietary requirements.",
       "heading": {
         "text": "Birthday cakes",
         "image": {
@@ -124,7 +124,7 @@
         {
           "name": "Birthday cupcakes",
           "description": "Birthday cupcakes are easy to share and customise with a decoration of your choice and available in both standard and deluxe flavours. If some of your party have dietary requirements, cupcakes are a good way to cater for them separately. Cupcakes can also make a special birthday gift and can be presented in a gift box finished with ribbon and a bow and candle.",
-          "examples": ["birthday-beach-mix"]
+          "examples": ["birthday-beach-mix", "rose-mix", "deluxe-mix"]
         },
         {
           "name": "Carved cakes",
@@ -160,7 +160,7 @@
     },
     "wedding": {
       "title": "Wedding cakes | Cakes by Katie",
-      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke wedding cakes in a wide range of flavours.",
+      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke wedding cakes in a wide range of flavours and catering for specific dietary requirements. Wedding favours are also available.",
       "heading": {
         "text": "Wedding cakes",
         "image": {
@@ -173,7 +173,7 @@
     },
     "anniversary": {
       "title": "Anniversary cakes | Cakes by Katie",
-      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke anniversary cakes in a wide range of flavours.",
+      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke anniversary cakes and cupcakes in a wide range of flavours and catering for specific dietary requirements.",
       "heading": {
         "text": "Anniversary cakes",
         "image": {
@@ -187,7 +187,7 @@
     },
     "christeningAndBabyShower": {
       "title": "Cakes and cupcakes for christenings, baby showers and gender reveals | Cakes by Katie",
-      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke cakes and cupcakes for christenings, baby showers, and gender reveals in a wide range of flavours.",
+      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke cakes and cupcakes for christenings, baby showers, and gender reveals in a wide range of flavours and catering for specific dietary requirements.",
       "heading": {
         "text": "Christening cakes, baby shower cakes and gender reveal cakes",
         "image": {
@@ -201,7 +201,7 @@
     },
     "corporate": {
       "title": "Corporate cakes and cupcakes | Cakes by Katie",
-      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke cakes and cupcakes for corporate events in a wide range of flavours.",
+      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke cakes and cupcakes for corporate events in a wide range of flavours and catering for specific dietary requirements.",
       "heading": {
         "text": "Corporate cakes and cupcakes",
         "image": {
@@ -215,7 +215,7 @@
     },
     "valentines": {
       "title": "Valentine's cakes and cupcakes | Cakes by Katie",
-      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke Valentine's cakes and cupcakes in a wide range of flavours.",
+      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke Valentine's cakes and cupcakes in a wide range of flavours and catering for specific dietary requirements.",
       "heading": {
         "text": "Valentine's cakes",
         "image": {
@@ -229,7 +229,7 @@
     },
     "easter": {
       "title": "Easter cakes and cupcakes | Cakes by Katie",
-      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke Easter cakes and cupcakes in a wide range of flavours.",
+      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke Easter cakes and cupcakes in a wide range of flavours and catering for specific dietary requirements.",
       "heading": {
         "text": "Easter cakes",
         "image": {
@@ -242,7 +242,7 @@
     },
     "christmas": {
       "title": "Christmas cakes and cupcakes | Cakes by Katie",
-      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke Christmas cakes and cupcakes in a wide range of flavours.",
+      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke Christmas cakes and cupcakes in a wide range of flavours and catering for specific dietary requirements.",
       "heading": {
         "text": "Christmas cakes",
         "image": {
@@ -255,7 +255,7 @@
     },
     "afternoon-tea": {
       "title": "Afternoon tea cakes and cupcakes | Cakes by Katie",
-      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke cakes and cupcakes for afternoon tea in a wide range of flavours.",
+      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke cakes and cupcakes for afternoon tea in a wide range of flavours and catering for specific dietary requirements.",
       "heading": {
         "text": "Afternoon tea cakes",
         "image": {
