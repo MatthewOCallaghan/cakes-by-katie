@@ -74,7 +74,7 @@
         },
         {
           "question": "What cake design should I go for?",
-          "answer": "<p>Whether you know exactly what you want or have absolutely no idea, I'll work with you to create the perfect design for your occasion. If you're looking for inspiration why not check out my <a href=\"\/portfolio\">portfolio page</a>?</p>"
+          "answer": "<p>Whether you know exactly what you want or have absolutely no idea, I'll work with you to create the perfect design for your occasion. If you're looking for inspiration why not check out my <a href=\"/portfolio\">portfolio page</a>?</p>"
         }
       ]
     },
@@ -82,6 +82,17 @@
       "title": "Page not found | Cakes by Katie",
       "heading": {
         "text": "404"
+      }
+    },
+    "flavours": {
+      "title": "Flavours | Cakes by Katie",
+      "description": "See the wide range of flavours that Cakes by Katie offers for their high quality bespoke cakes.",
+      "heading": {
+        "text": "Flavours",
+        "image": {
+          "path": "backgrounds/chocolate.jpg",
+          "alt": "Chocolate background"
+        }
       }
     },
     "occasions": {
@@ -109,7 +120,11 @@
         {
           "name": "Buttercream cakes",
           "description": "Buttercream cakes are finished completely in buttercream in either one or more colours to produce the desired effect. The finish can be smooth or textured.",
-          "examples": ["shades-of-chocolate", "shades-of-pink-and-gold-fault-line", "pink-ombre-daisies"]
+          "examples": [
+            "shades-of-chocolate",
+            "shades-of-pink-and-gold-fault-line",
+            "pink-ombre-daisies"
+          ]
         },
         {
           "name": "Fondant cakes",
@@ -119,7 +134,12 @@
         {
           "name": "Themed cakes",
           "description": "Themed cakes allow the design to be tailored to the recipient in terms of their likes, hobbies and personality for example.",
-          "examples": ["ready-set-go-kart", "hp-slytherin-edition", "birthday-books", "90-not-out"]
+          "examples": [
+            "ready-set-go-kart",
+            "hp-slytherin-edition",
+            "birthday-books",
+            "90-not-out"
+          ]
         },
         {
           "name": "Birthday cupcakes",
@@ -134,7 +154,11 @@
         {
           "name": "Edible images",
           "description": "Edible images can be placed on either a buttercream or fondant finished cake. They offer greater design flexibility and are cheaper than fondant models. An edible image of a favourite photograph will also add that personal touch.",
-          "examples": ["superhero-ombre", "pink-and-bluey", "football-print-arsenal"]
+          "examples": [
+            "superhero-ombre",
+            "pink-and-bluey",
+            "football-print-arsenal"
+          ]
         },
         {
           "name": "Airbrushing",
@@ -269,47 +293,88 @@
     }
   },
   "portfolio": {
-    "ruby-reindeer": {
+    "be-my-valentine": {
+      "images": ["Be-My-Valentine-Box.jpg", "Be-My-Valentine-Pattern.jpg"],
+      "name": "Be My Valentine"
+    },
+    "a-touch-of-pink-with-chocolate ": {
       "images": [
-        "Ruby-Front.jpg",
-        "Ruby-Top.jpg"
+        "A-Touch-of-Pink-with-Chocolate-Cupcakes.jpg",
+        "A-Touch-of-Pink-with-Chocolate.jpg"
       ],
+      "name": "A Touch of Pink with Chocolate"
+    },
+    "stitch-experiment-626": {
+      "images": ["Stitch-Experiment-626.jpg"],
+      "name": "Stitch - Experiment 626"
+    },
+    "frosty-snowflakes": {
+      "images": ["Frosty-Snowflakes.jpg"],
+      "name": "Frosty Snowflakes"
+    },
+    "birthday-shades-blue-glitz": {
+      "images": [
+        "Birthday-Shades-Blue-Glitz-Box.jpg",
+        "Birthday-Shades-Blue-Glitz-Open.jpg"
+      ],
+      "name": "Birthday Shades - Blue Glitz"
+    },
+    "corporate-cupcakes": {
+      "images": ["Corporate-Cupcakes.jpg"],
+      "name": "Corporate Cupcakes"
+    },
+    "dragon-ball-goku": {
+      "images": ["Dragon-Ball-Goku.jpg"],
+      "name": "Dragon Ball - Goku"
+    },
+    "adorable-flopsy-bunny": {
+      "images": ["Adorable-Flopsy-Bunny.jpg"],
+      "name": "Adorable Flopsy Bunny"
+    },
+    "birthday-baker": {
+      "images": ["Birthday-Baker.jpg"],
+      "name": "Birthday Baker"
+    },
+    "christmas-cupcake-ensemble": {
+      "images": [
+        "Christmas-Cupcake-Ensemble-Box.jpg",
+        "Christmas-Cupcake-Ensemble-Open.jpg"
+      ],
+      "name": "Christmas Cupcake Ensemble"
+    },
+    "ruby-reindeer": {
+      "images": ["Ruby-Front.jpg", "Ruby-Top.jpg"],
       "name": "Ruby reindeer"
     },
-    "football-print-arsenal": {
+    "birthday-shades-blue": {
       "images": [
-        "Football-Print-Arsenal.jpg"
+        "Birthday-Shades-Blue-Box.jpg",
+        "Birthday-Shades-Blue-Open.jpg"
       ],
+      "name": "Birthday Shades - Blue"
+    },
+    "football-print-arsenal": {
+      "images": ["Football-Print-Arsenal.jpg"],
       "name": "Football Print - Arsenal"
     },
     "daisy-chain": {
-      "images": [
-        "Daisy-Chain.jpg"
-      ],
+      "images": ["Daisy-Chain.jpg"],
       "name": "Daisy Chain"
     },
     "minecraft": {
-      "images": [
-        "Minecraft.jpg"
-      ],
+      "images": ["Minecraft.jpg"],
       "name": "Minecraft"
     },
     "pink-and-bluey": {
-      "images": [
-        "Pink-and-Bluey.jpg"
-      ],
+      "images": ["Pink-and-Bluey.jpg"],
       "name": "Pink and Bluey"
     },
     "chocolate-decadence": {
-      "images": [
-        "Chocolate-Decadence.jpg"
-      ],
+      "images": ["Chocolate-Decadence.jpg"],
       "name": "Chocolate Decadence"
     },
     "birthday-square": {
-      "images": [
-        "Birthday-Square.jpg"
-      ],
+      "images": ["Birthday-Square.jpg"],
       "name": "Birthday Square",
       "testimonial": {
         "text": "Thank you for the lovely chocolate cake it was so moist and delicious everyone enjoyed it",
@@ -318,9 +383,7 @@
       }
     },
     "golden-drip-cake-with-age": {
-      "images": [
-        "Golden-Drip-Cake-with-Age.jpg"
-      ],
+      "images": ["Golden-Drip-Cake-with-Age.jpg"],
       "name": "Golden Drip Cake with Age"
     },
     "psychedelic-symphony": {
@@ -333,17 +396,11 @@
       "name": "Psychedelic Symphony"
     },
     "birthday-beach-mix": {
-      "images": [
-        "Birthday-Beach-Mix.jpg",
-        "Birthday-Beach-Mix-Box.jpg"
-      ],
+      "images": ["Birthday-Beach-Mix.jpg", "Birthday-Beach-Mix-Box.jpg"],
       "name": "Birthday Beach Mix"
     },
     "deluxe-mix": {
-      "images": [
-        "Deluxe-Mix-Gift-Wrap.jpg",
-        "Deluxe-Mix-Open.jpg"
-      ],
+      "images": ["Deluxe-Mix-Gift-Wrap.jpg", "Deluxe-Mix-Open.jpg"],
       "name": "Deluxe Mix",
       "testimonial": {
         "text": "The cupcakes were great thanks - very tasty and a great finish on them.",
@@ -352,40 +409,27 @@
       }
     },
     "ttmc-cupcakes": {
-      "images": [
-        "TTMC-Corporate-Cupcakes.jpg",
-        "TTMC-Stand.jpg"
-      ],
+      "images": ["TTMC-Corporate-Cupcakes.jpg", "TTMC-Stand.jpg"],
       "name": "The Traffic Management Company Corporate Cupcakes"
     },
     "diamond-anniversary": {
-      "images": [
-        "Diamond-Anniversary.jpg"
-      ],
+      "images": ["Diamond-Anniversary.jpg"],
       "name": "Diamond Anniversary"
     },
     "ready-set-go-kart": {
-      "images": [
-        "Ready-Set-Go-Kart.jpg"
-      ],
+      "images": ["Ready-Set-Go-Kart.jpg"],
       "name": "Ready Set Go-Kart"
     },
     "kirsten": {
-      "images": [
-        "Kirsten.jpg"
-      ],
+      "images": ["Kirsten.jpg"],
       "name": "Kirsten"
     },
     "hp-slytherin-edition": {
-      "images": [
-        "HP-Slytherin-Edition.jpg"
-      ],
+      "images": ["HP-Slytherin-Edition.jpg"],
       "name": "Harry Potter - Slytherin Edition"
     },
     "come-fly-with-me": {
-      "images": [
-        "Come-Fly-With-Me.jpg"
-      ],
+      "images": ["Come-Fly-With-Me.jpg"],
       "name": "Come Fly With Me",
       "videos": [
         {
@@ -395,9 +439,7 @@
       ]
     },
     "pink-cascade": {
-      "images": [
-        "Pink-Cascade.jpg"
-      ],
+      "images": ["Pink-Cascade.jpg"],
       "name": "Pink Cascade"
     },
     "bon-voyage": {
@@ -416,9 +458,7 @@
       }
     },
     "superhero-ombre": {
-      "images": [
-        "Superhero-Ombre.jpg"
-      ],
+      "images": ["Superhero-Ombre.jpg"],
       "name": "Superhero Ombré",
       "testimonial": {
         "text": "I just wanted to say thank you for such a great cake, it looked and tasted amazing and is almost gone already!! ",
@@ -427,17 +467,11 @@
       }
     },
     "rose-mix": {
-      "images": [
-        "Rose-Mix.jpg",
-        "Rose-Mix-Triple.jpg",
-        "Rose-Mix-Single.jpg"
-      ],
+      "images": ["Rose-Mix.jpg", "Rose-Mix-Triple.jpg", "Rose-Mix-Single.jpg"],
       "name": "Rose Mix"
     },
     "fresh-flowers-vibrant-pink": {
-      "images": [
-        "Fresh-Flowers-Vibrant-Pink.jpg"
-      ],
+      "images": ["Fresh-Flowers-Vibrant-Pink.jpg"],
       "name": "Fresh Flowers - Vibrant Pink",
       "testimonial": {
         "text": "Thank you so much for the lime birthday cake. It was beautifully presented and absolutely delicious.",
@@ -446,15 +480,11 @@
       }
     },
     "cocktails-and-seashells": {
-      "images": [
-        "Cocktails-and-Seashells.jpg"
-      ],
+      "images": ["Cocktails-and-Seashells.jpg"],
       "name": "Cocktails and Seashells"
     },
     "fresh-flowers-yellow-sunshine": {
-      "images": [
-        "Fresh-Flowers-Yellow-Sunshine.jpg"
-      ],
+      "images": ["Fresh-Flowers-Yellow-Sunshine.jpg"],
       "squareImage": "Fresh-Flowers-Yellow-Sunshine-square.jpg",
       "name": "Fresh Flowers - Yellow Sunshine",
       "testimonial": {
@@ -464,16 +494,12 @@
       }
     },
     "birthday-books": {
-      "images": [
-        "Birthday-Books.jpg"
-      ],
+      "images": ["Birthday-Books.jpg"],
       "squareImage": "Birthday-Books-square.jpg",
       "name": "Birthday Books"
     },
     "flower-elegance": {
-      "images": [
-        "Flower-Elegance.jpg"
-      ],
+      "images": ["Flower-Elegance.jpg"],
       "name": "Flower Elegance",
       "videos": [
         {
@@ -483,9 +509,7 @@
       ]
     },
     "golden-anniversary": {
-      "images": [
-        "Golden-Anniversary.jpg"
-      ],
+      "images": ["Golden-Anniversary.jpg"],
       "name": "Golden Anniversary",
       "testimonial": {
         "text": "Just to say a Big Thank you for making us this superb wedding anniversary cake. We can see that you have gone that extra mile for us; everyone at the party just loved.",
@@ -494,9 +518,7 @@
       }
     },
     "a-touch-of-pink": {
-      "images": [
-        "A-Touch-of-Pink.jpg"
-      ],
+      "images": ["A-Touch-of-Pink.jpg"],
       "name": "A Touch of Pink",
       "videos": [
         {
@@ -506,9 +528,7 @@
       ]
     },
     "sun-sand-and-seashells": {
-      "images": [
-        "Sun-Sand-and-Seashells.jpg"
-      ],
+      "images": ["Sun-Sand-and-Seashells.jpg"],
       "name": "Sun, Sand, and Seashells",
       "testimonial": {
         "text": "Thank you very much for the lovely cake, it was absolutely gorgeous in all the possible ways. Everybody really enjoyed it and admired your work",
@@ -523,22 +543,16 @@
       ]
     },
     "shades-of-chocolate": {
-      "images": [
-        "Shades-of-Chocolate.jpg"
-      ],
+      "images": ["Shades-of-Chocolate.jpg"],
       "squareImage": "Shades-of-Chocolate-square.jpg",
       "name": "Shades of Chocolate"
     },
     "shades-of-pink-and-gold-fault-line-flowers": {
-      "images": [
-        "Shades-of-Pink-and-Gold-Fault-Line-Flowers.jpg"
-      ],
+      "images": ["Shades-of-Pink-and-Gold-Fault-Line-Flowers.jpg"],
       "name": "Shades of Pink and Gold Fault Line with flowers"
     },
     "shades-of-pink-and-gold-fault-line-balls": {
-      "images": [
-        "Shades-of-Pink-and-Gold-Fault-Line-Balls.jpg"
-      ],
+      "images": ["Shades-of-Pink-and-Gold-Fault-Line-Balls.jpg"],
       "squareImage": "Shades-of-Pink-and-Gold-Fault-Line-Balls-square.jpg",
       "name": "Shades of Pink and Gold Fault Line",
       "videos": [
@@ -549,9 +563,7 @@
       ]
     },
     "booties-and-bunting": {
-      "images": [
-        "Booties-and-Bunting.jpg"
-      ],
+      "images": ["Booties-and-Bunting.jpg"],
       "squareImage": "Booties-and-Bunting-square.jpg",
       "name": "Booties and Bunting",
       "videos": [
@@ -562,9 +574,7 @@
       ]
     },
     "blue-speckle-mini-eggs": {
-      "images": [
-        "Blue-Speckle-Mini-Eggs.jpg"
-      ],
+      "images": ["Blue-Speckle-Mini-Eggs.jpg"],
       "squareImage": "Blue-Speckle-Mini-Eggs-square.jpg",
       "name": "Blue Speckle Mini Eggs",
       "videos": [
@@ -575,9 +585,7 @@
       ]
     },
     "cream-mini-eggs": {
-      "images": [
-        "Cream-Mini-Eggs.jpg"
-      ],
+      "images": ["Cream-Mini-Eggs.jpg"],
       "name": "Cream Mini Eggs",
       "videos": [
         {
@@ -587,9 +595,7 @@
       ]
     },
     "galaxy": {
-      "images": [
-        "Galaxy.jpg"
-      ],
+      "images": ["Galaxy.jpg"],
       "name": "Galaxy",
       "videos": [
         {
@@ -599,9 +605,7 @@
       ]
     },
     "pink-ombre-daisies": {
-      "images": [
-        "Pink-Ombre-Daisies.jpg"
-      ],
+      "images": ["Pink-Ombre-Daisies.jpg"],
       "name": "Pink Ombré with Daisies",
       "videos": [
         {
@@ -611,21 +615,15 @@
       ]
     },
     "sapphire-anniversary ": {
-      "images": [
-        "Sapphire-Anniversary.jpg"
-      ],
+      "images": ["Sapphire-Anniversary.jpg"],
       "name": "Sapphire Anniversary"
     },
     "90-not-out": {
-      "images": [
-        "90-Not-Out.jpg"
-      ],
+      "images": ["90-Not-Out.jpg"],
       "name": "90 Not Out"
     },
     "black-and-white": {
-      "images": [
-        "Black-and-White.jpg"
-      ],
+      "images": ["Black-and-White.jpg"],
       "name": "Black and White",
       "testimonial": {
         "text": "Big thank you to Katie, for producing three amazing creations for me, some cupcakes for my daughters 18th birthday and a friends 50th, and a birthday cake for my daughter's birthday the following year, they were all delicious. On each occasion I gave Katie a brief or the birthday theme and she worked with me to design the toppers and gave me options to choose from, even a choice of flavours for the cupcakes. Katie added an extra special touch to each occasion, thank you and I would have no hesitation in recommending you to others in the future. \n",
@@ -640,15 +638,11 @@
       ]
     },
     "50s-and-tiaras ": {
-      "images": [
-        "50s-and-tiaras.jpg"
-      ],
+      "images": ["50s-and-tiaras.jpg"],
       "name": "50s and Tiaras"
     },
     "white-and-gold-choc-fudge": {
-      "images": [
-        "White-and-Gold-Choc-Fudge.jpg"
-      ],
+      "images": ["White-and-Gold-Choc-Fudge.jpg"],
       "name": "White and Gold Chocolate Fudge",
       "testimonial": {
         "text": "Somebody brought some of Katie's cupcakes into the office one day, and we all enjoyed them so much that we decided to place a regular order. I've also used Katie a couple of times for special celebration cakes. They looked amazing, but more importantly tasted amazing too. Katie is now my go-to person for all my cake requirements. It's refreshing to see a young person with a business like this. Katie is really friendly and talented. So, give Katie a try - you won't be disappointed!",
@@ -663,9 +657,7 @@
       ]
     },
     "ferrero-rocher-cake": {
-      "images": [
-        "Ferrero-Rocher-Cake.jpg"
-      ],
+      "images": ["Ferrero-Rocher-Cake.jpg"],
       "squareImage": "Ferrero-Rocher-Cake-square.jpg",
       "name": "Ferrero Rocher Cake",
       "videos": [
@@ -676,9 +668,7 @@
       ]
     },
     "choc-fudge-cake": {
-      "images": [
-        "Choc-Fudge-Cake.jpg"
-      ],
+      "images": ["Choc-Fudge-Cake.jpg"],
       "name": "Chocolate Fudge Cake",
       "description": "The ultimate chocolate fudge cake; featuring hidden milky bar buttons, milky bar drip and milky bar button stars.",
       "videos": [
@@ -689,16 +679,11 @@
       ]
     },
     "celebration-pink-gin": {
-      "images": [
-        "Celebration-Rose-Gold-Gin.jpg"
-      ],
+      "images": ["Celebration-Rose-Gold-Gin.jpg"],
       "name": "Celebration - pink gin"
     },
     "celebration": {
-      "images": [
-        "Celebration-Blue.jpg",
-        "Celebration-Pink.jpg"
-      ],
+      "images": ["Celebration-Blue.jpg", "Celebration-Pink.jpg"],
       "name": "Celebration",
       "videos": [
         {
@@ -720,9 +705,7 @@
       "name": "Cupcake Birthday Boxes"
     },
     "oreo-cake": {
-      "images": [
-        "Oreo.jpg"
-      ],
+      "images": ["Oreo.jpg"],
       "name": "Oreo",
       "description": "Caution: Cake may break apart when twisted and dunked. But feel free to lick it - well only your slice."
     },
@@ -735,9 +718,7 @@
       "name": "Cupcake Assortment Boxes"
     },
     "oreo-cupcakes": {
-      "images": [
-        "Oreo-cupcakes.jpg"
-      ],
+      "images": ["Oreo-cupcakes.jpg"],
       "name": "Oreo Cupcakes",
       "description": "Twist off the wrapper, lick off the icing, dunk in the milk - just like a real Oreo."
     },
@@ -751,65 +732,46 @@
       "description": "For when it's not quite 5 O'clock … shall we?"
     },
     "smores-cupcakes": {
-      "images": [
-        "Smores-Cupcakes.jpg"
-      ],
+      "images": ["Smores-Cupcakes.jpg"],
       "name": "S'mores Cupcakes",
       "description": "Not just for the nights snuggled and singing round the campfire."
     },
     "salted-caramel-cupcakes": {
-      "images": [
-        "Salted-Caramel-Cupcakes.jpg"
-      ],
+      "images": ["Salted-Caramel-Cupcakes.jpg"],
       "name": "Salted Caramel Cupcakes",
       "description": "Contains salted caramel - need I say more?"
     },
     "parker-penguin": {
-      "images": [
-        "Parker-penguin.jpg"
-      ],
+      "images": ["Parker-penguin.jpg"],
       "squareImage": "Parker-Penguin-square.jpg",
       "name": "Parker Penguin"
     },
     "carrot-cupcakes": {
-      "images": [
-        "Carrot-Cupcakes.jpg"
-      ],
+      "images": ["Carrot-Cupcakes.jpg"],
       "name": "Carrot Cupcakes"
     },
     "jammie-dodger-cake": {
-      "images": [
-        "Jammie-Dodger-Cake.jpg"
-      ],
+      "images": ["Jammie-Dodger-Cake.jpg"],
       "name": "Jammie Dodger Cake",
       "description": "Bring back childhood memories one slice at a time."
     },
     "easter-surprise": {
-      "images": [
-        "Easter-Surprise-Inside.jpg",
-        "Easter-Surprise.jpg"
-      ],
+      "images": ["Easter-Surprise-Inside.jpg", "Easter-Surprise.jpg"],
       "name": "Easter Surprise",
       "description": "You may have just stumbled upon the Easter Bunny's secret stash…"
     },
     "easter-nest-cupcakes": {
-      "images": [
-        "Easter-Nest-Cupcakes.jpg"
-      ],
+      "images": ["Easter-Nest-Cupcakes.jpg"],
       "name": "Easter Nest Cupcakes",
       "description": "The best type of eggs you will ever find in a nest - shame it's only at easter."
     },
     "death-by-choc": {
-      "images": [
-        "Death-By-Choc.jpg"
-      ],
+      "images": ["Death-By-Choc.jpg"],
       "name": "Death by Chocolate",
       "description": "Chocolate, chocolate, chocolate, chocolate, chocolate, chocolate, chocolate, chocolate, chocolate … oh and sprinkles!"
     },
     "st-patricks-day": {
-      "images": [
-        "St-Patricks-Day.jpg"
-      ],
+      "images": ["St-Patricks-Day.jpg"],
       "name": "St. Patrick's Day",
       "description": " No need to hunt down the end of a rainbow when you can find some gold coins right here (psst they maybe chocolate coins instead)."
     },
@@ -821,35 +783,25 @@
       "name": "Cupcake Bouquet"
     },
     "double-drips": {
-      "images": [
-        "Double-Drips.jpg"
-      ],
+      "images": ["Double-Drips.jpg"],
       "name": "Double Drips"
     },
     "choc-cake": {
-      "images": [
-        "Choc-Cake.jpg"
-      ],
+      "images": ["Choc-Cake.jpg"],
       "name": "Chocolate Cake"
     },
     "romantic-heart": {
-      "images": [
-        "Romantic-Heart.jpg"
-      ],
+      "images": ["Romantic-Heart.jpg"],
       "name": "Romantic Heart",
       "description": "Chocolate, strawberries, cake: what more do you need for a romantic night in? Whether it's valentine's day, an anniversary or just to give to that special person in your life - you will need a cake like this to celebrate the occasion."
     },
     "reading-football-shirt": {
-      "images": [
-        "Reading-FC.jpg"
-      ],
+      "images": ["Reading-FC.jpg"],
       "name": "Reading Football Shirt",
       "description": "If you are in the Stephen Hunt for a Reading FC cake then you don't need to look any Shane Long-er. This shirt can be adapted for any team."
     },
     "wonder-woman": {
-      "images": [
-        "Wonder-Woman.jpg"
-      ],
+      "images": ["Wonder-Woman.jpg"],
       "name": "Wonder Woman",
       "description": "I would say have a Marvel at this cake - but we both know it's DC.",
       "testimonial": {
@@ -859,34 +811,24 @@
       }
     },
     "football-cupcakes": {
-      "images": [
-        "Football-Cupcakes.jpg"
-      ],
+      "images": ["Football-Cupcakes.jpg"],
       "name": "Football Cupcakes",
       "description": "Why not score yourself some of these cupcakes?"
     },
     "nuts-and-bolts": {
-      "images": [
-        "Marbled-DIY.jpg"
-      ],
+      "images": ["Marbled-DIY.jpg"],
       "name": "Nuts and bolts"
     },
     "Woodwork": {
-      "images": [
-        "Saw-DIY.jpg"
-      ],
+      "images": ["Saw-DIY.jpg"],
       "name": "Woodwork"
     },
     "wooden-plane": {
-      "images": [
-        "Wooden-Plane.jpg"
-      ],
+      "images": ["Wooden-Plane.jpg"],
       "name": "Wooden plane"
     },
     "choo-choo": {
-      "images": [
-        "Choo-Choo.jpg"
-      ],
+      "images": ["Choo-Choo.jpg"],
       "name": "Choo Choo\n",
       "description": "All aboard! If you ask me for this cake, rest assured these are two trains that will show up on time.  There's no chance of me turning up with a replacement bus cake!  Designed for birthday twins Fenton and Lochlan, the carriages are carrying their favourite treats and travelling to imaginary towns Fentonville and Lockland.",
       "testimonial": {
@@ -896,42 +838,28 @@
       }
     },
     "coffee-mug": {
-      "images": [
-        "Coffee-Mug.jpg"
-      ],
+      "images": ["Coffee-Mug.jpg"],
       "name": "Coffee Mug"
     },
     "afternoon-tea": {
-      "images": [
-        "Afternoon-Tea.jpg"
-      ],
+      "images": ["Afternoon-Tea.jpg"],
       "name": "Afternoon Tea"
     },
     "gift-roses": {
-      "images": [
-        "Gift-Roses-Pink.jpg",
-        "Gift-Roses-Lemon.jpg"
-      ],
+      "images": ["Gift-Roses-Pink.jpg", "Gift-Roses-Lemon.jpg"],
       "name": "Gift Roses",
       "description": "This small cake is just enough for a few and enrobed in elegant buttercream roses with a cute gift tag just for that finishing touch."
     },
     "neapolitan": {
-      "images": [
-        "Neapolitan.jpg",
-        "Neapolitan-Age.jpg"
-      ],
+      "images": ["Neapolitan.jpg", "Neapolitan-Age.jpg"],
       "name": "Neapolitan"
     },
     "art-palette ": {
-      "images": [
-        "Art-Palette.jpg"
-      ],
+      "images": ["Art-Palette.jpg"],
       "name": "Art Palette"
     },
     "gordons-gin": {
-      "images": [
-        "Gordons-Gin.jpg"
-      ],
+      "images": ["Gordons-Gin.jpg"],
       "name": "Gordon's Gin",
       "testimonial": {
         "text": "Katie's cake not only looked amazing but it tasted delicious and kept really well, when we didn't eat it all on 1st cutting. Her design ideas were spot on and it was difficult to choose the best one!",
@@ -940,54 +868,38 @@
       }
     },
     "birthday-heart": {
-      "images": [
-        "Birthday-Heart.jpg"
-      ],
+      "images": ["Birthday-Heart.jpg"],
       "name": "Birthday Heart"
     },
     "our-story": {
-      "images": [
-        "Our-Story.jpg"
-      ],
+      "images": ["Our-Story.jpg"],
       "name": "Our Story"
     },
     "gucci": {
-      "images": [
-        "Gucci.jpg"
-      ],
+      "images": ["Gucci.jpg"],
       "name": "Gucci",
       "description": "Do they want something Gucci for their birthday? This is definitely the cheaper option!"
     },
     "guinness ": {
-      "images": [
-        "Guinness.jpg"
-      ],
+      "images": ["Guinness.jpg"],
       "name": "Guinness",
       "description": "Made of more - if 'more' is three layers of sponge, black and white fondant, an edible logo and a very cool antigravity effect."
     },
     "ps4-controller": {
-      "images": [
-        "PS4-Controller.jpg"
-      ],
+      "images": ["PS4-Controller.jpg"],
       "name": "PS4 Controller"
     },
     "friends": {
-      "images": [
-        "Friends.jpg"
-      ],
+      "images": ["Friends.jpg"],
       "name": "Friends",
       "description": "OH. MY. GOD! Could this cake BE any more perfect for that Friends fan in your life - be they family, friend or your lobster (unless you're on a break)? Just don't offer any to Joey because he doesn't share food! Okay, I'm done now…"
     },
     "movie-glitz": {
-      "images": [
-        "Movie-Glitz.jpg"
-      ],
+      "images": ["Movie-Glitz.jpg"],
       "name": "Movie Glitz"
     },
     "chocoholic ": {
-      "images": [
-        "Chocoholic.jpg"
-      ],
+      "images": ["Chocoholic.jpg"],
       "name": "Chocoholic",
       "description": "Chocolate fan? Then you'll love this two tiered chocolate fudge cake surrounded by white and milk chocolate fingers and topped with maltesers . Psst… there's even white chocolate buttons between the layers!"
     }
@@ -1003,5 +915,134 @@
     "shades-of-pink-and-gold-fault-line-balls",
     "booties-and-bunting"
   ],
-  "featuredTestimonials": ["superhero-ombre", "fresh-flowers-vibrant-pink", "golden-anniversary", "sun-sand-and-seashells", "gordons-gin"]
+  "featuredTestimonials": [
+    "superhero-ombre",
+    "fresh-flowers-vibrant-pink",
+    "golden-anniversary",
+    "sun-sand-and-seashells",
+    "gordons-gin"
+  ],
+  "flavours": [
+    {
+      "name": "Vanilla",
+      "descriptions": {
+        "standard": "Light vanilla sponge filled with strawberry jam and buttercream",
+        "dairy-free": "Light vanilla sponge filled with strawberry jam and filling cream"
+      },
+      "variants": ["gluten-free", "dairy-free"]
+    },
+    {
+      "name": "Chocolate",
+      "descriptions": {
+        "standard": "Chocolate sponge filled with chocolate buttercream",
+        "dairy-free": "Chocolate sponge filled with chocolate filling cream"
+      },
+      "variants": ["gluten-free", "dairy-free"]
+    },
+    {
+      "name": "Chocolate Biscoff",
+      "descriptions": {
+        "standard": "Classic chocolate sponge layered with Biscoff flavoured buttercream and Biscoff spread",
+        "dairy-free": "Classic chocolate sponge layered with Biscoff flavoured filling cream and Biscoff spread"
+      },
+      "variants": ["dairy-free"],
+      "allergenInfo": "Chocolate Biscoff sponge contains soya."
+    },
+    {
+      "name": "Chocolate Oreo",
+      "descriptions": {
+        "standard": "Classic chocolate sponge filled with Oreo buttercream",
+        "dairy-free": "Classic chocolate sponge filled with Oreo filling cream"
+      },
+      "variants": ["gluten-free", "dairy-free"]
+    },
+    {
+      "name": "Chocolate Orange",
+      "descriptions": {
+        "standard": "Chocolate sponge flavoured with orange zest and filled with chocolate orange flavoured buttercream",
+        "dairy-free": "Chocolate sponge flavoured with orange zest and filled with chocolate orange flavoured filling cream"
+      },
+      "variants": ["gluten-free", "dairy-free"]
+    },
+    {
+      "name": "Chocolate fudge",
+      "descriptions": {
+        "standard": "Rich chocolate sponge filled with chocolate fudge topping"
+      },
+      "variants": ["gluten-free"],
+      "allergenInfo": "Chocolate fudge sponge is made using Nuts (ground almonds) - alternatively it can be made with a normal chocolate sponge filled with chocolate fudge topping."
+    },
+    {
+      "name": "Lemon",
+      "descriptions": {
+        "standard": "Fresh tasting sponge filled with lemon buttercream",
+        "dairy-free": "Fresh tasting sponge filled with lemon filling cream"
+      },
+      "variants": ["gluten-free", "dairy-free"]
+    },
+    {
+      "name": "Lemon and Elderflower",
+      "descriptions": {
+        "standard": "Light lemon sponge filled with elderflower flavour buttercream",
+        "dairy-free": "Light lemon sponge filled with elderflower flavour filling cream"
+      },
+      "variants": ["gluten-free", "dairy-free"]
+    },
+    {
+      "name": "Orange",
+      "descriptions": {
+        "standard": "Sponge flavoured with zesty orange filled with orange buttercream",
+        "dairy-free": "Sponge flavoured with zesty orange filled with orange filling cream"
+      },
+      "variants": ["gluten-free", "dairy-free"]
+    },
+    {
+      "name": "Coffee",
+      "descriptions": {
+        "standard": "Rich coffee sponge filled with coffee buttercream",
+        "dairy-free": "Rich coffee sponge filled with coffee filling cream"
+      },
+      "variants": ["gluten-free", "dairy-free"]
+    },
+    {
+      "name": "Coffee and walnut",
+      "descriptions": {
+        "standard": "Rich coffee and walnut sponge filled with coffee buttercream and walnut pieces",
+        "dairy-free": "Rich coffee and walnut sponge filled with coffee filling cream and walnut pieces"
+      },
+      "variants": ["gluten-free", "dairy-free"],
+      "allergenInfo": "Coffee and walnut sponge is made using Nuts (walnuts)."
+    },
+    {
+      "name": "Carrot",
+      "descriptions": {
+        "standard": "Moist with a hint of a spice flavour filled with cream cheese buttercream",
+        "dairy-free": "Moist with a hint of a spice flavour filled with cream cheese (dairy free alternative) filling cream"
+      },
+      "variants": ["gluten-free", "dairy-free"]
+    },
+    {
+      "name": "Baileys",
+      "descriptions": {
+        "standard": "Light sponge flavoured with Baileys and filled with Baileys buttercream",
+        "dairy-free": "Light sponge flavoured with Baileys and filled with Baileys filling cream"
+      },
+      "variants": ["gluten-free"]
+    },
+    {
+      "name": "Toffee",
+      "descriptions": {
+        "standard": "Delicious toffee flavoured sponge filled with toffee flavour buttercream and a layer of salted caramel sauce",
+        "dairy-free": "Delicious toffee flavoured sponge filled with toffee flavour filling cream"
+      },
+      "variants": ["gluten-free", "dairy-free"]
+    },
+    {
+      "name": "Raspberry and white chocolate",
+      "descriptions": {
+        "standard": "Classic sponge containing raspberry pieces filled with white chocolate buttercream"
+      },
+      "variants": ["gluten-free"]
+    }
+  ]
 }

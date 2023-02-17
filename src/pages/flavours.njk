@@ -1,0 +1,66 @@
+{% set page = "flavours" %}
+{% extends "layout.njk" %}
+
+{% block main %}
+
+    <div class="flavours-text">
+        <p>I offer a wide range of flavours that can be used in both celebration cakes and cupcakes. I also cater for the following dietary requirements: gluten free and dairy free.</p> 
+
+        {# <p>The list of flavours for my Deluxe cupcake range can also be found below. Please note the designs for these are fixed as stated, although small alterations, if required, can be made.</p> #}
+    </div>
+    <div class="flavours-menu-section">
+        <div class="flavours-menu-container">
+
+            {# {% from "macros/picture.njk" import pictureElement with context %}
+            {{ pictureElement("marble-background.jpg", "Marble", "100vw") }} #}
+
+            {% from "macros/fixed-background.njk" import fixedBackground with context %}
+            {{ fixedBackground("marble-background.jpg", "Marble background image") }}
+
+            <div class="flavours-menu standard">
+                <div class="flavours-tabs">
+                    <button id="standard-button">
+                        Standard
+                    </button>
+                    <button id="gluten-free-button">
+                        Gluten Free
+                    </button>
+                    <button id="dairy-free-button">
+                        Dairy free
+                    </button>
+                </div>
+                <div class="flavours-list">
+                    <div class="flavours-list-grid">
+                        {% for flavour in flavours %}
+                            <div class="flavour-row flavour standard{{ " " ~ (flavour.variants | join(" ")) if flavour.variants }}">
+                                <h2>{{flavour.name}}</h2>
+                                {% for variant in ["gluten-free", "dairy-free"] %}
+                                    {% if flavour.descriptions[variant] %}
+                                        <p class="flavour {{variant}}">{{flavour.descriptions[variant]}}</p>
+                                    {% endif %}
+                                {% endfor %}
+                                <p class="flavour standard{{" gluten-free" if not flavour.descriptions["gluten-free"]}}{{" dairy-free" if not flavour.descriptions["dairy-free"]}} ">{{flavour.descriptions.standard}}</p>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <div class="allergen-info">
+                        <p><small>Allergen information</small></p>
+                        <p class="flavour standard"><small>All cakes contain: Gluten, Eggs, Dairy and may contain traces of Nuts and Soya.</small></p>
+                        <p class="flavour gluten-free"><small>All cakes contain: Eggs, Dairy and may contain traces of Nuts and Soya.</small></p>
+                        <p class="flavour dairy-free"><small>All cakes contain: Gluten, Eggs and may contain traces of Nuts and Soya.</small></p>
+                        {% for flavour in flavours %}
+                            {% if flavour.allergenInfo %}
+                                <p class="flavour standard{{ " " ~ (flavour.variants | join(" ")) if flavour.variants }}"><small>{{flavour.allergenInfo}}</small></p>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block scripts %}
+    <script type="text/javascript" src="js/flavourTabs.js" defer></script>
+{% endblock %}
