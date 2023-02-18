@@ -471,7 +471,7 @@ section {
   padding: 20px;
   width: 100%;
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1100px) {
   .card {
     padding: 10px;
   }
@@ -614,11 +614,11 @@ header #mobile-nav-image {
   padding: 2.5vw;
 }
 header #mobile-nav-image img {
-  height: 170px;
+  height: 130px;
   max-height: 100%;
   width: auto;
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1100px) {
   header {
     display: flex;
     flex-direction: column;
@@ -644,17 +644,17 @@ header #mobile-nav-image img {
     height: auto;
   }
 }
-@media only screen and (max-width: 750px) and (min-height: 700px) {
+@media only screen and (max-width: 1100px) and (min-height: 700px) {
   header nav .logo-container {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1100px) {
   header nav .logo-container .logo-background {
     position: static;
   }
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1100px) {
   header .hamburger {
     display: block;
   }
@@ -667,11 +667,11 @@ header #mobile-nav-image img {
     height: 110px !important;
   }
   header #mobile-nav-image img {
-    height: 120px;
+    height: 110px;
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1100px) {
   body.nav-open header {
     position: fixed;
     top: 0;
@@ -809,7 +809,7 @@ footer .moc-container a svg {
 .page-title.darkened img {
   filter: brightness(0.7);
 }
-@media only screen and (min-width: 751px) {
+@media only screen and (min-width: 1101px) {
   .page-title {
     padding-top: 80px;
   }

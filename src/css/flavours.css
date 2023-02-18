@@ -40,6 +40,7 @@
   border: 1px solid #e6e6e6;
   border-radius: 10px 10px 0 0;
   cursor: pointer;
+  color: #000;
 }
 .flavours-menu-section .flavours-menu-container .flavours-menu .flavours-list {
   text-align: center;
