@@ -4,21 +4,27 @@
 {% block main %}
 
     <div class="intro-text">
-        <p>The final price depends on sponge flavour, sponge size and shape, the finish and decoration.</p> 
+        <p>This page shows the starting prices for each of my products before any decoration. The final price depends on <a href="/flavours">sponge flavour</a>, the overall size and shape of the sponge, the finish (i.e. fondant or buttercream) and the chosen decoration.</p> 
     </div>
     <div class="pricing-section">
         
         {% from "macros/fixed-background.njk" import fixedBackground with context %}
         {{ fixedBackground("marble-background.jpg", "Marble background image") }}
+
+        {% from "macros/picture.njk" import pictureElement with context %}
         
         <div id="celebration-cakes" class="price-group">
+            <div class="image-container">
+                {{ pictureElement("cake-cutouts/" ~ "shades-of-chocolate.png", "Celebration cake", "220px") }}
+            </div>
+
             <h2>Celebration cakes</h2>
-            <p>Starting base prices (ie no decoration) are as follows:</p>
+            <p>Starting base prices (i.e. no decoration) are as follows:</p>
             <table>
                 <tr>
                     <th>Size in inches</th>
-                    <th>Round</th>
-                    <th>Square</th>
+                    <th>Round (diameter)</th>
+                    <th>Square (side length)</th>
                 </tr>
                 {% for size, roundPrice in pricing.celebrationCakes.round %}
                     <tr>    
@@ -28,10 +34,14 @@
                     </tr>
                 {% endfor %}
             </table>
-            <p>Tiered cakes will incur an additional cost starting at £8 per tier to cover the support structure.</p>
+            <p>Tiered cakes will incur an additional cost starting at £8 per tier to cover the support structure.</p>  
         </div>
 
         <div id="wedding-cakes" class="price-group">
+            <div class="image-container">
+                {{ pictureElement("cake-cutouts/" ~ "wedding.png", "Wedding cake", "220px") }}
+            </div>
+
             <h2>Wedding cakes</h2>
             <p>Starting prices are as follows:</p>
             <ul>
@@ -45,6 +55,10 @@
         </div>
 
         <div id="cupcakes" class="price-group">
+            <div class="image-container">
+                {{ pictureElement("cake-cutouts/" ~ "rose-mix-triple.png", "Cupcakes", "220px") }}
+            </div>
+
             <h2>Cupcakes</h2>
             <p>Cupcakes start from £2 each.</p>
             <p>They come in white paper cases as standard. If required, this can be changed for an additional cost to match the celebration theme.</p>

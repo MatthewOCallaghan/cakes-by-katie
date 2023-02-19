@@ -12,15 +12,18 @@
 .pricing-section {
   position: relative;
   padding: min(5%, 50px);
+  overflow: hidden;
 }
 .pricing-section .price-group {
   border-radius: 20px;
-  padding: min(5%, 30px);
+  padding: min(5%, 50px);
   border: 1px solid #e6e6e6;
   margin: auto;
   max-width: 1100px;
   text-align: center;
-  margin-top: min(5%, 30px);
+  margin-top: min(5%, 50px);
+  position: relative;
+  box-shadow: 0 0 4px 1px #cacaca47;
 }
 .pricing-section .price-group ul {
   list-style-type: none;
@@ -38,10 +41,22 @@
 }
 .pricing-section .price-group h2 {
   margin: 0;
+  position: relative;
+  z-index: 1;
+}
+.pricing-section .price-group p {
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 1;
 }
 .pricing-section .price-group table {
   width: 100%;
   border-collapse: collapse;
+}
+.pricing-section .price-group table tr:nth-child(odd) {
+  background: #fff6;
 }
 .pricing-section .price-group table th {
   background: #fff;
@@ -50,4 +65,39 @@
   border: 1px solid #e6e6e6;
   padding: 5px;
   width: 33%;
+}
+.pricing-section .price-group .image-container {
+  position: absolute;
+  bottom: -30px;
+  width: 20%;
+}
+.pricing-section .price-group .image-container img {
+  width: 100%;
+}
+.pricing-section .price-group:nth-child(even) .image-container {
+  right: -4%;
+}
+.pricing-section .price-group:nth-child(odd) .image-container {
+  left: -4%;
+}
+@media only screen and (max-width: 850px) {
+  .pricing-section .price-group h2 {
+    width: min-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .pricing-section .price-group p {
+    max-width: 100%;
+  }
+  .pricing-section .price-group .image-container {
+    bottom: auto;
+    top: -10px;
+    min-width: 105px;
+  }
+  .pricing-section .price-group:nth-child(even) .image-container {
+    right: -3%;
+  }
+  .pricing-section .price-group:nth-child(odd) .image-container {
+    left: -3%;
+  }
 }
