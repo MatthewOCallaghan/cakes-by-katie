@@ -1,0 +1,68 @@
+@use "variables";
+@use "mixins";
+
+.intro-text {
+    background: #fff;
+    padding: min(20px, 5%) 5%;
+
+    p {
+        max-width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+
+.pricing-section {
+    position: relative;
+    padding: min(5%, 50px);
+
+    .price-group {
+        border-radius: 20px;
+        padding: min(5%, 30px);
+        border: 1px solid #e6e6e6;
+        margin: auto;
+        max-width: 1100px;
+        text-align: center;
+        margin-top: min(5%, 30px);
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        &#celebration-cakes {
+            margin-top: 0;
+            background: #dff6ff;
+        }
+        
+        &#wedding-cakes {
+            background: #fbe4ff;
+        }
+
+        &#cupcakes {
+            background: #fff7cf;
+        }
+
+        h2 {
+            margin: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            
+            th {
+                background: #fff;
+            }
+
+            th, td {
+                border: 1px solid #e6e6e6;
+                padding: 5px;
+                width: 33%;
+            }
+        }
+
+        
+    }
+}

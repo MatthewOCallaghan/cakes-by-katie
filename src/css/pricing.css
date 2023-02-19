@@ -1,0 +1,53 @@
+.intro-text {
+  background: #fff;
+  padding: min(20px, 5%) 5%;
+}
+.intro-text p {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.pricing-section {
+  position: relative;
+  padding: min(5%, 50px);
+}
+.pricing-section .price-group {
+  border-radius: 20px;
+  padding: min(5%, 30px);
+  border: 1px solid #e6e6e6;
+  margin: auto;
+  max-width: 1100px;
+  text-align: center;
+  margin-top: min(5%, 30px);
+}
+.pricing-section .price-group ul {
+  list-style-type: none;
+  padding: 0;
+}
+.pricing-section .price-group#celebration-cakes {
+  margin-top: 0;
+  background: #dff6ff;
+}
+.pricing-section .price-group#wedding-cakes {
+  background: #fbe4ff;
+}
+.pricing-section .price-group#cupcakes {
+  background: #fff7cf;
+}
+.pricing-section .price-group h2 {
+  margin: 0;
+}
+.pricing-section .price-group table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.pricing-section .price-group table th {
+  background: #fff;
+}
+.pricing-section .price-group table th, .pricing-section .price-group table td {
+  border: 1px solid #e6e6e6;
+  padding: 5px;
+  width: 33%;
+}

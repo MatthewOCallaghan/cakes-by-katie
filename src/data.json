@@ -84,6 +84,17 @@
         "text": "404"
       }
     },
+    "pricing": {
+      "title": "Pricing | Cakes by Katie",
+      "description": "Get an idea of how much your high quality celebration cake, wedding cake or cupcakes will cost from Cakes by Katie, a bespoke cake maker in Thatcham, West Berkshire.",
+      "heading": {
+        "text": "Pricing",
+        "image": {
+          "path": "backgrounds/piggy-bank.jpg",
+          "alt": "Piggy bank background"
+        }
+      }
+    },
     "flavours": {
       "title": "Flavours | Cakes by Katie",
       "description": "See the wide range of flavours that Cakes by Katie offers for their high quality bespoke cakes.",
@@ -1044,5 +1055,31 @@
       },
       "variants": ["gluten-free"]
     }
-  ]
+  ],
+  "pricing": {
+    "celebrationCakes": {
+      "round": {
+        "4": 30,
+        "5": 35,
+        "6": 40,
+        "7": 45,
+        "8": 50,
+        "9": 55,
+        "10": 60,
+        "11": 65,
+        "12": 70
+      },
+      "square": {
+        "4": 35,
+        "5": 40,
+        "6": 45,
+        "7": 50,
+        "8": 55,
+        "9": 60,
+        "10": 65,
+        "11": 70,
+        "12": 75
+      }
+    }
+  }
 }
