@@ -106,6 +106,17 @@
         }
       }
     },
+    "products": {
+      "title": "Products | Cakes by Katie",
+      "description": "I'm a cake maker in Thatcham, West Berkshire, near Newbury, offering high quality bespoke celebration cakes, cupcakes, wedding favours, cake jars, and other products.",
+      "heading": {
+        "text": "Products",
+        "image": {
+          "path": "backgrounds/gift-bags.jpg",
+          "alt": "Gift bags background"
+        }
+      }
+    },
     "occasions": {
       "title": "Occasions | Cakes by Katie",
       "description": "I'm a cake maker in Thatcham, West Berkshire, offering high quality bespoke cakes for birthdays, weddings, anniversaries, christenings, or any occasion.",

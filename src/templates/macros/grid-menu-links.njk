@@ -1,0 +1,25 @@
+{% macro gridMenuLinks(links, title, text) %}
+    <section class="grid-menu-links" >
+        {% from "macros/fixed-background.njk" import fixedBackground with context %}
+        {{ fixedBackground("marble-background.jpg", "Marble background image") }}
+
+        <h2>{{ title }}</h2>
+        {% if text %}
+            <p>{{ text }}<p>
+        {% endif %}
+        
+        {% from "macros/picture.njk" import pictureElement with context %}
+        
+        <div class="links-container">
+            
+            {% for link in links %}
+                <a href="{{ link.href }}" style="background:{{ link.colour }}">
+                    <div class="link-inner">
+                        <h3>{{ link.title }}</h3>
+                        {{ pictureElement(link.imageSrc, link.imageAlt, "200px") }}
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+    </section>
+{% endmacro %}
