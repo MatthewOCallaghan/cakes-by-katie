@@ -384,7 +384,13 @@
     },
     "pink-and-bluey": {
       "images": ["Pink-and-Bluey.jpg"],
-      "name": "Pink and Bluey"
+      "name": "Pink and Bluey",
+      "videos": [
+        {
+          "thumb": "Pink-and-Bluey.jpg",
+          "file": "Pink-and-Bluey.mp4"
+        }
+      ]
     },
     "chocolate-decadence": {
       "images": ["Chocolate-Decadence.jpg"],
