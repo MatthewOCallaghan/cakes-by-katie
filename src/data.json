@@ -374,7 +374,13 @@
     },
     "minecraft": {
       "images": ["Minecraft.jpg"],
-      "name": "Minecraft"
+      "name": "Minecraft",
+      "videos": [
+        {
+          "thumb": "Minecraft.jpg",
+          "file": "Minecraft.mp4"
+        }
+      ]
     },
     "pink-and-bluey": {
       "images": ["Pink-and-Bluey.jpg"],
@@ -391,11 +397,23 @@
         "text": "Thank you for the lovely chocolate cake it was so moist and delicious everyone enjoyed it",
         "name": "Maureen",
         "location": "Newbury"
-      }
+      },
+      "videos": [
+        {
+          "thumb": "Birthday-Square.jpg",
+          "file": "Birthday-Square.mp4"
+        }
+      ]
     },
     "golden-drip-cake-with-age": {
       "images": ["Golden-Drip-Cake-with-Age.jpg"],
-      "name": "Golden Drip Cake with Age"
+      "name": "Golden Drip Cake with Age",
+      "videos": [
+        {
+          "thumb": "Golden-Drip-Cake-with-Age.jpg",
+          "file": "Golden-Drip-Cake-with-Age.mp4"
+        }
+      ]
     },
     "psychedelic-symphony": {
       "images": [
@@ -404,7 +422,13 @@
         "Psychedelic-Symphony-Back.jpg",
         "Psychedelic-Symphony-Side-R.jpg"
       ],
-      "name": "Psychedelic Symphony"
+      "name": "Psychedelic Symphony",
+      "videos": [
+        {
+          "thumb": "Psychedelic-Symphony-Front.jpg",
+          "file": "Psychedelic-Symphony.mp4"
+        }
+      ]
     },
     "birthday-beach-mix": {
       "images": ["Birthday-Beach-Mix.jpg", "Birthday-Beach-Mix-Box.jpg"],
@@ -425,11 +449,23 @@
     },
     "diamond-anniversary": {
       "images": ["Diamond-Anniversary.jpg"],
-      "name": "Diamond Anniversary"
+      "name": "Diamond Anniversary",
+      "videos": [
+        {
+          "thumb": "Diamond-Anniversary.jpg",
+          "file": "Diamond-Anniversary.mp4"
+        }
+      ]
     },
     "ready-set-go-kart": {
       "images": ["Ready-Set-Go-Kart.jpg"],
-      "name": "Ready Set Go-Kart"
+      "name": "Ready Set Go-Kart",
+      "videos": [
+        {
+          "thumb": "Ready-Set-Go-Kart.jpg",
+          "file": "Ready-Set-Go-Kart.mp4"
+        }
+      ]
     },
     "kirsten": {
       "images": ["Kirsten.jpg"],
