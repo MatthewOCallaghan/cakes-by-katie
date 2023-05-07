@@ -304,6 +304,157 @@
     }
   },
   "portfolio": {
+    "fit-for-a-princess": {
+      "images": ["Fit-for-a-Princess.jpg"],
+      "name": "Fit for a Princess"
+    },
+    "puppy-paws": {
+      "images": ["Puppy-Paws.jpg"],
+      "name": "Puppy Paws"
+    },
+    "for-the-love-of-dogs": {
+      "images": ["For-the-Love-of-Dogs.jpg"],
+      "name": "For the love of dogs"
+    },
+    "howzat": {
+      "images": ["Howzat.jpg"],
+      "name": "Howzat"
+    },
+    "green-fingers": {
+      "images": ["Green-Fingers.jpg"],
+      "name": "Green Fingers"
+    },
+    "football-rules": {
+      "images": ["Football-Rules.jpg"],
+      "name": "Football Rules"
+    },
+    "milk-float": {
+      "images": ["The-Fastest-Milk-Float-in-the-West.jpg"],
+      "name": "The Fastest Milk Float in the West"
+    },
+    "pattern-piping": {
+      "images": ["Pattern-Piping.jpg"],
+      "name": "Pattern Piping"
+    },
+    "leonard": {
+      "images": ["Leonard.jpg"],
+      "name": "Leonard"
+    },
+    "semi-naked-drips": {
+      "images": ["Semi-Naked-Drip.jpg"],
+      "name": "Semi Naked - Drips",
+       "testimonial": {
+        "text": "THANK YOU SO MUCH for the cake. It looked beautiful thank you and it's all gone! Everyone enjoyed eating it. Sorry I didn't see you Saturday, but thank you, it was fantastic!!",
+        "name": "Robyn",
+        "location": "Thatcham"
+      }
+    },
+    "rowing-for-cambridge":{
+      "images": ["rowing-for-cambridge.jpg"],
+      "name": "Rowing for Cambridge",
+      "testimonial": {
+        "text": "Just to say my customer was very complimentary about your cake, so thank you so much for squeezing us in. Will definitely be using your services again.",
+        "name": "Forever and a day Events",
+        "location": "Reading"
+      }
+    },
+    "box-of-lennies": {
+      "images": ["A-Box-of-Lennies.jpg"],
+      "name": "A Box of Lennies"
+    },
+    "classic-drips-gold": {
+      "images": ["Classic-Drips-Gold.jpg"],
+      "name": "Classic Drips - Gold"
+    },
+    "hole-in-one": {
+      "images": ["A-Hole-in-One.jpg"],
+      "name": "A Hole in One"
+    },
+    "boxed-pretty-in-pink": {
+      "images": ["Boxed-Pretty-in-Pink-Tag.jpg", "Boxed-Pretty-in-Pink-Ribbon.jpg", "Boxed-Pretty-in-Pink-Open.jpg"],
+      "name": "Boxed - Pretty in Pink"
+    },
+    "bijou": {
+      "images": ["Bijou.jpg"],
+      "name": "Bijou"
+    },
+    "corporate-cupcakes-colour-set": {
+      "images": ["Corporate-Cupcakes-Colour-Set.jpg"],
+      "name": "Corporate Cupcakes - Colour Set"
+    },
+    "arc-de-fleur": {
+      "images": ["Arc-De-Fleur.jpg"],
+      "name": "Arc de Fleur"
+    },
+    "corporate-thank-you": {
+      "images": ["Corporate-Thank-You.jpg"],
+      "name": "Corporate - Thank You"
+    },
+    "corporate-goodbye-and-thank-you": {
+      "images": ["Corporate-Goodbye-and-Good-Luck.jpg"],
+      "name": "Corporate - Goodbye and Thank You"
+    },
+    "a-touch-of-pink-birthday-edition": {
+      "images": ["A-Touch-of-Pink-Birthday-Edition.jpg"],
+      "name": "A Touch of Pink - Birthday Edition"
+    },
+    "a-touch-of-pink-with-chocolate": {
+      "images": ["A-Touch-of-Pink-with-Chocolate-Name.jpg"],
+      "name": "A Touch of Pink with Chocolate"
+    },
+    "harry-potter-gryffindor": {
+      "images": ["Harry-Potter-Gryffindor-Edition.jpg"],
+      "name": "Harry Potter - Gryffindor Edition"
+    },
+    "football-print-spurs": {
+      "images": ["Football-Print-Spurs.jpg"],
+      "name": "Football Print - Spurs",
+      "testimonial":{
+        "text": "Just wanted to thank you for the wonderful cake! It was perfect and tasted amazing.",
+        "name": "Claire",
+        "location": "Thatcham"
+      }
+    },
+    "shades-of-chocoate-narrow": {
+      "images": ["Shades-of-Chocolate-Narrow.jpg"],
+      "name": "Shades of Chocolate - Narrow"
+    },
+    "chocolate-decadence-milestone": {
+      "images": ["Chocolate-Decadence-Milestone.jpg"],
+      "name": "Chocolate Decadence - Milestone",
+      "testimonial": {
+        "text": "A huge thank you for the absolutely stunning cake; it's really taken my breath away. It was certainly a centre piece, it had lots of great comments and tasted delicious. Thank you again for everything.",
+        "name": "Tracy",
+        "location": "West Berkshire"
+      }
+    },
+    "centre-stage": {
+      "images": ["Centre-Stage.jpg"],
+      "name": "Centre stage",
+      "testimonial": {
+        "text": "The cake was splendid... AND delicious. Thank you soooo much Katie. Half gone! Lots left to enjoy! I shall recommend you to anyone who needs a special cake for a special occasion.",
+        "name": "Marilyn", 
+        "location": ""
+      }
+    },
+    "welcome-to-the-jungle":{
+      "images": ["Welcome-to-the-Jungle.jpg"],
+      "name": "Welcome to the Jungle",
+      "testimonial":{
+        "text": "I just wanted to say thank you so much for the cake! It's literally perfect and better than the photos, thank you!!",
+        "name": "Chloe",
+        "location": "Thatcham"
+      }
+    },
+    "timeless":{
+      "images": ["Timeless.jpg"],
+      "name": "Timeless",
+      "testimonial":{
+        "text": "Just to say thank you for the beautiful and delicious birthday cake you delivered to me yesterday.  My daughter and the family loved the cake and we will definitely recommend you.",
+        "name": "Lynne",
+        "location": "Thatcham"
+      }
+    },
     "be-my-valentine": {
       "images": ["Be-My-Valentine-Box.jpg", "Be-My-Valentine-Pattern.jpg"],
       "name": "Be My Valentine"
@@ -400,7 +551,7 @@
       "images": ["Birthday-Square.jpg"],
       "name": "Birthday Square",
       "testimonial": {
-        "text": "Thank you for the lovely chocolate cake it was so moist and delicious everyone enjoyed it",
+        "text": "Thank you for the lovely chocolate cake. It was so moist and delicious and everyone enjoyed it",
         "name": "Maureen",
         "location": "Newbury"
       },
@@ -514,7 +665,7 @@
       "images": ["Superhero-Ombre.jpg"],
       "name": "Superhero Ombré",
       "testimonial": {
-        "text": "I just wanted to say thank you for such a great cake, it looked and tasted amazing and is almost gone already!! ",
+        "text": "I just wanted to say thank you for such a great cake. It looked and tasted amazing and is almost gone already!! ",
         "name": "Nicola",
         "location": "Tadley"
       }
@@ -541,7 +692,7 @@
       "squareImage": "Fresh-Flowers-Yellow-Sunshine-square.jpg",
       "name": "Fresh Flowers - Yellow Sunshine",
       "testimonial": {
-        "text": "The cake was a great success.  Everyone was very complimentary about it.  It tasted so good too.",
+        "text": "The cake was a great success. Everyone was very complimentary about it. It tasted so good too.",
         "name": "Vanessa",
         "location": "Bucklebury"
       }
@@ -565,7 +716,7 @@
       "images": ["Golden-Anniversary.jpg"],
       "name": "Golden Anniversary",
       "testimonial": {
-        "text": "Just to say a Big Thank you for making us this superb wedding anniversary cake. We can see that you have gone that extra mile for us; everyone at the party just loved.",
+        "text": "Just to say a Big Thank you for making us this superb wedding anniversary cake. We can see that you have gone that extra mile for us; everyone at the party just loved it.",
         "name": "Lilian & David",
         "location": "Newbury"
       }
@@ -584,7 +735,7 @@
       "images": ["Sun-Sand-and-Seashells.jpg"],
       "name": "Sun, Sand, and Seashells",
       "testimonial": {
-        "text": "Thank you very much for the lovely cake, it was absolutely gorgeous in all the possible ways. Everybody really enjoyed it and admired your work",
+        "text": "Thank you very much for the lovely cake, it was absolutely gorgeous in all the possible ways. Everybody really enjoyed it and admired your work.",
         "name": "Rosemary",
         "location": "Thatcham"
       },
@@ -679,7 +830,7 @@
       "images": ["Black-and-White.jpg"],
       "name": "Black and White",
       "testimonial": {
-        "text": "Big thank you to Katie, for producing three amazing creations for me, some cupcakes for my daughters 18th birthday and a friends 50th, and a birthday cake for my daughter's birthday the following year, they were all delicious. On each occasion I gave Katie a brief or the birthday theme and she worked with me to design the toppers and gave me options to choose from, even a choice of flavours for the cupcakes. Katie added an extra special touch to each occasion, thank you and I would have no hesitation in recommending you to others in the future. \n",
+        "text": "Big thank you to Katie, for producing three amazing creations for me, some cupcakes for my daughter's 18th birthday and a friend's 50th, and a birthday cake for my daughter's birthday the following year. They were all delicious. On each occasion I gave Katie a brief or the birthday theme and she worked with me to design the toppers and gave me options to choose from, even a choice of flavours for the cupcakes. Katie added an extra special touch to each occasion, thank you and I would have no hesitation in recommending you to others in the future. \n",
         "name": "Ellie",
         "location": "Purley"
       },
@@ -698,7 +849,7 @@
       "images": ["White-and-Gold-Choc-Fudge.jpg"],
       "name": "White and Gold Chocolate Fudge",
       "testimonial": {
-        "text": "Somebody brought some of Katie's cupcakes into the office one day, and we all enjoyed them so much that we decided to place a regular order. I've also used Katie a couple of times for special celebration cakes. They looked amazing, but more importantly tasted amazing too. Katie is now my go-to person for all my cake requirements. It's refreshing to see a young person with a business like this. Katie is really friendly and talented. So, give Katie a try - you won't be disappointed!",
+        "text": "Somebody brought some of Katie's cupcakes into the office one day and we all enjoyed them so much that we decided to place a regular order. I've also used Katie a couple of times for special celebration cakes. They looked amazing, but more importantly tasted amazing too. Katie is now my go-to person for all my cake requirements. It's refreshing to see a young person with a business like this. Katie is really friendly and talented. So, give Katie a try - you won't be disappointed!",
         "name": "Andy",
         "location": "Reading"
       },
@@ -858,7 +1009,7 @@
       "name": "Wonder Woman",
       "description": "I would say have a Marvel at this cake - but we both know it's DC.",
       "testimonial": {
-        "text": "We were blown away by Alices cake. You had really listen to our ideas and understood the effect we w're looking for. Everyone commented on the cake and Alice will always remember her 6th birthday cake. \nThanks for helping make her day so special. ",
+        "text": "We were blown away by Alice's cake. You had really listened to our ideas and understood the effect were looking for. Everyone commented on the cake and Alice will always remember her 6th birthday cake. \nThanks for helping make her day so special. ",
         "name": "Mel",
         "location": "Reading"
       }
@@ -915,7 +1066,7 @@
       "images": ["Gordons-Gin.jpg"],
       "name": "Gordon's Gin",
       "testimonial": {
-        "text": "Katie's cake not only looked amazing but it tasted delicious and kept really well, when we didn't eat it all on 1st cutting. Her design ideas were spot on and it was difficult to choose the best one!",
+        "text": "Katie's cake not only looked amazing but it tasted delicious and kept really well when we didn't eat it all on 1st cutting. Her design ideas were spot on and it was difficult to choose the best one!",
         "name": "Mel",
         "location": "Reading"
       }
@@ -969,11 +1120,11 @@
     "booties-and-bunting"
   ],
   "featuredTestimonials": [
-    "superhero-ombre",
+    "semi-naked-drips",
+    "welcome-to-the-jungle",
+    "chocolate-decadence-milestone",
     "fresh-flowers-vibrant-pink",
-    "golden-anniversary",
-    "sun-sand-and-seashells",
-    "gordons-gin"
+    "golden-anniversary"
   ],
   "flavours": [
     {

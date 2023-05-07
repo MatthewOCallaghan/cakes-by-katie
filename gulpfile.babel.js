@@ -237,3 +237,5 @@ exports.deploy = deploy;
 exports.rejectedCSS = rejectedCSS;
 
 exports.clearCache = clearCache;
+
+exports.processNewImages = processNewImages;
