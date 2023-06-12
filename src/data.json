@@ -1223,7 +1223,8 @@
         "standard": "Moist with a hint of a spice flavour filled with cream cheese buttercream",
         "dairy-free": "Moist with a hint of a spice flavour filled with cream cheese (dairy free alternative) filling cream"
       },
-      "variants": ["gluten-free", "dairy-free"]
+      "variants": ["gluten-free", "dairy-free"],
+      "allergenInfo": "Carrot sponge is made using Nuts (walnuts)."
     },
     {
       "name": "Baileys",
