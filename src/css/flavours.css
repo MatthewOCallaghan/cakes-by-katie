@@ -110,3 +110,15 @@
 .flavours-menu-section .flavours-menu-container .flavours-menu.dairy-free .flavours-list {
   background: #dff6ff;
 }
+.flavours-menu-section .flavours-menu-container .flavours-menu #vegan-button {
+  background: #e2ffd1;
+}
+.flavours-menu-section .flavours-menu-container .flavours-menu.vegan #vegan-button {
+  border-bottom-color: #e2ffd1;
+}
+.flavours-menu-section .flavours-menu-container .flavours-menu.vegan .flavour:not(.vegan) {
+  display: none;
+}
+.flavours-menu-section .flavours-menu-container .flavours-menu.vegan .flavours-list {
+  background: #e2ffd1;
+}

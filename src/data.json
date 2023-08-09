@@ -97,7 +97,7 @@
     },
     "flavours": {
       "title": "Flavours | Cakes by Katie",
-      "description": "See the wide range of flavours that Cakes by Katie offers for their high quality bespoke cakes.",
+      "description": "See the wide range of flavours that Cakes by Katie offers for their high quality bespoke cakes. We also offer flavours as gluten free, dairy free or vegan.",
       "heading": {
         "text": "Flavours",
         "image": {
@@ -1131,74 +1131,74 @@
       "name": "Vanilla",
       "descriptions": {
         "standard": "Light vanilla sponge filled with strawberry jam and buttercream",
-        "dairy-free": "Light vanilla sponge filled with strawberry jam and filling cream"
+        "dairy-free": "Light vanilla sponge filled with strawberry jam and filling cream",
+        "vegan": "Light vanilla sponge filled with strawberry jam and filling cream"
       },
-      "variants": ["gluten-free", "dairy-free"]
+      "variants": ["gluten-free", "dairy-free", "vegan"]
     },
     {
       "name": "Chocolate",
       "descriptions": {
         "standard": "Chocolate sponge filled with chocolate buttercream",
-        "dairy-free": "Chocolate sponge filled with chocolate filling cream"
+        "dairy-free": "Chocolate sponge filled with chocolate filling cream",
+        "vegan": "Chocolate sponge filled with chocolate filling cream"
       },
-      "variants": ["gluten-free", "dairy-free"]
+      "variants": ["gluten-free", "dairy-free", "vegan"]
     },
     {
       "name": "Chocolate Biscoff",
       "descriptions": {
         "standard": "Classic chocolate sponge layered with Biscoff flavoured buttercream and Biscoff spread",
-        "dairy-free": "Classic chocolate sponge layered with Biscoff flavoured filling cream and Biscoff spread"
+        "dairy-free": "Classic chocolate sponge layered with Biscoff flavoured filling cream and Biscoff spread",
+        "vegan": "Classic chocolate sponge layered with Biscoff flavoured filling cream and Biscoff spread"
       },
-      "variants": ["dairy-free"],
+      "variants": ["dairy-free", "vegan"],
       "allergenInfo": "Chocolate Biscoff sponge contains soya."
     },
     {
       "name": "Chocolate Oreo",
       "descriptions": {
         "standard": "Classic chocolate sponge filled with Oreo buttercream",
-        "dairy-free": "Classic chocolate sponge filled with Oreo filling cream"
+        "dairy-free": "Classic chocolate sponge filled with Oreo filling cream",
+        "vegan": "Classic chocolate sponge filled with Oreo filling cream"
       },
-      "variants": ["gluten-free", "dairy-free"]
+      "variants": ["gluten-free", "dairy-free", "vegan"]
     },
     {
       "name": "Chocolate Orange",
       "descriptions": {
         "standard": "Chocolate sponge flavoured with orange zest and filled with chocolate orange flavoured buttercream",
-        "dairy-free": "Chocolate sponge flavoured with orange zest and filled with chocolate orange flavoured filling cream"
+        "dairy-free": "Chocolate sponge flavoured with orange zest and filled with chocolate orange flavoured filling cream",
+        "vegan": "Chocolate sponge flavoured with orange zest and filled with chocolate orange flavoured filling cream"
       },
-      "variants": ["gluten-free", "dairy-free"]
-    },
-    {
-      "name": "Chocolate fudge",
-      "descriptions": {
-        "standard": "Rich chocolate sponge filled with chocolate fudge topping"
-      },
-      "variants": ["gluten-free"],
-      "allergenInfo": "Chocolate fudge sponge is made using Nuts (ground almonds) - alternatively it can be made with a normal chocolate sponge filled with chocolate fudge topping."
+      "variants": ["gluten-free", "dairy-free", "vegan"]
     },
     {
       "name": "Lemon",
       "descriptions": {
         "standard": "Fresh tasting sponge filled with lemon buttercream",
-        "dairy-free": "Fresh tasting sponge filled with lemon filling cream"
+        "dairy-free": "Fresh tasting sponge filled with lemon filling cream",
+        "vegan": "Fresh tasting sponge filled with lemon filling cream"
       },
-      "variants": ["gluten-free", "dairy-free"]
+      "variants": ["gluten-free", "dairy-free", "vegan"]
     },
     {
       "name": "Lemon and Elderflower",
       "descriptions": {
         "standard": "Light lemon sponge filled with elderflower flavour buttercream",
-        "dairy-free": "Light lemon sponge filled with elderflower flavour filling cream"
+        "dairy-free": "Light lemon sponge filled with elderflower flavour filling cream",
+        "vegan": "Light lemon sponge filled with elderflower flavour filling cream"
       },
-      "variants": ["gluten-free", "dairy-free"]
+      "variants": ["gluten-free", "dairy-free", "vegan"]
     },
     {
       "name": "Orange",
       "descriptions": {
         "standard": "Sponge flavoured with zesty orange filled with orange buttercream",
-        "dairy-free": "Sponge flavoured with zesty orange filled with orange filling cream"
+        "dairy-free": "Sponge flavoured with zesty orange filled with orange filling cream",
+        "vegan": "Sponge flavoured with zesty orange filled with orange filling cream"
       },
-      "variants": ["gluten-free", "dairy-free"]
+      "variants": ["gluten-free", "dairy-free", "vegan"]
     },
     {
       "name": "Coffee",
@@ -1238,9 +1238,10 @@
       "name": "Toffee",
       "descriptions": {
         "standard": "Delicious toffee flavoured sponge filled with toffee flavour buttercream and a layer of salted caramel sauce",
-        "dairy-free": "Delicious toffee flavoured sponge filled with toffee flavour filling cream"
+        "dairy-free": "Delicious toffee flavoured sponge filled with toffee flavour filling cream",
+        "vegan": "Delicious toffee flavoured sponge filled with toffee flavour filling cream"
       },
-      "variants": ["gluten-free", "dairy-free"]
+      "variants": ["gluten-free", "dairy-free", "vegan"]
     },
     {
       "name": "Raspberry and white chocolate",
