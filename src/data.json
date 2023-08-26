@@ -304,6 +304,126 @@
     }
   },
   "portfolio": {
+    "cheers-corona": {
+      "images": ["Cheers-Corona.jpg"],
+      "name": "Cheers - Corona"
+    },
+    "21-mix": {
+      "images": ["21-Mix.jpg"],
+      "name": "21 Mix"
+    },
+    "anchor-aweigh": {
+      "images": ["Anchor-Aweigh.jpg"],
+      "name": "Anchor Aweigh"
+    },
+    "baby-shades": {
+      "images": ["Baby-Shades.jpg"],
+      "name": "Baby Shades"
+    },
+    "birthday-shades-lilac-blue": {
+      "images": ["Birthday-Shades-Lilac-Blue.jpg"],
+      "name": "Birthday Shades - Lilac/Blue"
+    },
+    "birthday-shades-sage-pink-shimmer": {
+      "images": ["Birthday-Shades-Sage-Pink-Shimmer.jpg"],
+      "name": "Birthday Shades - Sage/Pink Shimmer"
+    },
+    "blazing-birthday": {
+      "images": ["Blazing-Birthday.jpg"],
+      "name": "Blazing Birthday"
+    },
+    "blessed-in-blue": {
+      "images": ["Blessed-in-Blue.jpg"],
+      "name": "Blessed in Blue"
+    },
+    "bouquet-pink-mix": {
+      "images": ["Bouquet-Pink-Mix.jpg"],
+      "name": "Bouquet - Pink Mix"
+    },
+    "classic-drips-chocolate": {
+      "images": ["Classic-Drips-Chocolate.jpg"],
+      "name": "Classic Drips - Chocolate"
+    },
+    "classic-drips-gold-mini": {
+      "images": ["Classic-Drips-Gold-Mini.jpg"],
+      "name": "Classic Drips - Gold - Mini"
+    },
+    "cocoa-and-cream": {
+      "images": ["Cocoa-and-Cream.jpg"],
+      "name": "Cocoa and Cream"
+    },
+    "congrats-police": {
+      "images": ["Congrats-Police.jpg"],
+      "name": "Congrats - Police"
+    },
+    "cosmo": {
+      "images": ["Cosmo.jpg"],
+      "name": "Cosmo"
+    },
+    "daisy-daisy-daisy": {
+      "images": ["Daisy-Daisy-Daisy.jpg"],
+      "name": "Daisy, Daisy, Daisy"
+    },
+    "ditsy-pink": {
+      "images": ["Ditsy-Pink.jpg"],
+      "name": "Ditsy - Pink"
+    },
+    "fathers-day-cupcake-mix": {
+      "images": ["Fathers-Day-Cupcake-Mix.jpg"],
+      "name": "Father's Day Cupcake Mix"
+    },
+    "fault-line-green-and-gold": {
+      "images": ["Fault-Line-Green-and-Gold.jpg"],
+      "name": "Fault Line - Green and Gold"
+    },
+    "fuchsia": {
+      "images": ["Fuchsia.jpg"],
+      "name": "Fuchsia"
+    },
+    "fun-guy": {
+      "images": ["Fun-Guy.jpg"],
+      "name": "Fun Guy"
+    },
+    "god-bless": {
+      "images": ["God-Bless.jpg"],
+      "name": "God Bless"
+    },
+    "kickin-beats-and-winning-streaks": {
+      "images": ["Kickin-Beats-and-Winning-Streaks.jpg"],
+      "name": "Kickin' Beats and Winning Streaks"
+    },
+    "petals-and-promises": {
+      "images": ["Petals-and-Promises.jpg"],
+      "name": "Petals and Promises"
+    },
+    "prime-ice-pop": {
+      "images": ["Prime-Ice-Pop.jpg"],
+      "name": "Prime - Ice Pop"
+    },
+    "prime-mix": {
+      "images": ["Prime-Mix.jpg"],
+      "name": "Prime Mix"
+    },
+    "prom": {
+      "images": ["Prom.jpg"],
+      "name": "Prom"
+    },
+    "simply-yellow": {
+        "images": ["Simply-Yellow.jpg"],
+        "name": "Simply Yellow"
+    },
+    "splodge-and-co": {
+      "images": ["Splodge-and-co.jpg"],
+      "name": "Splodge and Co."
+    },
+    "subtle-in-pink": {
+      "images": ["Subtle-in-Pink.jpg"],
+      "name": "Subtle in Pink"
+    },
+    "throwback": {
+      "images": ["Throwback.jpg"],
+      "name": "Throwback"
+    },
     "fit-for-a-princess": {
       "images": ["Fit-for-a-Princess.jpg"],
       "name": "Fit for a Princess"
