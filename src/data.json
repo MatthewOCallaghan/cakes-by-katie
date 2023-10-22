@@ -304,6 +304,227 @@
     }
   },
   "portfolio": {
+
+    "all-aboard": {
+    "images": ["All-Aboard.jpg"],
+    "name": "All Aboard"
+    },
+    "all-wrapped-up": {
+      "images": ["All-Wrapped-Up.jpg"],
+      "name": "All Wrapped Up"
+    },
+    "aloha-stitch": {
+      "images": ["Aloha-Stitch.jpg"],
+      "name": "Aloha Stitch"
+    },
+    "baby-bears": {
+      "images": ["Baby-Bears.jpg"],
+      "name": "Baby Bears"
+    },
+    "baby-shark-lullaby": {
+      "images": ["Baby-Shark-Lullaby.jpg"],
+      "name": "Baby Shark Lullaby"
+    },
+    "barrel-of-blooms": {
+      "images": ["Barrel-of-Blooms.jpg"],
+      "name": "Barrel of Blooms"
+    },
+    "beautifully-rustic": {
+      "images": ["Beautifully-Rustic.jpg"],
+      "name": "Beautifully Rustic"
+    },
+    "bee-happy-with-pooh": {
+      "images": ["Bee-Happy-with-Pooh.jpg"],
+      "name": "Bee Happy with Pooh"
+    },
+    "bon-voyage-crete": {
+      "images": ["Bon-Voyage-Crete.jpg"],
+      "name": "Bon Voyage - Crete"
+    },
+    "boy-or-girl": {
+      "images": ["Boy-or-Girl.jpg"],
+      "name": "Boy or Girl?"
+    },
+    "cheers-to-80": {
+      "images": ["Cheers-To-80.jpg"],
+      "name": "Cheers to 80"
+    },
+    "chocolate-and-peach": {
+      "images": ["Chocolate-and-Peach.jpg"],
+      "name": "Chocolate & Peach"
+    },
+    "chocolate-bliss-and-butterflies": {
+      "images": ["Chocolate-Bliss-and-Butterflies.jpg"],
+      "name": "Chocolate Bliss & Butterflies"
+    },
+    "classic-drips-embossed-choc": {
+      "images": ["Classic-Drips-Embossed-Choc.jpg"],
+      "name": "Classic Drips - Embossed Chocolate"
+    },
+    "coca-and-cream-mini": {
+      "images": ["Coca-and-Cream-Mini.jpg"],
+      "name": "Coca & Cream - Mini"
+    },
+    "colourful-precision": {
+      "images": ["Colourful-Precision.jpg"],
+      "name": "Colourful Precision"
+    },
+    "congratulations-pink": {
+      "images": ["Congratulations-Pink.jpg"],
+      "name": "Congratulations - Pink"
+    },
+    "country-life": {
+      "images": ["Country-Life.jpg"],
+      "name": "Country Life"
+    },
+    "delicate-in-pink": {
+      "images": ["Delicate-in-Pink.jpg"],
+      "name": "Delicate in Pink"
+    },
+    "desert-drift": {
+      "images": ["Desert-Drift.jpg"],
+      "name": "Desert Drift"
+    },
+    "doctors-orders": {
+      "images": ["Doctors-Orders.jpg"],
+      "name": "Doctors Orders"
+    },
+    "dolphin-splash": {
+      "images": ["Dolphin-Splash.jpg"],
+      "name": "Dolphin Splash"
+    },
+    "dreamland-express": {
+      "images": ["Dreamland-Express.jpg"],
+      "name": "Dreamland Express"
+    },
+    "edible-image-corona": {
+      "images": ["Edible-Image-Corona.jpg"],
+      "name": "Edible Image - Corona"
+    },
+    "edible-image-games": {
+      "images": ["Edible-Image-Games.jpg"],
+      "name": "Edible Image - Games"
+    },
+    "edible-image-gift-wrapped": {
+      "images": ["Edible-Image-Gift-Wrapped.jpg"],
+      "name": "Edible Image -  Gift Wrapped"
+    },
+    "edible-image-multi": {
+      "images": ["Edible-Image-Multi.jpg"],
+      "name": "Edible Image - Multi"
+    },
+    "enchanted": {
+      "images": ["Enchanted.jpg"],
+      "name": "Enchanted"
+    },
+    "fault-line-beige-and-gold": {
+      "images": ["Fault-Line-Beige-and-Gold.jpg"],
+      "name": "Fault Line - Beige & Gold"
+    },
+    "ferrero-indulgence": {
+      "images": ["Ferrero-Indulgence.jpg"],
+      "name": "Ferrero Indulgence"
+    },
+    "fluttering-lilac": {
+      "images": ["Fluttering-Lilac.jpg"],
+      "name": "Fluttering Lilac"
+    },
+  
+    "hazel": {
+      "images": ["Hazel.jpg"],
+      "name": "Hazel"
+    },
+    "jurassic-world": {
+      "images": ["Jurassic-World.jpg"],
+      "name": "Jurassic World"
+    },
+    "kirsten-buttercream": {
+      "images": ["Kirsten-Buttercream.jpg"],
+      "name": "Kirsten -  Buttercream"
+    },
+    "lavender-dream": {
+      "images": ["Lavender-Dream.jpg"],
+      "name": "Lavender Dream"
+    },
+    "little-leonard": {
+      "images": ["Little-Leonard.jpg"],
+      "name": "Little Leonard"
+    },
+    "milk-and-white": {
+      "images": ["Milk-and-White.jpg"],
+      "name": "Milk & White"
+    },
+    "pink-birthday-mix": {
+      "images": ["Pink-Birthday-Mix.jpg"],
+      "name": "Birthday Mix - Pink"
+    },
+    "puppy-in-pink": {
+      "images": ["Puppy-in-Pink.jpg"],
+      "name": "Puppy in Pink"
+    },
+    "rose-embellished-90": {
+      "images": ["Rose-Embellished-90.jpg"],
+      "name": "Rose Embellished 90"
+    },
+    "roses-and-ripples": {
+      "images": ["Roses-and-Ripples.jpg"],
+      "name": "Roses & Ripples"
+    },
+    "sage-and-lily": {
+      "images": ["Sage-and-Lily.jpg"],
+      "name": "Sage & Lily"
+    },
+    "silver-anniversary": {
+      "images": ["Silver-Anniversary.jpg"],
+      "name": "Silver Anniversary"
+    },
+    "simply-football-spurs": {
+      "images": ["Simply-Football-Spurs.jpg"],
+      "name": "Simply Football - Spurs"
+    },
+    "simply-football-watford": {
+      "images": ["Simply-Football-Watford.jpg"],
+      "name": "Simply Football - Watford"
+    },
+    "simply-ombre-peter-rabbit": {
+      "images": ["Simply-Ombre-Peter-Rabbit.jpg"],
+      "name": "Simply Ombré - Peter Rabbit"
+    },
+    "subtle-in-gold": {
+      "images": ["Subtle-in-Gold.jpg"],
+      "name": "Subtle in Gold"
+    },
+    "super-mario": {
+      "images": ["Super-Mario.jpg"],
+      "name": "Super Mario"
+    },
+    "surfs-up": {
+      "images": ["Surfs-Up.jpg"],
+      "name": "Surf's Up"
+    },
+    "swirling-blue": {
+      "images": ["Swirling-Blue.jpg"],
+      "name": "Swirling Blue"
+    },
+    "tutu-and-ruffles": {
+      "images": ["Tutu-and-Ruffles.jpg"],
+      "name": "Tutu & Ruffles"
+    },
+    "twenty-nine": {
+      "images": ["Twenty-Nine.jpg"],
+      "name": "Twenty Nine"
+    },
+    "two-infinity": {
+      "images": ["Two-Infinity.jpg"],
+      "name": "Two Infinity"
+    },
+    "up-up-and-away": {
+      "images": ["Up-Up-and-Away.jpg"],
+      "name": "Up, Up & Away"
+    },
+
+
+
     "cheers-corona": {
       "images": ["Cheers-Corona.jpg"],
       "name": "Cheers - Corona"
@@ -361,7 +582,7 @@
       "name": "Cosmo"
     },
     "daisy-daisy-daisy": {
-      "images": ["Daisy-Daisy-Daisy.jpg"],
+      "images": ["Daisy-Daisy-Daisy.jpg", "Daisy-Daisy-Daisy-no-num.jpg"],
       "name": "Daisy, Daisy, Daisy"
     },
     "ditsy-pink": {
@@ -373,11 +594,11 @@
       "name": "Father's Day Cupcake Mix"
     },
     "fault-line-green-and-gold": {
-      "images": ["Fault-Line-Green-and-Gold.jpg"],
-      "name": "Fault Line - Green and Gold"
+      "images": ["Fault-Line-Green-and-Gold.jpg", "Fault-Line-Green-and-Gold-2.jpg"],
+      "name": "Fault Line - Green & Gold"
     },
     "fuchsia": {
-      "images": ["Fuchsia.jpg"],
+      "images": ["Fuchsia-2.jpg", "Fuchsia.jpg"],
       "name": "Fuchsia"
     },
     "fun-guy": {
@@ -390,11 +611,11 @@
     },
     "kickin-beats-and-winning-streaks": {
       "images": ["Kickin-Beats-and-Winning-Streaks.jpg"],
-      "name": "Kickin' Beats and Winning Streaks"
+      "name": "Kickin' Beats & Winning Streaks"
     },
     "petals-and-promises": {
       "images": ["Petals-and-Promises.jpg"],
-      "name": "Petals and Promises"
+      "name": "Petals & Promises"
     },
     "prime-ice-pop": {
       "images": ["Prime-Ice-Pop.jpg"],
@@ -409,12 +630,12 @@
       "name": "Prom"
     },
     "simply-yellow": {
-        "images": ["Simply-Yellow.jpg"],
+        "images": ["Simply-Yellow.jpg", "Simply-Yellow-Emboss.jpg"],
         "name": "Simply Yellow"
     },
     "splodge-and-co": {
       "images": ["Splodge-and-co.jpg"],
-      "name": "Splodge and Co."
+      "name": "Splodge & Co."
     },
     "subtle-in-pink": {
       "images": ["Subtle-in-Pink.jpg"],
@@ -512,7 +733,7 @@
     },
     "corporate-goodbye-and-thank-you": {
       "images": ["Corporate-Goodbye-and-Good-Luck.jpg"],
-      "name": "Corporate - Goodbye and Thank You"
+      "name": "Corporate - Goodbye & Thank You"
     },
     "a-touch-of-pink-birthday-edition": {
       "images": ["A-Touch-of-Pink-Birthday-Edition.jpg"],
@@ -523,7 +744,7 @@
       "name": "A Touch of Pink with Chocolate"
     },
     "harry-potter-gryffindor": {
-      "images": ["Harry-Potter-Gryffindor-Edition.jpg"],
+      "images": ["Harry-Potter-Gryffindor-Edition.jpg", "Harry-Potter-Gryffindor-2.jpg"],
       "name": "Harry Potter - Gryffindor Edition"
     },
     "football-print-spurs": {
@@ -597,7 +818,9 @@
     "birthday-shades-blue-glitz": {
       "images": [
         "Birthday-Shades-Blue-Glitz-Box.jpg",
-        "Birthday-Shades-Blue-Glitz-Open.jpg"
+        "Birthday-Shades-Blue-Glitz-Open.jpg",
+        "Birthday-Shades-Blue-Glitz-Box-2.jpg",
+        "Birthday-Shades-Blue-Glitz-2.jpg"
       ],
       "name": "Birthday Shades - Blue Glitz"
     },
@@ -655,7 +878,7 @@
     },
     "pink-and-bluey": {
       "images": ["Pink-and-Bluey.jpg"],
-      "name": "Pink and Bluey",
+      "name": "Pink & Bluey",
       "videos": [
         {
           "thumb": "Pink-and-Bluey.jpg",
@@ -774,7 +997,7 @@
         "Bon-Voyage-Back.jpg"
       ],
       "squareImage": "Bon-Voyage-square.jpg",
-      "name": "Bon Voyage",
+      "name": "Bon Voyage - Australia",
       "testimonial": {
         "text": "I just wanted to say a very big thank you for the lovely \"old suitcase\" cake you made for my son's 30th birthday/bon voyage party. I know that I didn't give you much advanced notice and I'm so pleased you were able to make it. A lot of guests asked me where I had bought the cake from as they were very impressed by all the details in the decoration, plus it tasted really great when we cut in to it.",
         "name": "Yvonne",
@@ -805,7 +1028,7 @@
     },
     "cocktails-and-seashells": {
       "images": ["Cocktails-and-Seashells.jpg"],
-      "name": "Cocktails and Seashells"
+      "name": "Cocktails & Seashells"
     },
     "fresh-flowers-yellow-sunshine": {
       "images": ["Fresh-Flowers-Yellow-Sunshine.jpg"],
@@ -853,7 +1076,7 @@
     },
     "sun-sand-and-seashells": {
       "images": ["Sun-Sand-and-Seashells.jpg"],
-      "name": "Sun, Sand, and Seashells",
+      "name": "Sun, Sand, & Seashells",
       "testimonial": {
         "text": "Thank you very much for the lovely cake, it was absolutely gorgeous in all the possible ways. Everybody really enjoyed it and admired your work.",
         "name": "Rosemary",
@@ -889,7 +1112,7 @@
     "booties-and-bunting": {
       "images": ["Booties-and-Bunting.jpg"],
       "squareImage": "Booties-and-Bunting-square.jpg",
-      "name": "Booties and Bunting",
+      "name": "Booties & Bunting",
       "videos": [
         {
           "thumb": "Booties-and-Bunting.jpg",
@@ -948,7 +1171,7 @@
     },
     "black-and-white": {
       "images": ["Black-and-White.jpg"],
-      "name": "Black and White",
+      "name": "Black & White",
       "testimonial": {
         "text": "Big thank you to Katie, for producing three amazing creations for me, some cupcakes for my daughter's 18th birthday and a friend's 50th, and a birthday cake for my daughter's birthday the following year. They were all delicious. On each occasion I gave Katie a brief or the birthday theme and she worked with me to design the toppers and gave me options to choose from, even a choice of flavours for the cupcakes. Katie added an extra special touch to each occasion, thank you and I would have no hesitation in recommending you to others in the future. \n",
         "name": "Ellie",
@@ -963,11 +1186,11 @@
     },
     "50s-and-tiaras ": {
       "images": ["50s-and-tiaras.jpg"],
-      "name": "50s and Tiaras"
+      "name": "50s & Tiaras"
     },
     "white-and-gold-choc-fudge": {
       "images": ["White-and-Gold-Choc-Fudge.jpg"],
-      "name": "White and Gold Chocolate Fudge",
+      "name": "White & Gold Chocolate Fudge",
       "testimonial": {
         "text": "Somebody brought some of Katie's cupcakes into the office one day and we all enjoyed them so much that we decided to place a regular order. I've also used Katie a couple of times for special celebration cakes. They looked amazing, but more importantly tasted amazing too. Katie is now my go-to person for all my cake requirements. It's refreshing to see a young person with a business like this. Katie is really friendly and talented. So, give Katie a try - you won't be disappointed!",
         "name": "Andy",
@@ -1052,7 +1275,7 @@
         "Lemon-and-Pink-Gin-White.jpg",
         "Lemon-and-Pink-Gin-Pink.jpg"
       ],
-      "name": "Lemon and Pink Gin Cupcakes",
+      "name": "Lemon & Pink Gin Cupcakes",
       "description": "For when it's not quite 5 O'clock … shall we?"
     },
     "smores-cupcakes": {
@@ -1141,7 +1364,7 @@
     },
     "nuts-and-bolts": {
       "images": ["Marbled-DIY.jpg"],
-      "name": "Nuts and bolts"
+      "name": "Nuts & bolts"
     },
     "Woodwork": {
       "images": ["Saw-DIY.jpg"],
