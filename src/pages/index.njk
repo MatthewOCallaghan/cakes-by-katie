@@ -61,7 +61,7 @@
     <section id="portfolio">
         <div id="grid">
             {% for item in portfolioSample %}
-                {{ pictureElement("portfolio/" + (portfolio[item].squareImage if portfolio[item].squareImage else portfolio[item].images[0].src), portfolio[item].name, "calc(max(min(17vw, 17vh), min(100vw, 600px))") }}
+                {{ pictureElement("portfolio/" + (portfolio[item].squareImage if portfolio[item].squareImage else portfolio[item].images[0].src), portfolio[item].name, "calc(max(min(17vw, 17vh), min(100vw, 600px)))") }}
             {% endfor %}
         </div>
         <a class="button" href="/portfolio" >See more of my portfolio</a>
@@ -136,5 +136,5 @@
 
 
 {% block scripts %}
-    <script type="text/javascript" src="js/slideshow.js" defer></script>
+    <script type="text/javascript" src="/js/slideshow.js" defer></script>
 {% endblock %}

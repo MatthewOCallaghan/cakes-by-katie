@@ -117,6 +117,17 @@
         }
       }
     },
+    "celebrationCakes": {
+      "title": "Celebration cakes | Cakes by Katie",
+      "description": "I'm a cake maker in Thatcham, West Berkshire, near Newbury, offering high quality bespoke celebration cakes in a range of flavours.",
+      "heading": {
+        "text": "Celebration cakes",
+        "image": {
+          "path": "backgrounds/confetti.jpg",
+          "alt": "Gift bags background"
+        }
+      }
+    },
     "occasions": {
       "title": "Occasions | Cakes by Katie",
       "description": "I'm a cake maker in Thatcham, West Berkshire, offering high quality bespoke cakes for birthdays, weddings, anniversaries, christenings, or any occasion.",
@@ -317,71 +328,99 @@
   "portfolio": {
     "be-my-valentine": {
       "images": ["Be-My-Valentine-Box.jpg", "Be-My-Valentine-Pattern.jpg"],
-      "name": "Be My Valentine"
+      "name": "Be My Valentine",
+      "product": "",
+      "occasion": ""
     },
     "a-touch-of-pink-with-chocolate ": {
       "images": [
         "A-Touch-of-Pink-with-Chocolate-Cupcakes.jpg",
         "A-Touch-of-Pink-with-Chocolate.jpg"
       ],
-      "name": "A Touch of Pink with Chocolate"
+      "name": "A Touch of Pink with Chocolate",
+      "product": "",
+      "occasion": ""
     },
     "stitch-experiment-626": {
       "images": ["Stitch-Experiment-626.jpg"],
-      "name": "Stitch - Experiment 626"
+      "name": "Stitch - Experiment 626",
+      "product": "",
+      "occasion": ""
     },
     "frosty-snowflakes": {
       "images": ["Frosty-Snowflakes.jpg"],
-      "name": "Frosty Snowflakes"
+      "name": "Frosty Snowflakes",
+      "product": "",
+      "occasion": ""
     },
     "birthday-shades-blue-glitz": {
       "images": [
         "Birthday-Shades-Blue-Glitz-Box.jpg",
         "Birthday-Shades-Blue-Glitz-Open.jpg"
       ],
-      "name": "Birthday Shades - Blue Glitz"
+      "name": "Birthday Shades - Blue Glitz",
+      "product": "",
+      "occasion": ""
     },
     "corporate-cupcakes": {
       "images": ["Corporate-Cupcakes.jpg"],
-      "name": "Corporate Cupcakes"
+      "name": "Corporate Cupcakes",
+      "product": "",
+      "occasion": ""
     },
     "dragon-ball-goku": {
       "images": ["Dragon-Ball-Goku.jpg"],
-      "name": "Dragon Ball - Goku"
+      "name": "Dragon Ball - Goku",
+      "product": "",
+      "occasion": ""
     },
     "adorable-flopsy-bunny": {
       "images": ["Adorable-Flopsy-Bunny.jpg"],
-      "name": "Adorable Flopsy Bunny"
+      "name": "Adorable Flopsy Bunny",
+      "product": "",
+      "occasion": ""
     },
     "birthday-baker": {
       "images": ["Birthday-Baker.jpg"],
-      "name": "Birthday Baker"
+      "name": "Birthday Baker",
+      "product": "",
+      "occasion": ""
     },
     "christmas-cupcake-ensemble": {
       "images": [
         "Christmas-Cupcake-Ensemble-Box.jpg",
         "Christmas-Cupcake-Ensemble-Open.jpg"
       ],
-      "name": "Christmas Cupcake Ensemble"
+      "name": "Christmas Cupcake Ensemble",
+      "product": "",
+      "occasion": ""
     },
     "ruby-reindeer": {
       "images": ["Ruby-Front.jpg", "Ruby-Top.jpg"],
-      "name": "Ruby reindeer"
+      "name": "Ruby reindeer",
+      "product": "",
+      "occasion": ""
     },
     "birthday-shades-blue": {
       "images": [
         "Birthday-Shades-Blue-Box.jpg",
         "Birthday-Shades-Blue-Open.jpg"
       ],
-      "name": "Birthday Shades - Blue"
+      "name": "Birthday Shades - Blue",
+      "product": "",
+      "occasion": ""
     },
     "football-print-arsenal": {
       "images": ["Football-Print-Arsenal.jpg"],
-      "name": "Football Print - Arsenal"
+      "name": "Football Print - Arsenal",
+      "product": "",
+      "occasion": ""
     },
     "daisy-chain": {
       "images": ["Daisy-Chain.jpg"],
-      "name": "Daisy Chain"
+      "name": "Daisy Chain",
+      "product": "",
+      "occasion": ""
     },
     "minecraft": {
       "images": ["Minecraft.jpg"],
@@ -391,15 +430,21 @@
           "thumb": "Minecraft.jpg",
           "file": "Minecraft.mp4"
         }
-      ]
+      ],
+      "product": "",
+      "occasion": ""
     },
     "pink-and-bluey": {
       "images": ["Pink-and-Bluey.jpg"],
-      "name": "Pink and Bluey"
+      "name": "Pink and Bluey",
+      "product": "",
+      "occasion": ""
     },
     "chocolate-decadence": {
       "images": ["Chocolate-Decadence.jpg"],
-      "name": "Chocolate Decadence"
+      "name": "Chocolate Decadence",
+      "product": "",
+      "occasion": ""
     },
     "birthday-square": {
       "images": ["Birthday-Square.jpg"],
@@ -414,7 +459,9 @@
           "thumb": "Birthday-Square.jpg",
           "file": "Birthday-Square.mp4"
         }
-      ]
+      ],
+      "product": "",
+      "occasion": ""
     },
     "golden-drip-cake-with-age": {
       "images": ["Golden-Drip-Cake-with-Age.jpg"],
@@ -424,7 +471,9 @@
           "thumb": "Golden-Drip-Cake-with-Age.jpg",
           "file": "Golden-Drip-Cake-with-Age.mp4"
         }
-      ]
+      ],
+      "product": "",
+      "occasion": ""
     },
     "psychedelic-symphony": {
       "images": [
@@ -439,11 +488,15 @@
           "thumb": "Psychedelic-Symphony-Front.jpg",
           "file": "Psychedelic-Symphony.mp4"
         }
-      ]
+      ],
+      "product": "",
+      "occasion": ""
     },
     "birthday-beach-mix": {
       "images": ["Birthday-Beach-Mix.jpg", "Birthday-Beach-Mix-Box.jpg"],
-      "name": "Birthday Beach Mix"
+      "name": "Birthday Beach Mix",
+      "product": "",
+      "occasion": ""
     },
     "deluxe-mix": {
       "images": ["Deluxe-Mix-Gift-Wrap.jpg", "Deluxe-Mix-Open.jpg"],
@@ -452,11 +505,15 @@
         "text": "The cupcakes were great thanks - very tasty and a great finish on them.",
         "name": "Andy",
         "location": "West Berkshire"
-      }
+      },
+      "product": "",
+      "occasion": ""
     },
     "ttmc-cupcakes": {
       "images": ["TTMC-Corporate-Cupcakes.jpg", "TTMC-Stand.jpg"],
-      "name": "The Traffic Management Company Corporate Cupcakes"
+      "name": "The Traffic Management Company Corporate Cupcakes",
+      "product": "",
+      "occasion": ""
     },
     "diamond-anniversary": {
       "images": ["Diamond-Anniversary.jpg"],
@@ -466,7 +523,9 @@
           "thumb": "Diamond-Anniversary.jpg",
           "file": "Diamond-Anniversary.mp4"
         }
-      ]
+      ],
+      "product": "",
+      "occasion": ""
     },
     "ready-set-go-kart": {
       "images": ["Ready-Set-Go-Kart.jpg"],
@@ -476,15 +535,21 @@
           "thumb": "Ready-Set-Go-Kart.jpg",
           "file": "Ready-Set-Go-Kart.mp4"
         }
-      ]
+      ],
+      "product": "",
+      "occasion": ""
     },
     "kirsten": {
       "images": ["Kirsten.jpg"],
-      "name": "Kirsten"
+      "name": "Kirsten",
+      "product": "",
+      "occasion": ""
     },
     "hp-slytherin-edition": {
       "images": ["HP-Slytherin-Edition.jpg"],
-      "name": "Harry Potter - Slytherin Edition"
+      "name": "Harry Potter - Slytherin Edition",
+      "product": "",
+      "occasion": ""
     },
     "come-fly-with-me": {
       "images": ["Come-Fly-With-Me.jpg"],
@@ -494,11 +559,15 @@
           "thumb": "Come-Fly-With-Me.jpg",
           "file": "Come-Fly-With-Me.mp4"
         }
-      ]
+      ],
+      "product": "",
+      "occasion": ""
     },
     "pink-cascade": {
       "images": ["Pink-Cascade.jpg"],
-      "name": "Pink Cascade"
+      "name": "Pink Cascade",
+      "product": "",
+      "occasion": ""
     },
     "bon-voyage": {
       "images": [
@@ -513,7 +582,9 @@
         "text": "I just wanted to say a very big thank you for the lovely \"old suitcase\" cake you made for my son's 30th birthday/bon voyage party. I know that I didn't give you much advanced notice and I'm so pleased you were able to make it. A lot of guests asked me where I had bought the cake from as they were very impressed by all the details in the decoration, plus it tasted really great when we cut in to it.",
         "name": "Yvonne",
         "location": "Thatcham"
-      }
+      },
+      "product": "",
+      "occasion": ""
     },
     "superhero-ombre": {
       "images": ["Superhero-Ombre.jpg"],
@@ -522,11 +593,15 @@
         "text": "I just wanted to say thank you for such a great cake, it looked and tasted amazing and is almost gone already!! ",
         "name": "Nicola",
         "location": "Tadley"
-      }
+      },
+      "product": "",
+      "occasion": ""
     },
     "rose-mix": {
       "images": ["Rose-Mix.jpg", "Rose-Mix-Triple.jpg", "Rose-Mix-Single.jpg"],
-      "name": "Rose Mix"
+      "name": "Rose Mix",
+      "product": "",
+      "occasion": ""
     },
     "fresh-flowers-vibrant-pink": {
       "images": ["Fresh-Flowers-Vibrant-Pink.jpg"],
@@ -535,11 +610,15 @@
         "text": "Thank you so much for the lime birthday cake. It was beautifully presented and absolutely delicious.",
         "name": "Caroline",
         "location": "Midgham "
-      }
+      },
+      "product": "",
+      "occasion": ""
     },
     "cocktails-and-seashells": {
       "images": ["Cocktails-and-Seashells.jpg"],
-      "name": "Cocktails and Seashells"
+      "name": "Cocktails and Seashells",
+      "product": "",
+      "occasion": ""
     },
     "fresh-flowers-yellow-sunshine": {
       "images": ["Fresh-Flowers-Yellow-Sunshine.jpg"],
@@ -549,12 +628,16 @@
         "text": "The cake was a great success.  Everyone was very complimentary about it.  It tasted so good too.",
         "name": "Vanessa",
         "location": "Bucklebury"
-      }
+      },
+      "product": "",
+      "occasion": ""
     },
     "birthday-books": {
       "images": ["Birthday-Books.jpg"],
       "squareImage": "Birthday-Books-square.jpg",
-      "name": "Birthday Books"
+      "name": "Birthday Books",
+      "product": "",
+      "occasion": ""
     },
     "flower-elegance": {
       "images": ["Flower-Elegance.jpg"],
@@ -564,7 +647,9 @@
           "thumb": "Flower-Elegance.jpg",
           "file": "Flower-Elegance.mp4"
         }
-      ]
+      ],
+      "product": "",
+      "occasion": ""
     },
     "golden-anniversary": {
       "images": ["Golden-Anniversary.jpg"],
@@ -573,7 +658,9 @@
         "text": "Just to say a Big Thank you for making us this superb wedding anniversary cake. We can see that you have gone that extra mile for us; everyone at the party just loved.",
         "name": "Lilian & David",
         "location": "Newbury"
-      }
+      },
+      "product": "",
+      "occasion": ""
     },
     "a-touch-of-pink": {
       "images": ["A-Touch-of-Pink.jpg"],
@@ -583,7 +670,9 @@
           "thumb": "A-Touch-of-Pink.jpg",
           "file": "A-Touch-of-Pink.mp4"
         }
-      ]
+      ],
+      "product": "",
+      "occasion": ""
     },
     "sun-sand-and-seashells": {
       "images": ["Sun-Sand-and-Seashells.jpg"],
@@ -598,16 +687,22 @@
           "thumb": "Sun-Sand-and-Seashells.jpg",
           "file": "Sun-Sand-and-Seashells.mp4"
         }
-      ]
+      ],
+      "product": "",
+      "occasion": ""
     },
     "shades-of-chocolate": {
       "images": ["Shades-of-Chocolate.jpg"],
       "squareImage": "Shades-of-Chocolate-square.jpg",
-      "name": "Shades of Chocolate"
+      "name": "Shades of Chocolate",
+      "product": "",
+      "occasion": ""
     },
     "shades-of-pink-and-gold-fault-line-flowers": {
       "images": ["Shades-of-Pink-and-Gold-Fault-Line-Flowers.jpg"],
-      "name": "Shades of Pink and Gold Fault Line with flowers"
+      "name": "Shades of Pink and Gold Fault Line with flowers",
+      "product": "",
+      "occasion": ""
     },
     "shades-of-pink-and-gold-fault-line-balls": {
       "images": ["Shades-of-Pink-and-Gold-Fault-Line-Balls.jpg"],
@@ -618,7 +713,9 @@
           "thumb": "Shades-of-Pink-and-Gold-Fault-Line-Balls.jpg",
           "file": "Shades-of-Pink-and-Gold-Fault-Line-Balls.mp4"
         }
-      ]
+      ],
+      "product": "",
+      "occasion": ""
     },
     "booties-and-bunting": {
       "images": ["Booties-and-Bunting.jpg"],
@@ -629,7 +726,9 @@
           "thumb": "Booties-and-Bunting.jpg",
           "file": "Booties-and-Bunting.mp4"
         }
-      ]
+      ],
+      "product": "",
+      "occasion": ""
     },
     "blue-speckle-mini-eggs": {
       "images": ["Blue-Speckle-Mini-Eggs.jpg"],
@@ -640,7 +739,9 @@
           "thumb": "Blue-Speckle-Mini-Eggs.jpg",
           "file": "Blue-Speckle-Mini-Eggs.mp4"
         }
-      ]
+      ],
+      "product": "",
+      "occasion": ""
     },
     "cream-mini-eggs": {
       "images": ["Cream-Mini-Eggs.jpg"],
@@ -650,7 +751,9 @@
           "thumb": "Cream-Mini-Eggs.jpg",
           "file": "Cream-Mini-Eggs.mp4"
         }
-      ]
+      ],
+      "product": "",
+      "occasion": ""
     },
     "galaxy": {
       "images": ["Galaxy.jpg"],
@@ -660,7 +763,9 @@
           "thumb": "Galaxy.jpg",
           "file": "Galaxy.mp4"
         }
-      ]
+      ],
+      "product": "",
+      "occasion": ""
     },
     "pink-ombre-daisies": {
       "images": ["Pink-Ombre-Daisies.jpg"],
@@ -670,15 +775,21 @@
           "thumb": "Pink-Ombre-Daisies.jpg",
           "file": "Pink-Ombre-Daisies.mp4"
         }
-      ]
+      ],
+      "product": "",
+      "occasion": ""
     },
     "sapphire-anniversary ": {
       "images": ["Sapphire-Anniversary.jpg"],
-      "name": "Sapphire Anniversary"
+      "name": "Sapphire Anniversary",
+      "product": "",
+      "occasion": ""
     },
     "90-not-out": {
       "images": ["90-Not-Out.jpg"],
-      "name": "90 Not Out"
+      "name": "90 Not Out",
+      "product": "",
+      "occasion": ""
     },
     "black-and-white": {
       "images": ["Black-and-White.jpg"],
@@ -693,11 +804,15 @@
           "thumb": "Black-and-White.jpg",
           "file": "Black-and-White.mp4"
         }
-      ]
+      ],
+      "product": "",
+      "occasion": ""
     },
     "50s-and-tiaras ": {
       "images": ["50s-and-tiaras.jpg"],
-      "name": "50s and Tiaras"
+      "name": "50s and Tiaras",
+      "product": "",
+      "occasion": ""
     },
     "white-and-gold-choc-fudge": {
       "images": ["White-and-Gold-Choc-Fudge.jpg"],
@@ -712,7 +827,9 @@
           "thumb": "White-and-Gold-Choc-Fudge.jpg",
           "file": "White-and-Gold-Choc-Fudge.mp4"
         }
-      ]
+      ],
+      "product": "",
+      "occasion": ""
     },
     "ferrero-rocher-cake": {
       "images": ["Ferrero-Rocher-Cake.jpg"],
@@ -723,7 +840,9 @@
           "thumb": "Ferrero-Rocher-Cake.jpg",
           "file": "Ferrero-Rocher-Cake.mp4"
         }
-      ]
+      ],
+      "product": "",
+      "occasion": ""
     },
     "choc-fudge-cake": {
       "images": ["Choc-Fudge-Cake.jpg"],
@@ -734,11 +853,15 @@
           "thumb": "Choc-Fudge-Cake.jpg",
           "file": "Choc-Fudge-Cake.mp4"
         }
-      ]
+      ],
+      "product": "",
+      "occasion": ""
     },
     "celebration-pink-gin": {
       "images": ["Celebration-Rose-Gold-Gin.jpg"],
-      "name": "Celebration - pink gin"
+      "name": "Celebration - pink gin",
+      "product": "",
+      "occasion": ""
     },
     "celebration": {
       "images": ["Celebration-Blue.jpg", "Celebration-Pink.jpg"],
@@ -752,7 +875,9 @@
           "thumb": "Celebration-Pink.jpg",
           "file": "Celebration-Pink.mp4"
         }
-      ]
+      ],
+      "product": "",
+      "occasion": ""
     },
     "cupcake-birthday-boxes": {
       "images": [
@@ -760,7 +885,9 @@
         "21st-Choc-Letters-Cupcakes.jpg",
         "Rose-Gold-Age-Name-Cupcakes.jpg"
       ],
-      "name": "Cupcake Birthday Boxes"
+      "name": "Cupcake Birthday Boxes",
+      "product": "",
+      "occasion": ""
     },
     "oreo-cake": {
       "images": ["Oreo.jpg"],
@@ -773,12 +900,16 @@
         "4-Cupcake-Assortment-Box.jpg",
         "Pink-and-White-Mix.jpg"
       ],
-      "name": "Cupcake Assortment Boxes"
+      "name": "Cupcake Assortment Boxes",
+      "product": "",
+      "occasion": ""
     },
     "oreo-cupcakes": {
       "images": ["Oreo-cupcakes.jpg"],
       "name": "Oreo Cupcakes",
-      "description": "Twist off the wrapper, lick off the icing, dunk in the milk - just like a real Oreo."
+      "description": "Twist off the wrapper, lick off the icing, dunk in the milk - just like a real Oreo.",
+      "product": "",
+      "occasion": ""
     },
     "lemon-and-pink-gin-cupcakes": {
       "images": [
@@ -787,76 +918,106 @@
         "Lemon-and-Pink-Gin-Pink.jpg"
       ],
       "name": "Lemon and Pink Gin Cupcakes",
-      "description": "For when it's not quite 5 O'clock … shall we?"
+      "description": "For when it's not quite 5 O'clock … shall we?",
+      "product": "",
+      "occasion": ""
     },
     "smores-cupcakes": {
       "images": ["Smores-Cupcakes.jpg"],
       "name": "S'mores Cupcakes",
-      "description": "Not just for the nights snuggled and singing round the campfire."
+      "description": "Not just for the nights snuggled and singing round the campfire.",
+      "product": "",
+      "occasion": ""
     },
     "salted-caramel-cupcakes": {
       "images": ["Salted-Caramel-Cupcakes.jpg"],
       "name": "Salted Caramel Cupcakes",
-      "description": "Contains salted caramel - need I say more?"
+      "description": "Contains salted caramel - need I say more?",
+      "product": "",
+      "occasion": ""
     },
     "parker-penguin": {
       "images": ["Parker-penguin.jpg"],
       "squareImage": "Parker-Penguin-square.jpg",
-      "name": "Parker Penguin"
+      "name": "Parker Penguin",
+      "product": "",
+      "occasion": ""
     },
     "carrot-cupcakes": {
       "images": ["Carrot-Cupcakes.jpg"],
-      "name": "Carrot Cupcakes"
+      "name": "Carrot Cupcakes",
+      "product": "",
+      "occasion": ""
     },
     "jammie-dodger-cake": {
       "images": ["Jammie-Dodger-Cake.jpg"],
       "name": "Jammie Dodger Cake",
-      "description": "Bring back childhood memories one slice at a time."
+      "description": "Bring back childhood memories one slice at a time.",
+      "product": "",
+      "occasion": ""
     },
     "easter-surprise": {
       "images": ["Easter-Surprise-Inside.jpg", "Easter-Surprise.jpg"],
       "name": "Easter Surprise",
-      "description": "You may have just stumbled upon the Easter Bunny's secret stash…"
+      "description": "You may have just stumbled upon the Easter Bunny's secret stash…",
+      "product": "",
+      "occasion": ""
     },
     "easter-nest-cupcakes": {
       "images": ["Easter-Nest-Cupcakes.jpg"],
       "name": "Easter Nest Cupcakes",
-      "description": "The best type of eggs you will ever find in a nest - shame it's only at easter."
+      "description": "The best type of eggs you will ever find in a nest - shame it's only at easter.",
+      "product": "",
+      "occasion": ""
     },
     "death-by-choc": {
       "images": ["Death-By-Choc.jpg"],
       "name": "Death by Chocolate",
-      "description": "Chocolate, chocolate, chocolate, chocolate, chocolate, chocolate, chocolate, chocolate, chocolate … oh and sprinkles!"
+      "description": "Chocolate, chocolate, chocolate, chocolate, chocolate, chocolate, chocolate, chocolate, chocolate … oh and sprinkles!",
+      "product": "",
+      "occasion": ""
     },
     "st-patricks-day": {
       "images": ["St-Patricks-Day.jpg"],
       "name": "St. Patrick's Day",
-      "description": " No need to hunt down the end of a rainbow when you can find some gold coins right here (psst they maybe chocolate coins instead)."
+      "description": " No need to hunt down the end of a rainbow when you can find some gold coins right here (psst they maybe chocolate coins instead).",
+      "product": "",
+      "occasion": ""
     },
     "cupcake-bouquet": {
       "images": [
         "Cupcake-Bouquet-Flowers.jpg",
         "Cupcake-Bouquet-Presentation.jpg"
       ],
-      "name": "Cupcake Bouquet"
+      "name": "Cupcake Bouquet",
+      "product": "",
+      "occasion": ""
     },
     "double-drips": {
       "images": ["Double-Drips.jpg"],
-      "name": "Double Drips"
+      "name": "Double Drips",
+      "product": "",
+      "occasion": ""
     },
     "choc-cake": {
       "images": ["Choc-Cake.jpg"],
-      "name": "Chocolate Cake"
+      "name": "Chocolate Cake",
+      "product": "",
+      "occasion": ""
     },
     "romantic-heart": {
       "images": ["Romantic-Heart.jpg"],
       "name": "Romantic Heart",
-      "description": "Chocolate, strawberries, cake: what more do you need for a romantic night in? Whether it's valentine's day, an anniversary or just to give to that special person in your life - you will need a cake like this to celebrate the occasion."
+      "description": "Chocolate, strawberries, cake: what more do you need for a romantic night in? Whether it's valentine's day, an anniversary or just to give to that special person in your life - you will need a cake like this to celebrate the occasion.",
+      "product": "",
+      "occasion": ""
     },
     "reading-football-shirt": {
       "images": ["Reading-FC.jpg"],
       "name": "Reading Football Shirt",
-      "description": "If you are in the Stephen Hunt for a Reading FC cake then you don't need to look any Shane Long-er. This shirt can be adapted for any team."
+      "description": "If you are in the Stephen Hunt for a Reading FC cake then you don't need to look any Shane Long-er. This shirt can be adapted for any team.",
+      "product": "",
+      "occasion": ""
     },
     "wonder-woman": {
       "images": ["Wonder-Woman.jpg"],
@@ -866,24 +1027,34 @@
         "text": "We were blown away by Alices cake. You had really listen to our ideas and understood the effect we w're looking for. Everyone commented on the cake and Alice will always remember her 6th birthday cake. \nThanks for helping make her day so special. ",
         "name": "Mel",
         "location": "Reading"
-      }
+      },
+      "product": "",
+      "occasion": ""
     },
     "football-cupcakes": {
       "images": ["Football-Cupcakes.jpg"],
       "name": "Football Cupcakes",
-      "description": "Why not score yourself some of these cupcakes?"
+      "description": "Why not score yourself some of these cupcakes?",
+      "product": "",
+      "occasion": ""
     },
     "nuts-and-bolts": {
       "images": ["Marbled-DIY.jpg"],
-      "name": "Nuts and bolts"
+      "name": "Nuts and bolts",
+      "product": "",
+      "occasion": ""
     },
     "Woodwork": {
       "images": ["Saw-DIY.jpg"],
-      "name": "Woodwork"
+      "name": "Woodwork",
+      "product": "",
+      "occasion": ""
     },
     "wooden-plane": {
       "images": ["Wooden-Plane.jpg"],
-      "name": "Wooden plane"
+      "name": "Wooden plane",
+      "product": "",
+      "occasion": ""
     },
     "choo-choo": {
       "images": ["Choo-Choo.jpg"],
@@ -893,28 +1064,40 @@
         "text": "Katie is an outstanding baker!  We have used her services for birthday cakes for our boys and an anniversary cake for parents.  Her cakes taste delicious and look amazing.  Katie takes the time to design the cake to your requirements and communicates very clearly with her customers. Her cakes are decorated to an extremely professional standard.   We would recommend Katie without hesitation and can guarantee you won't be disappointed! \n",
         "name": "Lisa",
         "location": "Thatcham "
-      }
+      },
+      "product": "",
+      "occasion": ""
     },
     "coffee-mug": {
       "images": ["Coffee-Mug.jpg"],
-      "name": "Coffee Mug"
+      "name": "Coffee Mug",
+      "product": "",
+      "occasion": ""
     },
     "afternoon-tea": {
       "images": ["Afternoon-Tea.jpg"],
-      "name": "Afternoon Tea"
+      "name": "Afternoon Tea",
+      "product": "",
+      "occasion": ""
     },
     "gift-roses": {
       "images": ["Gift-Roses-Pink.jpg", "Gift-Roses-Lemon.jpg"],
       "name": "Gift Roses",
-      "description": "This small cake is just enough for a few and enrobed in elegant buttercream roses with a cute gift tag just for that finishing touch."
+      "description": "This small cake is just enough for a few and enrobed in elegant buttercream roses with a cute gift tag just for that finishing touch.",
+      "product": "",
+      "occasion": ""
     },
     "neapolitan": {
       "images": ["Neapolitan.jpg", "Neapolitan-Age.jpg"],
-      "name": "Neapolitan"
+      "name": "Neapolitan",
+      "product": "",
+      "occasion": ""
     },
     "art-palette ": {
       "images": ["Art-Palette.jpg"],
-      "name": "Art Palette"
+      "name": "Art Palette",
+      "product": "",
+      "occasion": ""
     },
     "gordons-gin": {
       "images": ["Gordons-Gin.jpg"],
@@ -923,43 +1106,61 @@
         "text": "Katie's cake not only looked amazing but it tasted delicious and kept really well, when we didn't eat it all on 1st cutting. Her design ideas were spot on and it was difficult to choose the best one!",
         "name": "Mel",
         "location": "Reading"
-      }
+      },
+      "product": "",
+      "occasion": ""
     },
     "birthday-heart": {
       "images": ["Birthday-Heart.jpg"],
-      "name": "Birthday Heart"
+      "name": "Birthday Heart",
+      "product": "",
+      "occasion": ""
     },
     "our-story": {
       "images": ["Our-Story.jpg"],
-      "name": "Our Story"
+      "name": "Our Story",
+      "product": "",
+      "occasion": ""
     },
     "gucci": {
       "images": ["Gucci.jpg"],
       "name": "Gucci",
-      "description": "Do they want something Gucci for their birthday? This is definitely the cheaper option!"
+      "description": "Do they want something Gucci for their birthday? This is definitely the cheaper option!",
+      "product": "",
+      "occasion": ""
     },
     "guinness ": {
       "images": ["Guinness.jpg"],
       "name": "Guinness",
-      "description": "Made of more - if 'more' is three layers of sponge, black and white fondant, an edible logo and a very cool antigravity effect."
+      "description": "Made of more - if 'more' is three layers of sponge, black and white fondant, an edible logo and a very cool antigravity effect.",
+      "product": "",
+      "occasion": ""
     },
     "ps4-controller": {
       "images": ["PS4-Controller.jpg"],
-      "name": "PS4 Controller"
+      "name": "PS4 Controller",
+      "product": "",
+      "occasion": ""
     },
     "friends": {
       "images": ["Friends.jpg"],
       "name": "Friends",
-      "description": "OH. MY. GOD! Could this cake BE any more perfect for that Friends fan in your life - be they family, friend or your lobster (unless you're on a break)? Just don't offer any to Joey because he doesn't share food! Okay, I'm done now…"
+      "description": "OH. MY. GOD! Could this cake BE any more perfect for that Friends fan in your life - be they family, friend or your lobster (unless you're on a break)? Just don't offer any to Joey because he doesn't share food! Okay, I'm done now…",
+      "product": "",
+      "occasion": ""
     },
     "movie-glitz": {
       "images": ["Movie-Glitz.jpg"],
-      "name": "Movie Glitz"
+      "name": "Movie Glitz",
+      "product": "",
+      "occasion": ""
     },
     "chocoholic ": {
       "images": ["Chocoholic.jpg"],
       "name": "Chocoholic",
-      "description": "Chocolate fan? Then you'll love this two tiered chocolate fudge cake surrounded by white and milk chocolate fingers and topped with maltesers . Psst… there's even white chocolate buttons between the layers!"
+      "description": "Chocolate fan? Then you'll love this two tiered chocolate fudge cake surrounded by white and milk chocolate fingers and topped with maltesers . Psst… there's even white chocolate buttons between the layers!",
+      "product": "",
+      "occasion": ""
     }
   },
   "portfolioSample": [

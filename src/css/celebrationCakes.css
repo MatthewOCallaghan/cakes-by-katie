@@ -1,0 +1,75 @@
+.intro {
+  background: #fff;
+  padding: min(20px, 5%) 5%;
+  text-align: center;
+}
+.intro .intro-inner {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.image-slideshow {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(to bottom, #fff, #000);
+}
+.image-slideshow .swiper {
+  width: 100%;
+  height: 100%;
+}
+.image-slideshow .swiper .swiper-slide {
+  width: min-content;
+}
+.image-slideshow .swiper .image-container {
+  height: 100%;
+}
+.image-slideshow .swiper .image-container img {
+  height: 100%;
+  width: 100%;
+}
+
+.choices {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: max(20px, 5%);
+}
+.choices h2 {
+  margin: 0;
+}
+.choices .category {
+  margin-top: 5%;
+}
+.choices .category::before {
+  content: "";
+  display: block;
+  width: 70%;
+  height: 2px;
+  margin: 0 auto;
+  background: linear-gradient(to right, #fff0, #fff, #fff0);
+}
+.choices .category h3 {
+  font-size: 2.5em;
+}
+.choices .category .items {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: max(20px, 5%);
+  row-gap: 40px;
+  justify-content: center;
+}
+.choices .category .items > div {
+  max-width: min(300px, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.choices .category .items > div > * {
+  margin: 0;
+}
+.choices .category .items > div img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  object-fit: cover;
+}

@@ -32,7 +32,7 @@ body.nav-open {
     overflow: hidden;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: variables.$handwriting;
 }
 
@@ -47,6 +47,10 @@ h2 {
 
 h3 {
     font-size: 2.34em;
+}
+
+h4 {
+    font-size: 2em;
 }
 
 a {
@@ -441,10 +445,10 @@ footer {
     gap: 30px 40px;
 
     > div {
-        width: 25%;
+        width: 15%;
         text-align: center;
         min-width: 180px;
-        max-width: 300px;
+        max-width: 250px;
     }
 
     // There are a lot of links in footer (and they are obviously links)
@@ -531,6 +535,9 @@ footer {
     overflow: hidden;
 
     h1 {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
         font-family: variables.$handwriting;
         color: variables.$pink;
         text-align: center;

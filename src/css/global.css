@@ -360,7 +360,7 @@ body.nav-open {
   overflow: hidden;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: "Licorice", sans-serif;
 }
 
@@ -374,6 +374,10 @@ h2 {
 
 h3 {
   font-size: 2.34em;
+}
+
+h4 {
+  font-size: 2em;
 }
 
 a {
@@ -719,10 +723,10 @@ footer {
   gap: 30px 40px;
 }
 footer > div {
-  width: 25%;
+  width: 15%;
   text-align: center;
   min-width: 180px;
-  max-width: 300px;
+  max-width: 250px;
 }
 footer a {
   text-decoration: none;
@@ -792,6 +796,9 @@ footer .moc-container a svg {
   overflow: hidden;
 }
 .page-title h1 {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   font-family: "Licorice", sans-serif;
   color: #F7CAC9;
   text-align: center;

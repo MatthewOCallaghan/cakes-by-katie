@@ -1,0 +1,170 @@
+{% set page = "celebrationCakes" %}
+{% extends "layout.njk" %}
+
+{% block head %}
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+{% endblock %}
+
+{% block main %}
+
+    <section class="intro">
+        <div class="intro-inner">
+            <p>Intro text here</p>
+            <div class="cta">
+                <h3>Want a quote for a celebration cake?</h3>
+                <a
+                    class="button"
+                    href="/#contact"
+                >
+                    Contact me
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="image-slideshow">
+
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                {% for key, cake in portfolio %}
+                    <div class="swiper-slide">
+                        <div
+                            class="image-container"
+                            style="aspect-ratio: {{ cake.images[0].aspectRatio }}"
+                        >
+                            {{ pictureElement("portfolio/" + cake.images[0].src, cake.name, '200px') }}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+
+    </div>
+
+    <section class="choices">
+        <h2>Let's design your cake!</h2>
+        <p>Some sentence here.</p>
+        <div class="category">
+            <h3>Finishes</h3>
+            <div class="items">
+                <div>
+                    {{ pictureElement("choices/buttercream.jpg", "Example", '150px') }}
+                    <h4>Buttercream</h4>
+                    <p>Description. Mention it's cheaper and has more pastel colours. List various options including textured.</p>
+                </div>
+                <div>
+                    {{ pictureElement("choices/fondant.jpg", "Example", '150px') }}
+                    <h4>Fondant</h4>
+                    <p>Description. Mention it's more expensive. List various advantages.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h3>Decoration</h3>
+            <div class="items">
+                <div>
+                    {{ pictureElement("choices/topper.jpg", "Example", '150px') }}
+                    <h4>Topper</h4>
+                    <p>Optional description.</p>
+                </div>
+                <div>
+                    {{ pictureElement("choices/chocolate-drips.jpg", "Example", '150px') }}
+                    <h4>Chocolate drips</h4>
+                    <p>Optional description.</p>
+                </div>
+                <div>
+                    {{ pictureElement("choices/coloured-drips.jpg", "Example", '150px') }}
+                    <h4>Coloured drips</h4>
+                    <p>Optional description.</p>
+                </div>
+                <div>
+                    {{ pictureElement("choices/fondant-flowers.jpg", "Example", '150px') }}
+                    <h4>Fondant flowers</h4>
+                    <p>Optional description.</p>
+                </div>
+                <div>
+                    {{ pictureElement("choices/fresh-flowers.jpg", "Example", '150px') }}
+                    <h4>Fresh flowers</h4>
+                    <p>Optional description.</p>
+                </div>
+                <div>
+                    {{ pictureElement("choices/silk-flowers.jpg", "Example", '150px') }}
+                    <h4>Silk flowers</h4>
+                    <p>Optional description.</p>
+                </div>
+                <div>
+                    {{ pictureElement("choices/fondant-model.jpg", "Example", '150px') }}
+                    <h4>Fondant models</h4>
+                    <p>Optional description.</p>
+                </div>
+                <div>
+                    {{ pictureElement("choices/airbrushing.jpg", "Example", '150px') }}
+                    <h4>Airbrushing</h4>
+                    <p>Optional description.</p>
+                </div>
+                <div>
+                    {{ pictureElement("choices/edible-image.jpg", "Example", '150px') }}
+                    <h4>Edible images</h4>
+                    <p>Optional description.</p>
+                </div>
+                <div>
+                    {{ pictureElement("choices/plaque.jpg", "Example", '150px') }}
+                    <h4>Plaque</h4>
+                    <p>Optional description.</p>
+                </div>
+                <div>
+                    {{ pictureElement("choices/ball-toppers.jpg", "Example", '150px') }}
+                    <h4>Ball toppers</h4>
+                    <p>Optional description.</p>
+                </div>
+                <div>
+                    {{ pictureElement("choices/ruffles.jpg", "Example", '150px') }}
+                    <h4>Ruffles</h4>
+                    <p>Optional description.</p>
+                </div>
+                <div>
+                    {{ pictureElement("choices/embossed-lettering.jpg", "Example", '150px') }}
+                    <h4>Embossed lettering</h4>
+                    <p>Optional description.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h3>Special extras</h3>
+            <div class="items">
+                <div>
+                    {{ pictureElement("choices/pinata.jpg", "Example", '150px') }}
+                    <h4>Pinata cake</h4>
+                    <p>Optional description.</p>
+                </div>
+                <div>
+                    {{ pictureElement("portfolio/A-Touch-of-Pink.jpg", "Example", '150px') }}
+                    <h4>Money cake</h4>
+                    <p>Optional description.</p>
+                </div>
+                <div>
+                    {{ pictureElement("choices/balloon.jpg", "Example", '150px') }}
+                    <h4>Balloon</h4>
+                    <p>Optional description.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {# Finishes, decorations, flavours, special additions (pinata, money cake, balloon) #}
+    {# Pricing #}
+    {# Some inspiration (like birthday cakes)? #}
+{% endblock %}
+
+{% block scripts %}
+    <script type="text/javascript" src="/js/imageSlideshow.js" defer></script>
+{% endblock %}
