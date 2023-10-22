@@ -337,9 +337,9 @@
       "images": ["Bee-Happy-with-Pooh.jpg"],
       "name": "Bee Happy with Pooh"
     },
-    "bon-voyage-crete": {
-      "images": ["Bon-Voyage-Crete.jpg"],
-      "name": "Bon Voyage - Crete"
+    "bon-voyage-corfu": {
+      "images": ["Bon-Voyage-Corfu.jpg"],
+      "name": "Bon Voyage - Corfu"
     },
     "boy-or-girl": {
       "images": ["Boy-or-Girl.jpg"],
@@ -387,7 +387,7 @@
     },
     "doctors-orders": {
       "images": ["Doctors-Orders.jpg"],
-      "name": "Doctors Orders"
+      "name": "Doctor's Orders"
     },
     "dolphin-splash": {
       "images": ["Dolphin-Splash.jpg"],
@@ -522,9 +522,6 @@
       "images": ["Up-Up-and-Away.jpg"],
       "name": "Up, Up & Away"
     },
-
-
-
     "cheers-corona": {
       "images": ["Cheers-Corona.jpg"],
       "name": "Cheers - Corona"
