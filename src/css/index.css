@@ -144,6 +144,11 @@
     transform: translateY(0);
   }
 }
+@media only screen and (max-height: 600px) {
+  #header-video .header-video-text a.scroll-down-button {
+    display: none;
+  }
+}
 
 #about {
   display: flex;

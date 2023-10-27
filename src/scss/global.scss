@@ -561,7 +561,9 @@ footer {
         top: 0;
         left: 0;
         min-width: 100%;
-        min-height: 100%;
+        min-height: 100vh;
+        min-height: 100lvh;
+
         z-index: -2;
     }
 }
