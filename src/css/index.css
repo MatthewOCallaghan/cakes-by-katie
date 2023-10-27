@@ -1,16 +1,28 @@
 @charset "UTF-8";
 #header-video {
   width: 100%;
+  height: calc(100vh - 50px);
+  height: calc(100svh - 50px);
   background: #000;
   position: relative;
 }
 #header-video video {
   width: 100%;
-  min-height: 50vh;
-  max-height: calc(100vh - 50px);
+  height: 100%;
   object-fit: cover;
   filter: brightness(0.5);
   display: flex;
+}
+#header-video video#landscape-video {
+  display: none;
+}
+@media (orientation: landscape) {
+  #header-video video#portrait-video {
+    display: none;
+  }
+  #header-video video#landscape-video {
+    display: block;
+  }
 }
 #header-video .header-video-text {
   position: absolute;
@@ -25,7 +37,10 @@
   flex-direction: column;
 }
 #header-video .header-video-text span.main-text {
-  font-size: 12vw;
+  display: block;
+  max-width: 85%;
+  font-size: max(12vw, 100px);
+  text-align: center;
   margin: 0;
   font-family: "Licorice", sans-serif;
   color: #F7CAC9;
@@ -65,7 +80,10 @@
   }
 }
 #header-video .header-video-text span.secondary-text {
-  font-size: 2vw;
+  display: block;
+  max-width: 85%;
+  text-align: center;
+  font-size: max(2vw, 30px);
   margin: 0;
   font-family: "Lato", sans-serif;
   animation-name: fade-in-up;
@@ -99,10 +117,12 @@
 }
 #header-video .header-video-text a.scroll-down-button div {
   width: 4vw;
+  min-width: 60px;
   height: 4vw;
+  min-height: 60px;
   border: 1px solid #fff7;
   border-radius: 100px;
-  padding: 1vw;
+  padding: max(1vw, 15px);
   transition: all 0.3s;
 }
 @media (hover: hover) {
@@ -122,14 +142,6 @@
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-@media only screen and (max-width: 1100px) {
-  #header-video video {
-    filter: none;
-  }
-  #header-video .header-video-text {
-    display: none;
   }
 }
 

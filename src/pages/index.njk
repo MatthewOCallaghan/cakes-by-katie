@@ -13,7 +13,12 @@
 
 {% block main %}
     <div id="header-video">
-        <video autoplay playsinline muted loop>
+        {# Portrait video #}
+        <video id="portrait-video" autoplay playsinline muted loop>
+            <source src="videos/landing-mobile.mp4" type="video/mp4">
+        </video>
+        {# Landscape video #}
+        <video id="landscape-video" autoplay playsinline muted loop>
             <source src="videos/landing.mp4" type="video/mp4">
         </video>
 

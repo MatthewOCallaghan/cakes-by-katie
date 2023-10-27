@@ -3,19 +3,34 @@
 
 #header-video {
     width: 100%;
+    height: calc(100vh - 50px);
+    height: calc(100svh - 50px);
     background: #000;
     position: relative;
 
     video {
         width: 100%;
-        min-height: 50vh;
-        max-height: calc(100vh - 50px);
+        height: 100%;
         object-fit: cover;
         filter: brightness(0.5);
 
         // #header-video will be a few px taller than video without this
         // No idea why?
         display: flex;
+
+        &#landscape-video {
+            display: none;
+        }
+
+        @media (orientation: landscape) {
+            &#portrait-video {
+                display: none;
+            }
+
+            &#landscape-video {
+                display: block;
+            }
+        }
     }
 
     .header-video-text {
@@ -31,7 +46,10 @@
         flex-direction: column;
 
         span.main-text {
-            font-size: 12vw;
+            display: block;
+            max-width: 85%;
+            font-size: max(12vw, 100px);
+            text-align: center;
             margin: 0;
             font-family: variables.$handwriting;
             color: variables.$pink;
@@ -81,7 +99,10 @@
         }
 
         span.secondary-text {
-            font-size: 2vw;
+            display: block;
+            max-width: 85%;
+            text-align: center;
+            font-size: max(2vw, 30px);
             margin: 0;
             font-family: 'Lato', sans-serif;
             
@@ -116,10 +137,12 @@
             // SVG container
             div {
                 width: 4vw;
+                min-width: 60px;
                 height: 4vw;
+                min-height: 60px;
                 border: 1px solid #fff7;
                 border-radius: 100px;
-                padding: 1vw;
+                padding: max(1vw, 15px);
                 transition: all .3s;
             }
             
@@ -156,15 +179,15 @@
     }
     
     // Hide text on screens where video is too small and "About" section is already visible anyway
-    @media only screen and (max-width: 1100px) {
-        video {
-            filter: none;
-        }
+    // @media only screen and (max-width: 1100px) {
+    //     video {
+    //         filter: none;
+    //     }
         
-        .header-video-text {
-            display: none;
-        }
-    }
+    //     .header-video-text {
+    //         display: none;
+    //     }
+    // }
 }
 
 #about {
