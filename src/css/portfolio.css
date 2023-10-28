@@ -218,8 +218,14 @@
   max-width: none;
 }
 
+:root {
+  --portfolio-scroll: 0px;
+}
+
 body.portfolio-modal-open {
   overflow: hidden;
+  position: fixed;
+  top: var(--portfolio-scroll);
 }
 body.portfolio-modal-open #portfolio-modal {
   display: grid;

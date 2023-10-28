@@ -14,7 +14,7 @@ $mobileNavMaxWidth: 1100px;
     font-weight: 100;
 }
 
-html {
+.smooth-scroll {
     scroll-behavior: smooth;
 }
 
@@ -31,6 +31,9 @@ body {
 
 body.nav-open {
     overflow: hidden;
+    // Fixed position makes mobile browser UA components appear expanded and stops page being scrollable
+    // This also resets scroll position but to click nav icon they must be very close to top anyway
+    position: fixed;
 }
 
 h1, h2, h3 {

@@ -343,7 +343,7 @@ template {
   font-weight: 100;
 }
 
-html {
+.smooth-scroll {
   scroll-behavior: smooth;
 }
 
@@ -358,6 +358,7 @@ body main {
 
 body.nav-open {
   overflow: hidden;
+  position: fixed;
 }
 
 h1, h2, h3 {

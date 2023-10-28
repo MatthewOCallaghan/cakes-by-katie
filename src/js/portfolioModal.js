@@ -147,6 +147,12 @@ const openModal = ({ target }) => {
         container.classList.remove(TITLE_ONLY_CLASS);
     }
     
+    /*
+        To make mobile dynamic browser UA components appear when modal opens (which helps avoid strange rendering
+        issues and the page still being scrollable), we set body to fixed positioning. To maintain scroll appearance,
+        we set `top` CSS.
+    */
+    document.documentElement.style.setProperty('--portfolio-scroll', `-${document.querySelector('html').scrollTop}px`);
     document.body.classList.toggle(MODAL_OPEN_CLASS);
 
     // Reset scroll
@@ -159,7 +165,15 @@ const openModal = ({ target }) => {
 }
 
 const closeModal = () => {
+    // Check <body> `top` CSS to restore scroll position
+    const scroll = -parseInt(getComputedStyle(document.body).top);
     document.body.classList.toggle(MODAL_OPEN_CLASS);
+    const htmlTag = document.querySelector('html');
+
+    // Don't want to smooth scroll back
+    htmlTag.classList.remove('smooth-scroll');
+    htmlTag.scrollTop = scroll;
+    htmlTag.classList.add('smooth-scroll');
 }
 
 modal.querySelector('#modal-close').addEventListener('click', closeModal);
