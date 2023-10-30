@@ -67,10 +67,13 @@
 
     <header>
 
+        <div id="desktop-nav-overlay">
+
+        </div>
+
+
         <nav>
-
-            <div id="mobile-header-buttons">
-
+            <div id="mobile-nav">
 
                 <button id="nav-toggle" class="hamburger" aria-label="Toggle menu">
                     <span class="hamburger-box">
@@ -78,39 +81,268 @@
                     </span>
                 </button>
 
+                <a class="logo-container" href="/">
+                    <div class="logo-background">
+                        <img src="/images/logo.svg" alt="Logo" height="100%" width="100%" />
+                    </div>
+                </a>
+
                 <a class="header-contact-link" href="#contact">Contact</a>
             </div>
 
-            <a href="/about">About</a>
-            <a href="/portfolio">Portfolio</a>
-            <a href="/pricing">Pricing</a>
-            <a href="/occasions">Occasions</a>
-            <a class="logo-container" href="/">
-                <div class="logo-background">
-                    <img src="/images/logo.svg" alt="Logo" height="100%" width="100%" />
+            <div id="header-scrollable">
+
+                <ul id="main-links">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li class="submenu-list">
+                        <button>About</button>
+                        <div class="submenu">
+                            <ul>
+                                <li>
+                                    <a href="/about">Meet Katie</a>
+                                </li>
+                                <li>
+                                    <a href="/pricing">Pricing</a>
+                                </li>
+                                <li>
+                                    <a href="/flavours">Flavours</a>
+                                </li>
+                                <li>
+                                    <a href="/testimonials">Testimonials</a>
+                                </li>
+                                <li>
+                                    <a href="/faqs">FAQs</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/portfolio">Portfolio</a>
+                    </li>
+                    <li class="logo-container">
+                        <a href="/">
+                            <div class="logo-background">
+                                <img src="/images/logo.svg" alt="Logo" height="100%" width="100%" />
+                            </div>
+                        </a>
+                    </li>
+                    <li class="submenu-grid">
+                        <button>Products</button>
+                    </li>
+                    <li class="submenu-grid">
+                        <button>Occasions</button>
+                        <div class="submenu">
+                            <ul>
+                                <li>
+                                    <a href="/occasions/birthday">
+
+                                        <picture>
+
+
+                                            <source type="image/avif" srcset="/images/portfolio/Parker-Penguin-square-640.avif 640w, /images/portfolio/Parker-Penguin-square-768.avif 768w, /images/portfolio/Parker-Penguin-square-1024.avif 1024w, /images/portfolio/Parker-Penguin-square-1366.avif 1366w, /images/portfolio/Parker-Penguin-square-1600.avif 1600w, /images/portfolio/Parker-Penguin-square-1920.avif 1920w"
+                                            sizes="100vw">
+
+                                                <source type="image/webp" srcset="/images/portfolio/Parker-Penguin-square-640.webp 640w, /images/portfolio/Parker-Penguin-square-768.webp 768w, /images/portfolio/Parker-Penguin-square-1024.webp 1024w, /images/portfolio/Parker-Penguin-square-1366.webp 1366w, /images/portfolio/Parker-Penguin-square-1600.webp 1600w, /images/portfolio/Parker-Penguin-square-1920.webp 1920w"
+                                                sizes="100vw">
+
+                                                    <img src="/images/portfolio/Parker-Penguin-square.jpg" alt="Birthday cake" />
+                                        </picture>
+
+                                        <span>Birthday</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/occasions/wedding">
+
+                                        <picture>
+
+
+                                            <source type="image/avif" srcset="/images/portfolio/Parker-Penguin-square-640.avif 640w, /images/portfolio/Parker-Penguin-square-768.avif 768w, /images/portfolio/Parker-Penguin-square-1024.avif 1024w, /images/portfolio/Parker-Penguin-square-1366.avif 1366w, /images/portfolio/Parker-Penguin-square-1600.avif 1600w, /images/portfolio/Parker-Penguin-square-1920.avif 1920w"
+                                            sizes="100vw">
+
+                                                <source type="image/webp" srcset="/images/portfolio/Parker-Penguin-square-640.webp 640w, /images/portfolio/Parker-Penguin-square-768.webp 768w, /images/portfolio/Parker-Penguin-square-1024.webp 1024w, /images/portfolio/Parker-Penguin-square-1366.webp 1366w, /images/portfolio/Parker-Penguin-square-1600.webp 1600w, /images/portfolio/Parker-Penguin-square-1920.webp 1920w"
+                                                sizes="100vw">
+
+                                                    <img src="/images/portfolio/Parker-Penguin-square.jpg" alt="Birthday cake" />
+                                        </picture>
+
+                                        <span>Wedding</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/occasions/anniversary">
+
+                                        <picture>
+
+
+                                            <source type="image/avif" srcset="/images/portfolio/Parker-Penguin-square-640.avif 640w, /images/portfolio/Parker-Penguin-square-768.avif 768w, /images/portfolio/Parker-Penguin-square-1024.avif 1024w, /images/portfolio/Parker-Penguin-square-1366.avif 1366w, /images/portfolio/Parker-Penguin-square-1600.avif 1600w, /images/portfolio/Parker-Penguin-square-1920.avif 1920w"
+                                            sizes="100vw">
+
+                                                <source type="image/webp" srcset="/images/portfolio/Parker-Penguin-square-640.webp 640w, /images/portfolio/Parker-Penguin-square-768.webp 768w, /images/portfolio/Parker-Penguin-square-1024.webp 1024w, /images/portfolio/Parker-Penguin-square-1366.webp 1366w, /images/portfolio/Parker-Penguin-square-1600.webp 1600w, /images/portfolio/Parker-Penguin-square-1920.webp 1920w"
+                                                sizes="100vw">
+
+                                                    <img src="/images/portfolio/Parker-Penguin-square.jpg" alt="Birthday cake" />
+                                        </picture>
+
+                                        <span>Anniversary</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/occasions/christening-and-baby-shower">
+
+                                        <picture>
+
+
+                                            <source type="image/avif" srcset="/images/portfolio/Parker-Penguin-square-640.avif 640w, /images/portfolio/Parker-Penguin-square-768.avif 768w, /images/portfolio/Parker-Penguin-square-1024.avif 1024w, /images/portfolio/Parker-Penguin-square-1366.avif 1366w, /images/portfolio/Parker-Penguin-square-1600.avif 1600w, /images/portfolio/Parker-Penguin-square-1920.avif 1920w"
+                                            sizes="100vw">
+
+                                                <source type="image/webp" srcset="/images/portfolio/Parker-Penguin-square-640.webp 640w, /images/portfolio/Parker-Penguin-square-768.webp 768w, /images/portfolio/Parker-Penguin-square-1024.webp 1024w, /images/portfolio/Parker-Penguin-square-1366.webp 1366w, /images/portfolio/Parker-Penguin-square-1600.webp 1600w, /images/portfolio/Parker-Penguin-square-1920.webp 1920w"
+                                                sizes="100vw">
+
+                                                    <img src="/images/portfolio/Parker-Penguin-square.jpg" alt="Birthday cake" />
+                                        </picture>
+
+                                        <span>Christening</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/occasions/christening-and-baby-shower">
+
+                                        <picture>
+
+
+                                            <source type="image/avif" srcset="/images/portfolio/Parker-Penguin-square-640.avif 640w, /images/portfolio/Parker-Penguin-square-768.avif 768w, /images/portfolio/Parker-Penguin-square-1024.avif 1024w, /images/portfolio/Parker-Penguin-square-1366.avif 1366w, /images/portfolio/Parker-Penguin-square-1600.avif 1600w, /images/portfolio/Parker-Penguin-square-1920.avif 1920w"
+                                            sizes="100vw">
+
+                                                <source type="image/webp" srcset="/images/portfolio/Parker-Penguin-square-640.webp 640w, /images/portfolio/Parker-Penguin-square-768.webp 768w, /images/portfolio/Parker-Penguin-square-1024.webp 1024w, /images/portfolio/Parker-Penguin-square-1366.webp 1366w, /images/portfolio/Parker-Penguin-square-1600.webp 1600w, /images/portfolio/Parker-Penguin-square-1920.webp 1920w"
+                                                sizes="100vw">
+
+                                                    <img src="/images/portfolio/Parker-Penguin-square.jpg" alt="Birthday cake" />
+                                        </picture>
+
+                                        <span>Baby shower</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/occasions/corporate">
+
+                                        <picture>
+
+
+                                            <source type="image/avif" srcset="/images/portfolio/Parker-Penguin-square-640.avif 640w, /images/portfolio/Parker-Penguin-square-768.avif 768w, /images/portfolio/Parker-Penguin-square-1024.avif 1024w, /images/portfolio/Parker-Penguin-square-1366.avif 1366w, /images/portfolio/Parker-Penguin-square-1600.avif 1600w, /images/portfolio/Parker-Penguin-square-1920.avif 1920w"
+                                            sizes="100vw">
+
+                                                <source type="image/webp" srcset="/images/portfolio/Parker-Penguin-square-640.webp 640w, /images/portfolio/Parker-Penguin-square-768.webp 768w, /images/portfolio/Parker-Penguin-square-1024.webp 1024w, /images/portfolio/Parker-Penguin-square-1366.webp 1366w, /images/portfolio/Parker-Penguin-square-1600.webp 1600w, /images/portfolio/Parker-Penguin-square-1920.webp 1920w"
+                                                sizes="100vw">
+
+                                                    <img src="/images/portfolio/Parker-Penguin-square.jpg" alt="Birthday cake" />
+                                        </picture>
+
+                                        <span>Corporate</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/occasions/valentines">
+
+                                        <picture>
+
+
+                                            <source type="image/avif" srcset="/images/portfolio/Parker-Penguin-square-640.avif 640w, /images/portfolio/Parker-Penguin-square-768.avif 768w, /images/portfolio/Parker-Penguin-square-1024.avif 1024w, /images/portfolio/Parker-Penguin-square-1366.avif 1366w, /images/portfolio/Parker-Penguin-square-1600.avif 1600w, /images/portfolio/Parker-Penguin-square-1920.avif 1920w"
+                                            sizes="100vw">
+
+                                                <source type="image/webp" srcset="/images/portfolio/Parker-Penguin-square-640.webp 640w, /images/portfolio/Parker-Penguin-square-768.webp 768w, /images/portfolio/Parker-Penguin-square-1024.webp 1024w, /images/portfolio/Parker-Penguin-square-1366.webp 1366w, /images/portfolio/Parker-Penguin-square-1600.webp 1600w, /images/portfolio/Parker-Penguin-square-1920.webp 1920w"
+                                                sizes="100vw">
+
+                                                    <img src="/images/portfolio/Parker-Penguin-square.jpg" alt="Birthday cake" />
+                                        </picture>
+
+                                        <span>Valentine&#39;s</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/occasions/easter">
+
+                                        <picture>
+
+
+                                            <source type="image/avif" srcset="/images/portfolio/Parker-Penguin-square-640.avif 640w, /images/portfolio/Parker-Penguin-square-768.avif 768w, /images/portfolio/Parker-Penguin-square-1024.avif 1024w, /images/portfolio/Parker-Penguin-square-1366.avif 1366w, /images/portfolio/Parker-Penguin-square-1600.avif 1600w, /images/portfolio/Parker-Penguin-square-1920.avif 1920w"
+                                            sizes="100vw">
+
+                                                <source type="image/webp" srcset="/images/portfolio/Parker-Penguin-square-640.webp 640w, /images/portfolio/Parker-Penguin-square-768.webp 768w, /images/portfolio/Parker-Penguin-square-1024.webp 1024w, /images/portfolio/Parker-Penguin-square-1366.webp 1366w, /images/portfolio/Parker-Penguin-square-1600.webp 1600w, /images/portfolio/Parker-Penguin-square-1920.webp 1920w"
+                                                sizes="100vw">
+
+                                                    <img src="/images/portfolio/Parker-Penguin-square.jpg" alt="Birthday cake" />
+                                        </picture>
+
+                                        <span>Easter</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/occasions/christmas">
+
+                                        <picture>
+
+
+                                            <source type="image/avif" srcset="/images/portfolio/Parker-Penguin-square-640.avif 640w, /images/portfolio/Parker-Penguin-square-768.avif 768w, /images/portfolio/Parker-Penguin-square-1024.avif 1024w, /images/portfolio/Parker-Penguin-square-1366.avif 1366w, /images/portfolio/Parker-Penguin-square-1600.avif 1600w, /images/portfolio/Parker-Penguin-square-1920.avif 1920w"
+                                            sizes="100vw">
+
+                                                <source type="image/webp" srcset="/images/portfolio/Parker-Penguin-square-640.webp 640w, /images/portfolio/Parker-Penguin-square-768.webp 768w, /images/portfolio/Parker-Penguin-square-1024.webp 1024w, /images/portfolio/Parker-Penguin-square-1366.webp 1366w, /images/portfolio/Parker-Penguin-square-1600.webp 1600w, /images/portfolio/Parker-Penguin-square-1920.webp 1920w"
+                                                sizes="100vw">
+
+                                                    <img src="/images/portfolio/Parker-Penguin-square.jpg" alt="Birthday cake" />
+                                        </picture>
+
+                                        <span>Christmas</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/occasions/afternoon-tea">
+
+                                        <picture>
+
+
+                                            <source type="image/avif" srcset="/images/portfolio/Parker-Penguin-square-640.avif 640w, /images/portfolio/Parker-Penguin-square-768.avif 768w, /images/portfolio/Parker-Penguin-square-1024.avif 1024w, /images/portfolio/Parker-Penguin-square-1366.avif 1366w, /images/portfolio/Parker-Penguin-square-1600.avif 1600w, /images/portfolio/Parker-Penguin-square-1920.avif 1920w"
+                                            sizes="100vw">
+
+                                                <source type="image/webp" srcset="/images/portfolio/Parker-Penguin-square-640.webp 640w, /images/portfolio/Parker-Penguin-square-768.webp 768w, /images/portfolio/Parker-Penguin-square-1024.webp 1024w, /images/portfolio/Parker-Penguin-square-1366.webp 1366w, /images/portfolio/Parker-Penguin-square-1600.webp 1600w, /images/portfolio/Parker-Penguin-square-1920.webp 1920w"
+                                                sizes="100vw">
+
+                                                    <img src="/images/portfolio/Parker-Penguin-square.jpg" alt="Birthday cake" />
+                                        </picture>
+
+                                        <span>Afternoon tea</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="/occasions" class="submenu-grid-more-link">More occasions</a>
+                        </div>
+                    </li>
+                    <li id="desktop-header-contact-link">
+                        <a class="header-contact-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+                <div id="mobile-nav-image">
+
+                    <picture>
+
+
+                        <source type="image/avif" srcset="/images/cake-cutouts/parker-penguin-640.avif 640w, /images/cake-cutouts/parker-penguin-768.avif 768w, /images/cake-cutouts/parker-penguin-1024.avif 1024w, /images/cake-cutouts/parker-penguin-1366.avif 1366w, /images/cake-cutouts/parker-penguin-1600.avif 1600w, /images/cake-cutouts/parker-penguin-1920.avif 1920w"
+                        sizes="169px">
+
+                            <source type="image/webp" srcset="/images/cake-cutouts/parker-penguin-640.webp 640w, /images/cake-cutouts/parker-penguin-768.webp 768w, /images/cake-cutouts/parker-penguin-1024.webp 1024w, /images/cake-cutouts/parker-penguin-1366.webp 1366w, /images/cake-cutouts/parker-penguin-1600.webp 1600w, /images/cake-cutouts/parker-penguin-1920.webp 1920w"
+                            sizes="169px">
+
+                                <img src="/images/cake-cutouts/parker-penguin.png" alt="Parker penguin" />
+                    </picture>
+
                 </div>
-            </a>
-            <a href="/flavours">Flavours</a>
-            <a href="/testimonials">Testimonials</a>
-            <a href="/faqs">FAQs</a>
-            <a class="header-contact-link" href="#contact">Contact</a>
+
+            </div>
         </nav>
 
-        <div id="mobile-nav-image">
-
-            <picture>
-
-
-                <source type="image/avif" srcset="/images/cake-cutouts/parker-penguin-640.avif 640w, /images/cake-cutouts/parker-penguin-768.avif 768w, /images/cake-cutouts/parker-penguin-1024.avif 1024w, /images/cake-cutouts/parker-penguin-1366.avif 1366w, /images/cake-cutouts/parker-penguin-1600.avif 1600w, /images/cake-cutouts/parker-penguin-1920.avif 1920w"
-                sizes="169px">
-
-                    <source type="image/webp" srcset="/images/cake-cutouts/parker-penguin-640.webp 640w, /images/cake-cutouts/parker-penguin-768.webp 768w, /images/cake-cutouts/parker-penguin-1024.webp 1024w, /images/cake-cutouts/parker-penguin-1366.webp 1366w, /images/cake-cutouts/parker-penguin-1600.webp 1600w, /images/cake-cutouts/parker-penguin-1920.webp 1920w"
-                    sizes="169px">
-
-                        <img src="/images/cake-cutouts/parker-penguin.png" alt="Parker penguin" />
-            </picture>
-
-        </div>
     </header>
 
     <main>

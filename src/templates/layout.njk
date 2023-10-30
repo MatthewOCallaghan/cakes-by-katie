@@ -64,38 +64,150 @@
 
         <header>
 
+            <div id="desktop-nav-overlay">
+
+            </div>
+
+
             <nav>
-
-                <div id="mobile-header-buttons">
-
+                <div id="mobile-nav">
                     {# Hamburger (https://jonsuh.com/hamburgers/) #}
                     <button id="nav-toggle" class="hamburger" aria-label="Toggle menu">
                         <span class="hamburger-box">
                             <span class="hamburger-inner"></span>
                         </span>
                     </button>
+                    
+                    <a class="logo-container" href="/">
+                        <div class="logo-background">
+                            <img src="/images/logo.svg" alt="Logo" height="100%" width="100%" />
+                        </div>
+                    </a>
 
                     <a class="header-contact-link" href="{{ "#contact" if page == "index" else "/#contact" }}">Contact</a>
                 </div>
 
-                <a href="/about">About</a>
-                <a href="/portfolio">Portfolio</a>
-                <a href="/pricing">Pricing</a>
-                <a href="/occasions">Occasions</a>
-                <a class="logo-container" href="/">
-                    <div class="logo-background">
-                        <img src="/images/logo.svg" alt="Logo" height="100%" width="100%" />
+                <div id="header-scrollable">
+
+                    <ul id="main-links">
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li class="submenu-list">
+                            <button>About</button>
+                            <div class="submenu">
+                                <ul>
+                                    <li>
+                                        <a href="/about">Meet Katie</a>
+                                    </li>
+                                    <li>
+                                        <a href="/pricing">Pricing</a>
+                                    </li>
+                                    <li>
+                                        <a href="/flavours">Flavours</a>
+                                    </li>
+                                    <li>
+                                        <a href="/testimonials">Testimonials</a>
+                                    </li>
+                                    <li>
+                                        <a href="/faqs">FAQs</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/portfolio">Portfolio</a>
+                        </li>
+                        <li class="logo-container">
+                            <a  href="/">
+                                <div class="logo-background">
+                                    <img src="/images/logo.svg" alt="Logo" height="100%" width="100%" />
+                                </div>
+                            </a>
+                        </li>
+                        <li class="submenu-grid">
+                            <button>Products</button>
+                        </li>
+                        <li class="submenu-grid">
+                            <button>Occasions</button>
+                            <div class="submenu">
+                                <ul>
+                                    <li>
+                                        <a href="/occasions/birthday">
+                                            {{ pictureElement("portfolio/" ~ portfolio['parker-penguin'].squareImage, "Birthday cake", 50px) }}
+                                            <span>Birthday</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/occasions/wedding">
+                                            {{ pictureElement("portfolio/" ~ portfolio['parker-penguin'].squareImage, "Birthday cake", 50px) }}
+                                            <span>Wedding</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/occasions/anniversary">
+                                            {{ pictureElement("portfolio/" ~ portfolio['parker-penguin'].squareImage, "Birthday cake", 50px) }}
+                                            <span>Anniversary</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/occasions/christening-and-baby-shower">
+                                            {{ pictureElement("portfolio/" ~ portfolio['parker-penguin'].squareImage, "Birthday cake", 50px) }}
+                                            <span>Christening</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/occasions/christening-and-baby-shower">
+                                            {{ pictureElement("portfolio/" ~ portfolio['parker-penguin'].squareImage, "Birthday cake", 50px) }}
+                                            <span>Baby shower</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/occasions/corporate">
+                                            {{ pictureElement("portfolio/" ~ portfolio['parker-penguin'].squareImage, "Birthday cake", 50px) }}
+                                            <span>Corporate</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/occasions/valentines">
+                                            {{ pictureElement("portfolio/" ~ portfolio['parker-penguin'].squareImage, "Birthday cake", 50px) }}
+                                            <span>Valentine&#39;s</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/occasions/easter">
+                                            {{ pictureElement("portfolio/" ~ portfolio['parker-penguin'].squareImage, "Birthday cake", 50px) }}
+                                            <span>Easter</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/occasions/christmas">
+                                            {{ pictureElement("portfolio/" ~ portfolio['parker-penguin'].squareImage, "Birthday cake", 50px) }}
+                                            <span>Christmas</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/occasions/afternoon-tea">
+                                            {{ pictureElement("portfolio/" ~ portfolio['parker-penguin'].squareImage, "Birthday cake", 50px) }}
+                                            <span>Afternoon tea</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <a href="/occasions" class="submenu-grid-more-link">More occasions</a>
+                            </div>
+                        </li>
+                        <li id="desktop-header-contact-link">
+                            <a class="header-contact-link" href="{{ "#contact" if page == "index" else "/#contact" }}">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div id="mobile-nav-image">
+                        {{ pictureElement("cake-cutouts/parker-penguin.png", "Parker penguin", "169px") }}
                     </div>
-                </a>
-                <a href="/flavours">Flavours</a>
-                <a href="/testimonials">Testimonials</a>
-                <a href="/faqs">FAQs</a>
-                <a class="header-contact-link" href="{{ "#contact" if page == "index" else "/#contact" }}">Contact</a>
+
+                </div>
             </nav>
 
-            <div id="mobile-nav-image">
-                {{ pictureElement("cake-cutouts/parker-penguin.png", "Parker penguin", "169px") }}
-            </div>
         </header>
 
         <main>
