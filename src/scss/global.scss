@@ -398,7 +398,7 @@ header {
 
             &.submenu-list .submenu {
                 width: $submenuListWidth;
-                padding: 10px;
+                padding: 20px 10px;
                 background: #fff;
 
                 ul {
@@ -408,16 +408,52 @@ header {
                         width: 100%;
 
                         &:not(:first-child) {
-                            margin-top: 10px;
+                            margin-top: 16px;
+                            padding-top: 16px;
+                            position: relative;
+
+                            &::before {
+                                content: "";
+                                width: 20%;
+                                max-width: 50px;
+                                position: absolute;
+                                top: 0;
+
+                                // Position centrally no matter the width
+                                left: 50%;
+                                transform: translateX(-50%);
+                                
+                                border-top: 1px solid rgb(182, 182, 182);
+                                display: block;
+                            }
                         }
 
                         a {
                             font-family: 'Open Sans', sans-serif;
-                            font-size: 1.2rem;
+                            font-size: 1.1rem;
 
                             @media (hover: hover) {
-                                &:hover {
-                                    color: variables.$pink;
+                                    
+                                position: relative;
+                                padding: 0 .25rem;
+
+                                &::before {
+                                    content: "";
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 100%;
+                                    background: variables.$pink;
+                                    top: 0;
+                                    left: 0;
+                                    transform-origin: right;
+                                    transform: scaleX(0);
+                                    transition: transform .25s ease-in-out;
+                                    z-index: -1;
+                                }
+
+                                &:hover::before {
+                                    transform-origin: left;
+                                    transform: scaleX(1);
                                 }
                             }
                         }
@@ -709,15 +745,6 @@ header[data-nav-submenu] {
                 width: 100%;
                 border: none;
                 flex-grow: 1;
-                // height: auto;
-                // flex-grow: 1;
-                // padding-top: $logoDiameter + 50px;
-
-                // > a {
-                //     width: 100%;
-                //     font-size: 2rem;
-                //     display: block;
-                // }
 
                 #desktop-header-contact-link, .logo-container {
                     display: none !important;
@@ -728,9 +755,6 @@ header[data-nav-submenu] {
                 display: flex;
             }
         }
-       
-
-        
     }
 }
 

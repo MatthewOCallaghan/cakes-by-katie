@@ -686,7 +686,7 @@ header #main-links > li .submenu ul {
 }
 header #main-links > li.submenu-list .submenu {
   width: 200px;
-  padding: 10px;
+  padding: 20px 10px;
   background: #fff;
 }
 header #main-links > li.submenu-list .submenu ul {
@@ -696,15 +696,46 @@ header #main-links > li.submenu-list .submenu ul li {
   width: 100%;
 }
 header #main-links > li.submenu-list .submenu ul li:not(:first-child) {
-  margin-top: 10px;
+  margin-top: 16px;
+  padding-top: 16px;
+  position: relative;
+}
+header #main-links > li.submenu-list .submenu ul li:not(:first-child)::before {
+  content: "";
+  width: 20%;
+  max-width: 50px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: 1px solid #b6b6b6;
+  display: block;
 }
 header #main-links > li.submenu-list .submenu ul li a {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 @media (hover: hover) {
-  header #main-links > li.submenu-list .submenu ul li a:hover {
-    color: #F7CAC9;
+  header #main-links > li.submenu-list .submenu ul li a {
+    position: relative;
+    padding: 0 0.25rem;
+  }
+  header #main-links > li.submenu-list .submenu ul li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #F7CAC9;
+    top: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.25s ease-in-out;
+    z-index: -1;
+  }
+  header #main-links > li.submenu-list .submenu ul li a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
   }
 }
 header #main-links > li.submenu-grid .submenu {
