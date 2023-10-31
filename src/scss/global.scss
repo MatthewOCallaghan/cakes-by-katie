@@ -6,7 +6,7 @@
 @import 'normalize.css/normalize';
 
 // $mobileNavMaxWidth: 750px;
-$mobileNavMaxWidth: 1100px;
+$mobileNavMaxWidth: 1100px; // This value is also hardcoded in nav-menu.js
 
 * {
     box-sizing: border-box;
@@ -398,11 +398,10 @@ header {
 
             &.submenu-list .submenu {
                 width: $submenuListWidth;
-                padding: 5px;
+                padding: 10px;
                 background: #fff;
 
                 ul {
-                    padding: 5px 0;
                     text-align: center;
 
                     li {
@@ -545,10 +544,64 @@ header {
 
         #mobile-nav {
             display: flex;
-        } 
+        }
 
         #main-links {
             display: none;
+
+            > li {
+
+                width: 100%;
+                height: auto;
+                flex-direction: column;
+
+                > a, button {
+                    font-size: 2rem;
+                    padding: 20px;
+                    border-top: 1px solid grey;
+                    height: auto;
+                    
+                }
+                
+                // Add bottom border to last visible <li>
+                &:nth-child(6) {
+                    > a, button {
+                        border-bottom: 1px solid grey;
+                    }
+                }
+
+                &::before {
+                    content: none !important;
+                }
+
+                .submenu {
+                    position: static;
+                    z-index: 0;
+                    width: 100% !important;
+                    border-radius: 0;
+                }
+
+                &.submenu-list .submenu {
+                    background: #f4f4f4;
+                }
+
+                &.submenu-grid .submenu {
+
+                    padding: 10px;
+                    
+                    ul {
+                        grid-template-columns: 100%;
+                        padding: 0;
+                    }
+
+                    .submenu-grid-more-link {
+                        border-radius: 5px;
+                    }
+
+                }
+            }
+
+            
         }
     }
 }
@@ -585,6 +638,13 @@ header[data-nav-submenu] {
 
                 .submenu {
                     display: block;
+                    animation: none;
+                }
+
+                @media only screen and (max-width: $mobileNavMaxWidth) {
+                    > a, button {
+                        border-bottom: 1px solid grey;
+                    }
                 }
             }
         }
@@ -608,7 +668,7 @@ header[data-nav-submenu] {
 
             nav {
                 display: grid;
-                grid-template-rows: ($logoDiameter + 50px) minmax(0, 1fr);
+                grid-template-rows: ($logoDiameter + 30px) minmax(0, 1fr);
                 grid-template-columns: 100%;
             }
 

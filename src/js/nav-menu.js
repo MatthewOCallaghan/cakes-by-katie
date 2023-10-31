@@ -25,6 +25,10 @@ document.querySelectorAll('nav a').forEach(element => {
 
 const SUBMENU_OPEN_HEADER_ATTRIBUTE = 'data-nav-submenu';
 
+// In px
+// Value is also hardcoded in global.scss
+const MOBILE_NAV_MAX_WIDTH = 1100;
+
 document.querySelectorAll('#main-links > li').forEach((li, index) => {
 	const button = li.querySelector('button');
 	if (button) {
@@ -41,16 +45,20 @@ document.querySelectorAll('#main-links > li').forEach((li, index) => {
 
 		let timeout;
 		li.onmouseover = () => {
-			clearTimeout(timeout);
-			header.setAttribute(SUBMENU_OPEN_HEADER_ATTRIBUTE, submenuId);
+			if (window.innerWidth > MOBILE_NAV_MAX_WIDTH) {
+				clearTimeout(timeout);
+				header.setAttribute(SUBMENU_OPEN_HEADER_ATTRIBUTE, submenuId);
+			}
 		}
 		li.onmouseleave = () => {
-			timeout = setTimeout(() => {
-				const submenuOpen = parseInt(header.getAttribute(SUBMENU_OPEN_HEADER_ATTRIBUTE));
-				if (submenuOpen === submenuId) {
-					header.removeAttribute(SUBMENU_OPEN_HEADER_ATTRIBUTE);
-				}
-			}, 50);
+			if (window.innerWidth > MOBILE_NAV_MAX_WIDTH) {
+				timeout = setTimeout(() => {
+					const submenuOpen = parseInt(header.getAttribute(SUBMENU_OPEN_HEADER_ATTRIBUTE));
+					if (submenuOpen === submenuId) {
+						header.removeAttribute(SUBMENU_OPEN_HEADER_ATTRIBUTE);
+					}
+				}, 50);
+			}
 		}
 	}
 });
