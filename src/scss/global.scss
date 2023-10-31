@@ -595,7 +595,6 @@ header[data-nav-submenu] {
 
                 .submenu {
                     display: block;
-                    animation: none;
                 }
 
                 @media only screen and (max-width: $mobileNavMaxWidth) {
@@ -654,6 +653,7 @@ header[data-nav-submenu] {
                     z-index: 0;
                     width: 100% !important;
                     border-radius: 0;
+                    animation: none;
                 }
 
                 &.submenu-list .submenu {

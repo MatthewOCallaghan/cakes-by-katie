@@ -850,7 +850,6 @@ header[data-nav-submenu][data-nav-submenu="1"] #main-links > li:nth-child(1) > b
 }
 header[data-nav-submenu][data-nav-submenu="1"] #main-links > li:nth-child(1) .submenu {
   display: block;
-  animation: none;
 }
 @media only screen and (max-width: 1100px) {
   header[data-nav-submenu][data-nav-submenu="1"] #main-links > li:nth-child(1) > a, header[data-nav-submenu][data-nav-submenu="1"] #main-links > li:nth-child(1) button {
@@ -876,7 +875,6 @@ header[data-nav-submenu][data-nav-submenu="2"] #main-links > li:nth-child(2) > b
 }
 header[data-nav-submenu][data-nav-submenu="2"] #main-links > li:nth-child(2) .submenu {
   display: block;
-  animation: none;
 }
 @media only screen and (max-width: 1100px) {
   header[data-nav-submenu][data-nav-submenu="2"] #main-links > li:nth-child(2) > a, header[data-nav-submenu][data-nav-submenu="2"] #main-links > li:nth-child(2) button {
@@ -902,7 +900,6 @@ header[data-nav-submenu][data-nav-submenu="3"] #main-links > li:nth-child(3) > b
 }
 header[data-nav-submenu][data-nav-submenu="3"] #main-links > li:nth-child(3) .submenu {
   display: block;
-  animation: none;
 }
 @media only screen and (max-width: 1100px) {
   header[data-nav-submenu][data-nav-submenu="3"] #main-links > li:nth-child(3) > a, header[data-nav-submenu][data-nav-submenu="3"] #main-links > li:nth-child(3) button {
@@ -928,7 +925,6 @@ header[data-nav-submenu][data-nav-submenu="4"] #main-links > li:nth-child(4) > b
 }
 header[data-nav-submenu][data-nav-submenu="4"] #main-links > li:nth-child(4) .submenu {
   display: block;
-  animation: none;
 }
 @media only screen and (max-width: 1100px) {
   header[data-nav-submenu][data-nav-submenu="4"] #main-links > li:nth-child(4) > a, header[data-nav-submenu][data-nav-submenu="4"] #main-links > li:nth-child(4) button {
@@ -954,7 +950,6 @@ header[data-nav-submenu][data-nav-submenu="5"] #main-links > li:nth-child(5) > b
 }
 header[data-nav-submenu][data-nav-submenu="5"] #main-links > li:nth-child(5) .submenu {
   display: block;
-  animation: none;
 }
 @media only screen and (max-width: 1100px) {
   header[data-nav-submenu][data-nav-submenu="5"] #main-links > li:nth-child(5) > a, header[data-nav-submenu][data-nav-submenu="5"] #main-links > li:nth-child(5) button {
@@ -980,7 +975,6 @@ header[data-nav-submenu][data-nav-submenu="6"] #main-links > li:nth-child(6) > b
 }
 header[data-nav-submenu][data-nav-submenu="6"] #main-links > li:nth-child(6) .submenu {
   display: block;
-  animation: none;
 }
 @media only screen and (max-width: 1100px) {
   header[data-nav-submenu][data-nav-submenu="6"] #main-links > li:nth-child(6) > a, header[data-nav-submenu][data-nav-submenu="6"] #main-links > li:nth-child(6) button {
@@ -1020,6 +1014,7 @@ header[data-nav-submenu][data-nav-submenu="6"] #main-links > li:nth-child(6) .su
     z-index: 0;
     width: 100% !important;
     border-radius: 0;
+    animation: none;
   }
   header #main-links > li.submenu-list .submenu {
     background: #f4f4f4;
