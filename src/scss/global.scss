@@ -29,13 +29,6 @@ body {
     }
 }
 
-body.nav-open {
-    overflow: hidden;
-    // Fixed position makes mobile browser UA components appear expanded and stops page being scrollable
-    // This also resets scroll position but to click nav icon they must be very close to top anyway
-    position: fixed;
-}
-
 h1, h2, h3 {
     font-family: variables.$handwriting;
 }
@@ -165,6 +158,10 @@ section {
         }
     }
 }
+
+/* -------------------------------------------------------------------------- */
+/*                             Header and nav menu                            */
+/* -------------------------------------------------------------------------- */
 
 $logoDiameter: 130px;
 $headerHeight: 50px;
@@ -351,12 +348,6 @@ header {
                     margin-left: 12px;
                     margin-bottom: 8px;
                     display: block;
-                    // width: 0px;
-                    // height: 0px;
-                    // border-left: 4px solid transparent;
-                    // border-right: 4px solid transparent;
-                    // border-top: 5px solid currentColor;
-                    // transition: border-bottom-color 0.3s, border-top-color 0.3s;
                     width: 8px;
                     height: 8px;
                     border-bottom: 2px solid currentColor;
@@ -422,7 +413,7 @@ header {
                                 // Position centrally no matter the width
                                 left: 50%;
                                 transform: translateX(-50%);
-                                
+
                                 border-top: 1px solid rgb(182, 182, 182);
                                 display: block;
                             }
@@ -525,7 +516,7 @@ header {
                 .submenu-grid-more-link {
                     background: #fff;
                     width: 100%;
-                    padding: 8px;
+                    padding: 10px 8px;
                     text-align: center;
                     font-size: .9rem;
                     font-weight: 400;
@@ -569,10 +560,58 @@ header {
             max-height: 100%;
             width: auto;
         }
-    }    
+    }
+}
 
-    // Mobile nav menu
-    @media only screen and (max-width: $mobileNavMaxWidth) {
+// Submenu open
+header[data-nav-submenu] {
+    #desktop-nav-overlay {
+        display: block;
+    }
+
+    @for $i from 1 through 6 {
+        &[data-nav-submenu="#{$i}"] {
+            #main-links > li:nth-child(#{$i}) {
+
+                // Make hover area same width as submenu when open
+                &::before {
+                    content: "";
+                    position: absolute;
+                    height: 100%;
+                    top: 0;
+                }
+                &.submenu-list::before {
+                    width: $submenuListWidth;
+                    left: 0 - math.div($submenuListWidth - $desktopLinkWidth, 2);
+                }
+                &.submenu-grid::before {
+                    width: $submenuGridWidth;
+                    left: 0 - math.div($submenuGridWidth - $desktopLinkWidth, 2);
+                }
+            
+                > button::after {
+                    transform: rotateZ(-135deg);
+                }
+
+                .submenu {
+                    display: block;
+                    animation: none;
+                }
+
+                @media only screen and (max-width: $mobileNavMaxWidth) {
+                    > a, button {
+                        border-bottom: 1px solid grey;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Mobile nav menu
+@media only screen and (max-width: $mobileNavMaxWidth) {
+
+    header {
 
         #desktop-nav-overlay {
             display: none !important;
@@ -640,58 +679,14 @@ header {
             
         }
     }
-}
 
-// Submenu open
-header[data-nav-submenu] {
-    #desktop-nav-overlay {
-        display: block;
-    }
-
-    @for $i from 1 through 6 {
-        &[data-nav-submenu="#{$i}"] {
-            #main-links > li:nth-child(#{$i}) {
-
-                // Make hover area same width as submenu when open
-                &::before {
-                    content: "";
-                    position: absolute;
-                    height: 100%;
-                    top: 0;
-                }
-                &.submenu-list::before {
-                    width: $submenuListWidth;
-                    left: 0 - math.div($submenuListWidth - $desktopLinkWidth, 2);
-                }
-                &.submenu-grid::before {
-                    width: $submenuGridWidth;
-                    left: 0 - math.div($submenuGridWidth - $desktopLinkWidth, 2);
-                }
-            
-                > button::after {
-                    transform: rotateZ(-135deg);
-                }
-
-                .submenu {
-                    display: block;
-                    animation: none;
-                }
-
-                @media only screen and (max-width: $mobileNavMaxWidth) {
-                    > a, button {
-                        border-bottom: 1px solid grey;
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-
-// Mobile menu open
-@media only screen and (max-width: $mobileNavMaxWidth) {
+    // Mobile menu open
     body.nav-open {
+
+        overflow: hidden;
+        // Fixed position makes mobile browser UA components appear expanded and stops page being scrollable
+        // This also resets scroll position but to click nav icon they must be very close to top anyway
+        position: fixed;
 
         header {
             position: fixed;
@@ -757,6 +752,10 @@ header[data-nav-submenu] {
         }
     }
 }
+
+/* -------------------------------------------------------------------------- */
+/*                                   Footer                                   */
+/* -------------------------------------------------------------------------- */
 
 footer {
     background: variables.$black;
@@ -853,8 +852,10 @@ footer {
     }
 }
 
+/* -------------------------------------------------------------------------- */
+/*                                   Macros                                   */
+/* -------------------------------------------------------------------------- */
 
-// Macros
 .page-title {
     max-width: 100%;
     position: relative;

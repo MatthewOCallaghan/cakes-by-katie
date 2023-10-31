@@ -357,11 +357,6 @@ body main {
   flex-grow: 1;
 }
 
-body.nav-open {
-  overflow: hidden;
-  position: fixed;
-}
-
 h1, h2, h3 {
   font-family: "Licorice", sans-serif;
 }
@@ -482,6 +477,9 @@ section {
   }
 }
 
+/* -------------------------------------------------------------------------- */
+/*                             Header and nav menu                            */
+/* -------------------------------------------------------------------------- */
 header {
   height: 50px;
   width: 100%;
@@ -794,7 +792,7 @@ header #main-links > li.submenu-grid .submenu ul li a:focus-visible {
 header #main-links > li.submenu-grid .submenu .submenu-grid-more-link {
   background: #fff;
   width: 100%;
-  padding: 8px;
+  padding: 10px 8px;
   text-align: center;
   font-size: 0.9rem;
   font-weight: 400;
@@ -828,53 +826,6 @@ header #mobile-nav-image img {
   height: 130px;
   max-height: 100%;
   width: auto;
-}
-@media only screen and (max-width: 1100px) {
-  header #desktop-nav-overlay {
-    display: none !important;
-  }
-  header #mobile-nav {
-    display: flex;
-  }
-  header #main-links {
-    display: none;
-  }
-  header #main-links > li {
-    width: 100%;
-    height: auto;
-    flex-direction: column;
-  }
-  header #main-links > li > a, header #main-links > li button {
-    font-size: 2rem;
-    padding: 20px;
-    border-top: 1px solid grey;
-    height: auto;
-  }
-  header #main-links > li:nth-child(6) > a, header #main-links > li:nth-child(6) button {
-    border-bottom: 1px solid grey;
-  }
-  header #main-links > li::before {
-    content: none !important;
-  }
-  header #main-links > li .submenu {
-    position: static;
-    z-index: 0;
-    width: 100% !important;
-    border-radius: 0;
-  }
-  header #main-links > li.submenu-list .submenu {
-    background: #f4f4f4;
-  }
-  header #main-links > li.submenu-grid .submenu {
-    padding: 10px;
-  }
-  header #main-links > li.submenu-grid .submenu ul {
-    grid-template-columns: 100%;
-    padding: 0;
-  }
-  header #main-links > li.submenu-grid .submenu .submenu-grid-more-link {
-    border-radius: 5px;
-  }
 }
 
 header[data-nav-submenu] #desktop-nav-overlay {
@@ -1038,6 +989,56 @@ header[data-nav-submenu][data-nav-submenu="6"] #main-links > li:nth-child(6) .su
 }
 
 @media only screen and (max-width: 1100px) {
+  header #desktop-nav-overlay {
+    display: none !important;
+  }
+  header #mobile-nav {
+    display: flex;
+  }
+  header #main-links {
+    display: none;
+  }
+  header #main-links > li {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  header #main-links > li > a, header #main-links > li button {
+    font-size: 2rem;
+    padding: 20px;
+    border-top: 1px solid grey;
+    height: auto;
+  }
+  header #main-links > li:nth-child(6) > a, header #main-links > li:nth-child(6) button {
+    border-bottom: 1px solid grey;
+  }
+  header #main-links > li::before {
+    content: none !important;
+  }
+  header #main-links > li .submenu {
+    position: static;
+    z-index: 0;
+    width: 100% !important;
+    border-radius: 0;
+  }
+  header #main-links > li.submenu-list .submenu {
+    background: #f4f4f4;
+  }
+  header #main-links > li.submenu-grid .submenu {
+    padding: 10px;
+  }
+  header #main-links > li.submenu-grid .submenu ul {
+    grid-template-columns: 100%;
+    padding: 0;
+  }
+  header #main-links > li.submenu-grid .submenu .submenu-grid-more-link {
+    border-radius: 5px;
+  }
+
+  body.nav-open {
+    overflow: hidden;
+    position: fixed;
+  }
   body.nav-open header {
     position: fixed;
     top: 0;
@@ -1089,6 +1090,9 @@ header[data-nav-submenu][data-nav-submenu="6"] #main-links > li:nth-child(6) .su
     display: flex;
   }
 }
+/* -------------------------------------------------------------------------- */
+/*                                   Footer                                   */
+/* -------------------------------------------------------------------------- */
 footer {
   background: #000;
   padding: 20px;
@@ -1169,6 +1173,9 @@ footer .credit-container a svg {
   }
 }
 
+/* -------------------------------------------------------------------------- */
+/*                                   Macros                                   */
+/* -------------------------------------------------------------------------- */
 .page-title {
   max-width: 100%;
   position: relative;
