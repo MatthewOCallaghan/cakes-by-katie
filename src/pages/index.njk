@@ -7,12 +7,14 @@
   href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
 />
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 {% endblock %}
 
 {% from "macros/picture.njk" import pictureElement with context %}
 
 {% block main %}
     <div id="header-video">
+        
         {# Portrait video #}
         <video id="portrait-video" autoplay playsinline muted loop>
             <source src="videos/landing-mobile.mp4" type="video/mp4">
@@ -21,9 +23,13 @@
         <video id="landscape-video" autoplay playsinline muted loop>
             <source src="videos/landing.mp4" type="video/mp4">
         </video>
+        
+        <div id="particles-js"></div>
 
         <div class="header-video-text">
-            <span class="main-text">Baking special memories</span>
+            <span class="main-text">
+                <span>Baking</span> special memories
+            </span>
             {# <span class="main-text">Let's make it memorable</span> #}
             <span class="text-divider"></span>
             <span class="secondary-text">Bespoke cakes and cupcakes</span>
@@ -146,4 +152,5 @@
 
 {% block scripts %}
     <script type="text/javascript" src="js/slideshow.js" defer></script>
+    <script type="text/javascript" src="js/snow.js" defer></script>
 {% endblock %}

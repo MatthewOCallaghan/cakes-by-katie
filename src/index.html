@@ -20,6 +20,7 @@
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -127,9 +128,6 @@
                                 <img src="/images/logo.svg" alt="Logo" height="100%" width="100%" />
                             </div>
                         </a>
-                    </li>
-                    <li class="submenu-grid">
-                        <button>Products</button>
                     </li>
                     <li class="submenu-grid">
                         <button>Occasions</button>
@@ -319,6 +317,11 @@
                             <a href="/occasions" class="submenu-grid-more-link">More occasions</a>
                         </div>
                     </li>
+                    <li>
+                        <a href="/occasions/Christmas" style="color:#fff;background:-webkit-linear-gradient(#fff,#f00);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">
+                                Christmas!
+                            </a>
+                    </li>
                     <li id="desktop-header-contact-link">
                         <a class="header-contact-link" href="#contact">Contact</a>
                     </li>
@@ -351,6 +354,7 @@
 
         <div id="header-video">
 
+
             <video id="portrait-video" autoplay playsinline muted loop>
                 <source src="videos/landing-mobile.mp4" type="video/mp4">
             </video>
@@ -359,8 +363,12 @@
                 <source src="videos/landing.mp4" type="video/mp4">
             </video>
 
+            <div id="particles-js"></div>
+
             <div class="header-video-text">
-                <span class="main-text">Baking special memories</span>
+                <span class="main-text">
+                <span>Baking</span> special memories
+                </span>
 
                 <span class="text-divider"></span>
                 <span class="secondary-text">Bespoke cakes and cupcakes</span>
@@ -846,6 +854,7 @@
     <script type="text/javascript" src="/js/nav-menu.js" defer></script>
 
     <script type="text/javascript" src="js/slideshow.js" defer></script>
+    <script type="text/javascript" src="js/snow.js" defer></script>
 
     <!-- endbuild -->
 </body>
