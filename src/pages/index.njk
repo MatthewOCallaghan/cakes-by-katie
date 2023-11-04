@@ -78,6 +78,34 @@
         <a class="button" href="/portfolio" >See more of my portfolio</a>
     </section>
 
+    <section id="christmas">
+
+        {{ pictureElement("/backgrounds/christmas-tree.jpg", "Christmas background", "100vw") }}
+
+        <div class="christmas-outer-container">
+            <div class="christmas-inner-container">
+                <div class="christmas-contents">
+                    <div class="christmas-text">
+                        <h2>The Christmas Collection</h2>
+                        <P>Paragraph here encouraging people to look and buy some of the Christmas collection. We've got great cakes for family gatherings. We've got great gifts and stocking fillers. Order for collection week before Christmas!</p>
+                        
+                    </div>
+                    <div class="christmas-collection-link">
+                        <a
+                            class="button button-white"
+                            href="/occasions/christmas"
+                        >
+                            See the collection
+                        </a>
+                    </div>
+                    <div class="christmas-collection-image">
+                        {{ pictureElement("/christmas/christmas-collection.jpg", "Christmas product range", "20vw") }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact">
         {% from "macros/fixed-background.njk" import fixedBackground with context %}
         {{ fixedBackground("marble-background.jpg", "Marble background image") }}
