@@ -1,10 +1,287 @@
 {% set page = "christmas" %}
-{% extends "occasion.njk" %}
+{% extends "layout.njk" %}
 
-{% block text %}
-    <p>My Christmas range includes a reindeer cake and Christmas cupcakes, but if you have a particular design in mind or would like something different, please let me know.</p>
+{% block head %}
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-snow@2/tsparticles.preset.snow.bundle.min.js"></script>
+{% endblock %}
 
-    <p>Christmas cakes and cupcakes can be finished in either buttercream or fondant and you can choose from an extensive list of <a href="/flavours">sponge flavours</a>.</p>
+{% block main %}
 
-    <p>Decorative choices include chocolate or coloured drips, fondant or real flowers, fondant models, airbrushing and edible images.</p>
+    <section class="intro">
+        <div class="intro-inner">
+            <p>Text here introducing Christmas range. Collect week before Christmas. Tell them they can order bespoke too.</p>
+        
+            <div class="cta">
+                <h3>Ready to make your Christmas special?</h3>
+                <a
+                    class="button"
+                    href="/#contact"
+                >
+                    Contact me
+                </a>
+            </div>
+        </div>
+    </section>
+
+    {% from "macros/picture.njk" import pictureElement with context %}
+
+    {% macro priceLabelSvg() %}
+    <svg version="1.1" width="100%" height="100%" viewBox="-126 -126 252 252" xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="m7.654e-15 -125 21.948 14.662 25.888-5.1466 14.666 21.945 25.887 5.152 5.152 25.887 21.945 14.666-5.1466 25.888 14.662 21.948-14.662 21.948 5.1466 25.888-21.945 14.666-5.152 25.887-25.887 5.152-14.666 21.945-25.888-5.1466-21.948 14.662-21.948-14.662-25.888 5.1466-14.666-21.945-25.887-5.152-5.152-25.887-21.945-14.666 5.1466-25.888-14.662-21.948 14.662-21.948-5.1466-25.888 21.945-14.666 5.152-25.887 25.887-5.152 14.666-21.945 25.888 5.1466z" 
+            fill="#fb0" 
+            stroke="#e4a91a"
+        />
+    </svg>
+    {% endmacro %}
+
+    <section class="products">
+
+        <div id="snow-particles"></div>
+
+        <h2>The Christmas collection</h2>
+
+        <div class="product-outer-container">
+            <div class="product-inner-container">
+                <div class="product-contents">
+                    <div class="product-text">
+                        <h3>Ruby &amp; Roxy</h3>
+                        <p>Ruby is a chocolate reindeer - chocolate sponge filled with chocolate buttercream and finished in chocolate buttercream.</p>
+                        <p>Roxy is a vanilla reindeer - vanilla sponge filled with strawberry jam and buttercream and finished in buttercream</p>
+                        <p>Available in two sizes: 5" (8-11 portions) and 6" (10-14 portions).
+                    </div>
+                    <div class="product-image">
+                        {{ pictureElement("/christmas/reindeer-cakes.jpg", "Vanilla and chocolate reindeer cakes", "20vw") }}
+                    </div>
+                </div>
+
+
+                <div class="price-labels">
+                    <div style="gap:3px;">
+                        {{ priceLabelSvg() }}
+                        <span>5"</span>
+                        <span class="price">£45</span>
+                        <span>each</span>
+                    </div>
+                    <div style="gap:5px;">
+                        {{ priceLabelSvg() }}
+                        <span>6"</span>
+                        <span class="price">£49</span>
+                        <span>each</span>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="product-outer-container">
+            <div class="product-inner-container">
+                <div class="product-contents">
+                    <div class="product-text">
+                        <h3>Christmas Cupcake Box</h3>
+                        <p>Designs include:</p>
+                        <ul>
+                            <li>Santa belly</li>
+                            <li>Reindeer face</li>
+                            <li>Present</li>
+                            <li>Christmas tree</li>
+                            <li>'Merry Christmas' plaque</li>
+                            <li>Snowflake</li>
+                        </ul>
+                        <p>Available in either vanilla or chocolate sponge.</p>
+                    </div>
+                    <div class="product-image">
+                        {{ pictureElement("christmas/cupcake-box.jpg", "Vanilla and chocolate reindeer cakes", "20vw") }}
+                    </div>
+                </div>
+
+                <div class="price-labels">
+                    <div>
+                        {{ priceLabelSvg() }}
+                        <span>Box of 6</span>
+                        <span class="price">£15</span>
+                    </div>
+                    <div>
+                        {{ priceLabelSvg() }}
+                        <span>Box of 12</span>
+                        <span class="price">£25</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-outer-container">
+            <div class="product-inner-container">
+                <div class="product-contents">
+                    <div class="product-text">
+                        <h3>The Chocolate Box</h3>
+                        <p>All cupcakes are chocolate sponge base and topped with either:</p>
+                        <ul>
+                            <li>Chocolate buttercream with a white chocolate drizzle and white chocolate milkybar Christmas character</li>
+                            <li>Chocolate orange buttercream swirl topped with 2 Terry's chocolate orange mini segments</li>
+                            <li>Chocolate mint buttercream swirl topped with a Malteser mint reindeer</li>
+                        </ul>
+                    
+                    </div>
+                    <div class="product-image">
+                        {{ pictureElement("christmas/chocolate-box.jpg", "Vanilla and chocolate reindeer cakes", "20vw") }}
+                    </div>
+                </div>
+            </div>
+
+            <div class="price-labels">
+                <div>
+                    {{ priceLabelSvg() }}
+                    <span>Box of 6</span>
+                    <span class="price">£12</span>
+                </div>
+                <div>
+                    {{ priceLabelSvg() }}
+                    <span>Box of 12</span>
+                    <span class="price">£20</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-outer-container">
+            <div class="product-inner-container">
+                <div class="product-contents">
+                    <div class="product-text">
+                        <h3>Hot Chocolate Bombes</h3>
+                        <p>Belgium milk chocolate shell finished with a Belgium white chocolate drizzle and filled with Cadburys hot chocolate powder.</p>
+                    </div>
+                    <div class="product-image">
+                        {{ pictureElement("christmas/hot-chocolate-bombes.jpg", "Hot chocolate bombe", "20vw") }}
+                    </div>
+                </div>
+            </div>
+
+            <div class="price-labels">
+                <div>
+                    {{ priceLabelSvg() }}
+                    <span>Each</span>
+                    <span class="price">£3</span>
+                </div>
+                <div>
+                    {{ priceLabelSvg() }}
+                    <span>6 for</span>
+                    <span class="price">£15</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-outer-container">
+            <div class="product-inner-container">
+                <div class="product-contents">
+                    <div class="product-text">
+                        <h3>Cake Jars</h3>
+                        <p>Each jar comes beautifully package and even with a spoon so you can tuck right in.</p>
+                        <p>Flavours:</p>
+                        <ul>
+                            <li>Vanilla</li>
+                            <li>Lemon</li>
+                            <li>Chocolate</li>
+                            <li>Chocolate orange</li>
+                            <li>Chocolate mint</li>
+                        </ul>
+                    </div>
+                    <div class="product-image">
+                        {{ pictureElement("christmas/cake-jar.jpg", "Cake jar", "20vw") }}
+                    </div>
+                </div>
+            </div>
+
+            <div class="price-labels">
+                <div>
+                    {{ priceLabelSvg() }}
+                    <span>Each</span>
+                    <span class="price">£4.50</span>
+                </div>
+                <div>
+                    {{ priceLabelSvg() }}
+                    <span>5 for</span>
+                    <span class="price">£20</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-outer-container">
+            <div class="product-inner-container">
+                <div class="product-contents">
+                    <div class="product-text">
+                        <h3>Snowflake Cookies</h3>
+                        <p>Pack of 2 snowflake cookies decorated with a fondant base, royal icing detail and sprinkles.</p>
+                    </div>
+                    <div class="product-image">
+                        {{ pictureElement("christmas/snowflake-cookies.jpg", "Snowflake cookies", "20vw") }}
+                    </div>
+                </div>
+            </div>
+
+            <div class="price-labels">
+                <div>
+                    {{ priceLabelSvg() }}
+                    <span>Each</span>
+                    <span class="price">£2.50</span>
+                </div>
+                <div>
+                    {{ priceLabelSvg() }}
+                    <span>5 for</span>
+                    <span class="price">£10</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-outer-container">
+            <div class="product-inner-container">
+                <div class="product-contents">
+                    <div class="product-text">
+                        <h3>Star Cookie Bag</h3>
+                        <p>A cookie bag containing 10 star cookies - perfect for dipping in your drink or eating on their own.</p>
+                    </div>
+                    <div class="product-image">
+                        {{ pictureElement("christmas/star-cookies.jpg", "Star cookies", "20vw") }}
+                    </div>
+                </div>
+            </div>
+
+            <div class="price-labels">
+                <div>
+                    {{ priceLabelSvg() }}
+                    <span>Each</span>
+                    <span class="price">£2</span>
+                </div>
+                <div>
+                    {{ priceLabelSvg() }}
+                    <span>6 for</span>
+                    <span class="price">£10</span>
+                </div>
+            </div>
+        </div>
+
+        
+    </section>
+
+    <section id="contact">
+
+        {{ pictureElement("/backgrounds/santa-and-child.jpg", "Santa Clause and child background", "100vw") }}
+
+        <div>
+            <h3>Order now for collection between 18<sup>th</sup> and 24<sup>th</sup> December</h3>
+            <a
+                class="button button-white"
+                href="/#contact"
+            >
+                Contact me
+            </a>
+        </div>
+    </section>
+
+
+{% endblock %}
+
+{% block scripts %}
+    <script type="text/javascript" src="/js/snow.js" defer></script>
 {% endblock %}

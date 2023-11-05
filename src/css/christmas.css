@@ -1,0 +1,173 @@
+section.intro {
+  background: #FFF;
+  padding: 20px;
+}
+section.intro div.intro-inner {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+section.intro div.intro-inner div.cta {
+  padding: 20px;
+}
+section.intro div.intro-inner div.cta h3 {
+  margin-top: 0;
+}
+
+section.products {
+  position: relative;
+  background: #58cbff;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 60px;
+}
+section.products #snow-particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+section.products .product-outer-container {
+  padding: 5px;
+  border-radius: 20px;
+  max-width: 1100px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 12px 4px #c2c2c28c;
+}
+section.products .product-outer-container ~ section.products .product-outer-container {
+  margin-top: 50px;
+}
+section.products .product-outer-container .product-inner-container {
+  padding: 20px 30px;
+  border: 2px dashed #fff;
+  border-radius: 15px;
+}
+section.products .product-outer-container .product-inner-container .product-contents {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+section.products .product-outer-container .product-inner-container .product-contents .product-text {
+  flex-grow: 1;
+}
+section.products .product-outer-container .product-inner-container .product-contents .product-text ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+section.products .product-outer-container .product-inner-container .product-contents .product-image {
+  width: min(400px, 40vw);
+  min-width: min(100%, 300px);
+  margin: auto;
+}
+section.products .product-outer-container .product-inner-container .product-contents .product-image img {
+  width: 100%;
+}
+section.products .product-outer-container .price-labels {
+  position: absolute;
+  bottom: -30px;
+  display: flex;
+  gap: 20px;
+}
+section.products .product-outer-container .price-labels > div {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #000;
+}
+section.products .product-outer-container .price-labels > div svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+section.products .product-outer-container .price-labels > div span {
+  font-size: 1.1em;
+  z-index: 1;
+}
+section.products .product-outer-container .price-labels > div span.price {
+  font-size: 1.9em;
+  font-family: "Courgette", cursive;
+}
+section.products .product-outer-container:nth-child(odd) {
+  background: #cd0000;
+}
+section.products .product-outer-container:nth-child(odd) .product-contents {
+  flex-direction: row;
+}
+section.products .product-outer-container:nth-child(odd) .price-labels {
+  right: 3%;
+}
+section.products .product-outer-container:nth-child(even) {
+  background: #2e8100;
+}
+section.products .product-outer-container:nth-child(even) .product-contents {
+  flex-direction: row-reverse;
+}
+section.products .product-outer-container:nth-child(even) .price-labels {
+  left: 3%;
+}
+section.products .product-outer-container ~ .product-outer-container {
+  margin-top: 50px;
+}
+@media (max-width: 800px) {
+  section.products {
+    padding-bottom: 80px;
+  }
+  section.products .product-outer-container {
+    margin-top: 70px;
+  }
+  section.products .product-outer-container .product-contents {
+    flex-direction: column !important;
+  }
+  section.products .product-outer-container .price-labels {
+    bottom: -50px;
+  }
+}
+
+section#contact {
+  position: relative;
+  padding: 50px 20px;
+}
+section#contact > div {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+}
+@media (min-width: 1300px) {
+  section#contact > div {
+    min-height: 400px;
+  }
+}
+section#contact h3 {
+  font-size: 4em;
+  margin: 0;
+  text-align: center;
+}
+section#contact h3 sup {
+  font-family: inherit;
+}
+section#contact img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 30%;
+  filter: brightness(0.5);
+  z-index: -1;
+}
