@@ -55,6 +55,7 @@ section.products {
             border-radius: 15px;
 
             .product-contents {
+                position: relative;
                 display: flex;
                 gap: 30px;
                 align-items: center;
@@ -79,75 +80,93 @@ section.products {
                         width: 100%;
                     }
                 }
-
                 
-            }
-        }
-        
-        .price-labels {
-            position: absolute;
-            bottom: -30px;
-            display: flex;
-            gap: 20px;
-
-            // Label
-            > div {
-                width: 120px;
-                height: 120px;
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                gap: 10px;
-                color: #000;
-
-                svg {
+                .price-labels {
                     position: absolute;
-                    top: 0;
-                    left: 0;
-                }
+                    bottom: -60px;
+                    display: flex;
+                    gap: 20px;
 
-                span {
-                    font-size: 1.1em;
-                    z-index: 1;
-                }
+                    // Label
+                    > div {
+                        width: 120px;
+                        height: 120px;
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
+                        color: #000;
 
-                span.price {
-                    font-size: 1.9em;
-                    font-family: 'Courgette', cursive;
+                        svg {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+
+                        span {
+                            font-size: 1.1em;
+                            z-index: 1;
+                        }
+
+                        span.price {
+                            font-size: 1.9em;
+                            font-family: 'Courgette', cursive;
+                        }
+                    }
                 }
+            }
+
+            .product-contents ~ .product-contents {
+                margin-top: 70px;
             }
         }
 
         &:nth-child(odd) {
             background: #cd0000;
 
-            .product-contents {
+            .product-contents:nth-of-type(odd) {
                 flex-direction: row;
+
+                .price-labels {
+                    right: -10px;
+                }
             }
 
-            .price-labels {
-                right: 3%;
+            .product-contents:nth-of-type(even) {
+                flex-direction: row-reverse;
+
+                .price-labels {
+                    left: -10px;
+                }
             }
         }
 
         &:nth-child(even) {
             background: #2e8100;
 
-            .product-contents {
+            .product-contents:nth-of-type(odd) {
                 flex-direction: row-reverse;
+            
+                .price-labels {
+                    left: -10px;
+                }
             }
 
-            .price-labels {
-                left: 3%;
+            .product-contents:nth-of-type(even) {
+                flex-direction: row;
+
+                .price-labels {
+                    right: -10px;
+                }
             }
         }
     }
     
     // Add top margin to all but first product
     .product-outer-container ~ .product-outer-container {
-        margin-top: 50px;
+        margin-top: 60px;
     }
 
     @media (max-width: 800px) {
@@ -156,17 +175,24 @@ section.products {
 
         .product-outer-container {
 
-                margin-top: 70px;
-
-                .product-contents {
-                    flex-direction: column !important;
-                }
-
+            .product-contents {
+                flex-direction: column !important;
+                
                 .price-labels {
-                    bottom: -50px;
+                    bottom: -80px !important;
                 }
             }
+
+            .product-contents ~ .product-contents {
+                margin-top: 90px !important;
+            }
         }
+
+        // Add top margin to all but first product
+        .product-outer-container ~ .product-outer-container {
+            margin-top: 70px;
+        }
+    }
 }
 
 section#contact {

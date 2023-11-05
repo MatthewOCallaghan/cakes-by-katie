@@ -46,6 +46,7 @@ section.products .product-outer-container .product-inner-container {
   border-radius: 15px;
 }
 section.products .product-outer-container .product-inner-container .product-contents {
+  position: relative;
   display: flex;
   gap: 30px;
   align-items: center;
@@ -67,13 +68,13 @@ section.products .product-outer-container .product-inner-container .product-cont
 section.products .product-outer-container .product-inner-container .product-contents .product-image img {
   width: 100%;
 }
-section.products .product-outer-container .price-labels {
+section.products .product-outer-container .product-inner-container .product-contents .price-labels {
   position: absolute;
-  bottom: -30px;
+  bottom: -60px;
   display: flex;
   gap: 20px;
 }
-section.products .product-outer-container .price-labels > div {
+section.products .product-outer-container .product-inner-container .product-contents .price-labels > div {
   width: 120px;
   height: 120px;
   position: relative;
@@ -84,52 +85,70 @@ section.products .product-outer-container .price-labels > div {
   gap: 10px;
   color: #000;
 }
-section.products .product-outer-container .price-labels > div svg {
+section.products .product-outer-container .product-inner-container .product-contents .price-labels > div svg {
   position: absolute;
   top: 0;
   left: 0;
 }
-section.products .product-outer-container .price-labels > div span {
+section.products .product-outer-container .product-inner-container .product-contents .price-labels > div span {
   font-size: 1.1em;
   z-index: 1;
 }
-section.products .product-outer-container .price-labels > div span.price {
+section.products .product-outer-container .product-inner-container .product-contents .price-labels > div span.price {
   font-size: 1.9em;
   font-family: "Courgette", cursive;
+}
+section.products .product-outer-container .product-inner-container .product-contents ~ .product-contents {
+  margin-top: 70px;
 }
 section.products .product-outer-container:nth-child(odd) {
   background: #cd0000;
 }
-section.products .product-outer-container:nth-child(odd) .product-contents {
+section.products .product-outer-container:nth-child(odd) .product-contents:nth-of-type(odd) {
   flex-direction: row;
 }
-section.products .product-outer-container:nth-child(odd) .price-labels {
-  right: 3%;
+section.products .product-outer-container:nth-child(odd) .product-contents:nth-of-type(odd) .price-labels {
+  right: -10px;
+}
+section.products .product-outer-container:nth-child(odd) .product-contents:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+section.products .product-outer-container:nth-child(odd) .product-contents:nth-of-type(even) .price-labels {
+  left: -10px;
 }
 section.products .product-outer-container:nth-child(even) {
   background: #2e8100;
 }
-section.products .product-outer-container:nth-child(even) .product-contents {
+section.products .product-outer-container:nth-child(even) .product-contents:nth-of-type(odd) {
   flex-direction: row-reverse;
 }
-section.products .product-outer-container:nth-child(even) .price-labels {
-  left: 3%;
+section.products .product-outer-container:nth-child(even) .product-contents:nth-of-type(odd) .price-labels {
+  left: -10px;
+}
+section.products .product-outer-container:nth-child(even) .product-contents:nth-of-type(even) {
+  flex-direction: row;
+}
+section.products .product-outer-container:nth-child(even) .product-contents:nth-of-type(even) .price-labels {
+  right: -10px;
 }
 section.products .product-outer-container ~ .product-outer-container {
-  margin-top: 50px;
+  margin-top: 60px;
 }
 @media (max-width: 800px) {
   section.products {
     padding-bottom: 80px;
   }
-  section.products .product-outer-container {
-    margin-top: 70px;
-  }
   section.products .product-outer-container .product-contents {
     flex-direction: column !important;
   }
-  section.products .product-outer-container .price-labels {
-    bottom: -50px;
+  section.products .product-outer-container .product-contents .price-labels {
+    bottom: -80px !important;
+  }
+  section.products .product-outer-container .product-contents ~ .product-contents {
+    margin-top: 90px !important;
+  }
+  section.products .product-outer-container ~ .product-outer-container {
+    margin-top: 70px;
   }
 }
 
