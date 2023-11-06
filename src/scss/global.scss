@@ -545,7 +545,10 @@ header {
             }
         }
 
-        
+        // Handle occasions dropdown whose submenu would be behind logo without this
+        > li:nth-child(5).submenu-list .submenu, > li:nth-child(5).submenu-grid .submenu {
+            left: -4.5vw;
+        }
     }
 
     #mobile-nav-image {
