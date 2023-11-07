@@ -74,7 +74,7 @@ function setupData() {
     let videoPromises = [];
 
     for (const cake in data.portfolio) {
-        const { images, videos } = data.portfolio[cake];
+        const { images, videos, squareImage } = data.portfolio[cake];
         images.forEach((src, index) => {
             const { width, height } = sizeOf(`src/images/portfolio/${src}`); // sizeOf also gets orientation and file type
             data.portfolio[cake].images[index] = { src, aspectRatio: width / height }; 
@@ -93,6 +93,10 @@ function setupData() {
                         })
                 );
             });
+        }
+        if (squareImage) {
+            // Add 'square/' to path
+            data.portfolio[cake].squareImage = 'square/' + squareImage;
         }
     }
 

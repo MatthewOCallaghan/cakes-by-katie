@@ -319,6 +319,7 @@
     },
     "baby-bears": {
       "images": ["Baby-Bears.jpg"],
+      "squareImage": "Baby-Bears-square.jpg",
       "name": "Baby Bears"
     },
     "baby-shark-lullaby": {
@@ -440,7 +441,8 @@
     },
     "kirsten-buttercream": {
       "images": ["Kirsten-Buttercream.jpg"],
-      "name": "Kirsten -  Buttercream"
+      "name": "Kirsten -  Buttercream",
+      "squareImage": "Kirsten-Buttercream-square.jpg"
     },
     "lavender-dream": {
       "images": ["Lavender-Dream.jpg"],
@@ -726,6 +728,7 @@
     },
     "corporate-thank-you": {
       "images": ["Corporate-Thank-You.jpg"],
+      "squareImage": "Corporate-Thank-You-square.jpg",
       "name": "Corporate - Thank You"
     },
     "corporate-goodbye-and-thank-you": {
@@ -795,6 +798,7 @@
     },
     "be-my-valentine": {
       "images": ["Be-My-Valentine-Box.jpg", "Be-My-Valentine-Pattern.jpg"],
+      "squareImage": "Be-My-Valentine-Pattern-square.jpg",
       "name": "Be My Valentine"
     },
     "a-touch-of-pink-with-chocolate ": {
@@ -831,6 +835,7 @@
     },
     "adorable-flopsy-bunny": {
       "images": ["Adorable-Flopsy-Bunny.jpg"],
+      "squareImage": "Adorable-Flopsy-Bunny-square.jpg",
       "name": "Adorable Flopsy Bunny"
     },
     "birthday-baker": {
@@ -846,7 +851,8 @@
     },
     "ruby-reindeer": {
       "images": ["Ruby-Front.jpg", "Ruby-Top.jpg"],
-      "name": "Ruby reindeer"
+      "squareImage": "white-reindeer-square.jpg",
+      "name": "Roxy reindeer"
     },
     "birthday-shades-blue": {
       "images": [
@@ -946,6 +952,7 @@
     },
     "diamond-anniversary": {
       "images": ["Diamond-Anniversary.jpg"],
+      "squareImage": "Diamond-Anniversary-square.jpg",
       "name": "Diamond Anniversary",
       "videos": [
         {
