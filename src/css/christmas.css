@@ -192,6 +192,9 @@ section.products .deals .deal-row .deal-product .deal-product-name {
   section.products .product-outer-container .product-contents .price-labels {
     bottom: -80px !important;
   }
+  section.products .product-outer-container .product-contents.product-no-image {
+    padding-bottom: 50px;
+  }
   section.products .product-outer-container .product-contents ~ .product-contents {
     margin-top: 90px !important;
   }

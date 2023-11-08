@@ -242,6 +242,11 @@ section.products {
                 .price-labels {
                     bottom: -80px !important;
                 }
+
+                // Price label will overlap hamper text without this
+                &.product-no-image {
+                    padding-bottom: 50px;
+                }
             }
 
             .product-contents ~ .product-contents {
