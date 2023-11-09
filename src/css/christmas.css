@@ -19,7 +19,6 @@ section.products {
   background: #58cbff;
   text-align: center;
   color: #fff;
-  padding-bottom: 60px;
 }
 section.products #snow-particles {
   position: absolute;
@@ -183,9 +182,6 @@ section.products .deals .deal-row .deal-product .deal-product-name {
   font-size: 0.9em;
 }
 @media (max-width: 800px) {
-  section.products {
-    padding-bottom: 80px;
-  }
   section.products .product-outer-container .product-contents {
     flex-direction: column !important;
   }

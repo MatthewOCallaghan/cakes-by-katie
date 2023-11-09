@@ -27,7 +27,6 @@ section.products {
     background: #58cbff;
     text-align: center;
     color: #fff;
-    padding-bottom: 60px;
 
     #snow-particles {
         position: absolute;
@@ -231,8 +230,6 @@ section.products {
     }
 
     @media (max-width: 800px) {
-
-        padding-bottom: 80px;
 
         .product-outer-container {
 
