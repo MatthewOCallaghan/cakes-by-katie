@@ -1,5 +1,5 @@
 // Uses Babel so we can use ES6 (explained at https://markgoodyear.com/2015/06/using-es6-with-gulp/)
-
+import path from 'path';
 import fs from 'fs';
 import { src, dest, watch, series, parallel } from 'gulp';
 import browserSync from 'browser-sync';
@@ -17,6 +17,7 @@ import cssnano from 'cssnano';
 import revAll from 'gulp-rev-all'; // Puts hashes in filenames so browser's cache can hold assets for a long time but will fetch new assets if they have been updated (because file names will be different)
 import imagemin from 'gulp-imagemin'; // Keeping this on v7 as importing v8 caused issues
 import cache from 'gulp-cache';
+import filter from 'gulp-filter';
 import del from 'del';
 import nunjucksRender from 'gulp-nunjucks-render';
 import htmlPrettify from 'gulp-html-prettify';
@@ -35,24 +36,16 @@ let data;
 const browserSyncInstance = browserSync.create();
 const sass = gulpSass(sassCompiler);
 
-function setupBrowserSync(cb) {
-    browserSyncInstance.init({
-        server: {
-            baseDir: 'src',
-            serveStaticOptions: {
-                extensions: ['html']
-            }
-        }
-    });
-    cb();
-}
 
 
+/* -------------------------------------------------------------------------- */
+/*                               /src -> /local                               */
+/* -------------------------------------------------------------------------- */
 
 function processSass() {
     return src('src/scss/**/*.scss')
             .pipe(sass({ includePaths: ['node_modules'] }))
-            .pipe(dest('src/css'))
+            .pipe(dest('local/css'))
             .pipe(browserSyncInstance.reload({
                 stream: true
             }));
@@ -125,7 +118,7 @@ function processNunjucks() {
                 manageEnv: manageEnvironment
             }))
             .pipe(htmlPrettify()) // Corrects indentation to make HTML more readable
-            .pipe(dest('src'))
+            .pipe(dest('local'))
             .pipe(browserSyncInstance.reload({
                 stream: true
             }));
@@ -136,28 +129,72 @@ const createAndTransferNewImages = () => {
     const widths = WIDTHS;
     const formats = FORMATS;
 
-    return src('src/new-images/**/*')
-            .pipe(gulpIf(['**/*.*', '!*.svg'], cache(sharpResponsive({
-                includeOriginalFile: true,
-                formats: widths.map(width => 
-                    formats.map(format => ({
-                        width,
-                        format,
-                        rename: { suffix: `-${width}`}
-                    }))
-                ).flat()
-            }))))
-            .pipe(dest('src/images'))
+    // Images already in /local/images
+    const processedImages = [];
+
+    const getFilesInDirectory = (directory) => {
+        fs.readdirSync(directory).forEach(file => {
+            const absolute = path.join(directory, file);
+            if (fs.statSync(absolute).isDirectory()) {
+                return getFilesInDirectory(absolute);
+            } else {
+                return processedImages.push(absolute.split('/images/')[1]);
+            }
+        });
+    }
+    getFilesInDirectory('local/images');
+    
+
+    return src('src/images/**/*')
+        .pipe(filter(file => {
+            const image = file.path.split('/images/')[1];
+            return !processedImages.includes(image);
+        }))
+        .pipe(
+            gulpIf(
+                ['**/*.*', '!*.svg'],
+                sharpResponsive({
+                    includeOriginalFile: true,
+                    formats: widths.map(width => 
+                        formats.map(format => ({
+                            width,
+                            format,
+                            rename: { suffix: `-${width}`}
+                        }))
+                    ).flat()
+                })
+            )
+        )
+        .pipe(dest('local/images'))
+        .pipe(browserSyncInstance.reload({
+            stream: true
+        }));            
+}
+
+// Javascript files and videos just get moved as they are
+const moveRemainingFilesToLocal = () => {
+    return src(['src/**/*.mp4', 'src/**/*.js'])
+            .pipe(dest('local'))
             .pipe(browserSyncInstance.reload({
                 stream: true
             }));
 }
 
-const cleanNewImages = () => {
-    return del(['src/new-images/**/*.*', '!src/new-images']);
-}
+/* -------------------------------------------------------------------------- */
+/*                               Viewing locally                              */
+/* -------------------------------------------------------------------------- */
 
-const processNewImages = series(createAndTransferNewImages, cleanNewImages);
+function setupBrowserSync(cb) {
+    browserSyncInstance.init({
+        server: {
+            baseDir: 'local',
+            serveStaticOptions: {
+                extensions: ['html']
+            }
+        }
+    });
+    cb();
+}
 
 function reload(cb) {
     browserSyncInstance.reload();
@@ -168,18 +205,26 @@ function watchFiles() {
     watch('src/scss/**/*.scss', processSass);
     watch('src/data.json', series(setupData, processNunjucks));
     watch(['src/pages/**/*.njk', 'src/templates/**/*.njk'], processNunjucks);
-    watch('src/js/**/*.js', reload);
-    watch('src/new-images/**/*', processNewImages);
+    watch(['src/js/**/*', 'src/videos/**/*'], reload);
+    watch('src/images/**/*', createAndTransferNewImages);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                     Build (/local -> /dist) and deploy                     */
+/* -------------------------------------------------------------------------- */
+
+function cleanDist() {
+    return del('dist');
 }
 
 function buildFiles() {
     const postcssPlugins = [autoprefixer(), cssnano()];
-    return src(['src/**/*.html', 'src/images/**/*', 'src/videos/**/*'])
+    return src(['local/**/*.html', 'local/images/**/*', 'local/videos/**/*'])
             .pipe(gulpIf('*.html', useref()))
             .pipe(gulpIf('*.html', htmlmin({ minifyJS: true, minifyCSS: true, removeComments: true, collapseWhitespace: true })))
             .pipe(gulpIf('*.js', babel({ presets: ['@babel/env']})))
             .pipe(gulpIf('*.js', uglify()))
-            .pipe(gulpIf('*.css', purgecss({ content: ['src/**/*.html', 'src/**/*.js'] }))) // This should go in postcssPlugins but having tried briefly I couldn't get it to work
+            .pipe(gulpIf('*.css', purgecss({ content: ['local/**/*.html', 'local/**/*.js'] }))) // This should go in postcssPlugins but having tried briefly I couldn't get it to work
             .pipe(gulpIf('*.css', postcss(postcssPlugins)))
             .pipe(gulpIf('*.+(png|jpg|gif|svg)', cache(imagemin({ interlaced: true }))))
             // Can't add hashes to portfolio content as script needs to know what the filenames are called
@@ -189,8 +234,8 @@ function buildFiles() {
 
 // View CSS rejected by PurgeCSS
 function rejectedCSS() {
-    return src(['src/css/*.css'])
-            .pipe(gulpIf('*.css', purgecss({ content: ['src/**/*.html', 'src/**/*.js'], rejected: true }))) // This should go in postcssPlugins but having tried briefly I couldn't get it to work
+    return src(['local/css/*.css'])
+            .pipe(gulpIf('*.css', purgecss({ content: ['local/**/*.html', 'local/**/*.js'], rejected: true })))
             .pipe(dest('rejected-css'));
 }
 
@@ -224,22 +269,22 @@ function deploy() {
         // .pipe(connection.clean(['/**/*.js', '/**/*.css', '/images/**/*', '/videos/**/*'].map(p => remoteFolder + p), './dist', { base: remoteFolder })); // Remove remote files with no local version
 }
 
-function cleanDist() {
-    return del('dist');
-}
+/* -------------------------------------------------------------------------- */
+/*                                    Tasks                                   */
+/* -------------------------------------------------------------------------- */
 
 export const clearCache = (cb) => {
     return cache.clearAll(cb);
 }
 
-export const build = series(cleanDist, parallel(processSass, series(processNewImages, setupData, processNunjucks)), buildFiles);
+const updateLocalFolder = parallel(processSass, createAndTransferNewImages, series(setupData, processNunjucks), moveRemainingFilesToLocal);
 
-export default series(parallel(processSass, series(processNewImages, setupData, processNunjucks)), setupBrowserSync, watchFiles);
+export const build = series(cleanDist, updateLocalFolder, buildFiles);
+
+export default series(updateLocalFolder, setupBrowserSync, watchFiles);
 
 exports.deploy = deploy;
 
 exports.rejectedCSS = rejectedCSS;
 
-exports.clearCache = clearCache;
-
-exports.processNewImages = processNewImages;
+exports.createAndTransferNewImages = createAndTransferNewImages;
