@@ -58,15 +58,15 @@
         },
         {
           "question": "Do you cater for any special dietary requirements?",
-          "answer": "<p>Yes, I make gluten free and diary free cakes. I also offer a reduced flavour range for vegans. I encourage you to get in touch and we can discuss whatever requirements you have. Please note that whilst the cakes will be made using free from products, they're made in a kitchen where the allergens are present.</p>"
+          "answer": "<p>Yes, I make gluten free and dairy free cakes. I also offer a reduced flavour range for vegans. I encourage you to get in touch and we can discuss whatever requirements you have. Please note that whilst the cakes will be made using free from products, they're made in a kitchen where the allergens are present.</p>"
         },
         {
           "question": "Do you deliver?",
-          "answer": "<p>Wedding cakes will be delivered and set up at the venue. All other cakes are on a collection basis, though exceptions can be made in certain circumstances for a fee.</p>"
+          "answer": "<p>Wedding cakes will be delivered and set up at the venue. All other cakes are on a collection basis, but I can deliver for a fee.</p>"
         },
         {
           "question": "What products do you offer?",
-          "answer": "<p>I offer celebration cakes and cupcakes in a range of flavours (I don't produce fresh cream or fresh fruit cakes).</p>"
+          "answer": "<p>I offer wedding cakes, celebration cakes and cupcakes in a range of flavours (I don't produce fresh cream or fresh fruit cakes).</p>"
         },
         {
           "question": "How do I order a cake?",
@@ -75,6 +75,10 @@
         {
           "question": "What cake design should I go for?",
           "answer": "<p>Whether you know exactly what you want or have absolutely no idea, I'll work with you to create the perfect design for your occasion. If you're looking for inspiration why not check out my <a href=\"/portfolio\">portfolio page</a>?</p>"
+        },
+        {
+          "question":"What are your payment terms?",
+          "answer": "Payment is by bank transfer. For celebration cakes and cupcakes I ask for a 50% deposit on order confirmation to secure your booking with the balance payable one week prior to collection/delivery. For wedding cakes, a £100 date reservation deposit is payable when you decide to book with me, with the balance due one month before your wedding. All deposits are non-refundable."
         }
       ]
     },
@@ -311,11 +315,19 @@
     },
     "all-wrapped-up": {
       "images": ["All-Wrapped-Up.jpg"],
-      "name": "All Wrapped Up"
+      "name": "All Wrapped Up",
+      "testimonial": {
+        "text": "Thank you so much for making the amazing birthday cake for Nic's birthday! She was over the moon with it. We took it with us to her mother's for tea and cake and everyone was amazed at how well presented it was. It tasted amazing too.",
+        "name": "Scott"
+     }
     },
     "aloha-stitch": {
       "images": ["Aloha-Stitch.jpg"],
-      "name": "Aloha Stitch"
+      "name": "Aloha Stitch",
+      "testimonial": {
+        "text": "Just wanted to say thank you so much for making the cake! It was absolutely delicious and Emily loved the design.",
+        "name": "Alex"
+     }
     },
     "baby-bears": {
       "images": ["Baby-Bears.jpg"],
@@ -340,7 +352,11 @@
     },
     "bon-voyage-corfu": {
       "images": ["Bon-Voyage-Corfu.jpg"],
-      "name": "Bon Voyage - Corfu"
+      "name": "Bon Voyage - Corfu",
+      "testimonial": {
+        "text": "Just wanted to say a massive thank you for making my mum's 60th birthday cake…it was amazing, it looked fab and tasted amazing. Your buttercream is to die for…my mum was over the moon with it.",
+        "name": "Penny"
+     }
     },
     "boy-or-girl": {
       "images": ["Boy-or-Girl.jpg"],
@@ -364,11 +380,20 @@
     },
     "cocoa-and-cream-mini": {
       "images": ["Cocoa-and-Cream-Mini.jpg"],
-      "name": "Cocoa & Cream - Mini"
+      "name": "Cocoa & Cream - Mini",
+      "testimonial": {
+        "text": "The cake was a wonderful success. Looked and tasted beautiful! Thanks Katie",
+        "name": "Anne"
+     }
     },
     "colourful-precision": {
       "images": ["Colourful-Precision.jpg"],
-      "name": "Colourful Precision"
+      "name": "Colourful Precision",
+      "testimonial": {
+          "text": "Another party and another incredible cake, thank you so much for William’s cake - he loved it and the best sponge!",
+          "name": "Sarah",
+          "location": "Headley"
+        }
     },
     "congratulations-pink": {
       "images": ["Congratulations-Pink.jpg"],
@@ -392,7 +417,12 @@
     },
     "dolphin-splash": {
       "images": ["Dolphin-Splash.jpg"],
-      "name": "Dolphin Splash"
+      "name": "Dolphin Splash",
+      "testimonial": {
+          "text": "Thank you for the fantastic cakes! The boys loved them. So many compliments from the parents on how tasty the cake was.",
+          "name": "Lisa",
+          "location": "Thatcham"
+        }
     },
     "dreamland-express": {
       "images": ["Dreamland-Express.jpg"],
@@ -424,7 +454,11 @@
     },
     "ferrero-indulgence": {
       "images": ["Ferrero-Indulgence.jpg"],
-      "name": "Ferrero Indulgence"
+      "name": "Ferrero Indulgence",
+      "testimonial": {
+        "text": "The cake is incredible. Thank you so much!! Delicious!",
+        "name": "Rob"
+     }
     },
     "fluttering-lilac": {
       "images": ["Fluttering-Lilac.jpg"],
@@ -450,11 +484,21 @@
     },
     "little-leonard": {
       "images": ["Little-Leonard.jpg"],
-      "name": "Little Leonard"
+      "name": "Little Leonard",
+       "testimonial": {
+          "text": "Thank you SO much for the lion cake last weekend, it was absolutely delicious, lots of compliments and everyone loved it - thank you!",
+          "name": "Sarah",
+          "location": "Headley"
+        }
     },
     "milk-and-white": {
       "images": ["Milk-and-White.jpg"],
-      "name": "Milk & White"
+      "name": "Milk & White",
+      "testimonial": {
+          "text": "Just wanted to say a big thank you on behalf of my son and daughter-in-law for the cake. It was incredible and they were delighted with it.",
+          "name": "Anne",
+          "location": "Newbury"
+        }
     },
     "pink-birthday-mix": {
       "images": ["Pink-Birthday-Mix.jpg"],
@@ -490,7 +534,13 @@
     },
     "simply-ombre-peter-rabbit": {
       "images": ["Simply-Ombre-Peter-Rabbit.jpg"],
-      "name": "Simply Ombré - Peter Rabbit"
+      "name": "Simply Ombré - Peter Rabbit",
+      "testimonial": {
+          "text": "Just wanted to say a very big thank you for creating a wonderful first birthday cake for George. I had so many people asking where it was from, and it tasted delicious. Needless to say it’s all gone!",
+          "name": "Lucy",
+          "location": "Cold Ash"
+        }
+
     },
     "subtle-in-gold": {
       "images": ["Subtle-in-Gold.jpg"],
@@ -570,11 +620,20 @@
     },
     "cocoa-and-cream": {
       "images": ["Cocoa-and-Cream.jpg"],
-      "name": "Cocoa and Cream"
+      "name": "Cocoa and Cream",
+      "testimonial": {
+        "text": "Just wanted to say thank you for doing our birthday cake! It looked and tasted amazing, and your suggestions of how much we'd need were spot on as there was just a few slices left (which got eaten today!!).",
+        "name": "Kristy",
+        "location": "Chieveley"
+      }
     },
     "congrats-police": {
       "images": ["Congrats-Police.jpg"],
-      "name": "Congrats - Police"
+      "name": "Congrats - Police",
+      "testimonial": {
+        "text": "Just wanted to say thank you so much, the cupcakes were amazing and my partner was really surprised! They didn't last long at all. We'll definitely be using you again for future events/birthdays!",
+        "name": "Alexandra"
+     }
     },
     "cosmo": {
       "images": ["Cosmo.jpg"],
@@ -648,7 +707,11 @@
     },
     "subtle-in-pink": {
       "images": ["Subtle-in-Pink.jpg"],
-      "name": "Subtle in Pink"
+      "name": "Subtle in Pink",
+      "testimonial": {
+        "text": "Wanted to say a huge thank you for the cakes. They were amazing and went down very well!",
+        "name": "Paul"
+     }
     },
     "throwback": {
       "images": ["Throwback.jpg"],
