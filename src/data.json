@@ -614,7 +614,12 @@
     },
     "petals-and-promises": {
       "images": ["Petals-and-Promises.jpg"],
-      "name": "Petals & Promises"
+      "name": "Petals & Promises",
+      "testimonial": {
+        "text": "Thank you so much for the stunning wedding cake, we were all delighted with it!",
+        "name": "June",
+        "location": "Thatcham"
+      }
     },
     "prime-ice-pop": {
       "images": ["Prime-Ice-Pop.jpg"],
@@ -630,7 +635,12 @@
     },
     "simply-yellow": {
         "images": ["Simply-Yellow.jpg", "Simply-Yellow-Emboss.jpg"],
-        "name": "Simply Yellow"
+        "name": "Simply Yellow",
+        "testimonial": {
+          "text": "Just wanted to thank you for the birthday cakes. They were fabulous! They looked amazing and also tasted wonderful. I was lucky to get a piece to try myself as they were so popular with everyone.",
+          "name": "Sue",
+          "location": "Newbury"
+        }
     },
     "splodge-and-co": {
       "images": ["Splodge-and-co.jpg"],
