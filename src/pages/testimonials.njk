@@ -16,7 +16,7 @@
                     </div>
                     <div class="quote">
                         <blockquote>{{ testimonial.text }}</blockquote>
-                        <span>{{ testimonial.name }}, {{ testimonial.location }}</span>
+                        <span>{{ testimonial.name }}{% if testimonial.location %}, {{ testimonial.location }}{% endif %}</span>
                     </div>
                 </div>
             </div>
