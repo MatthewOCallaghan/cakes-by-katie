@@ -132,7 +132,7 @@ const openModal = ({ target }) => {
     if (testimonialQuote) {
         testimonial.style.display = 'block';
         modal.querySelector('blockquote').innerText = testimonialQuote;
-        modal.querySelector('span').innerText = `${testimonialCustomer}, ${testimonialLocation}`;
+        modal.querySelector('span').innerText = `${testimonialCustomer}${testimonialLocation ? `, ${testimonialLocation}` : ''}`;
     } else {
         testimonial.style.display = 'none';
     }
