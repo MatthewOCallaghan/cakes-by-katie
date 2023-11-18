@@ -25,7 +25,7 @@ import processData from 'gulp-data';
 import sharpResponsive from 'gulp-sharp-responsive';
 import sizeOf from 'image-size';
 import getVideoDimensions from 'get-media-dimensions';
-import { FORMATS, getSizesAttribute, getSrcsetAttribute, WIDTHS } from './utils/images';
+import { FORMATS, getSizesAttribute, getSrcsetAttribute, getWidthsArrayForImagePath, WIDTHS } from './utils/images';
 import { removeExtension } from './utils/files';
 
 import ftp from 'vinyl-ftp';
@@ -55,7 +55,6 @@ function setupData() {
     data = JSON.parse(fs.readFileSync('./src/data.json', 'utf8'));
 
     data.imageFormats = {
-        widths: WIDTHS,
         formats: FORMATS,
         defaultFormat: FORMATS[FORMATS.length - 1]
     };
@@ -102,7 +101,7 @@ function processNunjucks() {
 
         environment.addFilter('removeExtension', removeExtension);
 
-        environment.addFilter('createSrcset', getSrcsetAttribute);
+        environment.addGlobal('createSrcset', getSrcsetAttribute);
 
         environment.addFilter('createSizes', getSizesAttribute);
 
@@ -124,39 +123,94 @@ function processNunjucks() {
             }));
 }
 
+/* --------------------------------- Images --------------------------------- */
+
+// Get all files in /images directory in either src/ or local/
+const getFilesInImagesDirectory = (directory, array = []) => {
+    fs.readdirSync(directory).forEach(file => {
+        const absolute = path.join(directory, file);
+        if (fs.statSync(absolute).isDirectory()) {
+            return getFilesInImagesDirectory(absolute, array);
+        } else {
+            return array.push(absolute.split('/images')[1]);
+        }
+    });
+    return array;
+}
+
+// Delete images from /local that are no longer needed
+const cleanLocalImages = () => {
+    const srcImages = getFilesInImagesDirectory('src/images');
+    const localImages = getFilesInImagesDirectory('local/images');
+    
+    const localImagesToRemove = localImages.filter(image => {
+        const match = image.match(/^\/(?<path>.+\/)*(?<name>.+)-(?<width>\d+)\.(?<extension>\w+)$/);
+        if (match) {
+            const { path, name, width, extension } = match.groups;
+            const validWidths = getWidthsArrayForImagePath(image);
+            // Delete image if original image is no longer in /src or we no longer use this format or size
+            return !srcImages.find(srcImage => removeExtension(srcImage) === `/${path}${name}`) || !FORMATS.includes(extension) || !validWidths.includes(parseInt(width));
+        }
+        return false;
+    });
+
+    if (localImagesToRemove.length > 0) {
+        console.log(`Removing ${localImagesToRemove.length} image(s) from /local/images: ${localImagesToRemove.join(', ')}`);
+    }
+
+    return del(localImagesToRemove.map(image => `local/images/${image}`));
+}
+
+// Move new images to /local
+// Includes building all required formats and sizes
 const createAndTransferNewImages = () => {
 
-    const widths = WIDTHS;
-    const formats = FORMATS;
-
     // Images already in /local/images
-    const processedImages = [];
-
-    const getFilesInDirectory = (directory) => {
-        fs.readdirSync(directory).forEach(file => {
-            const absolute = path.join(directory, file);
-            if (fs.statSync(absolute).isDirectory()) {
-                return getFilesInDirectory(absolute);
-            } else {
-                return processedImages.push(absolute.split('/images/')[1]);
-            }
-        });
-    }
-    getFilesInDirectory('local/images');
+    const localImages = getFilesInImagesDirectory('local/images');
     
+    // Folders for which we use different widths than default
+    const imageFoldersWithUnqiueWidthsArray = Object.keys(WIDTHS).filter(key => key !== 'default');
 
-    return src('src/images/**/*')
-        .pipe(filter(file => {
-            const image = file.path.split('/images/')[1];
-            return !processedImages.includes(image);
-        }))
-        .pipe(
+    // Get all /src images and filter out any that we already have (along with all its formats and sizes) in /local
+    let stream = src('src/images/**/*.*')
+                        .pipe(filter(file => {
+                            const image = file.path.split('/images')[1];
+                            
+                            // Process image if it is not in /local folder...
+                            let keep = !localImages.includes(image);
+                            // ... or if we are missing any required format/size
+                            if (!keep && !image.endsWith('.svg')) {
+                                const imageWithoutExtension = removeExtension(image);
+                                const widths = getWidthsArrayForImagePath(file.path);
+                                keep = !FORMATS.every(format => widths.every(width => localImages.includes(`${imageWithoutExtension}-${width}.${format}`)));
+                            }
+                            if (keep) {
+                                if (image.endsWith('.svg')) {
+                                    // SVGs don't need other formats/sizes so only get copied
+                                    console.log(`Copying ${image}`);
+                                } else {
+                                    console.log(`Building images for ${image}`);
+                                }
+                            }
+                            return keep;
+                        }));
+
+    // Create different image formats and sizes for directories with custom sizes
+    for (const folder of imageFoldersWithUnqiueWidthsArray) {
+        stream = stream.pipe(
             gulpIf(
-                ['**/*.*', '!*.svg'],
+                // Only process images in relevant folder
+                (file) => {
+                    const image = file.path.split('/images')[1];
+
+                    const match = !image.endsWith('.svg') && image.startsWith(folder);
+    
+                    return match;
+                },
                 sharpResponsive({
                     includeOriginalFile: true,
-                    formats: widths.map(width => 
-                        formats.map(format => ({
+                    formats: WIDTHS[folder].map(width => 
+                        FORMATS.map(format => ({
                             width,
                             format,
                             rename: { suffix: `-${width}`}
@@ -164,12 +218,43 @@ const createAndTransferNewImages = () => {
                     ).flat()
                 })
             )
+        );
+    }
+
+    // Create different image formats and sizes for all remaining images
+    stream = stream.pipe(
+        gulpIf(
+            // Process images that are not in the directories already handled
+            (file) => {
+                const image = file.path.split('/images')[1];
+
+                return !image.endsWith('.svg') && !imageFoldersWithUnqiueWidthsArray.some(folder => image.startsWith(folder));
+            },
+            sharpResponsive({
+                includeOriginalFile: true,
+                formats: WIDTHS.default.map(width => 
+                    FORMATS.map(format => ({
+                        width,
+                        format,
+                        rename: { suffix: `-${width}`}
+                    }))
+                ).flat()
+            })
         )
+    )
+        // Output to /local/images
         .pipe(dest('local/images'))
         .pipe(browserSyncInstance.reload({
             stream: true
-        }));            
+        }));
+
+    return stream;
 }
+
+// Task for updating /local/images
+const updateLocalImages = parallel(cleanLocalImages, createAndTransferNewImages);
+
+/* ------------------------------ End of images ----------------------------- */
 
 // Javascript files and videos just get moved as they are
 const moveRemainingFilesToLocal = () => {
@@ -205,8 +290,8 @@ function watchFiles() {
     watch('src/scss/**/*.scss', processSass);
     watch('src/data.json', series(setupData, processNunjucks));
     watch(['src/pages/**/*.njk', 'src/templates/**/*.njk'], processNunjucks);
-    watch(['src/js/**/*', 'src/videos/**/*'], reload);
-    watch('src/images/**/*', createAndTransferNewImages);
+    watch(['src/js/**/*', 'src/videos/**/*'], moveRemainingFilesToLocal);
+    watch('src/images/**/*', updateLocalImages);
 }
 
 /* -------------------------------------------------------------------------- */
@@ -277,7 +362,7 @@ export const clearCache = (cb) => {
     return cache.clearAll(cb);
 }
 
-const updateLocalFolder = parallel(processSass, createAndTransferNewImages, series(setupData, processNunjucks), moveRemainingFilesToLocal);
+const updateLocalFolder = parallel(processSass, updateLocalImages, series(setupData, processNunjucks), moveRemainingFilesToLocal);
 
 export const build = series(cleanDist, updateLocalFolder, buildFiles);
 
@@ -287,4 +372,4 @@ exports.deploy = deploy;
 
 exports.rejectedCSS = rejectedCSS;
 
-exports.createAndTransferNewImages = createAndTransferNewImages;
+exports.updateLocalImages = updateLocalImages;

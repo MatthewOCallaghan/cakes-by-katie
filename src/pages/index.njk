@@ -72,7 +72,7 @@
     <section id="portfolio">
         <div id="grid">
             {% for item in portfolioSample %}
-                {{ pictureElement("portfolio/" + (portfolio[item].squareImage if portfolio[item].squareImage else portfolio[item].images[0].src), portfolio[item].name, "calc(max(min(17vw, 17vh), min(100vw, 600px))") }}
+                {{ pictureElement("portfolio/" + (portfolio[item].squareImage if portfolio[item].squareImage else portfolio[item].images[0].src), portfolio[item].name, "calc(max(min(17vw, 17vh), min(33vw, 200px)))") }}
             {% endfor %}
         </div>
         <a class="button" href="/portfolio" >See more of my portfolio</a>
@@ -98,7 +98,7 @@
                         </a>
                     </div>
                     <div class="christmas-collection-image">
-                        {{ pictureElement("christmas/christmas-collection.jpg", "Christmas product range", "400px") }}
+                        {{ pictureElement("christmas/christmas-collection.jpg", "Christmas product range", "min(400px, 40vw)") }}
                     </div>
                 </div>
             </div>
@@ -107,7 +107,7 @@
 
     <section id="contact">
         {% from "macros/fixed-background.njk" import fixedBackground with context %}
-        {{ fixedBackground("marble-background.jpg", "Marble background image") }}
+        {{ fixedBackground("backgrounds/marble-background.jpg", "Marble background image") }}
         <div class="contact-card">
             <div class="contact-card-first-half">
                 <div class="contact-card-first-half-inner">

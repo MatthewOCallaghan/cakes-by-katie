@@ -5,9 +5,11 @@
 
 /* -------------------------------- images.js ------------------------------- */
 
+const PORTFOLIO_IMAGE_WIDTHS = [150, 300, 700, 1000, 1920];
+
 // Get srcset attribute for <source> element
-const getSrcsetAttribute = (sizes, name, extension) =>
-    sizes.map(size => `${name}-${size}.${extension} ${size}w`).join(', ');
+const getSrcsetAttribute = (name, extension) =>
+    PORTFOLIO_IMAGE_WIDTHS.map(size => `${name}-${size}.${extension} ${size}w`).join(', ');
 
 
 // Get sizes attribute for <source> element
@@ -38,7 +40,7 @@ const getSizesAttribute = (recommendedSizes) => {
 // These should go from smallest file size to largest
 const FORMATS = ["avif", "webp"];
 
-const WIDTHS = [640, 768, 1024, 1366, 1600, 1920];
+
 
 /* ---------------------------- End of images.js ---------------------------- */
 
@@ -221,7 +223,7 @@ const createPictureElement = (container, filename, alt, recommendedSizes) => {
     FORMATS.forEach(format => {
         const source = document.createElement('source');
         source.type = `image/${format}`;
-        source.srcset = getSrcsetAttribute(WIDTHS, `images/portfolio/${removeExtension(filename)}`, format);
+        source.srcset = getSrcsetAttribute(`images/portfolio/${removeExtension(filename)}`, format);
         source.sizes = getSizesAttribute(recommendedSizes);
         picture.appendChild(source);
     });

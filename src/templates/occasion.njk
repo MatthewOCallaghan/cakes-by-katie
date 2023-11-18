@@ -8,7 +8,7 @@
         {% endif %}
 
         {% from "macros/picture.njk" import pictureElement with context %}
-        {{ pictureElement("portfolio/" ~ portfolio[pages[page].exampleCake].images[0].src, pages[page].imageAlt if pages[page].imageAlt else "Example " ~ pages[page].productName, "50vw") }}
+        {{ pictureElement("portfolio/" ~ portfolio[pages[page].exampleCake].images[0].src, pages[page].imageAlt if pages[page].imageAlt else "Example " ~ pages[page].productName, "min(40vw, 210px)") }}
 
         {% block text %}{% endblock %}
     </div>
