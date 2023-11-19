@@ -5,9 +5,11 @@
 
 /* -------------------------------- images.js ------------------------------- */
 
+const PORTFOLIO_IMAGE_WIDTHS = [150, 300, 700, 1000, 1920];
+
 // Get srcset attribute for <source> element
-const getSrcsetAttribute = (sizes, name, extension) =>
-    sizes.map(size => `${name}-${size}.${extension} ${size}w`).join(', ');
+const getSrcsetAttribute = (name, extension) =>
+    PORTFOLIO_IMAGE_WIDTHS.map(size => `${name}-${size}.${extension} ${size}w`).join(', ');
 
 
 // Get sizes attribute for <source> element
@@ -38,7 +40,7 @@ const getSizesAttribute = (recommendedSizes) => {
 // These should go from smallest file size to largest
 const FORMATS = ["avif", "webp"];
 
-const WIDTHS = [640, 768, 1024, 1366, 1600, 1920];
+
 
 /* ---------------------------- End of images.js ---------------------------- */
 
@@ -132,7 +134,7 @@ const openModal = ({ target }) => {
     if (testimonialQuote) {
         testimonial.style.display = 'block';
         modal.querySelector('blockquote').innerText = testimonialQuote;
-        modal.querySelector('span').innerText = `${testimonialCustomer}, ${testimonialLocation}`;
+        modal.querySelector('span').innerText = `${testimonialCustomer}${testimonialLocation ? `, ${testimonialLocation}` : ''}`;
     } else {
         testimonial.style.display = 'none';
     }
@@ -147,6 +149,12 @@ const openModal = ({ target }) => {
         container.classList.remove(TITLE_ONLY_CLASS);
     }
     
+    /*
+        To make mobile dynamic browser UA components appear when modal opens (which helps avoid strange rendering
+        issues and the page still being scrollable), we set body to fixed positioning. To maintain scroll appearance,
+        we set `top` CSS.
+    */
+    document.documentElement.style.setProperty('--portfolio-scroll', `-${document.querySelector('html').scrollTop}px`);
     document.body.classList.toggle(MODAL_OPEN_CLASS);
 
     // Reset scroll
@@ -159,7 +167,15 @@ const openModal = ({ target }) => {
 }
 
 const closeModal = () => {
+    // Check <body> `top` CSS to restore scroll position
+    const scroll = -parseInt(getComputedStyle(document.body).top);
     document.body.classList.toggle(MODAL_OPEN_CLASS);
+    const htmlTag = document.querySelector('html');
+
+    // Don't want to smooth scroll back
+    htmlTag.classList.remove('smooth-scroll');
+    htmlTag.scrollTop = scroll;
+    htmlTag.classList.add('smooth-scroll');
 }
 
 modal.querySelector('#modal-close').addEventListener('click', closeModal);
@@ -207,7 +223,7 @@ const createPictureElement = (container, filename, alt, recommendedSizes) => {
     FORMATS.forEach(format => {
         const source = document.createElement('source');
         source.type = `image/${format}`;
-        source.srcset = getSrcsetAttribute(WIDTHS, `images/portfolio/${removeExtension(filename)}`, format);
+        source.srcset = getSrcsetAttribute(`images/portfolio/${removeExtension(filename)}`, format);
         source.sizes = getSizesAttribute(recommendedSizes);
         picture.appendChild(source);
     });

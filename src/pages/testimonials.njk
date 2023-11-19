@@ -12,11 +12,11 @@
                     <div
                         class="image"
                     >
-                        {{ pictureElement("portfolio/" + portfolio[testimonial.cake].images[0].src, portfolio[testimonial.cake].name, { '800': 'calc(100vw - 120px)', '1100': 'calc(50vw - 60px)', any: '500px' }) }}
+                        {{ pictureElement("portfolio/" + portfolio[testimonial.cake].images[0].src, portfolio[testimonial.cake].name, { '800': 'calc(100vw - 120px)', any: '500px' }) }}
                     </div>
                     <div class="quote">
                         <blockquote>{{ testimonial.text }}</blockquote>
-                        <span>{{ testimonial.name }}, {{ testimonial.location }}</span>
+                        <span>{{ testimonial.name }}{% if testimonial.location %}, {{ testimonial.location }}{% endif %}</span>
                     </div>
                 </div>
             </div>

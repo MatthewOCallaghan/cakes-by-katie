@@ -2,7 +2,7 @@
   "pages": {
     "index": {
       "title": "Cakes by Katie",
-      "description": "Cake maker in Thatcham, West Berkshire, who offers high quality bespoke cakes for birthdays, weddings, anniversaries, christenings, or any occasion."
+      "description": "Cake maker in Thatcham, near Newbury and Reading, in West Berkshire, who offers high quality bespoke cakes and cupcakes for birthdays, weddings, anniversaries, corporate events, or any occasion."
     },
     "about": {
       "title": "About me | Cakes by Katie",
@@ -13,7 +13,7 @@
     },
     "portfolio": {
       "title": "Portfolio | Cakes by Katie",
-      "description": "See all the high quality bespoke cakes and cupcakes I have made for birthdays, weddings, anniversaries, christenings and other occasions. I am based in Thatcham, West Berkshire, near Newbury and Reading.",
+      "description": "See all the high quality bespoke cakes and cupcakes I have made for birthdays, weddings, anniversaries, corporate events and other occasions. I am based in Thatcham, West Berkshire, near Newbury and Reading.",
       "heading": {
         "text": "Portfolio",
         "image": {
@@ -58,15 +58,15 @@
         },
         {
           "question": "Do you cater for any special dietary requirements?",
-          "answer": "<p>Yes, I make gluten free and diary free cakes. I also offer a reduced flavour range for vegans. I encourage you to get in touch and we can discuss whatever requirements you have. Please note that whilst the cakes will be made using free from products, they're made in a kitchen where the allergens are present.</p>"
+          "answer": "<p>Yes, I make gluten free and dairy free cakes. I also offer a reduced flavour range for vegans. I encourage you to get in touch and we can discuss whatever requirements you have. Please note that whilst the cakes will be made using free from products, they're made in a kitchen where the allergens are present.</p>"
         },
         {
           "question": "Do you deliver?",
-          "answer": "<p>Wedding cakes will be delivered and set up at the venue. All other cakes are on a collection basis, though exceptions can be made in certain circumstances for a fee.</p>"
+          "answer": "<p>Wedding cakes will be delivered and set up at the venue. All other cakes are on a collection basis, but I can deliver for a fee.</p>"
         },
         {
           "question": "What products do you offer?",
-          "answer": "<p>I offer celebration cakes and cupcakes in a range of flavours (I don't produce fresh cream or fresh fruit cakes).</p>"
+          "answer": "<p>I offer wedding cakes, celebration cakes and cupcakes in a range of flavours (I don't produce fresh cream or fresh fruit cakes).</p>"
         },
         {
           "question": "How do I order a cake?",
@@ -75,6 +75,10 @@
         {
           "question": "What cake design should I go for?",
           "answer": "<p>Whether you know exactly what you want or have absolutely no idea, I'll work with you to create the perfect design for your occasion. If you're looking for inspiration why not check out my <a href=\"/portfolio\">portfolio page</a>?</p>"
+        },
+        {
+          "question":"What are your payment terms?",
+          "answer": "<p>Payment is by bank transfer. For celebration cakes and cupcakes I ask for a 50% deposit on order confirmation to secure your booking with the balance payable one week prior to collection/delivery. For wedding cakes, a £100 date reservation deposit is payable when you decide to book with me, with the balance due one month before your wedding. All deposits are non-refundable.</p>"
         }
       ]
     },
@@ -86,7 +90,7 @@
     },
     "pricing": {
       "title": "Pricing | Cakes by Katie",
-      "description": "Get an idea of how much your high quality celebration cake, wedding cake or cupcakes will cost from Cakes by Katie, a bespoke cake maker in Thatcham, West Berkshire.",
+      "description": "Get an idea of how much your high quality celebration cake, wedding cake or cupcakes will cost from Cakes by Katie, a bespoke cake maker in Thatcham, West Berkshire, near Newbury and Reading.",
       "heading": {
         "text": "Pricing",
         "image": {
@@ -97,7 +101,7 @@
     },
     "flavours": {
       "title": "Flavours | Cakes by Katie",
-      "description": "See the wide range of flavours that Cakes by Katie offers for their high quality bespoke cakes.",
+      "description": "See the wide range of flavours that Cakes by Katie, a cake maker in Thatcham, West Berkshire, offers for their high quality bespoke cakes. I also offer flavours as gluten free, dairy free or vegan.",
       "heading": {
         "text": "Flavours",
         "image": {
@@ -130,7 +134,7 @@
     },
     "occasions": {
       "title": "Occasions | Cakes by Katie",
-      "description": "I'm a cake maker in Thatcham, West Berkshire, offering high quality bespoke cakes for birthdays, weddings, anniversaries, christenings, or any occasion.",
+      "description": "I'm a cake maker in Thatcham, near Newbury and Reading, West Berkshire, offering high quality bespoke cakes for birthdays, weddings, anniversaries, corporate events, or any occasion.",
       "heading": {
         "text": "Occasions",
         "image": {
@@ -141,7 +145,7 @@
     },
     "birthday": {
       "title": "Birthday cakes and cupcakes | Cakes by Katie",
-      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke birthday cakes and cupcakes in a wide range of flavours and catering for specific dietary requirements.",
+      "description": "Cakes by Katie is a cake maker in Thatcham, Berkshire, near Newbury and Reading, offering bespoke birthday cakes and cupcakes in a wide range of flavours and catering for specific dietary requirements.",
       "heading": {
         "text": "Birthday cakes",
         "image": {
@@ -217,7 +221,7 @@
     },
     "wedding": {
       "title": "Wedding cakes | Cakes by Katie",
-      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke wedding cakes in a wide range of flavours and catering for specific dietary requirements. Wedding favours are also available.",
+      "description": "Cakes by Katie is a cake maker in Thatcham, Berkshire, near Newbury and Reading, offering bespoke wedding cakes in a wide range of flavours and catering for specific dietary requirements. Wedding favours are also available.",
       "heading": {
         "text": "Wedding cakes",
         "image": {
@@ -230,7 +234,7 @@
     },
     "anniversary": {
       "title": "Anniversary cakes | Cakes by Katie",
-      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke anniversary cakes and cupcakes in a wide range of flavours and catering for specific dietary requirements.",
+      "description": "Cakes by Katie is a cake maker in Thatcham, Berkshire, near Newbury and Reading, offering bespoke anniversary cakes and cupcakes in a wide range of flavours and catering for specific dietary requirements.",
       "heading": {
         "text": "Anniversary cakes",
         "image": {
@@ -258,7 +262,7 @@
     },
     "corporate": {
       "title": "Corporate cakes and cupcakes | Cakes by Katie",
-      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke cakes and cupcakes for corporate events in a wide range of flavours and catering for specific dietary requirements.",
+      "description": "Cakes by Katie is a cake maker in Thatcham, Berkshire, near Newbury and Reading, offering bespoke cakes and cupcakes for corporate events in a wide range of flavours and catering for specific dietary requirements.",
       "heading": {
         "text": "Corporate cakes and cupcakes",
         "image": {
@@ -272,7 +276,7 @@
     },
     "valentines": {
       "title": "Valentine's cakes and cupcakes | Cakes by Katie",
-      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke Valentine's cakes and cupcakes in a wide range of flavours and catering for specific dietary requirements.",
+      "description": "Cakes by Katie is a cake maker in Thatcham, Berkshire, near Newbury and Reading, offering bespoke Valentine's cakes and cupcakes in a wide range of flavours and catering for specific dietary requirements.",
       "heading": {
         "text": "Valentine's cakes",
         "image": {
@@ -286,7 +290,7 @@
     },
     "easter": {
       "title": "Easter cakes and cupcakes | Cakes by Katie",
-      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke Easter cakes and cupcakes in a wide range of flavours and catering for specific dietary requirements.",
+      "description": "Cakes by Katie is a cake maker in Thatcham, Berkshire, near Newbury and Reading, offering bespoke Easter cakes and cupcakes in a wide range of flavours and catering for specific dietary requirements.",
       "heading": {
         "text": "Easter cakes",
         "image": {
@@ -298,10 +302,10 @@
       "productName": "Easter cake"
     },
     "christmas": {
-      "title": "Christmas cakes and cupcakes | Cakes by Katie",
-      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke Christmas cakes and cupcakes in a wide range of flavours and catering for specific dietary requirements.",
+      "title": "Christmas cakes, cupcakes and gifts | Cakes by Katie",
+      "description": "Cakes by Katie is a cake maker in Thatcham, near Newbury and Reading, in Berkshire offering bespoke Christmas cakes, cupcakes and edible gifts in a wide range of flavours and catering for specific dietary requirements.",
       "heading": {
-        "text": "Christmas cakes",
+        "text": "Christmas",
         "image": {
           "path": "backgrounds/christmas-tree.jpg",
           "alt": "Christmas tree background"
@@ -312,7 +316,7 @@
     },
     "afternoon-tea": {
       "title": "Afternoon tea cakes and cupcakes | Cakes by Katie",
-      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke cakes and cupcakes for afternoon tea in a wide range of flavours and catering for specific dietary requirements.",
+      "description": "Cakes by Katie is a cake maker in Thatcham, near Newbury and Reading, in Berkshire offering bespoke cakes and cupcakes for afternoon tea in a wide range of flavours and catering for specific dietary requirements.",
       "heading": {
         "text": "Afternoon tea cakes",
         "image": {
@@ -326,8 +330,570 @@
     }
   },
   "portfolio": {
+
+    "all-aboard": {
+    "images": ["All-Aboard.jpg"],
+    "name": "All Aboard"
+    },
+    "all-wrapped-up": {
+      "images": ["All-Wrapped-Up.jpg"],
+      "name": "All Wrapped Up",
+      "testimonial": {
+        "text": "Thank you so much for making the amazing birthday cake for Nic's birthday! She was over the moon with it. We took it with us to her mother's for tea and cake and everyone was amazed at how well presented it was. It tasted amazing too.",
+        "name": "Scott"
+     }
+    },
+    "aloha-stitch": {
+      "images": ["Aloha-Stitch.jpg"],
+      "name": "Aloha Stitch",
+      "testimonial": {
+        "text": "Just wanted to say thank you so much for making the cake! It was absolutely delicious and Emily loved the design.",
+        "name": "Alex"
+     }
+    },
+    "baby-bears": {
+      "images": ["Baby-Bears.jpg"],
+      "squareImage": "Baby-Bears-square.jpg",
+      "name": "Baby Bears"
+    },
+    "baby-shark-lullaby": {
+      "images": ["Baby-Shark-Lullaby.jpg"],
+      "name": "Baby Shark Lullaby"
+    },
+    "barrel-of-blooms": {
+      "images": ["Barrel-of-Blooms.jpg"],
+      "name": "Barrel of Blooms"
+    },
+    "beautifully-rustic": {
+      "images": ["Beautifully-Rustic.jpg"],
+      "name": "Beautifully Rustic"
+    },
+    "bee-happy-with-pooh": {
+      "images": ["Bee-Happy-with-Pooh.jpg"],
+      "name": "Bee Happy with Pooh"
+    },
+    "bon-voyage-corfu": {
+      "images": ["Bon-Voyage-Corfu.jpg"],
+      "name": "Bon Voyage - Corfu",
+      "testimonial": {
+        "text": "Just wanted to say a massive thank you for making my mum's 60th birthday cake…it was amazing, it looked fab and tasted amazing. Your buttercream is to die for…my mum was over the moon with it.",
+        "name": "Penny"
+     }
+    },
+    "boy-or-girl": {
+      "images": ["Boy-or-Girl.jpg"],
+      "name": "Boy or Girl?"
+    },
+    "cheers-to-80": {
+      "images": ["Cheers-To-80.jpg"],
+      "name": "Cheers to 80"
+    },
+    "chocolate-and-peach": {
+      "images": ["Chocolate-and-Peach.jpg"],
+      "name": "Chocolate & Peach"
+    },
+    "chocolate-bliss-and-butterflies": {
+      "images": ["Chocolate-Bliss-and-Butterflies.jpg"],
+      "name": "Chocolate Bliss & Butterflies"
+    },
+    "classic-drips-embossed-choc": {
+      "images": ["Classic-Drips-Embossed-Choc.jpg"],
+      "name": "Classic Drips - Embossed Chocolate"
+    },
+    "cocoa-and-cream-mini": {
+      "images": ["Cocoa-and-Cream-Mini.jpg"],
+      "name": "Cocoa & Cream - Mini",
+      "testimonial": {
+        "text": "The cake was a wonderful success. Looked and tasted beautiful! Thanks Katie",
+        "name": "Anne"
+     }
+    },
+    "colourful-precision": {
+      "images": ["Colourful-Precision.jpg"],
+      "name": "Colourful Precision",
+      "testimonial": {
+          "text": "Another party and another incredible cake, thank you so much for William’s cake - he loved it and the best sponge!",
+          "name": "Sarah",
+          "location": "Headley"
+        }
+    },
+    "congratulations-pink": {
+      "images": ["Congratulations-Pink.jpg"],
+      "name": "Congratulations - Pink"
+    },
+    "country-life": {
+      "images": ["Country-Life.jpg"],
+      "name": "Country Life"
+    },
+    "delicate-in-pink": {
+      "images": ["Delicate-in-Pink.jpg"],
+      "name": "Delicate in Pink"
+    },
+    "desert-drift": {
+      "images": ["Desert-Drift.jpg"],
+      "name": "Desert Drift"
+    },
+    "doctors-orders": {
+      "images": ["Doctors-Orders.jpg"],
+      "name": "Doctor's Orders"
+    },
+    "dolphin-splash": {
+      "images": ["Dolphin-Splash.jpg"],
+      "name": "Dolphin Splash",
+      "testimonial": {
+          "text": "Thank you for the fantastic cakes! The boys loved them. So many compliments from the parents on how tasty the cake was.",
+          "name": "Lisa",
+          "location": "Thatcham"
+        }
+    },
+    "dreamland-express": {
+      "images": ["Dreamland-Express.jpg"],
+      "name": "Dreamland Express"
+    },
+    "edible-image-corona": {
+      "images": ["Edible-Image-Corona.jpg"],
+      "name": "Edible Image - Corona"
+    },
+    "edible-image-games": {
+      "images": ["Edible-Image-Games.jpg"],
+      "name": "Edible Image - Games"
+    },
+    "edible-image-gift-wrapped": {
+      "images": ["Edible-Image-Gift-Wrapped.jpg"],
+      "name": "Edible Image -  Gift Wrapped"
+    },
+    "edible-image-multi": {
+      "images": ["Edible-Image-Multi.jpg"],
+      "name": "Edible Image - Multi"
+    },
+    "enchanted": {
+      "images": ["Enchanted.jpg"],
+      "name": "Enchanted"
+    },
+    "fault-line-beige-and-gold": {
+      "images": ["Fault-Line-Beige-and-Gold.jpg"],
+      "name": "Fault Line - Beige & Gold"
+    },
+    "ferrero-indulgence": {
+      "images": ["Ferrero-Indulgence.jpg"],
+      "name": "Ferrero Indulgence",
+      "testimonial": {
+        "text": "The cake is incredible. Thank you so much!! Delicious!",
+        "name": "Rob"
+     }
+    },
+    "fluttering-lilac": {
+      "images": ["Fluttering-Lilac.jpg"],
+      "name": "Fluttering Lilac"
+    },
+  
+    "hazel": {
+      "images": ["Hazel.jpg"],
+      "name": "Hazel"
+    },
+    "jurassic-world": {
+      "images": ["Jurassic-World.jpg"],
+      "name": "Jurassic World"
+    },
+    "kirsten-buttercream": {
+      "images": ["Kirsten-Buttercream.jpg"],
+      "name": "Kirsten -  Buttercream",
+      "squareImage": "Kirsten-Buttercream-square.jpg"
+    },
+    "lavender-dream": {
+      "images": ["Lavender-Dream.jpg"],
+      "name": "Lavender Dream"
+    },
+    "little-leonard": {
+      "images": ["Little-Leonard.jpg"],
+      "name": "Little Leonard",
+       "testimonial": {
+          "text": "Thank you SO much for the lion cake last weekend, it was absolutely delicious, lots of compliments and everyone loved it - thank you!",
+          "name": "Sarah",
+          "location": "Headley"
+        }
+    },
+    "milk-and-white": {
+      "images": ["Milk-and-White.jpg"],
+      "name": "Milk & White",
+      "testimonial": {
+          "text": "Just wanted to say a big thank you on behalf of my son and daughter-in-law for the cake. It was incredible and they were delighted with it.",
+          "name": "Anne",
+          "location": "Newbury"
+        }
+    },
+    "pink-birthday-mix": {
+      "images": ["Pink-Birthday-Mix.jpg"],
+      "name": "Birthday Mix - Pink"
+    },
+    "puppy-in-pink": {
+      "images": ["Puppy-in-Pink.jpg"],
+      "name": "Puppy in Pink"
+    },
+    "rose-embellished-90": {
+      "images": ["Rose-Embellished-90.jpg"],
+      "name": "Rose Embellished 90"
+    },
+    "roses-and-ripples": {
+      "images": ["Roses-and-Ripples.jpg"],
+      "name": "Roses & Ripples"
+    },
+    "sage-and-lily": {
+      "images": ["Sage-and-Lily.jpg"],
+      "name": "Sage & Lily"
+    },
+    "silver-anniversary": {
+      "images": ["Silver-Anniversary.jpg"],
+      "name": "Silver Anniversary"
+    },
+    "simply-football-spurs": {
+      "images": ["Simply-Football-Spurs.jpg"],
+      "name": "Simply Football - Spurs"
+    },
+    "simply-football-watford": {
+      "images": ["Simply-Football-Watford.jpg"],
+      "name": "Simply Football - Watford"
+    },
+    "simply-ombre-peter-rabbit": {
+      "images": ["Simply-Ombre-Peter-Rabbit.jpg"],
+      "name": "Simply Ombré - Peter Rabbit",
+      "testimonial": {
+          "text": "Just wanted to say a very big thank you for creating a wonderful first birthday cake for George. I had so many people asking where it was from, and it tasted delicious. Needless to say it’s all gone!",
+          "name": "Lucy",
+          "location": "Cold Ash"
+        }
+
+    },
+    "subtle-in-gold": {
+      "images": ["Subtle-in-Gold.jpg"],
+      "name": "Subtle in Gold"
+    },
+    "super-mario": {
+      "images": ["Super-Mario.jpg"],
+      "name": "Super Mario"
+    },
+    "surfs-up": {
+      "images": ["Surfs-Up.jpg"],
+      "name": "Surf's Up"
+    },
+    "swirling-blue": {
+      "images": ["Swirling-Blue.jpg"],
+      "name": "Swirling Blue"
+    },
+    "tutu-and-ruffles": {
+      "images": ["Tutu-and-Ruffles.jpg"],
+      "name": "Tutu & Ruffles"
+    },
+    "twenty-nine": {
+      "images": ["Twenty-Nine.jpg"],
+      "name": "Twenty Nine"
+    },
+    "two-infinity": {
+      "images": ["Two-Infinity.jpg"],
+      "name": "Two Infinity"
+    },
+    "up-up-and-away": {
+      "images": ["Up-Up-and-Away.jpg"],
+      "name": "Up, Up & Away"
+    },
+    "cheers-corona": {
+      "images": ["Cheers-Corona.jpg"],
+      "name": "Cheers - Corona"
+    },
+    "21-mix": {
+      "images": ["21-Mix.jpg"],
+      "name": "21 Mix"
+    },
+    "anchor-aweigh": {
+      "images": ["Anchor-Aweigh.jpg"],
+      "name": "Anchor Aweigh"
+    },
+    "baby-shades": {
+      "images": ["Baby-Shades.jpg"],
+      "name": "Baby Shades"
+    },
+    "birthday-shades-lilac-blue": {
+      "images": ["Birthday-Shades-Lilac-Blue.jpg"],
+      "name": "Birthday Shades - Lilac/Blue"
+    },
+    "birthday-shades-sage-pink-shimmer": {
+      "images": ["Birthday-Shades-Sage-Pink-Shimmer.jpg"],
+      "name": "Birthday Shades - Sage/Pink Shimmer"
+    },
+    "blazing-birthday": {
+      "images": ["Blazing-Birthday.jpg"],
+      "name": "Blazing Birthday"
+    },
+    "blessed-in-blue": {
+      "images": ["Blessed-in-Blue.jpg"],
+      "name": "Blessed in Blue"
+    },
+    "bouquet-pink-mix": {
+      "images": ["Bouquet-Pink-Mix.jpg"],
+      "name": "Bouquet - Pink Mix"
+    },
+    "classic-drips-chocolate": {
+      "images": ["Classic-Drips-Chocolate.jpg"],
+      "name": "Classic Drips - Chocolate"
+    },
+    "classic-drips-gold-mini": {
+      "images": ["Classic-Drips-Gold-Mini.jpg"],
+      "name": "Classic Drips - Gold - Mini"
+    },
+    "cocoa-and-cream": {
+      "images": ["Cocoa-and-Cream.jpg"],
+      "name": "Cocoa and Cream",
+      "testimonial": {
+        "text": "Just wanted to say thank you for doing our birthday cake! It looked and tasted amazing, and your suggestions of how much we'd need were spot on as there was just a few slices left (which got eaten today!!).",
+        "name": "Kristy",
+        "location": "Chieveley"
+      }
+    },
+    "congrats-police": {
+      "images": ["Congrats-Police.jpg"],
+      "name": "Congrats - Police",
+      "testimonial": {
+        "text": "Just wanted to say thank you so much, the cupcakes were amazing and my partner was really surprised! They didn't last long at all. We'll definitely be using you again for future events/birthdays!",
+        "name": "Alexandra"
+     }
+    },
+    "cosmo": {
+      "images": ["Cosmo.jpg"],
+      "name": "Cosmo"
+    },
+    "daisy-daisy-daisy": {
+      "images": ["Daisy-Daisy-Daisy.jpg", "Daisy-Daisy-Daisy-no-num.jpg"],
+      "name": "Daisy, Daisy, Daisy"
+    },
+    "ditsy-pink": {
+      "images": ["Ditsy-Pink.jpg"],
+      "name": "Ditsy - Pink"
+    },
+    "fathers-day-cupcake-mix": {
+      "images": ["Fathers-Day-Cupcake-Mix.jpg"],
+      "name": "Father's Day Cupcake Mix"
+    },
+    "fault-line-green-and-gold": {
+      "images": ["Fault-Line-Green-and-Gold.jpg", "Fault-Line-Green-and-Gold-2.jpg"],
+      "name": "Fault Line - Green & Gold"
+    },
+    "fuchsia": {
+      "images": ["Fuchsia-2.jpg", "Fuchsia.jpg"],
+      "name": "Fuchsia"
+    },
+    "fun-guy": {
+      "images": ["Fun-Guy.jpg"],
+      "name": "Fun Guy"
+    },
+    "god-bless": {
+      "images": ["God-Bless.jpg"],
+      "name": "God Bless"
+    },
+    "kickin-beats-and-winning-streaks": {
+      "images": ["Kickin-Beats-and-Winning-Streaks.jpg"],
+      "name": "Kickin' Beats & Winning Streaks"
+    },
+    "petals-and-promises": {
+      "images": ["Petals-and-Promises.jpg"],
+      "name": "Petals & Promises",
+      "testimonial": {
+        "text": "Thank you so much for the stunning wedding cake, we were all delighted with it!",
+        "name": "June",
+        "location": "Thatcham"
+      }
+    },
+    "prime-ice-pop": {
+      "images": ["Prime-Ice-Pop.jpg"],
+      "name": "Prime - Ice Pop"
+    },
+    "prime-mix": {
+      "images": ["Prime-Mix.jpg"],
+      "name": "Prime Mix"
+    },
+    "prom": {
+      "images": ["Prom.jpg"],
+      "name": "Prom"
+    },
+    "simply-yellow": {
+        "images": ["Simply-Yellow.jpg", "Simply-Yellow-Emboss.jpg"],
+        "name": "Simply Yellow",
+        "testimonial": {
+          "text": "Just wanted to thank you for the birthday cakes. They were fabulous! They looked amazing and also tasted wonderful. I was lucky to get a piece to try myself as they were so popular with everyone.",
+          "name": "Sue",
+          "location": "Newbury"
+        }
+    },
+    "splodge-and-co": {
+      "images": ["Splodge-and-co.jpg"],
+      "name": "Splodge & Co."
+    },
+    "subtle-in-pink": {
+      "images": ["Subtle-in-Pink.jpg"],
+      "name": "Subtle in Pink",
+      "testimonial": {
+        "text": "Wanted to say a huge thank you for the cakes. They were amazing and went down very well!",
+        "name": "Paul"
+     }
+    },
+    "throwback": {
+      "images": ["Throwback.jpg"],
+      "name": "Throwback"
+    },
+    "fit-for-a-princess": {
+      "images": ["Fit-for-a-Princess.jpg"],
+      "name": "Fit for a Princess"
+    },
+    "puppy-paws": {
+      "images": ["Puppy-Paws.jpg"],
+      "name": "Puppy Paws"
+    },
+    "for-the-love-of-dogs": {
+      "images": ["For-the-Love-of-Dogs.jpg"],
+      "name": "For the love of dogs"
+    },
+    "howzat": {
+      "images": ["Howzat.jpg"],
+      "name": "Howzat"
+    },
+    "green-fingers": {
+      "images": ["Green-Fingers.jpg"],
+      "name": "Green Fingers"
+    },
+    "football-rules": {
+      "images": ["Football-Rules.jpg"],
+      "name": "Football Rules"
+    },
+    "milk-float": {
+      "images": ["The-Fastest-Milk-Float-in-the-West.jpg"],
+      "name": "The Fastest Milk Float in the West"
+    },
+    "pattern-piping": {
+      "images": ["Pattern-Piping.jpg"],
+      "name": "Pattern Piping"
+    },
+    "leonard": {
+      "images": ["Leonard.jpg"],
+      "name": "Leonard"
+    },
+    "semi-naked-drips": {
+      "images": ["Semi-Naked-Drip.jpg"],
+      "name": "Semi Naked - Drips",
+       "testimonial": {
+        "text": "THANK YOU SO MUCH for the cake. It looked beautiful thank you and it's all gone! Everyone enjoyed eating it. Sorry I didn't see you Saturday, but thank you, it was fantastic!!",
+        "name": "Robyn",
+        "location": "Thatcham"
+      }
+    },
+    "rowing-for-cambridge":{
+      "images": ["rowing-for-cambridge.jpg"],
+      "name": "Rowing for Cambridge",
+      "testimonial": {
+        "text": "Just to say my customer was very complimentary about your cake, so thank you so much for squeezing us in. Will definitely be using your services again.",
+        "name": "Forever and a day Events",
+        "location": "Reading"
+      }
+    },
+    "box-of-lennies": {
+      "images": ["A-Box-of-Lennies.jpg"],
+      "name": "A Box of Lennies"
+    },
+    "classic-drips-gold": {
+      "images": ["Classic-Drips-Gold.jpg"],
+      "name": "Classic Drips - Gold"
+    },
+    "hole-in-one": {
+      "images": ["A-Hole-in-One.jpg"],
+      "name": "A Hole in One"
+    },
+    "boxed-pretty-in-pink": {
+      "images": ["Boxed-Pretty-in-Pink-Tag.jpg", "Boxed-Pretty-in-Pink-Ribbon.jpg", "Boxed-Pretty-in-Pink-Open.jpg"],
+      "name": "Boxed - Pretty in Pink"
+    },
+    "bijou": {
+      "images": ["Bijou.jpg"],
+      "name": "Bijou"
+    },
+    "corporate-cupcakes-colour-set": {
+      "images": ["Corporate-Cupcakes-Colour-Set.jpg"],
+      "name": "Corporate Cupcakes - Colour Set"
+    },
+    "arc-de-fleur": {
+      "images": ["Arc-De-Fleur.jpg"],
+      "name": "Arc de Fleur"
+    },
+    "corporate-thank-you": {
+      "images": ["Corporate-Thank-You.jpg"],
+      "squareImage": "Corporate-Thank-You-square.jpg",
+      "name": "Corporate - Thank You"
+    },
+    "corporate-goodbye-and-thank-you": {
+      "images": ["Corporate-Goodbye-and-Good-Luck.jpg"],
+      "name": "Corporate - Goodbye & Thank You"
+    },
+    "a-touch-of-pink-birthday-edition": {
+      "images": ["A-Touch-of-Pink-Birthday-Edition.jpg"],
+      "name": "A Touch of Pink - Birthday Edition"
+    },
+    "a-touch-of-pink-with-chocolate": {
+      "images": ["A-Touch-of-Pink-with-Chocolate-Name.jpg"],
+      "name": "A Touch of Pink with Chocolate"
+    },
+    "harry-potter-gryffindor": {
+      "images": ["Harry-Potter-Gryffindor-Edition.jpg", "Harry-Potter-Gryffindor-2.jpg"],
+      "name": "Harry Potter - Gryffindor Edition"
+    },
+    "football-print-spurs": {
+      "images": ["Football-Print-Spurs.jpg"],
+      "name": "Football Print - Spurs",
+      "testimonial":{
+        "text": "Just wanted to thank you for the wonderful cake! It was perfect and tasted amazing.",
+        "name": "Claire",
+        "location": "Thatcham"
+      }
+    },
+    "shades-of-chocoate-narrow": {
+      "images": ["Shades-of-Chocolate-Narrow.jpg"],
+      "name": "Shades of Chocolate - Narrow"
+    },
+    "chocolate-decadence-milestone": {
+      "images": ["Chocolate-Decadence-Milestone.jpg"],
+      "name": "Chocolate Decadence - Milestone",
+      "testimonial": {
+        "text": "A huge thank you for the absolutely stunning cake; it's really taken my breath away. It was certainly a centre piece, it had lots of great comments and tasted delicious. Thank you again for everything.",
+        "name": "Tracy",
+        "location": "West Berkshire"
+      }
+    },
+    "centre-stage": {
+      "images": ["Centre-Stage.jpg"],
+      "name": "Centre stage",
+      "testimonial": {
+        "text": "The cake was splendid... AND delicious. Thank you soooo much Katie. Half gone! Lots left to enjoy! I shall recommend you to anyone who needs a special cake for a special occasion.",
+        "name": "Marilyn", 
+        "location": ""
+      }
+    },
+    "welcome-to-the-jungle":{
+      "images": ["Welcome-to-the-Jungle.jpg"],
+      "name": "Welcome to the Jungle",
+      "testimonial":{
+        "text": "I just wanted to say thank you so much for the cake! It's literally perfect and better than the photos, thank you!!",
+        "name": "Chloe",
+        "location": "Thatcham"
+      }
+    },
+    "timeless":{
+      "images": ["Timeless.jpg"],
+      "name": "Timeless",
+      "testimonial":{
+        "text": "Just to say thank you for the beautiful and delicious birthday cake you delivered to me yesterday.  My daughter and the family loved the cake and we will definitely recommend you.",
+        "name": "Lynne",
+        "location": "Thatcham"
+      }
+    },
     "be-my-valentine": {
       "images": ["Be-My-Valentine-Box.jpg", "Be-My-Valentine-Pattern.jpg"],
+      "squareImage": "Be-My-Valentine-Pattern-square.jpg",
       "name": "Be My Valentine",
       "product": "",
       "occasion": ""
@@ -356,7 +922,9 @@
     "birthday-shades-blue-glitz": {
       "images": [
         "Birthday-Shades-Blue-Glitz-Box.jpg",
-        "Birthday-Shades-Blue-Glitz-Open.jpg"
+        "Birthday-Shades-Blue-Glitz-Open.jpg",
+        "Birthday-Shades-Blue-Glitz-Box-2.jpg",
+        "Birthday-Shades-Blue-Glitz-2.jpg"
       ],
       "name": "Birthday Shades - Blue Glitz",
       "product": "",
@@ -376,6 +944,7 @@
     },
     "adorable-flopsy-bunny": {
       "images": ["Adorable-Flopsy-Bunny.jpg"],
+      "squareImage": "Adorable-Flopsy-Bunny-square.jpg",
       "name": "Adorable Flopsy Bunny",
       "product": "",
       "occasion": ""
@@ -397,6 +966,7 @@
     },
     "ruby-reindeer": {
       "images": ["Ruby-Front.jpg", "Ruby-Top.jpg"],
+      "squareImage": "white-reindeer-square.jpg",
       "name": "Ruby reindeer",
       "product": "",
       "occasion": ""
@@ -436,7 +1006,13 @@
     },
     "pink-and-bluey": {
       "images": ["Pink-and-Bluey.jpg"],
-      "name": "Pink and Bluey",
+      "name": "Pink & Bluey",
+      "videos": [
+        {
+          "thumb": "Pink-and-Bluey.jpg",
+          "file": "Pink-and-Bluey.mp4"
+        }
+      ],
       "product": "",
       "occasion": ""
     },
@@ -450,7 +1026,7 @@
       "images": ["Birthday-Square.jpg"],
       "name": "Birthday Square",
       "testimonial": {
-        "text": "Thank you for the lovely chocolate cake it was so moist and delicious everyone enjoyed it",
+        "text": "Thank you for the lovely chocolate cake. It was so moist and delicious and everyone enjoyed it",
         "name": "Maureen",
         "location": "Newbury"
       },
@@ -517,6 +1093,7 @@
     },
     "diamond-anniversary": {
       "images": ["Diamond-Anniversary.jpg"],
+      "squareImage": "Diamond-Anniversary-square.jpg",
       "name": "Diamond Anniversary",
       "videos": [
         {
@@ -577,7 +1154,7 @@
         "Bon-Voyage-Back.jpg"
       ],
       "squareImage": "Bon-Voyage-square.jpg",
-      "name": "Bon Voyage",
+      "name": "Bon Voyage - Australia",
       "testimonial": {
         "text": "I just wanted to say a very big thank you for the lovely \"old suitcase\" cake you made for my son's 30th birthday/bon voyage party. I know that I didn't give you much advanced notice and I'm so pleased you were able to make it. A lot of guests asked me where I had bought the cake from as they were very impressed by all the details in the decoration, plus it tasted really great when we cut in to it.",
         "name": "Yvonne",
@@ -590,7 +1167,7 @@
       "images": ["Superhero-Ombre.jpg"],
       "name": "Superhero Ombré",
       "testimonial": {
-        "text": "I just wanted to say thank you for such a great cake, it looked and tasted amazing and is almost gone already!! ",
+        "text": "I just wanted to say thank you for such a great cake. It looked and tasted amazing and is almost gone already!! ",
         "name": "Nicola",
         "location": "Tadley"
       },
@@ -616,7 +1193,7 @@
     },
     "cocktails-and-seashells": {
       "images": ["Cocktails-and-Seashells.jpg"],
-      "name": "Cocktails and Seashells",
+      "name": "Cocktails & Seashells",
       "product": "",
       "occasion": ""
     },
@@ -625,7 +1202,7 @@
       "squareImage": "Fresh-Flowers-Yellow-Sunshine-square.jpg",
       "name": "Fresh Flowers - Yellow Sunshine",
       "testimonial": {
-        "text": "The cake was a great success.  Everyone was very complimentary about it.  It tasted so good too.",
+        "text": "The cake was a great success. Everyone was very complimentary about it. It tasted so good too.",
         "name": "Vanessa",
         "location": "Bucklebury"
       },
@@ -655,7 +1232,7 @@
       "images": ["Golden-Anniversary.jpg"],
       "name": "Golden Anniversary",
       "testimonial": {
-        "text": "Just to say a Big Thank you for making us this superb wedding anniversary cake. We can see that you have gone that extra mile for us; everyone at the party just loved.",
+        "text": "Just to say a Big Thank you for making us this superb wedding anniversary cake. We can see that you have gone that extra mile for us; everyone at the party just loved it.",
         "name": "Lilian & David",
         "location": "Newbury"
       },
@@ -676,9 +1253,9 @@
     },
     "sun-sand-and-seashells": {
       "images": ["Sun-Sand-and-Seashells.jpg"],
-      "name": "Sun, Sand, and Seashells",
+      "name": "Sun, Sand, & Seashells",
       "testimonial": {
-        "text": "Thank you very much for the lovely cake, it was absolutely gorgeous in all the possible ways. Everybody really enjoyed it and admired your work",
+        "text": "Thank you very much for the lovely cake, it was absolutely gorgeous in all the possible ways. Everybody really enjoyed it and admired your work.",
         "name": "Rosemary",
         "location": "Thatcham"
       },
@@ -700,14 +1277,14 @@
     },
     "shades-of-pink-and-gold-fault-line-flowers": {
       "images": ["Shades-of-Pink-and-Gold-Fault-Line-Flowers.jpg"],
-      "name": "Shades of Pink and Gold Fault Line with flowers",
+      "name": "Fault Line Flowers - Pink & Gold",
       "product": "",
       "occasion": ""
     },
     "shades-of-pink-and-gold-fault-line-balls": {
       "images": ["Shades-of-Pink-and-Gold-Fault-Line-Balls.jpg"],
       "squareImage": "Shades-of-Pink-and-Gold-Fault-Line-Balls-square.jpg",
-      "name": "Shades of Pink and Gold Fault Line",
+      "name": "Fault Line - Pink & Gold",
       "videos": [
         {
           "thumb": "Shades-of-Pink-and-Gold-Fault-Line-Balls.jpg",
@@ -720,7 +1297,7 @@
     "booties-and-bunting": {
       "images": ["Booties-and-Bunting.jpg"],
       "squareImage": "Booties-and-Bunting-square.jpg",
-      "name": "Booties and Bunting",
+      "name": "Booties & Bunting",
       "videos": [
         {
           "thumb": "Booties-and-Bunting.jpg",
@@ -793,9 +1370,9 @@
     },
     "black-and-white": {
       "images": ["Black-and-White.jpg"],
-      "name": "Black and White",
+      "name": "Black & White",
       "testimonial": {
-        "text": "Big thank you to Katie, for producing three amazing creations for me, some cupcakes for my daughters 18th birthday and a friends 50th, and a birthday cake for my daughter's birthday the following year, they were all delicious. On each occasion I gave Katie a brief or the birthday theme and she worked with me to design the toppers and gave me options to choose from, even a choice of flavours for the cupcakes. Katie added an extra special touch to each occasion, thank you and I would have no hesitation in recommending you to others in the future. \n",
+        "text": "Big thank you to Katie, for producing three amazing creations for me, some cupcakes for my daughter's 18th birthday and a friend's 50th, and a birthday cake for my daughter's birthday the following year. They were all delicious. On each occasion I gave Katie a brief or the birthday theme and she worked with me to design the toppers and gave me options to choose from, even a choice of flavours for the cupcakes. Katie added an extra special touch to each occasion, thank you and I would have no hesitation in recommending you to others in the future. \n",
         "name": "Ellie",
         "location": "Purley"
       },
@@ -810,15 +1387,15 @@
     },
     "50s-and-tiaras ": {
       "images": ["50s-and-tiaras.jpg"],
-      "name": "50s and Tiaras",
+      "name": "50s & Tiaras",
       "product": "",
       "occasion": ""
     },
     "white-and-gold-choc-fudge": {
       "images": ["White-and-Gold-Choc-Fudge.jpg"],
-      "name": "White and Gold Chocolate Fudge",
+      "name": "White & Gold Chocolate Fudge",
       "testimonial": {
-        "text": "Somebody brought some of Katie's cupcakes into the office one day, and we all enjoyed them so much that we decided to place a regular order. I've also used Katie a couple of times for special celebration cakes. They looked amazing, but more importantly tasted amazing too. Katie is now my go-to person for all my cake requirements. It's refreshing to see a young person with a business like this. Katie is really friendly and talented. So, give Katie a try - you won't be disappointed!",
+        "text": "Somebody brought some of Katie's cupcakes into the office one day and we all enjoyed them so much that we decided to place a regular order. I've also used Katie a couple of times for special celebration cakes. They looked amazing, but more importantly tasted amazing too. Katie is now my go-to person for all my cake requirements. It's refreshing to see a young person with a business like this. Katie is really friendly and talented. So, give Katie a try - you won't be disappointed!",
         "name": "Andy",
         "location": "Reading"
       },
@@ -917,7 +1494,7 @@
         "Lemon-and-Pink-Gin-White.jpg",
         "Lemon-and-Pink-Gin-Pink.jpg"
       ],
-      "name": "Lemon and Pink Gin Cupcakes",
+      "name": "Lemon & Pink Gin Cupcakes",
       "description": "For when it's not quite 5 O'clock … shall we?",
       "product": "",
       "occasion": ""
@@ -1024,7 +1601,7 @@
       "name": "Wonder Woman",
       "description": "I would say have a Marvel at this cake - but we both know it's DC.",
       "testimonial": {
-        "text": "We were blown away by Alices cake. You had really listen to our ideas and understood the effect we w're looking for. Everyone commented on the cake and Alice will always remember her 6th birthday cake. \nThanks for helping make her day so special. ",
+        "text": "We were blown away by Alice's cake. You had really listened to our ideas and understood the effect were looking for. Everyone commented on the cake and Alice will always remember her 6th birthday cake. \nThanks for helping make her day so special. ",
         "name": "Mel",
         "location": "Reading"
       },
@@ -1040,7 +1617,7 @@
     },
     "nuts-and-bolts": {
       "images": ["Marbled-DIY.jpg"],
-      "name": "Nuts and bolts",
+      "name": "Nuts & bolts",
       "product": "",
       "occasion": ""
     },
@@ -1103,7 +1680,7 @@
       "images": ["Gordons-Gin.jpg"],
       "name": "Gordon's Gin",
       "testimonial": {
-        "text": "Katie's cake not only looked amazing but it tasted delicious and kept really well, when we didn't eat it all on 1st cutting. Her design ideas were spot on and it was difficult to choose the best one!",
+        "text": "Katie's cake not only looked amazing but it tasted delicious and kept really well when we didn't eat it all on 1st cutting. Her design ideas were spot on and it was difficult to choose the best one!",
         "name": "Mel",
         "location": "Reading"
       },
@@ -1175,85 +1752,85 @@
     "booties-and-bunting"
   ],
   "featuredTestimonials": [
-    "superhero-ombre",
+    "semi-naked-drips",
+    "welcome-to-the-jungle",
+    "chocolate-decadence-milestone",
     "fresh-flowers-vibrant-pink",
-    "golden-anniversary",
-    "sun-sand-and-seashells",
-    "gordons-gin"
+    "golden-anniversary"
   ],
   "flavours": [
     {
       "name": "Vanilla",
       "descriptions": {
         "standard": "Light vanilla sponge filled with strawberry jam and buttercream",
-        "dairy-free": "Light vanilla sponge filled with strawberry jam and filling cream"
+        "dairy-free": "Light vanilla sponge filled with strawberry jam and filling cream",
+        "vegan": "Light vanilla sponge filled with strawberry jam and filling cream"
       },
-      "variants": ["gluten-free", "dairy-free"]
+      "variants": ["gluten-free", "dairy-free", "vegan"]
     },
     {
       "name": "Chocolate",
       "descriptions": {
         "standard": "Chocolate sponge filled with chocolate buttercream",
-        "dairy-free": "Chocolate sponge filled with chocolate filling cream"
+        "dairy-free": "Chocolate sponge filled with chocolate filling cream",
+        "vegan": "Chocolate sponge filled with chocolate filling cream"
       },
-      "variants": ["gluten-free", "dairy-free"]
+      "variants": ["gluten-free", "dairy-free", "vegan"]
     },
     {
       "name": "Chocolate Biscoff",
       "descriptions": {
         "standard": "Classic chocolate sponge layered with Biscoff flavoured buttercream and Biscoff spread",
-        "dairy-free": "Classic chocolate sponge layered with Biscoff flavoured filling cream and Biscoff spread"
+        "dairy-free": "Classic chocolate sponge layered with Biscoff flavoured filling cream and Biscoff spread",
+        "vegan": "Classic chocolate sponge layered with Biscoff flavoured filling cream and Biscoff spread"
       },
-      "variants": ["dairy-free"],
+      "variants": ["dairy-free", "vegan"],
       "allergenInfo": "Chocolate Biscoff sponge contains soya."
     },
     {
       "name": "Chocolate Oreo",
       "descriptions": {
         "standard": "Classic chocolate sponge filled with Oreo buttercream",
-        "dairy-free": "Classic chocolate sponge filled with Oreo filling cream"
+        "dairy-free": "Classic chocolate sponge filled with Oreo filling cream",
+        "vegan": "Classic chocolate sponge filled with Oreo filling cream"
       },
-      "variants": ["gluten-free", "dairy-free"]
+      "variants": ["gluten-free", "dairy-free", "vegan"]
     },
     {
       "name": "Chocolate Orange",
       "descriptions": {
         "standard": "Chocolate sponge flavoured with orange zest and filled with chocolate orange flavoured buttercream",
-        "dairy-free": "Chocolate sponge flavoured with orange zest and filled with chocolate orange flavoured filling cream"
+        "dairy-free": "Chocolate sponge flavoured with orange zest and filled with chocolate orange flavoured filling cream",
+        "vegan": "Chocolate sponge flavoured with orange zest and filled with chocolate orange flavoured filling cream"
       },
-      "variants": ["gluten-free", "dairy-free"]
-    },
-    {
-      "name": "Chocolate fudge",
-      "descriptions": {
-        "standard": "Rich chocolate sponge filled with chocolate fudge topping"
-      },
-      "variants": ["gluten-free"],
-      "allergenInfo": "Chocolate fudge sponge is made using Nuts (ground almonds) - alternatively it can be made with a normal chocolate sponge filled with chocolate fudge topping."
+      "variants": ["gluten-free", "dairy-free", "vegan"]
     },
     {
       "name": "Lemon",
       "descriptions": {
         "standard": "Fresh tasting sponge filled with lemon buttercream",
-        "dairy-free": "Fresh tasting sponge filled with lemon filling cream"
+        "dairy-free": "Fresh tasting sponge filled with lemon filling cream",
+        "vegan": "Fresh tasting sponge filled with lemon filling cream"
       },
-      "variants": ["gluten-free", "dairy-free"]
+      "variants": ["gluten-free", "dairy-free", "vegan"]
     },
     {
       "name": "Lemon and Elderflower",
       "descriptions": {
         "standard": "Light lemon sponge filled with elderflower flavour buttercream",
-        "dairy-free": "Light lemon sponge filled with elderflower flavour filling cream"
+        "dairy-free": "Light lemon sponge filled with elderflower flavour filling cream",
+        "vegan": "Light lemon sponge filled with elderflower flavour filling cream"
       },
-      "variants": ["gluten-free", "dairy-free"]
+      "variants": ["gluten-free", "dairy-free", "vegan"]
     },
     {
       "name": "Orange",
       "descriptions": {
         "standard": "Sponge flavoured with zesty orange filled with orange buttercream",
-        "dairy-free": "Sponge flavoured with zesty orange filled with orange filling cream"
+        "dairy-free": "Sponge flavoured with zesty orange filled with orange filling cream",
+        "vegan": "Sponge flavoured with zesty orange filled with orange filling cream"
       },
-      "variants": ["gluten-free", "dairy-free"]
+      "variants": ["gluten-free", "dairy-free", "vegan"]
     },
     {
       "name": "Coffee",
@@ -1278,7 +1855,8 @@
         "standard": "Moist with a hint of a spice flavour filled with cream cheese buttercream",
         "dairy-free": "Moist with a hint of a spice flavour filled with cream cheese (dairy free alternative) filling cream"
       },
-      "variants": ["gluten-free", "dairy-free"]
+      "variants": ["gluten-free", "dairy-free"],
+      "allergenInfo": "Carrot sponge is made using Nuts (walnuts)."
     },
     {
       "name": "Baileys",
@@ -1292,9 +1870,10 @@
       "name": "Toffee",
       "descriptions": {
         "standard": "Delicious toffee flavoured sponge filled with toffee flavour buttercream and a layer of salted caramel sauce",
-        "dairy-free": "Delicious toffee flavoured sponge filled with toffee flavour filling cream"
+        "dairy-free": "Delicious toffee flavoured sponge filled with toffee flavour filling cream",
+        "vegan": "Delicious toffee flavoured sponge filled with toffee flavour filling cream"
       },
-      "variants": ["gluten-free", "dairy-free"]
+      "variants": ["gluten-free", "dairy-free", "vegan"]
     },
     {
       "name": "Raspberry and white chocolate",
@@ -1307,26 +1886,26 @@
   "pricing": {
     "celebrationCakes": {
       "round": {
-        "4": 30,
-        "5": 35,
-        "6": 40,
-        "7": 45,
-        "8": 50,
-        "9": 55,
-        "10": 60,
-        "11": 65,
-        "12": 70
-      },
-      "square": {
         "4": 35,
         "5": 40,
         "6": 45,
         "7": 50,
         "8": 55,
         "9": 60,
-        "10": 65,
-        "11": 70,
-        "12": 75
+        "10": 70,
+        "11": 75,
+        "12": 80
+      },
+      "square": {
+        "4": 40,
+        "5": 45,
+        "6": 50,
+        "7": 60,
+        "8": 65,
+        "9": 70,
+        "10": 75,
+        "11": 80,
+        "12": 90
       }
     }
   }

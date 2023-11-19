@@ -253,8 +253,14 @@
     }
 }
 
+:root {
+    --portfolio-scroll: 0px;
+}
+
 body.portfolio-modal-open {
     overflow: hidden;
+    position: fixed;
+    top: var(--portfolio-scroll);
 
     #portfolio-modal {
         display: grid;

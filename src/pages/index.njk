@@ -7,18 +7,29 @@
   href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
 />
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-snow@2/tsparticles.preset.snow.bundle.min.js"></script>
 {% endblock %}
 
 {% from "macros/picture.njk" import pictureElement with context %}
 
 {% block main %}
     <div id="header-video">
-        <video autoplay playsinline muted loop>
+        
+        {# Portrait video #}
+        <video id="portrait-video" autoplay playsinline muted loop>
+            <source src="videos/landing-mobile.mp4" type="video/mp4">
+        </video>
+        {# Landscape video #}
+        <video id="landscape-video" autoplay playsinline muted loop>
             <source src="videos/landing.mp4" type="video/mp4">
         </video>
+        
+        <div id="snow-particles"></div>
 
         <div class="header-video-text">
-            <span class="main-text">Baking special memories</span>
+            <span class="main-text">
+                <span>Baking</span> special memories
+            </span>
             {# <span class="main-text">Let's make it memorable</span> #}
             <span class="text-divider"></span>
             <span class="secondary-text">Bespoke cakes and cupcakes</span>
@@ -40,7 +51,7 @@
                 <div>
                     <h1>Hi, I'm Katie...</h1>
 
-                    <p>I'm a cake maker based in Thatcham, near Newbury, West Berkshire, specialising in celebration cakes and cupcakes. I offer a wide range of flavours and also cater for certain dietary requirements such as gluten and dairy free.</p>
+                    <p>I'm a cake maker based in Thatcham, near Newbury and Reading, West Berkshire, specialising in wedding cakes, celebration cakes and cupcakes. I offer a wide range of flavours and also cater for certain dietary requirements such as gluten and dairy free and vegan.</p>
                     
                     <p>Whatever your occasion, let me help make it special.</p>
 
@@ -61,15 +72,42 @@
     <section id="portfolio">
         <div id="grid">
             {% for item in portfolioSample %}
-                {{ pictureElement("portfolio/" + (portfolio[item].squareImage if portfolio[item].squareImage else portfolio[item].images[0].src), portfolio[item].name, "calc(max(min(17vw, 17vh), min(100vw, 600px)))") }}
+                {{ pictureElement("portfolio/" + (portfolio[item].squareImage if portfolio[item].squareImage else portfolio[item].images[0].src), portfolio[item].name, "calc(max(min(17vw, 17vh), min(33vw, 200px)))") }}
             {% endfor %}
         </div>
         <a class="button" href="/portfolio" >See more of my portfolio</a>
     </section>
 
+    <section id="christmas">
+
+        {{ pictureElement("backgrounds/christmas-tree.jpg", "Christmas background", "100vw") }}
+
+        <div class="christmas-outer-container">
+            <div class="christmas-inner-container">
+                <div class="christmas-contents">
+                    <div class="christmas-text">
+                        <h2>The Christmas Collection</h2>
+                        <P>Welcome to a season of sweet delights! Whether you're planning a festive family gathering, searching for the perfect gift, or looking to add some magic to your stockings, my Christmas Collection is here to delight your senses and sweeten your celebrations! Order now for collection between 18<sup>th</sup> to 24<sup>th</sup> December.</p>
+                    </div>
+                    <div class="christmas-collection-link">
+                        <a
+                            class="button button-white"
+                            href="/occasions/christmas"
+                        >
+                            See the collection
+                        </a>
+                    </div>
+                    <div class="christmas-collection-image">
+                        {{ pictureElement("christmas/christmas-collection.jpg", "Christmas product range", "min(400px, 40vw)") }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact">
         {% from "macros/fixed-background.njk" import fixedBackground with context %}
-        {{ fixedBackground("marble-background.jpg", "Marble background image") }}
+        {{ fixedBackground("backgrounds/marble-background.jpg", "Marble background image") }}
         <div class="contact-card">
             <div class="contact-card-first-half">
                 <div class="contact-card-first-half-inner">
@@ -80,6 +118,10 @@
                 <div class="contact-card-second-half-inner">
                     <h3><i class="far fa-envelope" aria-hidden="true"></i>Email</h3>
                     <a href="mailto:katie@cakesbykatie.co.uk">katie@cakesbykatie.co.uk</a>
+                    <h3><i class="fa fa-phone" aria-hidden="true"></i>Phone</h3>
+                    <a href="tel:+447436120654" target="_blank">07436120654</a>
+                    <h3><i class="fa fa-whatsapp" aria-hidden="true"></i>WhatsApp</h3>
+                    <a href="https://wa.me/447436120654" target="_blank">07436120654</a>
                     <h3><i class="fab fa-instagram" aria-hidden="true"></i>Instagram</h3>
                     <a href="https://www.instagram.com/cakesbykatieoc" target="_blank">@cakesbykatieoc</a>
                     <h3><i class="fab fa-facebook" aria-hidden="true"></i>Facebook</h3>
@@ -137,4 +179,5 @@
 
 {% block scripts %}
     <script type="text/javascript" src="/js/slideshow.js" defer></script>
+    <script type="text/javascript" src="/js/snow.js" defer></script>
 {% endblock %}

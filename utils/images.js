@@ -1,6 +1,20 @@
+// Get relevant widths array from WIDTHS for this image
+export const getWidthsArrayForImagePath = path => {
+    let imagePath = path.split('/images');
+    imagePath = imagePath[imagePath.length - 1];
+    for (const folder of Object.keys(WIDTHS)) {
+        if (imagePath.startsWith(folder)) {
+            return WIDTHS[folder];
+        }
+    }
+    return WIDTHS.default;
+}
+
 // Get srcset attribute for <source> element
-export const getSrcsetAttribute = (sizes, name, extension) =>
-    sizes.map(size => `${name}-${size}.${extension} ${size}w`).join(', ');
+export const getSrcsetAttribute = (pathWithoutExtension, extension) => {
+    const sizes = getWidthsArrayForImagePath(pathWithoutExtension);
+    return sizes.map(size => `${pathWithoutExtension}-${size}.${extension} ${size}w`).join(', ');
+}
 
 
 /*
@@ -52,4 +66,8 @@ export const getSizesAttribute = (recommendedSizes) => {
 // These should go from smallest file size to largest
 export const FORMATS = ["avif", "webp"];
 
-export const WIDTHS = [640, 768, 1024, 1366, 1600, 1920];
+export const WIDTHS = {
+    default: [200, 400, 700, 1920],
+    '/portfolio': [150, 300, 700, 1000, 1920],
+    '/backgrounds': [640, 768, 1024, 1366, 1600, 1920]
+};

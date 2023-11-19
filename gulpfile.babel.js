@@ -1,5 +1,5 @@
 // Uses Babel so we can use ES6 (explained at https://markgoodyear.com/2015/06/using-es6-with-gulp/)
-
+import path from 'path';
 import fs from 'fs';
 import { src, dest, watch, series, parallel } from 'gulp';
 import browserSync from 'browser-sync';
@@ -17,6 +17,7 @@ import cssnano from 'cssnano';
 import revAll from 'gulp-rev-all'; // Puts hashes in filenames so browser's cache can hold assets for a long time but will fetch new assets if they have been updated (because file names will be different)
 import imagemin from 'gulp-imagemin'; // Keeping this on v7 as importing v8 caused issues
 import cache from 'gulp-cache';
+import filter from 'gulp-filter';
 import del from 'del';
 import nunjucksRender from 'gulp-nunjucks-render';
 import htmlPrettify from 'gulp-html-prettify';
@@ -24,7 +25,7 @@ import processData from 'gulp-data';
 import sharpResponsive from 'gulp-sharp-responsive';
 import sizeOf from 'image-size';
 import getVideoDimensions from 'get-media-dimensions';
-import { FORMATS, getSizesAttribute, getSrcsetAttribute, WIDTHS } from './utils/images';
+import { FORMATS, getSizesAttribute, getSrcsetAttribute, getWidthsArrayForImagePath, WIDTHS } from './utils/images';
 import { removeExtension } from './utils/files';
 
 import ftp from 'vinyl-ftp';
@@ -35,24 +36,16 @@ let data;
 const browserSyncInstance = browserSync.create();
 const sass = gulpSass(sassCompiler);
 
-function setupBrowserSync(cb) {
-    browserSyncInstance.init({
-        server: {
-            baseDir: 'src',
-            serveStaticOptions: {
-                extensions: ['html']
-            }
-        }
-    });
-    cb();
-}
 
 
+/* -------------------------------------------------------------------------- */
+/*                               /src -> /local                               */
+/* -------------------------------------------------------------------------- */
 
 function processSass() {
     return src('src/scss/**/*.scss')
             .pipe(sass({ includePaths: ['node_modules'] }))
-            .pipe(dest('src/css'))
+            .pipe(dest('local/css'))
             .pipe(browserSyncInstance.reload({
                 stream: true
             }));
@@ -62,7 +55,6 @@ function setupData() {
     data = JSON.parse(fs.readFileSync('./src/data.json', 'utf8'));
 
     data.imageFormats = {
-        widths: WIDTHS,
         formats: FORMATS,
         defaultFormat: FORMATS[FORMATS.length - 1]
     };
@@ -74,7 +66,7 @@ function setupData() {
     let videoPromises = [];
 
     for (const cake in data.portfolio) {
-        const { images, videos } = data.portfolio[cake];
+        const { images, videos, squareImage } = data.portfolio[cake];
         images.forEach((src, index) => {
             const { width, height } = sizeOf(`src/images/portfolio/${src}`); // sizeOf also gets orientation and file type
             data.portfolio[cake].images[index] = { src, aspectRatio: width / height }; 
@@ -94,6 +86,10 @@ function setupData() {
                 );
             });
         }
+        if (squareImage) {
+            // Add 'square/' to path
+            data.portfolio[cake].squareImage = 'square/' + squareImage;
+        }
     }
 
     return Promise.all(videoPromises);
@@ -105,7 +101,7 @@ function processNunjucks() {
 
         environment.addFilter('removeExtension', removeExtension);
 
-        environment.addFilter('createSrcset', getSrcsetAttribute);
+        environment.addGlobal('createSrcset', getSrcsetAttribute);
 
         environment.addFilter('createSizes', getSizesAttribute);
 
@@ -121,39 +117,169 @@ function processNunjucks() {
                 manageEnv: manageEnvironment
             }))
             .pipe(htmlPrettify()) // Corrects indentation to make HTML more readable
-            .pipe(dest('src'))
+            .pipe(dest('local'))
             .pipe(browserSyncInstance.reload({
                 stream: true
             }));
 }
 
+/* --------------------------------- Images --------------------------------- */
+
+// Get all files in /images directory in either src/ or local/
+const getFilesInImagesDirectory = (directory, array = []) => {
+    fs.readdirSync(directory).forEach(file => {
+        const absolute = path.join(directory, file);
+        if (fs.statSync(absolute).isDirectory()) {
+            return getFilesInImagesDirectory(absolute, array);
+        } else {
+            return array.push(absolute.split('/images')[1]);
+        }
+    });
+    return array;
+}
+
+// Delete images from /local that are no longer needed
+const cleanLocalImages = () => {
+    const srcImages = getFilesInImagesDirectory('src/images');
+    const localImages = getFilesInImagesDirectory('local/images');
+    
+    const localImagesToRemove = localImages.filter(image => {
+        const match = image.match(/^\/(?<path>.+\/)*(?<name>.+)-(?<width>\d+)\.(?<extension>\w+)$/);
+        if (match) {
+            const { path, name, width, extension } = match.groups;
+            const validWidths = getWidthsArrayForImagePath(image);
+            // Delete image if original image is no longer in /src or we no longer use this format or size
+            return !srcImages.find(srcImage => removeExtension(srcImage) === `/${path}${name}`) || !FORMATS.includes(extension) || !validWidths.includes(parseInt(width));
+        }
+        return false;
+    });
+
+    if (localImagesToRemove.length > 0) {
+        console.log(`Removing ${localImagesToRemove.length} image(s) from /local/images: ${localImagesToRemove.join(', ')}`);
+    }
+
+    return del(localImagesToRemove.map(image => `local/images/${image}`));
+}
+
+// Move new images to /local
+// Includes building all required formats and sizes
 const createAndTransferNewImages = () => {
 
-    const widths = WIDTHS;
-    const formats = FORMATS;
+    // Images already in /local/images
+    const localImages = getFilesInImagesDirectory('local/images');
+    
+    // Folders for which we use different widths than default
+    const imageFoldersWithUnqiueWidthsArray = Object.keys(WIDTHS).filter(key => key !== 'default');
 
-    return src('src/new-images/**/*')
-            .pipe(gulpIf(['**/*.*', '!*.svg'], cache(sharpResponsive({
+    // Get all /src images and filter out any that we already have (along with all its formats and sizes) in /local
+    let stream = src('src/images/**/*.*')
+                        .pipe(filter(file => {
+                            const image = file.path.split('/images')[1];
+                            
+                            // Process image if it is not in /local folder...
+                            let keep = !localImages.includes(image);
+                            // ... or if we are missing any required format/size
+                            if (!keep && !image.endsWith('.svg')) {
+                                const imageWithoutExtension = removeExtension(image);
+                                const widths = getWidthsArrayForImagePath(file.path);
+                                keep = !FORMATS.every(format => widths.every(width => localImages.includes(`${imageWithoutExtension}-${width}.${format}`)));
+                            }
+                            if (keep) {
+                                if (image.endsWith('.svg')) {
+                                    // SVGs don't need other formats/sizes so only get copied
+                                    console.log(`Copying ${image}`);
+                                } else {
+                                    console.log(`Building images for ${image}`);
+                                }
+                            }
+                            return keep;
+                        }));
+
+    // Create different image formats and sizes for directories with custom sizes
+    for (const folder of imageFoldersWithUnqiueWidthsArray) {
+        stream = stream.pipe(
+            gulpIf(
+                // Only process images in relevant folder
+                (file) => {
+                    const image = file.path.split('/images')[1];
+
+                    const match = !image.endsWith('.svg') && image.startsWith(folder);
+    
+                    return match;
+                },
+                sharpResponsive({
+                    includeOriginalFile: true,
+                    formats: WIDTHS[folder].map(width => 
+                        FORMATS.map(format => ({
+                            width,
+                            format,
+                            rename: { suffix: `-${width}`}
+                        }))
+                    ).flat()
+                })
+            )
+        );
+    }
+
+    // Create different image formats and sizes for all remaining images
+    stream = stream.pipe(
+        gulpIf(
+            // Process images that are not in the directories already handled
+            (file) => {
+                const image = file.path.split('/images')[1];
+
+                return !image.endsWith('.svg') && !imageFoldersWithUnqiueWidthsArray.some(folder => image.startsWith(folder));
+            },
+            sharpResponsive({
                 includeOriginalFile: true,
-                formats: widths.map(width => 
-                    formats.map(format => ({
+                formats: WIDTHS.default.map(width => 
+                    FORMATS.map(format => ({
                         width,
                         format,
                         rename: { suffix: `-${width}`}
                     }))
                 ).flat()
-            }))))
-            .pipe(dest('src/images'))
+            })
+        )
+    )
+        // Output to /local/images
+        .pipe(dest('local/images'))
+        .pipe(browserSyncInstance.reload({
+            stream: true
+        }));
+
+    return stream;
+}
+
+// Task for updating /local/images
+const updateLocalImages = parallel(cleanLocalImages, createAndTransferNewImages);
+
+/* ------------------------------ End of images ----------------------------- */
+
+// Javascript files and videos just get moved as they are
+const moveRemainingFilesToLocal = () => {
+    return src(['src/**/*.mp4', 'src/**/*.js'])
+            .pipe(dest('local'))
             .pipe(browserSyncInstance.reload({
                 stream: true
             }));
 }
 
-const cleanNewImages = () => {
-    return del(['src/new-images/**/*.*', '!src/new-images']);
-}
+/* -------------------------------------------------------------------------- */
+/*                               Viewing locally                              */
+/* -------------------------------------------------------------------------- */
 
-const processNewImages = series(createAndTransferNewImages, cleanNewImages);
+function setupBrowserSync(cb) {
+    browserSyncInstance.init({
+        server: {
+            baseDir: 'local',
+            serveStaticOptions: {
+                extensions: ['html']
+            }
+        }
+    });
+    cb();
+}
 
 function reload(cb) {
     browserSyncInstance.reload();
@@ -164,18 +290,26 @@ function watchFiles() {
     watch('src/scss/**/*.scss', processSass);
     watch('src/data.json', series(setupData, processNunjucks));
     watch(['src/pages/**/*.njk', 'src/templates/**/*.njk'], processNunjucks);
-    watch('src/js/**/*.js', reload);
-    watch('src/new-images/**/*', processNewImages);
+    watch(['src/js/**/*', 'src/videos/**/*'], moveRemainingFilesToLocal);
+    watch('src/images/**/*', updateLocalImages);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                     Build (/local -> /dist) and deploy                     */
+/* -------------------------------------------------------------------------- */
+
+function cleanDist() {
+    return del('dist');
 }
 
 function buildFiles() {
     const postcssPlugins = [autoprefixer(), cssnano()];
-    return src(['src/**/*.html', 'src/images/**/*', 'src/videos/**/*'])
+    return src(['local/**/*.html', 'local/images/**/*', 'local/videos/**/*'])
             .pipe(gulpIf('*.html', useref()))
             .pipe(gulpIf('*.html', htmlmin({ minifyJS: true, minifyCSS: true, removeComments: true, collapseWhitespace: true })))
             .pipe(gulpIf('*.js', babel({ presets: ['@babel/env']})))
             .pipe(gulpIf('*.js', uglify()))
-            .pipe(gulpIf('*.css', purgecss({ content: ['src/**/*.html', 'src/**/*.js'] }))) // This should go in postcssPlugins but having tried briefly I couldn't get it to work
+            .pipe(gulpIf('*.css', purgecss({ content: ['local/**/*.html', 'local/**/*.js'] }))) // This should go in postcssPlugins but having tried briefly I couldn't get it to work
             .pipe(gulpIf('*.css', postcss(postcssPlugins)))
             .pipe(gulpIf('*.+(png|jpg|gif|svg)', cache(imagemin({ interlaced: true }))))
             // Can't add hashes to portfolio content as script needs to know what the filenames are called
@@ -185,8 +319,8 @@ function buildFiles() {
 
 // View CSS rejected by PurgeCSS
 function rejectedCSS() {
-    return src(['src/css/*.css'])
-            .pipe(gulpIf('*.css', purgecss({ content: ['src/**/*.html', 'src/**/*.js'], rejected: true }))) // This should go in postcssPlugins but having tried briefly I couldn't get it to work
+    return src(['local/css/*.css'])
+            .pipe(gulpIf('*.css', purgecss({ content: ['local/**/*.html', 'local/**/*.js'], rejected: true })))
             .pipe(dest('rejected-css'));
 }
 
@@ -220,20 +354,22 @@ function deploy() {
         // .pipe(connection.clean(['/**/*.js', '/**/*.css', '/images/**/*', '/videos/**/*'].map(p => remoteFolder + p), './dist', { base: remoteFolder })); // Remove remote files with no local version
 }
 
-function cleanDist() {
-    return del('dist');
-}
+/* -------------------------------------------------------------------------- */
+/*                                    Tasks                                   */
+/* -------------------------------------------------------------------------- */
 
 export const clearCache = (cb) => {
     return cache.clearAll(cb);
 }
 
-export const build = series(cleanDist, parallel(processSass, series(processNewImages, setupData, processNunjucks)), buildFiles);
+const updateLocalFolder = parallel(processSass, updateLocalImages, series(setupData, processNunjucks), moveRemainingFilesToLocal);
 
-export default series(parallel(processSass, series(processNewImages, setupData, processNunjucks)), setupBrowserSync, watchFiles);
+export const build = series(cleanDist, updateLocalFolder, buildFiles);
+
+export default series(updateLocalFolder, setupBrowserSync, watchFiles);
 
 exports.deploy = deploy;
 
 exports.rejectedCSS = rejectedCSS;
 
-exports.clearCache = clearCache;
+exports.updateLocalImages = updateLocalImages;
