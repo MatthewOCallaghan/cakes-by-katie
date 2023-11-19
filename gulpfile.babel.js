@@ -144,12 +144,28 @@ const cleanLocalImages = () => {
     const localImages = getFilesInImagesDirectory('local/images');
     
     const localImagesToRemove = localImages.filter(image => {
-        const match = image.match(/^\/(?<path>.+\/)*(?<name>.+)-(?<width>\d+)\.(?<extension>\w+)$/);
+        /*
+            REGEX: /^\/(?<path>.+\/)*(((?<copiedName>.+)-(?<width>\d+)\.(?<createdExtension>avif|webp))|((?<name>.+)\.(?<extension>.+)))$/
+
+            Named capturing groups:
+
+            '/portfolio/example-image-50.avif' => { path: 'portfolio/', copiedName: 'example-image', width: '50', createdExtension: 'avif' }
+            '/portfolio/example-image-50.jpg' => { path: 'portfolio/', name: 'example-image-50', extension: 'jpg' }
+            '/no-path-example.jpg' => { path: undefined, name: 'no-path-example', extension: 'jpg' }
+        */
+        const match = image.match(`^\\/(?<path>.+\\/)*(((?<copiedName>.+)-(?<width>\\d+)\\.(?<createdExtension>${FORMATS.join('|')}))|((?<name>.+)\\.(?<extension>.+)))$`);
         if (match) {
-            const { path, name, width, extension } = match.groups;
-            const validWidths = getWidthsArrayForImagePath(image);
-            // Delete image if original image is no longer in /src or we no longer use this format or size
-            return !srcImages.find(srcImage => removeExtension(srcImage) === `/${path}${name}`) || !FORMATS.includes(extension) || !validWidths.includes(parseInt(width));
+            const { path, name, extension, copiedName, width, createdExtension } = match.groups;
+            if (name) {
+                // Original image
+                // Delete if original is no longer in /src
+                return !srcImages.find(srcImage => srcImage === image);
+            } else {
+                // Created image
+                const validWidths = getWidthsArrayForImagePath(image);
+                // Delete image if original image is no longer in /src or we no longer use this size
+                return !srcImages.find(srcImage => removeExtension(srcImage) === `/${path ?? ''}${copiedName}`) || !validWidths.includes(parseInt(width));
+            }
         }
         return false;
     });
