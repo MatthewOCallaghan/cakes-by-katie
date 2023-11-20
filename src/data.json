@@ -333,7 +333,9 @@
 
     "all-aboard": {
     "images": ["All-Aboard.jpg"],
-    "name": "All Aboard"
+    "name": "All Aboard",
+    "product":"celebration-cake",
+      "occasion":"birthday"
     },
     "all-wrapped-up": {
       "images": ["All-Wrapped-Up.jpg"],
@@ -341,7 +343,9 @@
       "testimonial": {
         "text": "Thank you so much for making the amazing birthday cake for Nic's birthday! She was over the moon with it. We took it with us to her mother's for tea and cake and everyone was amazed at how well presented it was. It tasted amazing too.",
         "name": "Scott"
-     }
+     },
+     "product":"celebration-cake",
+      "occasion":"birthday"
     },
     "aloha-stitch": {
       "images": ["Aloha-Stitch.jpg"],
@@ -349,28 +353,40 @@
       "testimonial": {
         "text": "Just wanted to say thank you so much for making the cake! It was absolutely delicious and Emily loved the design.",
         "name": "Alex"
-     }
+     },
+     "product":"celebration-cake",
+      "occasion":"birthday"
     },
     "baby-bears": {
       "images": ["Baby-Bears.jpg"],
       "squareImage": "Baby-Bears-square.jpg",
-      "name": "Baby Bears"
+      "name": "Baby Bears",
+      "product":"celebration-cake",
+      "occasion":["baby-shower", "gender-reveal"]
     },
     "baby-shark-lullaby": {
       "images": ["Baby-Shark-Lullaby.jpg"],
-      "name": "Baby Shark Lullaby"
+      "name": "Baby Shark Lullaby",
+      "product":"celebration-cake",
+      "occasion":"birthday"
     },
     "barrel-of-blooms": {
       "images": ["Barrel-of-Blooms.jpg"],
-      "name": "Barrel of Blooms"
+      "name": "Barrel of Blooms",
+      "product":"celebration-cake",
+      "occasion":"birthday"
     },
     "beautifully-rustic": {
       "images": ["Beautifully-Rustic.jpg"],
-      "name": "Beautifully Rustic"
+      "name": "Beautifully Rustic",
+      "product":"celebration-cake",
+      "occasion":["birthday","christening", "baby-shower"]
     },
     "bee-happy-with-pooh": {
       "images": ["Bee-Happy-with-Pooh.jpg"],
-      "name": "Bee Happy with Pooh"
+      "name": "Bee Happy with Pooh",
+      "product":"celebration-cake",
+      "occasion":"birthday"
     },
     "bon-voyage-corfu": {
       "images": ["Bon-Voyage-Corfu.jpg"],
@@ -378,27 +394,39 @@
       "testimonial": {
         "text": "Just wanted to say a massive thank you for making my mum's 60th birthday cake…it was amazing, it looked fab and tasted amazing. Your buttercream is to die for…my mum was over the moon with it.",
         "name": "Penny"
-     }
+     },
+     "product":"celebration-cake",
+      "occasion":"birthday"
     },
     "boy-or-girl": {
       "images": ["Boy-or-Girl.jpg"],
-      "name": "Boy or Girl?"
+      "name": "Boy or Girl?",
+      "product":"cupcake",
+      "occasion":["baby-shower", "gender-reveal"]
     },
     "cheers-to-80": {
       "images": ["Cheers-To-80.jpg"],
-      "name": "Cheers to 80"
+      "name": "Cheers to 80",
+      "product":"celebration-cake",
+      "occasion":"birthday"
     },
     "chocolate-and-peach": {
       "images": ["Chocolate-and-Peach.jpg"],
-      "name": "Chocolate & Peach"
+      "name": "Chocolate & Peach",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "chocolate-bliss-and-butterflies": {
       "images": ["Chocolate-Bliss-and-Butterflies.jpg"],
-      "name": "Chocolate Bliss & Butterflies"
+      "name": "Chocolate Bliss & Butterflies",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "classic-drips-embossed-choc": {
       "images": ["Classic-Drips-Embossed-Choc.jpg"],
-      "name": "Classic Drips - Embossed Chocolate"
+      "name": "Classic Drips - Embossed Chocolate",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "cocoa-and-cream-mini": {
       "images": ["Cocoa-and-Cream-Mini.jpg"],
@@ -406,7 +434,9 @@
       "testimonial": {
         "text": "The cake was a wonderful success. Looked and tasted beautiful! Thanks Katie",
         "name": "Anne"
-     }
+     },
+     "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "colourful-precision": {
       "images": ["Colourful-Precision.jpg"],
@@ -415,27 +445,39 @@
           "text": "Another party and another incredible cake, thank you so much for William’s cake - he loved it and the best sponge!",
           "name": "Sarah",
           "location": "Headley"
-        }
+        },
+        "product": "celebration-cake",
+      "occasion":"baby-shower"
     },
     "congratulations-pink": {
       "images": ["Congratulations-Pink.jpg"],
-      "name": "Congratulations - Pink"
+      "name": "Congratulations - Pink",
+      "product": "celebration-cake",
+      "occasion":"baby-shower"
     },
     "country-life": {
       "images": ["Country-Life.jpg"],
-      "name": "Country Life"
+      "name": "Country Life",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "delicate-in-pink": {
       "images": ["Delicate-in-Pink.jpg"],
-      "name": "Delicate in Pink"
+      "name": "Delicate in Pink",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "desert-drift": {
       "images": ["Desert-Drift.jpg"],
-      "name": "Desert Drift"
+      "name": "Desert Drift",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "doctors-orders": {
       "images": ["Doctors-Orders.jpg"],
-      "name": "Doctor's Orders"
+      "name": "Doctor's Orders",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "dolphin-splash": {
       "images": ["Dolphin-Splash.jpg"],
@@ -444,35 +486,51 @@
           "text": "Thank you for the fantastic cakes! The boys loved them. So many compliments from the parents on how tasty the cake was.",
           "name": "Lisa",
           "location": "Thatcham"
-        }
+        },
+        "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "dreamland-express": {
       "images": ["Dreamland-Express.jpg"],
-      "name": "Dreamland Express"
+      "name": "Dreamland Express",
+      "product": "celebration-cake",
+      "occasion":"christening"
     },
     "edible-image-corona": {
       "images": ["Edible-Image-Corona.jpg"],
-      "name": "Edible Image - Corona"
+      "name": "Edible Image - Corona",
+      "product": "cupcake",
+      "occasion":["birthday", "afternoon-tea"]
     },
     "edible-image-games": {
       "images": ["Edible-Image-Games.jpg"],
-      "name": "Edible Image - Games"
+      "name": "Edible Image - Games",
+      "product": "cupcake",
+      "occasion":["birthday", "afternoon-tea"]
     },
     "edible-image-gift-wrapped": {
       "images": ["Edible-Image-Gift-Wrapped.jpg"],
-      "name": "Edible Image -  Gift Wrapped"
+      "name": "Edible Image -  Gift Wrapped",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "edible-image-multi": {
       "images": ["Edible-Image-Multi.jpg"],
-      "name": "Edible Image - Multi"
+      "name": "Edible Image - Multi",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "enchanted": {
       "images": ["Enchanted.jpg"],
-      "name": "Enchanted"
+      "name": "Enchanted",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "fault-line-beige-and-gold": {
       "images": ["Fault-Line-Beige-and-Gold.jpg"],
-      "name": "Fault Line - Beige & Gold"
+      "name": "Fault Line - Beige & Gold",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "ferrero-indulgence": {
       "images": ["Ferrero-Indulgence.jpg"],
@@ -480,29 +538,41 @@
       "testimonial": {
         "text": "The cake is incredible. Thank you so much!! Delicious!",
         "name": "Rob"
-     }
+     },
+     "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "fluttering-lilac": {
       "images": ["Fluttering-Lilac.jpg"],
-      "name": "Fluttering Lilac"
+      "name": "Fluttering Lilac",
+      "product": "celebration-cake",
+      "occasion":["birthday", "afternoon-tea"]
     },
   
     "hazel": {
       "images": ["Hazel.jpg"],
-      "name": "Hazel"
+      "name": "Hazel",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "jurassic-world": {
       "images": ["Jurassic-World.jpg"],
-      "name": "Jurassic World"
+      "name": "Jurassic World",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "kirsten-buttercream": {
       "images": ["Kirsten-Buttercream.jpg"],
       "name": "Kirsten -  Buttercream",
-      "squareImage": "Kirsten-Buttercream-square.jpg"
+      "squareImage": "Kirsten-Buttercream-square.jpg",
+      "product": "wedding-cake",
+      "occasion":"wedding"
     },
     "lavender-dream": {
       "images": ["Lavender-Dream.jpg"],
-      "name": "Lavender Dream"
+      "name": "Lavender Dream",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "little-leonard": {
       "images": ["Little-Leonard.jpg"],
@@ -511,7 +581,9 @@
           "text": "Thank you SO much for the lion cake last weekend, it was absolutely delicious, lots of compliments and everyone loved it - thank you!",
           "name": "Sarah",
           "location": "Headley"
-        }
+        },
+        "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "milk-and-white": {
       "images": ["Milk-and-White.jpg"],
@@ -520,39 +592,57 @@
           "text": "Just wanted to say a big thank you on behalf of my son and daughter-in-law for the cake. It was incredible and they were delighted with it.",
           "name": "Anne",
           "location": "Newbury"
-        }
+        },
+        "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "pink-birthday-mix": {
       "images": ["Pink-Birthday-Mix.jpg"],
-      "name": "Birthday Mix - Pink"
+      "name": "Birthday Mix - Pink",
+      "product": "cupcake",
+      "occasion":"birthday"
     },
     "puppy-in-pink": {
       "images": ["Puppy-in-Pink.jpg"],
-      "name": "Puppy in Pink"
+      "name": "Puppy in Pink",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "rose-embellished-90": {
       "images": ["Rose-Embellished-90.jpg"],
-      "name": "Rose Embellished 90"
+      "name": "Rose Embellished 90",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "roses-and-ripples": {
       "images": ["Roses-and-Ripples.jpg"],
-      "name": "Roses & Ripples"
+      "name": "Roses & Ripples",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "sage-and-lily": {
       "images": ["Sage-and-Lily.jpg"],
-      "name": "Sage & Lily"
+      "name": "Sage & Lily",
+      "product": "celebration-cake",
+      "occasion":["birthday","anniversary", "wedding"]
     },
     "silver-anniversary": {
       "images": ["Silver-Anniversary.jpg"],
-      "name": "Silver Anniversary"
+      "name": "Silver Anniversary",
+      "product": "celebration-cake",
+      "occasion":"anniversary"
     },
     "simply-football-spurs": {
       "images": ["Simply-Football-Spurs.jpg"],
-      "name": "Simply Football - Spurs"
+      "name": "Simply Football - Spurs",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "simply-football-watford": {
       "images": ["Simply-Football-Watford.jpg"],
-      "name": "Simply Football - Watford"
+      "name": "Simply Football - Watford",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "simply-ombre-peter-rabbit": {
       "images": ["Simply-Ombre-Peter-Rabbit.jpg"],
@@ -561,84 +651,123 @@
           "text": "Just wanted to say a very big thank you for creating a wonderful first birthday cake for George. I had so many people asking where it was from, and it tasted delicious. Needless to say it’s all gone!",
           "name": "Lucy",
           "location": "Cold Ash"
-        }
-
+        },
+        "product": "celebration-cake",
+        "occasion":"birthday"
     },
     "subtle-in-gold": {
       "images": ["Subtle-in-Gold.jpg"],
-      "name": "Subtle in Gold"
+      "name": "Subtle in Gold",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "super-mario": {
       "images": ["Super-Mario.jpg"],
-      "name": "Super Mario"
+      "name": "Super Mario",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "surfs-up": {
       "images": ["Surfs-Up.jpg"],
-      "name": "Surf's Up"
+      "name": "Surf's Up",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "swirling-blue": {
       "images": ["Swirling-Blue.jpg"],
-      "name": "Swirling Blue"
+      "name": "Swirling Blue",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "tutu-and-ruffles": {
       "images": ["Tutu-and-Ruffles.jpg"],
-      "name": "Tutu & Ruffles"
+      "name": "Tutu & Ruffles",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "twenty-nine": {
       "images": ["Twenty-Nine.jpg"],
-      "name": "Twenty Nine"
+      "name": "Twenty Nine",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "two-infinity": {
       "images": ["Two-Infinity.jpg"],
-      "name": "Two Infinity"
+      "name": "Two Infinity",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "up-up-and-away": {
       "images": ["Up-Up-and-Away.jpg"],
-      "name": "Up, Up & Away"
+      "name": "Up, Up & Away",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "cheers-corona": {
       "images": ["Cheers-Corona.jpg"],
-      "name": "Cheers - Corona"
+      "name": "Cheers - Corona",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "21-mix": {
       "images": ["21-Mix.jpg"],
-      "name": "21 Mix"
+      "name": "21 Mix",
+      "product": "cupcake",
+      "occasion":"birthday"
     },
     "anchor-aweigh": {
       "images": ["Anchor-Aweigh.jpg"],
-      "name": "Anchor Aweigh"
+      "name": "Anchor Aweigh",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "baby-shades": {
       "images": ["Baby-Shades.jpg"],
-      "name": "Baby Shades"
+      "name": "Baby Shades",
+      "product": "cupcake",
+      "occasion":["baby-shower", "gender-reveal"]
     },
     "birthday-shades-lilac-blue": {
       "images": ["Birthday-Shades-Lilac-Blue.jpg"],
-      "name": "Birthday Shades - Lilac/Blue"
+      "name": "Birthday Shades - Lilac/Blue",
+      "product": "cupcake",
+      "occasion":"birthday"
     },
     "birthday-shades-sage-pink-shimmer": {
       "images": ["Birthday-Shades-Sage-Pink-Shimmer.jpg"],
-      "name": "Birthday Shades - Sage/Pink Shimmer"
+      "name": "Birthday Shades - Sage/Pink Shimmer",
+      "product": "cupcake",
+      "occasion":"birthday"
     },
     "blazing-birthday": {
       "images": ["Blazing-Birthday.jpg"],
-      "name": "Blazing Birthday"
+      "name": "Blazing Birthday",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "blessed-in-blue": {
       "images": ["Blessed-in-Blue.jpg"],
-      "name": "Blessed in Blue"
+      "name": "Blessed in Blue",
+      "product": "celebration-cake",
+      "occasion":"christening"
     },
     "bouquet-pink-mix": {
       "images": ["Bouquet-Pink-Mix.jpg"],
-      "name": "Bouquet - Pink Mix"
+      "name": "Bouquet - Pink Mix",
+      "product": "cupcake",
+      "occasion":["birthday", "anniversary", "afternoon-tea"]
     },
     "classic-drips-chocolate": {
       "images": ["Classic-Drips-Chocolate.jpg"],
-      "name": "Classic Drips - Chocolate"
+      "name": "Classic Drips - Chocolate",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "classic-drips-gold-mini": {
       "images": ["Classic-Drips-Gold-Mini.jpg"],
-      "name": "Classic Drips - Gold - Mini"
+      "name": "Classic Drips - Gold - Mini",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "cocoa-and-cream": {
       "images": ["Cocoa-and-Cream.jpg"],
@@ -647,7 +776,9 @@
         "text": "Just wanted to say thank you for doing our birthday cake! It looked and tasted amazing, and your suggestions of how much we'd need were spot on as there was just a few slices left (which got eaten today!!).",
         "name": "Kristy",
         "location": "Chieveley"
-      }
+      },
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "congrats-police": {
       "images": ["Congrats-Police.jpg"],
@@ -655,43 +786,63 @@
       "testimonial": {
         "text": "Just wanted to say thank you so much, the cupcakes were amazing and my partner was really surprised! They didn't last long at all. We'll definitely be using you again for future events/birthdays!",
         "name": "Alexandra"
-     }
+     },
+     "product": "cupcake",
+      "occasion": "graduation"
     },
     "cosmo": {
       "images": ["Cosmo.jpg"],
-      "name": "Cosmo"
+      "name": "Cosmo",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "daisy-daisy-daisy": {
       "images": ["Daisy-Daisy-Daisy.jpg", "Daisy-Daisy-Daisy-no-num.jpg"],
-      "name": "Daisy, Daisy, Daisy"
+      "name": "Daisy, Daisy, Daisy",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "ditsy-pink": {
       "images": ["Ditsy-Pink.jpg"],
-      "name": "Ditsy - Pink"
+      "name": "Ditsy - Pink",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "fathers-day-cupcake-mix": {
       "images": ["Fathers-Day-Cupcake-Mix.jpg"],
-      "name": "Father's Day Cupcake Mix"
+      "name": "Father's Day Cupcake Mix",
+      "product": "cupcake",
+      "occasion":"fathers-day"
     },
     "fault-line-green-and-gold": {
       "images": ["Fault-Line-Green-and-Gold.jpg", "Fault-Line-Green-and-Gold-2.jpg"],
-      "name": "Fault Line - Green & Gold"
+      "name": "Fault Line - Green & Gold",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "fuchsia": {
       "images": ["Fuchsia-2.jpg", "Fuchsia.jpg"],
-      "name": "Fuchsia"
+      "name": "Fuchsia",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "fun-guy": {
       "images": ["Fun-Guy.jpg"],
-      "name": "Fun Guy"
+      "name": "Fun Guy",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "god-bless": {
       "images": ["God-Bless.jpg"],
-      "name": "God Bless"
+      "name": "God Bless",
+      "product": "celebration-cake",
+      "occasion":"anniversary"
     },
     "kickin-beats-and-winning-streaks": {
       "images": ["Kickin-Beats-and-Winning-Streaks.jpg"],
-      "name": "Kickin' Beats & Winning Streaks"
+      "name": "Kickin' Beats & Winning Streaks",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "petals-and-promises": {
       "images": ["Petals-and-Promises.jpg"],
@@ -700,19 +851,27 @@
         "text": "Thank you so much for the stunning wedding cake, we were all delighted with it!",
         "name": "June",
         "location": "Thatcham"
-      }
+      },
+      "product": "wedding-cake",
+      "occasion":"wedding"
     },
     "prime-ice-pop": {
       "images": ["Prime-Ice-Pop.jpg"],
-      "name": "Prime - Ice Pop"
+      "name": "Prime - Ice Pop",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "prime-mix": {
       "images": ["Prime-Mix.jpg"],
-      "name": "Prime Mix"
+      "name": "Prime Mix",
+      "product": "cupcake",
+      "occasion":"birthday"
     },
     "prom": {
       "images": ["Prom.jpg"],
-      "name": "Prom"
+      "name": "Prom",
+      "product": "cupcake",
+      "occasion":"prom"
     },
     "simply-yellow": {
         "images": ["Simply-Yellow.jpg", "Simply-Yellow-Emboss.jpg"],
@@ -721,11 +880,15 @@
           "text": "Just wanted to thank you for the birthday cakes. They were fabulous! They looked amazing and also tasted wonderful. I was lucky to get a piece to try myself as they were so popular with everyone.",
           "name": "Sue",
           "location": "Newbury"
-        }
+        },
+        "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "splodge-and-co": {
       "images": ["Splodge-and-co.jpg"],
-      "name": "Splodge & Co."
+      "name": "Splodge & Co.",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "subtle-in-pink": {
       "images": ["Subtle-in-Pink.jpg"],
@@ -733,47 +896,69 @@
       "testimonial": {
         "text": "Wanted to say a huge thank you for the cakes. They were amazing and went down very well!",
         "name": "Paul"
-     }
+     },
+     "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "throwback": {
       "images": ["Throwback.jpg"],
-      "name": "Throwback"
+      "name": "Throwback",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "fit-for-a-princess": {
       "images": ["Fit-for-a-Princess.jpg"],
-      "name": "Fit for a Princess"
+      "name": "Fit for a Princess",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "puppy-paws": {
       "images": ["Puppy-Paws.jpg"],
-      "name": "Puppy Paws"
+      "name": "Puppy Paws",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "for-the-love-of-dogs": {
       "images": ["For-the-Love-of-Dogs.jpg"],
-      "name": "For the love of dogs"
+      "name": "For the love of dogs",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "howzat": {
       "images": ["Howzat.jpg"],
-      "name": "Howzat"
+      "name": "Howzat",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "green-fingers": {
       "images": ["Green-Fingers.jpg"],
-      "name": "Green Fingers"
+      "name": "Green Fingers",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "football-rules": {
       "images": ["Football-Rules.jpg"],
-      "name": "Football Rules"
+      "name": "Football Rules",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "milk-float": {
       "images": ["The-Fastest-Milk-Float-in-the-West.jpg"],
-      "name": "The Fastest Milk Float in the West"
+      "name": "The Fastest Milk Float in the West",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "pattern-piping": {
       "images": ["Pattern-Piping.jpg"],
-      "name": "Pattern Piping"
+      "name": "Pattern Piping",
+      "product": "cupcake",
+      "occasion":["birthday", "afternoon-tea"]
     },
     "leonard": {
       "images": ["Leonard.jpg"],
-      "name": "Leonard"
+      "name": "Leonard",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "semi-naked-drips": {
       "images": ["Semi-Naked-Drip.jpg"],
@@ -782,7 +967,9 @@
         "text": "THANK YOU SO MUCH for the cake. It looked beautiful thank you and it's all gone! Everyone enjoyed eating it. Sorry I didn't see you Saturday, but thank you, it was fantastic!!",
         "name": "Robyn",
         "location": "Thatcham"
-      }
+      },
+      "product": "wedding-cake",
+      "occasion":"wedding"
     },
     "rowing-for-cambridge":{
       "images": ["rowing-for-cambridge.jpg"],
@@ -791,56 +978,82 @@
         "text": "Just to say my customer was very complimentary about your cake, so thank you so much for squeezing us in. Will definitely be using your services again.",
         "name": "Forever and a day Events",
         "location": "Reading"
-      }
+      },
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "box-of-lennies": {
       "images": ["A-Box-of-Lennies.jpg"],
-      "name": "A Box of Lennies"
+      "name": "A Box of Lennies",
+      "product": "cupcake",
+      "occasion":["birthday", "afternoon-tea"]
     },
     "classic-drips-gold": {
       "images": ["Classic-Drips-Gold.jpg"],
-      "name": "Classic Drips - Gold"
+      "name": "Classic Drips - Gold",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "hole-in-one": {
       "images": ["A-Hole-in-One.jpg"],
-      "name": "A Hole in One"
+      "name": "A Hole in One",
+      "product": "cupcake",
+      "occasion":"birthday"
     },
     "boxed-pretty-in-pink": {
       "images": ["Boxed-Pretty-in-Pink-Tag.jpg", "Boxed-Pretty-in-Pink-Ribbon.jpg", "Boxed-Pretty-in-Pink-Open.jpg"],
-      "name": "Boxed - Pretty in Pink"
+      "name": "Boxed - Pink Roses",
+      "product": "cupcake",
+      "occasion":["birthday", "anniversary","afternoon-tea"]
     },
     "bijou": {
       "images": ["Bijou.jpg"],
-      "name": "Bijou"
+      "name": "Bijou",
+      "product": "wedding-cake",
+      "occasion":["wedding", "anniversary"]
     },
     "corporate-cupcakes-colour-set": {
       "images": ["Corporate-Cupcakes-Colour-Set.jpg"],
-      "name": "Corporate Cupcakes - Colour Set"
+      "name": "Corporate Cupcakes - Colour Set",
+      "product": "cupcake",
+      "occasion":"corporate"
     },
     "arc-de-fleur": {
       "images": ["Arc-De-Fleur.jpg"],
-      "name": "Arc de Fleur"
+      "name": "Arc de Fleur",
+      "product": "celebration-cake",
+      "occasion":["birthday", "anniversary", "wedding"]
     },
     "corporate-thank-you": {
       "images": ["Corporate-Thank-You.jpg"],
       "squareImage": "Corporate-Thank-You-square.jpg",
-      "name": "Corporate - Thank You"
+      "name": "Corporate - Thank You",
+      "product": "celebration-cake",
+      "occasion":"corporate"
     },
     "corporate-goodbye-and-thank-you": {
       "images": ["Corporate-Goodbye-and-Good-Luck.jpg"],
-      "name": "Corporate - Goodbye & Thank You"
+      "name": "Corporate - Goodbye & Thank You",
+      "product": "celebration-cake",
+      "occasion":"corporate"
     },
     "a-touch-of-pink-birthday-edition": {
       "images": ["A-Touch-of-Pink-Birthday-Edition.jpg"],
-      "name": "A Touch of Pink - Birthday Edition"
+      "name": "A Touch of Pink - Birthday Edition",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "a-touch-of-pink-with-chocolate": {
       "images": ["A-Touch-of-Pink-with-Chocolate-Name.jpg"],
-      "name": "A Touch of Pink with Chocolate"
+      "name": "A Touch of Pink with Chocolate",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "harry-potter-gryffindor": {
       "images": ["Harry-Potter-Gryffindor-Edition.jpg", "Harry-Potter-Gryffindor-2.jpg"],
-      "name": "Harry Potter - Gryffindor Edition"
+      "name": "Harry Potter - Gryffindor Edition",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "football-print-spurs": {
       "images": ["Football-Print-Spurs.jpg"],
@@ -849,11 +1062,15 @@
         "text": "Just wanted to thank you for the wonderful cake! It was perfect and tasted amazing.",
         "name": "Claire",
         "location": "Thatcham"
-      }
+      },
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "shades-of-chocoate-narrow": {
       "images": ["Shades-of-Chocolate-Narrow.jpg"],
-      "name": "Shades of Chocolate - Narrow"
+      "name": "Shades of Chocolate - Narrow",
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "chocolate-decadence-milestone": {
       "images": ["Chocolate-Decadence-Milestone.jpg"],
@@ -862,7 +1079,9 @@
         "text": "A huge thank you for the absolutely stunning cake; it's really taken my breath away. It was certainly a centre piece, it had lots of great comments and tasted delicious. Thank you again for everything.",
         "name": "Tracy",
         "location": "West Berkshire"
-      }
+      },
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "centre-stage": {
       "images": ["Centre-Stage.jpg"],
@@ -871,7 +1090,9 @@
         "text": "The cake was splendid... AND delicious. Thank you soooo much Katie. Half gone! Lots left to enjoy! I shall recommend you to anyone who needs a special cake for a special occasion.",
         "name": "Marilyn", 
         "location": ""
-      }
+      },
+      "product": "celebration-cake",
+      "occasion":"birthday"
     },
     "welcome-to-the-jungle":{
       "images": ["Welcome-to-the-Jungle.jpg"],
@@ -880,7 +1101,9 @@
         "text": "I just wanted to say thank you so much for the cake! It's literally perfect and better than the photos, thank you!!",
         "name": "Chloe",
         "location": "Thatcham"
-      }
+      },
+      "product":"celebration-cake",
+      "occasion": "birthday"
     },
     "timeless":{
       "images": ["Timeless.jpg"],
@@ -889,14 +1112,16 @@
         "text": "Just to say thank you for the beautiful and delicious birthday cake you delivered to me yesterday.  My daughter and the family loved the cake and we will definitely recommend you.",
         "name": "Lynne",
         "location": "Thatcham"
-      }
+      },
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "be-my-valentine": {
       "images": ["Be-My-Valentine-Box.jpg", "Be-My-Valentine-Pattern.jpg"],
       "squareImage": "Be-My-Valentine-Pattern-square.jpg",
       "name": "Be My Valentine",
-      "product": "",
-      "occasion": ""
+      "product": "cupcake",
+      "occasion": "valentines"
     },
     "a-touch-of-pink-with-chocolate ": {
       "images": [
@@ -904,20 +1129,20 @@
         "A-Touch-of-Pink-with-Chocolate.jpg"
       ],
       "name": "A Touch of Pink with Chocolate",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "stitch-experiment-626": {
       "images": ["Stitch-Experiment-626.jpg"],
       "name": "Stitch - Experiment 626",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "frosty-snowflakes": {
       "images": ["Frosty-Snowflakes.jpg"],
       "name": "Frosty Snowflakes",
-      "product": "",
-      "occasion": ""
+      "product": "cupcake",
+      "occasion": ["birthday", "christmas", "afternoon-tea"]
     },
     "birthday-shades-blue-glitz": {
       "images": [
@@ -927,33 +1152,33 @@
         "Birthday-Shades-Blue-Glitz-2.jpg"
       ],
       "name": "Birthday Shades - Blue Glitz",
-      "product": "",
-      "occasion": ""
+      "product": "cupcake",
+      "occasion": "birthday"
     },
     "corporate-cupcakes": {
       "images": ["Corporate-Cupcakes.jpg"],
       "name": "Corporate Cupcakes",
-      "product": "",
-      "occasion": ""
+      "product": "cupcake",
+      "occasion": "corporate"
     },
     "dragon-ball-goku": {
       "images": ["Dragon-Ball-Goku.jpg"],
       "name": "Dragon Ball - Goku",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "adorable-flopsy-bunny": {
       "images": ["Adorable-Flopsy-Bunny.jpg"],
       "squareImage": "Adorable-Flopsy-Bunny-square.jpg",
       "name": "Adorable Flopsy Bunny",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "christening"
     },
     "birthday-baker": {
       "images": ["Birthday-Baker.jpg"],
       "name": "Birthday Baker",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "christmas-cupcake-ensemble": {
       "images": [
@@ -961,15 +1186,15 @@
         "Christmas-Cupcake-Ensemble-Open.jpg"
       ],
       "name": "Christmas Cupcake Ensemble",
-      "product": "",
-      "occasion": ""
+      "product": "cupcake",
+      "occasion": "christmas"
     },
     "ruby-reindeer": {
       "images": ["Ruby-Front.jpg", "Ruby-Top.jpg"],
       "squareImage": "white-reindeer-square.jpg",
       "name": "Ruby reindeer",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "christmas"
     },
     "birthday-shades-blue": {
       "images": [
@@ -977,20 +1202,20 @@
         "Birthday-Shades-Blue-Open.jpg"
       ],
       "name": "Birthday Shades - Blue",
-      "product": "",
-      "occasion": ""
+      "product": "cupcake",
+      "occasion": "birthday"
     },
     "football-print-arsenal": {
       "images": ["Football-Print-Arsenal.jpg"],
       "name": "Football Print - Arsenal",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "daisy-chain": {
       "images": ["Daisy-Chain.jpg"],
       "name": "Daisy Chain",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "minecraft": {
       "images": ["Minecraft.jpg"],
@@ -1001,8 +1226,8 @@
           "file": "Minecraft.mp4"
         }
       ],
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "pink-and-bluey": {
       "images": ["Pink-and-Bluey.jpg"],
@@ -1013,14 +1238,14 @@
           "file": "Pink-and-Bluey.mp4"
         }
       ],
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "chocolate-decadence": {
       "images": ["Chocolate-Decadence.jpg"],
       "name": "Chocolate Decadence",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": ["birthday","afternoon-tea"]
     },
     "birthday-square": {
       "images": ["Birthday-Square.jpg"],
@@ -1036,8 +1261,8 @@
           "file": "Birthday-Square.mp4"
         }
       ],
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "golden-drip-cake-with-age": {
       "images": ["Golden-Drip-Cake-with-Age.jpg"],
@@ -1048,8 +1273,8 @@
           "file": "Golden-Drip-Cake-with-Age.mp4"
         }
       ],
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "psychedelic-symphony": {
       "images": [
@@ -1065,14 +1290,14 @@
           "file": "Psychedelic-Symphony.mp4"
         }
       ],
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "birthday-beach-mix": {
       "images": ["Birthday-Beach-Mix.jpg", "Birthday-Beach-Mix-Box.jpg"],
       "name": "Birthday Beach Mix",
-      "product": "",
-      "occasion": ""
+      "product": "cupcake",
+      "occasion": "birthday"
     },
     "deluxe-mix": {
       "images": ["Deluxe-Mix-Gift-Wrap.jpg", "Deluxe-Mix-Open.jpg"],
@@ -1082,14 +1307,14 @@
         "name": "Andy",
         "location": "West Berkshire"
       },
-      "product": "",
-      "occasion": ""
+      "product": "deluxe-cupcake",
+      "occasion": ["birthday", "afternoon-tea"]
     },
     "ttmc-cupcakes": {
       "images": ["TTMC-Corporate-Cupcakes.jpg", "TTMC-Stand.jpg"],
       "name": "The Traffic Management Company Corporate Cupcakes",
-      "product": "",
-      "occasion": ""
+      "product": "cupcake",
+      "occasion": "corporate"
     },
     "diamond-anniversary": {
       "images": ["Diamond-Anniversary.jpg"],
@@ -1101,8 +1326,8 @@
           "file": "Diamond-Anniversary.mp4"
         }
       ],
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "anniversary"
     },
     "ready-set-go-kart": {
       "images": ["Ready-Set-Go-Kart.jpg"],
@@ -1113,20 +1338,20 @@
           "file": "Ready-Set-Go-Kart.mp4"
         }
       ],
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "kirsten": {
       "images": ["Kirsten.jpg"],
       "name": "Kirsten",
-      "product": "",
-      "occasion": ""
+      "product": "wedding-cake",
+      "occasion": "wedding"
     },
     "hp-slytherin-edition": {
       "images": ["HP-Slytherin-Edition.jpg"],
       "name": "Harry Potter - Slytherin Edition",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "come-fly-with-me": {
       "images": ["Come-Fly-With-Me.jpg"],
@@ -1137,14 +1362,14 @@
           "file": "Come-Fly-With-Me.mp4"
         }
       ],
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "pink-cascade": {
       "images": ["Pink-Cascade.jpg"],
       "name": "Pink Cascade",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "bon-voyage": {
       "images": [
@@ -1160,8 +1385,8 @@
         "name": "Yvonne",
         "location": "Thatcham"
       },
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "superhero-ombre": {
       "images": ["Superhero-Ombre.jpg"],
@@ -1171,14 +1396,14 @@
         "name": "Nicola",
         "location": "Tadley"
       },
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "rose-mix": {
       "images": ["Rose-Mix.jpg", "Rose-Mix-Triple.jpg", "Rose-Mix-Single.jpg"],
       "name": "Rose Mix",
-      "product": "",
-      "occasion": ""
+      "product": "cupcake",
+      "occasion": ["birthday", "afternoon-tea"]
     },
     "fresh-flowers-vibrant-pink": {
       "images": ["Fresh-Flowers-Vibrant-Pink.jpg"],
@@ -1188,14 +1413,14 @@
         "name": "Caroline",
         "location": "Midgham "
       },
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "cocktails-and-seashells": {
       "images": ["Cocktails-and-Seashells.jpg"],
       "name": "Cocktails & Seashells",
-      "product": "",
-      "occasion": ""
+      "product": "cupcake",
+      "occasion": ["birthday","afternoon-tea"]
     },
     "fresh-flowers-yellow-sunshine": {
       "images": ["Fresh-Flowers-Yellow-Sunshine.jpg"],
@@ -1206,15 +1431,15 @@
         "name": "Vanessa",
         "location": "Bucklebury"
       },
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "birthday-books": {
       "images": ["Birthday-Books.jpg"],
       "squareImage": "Birthday-Books-square.jpg",
       "name": "Birthday Books",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "flower-elegance": {
       "images": ["Flower-Elegance.jpg"],
@@ -1225,8 +1450,8 @@
           "file": "Flower-Elegance.mp4"
         }
       ],
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "golden-anniversary": {
       "images": ["Golden-Anniversary.jpg"],
@@ -1236,8 +1461,8 @@
         "name": "Lilian & David",
         "location": "Newbury"
       },
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion":"anniversary"
     },
     "a-touch-of-pink": {
       "images": ["A-Touch-of-Pink.jpg"],
@@ -1248,8 +1473,8 @@
           "file": "A-Touch-of-Pink.mp4"
         }
       ],
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": ["birthday", "afternoon-tea"]
     },
     "sun-sand-and-seashells": {
       "images": ["Sun-Sand-and-Seashells.jpg"],
@@ -1265,21 +1490,21 @@
           "file": "Sun-Sand-and-Seashells.mp4"
         }
       ],
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "shades-of-chocolate": {
       "images": ["Shades-of-Chocolate.jpg"],
       "squareImage": "Shades-of-Chocolate-square.jpg",
       "name": "Shades of Chocolate",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "shades-of-pink-and-gold-fault-line-flowers": {
       "images": ["Shades-of-Pink-and-Gold-Fault-Line-Flowers.jpg"],
       "name": "Fault Line Flowers - Pink & Gold",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "shades-of-pink-and-gold-fault-line-balls": {
       "images": ["Shades-of-Pink-and-Gold-Fault-Line-Balls.jpg"],
@@ -1291,8 +1516,8 @@
           "file": "Shades-of-Pink-and-Gold-Fault-Line-Balls.mp4"
         }
       ],
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "booties-and-bunting": {
       "images": ["Booties-and-Bunting.jpg"],
@@ -1304,8 +1529,8 @@
           "file": "Booties-and-Bunting.mp4"
         }
       ],
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "christening"
     },
     "blue-speckle-mini-eggs": {
       "images": ["Blue-Speckle-Mini-Eggs.jpg"],
@@ -1317,8 +1542,8 @@
           "file": "Blue-Speckle-Mini-Eggs.mp4"
         }
       ],
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "easter"
     },
     "cream-mini-eggs": {
       "images": ["Cream-Mini-Eggs.jpg"],
@@ -1329,8 +1554,8 @@
           "file": "Cream-Mini-Eggs.mp4"
         }
       ],
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "easter"
     },
     "galaxy": {
       "images": ["Galaxy.jpg"],
@@ -1341,8 +1566,8 @@
           "file": "Galaxy.mp4"
         }
       ],
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "pink-ombre-daisies": {
       "images": ["Pink-Ombre-Daisies.jpg"],
@@ -1353,20 +1578,20 @@
           "file": "Pink-Ombre-Daisies.mp4"
         }
       ],
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "sapphire-anniversary ": {
       "images": ["Sapphire-Anniversary.jpg"],
       "name": "Sapphire Anniversary",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "anniversary"
     },
     "90-not-out": {
       "images": ["90-Not-Out.jpg"],
       "name": "90 Not Out",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "black-and-white": {
       "images": ["Black-and-White.jpg"],
@@ -1382,14 +1607,14 @@
           "file": "Black-and-White.mp4"
         }
       ],
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "50s-and-tiaras ": {
       "images": ["50s-and-tiaras.jpg"],
       "name": "50s & Tiaras",
-      "product": "",
-      "occasion": ""
+      "product": "cupcake",
+      "occasion": "birthday"
     },
     "white-and-gold-choc-fudge": {
       "images": ["White-and-Gold-Choc-Fudge.jpg"],
@@ -1405,8 +1630,8 @@
           "file": "White-and-Gold-Choc-Fudge.mp4"
         }
       ],
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "ferrero-rocher-cake": {
       "images": ["Ferrero-Rocher-Cake.jpg"],
@@ -1418,8 +1643,8 @@
           "file": "Ferrero-Rocher-Cake.mp4"
         }
       ],
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": ["birthday", "afternoon-tea"]
     },
     "choc-fudge-cake": {
       "images": ["Choc-Fudge-Cake.jpg"],
@@ -1431,14 +1656,14 @@
           "file": "Choc-Fudge-Cake.mp4"
         }
       ],
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": ["birthday", "afternoon-tea"]
     },
     "celebration-pink-gin": {
       "images": ["Celebration-Rose-Gold-Gin.jpg"],
       "name": "Celebration - pink gin",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "celebration": {
       "images": ["Celebration-Blue.jpg", "Celebration-Pink.jpg"],
@@ -1453,8 +1678,8 @@
           "file": "Celebration-Pink.mp4"
         }
       ],
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "cupcake-birthday-boxes": {
       "images": [
@@ -1463,13 +1688,15 @@
         "Rose-Gold-Age-Name-Cupcakes.jpg"
       ],
       "name": "Cupcake Birthday Boxes",
-      "product": "",
-      "occasion": ""
+      "product": "cupcake",
+      "occasion": "birthday"
     },
     "oreo-cake": {
       "images": ["Oreo.jpg"],
       "name": "Oreo",
-      "description": "Caution: Cake may break apart when twisted and dunked. But feel free to lick it - well only your slice."
+      "description": "Caution: Cake may break apart when twisted and dunked. But feel free to lick it - well only your slice.",
+      "product": "celebration-cake",
+      "occasion": ["birthday", "afternoon-tea"]
     },
     "cupcake-assortment-boxes": {
       "images": [
@@ -1478,15 +1705,15 @@
         "Pink-and-White-Mix.jpg"
       ],
       "name": "Cupcake Assortment Boxes",
-      "product": "",
-      "occasion": ""
+      "product": "deluxe-cupcake",
+      "occasion": ["birthday", "afternoon-tea"]
     },
     "oreo-cupcakes": {
       "images": ["Oreo-cupcakes.jpg"],
       "name": "Oreo Cupcakes",
       "description": "Twist off the wrapper, lick off the icing, dunk in the milk - just like a real Oreo.",
-      "product": "",
-      "occasion": ""
+      "product": "deluxe-cupcake",
+      "occasion": ["birthday", "afternoon-tea"]
     },
     "lemon-and-pink-gin-cupcakes": {
       "images": [
@@ -1496,70 +1723,70 @@
       ],
       "name": "Lemon & Pink Gin Cupcakes",
       "description": "For when it's not quite 5 O'clock … shall we?",
-      "product": "",
-      "occasion": ""
+      "product": "deluxe-cupcake",
+      "occasion": ["birthday", "afternoon-tea"]
     },
     "smores-cupcakes": {
       "images": ["Smores-Cupcakes.jpg"],
       "name": "S'mores Cupcakes",
       "description": "Not just for the nights snuggled and singing round the campfire.",
-      "product": "",
-      "occasion": ""
+      "product": "deluxe-cupcake",
+      "occasion": ["birthday", "afternoon-tea"]
     },
     "salted-caramel-cupcakes": {
       "images": ["Salted-Caramel-Cupcakes.jpg"],
       "name": "Salted Caramel Cupcakes",
       "description": "Contains salted caramel - need I say more?",
-      "product": "",
-      "occasion": ""
+      "product": "deluxe-cupcake",
+      "occasion": ["birthday", "afternoon-tea"]
     },
     "parker-penguin": {
       "images": ["Parker-penguin.jpg"],
       "squareImage": "Parker-Penguin-square.jpg",
       "name": "Parker Penguin",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "carrot-cupcakes": {
       "images": ["Carrot-Cupcakes.jpg"],
       "name": "Carrot Cupcakes",
-      "product": "",
-      "occasion": ""
+      "product": "cupcake",
+      "occasion": "afternoon-tea"
     },
     "jammie-dodger-cake": {
       "images": ["Jammie-Dodger-Cake.jpg"],
       "name": "Jammie Dodger Cake",
       "description": "Bring back childhood memories one slice at a time.",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": ["birthday", "afternoon-tea"]
     },
     "easter-surprise": {
       "images": ["Easter-Surprise-Inside.jpg", "Easter-Surprise.jpg"],
       "name": "Easter Surprise",
       "description": "You may have just stumbled upon the Easter Bunny's secret stash…",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "easter"
     },
     "easter-nest-cupcakes": {
       "images": ["Easter-Nest-Cupcakes.jpg"],
       "name": "Easter Nest Cupcakes",
       "description": "The best type of eggs you will ever find in a nest - shame it's only at easter.",
-      "product": "",
-      "occasion": ""
+      "product": "cupcake",
+      "occasion": "easter"
     },
     "death-by-choc": {
       "images": ["Death-By-Choc.jpg"],
       "name": "Death by Chocolate",
       "description": "Chocolate, chocolate, chocolate, chocolate, chocolate, chocolate, chocolate, chocolate, chocolate … oh and sprinkles!",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "st-patricks-day": {
       "images": ["St-Patricks-Day.jpg"],
       "name": "St. Patrick's Day",
       "description": " No need to hunt down the end of a rainbow when you can find some gold coins right here (psst they maybe chocolate coins instead).",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "st-patricks-day"
     },
     "cupcake-bouquet": {
       "images": [
@@ -1567,34 +1794,34 @@
         "Cupcake-Bouquet-Presentation.jpg"
       ],
       "name": "Cupcake Bouquet",
-      "product": "",
-      "occasion": ""
+      "product": "cupcake",
+      "occasion": ["birthday", "anniversary", "valentines"]
     },
     "double-drips": {
       "images": ["Double-Drips.jpg"],
       "name": "Double Drips",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "choc-cake": {
       "images": ["Choc-Cake.jpg"],
       "name": "Chocolate Cake",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": ["afternoon-tea", "birthday"]
     },
     "romantic-heart": {
       "images": ["Romantic-Heart.jpg"],
       "name": "Romantic Heart",
       "description": "Chocolate, strawberries, cake: what more do you need for a romantic night in? Whether it's valentine's day, an anniversary or just to give to that special person in your life - you will need a cake like this to celebrate the occasion.",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": ["valentines", "anniversary", "birthday"]
     },
     "reading-football-shirt": {
       "images": ["Reading-FC.jpg"],
       "name": "Reading Football Shirt",
       "description": "If you are in the Stephen Hunt for a Reading FC cake then you don't need to look any Shane Long-er. This shirt can be adapted for any team.",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "wonder-woman": {
       "images": ["Wonder-Woman.jpg"],
@@ -1605,33 +1832,33 @@
         "name": "Mel",
         "location": "Reading"
       },
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "football-cupcakes": {
       "images": ["Football-Cupcakes.jpg"],
       "name": "Football Cupcakes",
       "description": "Why not score yourself some of these cupcakes?",
-      "product": "",
-      "occasion": ""
+      "product": "cupcake",
+      "occasion": ["birthday", "afternoon-tea"]
     },
     "nuts-and-bolts": {
       "images": ["Marbled-DIY.jpg"],
       "name": "Nuts & bolts",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "Woodwork": {
       "images": ["Saw-DIY.jpg"],
       "name": "Woodwork",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "wooden-plane": {
       "images": ["Wooden-Plane.jpg"],
       "name": "Wooden plane",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "choo-choo": {
       "images": ["Choo-Choo.jpg"],
@@ -1642,39 +1869,39 @@
         "name": "Lisa",
         "location": "Thatcham "
       },
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "coffee-mug": {
       "images": ["Coffee-Mug.jpg"],
       "name": "Coffee Mug",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "afternoon-tea": {
       "images": ["Afternoon-Tea.jpg"],
       "name": "Afternoon Tea",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "gift-roses": {
       "images": ["Gift-Roses-Pink.jpg", "Gift-Roses-Lemon.jpg"],
       "name": "Gift Roses",
       "description": "This small cake is just enough for a few and enrobed in elegant buttercream roses with a cute gift tag just for that finishing touch.",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": ["birthday", "anniversary"]
     },
     "neapolitan": {
       "images": ["Neapolitan.jpg", "Neapolitan-Age.jpg"],
       "name": "Neapolitan",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": ["birthday", "afternoon-tea"]
     },
     "art-palette ": {
       "images": ["Art-Palette.jpg"],
       "name": "Art Palette",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "gordons-gin": {
       "images": ["Gordons-Gin.jpg"],
@@ -1684,60 +1911,60 @@
         "name": "Mel",
         "location": "Reading"
       },
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "birthday-heart": {
       "images": ["Birthday-Heart.jpg"],
       "name": "Birthday Heart",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "our-story": {
       "images": ["Our-Story.jpg"],
       "name": "Our Story",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": ["birthday", "anniversary"]
     },
     "gucci": {
       "images": ["Gucci.jpg"],
       "name": "Gucci",
       "description": "Do they want something Gucci for their birthday? This is definitely the cheaper option!",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "guinness ": {
       "images": ["Guinness.jpg"],
       "name": "Guinness",
       "description": "Made of more - if 'more' is three layers of sponge, black and white fondant, an edible logo and a very cool antigravity effect.",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "ps4-controller": {
       "images": ["PS4-Controller.jpg"],
       "name": "PS4 Controller",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "friends": {
       "images": ["Friends.jpg"],
       "name": "Friends",
       "description": "OH. MY. GOD! Could this cake BE any more perfect for that Friends fan in your life - be they family, friend or your lobster (unless you're on a break)? Just don't offer any to Joey because he doesn't share food! Okay, I'm done now…",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "movie-glitz": {
       "images": ["Movie-Glitz.jpg"],
       "name": "Movie Glitz",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "chocoholic ": {
       "images": ["Chocoholic.jpg"],
       "name": "Chocoholic",
       "description": "Chocolate fan? Then you'll love this two tiered chocolate fudge cake surrounded by white and milk chocolate fingers and topped with maltesers . Psst… there's even white chocolate buttons between the layers!",
-      "product": "",
-      "occasion": ""
+      "product": "celebration-cake",
+      "occasion": ["birthday", "afternoon-tea"]
     }
   },
   "portfolioSample": [
