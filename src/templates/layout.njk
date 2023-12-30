@@ -126,6 +126,44 @@
                             </a>
                         </li>
                         <li class="submenu-grid">
+                            <button>Products</button>
+                            <div class="submenu">
+                                <ul>
+                                    <li>
+                                        <a href="/products/celebration-cakes">
+                                            {{ pictureElement("portfolio/" ~ portfolio['parker-penguin'].squareImage, "Birthday cake", "50px") }}
+                                            <span>Celebration cakes</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/products/wedding-cakes">
+                                            {{ pictureElement("portfolio/" ~ portfolio['kirsten-buttercream'].squareImage, "Wedding cake", "50px") }}
+                                            <span>Wedding cakes</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/products/cupcakes">
+                                            {{ pictureElement("portfolio/" ~ portfolio['diamond-anniversary'].squareImage, "Anniversary cake", "50px") }}
+                                            <span>Cupcakes</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/products/wedding-favours">
+                                            {{ pictureElement("portfolio/" ~ portfolio['adorable-flopsy-bunny'].squareImage, "Christening cake", "50px") }}
+                                            <span>Wedding favours</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/products/cake-jars">
+                                            {{ pictureElement("portfolio/" ~ portfolio['baby-bears'].squareImage, "Baby shower cake", "50px") }}
+                                            <span>Cake jars</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <a href="/products" class="submenu-grid-more-link">More products</a>
+                            </div>
+                        </li>
+                        <li class="submenu-grid">
                             <button>Occasions</button>
                             <div class="submenu">
                                 <ul>
@@ -192,14 +230,6 @@
                                 </ul>
                                 <a href="/occasions" class="submenu-grid-more-link">More occasions</a>
                             </div>
-                        </li>
-                        <li>
-                            <a
-                                href="/occasions/christmas"
-                                style="color:#fff;background:-webkit-linear-gradient(#fff,#f00);-webkit-background-clip:text;-webkit-text-fill-color:transparent;"
-                            >
-                                Christmas!
-                            </a>
                         </li>
                         <li id="desktop-header-contact-link">
                             <a class="header-contact-link" href="{{ "#contact" if page == "index" else "/#contact" }}">Contact</a>
