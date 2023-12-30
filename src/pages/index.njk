@@ -24,10 +24,12 @@
             <source src="videos/landing.mp4" type="video/mp4">
         </video>
         
-        <div id="snow-particles"></div>
+        {# Container for Christmas snow particles #}
+        {# <div id="snow-particles"></div> #}
 
         <div class="header-video-text">
             <span class="main-text">
+                {# <span> around "Baking" is for Christmas hat (see CSS) #}
                 <span>Baking</span> special memories
             </span>
             {# <span class="main-text">Let's make it memorable</span> #}
@@ -78,7 +80,8 @@
         <a class="button" href="/portfolio" >See more of my portfolio</a>
     </section>
 
-    <section id="christmas">
+    {# Christmas section #}
+    {# <section id="christmas">
 
         {{ pictureElement("backgrounds/christmas-tree.jpg", "Christmas background", "100vw") }}
 
@@ -103,7 +106,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> #}
 
     <section id="contact">
         {% from "macros/fixed-background.njk" import fixedBackground with context %}
@@ -179,5 +182,7 @@
 
 {% block scripts %}
     <script type="text/javascript" src="/js/slideshow.js" defer></script>
-    <script type="text/javascript" src="/js/snow.js" defer></script>
+
+    {# Christmas snowflakes #}
+    {# <script type="text/javascript" src="/js/snow.js" defer></script> #}
 {% endblock %}
