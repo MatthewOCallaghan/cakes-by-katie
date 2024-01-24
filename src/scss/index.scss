@@ -70,23 +70,25 @@
             animation-delay: 1s;
             animation-fill-mode: both;
 
+            
             span {
                 font-family: inherit;
                 position: relative;
 
-                &::before {
-                    content: "";
-                    display: block;
-                    position: absolute;
-                    top: min(-1.9vw, -15px);
-                    left: min(-1.9vw, -15px);
-                    width: max(8.8vw, 70px);
-                    height: max(6.2vw, 50px);
-                    background: url('/images/christmas/santa-hat.svg');
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    transform: rotateZ(-18deg);
-                }
+            // Christmas hat
+            //     &::before {
+            //         content: "";
+            //         display: block;
+            //         position: absolute;
+            //         top: min(-1.9vw, -15px);
+            //         left: min(-1.9vw, -15px);
+            //         width: max(8.8vw, 70px);
+            //         height: max(6.2vw, 50px);
+            //         background: url('/images/christmas/santa-hat.svg');
+            //         background-size: contain;
+            //         background-repeat: no-repeat;
+            //         transform: rotateZ(-18deg);
+            //     }
             }
         }
 
@@ -200,13 +202,13 @@
         }
     }
     
-    #snow-particles {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-    }
+    // #snow-particles {
+    //     position: absolute;
+    //     width: 100%;
+    //     height: 100%;
+    //     top: 0;
+    //     left: 0;
+    // }
     
 }
 
@@ -274,99 +276,99 @@
     }
 }
 
-#christmas {
+// #christmas {
     
-    color: #fff;
-    position: relative;
-    text-align: center;
+//     color: #fff;
+//     position: relative;
+//     text-align: center;
 
-    > picture img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        left: 0;
-        top: 0;
-        object-fit: cover;
-        z-index: -1;
-    }
+//     > picture img {
+//         position: absolute;
+//         width: 100%;
+//         height: 100%;
+//         left: 0;
+//         top: 0;
+//         object-fit: cover;
+//         z-index: -1;
+//     }
 
-    .christmas-outer-container {
-        background: #cd0000;
-        padding: 5px;
-        border-radius: 20px;
-        max-width: 1100px;
-        margin: auto;
+//     .christmas-outer-container {
+//         background: #cd0000;
+//         padding: 5px;
+//         border-radius: 20px;
+//         max-width: 1100px;
+//         margin: auto;
 
-        .christmas-inner-container {
-            padding: 20px 30px;
-            border: 2px dashed #fff;
-            border-radius: 15px;
+//         .christmas-inner-container {
+//             padding: 20px 30px;
+//             border: 2px dashed #fff;
+//             border-radius: 15px;
 
-            .christmas-contents {
+//             .christmas-contents {
                 
-                display: grid;
-                gap: 40px 30px;
-                grid-template-columns: auto auto;
-                grid-template-rows: auto auto;
-                grid-template-areas:
-                    "text image"
-                    "link image";
+//                 display: grid;
+//                 gap: 40px 30px;
+//                 grid-template-columns: auto auto;
+//                 grid-template-rows: auto auto;
+//                 grid-template-areas:
+//                     "text image"
+//                     "link image";
 
-                .christmas-text {
-                    grid-area: text;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-end;
-                    gap: 20px;
+//                 .christmas-text {
+//                     grid-area: text;
+//                     display: flex;
+//                     flex-direction: column;
+//                     justify-content: flex-end;
+//                     gap: 20px;
                     
-                    h2 {
-                        font-size: 2em;
-                        margin: 0;
-                    }
+//                     h2 {
+//                         font-size: 2em;
+//                         margin: 0;
+//                     }
 
-                    p {
-                        margin: 0;
-                    }
-                }
+//                     p {
+//                         margin: 0;
+//                     }
+//                 }
 
-                .christmas-collection-link {
-                    grid-area: link;
+//                 .christmas-collection-link {
+//                     grid-area: link;
 
-                    a::before {
-                        // Need to make background a bit more opaque as red background makes it too pinky
-                        background: #ffffffc9;
-                    }
-                }
+//                     a::before {
+//                         // Need to make background a bit more opaque as red background makes it too pinky
+//                         background: #ffffffc9;
+//                     }
+//                 }
 
-                .christmas-collection-image {
-                    grid-area: image;
-                    width: min(400px, 40vw);
-                    min-width: min(100%, 300px);
-                    margin: auto;
+//                 .christmas-collection-image {
+//                     grid-area: image;
+//                     width: min(400px, 40vw);
+//                     min-width: min(100%, 300px);
+//                     margin: auto;
 
-                    img {
-                        width: 100%;
-                    }
-                }
+//                     img {
+//                         width: 100%;
+//                     }
+//                 }
 
-                @media (max-width: 800px) {
-                    grid-template-columns: 100%;
-                    grid-template-rows: auto auto auto;
-                    grid-template-areas:
-                        "text"
-                        "image"
-                        "link";
-                    gap: 20px;
-                    padding: 10px 0;
+//                 @media (max-width: 800px) {
+//                     grid-template-columns: 100%;
+//                     grid-template-rows: auto auto auto;
+//                     grid-template-areas:
+//                         "text"
+//                         "image"
+//                         "link";
+//                     gap: 20px;
+//                     padding: 10px 0;
 
-                    .christmas-text {
-                        gap: 10px;
-                    }
-                }
-            }
-        }   
-    }
-}
+//                     .christmas-text {
+//                         gap: 10px;
+//                     }
+//                 }
+//             }
+//         }   
+//     }
+// }
 
 #contact {
 

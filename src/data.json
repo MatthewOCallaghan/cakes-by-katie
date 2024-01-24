@@ -159,7 +159,7 @@
           "description": "Buttercream cakes are finished completely in buttercream in either one or more colours to produce the desired effect. The finish can be smooth or textured.",
           "examples": [
             "shades-of-chocolate",
-            "shades-of-pink-and-gold-fault-line",
+            "shades-of-pink-and-gold-fault-line-flowers",
             "pink-ombre-daisies"
           ]
         },
@@ -330,7 +330,6 @@
     }
   },
   "portfolio": {
-
     "all-aboard": {
     "images": ["All-Aboard.jpg"],
     "name": "All Aboard",
@@ -548,7 +547,6 @@
       "product": "celebration-cake",
       "occasion":["birthday", "afternoon-tea"]
     },
-  
     "hazel": {
       "images": ["Hazel.jpg"],
       "name": "Hazel",
