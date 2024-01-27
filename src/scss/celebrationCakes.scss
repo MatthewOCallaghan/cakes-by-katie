@@ -11,48 +11,6 @@
     
 }
 
-
-.image-slideshow {
-    width: 100%;
-    height: 200px;
-    background: linear-gradient(to bottom, #fff, #000);// #fbe4ff);
-
-    
-
-    @media (max-width: 800px) {
-        height: 150px;
-    }
-
-    .swiper {
-        width: 100%;
-        height: 100%;
-        
-        opacity: 0;
-        transition: opacity .3s;
-
-        &.swiper-initialized {
-            opacity: 1;
-        }
-
-        .swiper-wrapper {
-            // transition-timing-function: linear;
-        }
-
-        .swiper-slide {
-            width: min-content;
-        }
-
-        .image-container {
-            height: 100%;
-
-            img {
-                height: 100%;
-                width: 100%;
-            }
-        }
-    }
-}
-
 .choices{
     background: #000;// #fbe4ff;
     color: #fff;

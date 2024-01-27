@@ -108,6 +108,45 @@ function processNunjucks() {
         environment.addFilter('stringifyElements', array => {
             return array.map(JSON.stringify);
         });
+
+        // Get array of cake keys matching specified filters
+        // filters is object, e.g. { product: 'celebration-cake', occasion: 'birthday' }
+        // `count` is desired number of cakes
+        // `offset` is index of matching cake to return first (use to avoid duplicate image carousels on same page)
+        environment.addGlobal('getMatchingCakes', (filters, count, offset = 0) => {
+
+            // Cakes in portfolio that match filters
+            const matchingCakes = Object.entries(data.portfolio).reduce((acc, [key, info]) => {
+                for (let filterKey in filters) {
+                    if (info[filterKey] !== filters[filterKey]) {
+                        return acc;
+                    }
+                }
+
+                return acc.concat(key);
+            }, []);
+
+            if (matchingCakes.length === 0) {
+                return [];
+            }
+
+            // Index of `matchingCakes` to return first
+            // Need to consider that offset could be greater than count
+            // E.g. if offset is 5 and array length is 3, we must start on element with index 2
+            const start = offset % matchingCakes.length;
+
+            const selectedCakes = [];
+            let i = start;
+            while (selectedCakes.length < count) {
+                selectedCakes.push(matchingCakes[i]);
+                i++;
+                if (i >= matchingCakes.length) {
+                    i = 0;
+                }
+            }
+
+            return selectedCakes;
+        });
     }
 
     return src('src/pages/**/*.njk')

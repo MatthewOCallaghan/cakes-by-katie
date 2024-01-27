@@ -2,11 +2,8 @@
 {% extends "layout.njk" %}
 
 {% block head %}
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-/>
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    {% from "macros/image-carousel-head.njk" import imageCarouselHead %}
+    {{ imageCarouselHead() }}
 {% endblock %}
 
 {% block main %}
@@ -26,27 +23,8 @@
         </div>
     </section>
 
-    <div class="image-slideshow">
-
-        <!-- Slider main container -->
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                {% for key, cake in portfolio %}
-                    <div class="swiper-slide">
-                        <div
-                            class="image-container"
-                            style="aspect-ratio: {{ cake.images[0].aspectRatio }}"
-                        >
-                            {{ pictureElement("portfolio/" + cake.images[0].src, cake.name, '200px') }}
-                        </div>
-                    </div>
-                {% endfor %}
-            </div>
-        </div>
-
-    </div>
+    {% from "macros/image-carousel.njk" import imageCarousel with context %}
+    {{ imageCarousel(getMatchingCakes({ product: 'celebration-cake' }, 30), 'linear-gradient(to bottom, #fff, #000)') }}
 
     <section class="choices">
         <h2>Let's design your cake!</h2>
@@ -166,5 +144,5 @@
 {% endblock %}
 
 {% block scripts %}
-    <script type="text/javascript" src="/js/imageSlideshow.js" defer></script>
+    
 {% endblock %}

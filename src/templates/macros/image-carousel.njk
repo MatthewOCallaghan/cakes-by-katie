@@ -1,0 +1,22 @@
+{% macro imageCarousel(cakes, background = '#fff') %}
+{% from "macros/picture.njk" import pictureElement with context %}
+<div class="image-slideshow" style="background:{{background}}">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                {% for cake in cakes %}
+                    <div class="swiper-slide">
+                        <div
+                            class="image-container"
+                            style="aspect-ratio: {{ portfolio[cake].images[0].aspectRatio }}"
+                        >
+                            {{ pictureElement("portfolio/" + portfolio[cake].images[0].src, portfolio[cake].name, '250px') }}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endmacro %}
