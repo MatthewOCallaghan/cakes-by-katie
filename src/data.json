@@ -195,7 +195,10 @@
           "description": "Topping the cake with a balloon gives an extra touch.",
           "examples": ["celebration-pink-gin", "celebration"]
         }
-      ]
+      ],
+      "cta": {
+        "text": "Want a quote for a birthday cake?"
+      }
     },
     "wedding": {
       "title": "Wedding cakes | Cakes by Katie",
@@ -208,7 +211,14 @@
         }
       },
       "exampleCake": "kirsten",
-      "productName": "wedding cake"
+      "productName": "wedding cake",
+      "cta": {
+        "text": "Let's talk about your wedding cake!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      }
     },
     "anniversary": {
       "title": "Anniversary cakes | Cakes by Katie",
@@ -222,7 +232,10 @@
       },
       "h2": "Make anniversaries more special with a celebration cake.",
       "exampleCake": "diamond-anniversary",
-      "productName": "anniversary cake"
+      "productName": "anniversary cake",
+      "cta": {
+        "text": "Want a quote for an anniversary cake?"
+      }
     },
     "christeningAndBabyShower": {
       "title": "Cakes and cupcakes for christenings, baby showers and gender reveals | Cakes by Katie",
@@ -250,7 +263,9 @@
       },
       "exampleCake": "ttmc-cupcakes",
       "imageAlt": "Example corporate cupcakes",
-      "ctaPrompt": "Ready to order for your corporate event?"
+      "cta": {
+        "text": "Want a quote for your corporate event?"
+      }
     },
     "valentines": {
       "title": "Valentine's cakes and cupcakes | Cakes by Katie",
@@ -264,7 +279,10 @@
       },
       "exampleCake": "cupcake-bouquet",
       "imageAlt": "Cupcake bouquet",
-      "productName": "Valentine's cake"
+      "productName": "Valentine's cake",
+      "cta": {
+        "text": "Ready to make your Valentine's special?"
+      }
     },
     "easter": {
       "title": "Easter cakes and cupcakes | Cakes by Katie",
@@ -277,7 +295,10 @@
         }
       },
       "exampleCake": "easter-surprise",
-      "productName": "Easter cake"
+      "productName": "Easter cake",
+      "cta": {
+        "text": "Ready to order for Easter?"
+      }
     },
     "christmas": {
       "title": "Christmas cakes, cupcakes and gifts | Cakes by Katie",
@@ -290,7 +311,15 @@
         }
       },
       "exampleCake": "ruby-reindeer",
-      "productName": "Christmas cake"
+      "productName": "Christmas cake",
+      "cta": {
+        "text": "Ready to order for Christmas?",
+        "image": {
+          "path": "backgrounds/santa-and-child.jpg",
+          "alt": "Santa Clause and child background",
+          "position": "50% 30%"
+        }
+      }
     },
     "afternoon-tea": {
       "title": "Afternoon tea cakes and cupcakes | Cakes by Katie",
@@ -303,8 +332,10 @@
         }
       },
       "exampleCake": "ferrero-rocher-cake",
-      "ctaPrompt": "Ready to order a cake for afternoon tea?",
-      "imageAlt": "Ferrero rocher cake"
+      "imageAlt": "Ferrero rocher cake",
+      "cta": {
+        "text": "Ready to order?"
+      }
     }
   },
   "portfolio": {

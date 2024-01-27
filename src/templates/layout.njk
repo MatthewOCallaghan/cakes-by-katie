@@ -236,6 +236,28 @@
             {% endif %}
 
             {% block main %}{% endblock %}
+
+            {% if page != "index" %}
+                <section id="bottom-panel-cta">
+                    {{
+                        pictureElement(
+                            pages[page].cta.image.path if pages[page].cta.image else "backgrounds/cake-selection.jpg",
+                            pages[page].cta.image.alt if pages[page].cta.image else "Selection of cakes",
+                            "100vw",
+                            "object-position: " ~ pages[page].cta.image.position if pages[page].cta.image.position
+                        )
+                    }}
+                    <div>
+                        <h3>{{ pages[page].cta.text | safe if pages[page].cta.text else "Get a quote for your occasion!" }}</h3>
+                        <a
+                            class="button button-white"
+                            href="/#contact"
+                        >
+                            Contact me
+                        </a>
+                    </div>
+                </section>
+            {% endif %}
         </main>
 
         <footer>

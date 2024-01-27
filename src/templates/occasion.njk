@@ -12,20 +12,4 @@
 
         {% block text %}{% endblock %}
     </div>
-
-    <div class="cta">
-        <h3>
-            {% if pages[page].ctaPrompt %}
-                {{ pages[page].ctaPrompt }}
-            {% else %}
-                Ready to order a{{ "n" if (pages[page].productName | first) in ['a', 'e', 'i', 'o', 'u'] }} {{ pages[page].productName }}?
-            {% endif %}
-        </h3>
-        <a
-            class="button"
-            href="/#contact"
-        >
-            Contact me
-        </a>
-    </div>
 {% endblock %}
