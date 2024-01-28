@@ -1,4 +1,4 @@
-{% macro pictureElement(path, alt, recommendedSizes) %}
+{% macro pictureElement(path, alt, recommendedSizes, imageStyle) %}
 <picture>
     {% set name = path | removeExtension %}
     {% for type in imageFormats.formats %}
@@ -8,6 +8,6 @@
             sizes="{{ recommendedSizes | createSizes }}"
         >
     {% endfor %}
-    <img src="/images/{{ path }}" alt="{{ alt }}" />
+    <img src="/images/{{ path }}" alt="{{ alt }}" style="{{ imageStyle }}" />
 </picture>
 {% endmacro %}

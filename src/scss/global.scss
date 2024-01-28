@@ -761,6 +761,54 @@ header[data-nav-submenu] {
 }
 
 /* -------------------------------------------------------------------------- */
+/*                              Bottom panel CTA                              */
+/* -------------------------------------------------------------------------- */
+
+section#bottom-panel-cta {
+
+    position: relative;
+    padding: 50px 20px;
+
+
+    > div {
+        color: #fff;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3em;
+        
+        // Show more of background
+        @media (min-width: 1300px) {
+            min-height: 370px;
+        }
+    }
+
+    h3 {
+        font-size: 4em;
+        margin: 0;
+        text-align: center;
+        
+        sup {
+            font-family: inherit;
+        }
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(.5);
+        z-index: -1;
+    }
+}
+
+/* -------------------------------------------------------------------------- */
 /*                                   Footer                                   */
 /* -------------------------------------------------------------------------- */
 
