@@ -1,7 +1,7 @@
 {% macro gridMenuLinks(links, title, text) %}
     <section class="grid-menu-links" >
         {% from "macros/fixed-background.njk" import fixedBackground with context %}
-        {{ fixedBackground("marble-background.jpg", "Marble background image") }}
+        {{ fixedBackground("backgrounds/marble-background.jpg", "Marble background image") }}
 
         <h2>{{ title }}</h2>
         {% if text %}

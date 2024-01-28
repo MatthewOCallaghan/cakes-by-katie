@@ -1069,3 +1069,63 @@ footer {
         }
     }
 }
+
+.design-choices{
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: max(30px, 5%);
+
+    h2 {
+        margin: 0;
+    }
+
+    .category {
+        margin-top: max(30px, 5%);
+
+        &::before {
+            content: "";
+            display: block;
+            width: 70%;
+            height: 2px;
+            margin: 0 auto;
+            background: linear-gradient(to right, #fff0, #fff, #fff0);
+        }
+
+        h3 {
+            font-size: 2.5em;
+            margin: min(7%, 1em) 0;
+        }
+
+        .items {
+
+            $columnGap: max(20px, 5%);
+            $minPerRow: 3;
+
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: $columnGap;
+            row-gap: 40px;
+            justify-content: center;
+
+            > div {
+                max-width: min(300px, calc((100% / $minPerRow) - (($minPerRow - 1)/$minPerRow) * $columnGap));
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                > * {
+                    margin: 0;
+                }
+
+                img {
+                    width: min(100%, 150px);
+                    aspect-ratio: 1;
+                    border-radius: 100%;
+                    object-fit: cover;
+                }
+            }
+
+        }
+    }
+}

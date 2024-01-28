@@ -26,120 +26,111 @@
     {% from "macros/image-carousel.njk" import imageCarousel with context %}
     {{ imageCarousel(getMatchingCakes({ product: 'celebration-cake' }, 30), 'linear-gradient(to bottom, #fff, #000)') }}
 
-    <section class="choices">
-        <h2>Let's design your cake!</h2>
-        <p>Some sentence here.</p>
-        <div class="category">
-            <h3>Finishes</h3>
-            <div class="items">
-                <div>
-                    {{ pictureElement("choices/buttercream.jpg", "Example", '150px') }}
-                    <h4>Buttercream</h4>
-                    <p>Description. Mention it's cheaper and has more pastel colours. List various options including textured.</p>
-                </div>
-                <div>
-                    {{ pictureElement("choices/fondant.jpg", "Example", '150px') }}
-                    <h4>Fondant</h4>
-                    <p>Description. Mention it's more expensive. List various advantages.</p>
-                </div>
-            </div>
-        </div>
+    {% from "macros/design-choices.njk" import designChoices with context %}
+    {{
+        designChoices(
+            "Let's design your cake!",
+            "Some sentence here.",
+            [
+                {
+                    name: "Finishes",
+                    items: [
+                        {
+                            name: "Buttercream",
+                            description: "Optional description. Mention it's cheaper and has more pastel colours. List various options including textured.",
+                            image: "choices/buttercream.jpg"
+                        },
+                        {
+                            name: "Fondant",
+                            description: "Optional description. Mention it's more expensive. List various advantages.",
+                            image: "choices/fondant.jpg"
+                        }
+                    ]
+                },
+                {
+                    name: "Decoration",
+                    items: [
+                        {
+                            name: "Topper",
+                            image: "choices/topper.jpg"
+                        },
+                        {
+                            name: "Chocolate drips",
+                            image: "choices/chocolate-drips.jpg"
+                        },
+                        {
+                            name: "Coloured drips",
+                            image: "choices/coloured-drips.jpg"
+                        },
+                        {
+                            name: "Fondant flowers",
+                            image: "choices/fondant-flowers.jpg"
+                        },
+                        {
+                            name: "Fresh flowers",
+                            image: "choices/fresh-flowers.jpg"
+                        },
+                        {
+                            name: "Silk flowers",
+                            image: "choices/silk-flowers.jpg"
+                        },
+                        {
+                            name: "Fondant models",
+                            image: "choices/fondant-model.jpg"
+                        },
+                        {
+                            name: "Airbrushing",
+                            image: "choices/airbrushing.jpg"
+                        },
+                        {
+                            name: "Edible images",
+                            image: "choices/edible-image.jpg"
+                        },
+                        {
+                            name: "Plaque",
+                            image: "choices/plaque.jpg"
+                        },
+                        {
+                            name: "Ball toppers",
+                            image: "choices/ball-toppers.jpg"
+                        },
+                        {
+                            name: "Ruffles",
+                            image: "choices/ruffles.jpg"
+                        },
+                        {
+                            name: "Embossed lettering",
+                            image: "choices/embossed-lettering.jpg"
+                        }
+                    ]
+                },
+                {
+                    name: "Special extras",
+                    items: [
+                        {
+                            name: "Pinata cake",
+                            image: "choices/pinata.jpg"
+                        },
+                        {
+                            name: "Money cake",
+                            image: "portfolio/A-Touch-of-Pink.jpg"
+                        },
+                        {
+                            name: "Balloon",
+                            image: "choices/balloon.jpg"
+                        }
+                    ]
+                }
+            ]
+        )
+    }}
 
-        <div class="category">
-            <h3>Decoration</h3>
-            <div class="items">
-                <div>
-                    {{ pictureElement("choices/topper.jpg", "Example", '150px') }}
-                    <h4>Topper</h4>
-                    <p>Optional description.</p>
-                </div>
-                <div>
-                    {{ pictureElement("choices/chocolate-drips.jpg", "Example", '150px') }}
-                    <h4>Chocolate drips</h4>
-                    <p>Optional description.</p>
-                </div>
-                <div>
-                    {{ pictureElement("choices/coloured-drips.jpg", "Example", '150px') }}
-                    <h4>Coloured drips</h4>
-                    <p>Optional description.</p>
-                </div>
-                <div>
-                    {{ pictureElement("choices/fondant-flowers.jpg", "Example", '150px') }}
-                    <h4>Fondant flowers</h4>
-                    <p>Optional description.</p>
-                </div>
-                <div>
-                    {{ pictureElement("choices/fresh-flowers.jpg", "Example", '150px') }}
-                    <h4>Fresh flowers</h4>
-                    <p>Optional description.</p>
-                </div>
-                <div>
-                    {{ pictureElement("choices/silk-flowers.jpg", "Example", '150px') }}
-                    <h4>Silk flowers</h4>
-                    <p>Optional description.</p>
-                </div>
-                <div>
-                    {{ pictureElement("choices/fondant-model.jpg", "Example", '150px') }}
-                    <h4>Fondant models</h4>
-                    <p>Optional description.</p>
-                </div>
-                <div>
-                    {{ pictureElement("choices/airbrushing.jpg", "Example", '150px') }}
-                    <h4>Airbrushing</h4>
-                    <p>Optional description.</p>
-                </div>
-                <div>
-                    {{ pictureElement("choices/edible-image.jpg", "Example", '150px') }}
-                    <h4>Edible images</h4>
-                    <p>Optional description.</p>
-                </div>
-                <div>
-                    {{ pictureElement("choices/plaque.jpg", "Example", '150px') }}
-                    <h4>Plaque</h4>
-                    <p>Optional description.</p>
-                </div>
-                <div>
-                    {{ pictureElement("choices/ball-toppers.jpg", "Example", '150px') }}
-                    <h4>Ball toppers</h4>
-                    <p>Optional description.</p>
-                </div>
-                <div>
-                    {{ pictureElement("choices/ruffles.jpg", "Example", '150px') }}
-                    <h4>Ruffles</h4>
-                    <p>Optional description.</p>
-                </div>
-                <div>
-                    {{ pictureElement("choices/embossed-lettering.jpg", "Example", '150px') }}
-                    <h4>Embossed lettering</h4>
-                    <p>Optional description.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="category">
-            <h3>Special extras</h3>
-            <div class="items">
-                <div>
-                    {{ pictureElement("choices/pinata.jpg", "Example", '150px') }}
-                    <h4>Pinata cake</h4>
-                    <p>Optional description.</p>
-                </div>
-                <div>
-                    {{ pictureElement("portfolio/A-Touch-of-Pink.jpg", "Example", '150px') }}
-                    <h4>Money cake</h4>
-                    <p>Optional description.</p>
-                </div>
-                <div>
-                    {{ pictureElement("choices/balloon.jpg", "Example", '150px') }}
-                    <h4>Balloon</h4>
-                    <p>Optional description.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    {{ imageCarousel(getMatchingCakes({ product: 'celebration-cake' }, 30, 30), 'linear-gradient(to top, #fff, #000)') }}
 
     {# Finishes, decorations, flavours, special additions (pinata, money cake, balloon) #}
     {# Pricing #}
+    {# Cupcakes on the side #}
+    {# Delivery? #}
     {# Some inspiration (like birthday cakes)? #}
 {% endblock %}
 

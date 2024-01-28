@@ -1,0 +1,27 @@
+{% macro designChoices(heading, description, categories) %}
+{% from "macros/picture.njk" import pictureElement with context %}
+<section class="design-choices">
+    <h2>{{ heading }}</h2>
+    
+    {% if description %}
+        <p>{{ description }}</p>
+    {% endif %}
+
+    {% for category in categories %}
+        <div class="category">
+            <h3>{{category.name}}</h3>
+            <div class="items">
+                {% for item in category.items %}
+                    <div>
+                        {{ pictureElement(item.image, item.name ~ " example", '150px') }}
+                        <h4>{{ item.name }}</h4>
+                        {% if item.description %}
+                            <p>{{ item.description }}</p>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    {% endfor %}
+</section>
+{% endmacro %}
