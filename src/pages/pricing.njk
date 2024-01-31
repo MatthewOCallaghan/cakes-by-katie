@@ -13,28 +13,13 @@
 
         {% from "macros/picture.njk" import pictureElement with context %}
         
-        <div id="celebration-cakes" class="price-group">
+        <div id="celebration-cakes" class="price-group" style="background:{{pricing.celebrationCakes.colour}}">
             <div class="image-container">
                 {{ pictureElement("cake-cutouts/" ~ "shades-of-chocolate.png", "Celebration cake", "220px") }}
             </div>
 
             <h2>Celebration cakes</h2>
-            <p>Starting base prices (i.e. no decoration) are as follows:</p>
-            <table>
-                <tr>
-                    <th>Size in inches</th>
-                    <th>Round (diameter)</th>
-                    <th>Square (side length)</th>
-                </tr>
-                {% for size, roundPrice in pricing.celebrationCakes.round %}
-                    <tr>    
-                        <td>{{size}}</td>
-                        <td>£{{roundPrice}}</td>
-                        <td>£{{pricing.celebrationCakes.square[size]}}</td>
-                    </tr>
-                {% endfor %}
-            </table>
-            <p>Tiered cakes will incur an additional cost starting at £8 per tier to cover the support structure.</p>  
+            {% include "celebration-cake-pricing.njk" %}
         </div>
 
         <div id="wedding-cakes" class="price-group">

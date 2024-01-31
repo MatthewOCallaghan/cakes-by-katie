@@ -23,6 +23,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    text-align: center;
 
     main {
         flex-grow: 1;
@@ -160,6 +161,27 @@ section {
         .card-inner {
             padding: 10px;
         }
+    }
+}
+
+.pricing-table {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    border-collapse: collapse;
+
+    tr:nth-child(odd) {
+        background: #fff6;
+    }
+    
+    th {
+        background: #fff;
+    }
+
+    th, td {
+        border: 1px solid #e6e6e6;
+        padding: 5px;
+        width: 33%;
     }
 }
 

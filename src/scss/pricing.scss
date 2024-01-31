@@ -38,7 +38,6 @@
 
         &#celebration-cakes {
             margin-top: 0;
-            background: #dff6ff;
         }
         
         &#wedding-cakes {
@@ -63,24 +62,7 @@
             z-index: 1;
         }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-
-            tr:nth-child(odd) {
-                background: #fff6;
-            }
-            
-            th {
-                background: #fff;
-            }
-
-            th, td {
-                border: 1px solid #e6e6e6;
-                padding: 5px;
-                width: 33%;
-            }
-        }
+        
 
         .image-container {
             position: absolute;

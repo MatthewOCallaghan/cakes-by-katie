@@ -1,6 +1,10 @@
 @use "variables";
 @use "mixins";
 
+.page-content-container {
+    text-align: left;
+}
+
 .question {
 
     border-bottom: 1px solid variables.$pink;

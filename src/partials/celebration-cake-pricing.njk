@@ -1,0 +1,16 @@
+<p>Starting base prices (i.e. no decoration) are as follows:</p>
+<table class="pricing-table">
+    <tr>
+        <th>Size in inches</th>
+        <th>Round (diameter)</th>
+        <th>Square (side length)</th>
+    </tr>
+    {% for size, roundPrice in pricing.celebrationCakes.round %}
+        <tr>    
+            <td>{{size}}</td>
+            <td>£{{roundPrice}}</td>
+            <td>£{{pricing.celebrationCakes.square[size]}}</td>
+        </tr>
+    {% endfor %}
+</table>
+<p>Tiered cakes will incur an additional cost starting at £8 per tier to cover the support structure.</p>

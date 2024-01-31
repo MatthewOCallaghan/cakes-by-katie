@@ -152,7 +152,7 @@ function processNunjucks() {
     return src('src/pages/**/*.njk')
             .pipe(processData(data))
             .pipe(nunjucksRender({
-                path: ['src/templates/'],
+                path: ['src/templates/', 'src/partials/'],
                 manageEnv: manageEnvironment
             }))
             .pipe(htmlPrettify()) // Corrects indentation to make HTML more readable
@@ -344,7 +344,7 @@ function reload(cb) {
 function watchFiles() {
     watch('src/scss/**/*.scss', processSass);
     watch('src/data.json', series(setupData, processNunjucks));
-    watch(['src/pages/**/*.njk', 'src/templates/**/*.njk'], processNunjucks);
+    watch(['src/pages/**/*.njk', 'src/templates/**/*.njk', 'src/partials/**/*.njk'], processNunjucks);
     watch(['src/js/**/*', 'src/videos/**/*'], moveRemainingFilesToLocal);
     watch('src/images/**/*', updateLocalImages);
 }

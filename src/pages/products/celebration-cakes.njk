@@ -125,7 +125,12 @@
         )
     }}
 
-    {{ imageCarousel(getMatchingCakes({ product: 'celebration-cake' }, 30, 30), 'linear-gradient(to top, #fff, #000)') }}
+    {{ imageCarousel(getMatchingCakes({ product: 'celebration-cake' }, 30, 30), 'linear-gradient(to bottom, #000, #dff6ff)') }}
+
+    <section id="pricing" style="background:{{pricing.celebrationCakes.colour}}">
+        <h2>Pricing</h2>
+        {% include "celebration-cake-pricing.njk" %}
+    </section>
 
     {# Finishes, decorations, flavours, special additions (pinata, money cake, balloon) #}
     {# Pricing #}
