@@ -118,7 +118,9 @@ function processNunjucks() {
             // Cakes in portfolio that match filters
             const matchingCakes = Object.entries(data.portfolio).reduce((acc, [key, info]) => {
                 for (let filterKey in filters) {
-                    if (info[filterKey] !== filters[filterKey]) {
+                    // Convert strings to arrays
+                    const cakeData = Array.isArray(info[filterKey]) ? info[filterKey] : [info[filterKey]];
+                    if (!cakeData.includes(filters[filterKey])) {
                         return acc;
                     }
                 }
