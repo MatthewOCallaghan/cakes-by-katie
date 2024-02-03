@@ -132,6 +132,34 @@
         {% include "celebration-cake-pricing.njk" %}
     </section>
 
+    <section id="cupcakes">
+        <div class="cupcakes-text">
+            <h2>Why not get some cupcakes too?</h2>
+            <p>Two or three sentences here about how cupcakes can be a great accompaniment to a celebration cake. They can match the theme, or offer something different, and boost the number of portions if needed. They're also a great way to cater for guests with specific dietary requirements when the main celebration cake doesn't.
+            <div class="link-desktop">
+                <a
+                    class="button"
+                    href="/products/cupcakes"
+                >
+                    See cupcakes
+                </a>
+            </div>
+            <div class="link-mobile">
+                <a
+                    class="button button-black"
+                    href="/products/cupcakes"
+                >
+                    See cupcakes
+                </a>
+            </div>
+        </div>
+        <div class="cupcakes-image">
+            {% from "macros/picture.njk" import pictureElement with context %}
+            {{ pictureElement("portfolio/Baby-Shades.jpg", "Cupcakes", { '600': '100vw', any: '50vw' }) }}
+        </div>
+        
+    </section>
+
     {# Finishes, decorations, flavours, special additions (pinata, money cake, balloon) #}
     {# Pricing #}
     {# Cupcakes on the side #}

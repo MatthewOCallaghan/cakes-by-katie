@@ -114,6 +114,15 @@ section {
     }
 }
 
+.button-black {
+    border-color: #000;
+    color: variables.$pink;
+
+    &::before {
+        background: #00000099;
+    }
+}
+
 .page-content-container {
     padding: 0 20px 30px;
     max-width: 1100px;
