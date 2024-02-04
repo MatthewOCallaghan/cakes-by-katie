@@ -1,0 +1,22 @@
+
+{% macro halfImageSection(heading, text, linkHref, linkText, imageSrc, imageAlt) %}
+<section class="half-image-section">
+    <div class="half-text">
+        <h2>{{ heading }}</h2>
+        <p>{{ text }}</p>
+        <div class="link">
+            <a
+                class="button"
+                href="{{ linkHref }}"
+            >
+                {{ linkText }}
+            </a>
+        </div>
+    </div>
+    <div class="half-image">
+        {% from "macros/picture.njk" import pictureElement with context %}
+        {{ pictureElement(imageSrc, imageAlt, { '600': '100vw', any: '50vw' }) }}
+    </div>
+    
+</section>
+{% endmacro %}

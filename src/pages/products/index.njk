@@ -4,7 +4,9 @@
 {% block main %}
 
     <section class="intro">
-        <p>Talk about different products and how they're bespoke and high quality. Also mention difference between cupcakes and deluxe cupcakes. Say that the customer is welcome to enquire about something not listed below.</p>
+        <div class="intro-text">
+            <p>Talk about different products and how they're bespoke and high quality. Also mention difference between cupcakes and deluxe cupcakes. Say that the customer is welcome to enquire about something not listed below.</p>
+        </div>
     </section>
 
     {% from "macros/grid-menu-links.njk" import gridMenuLinks with context %}
@@ -19,17 +21,17 @@
                     colour: '#ace7ff'
                 },
                 {
+                    href: '/products/wedding-cakes',
+                    title: 'Wedding Cakes',
+                    imageSrc: 'cake-cutouts/wedding.png',
+                    imageAlt: 'Wedding cake',
+                    colour: '#c5a3ff'
+                },
+                {
                     href: '/products/cupcakes',
                     title: 'Cupcakes',
                     imageSrc: 'cake-cutouts/rose-mix-triple.png',
                     imageAlt: 'Rose mix cupcakes',
-                    colour: '#c5a3ff'
-                },
-                {
-                    href: '/products/deluxe-cupcakes',
-                    title: 'Deluxe cupcakes',
-                    imageSrc: 'cake-cutouts/ferrero-rocher-cupcake.png',
-                    imageAlt: 'Ferrero rocher deluxe cupcake',
                     colour: '#f8df81'
                 },
                 {

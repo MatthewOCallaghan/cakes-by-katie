@@ -154,7 +154,7 @@ function processNunjucks() {
     return src('src/pages/**/*.njk')
             .pipe(processData(data))
             .pipe(nunjucksRender({
-                path: ['src/templates/', 'src/partials/'],
+                path: ['src/templates/', 'src/partials/', 'src/images/illustrations/'],
                 manageEnv: manageEnvironment
             }))
             .pipe(htmlPrettify()) // Corrects indentation to make HTML more readable

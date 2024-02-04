@@ -1,0 +1,16 @@
+{# Items is array of objects with shape { image: 'example.svg', heading: 'Example heading', description: 'Short sentence here.' } #}
+{% macro serviceBreakdown(items) %}
+<div class="service-breakdown">
+    {% for item in items %}
+    <div class="service-element">
+        <div class="service-illustration">
+            {% include item.image %}
+        </div>
+        <div class="service-description">
+            <span>{{ item.heading }}</span>
+            <span>{{ item.description }}</span>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endmacro %}

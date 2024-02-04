@@ -61,10 +61,28 @@ a {
 }
 
 section {
-    padding: 20px;
+    // padding: 20px;
 
-    @media only screen and (min-width: 700px) {
-        padding: 40px 20px;
+    // @media only screen and (min-width: 700px) {
+    //     padding: 40px 20px;
+    // }
+    padding: min(max(30px, 5%), 80px);
+}
+
+section.intro {
+    background: #fff;
+
+    div.intro-text {
+        max-width: 1100px;
+        margin: auto;
+
+        > p:first-child {
+            margin-top: 0;
+        }
+    }
+
+    div.service-breakdown-container {
+        margin-top: 60px;
     }
 }
 
@@ -105,13 +123,18 @@ section {
     }
 }
 
-.button-white {
+// Creating a mixin as this is needed in .half-image-section below
+// It's used inside a media query so can't simply @extend
+@mixin button-white () {
     border-color: #fff;
     color: #000;
 
     &::before {
         background: #ffffff82;
     }
+}
+.button-white {
+    @include button-white()
 }
 
 .button-black {
@@ -1105,7 +1128,7 @@ footer {
     background: #000;
     color: #fff;
     text-align: center;
-    padding: max(30px, 5%);
+    // padding: max(30px, 5%);
 
     h2 {
         margin: 0;
@@ -1157,6 +1180,122 @@ footer {
                 }
             }
 
+        }
+    }
+}
+
+.service-breakdown {
+
+    $gap: 50px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: $gap;
+    width: 100%;
+
+    .service-element {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 200px;
+        max-width: calc(50% - $gap/2);
+
+        .service-illustration {
+            width: 70%;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: variables.$pink;
+
+            svg {
+                width: auto;
+                height: auto;
+                max-width: 100%;
+                max-height: 100%;
+                flex-grow: 1;
+            }
+        }
+
+        .service-description {
+            
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            > span:first-child {
+                font-weight: 400;
+                font-size: 1.2em;
+            }
+
+            > span:last-child {
+                color: grey;
+                font-size: 90%;
+            }
+        }
+    }
+}
+
+section.half-image-section {
+
+    display: flex;
+    padding: 0;
+
+    > div {
+        width: 50%;
+    }
+
+    div.half-text {
+        min-width: 600px;
+        padding: 40px 5%;
+        background: #fff2ec;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2em;
+
+        > h2, >p {
+            margin: 0;
+        }
+    }
+
+    div.half-image {
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    @media (max-width: 1000px) {
+        position: relative;
+        display: block;
+        padding: 20px;
+
+        div.half-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        div.half-text {
+            z-index: 1;
+            position: relative;
+            width: 100%;
+            min-width: 100%;
+            background: #{variables.$pink}dd;
+
+            div.link {
+                .button {
+                    @include button-white()
+                }
+            }
         }
     }
 }

@@ -128,7 +128,25 @@
         "text": "Celebration cakes",
         "image": {
           "path": "backgrounds/confetti.jpg",
-          "alt": "Gift bags background"
+          "alt": "Confetti background"
+        }
+      }
+    },
+    "weddingCakes": {
+      "title": "Wedding cakes | Cakes by Katie",
+      "description": "I'm a cake maker in Thatcham, West Berkshire, near Newbury, offering high quality bespoke wedding cakes in a range of flavours.",
+      "heading": {
+        "text": "Wedding cakes",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding cake!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
         }
       }
     },
@@ -2554,6 +2572,12 @@
         "12": 90
       },
       "colour": "#dff6ff"
+    },
+    "weddingCakes": {
+      "colour": "#fbe4ff"
+    },
+    "cupcakes": {
+      "colour": "#fff7cf"
     }
   }
 }
