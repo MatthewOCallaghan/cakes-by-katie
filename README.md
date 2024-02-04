@@ -4,12 +4,15 @@ Code for website [cakesbykatie.co.uk](https://www.cakesbykatie.co.uk).
 
 # TODO
 
-- More content (e.g. page for each product and occasion)
-- Get ring pattern
-- Contact form
-- More CTA buttons
-- SEO (compare with competitors)
-- Links from cakes on home page to portfolio page modal
+- Wedding cake choices - add size, need images
+- Cupcake background image
+- Cupcake choices
+- Flavour images
+- Wedding background for CTA panel
+- Wedding favour images (e.g. cake jars, biscuits, decorated biscuits, macarons)
+- Deluxe cupcake flavours and images
+- Gift images (e.g. cake jars, hot chocolate bombes, cupcakes (and bouquets))
+- Image for money cakes
 
 # Changes for Christmas
 
