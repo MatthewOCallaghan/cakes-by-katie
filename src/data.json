@@ -461,7 +461,7 @@
     },
     "confetti-in-the-clouds": {
       "images": ["Confetti-in-the-Clouds.jpg"],
-      "name": "Confetti-in-the-Clouds",
+      "name": "Confetti in the Clouds",
       "testimonial": {
         "text": "From the start Katie was extremely helpful with her ideas and very professional. The cake tasted delicious and my daughter was over the moon. I will certainly be using Katie again. Highly recommend.",
         "name": "Harriet",
@@ -683,7 +683,7 @@
     },
     "the-one-where-its-your-birthday": {
       "images": ["The-One-Where-its-your-Birthday.jpg"],
-      "name": "The One Where it's your Birthday",
+      "name": "The One Where It's Your Birthday",
       "product": "cupcake",
       "occasion": ["birthday", "gift"]
     },
@@ -1624,7 +1624,7 @@
       ]
     },
     "shades-of-chocolate": {
-      "images": ["Shades-of-Chocolate.jpg", "Shades-of-Chocolate-2.jpg"],
+      "images": ["Shades-of-Chocolate-2.jpg", "Shades-of-Chocolate.jpg"],
       "squareImage": "Shades-of-Chocolate-square.jpg",
       "name": "Shades of Chocolate"
     },
@@ -2108,7 +2108,7 @@
         "standard": "Moist with a hint of a spice flavour filled with cream cheese buttercream",
         "dairy-free": "Moist with a hint of a spice flavour filled with cream cheese (dairy free alternative) filling cream"
       },
-      "variants": ["gluten-free", "dairy-free"],
+      "variants": ["gluten-free"],
       "allergenInfo": "Carrot sponge is made using Nuts (walnuts)."
     },
     {
