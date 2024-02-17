@@ -414,6 +414,7 @@
     },
     "charlotte": {
       "images": ["Charlotte.jpg"],
+      "squareImage": "Charlotte-square.jpg",
       "name": "Charlotte",
       "description0": "Photographer: Jade Koh Photography",
       "product": "wedding-cake",
@@ -478,6 +479,7 @@
     },
     "diamond-toast": {
       "images": ["Diamond-Toast.jpg"],
+      "squareImage": "Diamond-Toast-square.jpg",
       "name": "Diamond Toast",
       "product": "celebration-cake",
       "occasion": "anniversary"
@@ -577,6 +579,7 @@
     },
     "jeffrey": {
       "images": ["Jeffrey.jpg"],
+      "squareImage": "Jeffrey-square.jpg",
       "name": "Jeffrey",
       "product": "celebration-cake",
       "occasion": "birthday"
@@ -613,6 +616,7 @@
     },
     "off-to-the-ball": {
       "images": ["Off-to-the-Ball.jpg"],
+      "squareImage": "Off-to-the-Ball-square.jpg",
       "name": "Off to the Ball",
       "product": "celebration-cake",
       "occasion": "birthday"
@@ -645,12 +649,14 @@
     },
     "pretty-in-pink": {
       "images": ["Pretty-in-Pink.jpg"],
+      "squareImage": "Pretty-in-Pink-square.jpg",
       "name": "Pretty ih Pink",
       "product": "celebration-cake",
       "occasion": "birthday"
     },
     "serve-and-slice": {
       "images": ["Serve-and-Slice.jpg"],
+      "squareImage": "Serve-and-Slice-square.jpg",
       "name": "Serve and Slice",
       "product": "celebration-cake",
       "occasion": "birthday"
@@ -838,6 +844,7 @@
     },
     "dreamland-express": {
       "images": ["Dreamland-Express.jpg"],
+      "squareImage": "Dreamland-Express-square.jpg",
       "name": "Dreamland Express"
     },
     "edible-image-corona": {
@@ -1100,6 +1107,7 @@
     },
     "petals-and-promises": {
       "images": ["Petals-and-Promises-2.jpg", "Petals-and-Promises.jpg"],
+      "squareImage": "Petals-and-Promises-square.jpg",
       "name": "Petals & Promises",
       "description": "First photo taken by Simon Withyman Photography",
       "testimonial": {
@@ -1994,15 +2002,15 @@
     }
   },
   "portfolioSample": [
-    "birthday-books",
-    "blue-speckle-mini-eggs",
-    "fresh-flowers-yellow-sunshine",
-    "shades-of-chocolate",
+    "serve-and-slice",
+    "petals-and-promises",
+    "off-to-the-ball",
+    "pretty-in-pink",
+    "diamond-toast",
     "parker-penguin",
-    "ferrero-rocher-cake",
-    "bon-voyage",
-    "shades-of-pink-and-gold-fault-line-balls",
-    "booties-and-bunting"
+    "jeffrey",
+    "charlotte",
+    "dreamland-express"
   ],
   "featuredTestimonials": [
     "semi-naked-drips",
