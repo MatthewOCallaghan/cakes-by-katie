@@ -69,5 +69,6 @@ export const FORMATS = ["avif", "webp"];
 export const WIDTHS = {
     default: [200, 400, 700, 1920],
     '/portfolio': [150, 300, 700, 1000, 1920],
-    '/backgrounds': [640, 768, 1024, 1366, 1600, 1920]
+    '/backgrounds': [640, 768, 1024, 1366, 1600, 1920],
+    '/choices': [150, 300]
 };
