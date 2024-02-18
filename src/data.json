@@ -2027,7 +2027,8 @@
         "dairy-free": "Light vanilla sponge filled with strawberry jam and filling cream",
         "vegan": "Light vanilla sponge filled with strawberry jam and filling cream"
       },
-      "variants": ["gluten-free", "dairy-free", "vegan"]
+      "variants": ["gluten-free", "dairy-free", "vegan"],
+      "image": "choices/flavours/vanilla.jpg"
     },
     {
       "name": "Chocolate",
@@ -2036,7 +2037,8 @@
         "dairy-free": "Chocolate sponge filled with chocolate filling cream",
         "vegan": "Chocolate sponge filled with chocolate filling cream"
       },
-      "variants": ["gluten-free", "dairy-free", "vegan"]
+      "variants": ["gluten-free", "dairy-free", "vegan"],
+      "image": "choices/flavours/chocolate.jpg"
     },
     {
       "name": "Chocolate Biscoff",
@@ -2046,7 +2048,8 @@
         "vegan": "Classic chocolate sponge layered with Biscoff flavoured filling cream and Biscoff spread"
       },
       "variants": ["dairy-free", "vegan"],
-      "allergenInfo": "Chocolate Biscoff sponge contains soya."
+      "allergenInfo": "Chocolate Biscoff sponge contains soya.",
+      "image": "choices/flavours/vanilla.jpg"
     },
     {
       "name": "Chocolate Oreo",
@@ -2055,7 +2058,8 @@
         "dairy-free": "Classic chocolate sponge filled with Oreo filling cream",
         "vegan": "Classic chocolate sponge filled with Oreo filling cream"
       },
-      "variants": ["gluten-free", "dairy-free", "vegan"]
+      "variants": ["gluten-free", "dairy-free", "vegan"],
+      "image": "choices/flavours/oreo.jpg"
     },
     {
       "name": "Chocolate Orange",
@@ -2064,7 +2068,8 @@
         "dairy-free": "Chocolate sponge flavoured with orange zest and filled with chocolate orange flavoured filling cream",
         "vegan": "Chocolate sponge flavoured with orange zest and filled with chocolate orange flavoured filling cream"
       },
-      "variants": ["gluten-free", "dairy-free", "vegan"]
+      "variants": ["gluten-free", "dairy-free", "vegan"],
+      "image": "choices/flavours/chocolate.jpg"
     },
     {
       "name": "Lemon",
@@ -2073,7 +2078,8 @@
         "dairy-free": "Fresh tasting sponge filled with lemon filling cream",
         "vegan": "Fresh tasting sponge filled with lemon filling cream"
       },
-      "variants": ["gluten-free", "dairy-free", "vegan"]
+      "variants": ["gluten-free", "dairy-free", "vegan"],
+      "image": "choices/flavours/lemon-elderflower-orange.jpg"
     },
     {
       "name": "Lemon and Elderflower",
@@ -2082,7 +2088,8 @@
         "dairy-free": "Light lemon sponge filled with elderflower flavour filling cream",
         "vegan": "Light lemon sponge filled with elderflower flavour filling cream"
       },
-      "variants": ["gluten-free", "dairy-free", "vegan"]
+      "variants": ["gluten-free", "dairy-free", "vegan"],
+      "image": "choices/flavours/lemon-elderflower-orange.jpg"
     },
     {
       "name": "Orange",
@@ -2091,7 +2098,8 @@
         "dairy-free": "Sponge flavoured with zesty orange filled with orange filling cream",
         "vegan": "Sponge flavoured with zesty orange filled with orange filling cream"
       },
-      "variants": ["gluten-free", "dairy-free", "vegan"]
+      "variants": ["gluten-free", "dairy-free", "vegan"],
+      "image": "choices/flavours/lemon-elderflower-orange.jpg"
     },
     {
       "name": "Coffee",
@@ -2099,7 +2107,8 @@
         "standard": "Rich coffee sponge filled with coffee buttercream",
         "dairy-free": "Rich coffee sponge filled with coffee filling cream"
       },
-      "variants": ["gluten-free", "dairy-free"]
+      "variants": ["gluten-free", "dairy-free"],
+      "image": "choices/flavours/vanilla.jpg"
     },
     {
       "name": "Coffee and walnut",
@@ -2108,7 +2117,8 @@
         "dairy-free": "Rich coffee and walnut sponge filled with coffee filling cream and walnut pieces"
       },
       "variants": ["gluten-free", "dairy-free"],
-      "allergenInfo": "Coffee and walnut sponge is made using Nuts (walnuts)."
+      "allergenInfo": "Coffee and walnut sponge is made using Nuts (walnuts).",
+      "image": "choices/flavours/vanilla.jpg"
     },
     {
       "name": "Carrot",
@@ -2118,6 +2128,7 @@
       },
       "variants": ["gluten-free"],
       "allergenInfo": "Carrot sponge is made using Nuts (walnuts)."
+      "image": "choices/flavours/carrot.jpg"
     },
     {
       "name": "Baileys",
@@ -2125,7 +2136,8 @@
         "standard": "Light sponge flavoured with Baileys and filled with Baileys buttercream",
         "dairy-free": "Light sponge flavoured with Baileys and filled with Baileys filling cream"
       },
-      "variants": ["gluten-free"]
+      "variants": ["gluten-free"],
+      "image": "choices/flavours/baileys.jpg"
     },
     {
       "name": "Toffee",
@@ -2134,14 +2146,16 @@
         "dairy-free": "Delicious toffee flavoured sponge filled with toffee flavour filling cream",
         "vegan": "Delicious toffee flavoured sponge filled with toffee flavour filling cream"
       },
-      "variants": ["gluten-free", "dairy-free", "vegan"]
+      "variants": ["gluten-free", "dairy-free", "vegan"],
+      "image": "choices/flavours/vanilla.jpg"
     },
     {
       "name": "Raspberry and white chocolate",
       "descriptions": {
         "standard": "Classic sponge containing raspberry pieces filled with white chocolate buttercream"
       },
-      "variants": ["gluten-free"]
+      "variants": ["gluten-free"],
+      "image": "choices/flavours/raspberry.jpg"
     }
   ],
   "pricing": {
