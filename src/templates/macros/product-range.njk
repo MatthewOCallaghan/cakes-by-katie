@@ -1,0 +1,66 @@
+{# `products` is array with shape [{ name: "Name here", image: "path/to/image", price: "From £4 each", description: "<p>Description here.</p>" }] #}
+{# `summaryPoints` is array with shape [{ title: "Title here", icon: "path/to/svg", description: "Short sentence here." }] #}
+{% macro productRange(products, introText, summaryPoints) %}
+{% from "macros/picture.njk" import pictureElement with context %}
+<section class="products-range">
+    <div class="products">
+
+        {% macro createProduct(product, order) %}
+            <div class="product" style="order:{{order}}">
+                <div class="product-image">
+                    {{ pictureElement(product.image, product.name, "100vw") }}
+                </div>
+                <div class="product-details">
+                    <div class="product-details-top-row">
+                        <span class="product-name">{{ product.name }}</span>
+                        <span class="product-price">{{ product.price }}</span>
+                    </div>
+                    <div class="product-description">
+                        {{ product.description | safe }}
+                    </div>
+                </div>
+            </div>
+        {% endmacro %}
+
+        <div class="products-column-left">
+
+            <div class="products-intro">
+                <p>{{ introText }}</p>
+            </div>
+
+            {% for product in products %}
+
+                {% if loop.index0 % 2 == 0 %}
+                    {{ createProduct(product, loop.index0) }}
+                {% endif %}
+
+            {% endfor %}
+
+        </div>
+
+        <div class="products-column-right">
+            <div class="products-summary-card">
+                {% for row in summaryPoints %}
+                    <div class="summary-row">
+                        <div class="summary-row-icon">
+                            {% include row.icon %}
+                        </div>
+                        <div class="summary-row-text">
+                            <span class="summary-row-title">{{ row.title }}</span>
+                            <span class="summary-row-description">{{ row.description }}</span>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+            {% for product in products %}
+
+                {% if loop.index0 % 2 != 0 %}
+                    {{ createProduct(product, loop.index0) }}
+                {% endif %}
+
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endmacro %}

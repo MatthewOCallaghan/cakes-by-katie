@@ -168,6 +168,20 @@
         }
       }
     },
+    "gifts": {
+      "title": "Gifts | Cakes by Katie",
+      "description": "I'm a cake maker in Thatcham, West Berkshire, near Newbury and Reading, offering high quality cakes, biscuits and other gifts.",
+      "heading": {
+        "text": "Gifts",
+        "image": {
+          "path": "backgrounds/gift-bags.jpg",
+          "alt": "Gift bags background"
+        }
+      },
+      "cta": {
+        "text": "Ready to order for someone special?"
+      }
+    },
     "cupcakes": {
       "title": "Cupcakes | Cakes by Katie",
       "description": "I'm a cake maker in Thatcham, West Berkshire, near Newbury, offering high quality bespoke cupcakes in a range of flavours.",
