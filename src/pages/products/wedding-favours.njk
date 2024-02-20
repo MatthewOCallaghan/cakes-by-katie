@@ -1,0 +1,101 @@
+{% set page = "weddingFavours" %}
+{% extends "layout.njk" %}
+
+{% block main %}
+
+    {# <section class="intro">
+
+        <div class="intro-text">
+            <p>Short paragraph here about wedding favours. Start by congratulating the couple on their engagement.</p>
+        </div>
+    </section> #}
+
+    <section class="products-section">
+
+        {% set products = [
+            {
+                name: "Cake jars",
+                image: "christmas/star-cookies.jpg",
+                price: "£4 each",
+                description: "<p>Description of cake jars here. Flavours include vanilla, chocolate, raspberry and orange. Minimum order of 6 per flavour.</p>"
+            },
+            {
+                name: "Biscuits",
+                image: "christmas/star-cookies.jpg",
+                price: "£2 each",
+                description: "<p>Description of cake jars here. Flavours include vanilla, chocolate, raspberry and orange. Minimum order of 6 per flavour.</p>"
+            },
+            {
+                name: "Decorated biscuits",
+                image: "christmas/star-cookies.jpg",
+                price: "£3 each",
+                description: "<p>Description of cake jars here. Flavours include vanilla, chocolate, raspberry and orange. Minimum order of 6 per flavour.</p>"
+            },
+            {
+                name: "Macarons",
+                image: "christmas/star-cookies.jpg",
+                price: "£3 each",
+                description: "<p>Description of cake jars here. Flavours include vanilla, chocolate, raspberry and orange. Minimum order of 6 per flavour.</p>"
+            }
+        ] %}
+
+        <div class="products">
+
+            {% for product in products %}
+
+                <div class="product">
+                    <div class="product-image">
+                        {{ pictureElement(product.image, product.name, "100vw") }}
+                    </div>
+                    <div class="product-details">
+                        <div class="product-details-top-row">
+                            <span class="product-name">{{ product.name }}</span>
+                            <span class="product-price">{{ product.price }}</span>
+                        </div>
+                        <div class="product-description">
+                            {{ product.description | safe }}
+                        </div>
+                    </div>
+                </div>
+
+            {% endfor %}
+
+            <div class="products-summary-card">
+                {% for row in [
+                    {
+                        name: "Bespoke",
+                        icon: "heart.svg",
+                        description: "I'll customise these favours for your special day."
+                    },
+                    {
+                        name: "Bespoke",
+                        icon: "heart.svg",
+                        description: "I'll customise these favours for your special day."
+                    },
+                    {
+                        name: "Bespoke",
+                        icon: "heart.svg",
+                        description: "I'll customise these favours for your special day."
+                    },
+                    {
+                        name: "Delivery available",
+                        icon: "van.svg",
+                        description: "I can deliver these to the venue."
+                    }
+                ] %}
+                    <div class="summary-row">
+                        <div class="summary-row-icon">
+                            {% include row.icon %}
+                        </div>
+                        <div class="summary-row-text">
+                            <span class="summary-row-title">{{ row.name }}</span>
+                            <span class="summary-row-description">{{ row.description }}</span>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+        </div>
+    </section>
+
+{% endblock %}

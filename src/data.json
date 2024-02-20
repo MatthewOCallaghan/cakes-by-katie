@@ -150,6 +150,24 @@
         }
       }
     },
+    "weddingFavours": {
+      "title": "Wedding favours | Cakes by Katie",
+      "description": "I'm a cake maker in Thatcham, West Berkshire, near Newbury and Reading, offering high quality wedding favours.",
+      "heading": {
+        "text": "Wedding favours",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding favours!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      }
+    },
     "cupcakes": {
       "title": "Cupcakes | Cakes by Katie",
       "description": "I'm a cake maker in Thatcham, West Berkshire, near Newbury, offering high quality bespoke cupcakes in a range of flavours.",
