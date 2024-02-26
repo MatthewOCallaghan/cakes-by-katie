@@ -164,6 +164,10 @@ function processNunjucks() {
             }));
 }
 
+function cleanLocalExceptImages() {
+    return del(['local/**', '!local/images/**'], { dryRun: true });
+}
+
 /* --------------------------------- Images --------------------------------- */
 
 // Get all files in /images directory in either src/ or local/
@@ -313,9 +317,9 @@ const updateLocalImages = parallel(cleanLocalImages, createAndTransferNewImages)
 
 /* ------------------------------ End of images ----------------------------- */
 
-// Javascript files and videos just get moved as they are
+// Javascript files, videos and PDFs just get moved as they are
 const moveRemainingFilesToLocal = () => {
-    return src(['src/**/*.mp4', 'src/**/*.js'])
+    return src(['src/**/*.mp4', 'src/**/*.js', 'src/**/*.pdf'])
             .pipe(dest('local'))
             .pipe(browserSyncInstance.reload({
                 stream: true
@@ -347,7 +351,7 @@ function watchFiles() {
     watch('src/scss/**/*.scss', processSass);
     watch('src/data.json', series(setupData, processNunjucks));
     watch(['src/pages/**/*.njk', 'src/templates/**/*.njk', 'src/partials/**/*.njk'], processNunjucks);
-    watch(['src/js/**/*', 'src/videos/**/*'], moveRemainingFilesToLocal);
+    watch(['src/js/**/*', 'src/videos/**/*', 'src/pdfs/**/*'], moveRemainingFilesToLocal);
     watch('src/images/**/*', updateLocalImages);
 }
 
@@ -419,7 +423,7 @@ export const clearCache = (cb) => {
     return cache.clearAll(cb);
 }
 
-const updateLocalFolder = parallel(processSass, updateLocalImages, series(setupData, processNunjucks), moveRemainingFilesToLocal);
+const updateLocalFolder = series(cleanLocalExceptImages, parallel(processSass, updateLocalImages, series(setupData, processNunjucks), moveRemainingFilesToLocal));
 
 export const build = series(cleanDist, updateLocalFolder, buildFiles);
 

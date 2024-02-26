@@ -284,19 +284,17 @@
       }
     },
     "wedding": {
-      "title": "Wedding cakes | Cakes by Katie",
-      "description": "Cakes by Katie is a cake maker in Thatcham, Berkshire, near Newbury and Reading, offering bespoke wedding cakes in a wide range of flavours and catering for specific dietary requirements. Wedding favours are also available.",
+      "title": "Weddings | Cakes by Katie",
+      "description": "Cakes by Katie is a cake maker in Thatcham, Berkshire, near Newbury and Reading, offering bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
       "heading": {
-        "text": "Wedding cakes",
+        "text": "Weddings",
         "image": {
           "path": "backgrounds/wedding.jpg",
           "alt": "Wedding background"
         }
       },
-      "exampleCake": "kirsten",
-      "productName": "wedding cake",
       "cta": {
-        "text": "Let's talk about your wedding cake!",
+        "text": "Let's talk about your wedding!",
         "image": {
           "path": "backgrounds/wedding.jpg",
           "alt": "Wedding background"
@@ -1889,6 +1887,7 @@
     },
     "rose-mix": {
       "images": ["Rose-Mix.jpg", "Rose-Mix-Triple.jpg", "Rose-Mix-Single.jpg"],
+      "squareImage": ["Rose-Mix-Triple-square.jpg"],
       "name": "Rose Mix",
       "product": "cupcakes",
       "occasion": ["birthday", "afternoon-tea", "gift"]
