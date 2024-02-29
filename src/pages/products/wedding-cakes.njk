@@ -11,7 +11,8 @@
     <section class="intro">
 
         <div class="intro-text">
-            <p>Short paragraph here about wedding cakes. Start by congratulating the couple on their engagement. Keep it fun and don't go heavy on detail - it should be covered below. Sell why their wedding needs a cake from us! Also mention that wedding favours are available too.</p>
+            {# Short paragraph here about wedding cakes. Start by congratulating the couple on their engagement. Keep it fun and don't go heavy on detail - it should be covered below. Sell why their wedding needs a cake from us! Also mention that wedding favours are available too. #}
+            <p>Congratulations! All of my wedding cakes are meticulously crafted to reflect your unique style and taste, creating a centrepiece that not only looks amazing but tastes delicious too!</p>
         </div>
 
         <div class="service-breakdown-container">
@@ -35,33 +36,20 @@
                 {
                     image: 'cow.svg',
                     heading: 'Free from options',
-                    description: "I can cater for specific dietary requirements, including gluten and dairy free and vegan."
+                    description: "I can cater for specific dietary requirements, including gluten free, dairy free, eggless and vegan."
                 },
                 {
                     image: 'van.svg',
                     heading: 'Set up and delivery',
                     description: "I deliver all wedding cakes to the venue."
-                },
-                {
+                }
+            ]) }}
+            {# {
                     image: 'van.svg',
                     heading: 'Florist/venue liasing',
                     description: "Something about that you'll liase with the venue and, if necessary, the florist to arrange timings on the day."
-                }
-            ]) }}
+                } #}
         </div>
-
-        {# <div class="intro-inner">
-            <p>Intro text here</p>
-            <div class="cta">
-                <h3>Want a quote for a celebration cake?</h3>
-                <a
-                    class="button"
-                    href="/#contact"
-                >
-                    Contact me
-                </a>
-            </div>
-        </div> #}
     </section>
 
     {% from "macros/image-carousel.njk" import imageCarousel with context %}
@@ -71,18 +59,18 @@
     {{
         designChoices(
             "Let's design your dream wedding cake!",
-            "Some sentence here.",
+            "Together we will create your perfect wedding cake, whether you know exactly what you want or have no idea yet. There are so many options to choose from! Here are some of the most popular...",
             [
                 {
                     name: "Finishes",
                     items: [
                         {
-                            name: "Buttercream",
-                            image: "choices/celebration-cakes/finishes/buttercream.jpg"
-                        },
-                        {
                             name: "Semi naked",
                             image: "choices/wedding-cakes/finishes/semi-naked.jpg"
+                        },
+                        {
+                            name: "Smooth buttercream",
+                            image: "choices/wedding-cakes/finishes/buttercream.jpg"
                         },
                         {
                             name: "Textured buttercream",
@@ -91,10 +79,6 @@
                         {
                             name: "Fondant",
                             image: "choices/wedding-cakes/finishes/fondant.jpg"
-                        },
-                        {
-                            name: "Textured fondant",
-                            image: "choices/wedding-cakes/finishes/fondant-texture.jpg"
                         },
                         {
                             name: "Lustre",
@@ -107,6 +91,10 @@
                         {
                             name: "Sparkle sugar",
                             image: "choices/wedding-cakes/finishes/sparkle-sugar.jpg"
+                        },
+                        {
+                            name: "Royal icing texture",
+                            image: "choices/wedding-cakes/finishes/fondant-texture.jpg"
                         }
                     ]
                 },
@@ -118,43 +106,43 @@
                     name: "Decoration",
                     items: [
                         {
-                            name: "Topper",
-                            image: "choices/wedding-cakes/decoration/topper.jpg"
-                        },
-                        {
-                            name: "Piping",
-                            image: "choices/wedding-cakes/decoration/piping.jpg"
-                        },
-                        {
                             name: "Fresh flowers",
                             image: "choices/wedding-cakes/decoration/fresh-flowers.jpg"
-                        },
-                        {
-                            name: "Fondant flowers",
-                            image: "choices/wedding-cakes/decoration/fondant-flowers.jpg"
-                        },
-                        {
-                            name: "Dried flowers",
-                            image: "choices/wedding-cakes/decoration/dried-flowers.jpg"
                         },
                         {
                             name: "Pressed flowers",
                             image: "choices/wedding-cakes/decoration/pressed-flowers.jpg"
                         },
                         {
+                            name: "Dried flowers",
+                            image: "choices/wedding-cakes/decoration/dried-flowers.jpg"
+                        },
+                        {
                             name: "Silk flowers",
                             image: "choices/wedding-cakes/decoration/silk-flowers.jpg"
+                        },
+                        {
+                            name: "Fondant flowers",
+                            image: "choices/wedding-cakes/decoration/fondant-flowers.jpg"
                         },
                         {
                             name: "Ribbon",
                             image: "choices/wedding-cakes/decoration/ribbon.jpg"
                         },
                         {
+                            name: "Topper",
+                            image: "choices/wedding-cakes/decoration/topper.jpg"
+                        },
+                        {
                             name: "Script",
                             image: "choices/wedding-cakes/decoration/script.jpg"
                         },
                         {
-                            name: "Balls",
+                            name: "Piping",
+                            image: "choices/wedding-cakes/decoration/piping.jpg"
+                        },
+                        {
+                            name: "Ball toppers",
                             image: "choices/wedding-cakes/decoration/balls.jpg"
                         }
                     ]
@@ -173,11 +161,11 @@
     {% from "macros/half-image-section.njk" import halfImageSection with context %}
     {{ halfImageSection(
         'How about some wedding favours?',
-        "Two or three sentences here encouraging them to buy wedding favours from us to. List some examples of what we offer and why cakes or other treats are great wedding favours.",
-        "/products/wedding-favours",
-        "See wedding favours",
+        "My wedding favours are lovingly crafted to delight your guests and include cake jars and fondant covered cookies. They are the perfect gesture to thank your guests for sharing in your special day. Cake jars are finished with a spoon, decorated with ribbon or twine and the labelling can be tailored to match your wedding stationery/theme. Wedding favour sugar cookies are covered in fondant icing and can be shaped and decorated as required. If you would like something different as a wedding favour, please let me know and I will do my best to accommodate your request.",
+        "/#contact",
+        "Contact me",
         "wedding-favours/cookie-personal.jpg",
-        "Cupcakes"
+        "Cookie wedding favour"
     ) }}
 {% endblock %}
 

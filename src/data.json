@@ -130,6 +130,9 @@
           "path": "backgrounds/confetti.jpg",
           "alt": "Confetti background"
         }
+      },
+      "cta": {
+        "text": "Get a quote for a celebration cake!"
       }
     },
     "weddingCakes": {
@@ -188,8 +191,15 @@
       "heading": {
         "text": "Cupcakes",
         "image": {
-          "path": "backgrounds/confetti.jpg",
-          "alt": "Confetti background"
+          "path": "portfolio/Pastel-and-Choc-Roses.jpg",
+          "alt": "Cupcakes background"
+        }
+      },
+      "cta": {
+        "text": "Get a quote for your cupcakes!",
+        "image": {
+          "path": "portfolio/Pastel-and-Choc-Roses.jpg",
+          "alt": "Cupcakes background"
         }
       }
     },
@@ -2502,7 +2512,7 @@
       },
       "variants": ["dairy-free", "vegan"],
       "allergenInfo": "Chocolate Biscoff sponge contains soya.",
-      "image": "choices/flavours/vanilla.jpg"
+      "image": "choices/flavours/biscoff.jpg"
     },
     {
       "name": "Chocolate Oreo",
@@ -2561,7 +2571,7 @@
         "dairy-free": "Rich coffee sponge filled with coffee filling cream"
       },
       "variants": ["gluten-free", "dairy-free"],
-      "image": "choices/flavours/vanilla.jpg"
+      "image": "choices/flavours/coffee.jpg"
     },
     {
       "name": "Coffee and walnut",
@@ -2571,7 +2581,7 @@
       },
       "variants": ["gluten-free", "dairy-free"],
       "allergenInfo": "Coffee and walnut sponge is made using Nuts (walnuts).",
-      "image": "choices/flavours/vanilla.jpg"
+      "image": "choices/flavours/coffee-walnut.jpg"
     },
     {
       "name": "Carrot",
@@ -2600,7 +2610,7 @@
         "vegan": "Delicious toffee flavoured sponge filled with toffee flavour filling cream"
       },
       "variants": ["gluten-free", "dairy-free", "vegan"],
-      "image": "choices/flavours/vanilla.jpg"
+      "image": "choices/flavours/toffee.jpg"
     },
     {
       "name": "Raspberry and white chocolate",

@@ -11,7 +11,12 @@
     <section class="intro">
 
         <div class="intro-text">
-            <p>Short paragraph here about celebration cakes. Keep it fun and don't go heavy on detail - it should be covered below. Sell why their occasion needs a cake from us!</p>
+            {# hort paragraph here about celebration cakes. Keep it fun and don't go heavy on detail - it should be covered below. Sell why their occasion needs a cake from us! #}
+            <p class="handwriting" style="font-size:2em;">Perfect for turning life's moments into unforgettable memories.</p>
+            
+            <p>Whether you're looking for a show-stopping centerpiece or a gift for someone special, all my cakes are lovingly handcrafted to make it a celebration to remember.</p>
+            
+            {# <p>Let me make your celebration even more special with one of my cakes, all lovingly custom made.</p> #}
         </div>
 
         <div class="service-breakdown-container">
@@ -30,7 +35,7 @@
                 {
                     image: 'cow.svg',
                     heading: 'Free from options',
-                    description: "I can cater for specific dietary requirements, including gluten and dairy free and vegan."
+                    description: "I can cater for specific dietary requirements, including gluten free, dairy free, eggless and vegan."
                 },
                 {
                     image: 'van.svg',
@@ -39,19 +44,6 @@
                 }
             ]) }}
         </div>
-
-        {# <div class="intro-inner">
-            <p>Intro text here</p>
-            <div class="cta">
-                <h3>Want a quote for a celebration cake?</h3>
-                <a
-                    class="button"
-                    href="/#contact"
-                >
-                    Contact me
-                </a>
-            </div>
-        </div> #}
     </section>
 
     {% from "macros/image-carousel.njk" import imageCarousel with context %}
@@ -61,19 +53,21 @@
     {{
         designChoices(
             "Let's design your cake!",
-            "Some sentence here.",
+            "I'll work with you to create your perfect cake, whether you already know exactly what you want or have absolutely no idea. There are so many options to choose from! Here are some of the most popular...",
             [
                 {
                     name: "Finishes",
                     items: [
                         {
-                            name: "Buttercream",
-                            description: "Optional description. Mention it's cheaper and has more pastel colours. List various options including textured.",
+                            name: "Smooth buttercream",
+                            image: "choices/celebration-cakes/finishes/buttercream.jpg"
+                        },
+                        {
+                            name: "Textured buttercream",
                             image: "choices/celebration-cakes/finishes/buttercream.jpg"
                         },
                         {
                             name: "Fondant",
-                            description: "Optional description. Mention it's more expensive. List various advantages.",
                             image: "choices/celebration-cakes/finishes/fondant.jpg"
                         }
                     ]
@@ -90,12 +84,24 @@
                             image: "choices/celebration-cakes/decoration/topper.jpg"
                         },
                         {
+                            name: "Plaque",
+                            image: "choices/celebration-cakes/decoration/plaque.jpg"
+                        },
+                        {
+                            name: "Embossed lettering",
+                            image: "choices/celebration-cakes/decoration/embossed-lettering.jpg"
+                        },
+                        {
                             name: "Chocolate drips",
                             image: "choices/celebration-cakes/decoration/chocolate-drips.jpg"
                         },
                         {
                             name: "Coloured drips",
                             image: "choices/celebration-cakes/decoration/coloured-drips.jpg"
+                        },
+                        {
+                            name: "Edible images",
+                            image: "choices/celebration-cakes/decoration/edible-image.jpg"
                         },
                         {
                             name: "Fondant flowers",
@@ -114,28 +120,16 @@
                             image: "choices/celebration-cakes/decoration/fondant-model.jpg"
                         },
                         {
-                            name: "Airbrushing",
-                            image: "choices/celebration-cakes/decoration/airbrushing.jpg"
-                        },
-                        {
-                            name: "Edible images",
-                            image: "choices/celebration-cakes/decoration/edible-image.jpg"
-                        },
-                        {
-                            name: "Plaque",
-                            image: "choices/celebration-cakes/decoration/plaque.jpg"
-                        },
-                        {
                             name: "Ball toppers",
                             image: "choices/celebration-cakes/decoration/ball-toppers.jpg"
                         },
                         {
-                            name: "Ruffles",
-                            image: "choices/celebration-cakes/decoration/ruffles.jpg"
+                            name: "Airbrushing",
+                            image: "choices/celebration-cakes/decoration/airbrushing.jpg"
                         },
                         {
-                            name: "Embossed lettering",
-                            image: "choices/celebration-cakes/decoration/embossed-lettering.jpg"
+                            name: "Ruffles",
+                            image: "choices/celebration-cakes/decoration/ruffles.jpg"
                         }
                     ]
                 },
@@ -145,10 +139,6 @@
                         {
                             name: "Pinata cake",
                             image: "choices/celebration-cakes/special/pinata.jpg"
-                        },
-                        {
-                            name: "Money cake",
-                            image: "portfolio/A-Touch-of-Pink.jpg"
                         },
                         {
                             name: "Balloon",
@@ -170,18 +160,12 @@
     {% from "macros/half-image-section.njk" import halfImageSection with context %}
     {{ halfImageSection(
         'Why not get some cupcakes too?',
-        "Two or three sentences here about how cupcakes can be a great accompaniment to a celebration cake. They can match the theme, or offer something different, and boost the number of portions if needed. They're also a great way to cater for guests with specific dietary requirements when the main celebration cake doesn't.",
+        "Cupcakes can be a great accompaniment to a celebration cake. They can match the theme and flavour, or offer something different, and boost the number of portions if needed. They're also a great way to cater for guests with specific dietary requirements.",
         "/products/cupcakes",
         "See cupcakes",
-        "portfolio/Baby-Shades.jpg",
+        "portfolio/Birthday-Shades-Blue-Glitz-2.jpg",
         "Cupcakes"
     ) }}
-
-    {# Finishes, decorations, flavours, special additions (pinata, money cake, balloon) #}
-    {# Pricing #}
-    {# Cupcakes on the side #}
-    {# Delivery? #}
-    {# Some inspiration (like birthday cakes)? #}
 {% endblock %}
 
 {% block scripts %}
