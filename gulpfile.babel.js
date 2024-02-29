@@ -165,7 +165,7 @@ function processNunjucks() {
 }
 
 function cleanLocalExceptImages() {
-    return del(['local/**', '!local/images/**'], { dryRun: true });
+    return del(['local/**', '!local/images/**']);
 }
 
 /* --------------------------------- Images --------------------------------- */
@@ -425,7 +425,7 @@ export const clearCache = (cb) => {
 
 const updateLocalFolder = series(cleanLocalExceptImages, parallel(processSass, updateLocalImages, series(setupData, processNunjucks), moveRemainingFilesToLocal));
 
-export const build = series(cleanDist, updateLocalFolder, buildFiles);
+export const build = series(parallel(cleanDist, updateLocalFolder), buildFiles);
 
 export default series(updateLocalFolder, setupBrowserSync, watchFiles);
 
