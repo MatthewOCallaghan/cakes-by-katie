@@ -420,7 +420,7 @@ function deploy() {
         }))
         .pipe(connection.dest(remoteFolder)) // Deploy
         // TODO: Filter function seems to be getting cut off but this doesn't happen if line below is removed
-        // .pipe(connection.clean(['/**/*.js', '/**/*.css', '/images/**/*', '/videos/**/*'].map(p => remoteFolder + p), './dist', { base: remoteFolder })); // Remove remote files with no local version
+        // .pipe(connection.clean(['/**/*.js', '/**/*.css', '/images/**/*', '/videos/**/*', '/**/*.pdf'].map(p => remoteFolder + p), './dist', { base: remoteFolder })); // Remove remote files with no local version
 }
 
 /* -------------------------------------------------------------------------- */
