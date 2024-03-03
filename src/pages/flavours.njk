@@ -4,7 +4,7 @@
 {% block main %}
 
     <div class="flavours-text">
-        <p>I offer a wide range of flavours that can be used in both celebration cakes and cupcakes. I also cater for the following dietary requirements: gluten free, dairy free and vegan.</p> 
+        <p>I offer a wide range of flavours that can be used in both celebration cakes and cupcakes. I also cater for the following dietary requirements: gluten free, dairy free, vegan and eggless.</p> 
 
         {# <p>The list of flavours for my Deluxe cupcake range can also be found below. Please note the designs for these are fixed as stated, although small alterations, if required, can be made.</p> #}
     </div>
@@ -28,18 +28,21 @@
                     <button id="vegan-button">
                         Vegan
                     </button>
+                    <button id="eggless-button">
+                        Eggless
+                    </button>
                 </div>
                 <div class="flavours-list">
                     <div class="flavours-list-grid">
                         {% for flavour in flavours %}
                             <div class="flavour-row flavour standard{{ " " ~ (flavour.variants | join(" ")) if flavour.variants }}">
                                 <h2>{{flavour.name}}</h2>
-                                {% for variant in ["gluten-free", "dairy-free", "vegan"] %}
+                                {% for variant in ["gluten-free", "dairy-free", "vegan", "eggless"] %}
                                     {% if flavour.descriptions[variant] %}
                                         <p class="flavour {{variant}}">{{flavour.descriptions[variant]}}</p>
                                     {% endif %}
                                 {% endfor %}
-                                <p class="flavour standard{{" gluten-free" if not flavour.descriptions["gluten-free"]}}{{" dairy-free" if not flavour.descriptions["dairy-free"]}}{{" vegan" if not flavour.descriptions["vegan"]}}">{{flavour.descriptions.standard}}</p>
+                                <p class="flavour standard{{" gluten-free" if not flavour.descriptions["gluten-free"]}}{{" dairy-free" if not flavour.descriptions["dairy-free"]}}{{" vegan" if not flavour.descriptions["vegan"]}}{{" eggless" if not flavour.descriptions["eggless"]}}">{{flavour.descriptions.standard}}</p>
                             </div>
                         {% endfor %}
                     </div>
@@ -49,6 +52,7 @@
                         <p class="flavour gluten-free"><small>All cakes contain: Eggs, Dairy and may contain traces of Nuts and Soya.</small></p>
                         <p class="flavour dairy-free"><small>All cakes contain: Gluten, Eggs and may contain traces of Nuts and Soya.</small></p>
                         <p class="flavour vegan"><small>All cakes contain: Gluten and may contain traces of Nuts and Soya.</small></p>
+                        <p class="flavour eggless"><small>All cakes contain: Gluten, Dairy and may contain traces of Nuts and Soya.</small></p>
                         {% for flavour in flavours %}
                             {% if flavour.allergenInfo %}
                                 <p class="flavour standard{{ " " ~ (flavour.variants | join(" ")) if flavour.variants }}"><small>{{flavour.allergenInfo}}</small></p>

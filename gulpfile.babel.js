@@ -365,7 +365,15 @@ function cleanDist() {
 
 function buildFiles() {
     const postcssPlugins = [autoprefixer(), cssnano()];
-    return src(['local/**/*.html', 'local/images/**/*', 'local/videos/**/*'])
+    return src([
+        'local/**/*.html',
+        'local/images/**/*',
+        'local/videos/**/*',
+        'local/pdfs/**/*',
+
+        // This file is currently kept separate from the other concatenated js files
+        'local/js/imageSlideshow.js'
+    ])
             .pipe(gulpIf('*.html', useref()))
             .pipe(gulpIf('*.html', htmlmin({ minifyJS: true, minifyCSS: true, removeComments: true, collapseWhitespace: true })))
             .pipe(gulpIf('*.js', babel({ presets: ['@babel/env']})))

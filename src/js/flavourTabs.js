@@ -1,6 +1,6 @@
 const flavoursMenu = document.querySelector('.flavours-menu');
 
-const variants = ['standard', 'gluten-free', 'dairy-free', 'vegan']
+const variants = ['standard', 'gluten-free', 'dairy-free', 'vegan', 'eggless']
 
 variants.forEach(selectedVariant => {
     document.querySelector(`#${selectedVariant}-button`).onclick = () => {

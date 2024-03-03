@@ -12,7 +12,7 @@
 
         <div class="intro-text">
             {# Short paragraph here about wedding cakes. Start by congratulating the couple on their engagement. Keep it fun and don't go heavy on detail - it should be covered below. Sell why their wedding needs a cake from us! Also mention that wedding favours are available too. #}
-            <p>Congratulations! All of my wedding cakes are meticulously crafted to reflect your unique style and taste, creating a centrepiece that not only looks amazing but tastes delicious too!</p>
+            <p>Congratulations on your engagement! All of my wedding cakes are meticulously crafted to reflect your unique style and taste, creating a centrepiece that not only looks amazing but tastes delicious too!</p>
         </div>
 
         <div class="service-breakdown-container">
@@ -151,7 +151,7 @@
         )
     }}
 
-    {{ imageCarousel(getMatchingCakes({ product: 'wedding-cake' }, 30, 30), 'linear-gradient(to bottom, #000, #dff6ff)') }}
+    {{ imageCarousel(getMatchingCakes({ product: 'wedding-cake' }, 30, 30), 'linear-gradient(to bottom, #000, ' ~ pricing.weddingCakes.colour ~ ')') }}
 
     <section id="pricing" style="background:{{pricing.weddingCakes.colour}}">
         <h2 style="margin-top:0;">Pricing</h2>

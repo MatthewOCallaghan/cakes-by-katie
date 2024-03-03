@@ -1112,6 +1112,7 @@ footer {
         transition: opacity .3s;
 
         &.swiper-initialized {
+            /* purgecss ignore current */
             opacity: 1;
         }
 

@@ -19,7 +19,7 @@
     .flavours-menu-container {
         
         padding-bottom: 30px;
-        min-width: min(500px, 95%);
+        min-width: min(500px, 97%);
         max-width: min(1100px, 90%);
         margin: auto;
 
@@ -37,7 +37,7 @@
         .flavours-menu {
 
             // Colours
-            $colours: ("standard": #fbe4ff, "gluten-free": #fff7cf, "dairy-free": #dff6ff, "vegan": #e2ffd1);
+            $colours: ("standard": #fbe4ff, "gluten-free": #fff7cf, "dairy-free": #dff6ff, "vegan": #e2ffd1, "eggless":	#ffdfba);
 
             $borderColour: #e6e6e6;
 
@@ -46,9 +46,10 @@
 
                 button {
                     border: none;
-                    padding: 0.6em 1em;
+                    padding: 0.6em .3em;
                     width: 9em;
-                    max-width: 25%;
+                    min-width: min-content;
+                    max-width: 20%;
                     margin: 0;
                     transform: translateY(1px);
                     z-index: 1;

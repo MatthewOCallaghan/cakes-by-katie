@@ -66,7 +66,7 @@
         },
         {
           "question": "What products do you offer?",
-          "answer": "<p>I offer wedding cakes, celebration cakes and cupcakes in a range of flavours (I don't produce fresh cream or fresh fruit cakes).</p>"
+          "answer": "<p>I offer <a href=\"/products/wedding-cakes\">wedding cakes</a>, <a href=\"/products/celebration-cakes\">celebration cakes</a> and <a href=\"/products/cupcakes\">cupcakes</a> in a range of flavours. I don't produce fresh cream cakes and fresh fruit is only an option for wedding orders. I also offer wedding favours.</p>"
         },
         {
           "question": "How do I order a cake?",
@@ -2490,7 +2490,7 @@
         "dairy-free": "Light vanilla sponge filled with strawberry jam and filling cream",
         "vegan": "Light vanilla sponge filled with strawberry jam and filling cream"
       },
-      "variants": ["gluten-free", "dairy-free", "vegan"],
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless"],
       "image": "choices/flavours/vanilla.jpg"
     },
     {
@@ -2500,7 +2500,7 @@
         "dairy-free": "Chocolate sponge filled with chocolate filling cream",
         "vegan": "Chocolate sponge filled with chocolate filling cream"
       },
-      "variants": ["gluten-free", "dairy-free", "vegan"],
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless"],
       "image": "choices/flavours/chocolate.jpg"
     },
     {
@@ -2510,7 +2510,7 @@
         "dairy-free": "Classic chocolate sponge layered with Biscoff flavoured filling cream and Biscoff spread",
         "vegan": "Classic chocolate sponge layered with Biscoff flavoured filling cream and Biscoff spread"
       },
-      "variants": ["dairy-free", "vegan"],
+      "variants": ["dairy-free", "vegan", "eggless"],
       "allergenInfo": "Chocolate Biscoff sponge contains soya.",
       "image": "choices/flavours/biscoff.jpg"
     },
@@ -2521,7 +2521,7 @@
         "dairy-free": "Classic chocolate sponge filled with Oreo filling cream",
         "vegan": "Classic chocolate sponge filled with Oreo filling cream"
       },
-      "variants": ["gluten-free", "dairy-free", "vegan"],
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless"],
       "image": "choices/flavours/oreo.jpg"
     },
     {
@@ -2531,7 +2531,7 @@
         "dairy-free": "Chocolate sponge flavoured with orange zest and filled with chocolate orange flavoured filling cream",
         "vegan": "Chocolate sponge flavoured with orange zest and filled with chocolate orange flavoured filling cream"
       },
-      "variants": ["gluten-free", "dairy-free", "vegan"],
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless"],
       "image": "choices/flavours/chocolate.jpg"
     },
     {
@@ -2541,7 +2541,7 @@
         "dairy-free": "Fresh tasting sponge filled with lemon filling cream",
         "vegan": "Fresh tasting sponge filled with lemon filling cream"
       },
-      "variants": ["gluten-free", "dairy-free", "vegan"],
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless"],
       "image": "choices/flavours/lemon-elderflower-orange.jpg"
     },
     {
@@ -2551,7 +2551,7 @@
         "dairy-free": "Light lemon sponge filled with elderflower flavour filling cream",
         "vegan": "Light lemon sponge filled with elderflower flavour filling cream"
       },
-      "variants": ["gluten-free", "dairy-free", "vegan"],
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless"],
       "image": "choices/flavours/lemon-elderflower-orange.jpg"
     },
     {
@@ -2561,7 +2561,7 @@
         "dairy-free": "Sponge flavoured with zesty orange filled with orange filling cream",
         "vegan": "Sponge flavoured with zesty orange filled with orange filling cream"
       },
-      "variants": ["gluten-free", "dairy-free", "vegan"],
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless"],
       "image": "choices/flavours/lemon-elderflower-orange.jpg"
     },
     {
@@ -2599,7 +2599,7 @@
         "standard": "Light sponge flavoured with Baileys and filled with Baileys buttercream",
         "dairy-free": "Light sponge flavoured with Baileys and filled with Baileys filling cream"
       },
-      "variants": ["gluten-free"],
+      "variants": ["gluten-free", "eggless"],
       "image": "choices/flavours/baileys.jpg"
     },
     {
@@ -2609,7 +2609,7 @@
         "dairy-free": "Delicious toffee flavoured sponge filled with toffee flavour filling cream",
         "vegan": "Delicious toffee flavoured sponge filled with toffee flavour filling cream"
       },
-      "variants": ["gluten-free", "dairy-free", "vegan"],
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless"],
       "image": "choices/flavours/toffee.jpg"
     },
     {
@@ -2617,7 +2617,7 @@
       "descriptions": {
         "standard": "Classic sponge containing raspberry pieces filled with white chocolate buttercream"
       },
-      "variants": ["gluten-free"],
+      "variants": ["gluten-free", "eggless"],
       "image": "choices/flavours/raspberry.jpg"
     }
   ],
