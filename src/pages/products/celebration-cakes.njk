@@ -160,11 +160,14 @@
     {% from "macros/half-image-section.njk" import halfImageSection with context %}
     {{ halfImageSection(
         'Why not get some cupcakes too?',
-        "Cupcakes can be a great accompaniment to a celebration cake. They can match the theme and flavour, or offer something different, and boost the number of portions if needed. They're also a great way to cater for guests with specific dietary requirements.",
+        [
+            "Cupcakes can be a great accompaniment to a celebration cake. They can match the theme and flavour, or offer something different, and boost the number of portions if needed. They're also a great way to cater for guests with specific dietary requirements."
+        ],
         "/products/cupcakes",
         "See cupcakes",
         "portfolio/Birthday-Shades-Blue-Glitz-2.jpg",
-        "Cupcakes"
+        "Cupcakes",
+        inverse = true
     ) }}
 {% endblock %}
 

@@ -1252,78 +1252,75 @@ footer {
     }
 }
 
-section.half-image-section {
+// section.half-image-section {
 
-    display: flex;
-    padding: 0;
+//     display: flex;
+//     padding: 0;
 
-    > div {
-        width: 50%;
-    }
+//     > div {
+//         width: 50%;
+//     }
 
-    div.half-text {
-        min-width: 600px;
-        padding: 40px 5%;
-        background: #fff2ec;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 2em;
+//     div.half-text {
+//         min-width: 600px;
+//         padding: 40px 5%;
+//         background: #fff2ec;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         gap: 2em;
 
-        > h2, >p {
-            margin: 0;
-        }
-    }
+//         > h2, >p {
+//             margin: 0;
+//         }
+//     }
 
-    div.half-image {
-        // Remove once CSS for this section is finalised
-        max-height: 90lvh;
+//     div.half-image {
+//         // Remove once CSS for this section is finalised
+//         max-height: 90lvh;
         
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+//         img {
+//             width: 100%;
+//             height: 100%;
+//             object-fit: cover;
+//         }
+//     }
 
-            
-        }
-    }
+//     @media (max-width: 1000px) {
+//         position: relative;
+//         display: block;
+//         padding: 20px;
 
-    @media (max-width: 1000px) {
-        position: relative;
-        display: block;
-        padding: 20px;
+//         div.half-image {
+//             position: absolute;
+//             top: 0;
+//             left: 0;
+//             width: 100%;
+//             height: 100%;
+//             max-height: none;
+//         }
 
-        div.half-image {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            max-height: none;
-        }
+//         div.half-text {
+//             z-index: 1;
+//             position: relative;
+//             width: 100%;
+//             min-width: 100%;
+//             background: #{variables.$pink}dd;
 
-        div.half-text {
-            z-index: 1;
-            position: relative;
-            width: 100%;
-            min-width: 100%;
-            background: #{variables.$pink}dd;
+//             div.link {
+//                 .button {
+//                     @include button-white()
+//                 }
+//             }
+//         }
+//     }
+// }
 
-            div.link {
-                .button {
-                    @include button-white()
-                }
-            }
-        }
-    }
-}
-
-section.half-image-section-large {
+section.half-image-section {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
     align-items: center;
-    height: 50vw;
     padding: 0;
 
     &.tall {
@@ -1338,8 +1335,12 @@ section.half-image-section-large {
 
         height: 100%;
         overflow: hidden;
+        position: relative;
 
         img {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -1347,7 +1348,11 @@ section.half-image-section-large {
     }
 
     .half-text {
-        padding: 20px 5%;
+        padding: 15% 10%;
+
+        h2 {
+            margin-top: 0;
+        }
 
         .link {
             margin-top: 50px;
@@ -1359,17 +1364,40 @@ section.half-image-section-large {
         grid-template-rows: auto auto;
         height: auto !important;
 
-        .half-image {
-            height: 70lvh;
+        &:not(.tall) {
+            
+            .half-image {
+                height: auto;
+                padding: 3%;
+
+                img {
+                    position: relative;
+                    height: auto;
+                    border-radius: 15px;
+                }
+            }
+            
+            .half-text {
+                padding: 5% 10% 10%;
+            }
         }
-        
+
+        &.tall {
+            .half-image {
+                height: 70lvh;
+            }
+
+            .half-text {
+                padding: 15% 10% 20%;
+            }
+        }
+
+     
         // Undo inverse styles
         &.inverse .half-image {
             grid-column-start: auto;
             grid-row-start: auto;
         }
-
-        padding-bottom: 50px;
     }
 }
 

@@ -1,9 +1,19 @@
 
-{% macro halfImageSection(heading, text, linkHref, linkText, imageSrc, imageAlt) %}
-<section class="half-image-section">
+{% macro halfImageSection(heading, text, linkHref, linkText, imageSrc, imageAlt, tall = false, inverse = false, background = '#fff6f2') %}
+<section
+    class="half-image-section{{ ' tall' if tall }}{{ ' inverse' if inverse }}"
+    style="background:{{ background }}"
+>
+    <div class="half-image">
+        {% from "macros/picture.njk" import pictureElement with context %}
+        {{ pictureElement(imageSrc, imageAlt, { '850': '100vw', any: '50vw' }) }}
+    </div>
+    
     <div class="half-text">
         <h2>{{ heading }}</h2>
-        <p>{{ text }}</p>
+        {% for p in text %}
+            <p>{{ p }}</p>
+        {% endfor %}
         <div class="link">
             <a
                 class="button"
@@ -13,10 +23,5 @@
             </a>
         </div>
     </div>
-    <div class="half-image">
-        {% from "macros/picture.njk" import pictureElement with context %}
-        {{ pictureElement(imageSrc, imageAlt, { '600': '100vw', any: '50vw' }) }}
-    </div>
-    
 </section>
 {% endmacro %}
