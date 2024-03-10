@@ -1116,10 +1116,6 @@ footer {
             opacity: 1;
         }
 
-        .swiper-wrapper {
-            // transition-timing-function: linear;
-        }
-
         .swiper-slide {
             width: min-content;
         }
@@ -1333,8 +1329,9 @@ section.half-image-section-large {
     &.tall {
         height: 100lvh;
     }
-    &.inverse {
-        direction: rtl;
+    &.inverse .half-image {
+        grid-column-start: 2;
+        grid-row-start: 1;
     }
 
     .half-image {
@@ -1364,6 +1361,12 @@ section.half-image-section-large {
 
         .half-image {
             height: 70lvh;
+        }
+        
+        // Undo inverse styles
+        &.inverse .half-image {
+            grid-column-start: auto;
+            grid-row-start: auto;
         }
 
         padding-bottom: 50px;
