@@ -4,9 +4,8 @@ Code for website [cakesbykatie.co.uk](https://www.cakesbykatie.co.uk).
 
 # TODO
 
-- Wedding cake choices - add size, need images
-- Cupcake choices
-- Flavour images
+- New image for coloured cupcake cases
+- Vegan toffee flavour image
 - Cupcake background image
 - Wedding background for CTA panel
 - Wedding favour images (e.g. cake jars, biscuits, decorated biscuits, macarons)
