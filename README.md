@@ -5,8 +5,9 @@ Code for website [cakesbykatie.co.uk](https://www.cakesbykatie.co.uk).
 # TODO
 
 - New image for coloured cupcake cases
-- Vegan toffee flavour image
+- Vegan toffee flavour image (and eventually redo all flavour images)
 - Cupcake background image
+- Celebration cakes background image
 - Wedding background for CTA panel
 - Wedding favour images (e.g. cake jars, biscuits, decorated biscuits, macarons)
 - Deluxe cupcake flavours and images

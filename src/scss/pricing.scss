@@ -15,7 +15,7 @@
 
 .pricing-section {
     position: relative;
-    padding: min(5%, 50px);
+    padding: min(3%, 50px);
 
     // Make sure images don't cause horizontal scrolling
     overflow: hidden;
@@ -23,6 +23,7 @@
     .price-group {
         border-radius: 20px;
         padding: min(5%, 50px);
+        padding-top: min(10%, 50px);
         border: 1px solid #e6e6e6;
         margin: auto;
         max-width: 1100px;
@@ -87,18 +88,18 @@
             .image-container {
                 bottom: auto;
                 top: -10px;
-                min-width: 105px;
+                min-width: 110px;
             }
 
             &:nth-child(even) {
                 .image-container {
-                    right: -3%;
+                    right: -2%;
                 }
             }
     
             &:nth-child(odd) {
                 .image-container {
-                    left: -3%;
+                    left: -2%;
                 }
             }
         }

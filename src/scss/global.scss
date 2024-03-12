@@ -1201,7 +1201,7 @@ footer {
 
 .service-breakdown {
 
-    $gap: 50px;
+    $gap: min(6vw, 50px);
 
     display: flex;
     justify-content: center;
