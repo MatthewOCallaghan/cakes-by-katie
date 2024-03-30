@@ -1,10 +1,38 @@
 {% set page = "valentines" %}
-{% extends "occasion.njk" %}
+{% extends "layout.njk" %}
 
-{% block text %}
-    <p>Valentine's cakes can be finished in either buttercream or fondant and you can choose from an extensive list of <a href="/flavours">sponge flavours</a>.</p>
+{% block main %}
 
-    <p>Decorative choices include chocolate or coloured drips, fondant or real flowers, fondant models, airbrushing, edible image and balloons.</p>
+    <section class="intro">
+        <div class="intro-text">
+            <p>Make this Valentine's Day extra special with my handcrafted cakes, designed to capture the essence of romance and love. Each cake is a delicious expression of affection, perfect for sharing with your loved one or surprising them with a romantic gesture.</p>
+        </div>
+    </section>
 
-    <p>And for something different, there's my cupcake bouquet.</p>
+    {% from "macros/half-image-section.njk" import halfImageSection with context %}
+    {{ halfImageSection(
+        "Valentine's Day cakes",
+        [
+            "Indulge in a taste of romance and let my cakes be the centrepiece of your Valentine's Day celebration."
+        ],
+        "/products/celebration-cakes",
+        "See celebration cakes",
+        "portfolio/Romantic-Heart.jpg",
+        "Valentine's Day celebration cake",
+        tall = true
+    ) }}
+
+    {{ halfImageSection(
+        "Valentine's Day cupcakes",
+        [
+            "My cupcakes are the perfect way to show someone you care. With romantic decorations and irresistible flavours, my Valentine's Day cupcakes are sure to steal hearts."
+        ],
+        "/products/cupcakes",
+        "See cupcakes",
+        "portfolio/Cupcake-Bouquet-Flowers.jpg",
+        "Valentine's Day cupcakes",
+        tall = true,
+        inverse = true,
+        background = '#fff'
+    ) }}
 {% endblock %}

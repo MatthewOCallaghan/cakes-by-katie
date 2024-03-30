@@ -1,0 +1,39 @@
+{% set page = "babyShower" %}
+{% extends "layout.njk" %}
+
+{% block main %}
+
+    <section class="intro">
+        <div class="intro-text">
+            <p>Welcome the newest addition to your family with my delightful baby shower cakes, specially crafted to celebrate this joyous occasion.</p>
+            <p>My cakes are not only a centrepiece for your event but also a symbol of the love and anticipation surrounding the arrival of your little one. With every detail meticulously designed, my baby shower cakes are the perfect way to honour the mum-to-be and create cherished memories that will last a lifetime.</p>
+        </div>
+    </section>
+
+    {% from "macros/half-image-section.njk" import halfImageSection with context %}
+    {{ halfImageSection(
+        'Baby shower cakes',
+        [
+            "From charming designs to delicious flavours, my cakes are the perfect centrepiece for celebrating the mum-to-be and welcoming the newest member of the family."
+        ],
+        "/products/celebration-cakes",
+        "See celebration cakes",
+        "portfolio/Floral-Bunny.jpg",
+        "Baby shower celebration cake",
+        tall = true
+    ) }}
+
+    {{ halfImageSection(
+        'Baby shower cupcakes',
+        [
+            "My cupcakes are sure to be a hit with guests, offering both adorable designs and delicious flavours to enjoy, perfect for celebrating the impending arrival of your little one."
+        ],
+        "/products/cupcakes",
+        "See cupcakes",
+        "portfolio/Pastel-and-Choc-Roses.jpg",
+        "Baby shower cupcakes",
+        tall = true,
+        inverse = true,
+        background = '#fff'
+    ) }}
+{% endblock %}

@@ -1,0 +1,39 @@
+{% set page = "genderReveal" %}
+{% extends "layout.njk" %}
+
+{% block main %}
+
+    <section class="intro">
+        <div class="intro-text">
+            <p>Add an element of surprise and excitement to your gender reveal celebration with my custom-made gender reveal cakes.</p>
+            <p>My cakes are meticulously crafted to conceal the exciting news until the big reveal moment, creating a memorable experience for everyone involved. From the outside, my cakes exude elegance and charm, but it's what's inside that will leave your guests buzzing with anticipation.</p>
+        </div>
+    </section>
+
+    {% from "macros/half-image-section.njk" import halfImageSection with context %}
+    {{ halfImageSection(
+        'Gender reveal cakes',
+        [
+            "Unveil the big news in sweet style with my bespoke gender reveal cakes, designed to add an extra layer of excitement to your celebration. Whether it's pink or blue, my cakes are sure to create a memorable moment for you and your loved ones."
+        ],
+        "/products/celebration-cakes",
+        "See celebration cakes",
+        "portfolio/Floral-Bunny.jpg",
+        "Gender reveal celebration cake",
+        tall = true
+    ) }}
+
+    {{ halfImageSection(
+        'Gender reveal cupcakes',
+        [
+            "Add a sprinkle of excitement to your gender reveal party with my adorable gender reveal cupcakes, each one hiding the sweet surprise inside. Cupcakes are perfect for sharing the big news with loved ones in a deliciously fun way. Whether it's pink or blue, my gender reveal cupcakes are sure to make your celebration even sweeter."
+        ],
+        "/products/cupcakes",
+        "See cupcakes",
+        "portfolio/Pastel-and-Choc-Roses.jpg",
+        "Gender reveal cupcakes",
+        tall = true,
+        inverse = true,
+        background = '#fff'
+    ) }}
+{% endblock %}

@@ -2,14 +2,16 @@
   "pages": {
     "index": {
       "title": "Cakes by Katie",
-      "description": "Cake maker in Thatcham, near Newbury and Reading, in West Berkshire, who offers high quality bespoke cakes and cupcakes for birthdays, weddings, anniversaries, corporate events, or any occasion."
+      "description": "Cake maker in Thatcham, near Newbury and Reading, in West Berkshire, who offers high quality bespoke cakes and cupcakes for birthdays, weddings, anniversaries, corporate events, or any occasion.",
+      "hasCSSFile": true
     },
     "about": {
       "title": "About me | Cakes by Katie",
       "description": "I'm a cake maker in Thatcham, West Berkshire, offering high quality bespoke cakes for birthdays, weddings, anniversaries, christenings, or any occasion.",
       "heading": {
         "text": "About me"
-      }
+      },
+      "hasCSSFile": true
     },
     "portfolio": {
       "title": "Portfolio | Cakes by Katie",
@@ -20,7 +22,8 @@
           "path": "backgrounds/camera.jpg",
           "alt": "Camera background"
         }
-      }
+      },
+      "hasCSSFile": true
     },
     "testimonials": {
       "title": "Testimonials | Cakes by Katie",
@@ -31,7 +34,8 @@
           "path": "backgrounds/writing.jpg",
           "alt": "Writing background"
         }
-      }
+      },
+      "hasCSSFile": true
     },
     "faqs": {
       "title": "Frequently Asked Questions | Cakes by Katie",
@@ -80,13 +84,15 @@
           "question": "What are your payment terms?",
           "answer": "<p>Payment is by bank transfer. For celebration cakes and cupcakes I ask for a 50% deposit on order confirmation to secure your booking with the balance payable one week prior to collection/delivery. For wedding cakes, a £100 date reservation deposit is payable when you decide to book with me, with the balance due one month before your wedding. All deposits are non-refundable.</p>"
         }
-      ]
+      ],
+      "hasCSSFile": true
     },
     "404": {
       "title": "Page not found | Cakes by Katie",
       "heading": {
         "text": "404"
-      }
+      },
+      "hasCSSFile": true
     },
     "pricing": {
       "title": "Pricing | Cakes by Katie",
@@ -97,7 +103,8 @@
           "path": "backgrounds/piggy-bank.jpg",
           "alt": "Piggy bank background"
         }
-      }
+      },
+      "hasCSSFile": true
     },
     "flavours": {
       "title": "Flavours | Cakes by Katie",
@@ -108,7 +115,8 @@
           "path": "backgrounds/chocolate.jpg",
           "alt": "Chocolate background"
         }
-      }
+      },
+      "hasCSSFile": true
     },
     "products": {
       "title": "Products | Cakes by Katie",
@@ -212,7 +220,8 @@
           "path": "backgrounds/confetti.jpg",
           "alt": "Confetti background"
         }
-      }
+      },
+      "hasCSSFile": true
     },
     "birthday": {
       "title": "Birthday cakes and cupcakes | Cakes by Katie",
@@ -291,7 +300,8 @@
       ],
       "cta": {
         "text": "Want a quote for a birthday cake?"
-      }
+      },
+      "hasCSSFile": true
     },
     "wedding": {
       "title": "Weddings | Cakes by Katie",
@@ -312,7 +322,7 @@
       }
     },
     "anniversary": {
-      "title": "Anniversary cakes | Cakes by Katie",
+      "title": "Anniversary cakes and cupcakes | Cakes by Katie",
       "description": "Cakes by Katie is a cake maker in Thatcham, Berkshire, near Newbury and Reading, offering bespoke anniversary cakes and cupcakes in a wide range of flavours and catering for specific dietary requirements.",
       "heading": {
         "text": "Anniversary cakes",
@@ -321,26 +331,42 @@
           "alt": "Roses background"
         }
       },
-      "h2": "Make anniversaries more special with a celebration cake.",
-      "exampleCake": "diamond-anniversary",
-      "productName": "anniversary cake",
       "cta": {
         "text": "Want a quote for an anniversary cake?"
       }
     },
-    "christeningAndBabyShower": {
-      "title": "Cakes and cupcakes for christenings, baby showers and gender reveals | Cakes by Katie",
-      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke cakes and cupcakes for christenings, baby showers, and gender reveals in a wide range of flavours and catering for specific dietary requirements.",
+    "christening": {
+      "title": "Christening cakes and cupcakes | Cakes by Katie",
+      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke cakes and cupcakes for christenings in a wide range of flavours and catering for specific dietary requirements.",
       "heading": {
-        "text": "Christening cakes, baby shower cakes and gender reveal cakes",
+        "text": "Christening cakes",
+        "image": {
+          "path": "backgrounds/christening.jpg",
+          "alt": "Christening background"
+        }
+      }
+    },
+    "babyShower": {
+      "title": "Baby shower cakes and cupcakes | Cakes by Katie",
+      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke cakes and cupcakes for baby showers in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "text": "Baby shower cakes",
         "image": {
           "path": "backgrounds/baby-feet.jpg",
           "alt": "Baby's feet background"
         }
-      },
-      "exampleCake": "booties-and-bunting",
-      "imageAlt": "Example christening cake",
-      "productName": "christening cake, baby shower cake, or gender reveal cake"
+      }
+    },
+    "genderReveal": {
+      "title": "Gender reveal cakes and cupcakes | Cakes by Katie",
+      "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke cakes and cupcakes for gender reveals in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "text": "Gender reveal cakes",
+        "image": {
+          "path": "backgrounds/baby-feet.jpg",
+          "alt": "Baby's feet background"
+        }
+      }
     },
     "corporate": {
       "title": "Corporate cakes and cupcakes | Cakes by Katie",
@@ -352,15 +378,13 @@
           "alt": "Office background"
         }
       },
-      "exampleCake": "ttmc-cupcakes",
-      "imageAlt": "Example corporate cupcakes",
       "cta": {
         "text": "Want a quote for your corporate event?"
       }
     },
     "valentines": {
       "title": "Valentine's cakes and cupcakes | Cakes by Katie",
-      "description": "Cakes by Katie is a cake maker in Thatcham, Berkshire, near Newbury and Reading, offering bespoke Valentine's cakes and cupcakes in a wide range of flavours and catering for specific dietary requirements.",
+      "description": "Cakes by Katie is a cake maker in Thatcham, Berkshire, near Newbury and Reading, offering bespoke Valentine's Day cakes and cupcakes in a wide range of flavours and catering for specific dietary requirements.",
       "heading": {
         "text": "Valentine's cakes",
         "image": {
@@ -368,9 +392,6 @@
           "alt": "Hearts background"
         }
       },
-      "exampleCake": "cupcake-bouquet",
-      "imageAlt": "Cupcake bouquet",
-      "productName": "Valentine's cake",
       "cta": {
         "text": "Ready to make your Valentine's special?"
       }
@@ -401,8 +422,6 @@
           "alt": "Christmas tree background"
         }
       },
-      "exampleCake": "ruby-reindeer",
-      "productName": "Christmas cake",
       "cta": {
         "text": "Ready to order for Christmas?",
         "image": {
@@ -410,7 +429,8 @@
           "alt": "Santa Clause and child background",
           "position": "50% 30%"
         }
-      }
+      },
+      "hasCSSFile": true
     },
     "afternoon-tea": {
       "title": "Afternoon tea cakes and cupcakes | Cakes by Katie",
@@ -422,8 +442,6 @@
           "alt": "Afternoon tea background"
         }
       },
-      "exampleCake": "ferrero-rocher-cake",
-      "imageAlt": "Ferrero rocher cake",
       "cta": {
         "text": "Ready to order?"
       }

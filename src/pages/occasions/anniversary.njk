@@ -1,12 +1,38 @@
 {% set page = "anniversary" %}
-{% extends "occasion.njk" %}
+{% extends "layout.njk" %}
 
-{% block text %}
-    <p>You can either send me your own design, choose a cake from <a href="/portfolio">my portfolio</a>, or if you simply have a theme in mind or just don't know what you want, we can have a chat and I'll suggest some designs to ensure you get your perfect cake.</p>
+{% block main %}
 
-    <p>If you're looking for something different or as an addition to the main anniversary cake,  cupcakes are a great choice. If some of your party have dietary requirements, cupcakes are a good way to cater for them separately. Cupcakes can also make a special anniversary gift and can be presented in a gift box finished with ribbon and a bow.</p>
+    <section class="intro">
+        <div class="intro-text">
+            <p>Celebrate your anniversary with one of my bespoke cakes. Whether you're marking one year or fifty, my anniversary cakes are the perfect way to honour your journey together and create cherished memories for years to come.</p>
+        </div>
+    </section>
 
-    <p>Anniversary cakes and cupcakes can be finished in either buttercream or fondant and you can choose from an extensive list of <a href="/flavours">sponge flavours</a>.</p>
+    {% from "macros/half-image-section.njk" import halfImageSection with context %}
+    {{ halfImageSection(
+        'Anniversary cakes',
+        [
+            "From classic elegance to modern designs, my beautifully crafted anniversary cakes are the perfect centrepiece for commemorating your special milestone."
+        ],
+        "/products/celebration-cakes",
+        "See celebration cakes",
+        "portfolio/Diamond-Toast.jpg",
+        "Anniversary celebration cake",
+        tall = true
+    ) }}
 
-    <p>Decorative choices include chocolate or coloured drips, fondant or real flowers, fondant models, airbrushing, edible images and balloons.</p>
+    {{ halfImageSection(
+        'Anniversary cupcakes',
+        [
+            "Celebrate your anniversary with my irresistible cupcakes, tailor-made for your special milestone. Let my cupcakes be the perfect accompaniment to your memorable celebration."
+        ],
+        "/products/cupcakes",
+        "See cupcakes",
+        "portfolio/Golden-50th.jpg",
+        "Anniversary cupcakes",
+        tall = true,
+        inverse = true,
+        background = '#fff'
+    ) }}
 {% endblock %}

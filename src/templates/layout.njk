@@ -13,7 +13,7 @@
         <link rel="stylesheet" type="text/css" href="/css/global.css">
         {% if type === "occasion" %}
             <link rel="stylesheet" type="text/css" href="/css/occasion.css">
-        {% else %}
+        {% elif pages[page].hasCSSFile %}
             <link rel="stylesheet" type="text/css" href="{{ "/css/" ~ page ~ ".css"}}">
         {% endif %}
         <!-- endbuild -->
@@ -186,15 +186,21 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/occasions/christening-and-baby-shower">
+                                        <a href="/occasions/christening">
                                             {{ pictureElement("portfolio/" ~ portfolio['adorable-flopsy-bunny'].squareImage, "Christening cake", "50px") }}
                                             <span>Christening</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/occasions/christening-and-baby-shower">
+                                        <a href="/occasions/baby-shower">
                                             {{ pictureElement("portfolio/" ~ portfolio['baby-bears'].squareImage, "Baby shower cake", "50px") }}
                                             <span>Baby shower</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/occasions/gender-reveal">
+                                            {{ pictureElement("portfolio/" ~ portfolio['baby-bears'].squareImage, "Gender reveal cake", "50px") }}
+                                            <span>Gender reveal</span>
                                         </a>
                                     </li>
                                     <li>
@@ -344,8 +350,9 @@
                     <li><small><a href="/occasions/birthday">Birthday</a></small></li>
                     <li><small><a href="/occasions/wedding">Wedding</a></small></li>
                     <li><small><a href="/occasions/anniversary">Anniversary</a></small></li>
-                    <li><small><a href="/occasions/christening-and-baby-shower">Christening</a></small></li>
-                    <li><small><a href="/occasions/christening-and-baby-shower">Baby shower</a></small></li>
+                    <li><small><a href="/occasions/christening">Christening</a></small></li>
+                    <li><small><a href="/occasions/baby-shower">Baby shower</a></small></li>
+                    <li><small><a href="/occasions/gender-reveal">Gender reveal</a></small></li>
                     <li><small><a href="/occasions/corporate">Corporate</a></small></li>
                     <li><small><a href="/occasions/valentines">Valentine's</a></small></li>
                     <li><small><a href="/occasions/easter">Easter</a></small></li>
