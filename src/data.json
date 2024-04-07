@@ -1026,8 +1026,8 @@
       "testimonial": {
         "text": "The cake is incredible. Thank you so much!! Delicious!",
         "name": "Rob"
-     },
-     "product": "celebration-cake",
+      },
+      "product": "celebration-cake",
       "occasion":"birthday"
     },
     "fluttering-lilac": {
@@ -1841,7 +1841,11 @@
       "images": ["Kirsten.jpg"],
       "name": "Kirsten",
       "product": "wedding-cake",
-      "occasion": "wedding"
+      "occasion": "wedding",
+      "testimonial": {
+        "text": "I cannot recommend the wedding cake made by Cakes by Katie highly enough! It was absolutely stunning to look at and tasted even better than it looked. Our guests were raving about it all night! Katie was an absolute pleasure to work with throughout the entire process. She listened and understood our vision and created a cake that was exactly what we had in mind. Thank you so much for creating such a memorable and delicious centerpiece for our wedding!",
+        "name": "Jason, Benson"
+      }
     },
     "hp-slytherin-edition": {
       "images": ["HP-Slytherin-Edition.jpg"],
