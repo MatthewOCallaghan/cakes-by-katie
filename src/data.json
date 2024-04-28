@@ -448,6 +448,13 @@
     }
   },
   "portfolio": {
+    "fishing-for-dreams": {
+      "images": ["Fishing-for-Dreams.jpg"],
+      "squareImage": "Fishing-for-Dreams-square.jpg",
+      "name": "Fishing for Dreams",
+      "product": "celebration-cake",
+      "occasion": ["baby-shower", "christening"]
+    },
     "a-stylish-affair": {
       "images": ["A-Stylish-Affair.jpg"],
       "name": "A Stylish Affair",
@@ -525,7 +532,7 @@
       "images": ["Charlotte.jpg"],
       "squareImage": "Charlotte-square.jpg",
       "name": "Charlotte",
-      "description0": "Photographer: Jade Koh Photography",
+      "description": "Photographer: Jade Koh Photography",
       "product": "wedding-cake",
       "occasion": "wedding"
     },
