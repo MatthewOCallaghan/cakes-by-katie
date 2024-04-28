@@ -63,28 +63,43 @@
 
             .flavours-list {
                 text-align: center;
-                padding: 10%;
+                padding: 7%;
                 border: 1px solid #e6e6e6;
                 box-shadow: 0 0 4px 1px #cacaca47;
 
                 .flavours-list-grid {
                     display: grid;
-                    grid-template-columns: repeat(2, calc(50% - 15px));
+                    grid-template-columns: repeat(2, 47%);
                     justify-content: space-between;
-                    gap: 30px;
+                    column-gap: 6%;
+                    row-gap: 40px;
 
-                    @media only screen and (max-width: 740px) {
-                        grid-template-columns: 1fr;
+                    @media (min-width: 1100px) {
+                        row-gap: 56px;
                     }
+                    
 
                     .flavour-row {
 
+                        .image-container {
+
+                            margin-bottom: 1em;
+
+                            img {
+                                width: 120px;
+                                height: 120px;
+                                border-radius: 120px;
+                            }
+                        }
+
                         h2 {
                             margin: 0;
+                            font-size: min(3em, 9vw);
                         }
 
                         p {
                             font-family: variables.$thin-font;
+                            margin-bottom: 0;
                         }
                     }
                 }

@@ -2614,7 +2614,11 @@
         "vegan": "Delicious toffee flavoured sponge filled with toffee flavour filling cream"
       },
       "variants": ["gluten-free", "dairy-free", "vegan", "eggless"],
-      "image": "choices/flavours/toffee.jpg"
+      "image": "choices/flavours/toffee.jpg",
+      "variantImages": {
+        "dairy-free": "choices/flavours/toffee-vegan.jpg",
+        "vegan": "choices/flavours/toffee-vegan.jpg"
+      }
     },
     {
       "name": "Raspberry and white chocolate",

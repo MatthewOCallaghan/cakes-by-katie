@@ -34,8 +34,23 @@
                 </div>
                 <div class="flavours-list">
                     <div class="flavours-list-grid">
+
+                        {% from "macros/picture.njk" import pictureElement with context %}
+        
                         {% for flavour in flavours %}
                             <div class="flavour-row flavour standard{{ " " ~ (flavour.variants | join(" ")) if flavour.variants }}">
+                                
+                                {% for variant in ["gluten-free", "dairy-free", "vegan", "eggless"] %}
+                                    {% if flavour.variantImages[variant] %}
+                                        <div class="image-container flavour {{ variant }}">
+                                            {{ pictureElement(flavour.variantImages[variant], flavour.name, "150px") }}
+                                        </div>
+                                    {% endif %}
+                                {% endfor %}
+                                <div class="image-container flavour standard{{" gluten-free" if not flavour.variantImages["gluten-free"]}}{{" dairy-free" if not flavour.variantImages["dairy-free"]}}{{" vegan" if not flavour.variantImages["vegan"]}}{{" eggless" if not flavour.variantImages["eggless"]}}">
+                                    {{ pictureElement(flavour.image, flavour.name, "150px") }}
+                                </div>
+
                                 <h2>{{flavour.name}}</h2>
                                 {% for variant in ["gluten-free", "dairy-free", "vegan", "eggless"] %}
                                     {% if flavour.descriptions[variant] %}
