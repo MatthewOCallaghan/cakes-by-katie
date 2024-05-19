@@ -1,8 +1,38 @@
 {% set page = "afternoon-tea" %}
-{% extends "occasion.njk" %}
+{% extends "layout.njk" %}
 
-{% block text %}
-    <p>Cakes and cupcakes for your afternoon tea can be finished in either buttercream or fondant and you can choose from an extensive list of <a href="/flavours">sponge flavours</a>. I can also cater for certain dietary requirements like dairy and gluten free.</p>
+{% block main %}
 
-    <p>There's also a deluxe cupcake flavour range which offers something extra special and a little bit different.</p>
+    <section class="intro">
+        <div class="intro-text">
+            <p>Transform your afternoon tea into an extra special affair with my exquisite cakes, with lots of irresistible flavours to satisfy every craving.  Go on, treat yourself to one of my lovingly homemade cakes today.</p>
+        </div>
+    </section>
+
+    {% from "macros/half-image-section.njk" import halfImageSection with context %}
+    {{ halfImageSection(
+        'Afternoon tea cakes',
+        [
+            "Treat yourself to a touch of luxury with my exquisite afternoon tea cakes, expertly crafted to add a touch of elegance to your tea-time spread."
+        ],
+        "/products/celebration-cakes",
+        "See celebration cakes",
+        "portfolio/Ferrero-Rocher-Cake.jpg",
+        "Afternoon tea celebration cake",
+        tall = true
+    ) }}
+
+    {{ halfImageSection(
+        'Afternoon tea cupcakes',
+        [
+            "Make your afternoon tea experience extra special with an assortment of my cupcakes, perfect for adding a touch of luxury to your spread. Indulge in a selection of flavours and decorations, each cupcake crafted to perfection for a truly enjoyable tea-time treat."
+        ],
+        "/products/cupcakes",
+        "See cupcakes",
+        "portfolio/12-Cupcake-Assortment-Box.jpg",
+        "Afternoon tea cupcakes",
+        tall = true,
+        inverse = true,
+        background = '#fff'
+    ) }}
 {% endblock %}

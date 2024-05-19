@@ -1,10 +1,39 @@
 {% set page = "corporate" %}
-{% extends "occasion.njk" %}
+{% extends "layout.njk" %}
 
-{% block text %}
-    <p>Whatever the company event, be it an exhibition, corporate anniversary, promotional event or party, I can make cakes and cupcakes tailored to your company's brand.</p>
+{% block main %}
 
-    <p>Cakes and cupcakes can be finished in either buttercream or fondant and you can choose from an extensive list of <a href="/flavours">sponge flavours</a>. I also cater for certain dietary requirements such as gluten and dairy free.</p>
+    <section class="intro">
+        <div class="intro-text">
+            <p>Whatever the company event, be it an exhibition, corporate anniversary, retirement, promotional event or party, I can make cakes and cupcakes tailored to your company's brand.</p>
+            <p>Edible images are a great way to advertise your brand. All I need is a high resolution image.</p>
+        </div>
+    </section>
 
-    <p>Edible images are a great way to advertise your brand.  All I need is a high resolution image.</p>
+    {% from "macros/half-image-section.njk" import halfImageSection with context %}
+    {{ halfImageSection(
+        'Corporate cakes',
+        [
+            "Make a statement at your next corporate event with my bespoke celebration cakes, crafted to reflect your brand's professionalism and creativity. My cakes serve as more than just a sweet treat; they are a unique way to showcase your company's values and leave a lasting impression on clients and colleagues alike."
+        ],
+        "/products/celebration-cakes",
+        "See celebration cakes",
+        "portfolio/Black-Gold-Milestone-space.jpg",
+        "Corporate celebration cake",
+        tall = true
+    ) }}
+
+    {{ halfImageSection(
+        'Corporate cupcakes',
+        [
+            "My cupcakes are customisable to showcase your company's logo or brand colours, making them a memorable and eye-catching addition to your event. And they taste delicious too!"
+        ],
+        "/products/cupcakes",
+        "See cupcakes",
+        "portfolio/TTMC-Corporate-Cupcakes.jpg",
+        "Corporate cupcakes",
+        tall = true,
+        inverse = true,
+        background = '#fff'
+    ) }}
 {% endblock %}

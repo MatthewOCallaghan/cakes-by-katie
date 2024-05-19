@@ -1,0 +1,38 @@
+{% set page = "christening" %}
+{% extends "layout.njk" %}
+
+{% block main %}
+
+    <section class="intro">
+        <div class="intro-text">
+            <p>Welcome your little one into the world with my beautifully designed christening cakes, crafted to make their special day even more memorable. Each cake is meticulously handcrafted with love and attention to detail, making it the perfect centrepiece for your celebration. With my exquisite christening cakes, you can create cherished memories that will last a lifetime.</p>
+        </div>
+    </section>
+
+    {% from "macros/half-image-section.njk" import halfImageSection with context %}
+    {{ halfImageSection(
+        'Christening cakes',
+        [
+            "Make your little one's christening day even more special with one of my christening cakes - the perfect way to commemorate this joyous occasion."
+        ],
+        "/products/celebration-cakes",
+        "See celebration cakes",
+        "portfolio/Dreamland-Express-space.jpg",
+        "Christening celebration cake",
+        tall = true
+    ) }}
+
+    {{ halfImageSection(
+        'Christening cupcakes',
+        [
+            "Welcome your little one into the world with my adorable christening cupcakes, perfect for celebrating this special milestone, delighting your guests and creating lasting memories."
+        ],
+        "/products/cupcakes",
+        "See cupcakes",
+        "portfolio/Pastel-and-Choc-Roses.jpg",
+        "Christening cupcakes",
+        tall = true,
+        inverse = true,
+        background = '#fff'
+    ) }}
+{% endblock %}

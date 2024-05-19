@@ -1,6 +1,39 @@
 {% set page = "easter" %}
-{% extends "occasion.njk" %}
+{% extends "layout.njk" %}
 
-{% block text %}
-    <p>An Easter cake or a box of Easter cupcakes give an extra treat in addition to or instead of traditional Easter eggs. You can choose from an extensive list of <a href="/flavours">sponge flavours</a>, including chocolate of course, and for something extra special, a pinata cake can be filled with mini eggs (or other sweet delights) that cascade out of the cake upon cutting.</p>
+{% block main %}
+
+    <section class="intro">
+        <div class="intro-text">
+            <p>An Easter cake or a box of Easter cupcakes gives an extra treat in addition to or instead of traditional Easter eggs.</p>
+            <p>And for something extra special, a pinata cake can be filled with mini eggs (or other sweet delights) that cascade out of the cake upon cutting.</p>
+        </div>
+    </section>
+
+    {% from "macros/half-image-section.njk" import halfImageSection with context %}
+    {{ halfImageSection(
+        'Easter cakes',
+        [
+            "Make this Easter egg-stra special with my delicious Easter cakes, crafted with love and bursting with flavour. Perfect for sharing with family and friends, my cakes are a delightful addition to any Easter feast and are sure to leave everyone hopping for more!"
+        ],
+        "/products/celebration-cakes",
+        "See celebration cakes",
+        "portfolio/Blue-Speckle-Mini-Eggs-space.jpg",
+        "Easter celebration cake",
+        tall = true
+    ) }}
+
+    {{ halfImageSection(
+        'Easter cupcakes',
+        [
+            "Spread Easter cheer with my irresistible Easter cupcakes, decorated with festive designs and baked to perfection. Whether enjoyed as a treat for yourself or shared with loved ones, my cupcakes are sure to add that extra touch to your Easter celebration."
+        ],
+        "/products/cupcakes",
+        "See cupcakes",
+        "portfolio/Mini-Egg-Cupcakes-space.jpg",
+        "Easter cupcakes",
+        tall = true,
+        inverse = true,
+        background = '#fff'
+    ) }}
 {% endblock %}
