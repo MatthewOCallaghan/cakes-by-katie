@@ -62,7 +62,7 @@
         },
         {
           "question": "Do you cater for any special dietary requirements?",
-          "answer": "<p>Yes, I make gluten free and dairy free cakes. I also offer a reduced flavour range for vegans. I encourage you to get in touch and we can discuss whatever requirements you have. Please note that whilst the cakes will be made using free from products, they're made in a kitchen where the allergens are present.</p>"
+          "answer": "<p>Yes, I offer flavour ranges for gluten free, dairy free, vegan and eggless diets. I encourage you to get in touch and we can discuss whatever requirements you have. Please note that whilst the cakes will be made using free from products, they're made in a kitchen where the allergens are present.</p>"
         },
         {
           "question": "Do you deliver?",
@@ -260,7 +260,7 @@
         },
         {
           "name": "Birthday cupcakes",
-          "description": "Birthday cupcakes are easy to share and customise with a decoration of your choice and available in both standard and deluxe flavours. If some of your party have dietary requirements, cupcakes are a good way to cater for them separately. Cupcakes can also make a special birthday gift and can be presented in a gift box finished with ribbon and a bow and candle.",
+          "description": "Birthday cupcakes are easy to share and customise with a decoration of your choice. If some of your party have dietary requirements, cupcakes are a good way to cater for them separately. Cupcakes can also make a special birthday gift and can be presented in a gift box finished with ribbon and a bow and candle.",
           "examples": ["birthday-beach-mix", "rose-mix", "deluxe-mix"]
         },
         {
@@ -688,7 +688,7 @@
       "product": "wedding-cake",
       "occasion": "wedding",
       "testimonial": {
-        "text": "I cannot recommend the wedding cake made by Cakes by Katie highly enough! It was absolutely stunning to look at and tasted even better than it looked. Our guests were raving about it all night! Katie was an absolute pleasure to work with throughout the entire process. She listened and understood our vision and created a cake that was exactly what we had in mind. Thank you so much for creating such a memorable and delicious centerpiece for our wedding!",
+        "text": "I cannot recommend the wedding cake made by Cakes by Katie highly enough! It was absolutely stunning to look at and tasted even better than it looked. Our guests were raving about it all night! Katie was an absolute pleasure to work with throughout the entire process. She listened and understood our vision and created a cake that was exactly what we had in mind. Thank you so much for creating such a memorable and delicious centrepiece for our wedding!",
         "name": "Jason, Benson"
       }
     },
