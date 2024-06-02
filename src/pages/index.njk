@@ -71,13 +71,6 @@
             </div>                
     </section>
 
-    <section id="features">
-        <div class="rosettes">
-            {{ pictureElement("features/wh-Rising-Star-Rosette.png", "UK Weddings and Honeymoons Awards Rising Star Finalist 2024 Rosette", "min(250px, 30vw)") }}
-            {{ pictureElement("features/wh-feature-Rosette.png", "UK Weddings and Honeymoons Top UK Cake Maker February/March Rosette", "min(250px, 30vw)") }}
-        </div>
-    </section>
-
     <section id="portfolio">
         <div id="grid">
             {% for item in portfolioSample %}
@@ -86,6 +79,8 @@
         </div>
         <a class="button" href="/portfolio" >See more of my portfolio</a>
     </section>
+
+    {% include "featured-in.njk" %}
 
     {# Christmas section #}
     {# <section id="christmas">

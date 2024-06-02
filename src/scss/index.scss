@@ -244,25 +244,6 @@
     }
 }
 
-#features {
-
-    background: #fff;
-    padding-bottom: 0;
-    padding-top: 0;
-
-    .rosettes {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        gap: 40px;
-
-        img {
-            width: 250px;
-            max-width: 30vw;
-        }
-    }
-}
-
 #portfolio {
 
     display: flex;
