@@ -25,7 +25,7 @@
         <div class="products-column-left">
 
             <div class="products-intro">
-                <p>{{ introText }}</p>
+                {{ introText | safe }}
             </div>
 
             {% for product in products %}

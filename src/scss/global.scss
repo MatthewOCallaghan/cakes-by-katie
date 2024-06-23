@@ -1375,7 +1375,11 @@ section.products-range {
             color: #575757;
 
             p {
-                margin: 0;
+                margin-bottom: 0;
+            }
+
+            p:first-child {
+                margin-top: 0;
             }
         }
 
@@ -1401,7 +1405,7 @@ section.products-range {
 
             .product-details {
 
-                padding: 0 20px;
+                padding: 0 10px;
                 text-align: left;
 
                 .product-details-top-row {
@@ -1410,7 +1414,7 @@ section.products-range {
                     flex-wrap: wrap;
                     justify-content: space-between;
                     align-items: center;
-                    gap: 10px 20px;
+                    gap: 10px 10px;
 
                     .product-name {
                         font-family: variables.$handwriting;

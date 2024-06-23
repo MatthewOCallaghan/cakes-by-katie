@@ -3,51 +3,63 @@
 
 {% block main %}
 
-    {# {% from "macros/product-range.njk" import productRange with context %}
+    {% from "macros/product-range.njk" import productRange with context %}
     {{
         productRange(
             [
                 {
-                    name: "Cake jars",
-                    image: "christmas/star-cookies.jpg",
-                    price: "£4 each",
-                    description: "<p>Description of cake jars here. Flavours include vanilla, chocolate, raspberry and orange. Minimum order of 6 per flavour.</p>"
+                    name: "Cake Jars",
+                    image: "wedding-favours/cake-jar.jpg",
+                    price: "From £4.50 each",
+                    description: "<p>Sponge cake beautifully presented in a jar with a spoon. All sponge cake flavour options available. Minimum order of 6 jars per flavour.</p>"
                 },
                 {
-                    name: "Biscuits",
-                    image: "christmas/star-cookies.jpg",
-                    price: "£2 each",
-                    description: "<p>Description of cake jars here. Flavours include vanilla, chocolate, raspberry and orange. Minimum order of 6 per flavour.</p>"
+                    name: "Cookies",
+                    image: "wedding-favours/cookies.jpg",
+                    price: "From £2.50 each",
+                    description: "<p>Sugar cookies finished in either fondant or royal icing. Flavours options: vanilla, lemon and orange. Minimum order of 12 per flavour.</p>"
                 },
                 {
-                    name: "Decorated biscuits",
-                    image: "christmas/star-cookies.jpg",
-                    price: "£3 each",
-                    description: "<p>Description of cake jars here. Flavours include vanilla, chocolate, raspberry and orange. Minimum order of 6 per flavour.</p>"
+                    name: "Cakesicles",
+                    image: "wedding-favours/cakesicles.jpg",
+                    price: "From £3.50 each",
+                    description: "<p>Sponge cake enrobed in finest Belgian Callebaut chocolate. Multiple flavour options for both sponge and chocolate available. Minimum order of 12 per flavour.</p>"
+                },
+                {
+                    name: "Chocolate Bombes",
+                    image: "wedding-favours/bombe-portrait.jpg",
+                    price: "From £4.50 each",
+                    description: "<p>Finest Belgian Callebaut chocolate shell filled with hot chocolate powder on a bed of marshmallows. Choose from milk, white or dark chocolate shell. Minimum order of 12.</p>"
+                },
+                {
+                    name: "Cake Pops",
+                    image: "wedding-favours/cake-pops.jpg",
+                    price: "From £2.50 each",
+                    description: "<p>Cake balls dipped in finest Belgian Callebaut chocolate. These can be presented on a stick. Multiple flavour options for both sponge and chocolate available. Minimum order of 12 per flavour.</p>"
                 },
                 {
                     name: "Macarons",
-                    image: "christmas/star-cookies.jpg",
-                    price: "£3 each",
-                    description: "<p>Description of cake jars here. Flavours include vanilla, chocolate, raspberry and orange. Minimum order of 6 per flavour.</p>"
+                    image: "wedding-favours/macarons.jpg",
+                    price: "From £3.50 each",
+                    description: "<p>Small box of macarons gift wrapped. Multiple flavour options available. Minimum order of 12 boxes - flavour minimums may apply.</p>"
                 }
             ],
-            "Paragraph here about wedding favours. Start by congratulating the couple on their engagement. Talk about the products being customisable and that you can deliver. Maybe encourage them to buy their wedding cake from us too.",
+            "<p>Congratulations on your engagement! Wedding favours make the perfect gift for your guests, whether on the table or placed elsewhere they will give the finishing touch your venue is looking for. Why not have a look at my wedding cakes too and enquire about yours?</p><p>Discount for large orders and/or wedding cake bookings.</p><p>If you would like something different as a wedding favour, please let me know and I will do my best to accommodate your request.</p>",
             [
                 {
                     title: "Bespoke",
                     icon: "heart.svg",
-                    description: "I'll customise these favours for your special day."
+                    description: "Custom made to compliment your wedding decor."
                 },
                 {
-                    title: "Bespoke",
-                    icon: "heart.svg",
-                    description: "I'll customise these favours for your special day."
+                    title: "Flavour options",
+                    icon: "lemon.svg",
+                    description: "Multiple flavour options for each. Free from options are also available for some."
                 },
                 {
-                    title: "Bespoke",
-                    icon: "heart.svg",
-                    description: "I'll customise these favours for your special day."
+                    title: "Gift wrapping",
+                    icon: "gift-wrap.svg",
+                    description: "Gift wrapped to match your wedding colour theme/stationery."
                 },
                 {
                     title: "Delivery available",
@@ -56,6 +68,6 @@
                 }
             ]
         )
-    }} #}
+    }}
 
 {% endblock %}
