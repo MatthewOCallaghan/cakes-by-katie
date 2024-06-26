@@ -509,6 +509,7 @@
     "charlotte": {
       "images": ["Charlotte.jpg"],
       "squareImage": "Charlotte-square.jpg",
+      "description": "Photographer: Jade Koh Photography",
       "name": "Charlotte",
       "product": "wedding-cake",
       "occasion": "wedding"
@@ -516,7 +517,6 @@
     "bouquet-pink-mix": {
       "images": ["Bouquet-Pink-Mix.jpg"],
       "name": "Bouquet - Pink Mix",
-      "description": "Photographer: Jade Koh Photography",
       "product": "cupcakes",
       "occasion": ["birthday", "anniversary", "afternoon-tea", "gift"]
     },
