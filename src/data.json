@@ -1299,7 +1299,7 @@
       "occasion": "birthday"
     },
     "fault-line-pink-roses-2": {
-      "images": ["Fault-Line-Pink-Roses-V2.jpg"],   
+      "images": ["Fault-Line-Pink-Roses-v2.jpg"],   
       "name": "Fault Line - Pink Roses",
       "product": "celebration-cake",
       "occasion": "birthday"
@@ -1474,7 +1474,7 @@
       "occasion": "birthday"
     },
     "up-up-and-away-with-teddy": {
-      "images": ["Up-Up-Away-with-teddy.jpg"],   
+      "images": ["Up-up-Away-with-Teddy.jpg"],   
       "name": "Up, Up & Away with Teddy",
       "product": "celebration-cake",
       "occasion": ["birthday","baby-shower","christening"]
