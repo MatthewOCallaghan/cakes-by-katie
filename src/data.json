@@ -708,6 +708,10 @@
     "floral-tower": {
       "images": ["Floral-Tower.jpg"],
       "name": "Floral Tower",
+      "testimonial":{
+        "text":"I just wanted to thank you for the gorgeous cupcakes on Saturday.  They looked perfect and tasted absolutely delicious.  Everyone really enjoyed them (including my very naughty dog who swiped one of the remaining few off the table when we got home).  I’m sorry I didn’t get to see you on Saturday, but thank you for doing such a fantastic and professional job. Many many thanks.",
+        "name":"Victoria & Nicholas"
+      },
       "product": "cupcakes",
       "occasion": ["wedding","birthday","anniversary"]
     },
@@ -1123,6 +1127,10 @@
     "super-mario-2": {
       "images": ["Super-Mario-2.jpg"],   
       "name": "Super Mario",
+      "testimonial":{
+        "text":"I just wanted to say thank you so much again for the amazing cake you made!  Sam absolutely loved it and was so surprised!  The cake was delicious as well and went down a treat!  Thank you!",
+        "name": "Lizzie"
+      },
       "product": "celebration-cake",
       "occasion": "birthday"
     },
