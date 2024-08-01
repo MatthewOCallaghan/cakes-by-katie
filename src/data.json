@@ -3127,7 +3127,11 @@
         "vegan": "Light vanilla sponge filled with strawberry jam and filling cream"
       },
       "variants": ["gluten-free", "dairy-free", "vegan", "eggless"],
-      "image": "choices/flavours/vanilla.jpg"
+      "image": "choices/flavours/vanilla.jpg",
+      "variantImages": {
+        "vegan": "choices/flavours/vanilla-vegan.jpg",
+        "eggless": "choices/flavours/vanilla-vegan.jpg"
+      }
     },
     {
       "name": "Chocolate",
@@ -3137,7 +3141,11 @@
         "vegan": "Chocolate sponge filled with chocolate filling cream"
       },
       "variants": ["gluten-free", "dairy-free", "vegan", "eggless"],
-      "image": "choices/flavours/chocolate.jpg"
+      "image": "choices/flavours/chocolate.jpg",
+      "variantImages": {
+        "vegan": "choices/flavours/chocolate-vegan.jpg",
+        "eggless": "choices/flavours/chocolate-vegan.jpg"
+      }
     },
     {
       "name": "Chocolate Biscoff",
@@ -3148,7 +3156,11 @@
       },
       "variants": ["dairy-free", "vegan", "eggless"],
       "allergenInfo": "Chocolate Biscoff sponge contains soya.",
-      "image": "choices/flavours/biscoff.jpg"
+      "image": "choices/flavours/biscoff.jpg",
+      "variantImages": {
+        "vegan": "choices/flavours/biscoff-vegan.jpg",
+        "eggless": "choices/flavours/biscoff-vegan.jpg"
+      }
     },
     {
       "name": "Chocolate Oreo",
@@ -3158,7 +3170,11 @@
         "vegan": "Classic chocolate sponge filled with Oreo filling cream"
       },
       "variants": ["gluten-free", "dairy-free", "vegan", "eggless"],
-      "image": "choices/flavours/oreo.jpg"
+      "image": "choices/flavours/oreo.jpg",
+      "variantImages": {
+        "vegan": "choices/flavours/oreo-vegan.jpg",
+        "eggless": "choices/flavours/oreo-vegan.jpg"
+      }
     },
     {
       "name": "Chocolate Orange",
@@ -3168,7 +3184,11 @@
         "vegan": "Chocolate sponge flavoured with orange zest and filled with chocolate orange flavoured filling cream"
       },
       "variants": ["gluten-free", "dairy-free", "vegan", "eggless"],
-      "image": "choices/flavours/chocolate.jpg"
+      "image": "choices/flavours/chocolate.jpg",
+      "variantImages": {
+        "vegan": "choices/flavours/chocolate-vegan.jpg",
+        "eggless": "choices/flavours/chocolate-vegan.jpg"
+      }
     },
     {
       "name": "Lemon",
@@ -3178,7 +3198,11 @@
         "vegan": "Fresh tasting sponge filled with lemon filling cream"
       },
       "variants": ["gluten-free", "dairy-free", "vegan", "eggless"],
-      "image": "choices/flavours/lemon-elderflower-orange.jpg"
+      "image": "choices/flavours/lemon-elderflower-orange.jpg",
+      "variantImages": {
+        "vegan": "choices/flavours/lemon-vegan.jpg",
+        "eggless": "choices/flavours/lemon-vegan.jpg"
+      }
     },
     {
       "name": "Lemon and Elderflower",
@@ -3188,7 +3212,11 @@
         "vegan": "Light lemon sponge filled with elderflower flavour filling cream"
       },
       "variants": ["gluten-free", "dairy-free", "vegan", "eggless"],
-      "image": "choices/flavours/lemon-elderflower-orange.jpg"
+      "image": "choices/flavours/lemon-elderflower-orange.jpg",
+      "variantImages": {
+        "vegan": "choices/flavours/lemon-vegan.jpg",
+        "eggless": "choices/flavours/lemon-vegan.jpg"
+      }
     },
     {
       "name": "Orange",
@@ -3198,7 +3226,11 @@
         "vegan": "Sponge flavoured with zesty orange filled with orange filling cream"
       },
       "variants": ["gluten-free", "dairy-free", "vegan", "eggless"],
-      "image": "choices/flavours/lemon-elderflower-orange.jpg"
+      "image": "choices/flavours/lemon-elderflower-orange.jpg",
+      "variantImages": {
+        "vegan": "choices/flavours/lemon-vegan.jpg",
+        "eggless": "choices/flavours/lemon-vegan.jpg"
+      }
     },
     {
       "name": "Coffee",
