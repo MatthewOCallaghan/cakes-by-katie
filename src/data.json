@@ -613,7 +613,7 @@
     "petals-and-promises-olly": {
       "images": ["Petals-and-Promises-Olly-2.jpg", "Petals-and-Promises-Olly.jpg"],
       "name": "Petals & Promises",
-      "description": "Photos taken by Murray Clarke Photography",
+      "description": "Photographer: Murray Clarke Photography (murrayclarke.co.uk)",
       "testimonial": {
         "text": "Just a quick message to say thank you so much for making our wedding cake. So many of our guests commented upon how beautiful it was and also how amazing it tasted; and having now sampled quite a bit of it ourselves (!), we can confirm that it was absolutely delicious.",
         "name": "Olly & Niamh",
@@ -1561,7 +1561,7 @@
     },    
     "colour-splash": {
       "images": ["Colour-Splash.jpg","Colour-Splash-2.jpg"],   
-      "name": "Fault Line - Green Bouquets",
+      "name": "Colour Splash",
       "testimonial":{
         "text": "The most BEAUTIFUL and DELICIOUS cake, thank you so much. It was perfect and everyone asked who made it.",
         "name": "Isabella"
