@@ -69,6 +69,7 @@ section.products {
 
                     img {
                         width: 100%;
+                        border-radius: 6px;
                     }
                 }
                 
@@ -260,14 +261,14 @@ section.products {
 
 
 // Remove ahead of Christmas when we've updated prices
-.price-labels, .deals {
-    display: none !important;
-}
+// .price-labels, .deals {
+//     display: none !important;
+// }
 
-section.products .product-outer-container .product-inner-container .product-contents ~ .product-contents {
-    margin-top: 30px !important;
-}
+// section.products .product-outer-container .product-inner-container .product-contents ~ .product-contents {
+//     margin-top: 30px !important;
+// }
 
-section.products .product-outer-container ~ .product-outer-container, section.products .product-outer-container ~ .deals {
-    margin-top: 40px;
-}
+// section.products .product-outer-container ~ .product-outer-container, section.products .product-outer-container ~ .deals {
+//     margin-top: 40px;
+// }

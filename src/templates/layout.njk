@@ -179,6 +179,13 @@
                             <button>Occasions</button>
                             <div class="submenu">
                                 <ul>
+                                    {# Festive Christmas link #}
+                                    <li>
+                                        <a href="/occasions/christmas">
+                                            {{ pictureElement("portfolio/" ~ portfolio['ruby-reindeer'].squareImage, "Christmas cake", "50px") }}
+                                            <span>Christmas</span>
+                                        </a>
+                                    </li>
                                     <li>
                                         <a href="/occasions/birthday">
                                             {{ pictureElement("portfolio/" ~ portfolio['parker-penguin'].squareImage, "Birthday cake", "50px") }}
@@ -233,26 +240,17 @@
                                             <span>Easter</span>
                                         </a>
                                     </li>
-                                    <li>
+                                    {# Normal Christmas link #}
+                                    {# <li>
                                         <a href="/occasions/christmas">
                                             {{ pictureElement("portfolio/" ~ portfolio['ruby-reindeer'].squareImage, "Christmas cake", "50px") }}
                                             <span>Christmas</span>
                                         </a>
-                                    </li>
+                                    </li> #}
                                 </ul>
                                 <a href="/occasions" class="submenu-grid-more-link">More occasions</a>
                             </div>
                         </li>
-
-                        {# Christmas navbar link #}
-                        {# <li>
-                            <a
-                                href="/occasions/christmas"
-                                style="color:#fff;background:-webkit-linear-gradient(#fff,#f00);-webkit-background-clip:text;-webkit-text-fill-color:transparent;"
-                            >
-                                Christmas!
-                            </a>
-                        </li> #}
 
                         <li id="desktop-header-contact-link">
                             <a class="header-contact-link" href="{{ "#contact" if page == "index" else "/#contact" }}">Contact</a>
@@ -262,10 +260,10 @@
                     <div id="mobile-nav-image">
                         {{ pictureElement("features/wh-Rising-Star-Rosette.png", "UK Weddings and Honeymoons Awards Rising Star Finalist 2024 Rosette", "126px") }}
 
-                        {{ pictureElement("cake-cutouts/parker-penguin.png", "Parker penguin", "169px") }}
+                        {# {{ pictureElement("cake-cutouts/parker-penguin.png", "Parker penguin", "169px") }} #}
                         
                         {# Image used at Christmas #}
-                        {# {{ pictureElement("christmas/white-reindeer-cutout.png", "White reindeer cake", "169px") }} #}
+                        {{ pictureElement("christmas/white-reindeer-cutout.png", "White reindeer cake", "169px") }}
                     </div>
 
                 </div>
