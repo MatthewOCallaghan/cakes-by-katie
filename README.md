@@ -16,9 +16,9 @@ Code for website [cakesbykatie.co.uk](https://www.cakesbykatie.co.uk).
 
 # Changes for Christmas
 
-- Navbar link
+- Navbar link - styled Christmas link at top replaces normal link at bottom
 - Mobile menu image
 - Snow and Christmas hat in homepage hero
 - Christmas section on homepage
-- Prices on Christmas page
+- Prices on Christmas page - remove with CSS at bottom of christmas.scss
 - Collection dates in Christmas page text and bottom panel CTA
