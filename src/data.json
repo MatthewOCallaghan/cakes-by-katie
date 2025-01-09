@@ -3305,7 +3305,7 @@
         "dairy-free": "Classic chocolate sponge filled with Oreo filling cream",
         "vegan": "Classic chocolate sponge filled with Oreo filling cream"
       },
-      "variants": ["gluten-free", "dairy-free", "vegan", "eggless"],
+      "variants": ["dairy-free", "vegan", "eggless"],
       "image": "choices/flavours/oreo.jpg",
       "variantImages": {
         "vegan": "choices/flavours/oreo-vegan.jpg",
