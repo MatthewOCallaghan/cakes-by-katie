@@ -1,0 +1,30 @@
+.terms {
+    text-align: left;
+    max-width: 1400px;
+    margin: auto;
+    padding: min(30px, 5%);
+
+    h1, h2, h3 {
+        font-family: inherit;
+        font-size: revert;
+    }
+
+    ul {
+        list-style-type: circle;
+    }
+
+    section {
+        padding: 0;
+        padding-inline-start: 40px;
+
+        // Undo padding on section header
+        h2 {
+            margin-left: -40px;
+        }
+
+        // Line p tags up with bullet points
+        h3 ~ p {
+            padding-inline-start: 40px;
+        }
+    }
+}

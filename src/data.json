@@ -87,6 +87,18 @@
       ],
       "hasCSSFile": true
     },
+    "terms": {
+      "title": "Terms and Conditions | Cakes by Katie",
+      "description": "Terms and Conditions for placing an order with Cakes by Katie.",
+      "heading": {
+        "text": "Terms and Conditions",
+        "image": {
+          "path": "backgrounds/books.jpg",
+          "alt": "Books background"
+        }
+      },
+      "hasCSSFile": true
+    },
     "404": {
       "title": "Page not found | Cakes by Katie",
       "heading": {
