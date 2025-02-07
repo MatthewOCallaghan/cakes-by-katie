@@ -1,10 +1,16 @@
 $monospace-font: "Roboto Mono", serif;
 
+p.awards-intro {
+    padding: min(40px, 5%) 5%;
+    margin: 0;
+    background: #fff;
+}
+
 .awards-grid {
     max-width: 1400px;
     margin: 30px auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(400px, 50vw), 1fr));
     gap: 20px;
     padding: 0 20px;
 
