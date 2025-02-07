@@ -1,0 +1,27 @@
+{% set page = "awards" %}
+{% extends "layout.njk" %}
+
+{% block head %}
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block main %}
+
+    {% from "macros/fixed-background.njk" import fixedBackground with context %}
+    {{ fixedBackground("backgrounds/marble-background.jpg", "Marble background image") }}
+
+    <p class="page-intro">It's always rewarding to have my hard work recognised and I'm proud to have received industry awards and been featured in top publications.</p>
+
+    <div class="awards-grid">
+        {% for post in pages[page].posts %}
+            <div class="award">
+                {{ pictureElement(post.image.path, post.image.alt, "50vw") }}
+                <h2>{{ post.title }}</h2>
+                <h3>{{ post.subtitle }}</h3>
+                <hr />
+                {{ post.text | safe }}
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}
