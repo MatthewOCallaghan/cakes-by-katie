@@ -38,6 +38,14 @@
                 object-fit: contain;
                 object-position: center;
             }
+
+            // Flavour caption
+            // Would be better redesigning all this CSS to use grids really now
+            span {
+                opacity: 0.9;
+                margin-top: 5px;
+                display: block;
+            }
         }
 
         .quote {

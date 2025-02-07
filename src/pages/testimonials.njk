@@ -13,6 +13,9 @@
                         class="image"
                     >
                         {{ pictureElement("portfolio/" + portfolio[testimonial.cake].images[0].src, portfolio[testimonial.cake].name, { '800': 'calc(100vw - 120px)', any: '500px' }) }}
+                        {% if portfolio[testimonial.cake].flavours %}
+                            <span>{{ "Flavours" if (portfolio[testimonial.cake].flavours | length) > 1 else "Flavour"}}: {{ portfolio[testimonial.cake].flavours | join(", ") }}</span>
+                        {% endif %}
                     </div>
                     <div class="quote">
                         <blockquote>{{ testimonial.text }}</blockquote>
