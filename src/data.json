@@ -2995,18 +2995,6 @@
       "product": "celebration-cake",
       "occasion": "birthday"
     },
-    "golden-drip-cake-with-age": {
-      "images": ["Golden-Drip-Cake-with-Age.jpg"],
-      "name": "Golden Drip Cake with Age",
-      "videos": [
-        {
-          "thumb": "Golden-Drip-Cake-with-Age.jpg",
-          "file": "Golden-Drip-Cake-with-Age.mp4"
-        }
-      ],
-      "product": "celebration-cake",
-      "occasion": "birthday"
-    },
     "birthday-square": {
       "images": ["Birthday-Square.jpg"],
       "name": "Birthday Square",
@@ -3301,12 +3289,6 @@
       "product": "celebration-cake",
       "occasion": "birthday"
     },
-    "sapphire-anniversary ": {
-      "images": ["Sapphire-Anniversary.jpg"],
-      "name": "Sapphire Anniversary",
-      "product": "celebration-cake",
-      "occasion": "anniversary"
-    },
     "ferrero-rocher-cake": {
       "images": ["Ferrero-Rocher-Cake.jpg"],
       "squareImage": "Ferrero-Rocher-Cake-square.jpg",
@@ -3320,35 +3302,6 @@
       "product": "celebration-cake",
       "occasion": ["birthday", "afternoon-tea"]
     },
-    "choc-fudge-cake": {
-      "images": ["Choc-Fudge-Cake.jpg"],
-      "name": "Chocolate Fudge Cake",
-      "description": "The ultimate chocolate fudge cake; featuring hidden milky bar buttons, milky bar drip and milky bar button stars.",
-      "videos": [
-        {
-          "thumb": "Choc-Fudge-Cake.jpg",
-          "file": "Choc-Fudge-Cake.mp4"
-        }
-      ],
-      "product": "celebration-cake",
-      "occasion": ["birthday", "afternoon-tea"]
-    },
-    "celebration": {
-      "images": ["Celebration-Blue.jpg", "Celebration-Pink.jpg"],
-      "name": "Celebration",
-      "videos": [
-        {
-          "thumb": "Celebration-Blue.jpg",
-          "file": "Celebration-Blue.mp4"
-        },
-        {
-          "thumb": "Celebration-Pink.jpg",
-          "file": "Celebration-Pink.mp4"
-        }
-      ],
-      "product": "celebration-cake",
-      "occasion": "birthday"
-    },    
     "shades-of-pink-and-gold-fault-line-flowers": {
       "images": ["Shades-of-Pink-and-Gold-Fault-Line-Flowers.jpg"],
       "name": "Fault Line Flowers - Pink & Gold",
