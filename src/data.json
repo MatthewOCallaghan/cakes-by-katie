@@ -528,7 +528,8 @@
         "name": "Sam"
       },
       "product": "celebration-cake",
-      "occasion": ["baby-shower", "christening"]
+      "occasion": ["baby-shower", "christening"],
+      "flavours": ["GF Vanilla"]
     },
     "arabella": {
       "images": ["Arabella.jpg"],
@@ -545,7 +546,8 @@
           "location": "Newbury"
         },
         "product": "celebration-cake",
-      "occasion":"birthday"
+      "occasion":"birthday",
+      "flavours": ["Chocolate"]
     },
     "welcome-to-the-jungle": {
       "images": ["Welcome-to-the-Jungle.jpg"],
@@ -556,7 +558,8 @@
         "location": "Thatcham"
       },
       "product":"celebration-cake",
-      "occasion": "birthday"
+      "occasion": "birthday",
+      "flavours": ["Vanilla"]
     },
     "the-one-where-its-your-birthday": {
       "images": ["The-One-Where-its-your-Birthday.jpg"],
@@ -607,7 +610,8 @@
         "name": "Marianna, Freixenet Copestick Limited"
       },
       "product": "cupcakes",
-      "occasion": "corporate"
+      "occasion": "corporate",
+      "flavours": ["GF Vanilla", "GF Chocolate", "Vegan Vanilla", "Vegan Chocolate"]
     },
      "dreamland-express": {
       "images": ["Dreamland-Express.jpg"],
@@ -624,7 +628,8 @@
         "name": "Bex, Barracuda, Reading"
       },
       "product": "celebration-cake",
-      "occasion": ["anniversary", "corporate"]
+      "occasion": ["anniversary", "corporate"],
+      "flavours": ["Vanilla", "Chocolate"]
     },
     "chapt-30": {
       "images": ["Chapt-30.jpg"],
@@ -662,7 +667,8 @@
         "location": "Thatcham"
       },
       "product":"celebration-cake",
-      "occasion": "birthday"
+      "occasion": "birthday",
+      "flavours": ["Lemon"]
     },
     "our-story": {
       "images": ["Our-Story.jpg"],
@@ -699,7 +705,8 @@
         "location": "Kingsclere"
       },
       "product": "wedding-cake",
-      "occasion":"wedding"
+      "occasion":"wedding",
+      "flavours": ["Lemon", "Orange"]
     },
     "diamond-toast": {
       "images": ["Diamond-Toast.jpg"],
@@ -735,7 +742,8 @@
         "name":"Victoria & Nicholas"
       },
       "product": "cupcakes",
-      "occasion": ["wedding","birthday","anniversary"]
+      "occasion": ["wedding","birthday","anniversary"],
+      "flavours": ["Chocolate Orange", "Coffee & Walnut", "Orange", "Lemon", "Carrot"]
     },
     "alisha":{
       "images": ["Alisha-Close-Up.jpg", "Alisha.jpg"],
@@ -791,7 +799,8 @@
         "location": "Eastleigh"
       },
       "product":"wedding-cake",
-      "occasion": "wedding"
+      "occasion": "wedding",
+      "flavours": ["Carrot, Lemon, Chocolate Biscoff"]
     },
     "baby-shark-lullaby": {
       "images": ["Baby-Shark-Lullaby.jpg"],
@@ -819,7 +828,8 @@
         "name": "Charlotte"
       },
       "product": "celebration-cake",
-      "occasion": "birthday"
+      "occasion": "birthday",
+      "flavours": ["Raspberry & White Chocolate", "Vanilla"]
     },
     "zara": {
       "images": ["Zara.jpg"],
@@ -829,6 +839,10 @@
         "name":"Faraz & Zara",
         "location":"Earley"
       },
+      "product": "wedding-cake",
+      "occasion": "wedding",
+      "flavours": ["Chocolate Biscoff", " Chocolate Oreo", "Lemon"]
+    },
     "bears-and-bunting": {
       "images": ["Bears-and-Bunting.jpg"],
       "name": "Bears & Bunting",
@@ -837,10 +851,8 @@
         "name": "Pam"
       },
       "product": "celebration-cake",
-      "occasion": "birthday"
-    },
-      "product":"wedding-cake",
-      "occasion": "wedding"
+      "occasion": "birthday",
+      "flavours": ["GF Vanilla"]
     },
     "off-to-the-ball": {
       "images": ["Off-to-the-Ball.jpg"],
@@ -873,7 +885,8 @@
         "location": "Thatcham"
       },
       "product": "wedding-cake",
-      "occasion":"wedding"
+      "occasion":"wedding",
+      "flavours": ["Vanilla"]
     },
     "baby-bears": {
       "images": ["Baby-Bears.jpg"],
@@ -897,7 +910,8 @@
       "testimonial": {
         "text": "I cannot recommend the wedding cake made by Cakes by Katie highly enough! It was absolutely stunning to look at and tasted even better than it looked. Our guests were raving about it all night! Katie was an absolute pleasure to work with throughout the entire process. She listened and understood our vision and created a cake that was exactly what we had in mind. Thank you so much for creating such a memorable and delicious centrepiece for our wedding!",
         "name": "Jason, Benson"
-      }
+      },
+    "flavours": ["Raspberry & White Chocolate", "Chocolate Biscoff"]
     }, 
     "golden-50th": {
       "images": ["Golden-50th.jpg"],
@@ -939,7 +953,8 @@
         "location": "London"
       },
       "product":"wedding-cake",
-      "occasion": "wedding"
+      "occasion": "wedding",
+      "flavours": ["Lemon & Elderflower", "Chocolate Orange", "Raspberry & White Chocolate"]
     }, 
     "birthday-mix-blue-cars": {
       "images": ["Birthday-Mix-Blue-Cars.jpg"],
@@ -955,7 +970,8 @@
         "name":"Jane"
       },
       "product": "celebration-cake",
-      "occasion": "birthday"
+      "occasion": "birthday",
+      "flavours": ["Vanilla"]
     },
     "fault-line-pink-roses": {
       "images": ["Fault-Line-Pink-Roses.jpg"],
@@ -997,7 +1013,8 @@
         "name": "Paul"
      },
      "product": "celebration-cake",
-      "occasion":"birthday"
+      "occasion":"birthday",
+      "flavours": ["Chocolate Oreo", "Vegan Vanilla Cupcakes"]
     },
     "simply-wed": {
       "images": ["Simply-Wed.jpg", "Simply-Wed-Topper.jpg"],
@@ -1038,7 +1055,7 @@
       "occasion": "birthday"
     }, "onyx-and-snow":{
       "images": ["Onyx-Snow.jpg"],
-"description": "Photographer: Stephen Baron Photography",
+      "description": "Photographer: Stephen Baron Photography",
       "name": "Onyx & Snow",
       "product": "wedding-cake",
       "occasion": "wedding"
@@ -1070,7 +1087,8 @@
         "location": "Thatcham"
       },
       "product": "wedding-cake",
-      "occasion":"wedding"
+      "occasion":"wedding",
+      "flavours": ["Chocolate", "Raspberry & White Chocolate"]
     },
     "confetti-in-the-clouds": {
       "images": ["Confetti-in-the-Clouds.jpg"],
@@ -1081,7 +1099,8 @@
         "location": "Hungerford"
       },
       "product": "celebration-cake",
-      "occasion": "birthday"
+      "occasion": "birthday",
+      "flavours": ["Chocolate Oreo"]
     },
     "natalia": {
       "images": ["Natalia.jpg","Natalia-Low.jpg","Natalia-Top.jpg"],
@@ -1103,7 +1122,8 @@
         "name": "Dave"
       },
       "product": "celebration-cake",
-      "occasion": "birthday"
+      "occasion": "birthday",
+      "flavours": ["Baileys"]
     },
     "fuchsia-and-gold": {
       "images": ["Fuchsia-and-Gold.jpg"],   
@@ -1139,7 +1159,8 @@
         "name":"Emma"
       },
       "product": "celebration-cake",
-      "occasion": "birthday"
+      "occasion": "birthday",
+      "flavours": ["Chocolate Orange"]
     },    "fault-line-safari-gold": {
       "images": ["Fault-Line-Safari-Gold.jpg"],
       "name": "Fault Line - Safari & Gold",
@@ -1205,7 +1226,8 @@
         "name": "Laura"
       },
       "product": "celebration-cake",
-      "occasion": "birthday"
+      "occasion": "birthday",
+      "flavours": ["Carrot"]
     },
     "good-riddance": {
       "images": ["Good-Riddance.jpg"],
@@ -1281,7 +1303,8 @@
         "name":"David"
       },
       "product": "cupcakes",
-      "occasion": "birthday"
+      "occasion": "birthday",
+      "flavours": ["Chocolate"]
     },
     "ninja-turtles": {
       "images": ["Ninja-Turtles.jpg"],   
@@ -1309,7 +1332,8 @@
         "name": "Lizzie"
       },
       "product": "celebration-cake",
-      "occasion": "birthday"
+      "occasion": "birthday",
+      "flavours": ["Vanilla"]
     },
     "golden-grace": {
       "images": ["Golden-Grace.jpg","Golden-Grace-2.jpg"],   
@@ -1326,7 +1350,8 @@
         "location": "Baughurst"
       },
       "product": "celebration-cake",
-      "occasion": "birthday"
+      "occasion": "birthday",
+      "flavours": ["Vanilla"]
     },
     "fault-line-pink-gold-star": {
       "images": ["Fault-Line-Pink-Gold-Star.jpg"],   
@@ -1384,7 +1409,8 @@
         "name": "Paul"
       },
       "product": "celebration-cake",
-      "occasion": "birthday"
+      "occasion": "birthday",
+      "flavours": ["Lemon"]
     },
     "joyeux-anniversaire": {
       "images": ["Joyeux-Anniversaire.jpg"],   
@@ -1418,7 +1444,8 @@
         "name": "Jo"
       },
       "product": "celebration-cake",
-      "occasion": "birthday"
+      "occasion": "birthday",
+      "flavours": ["Vanilla"]
     },
     "cocoa-corners": {
       "images": ["Cocoa-Corners.jpg"],   
@@ -1471,7 +1498,8 @@
         "location": "Newbury"
       },
       "product": "celebration-cake",
-      "occasion": "birthday"
+      "occasion": "birthday",
+      "flavours": ["Chocolate Orange"]
     },
     "bon-voyage-corfu": {
       "images": ["Bon-Voyage-Corfu.jpg"],
@@ -1481,7 +1509,8 @@
         "name": "Penny"
      },
      "product":"celebration-cake",
-      "occasion":"birthday"
+      "occasion":"birthday",
+      "flavours": ["Vanilla"]
     },
     "birthday-swirls-plaques": {
       "images": ["Birthday-Swirls-Plaques.jpg"],   
@@ -1497,7 +1526,8 @@
         "name": "Ellie"
       },
       "product": "celebration-cake",
-      "occasion": "birthday"
+      "occasion": "birthday",
+      "flavours": ["Chocolate"]
     },
     "personalised-drips": {
       "images": ["Personalised-Drips.jpg"],   
@@ -1706,7 +1736,8 @@
         "name": "Mat"
       },
       "product": "celebration-cake",
-      "occasion": "birthday"
+      "occasion": "birthday",
+      "flavours": ["Vanilla"]
     },
     "milk-and-white-emboss": {
       "images": ["Milk-and-White-Emboss.jpg"],   
@@ -1728,7 +1759,8 @@
         "name": "Peter"
         },
       "product": "celebration-cake",
-      "occasion": "birthday"
+      "occasion": "birthday",
+      "flavours": ["Lemon & Elderflower"]
     },    
     "colourful-swirls": {
       "images": ["Colourful-Swirls.jpg"],   
@@ -1774,7 +1806,8 @@
         "name": "Isabella"
       },
       "product": "celebration-cake",
-      "occasion": "birthday"
+      "occasion": "birthday",
+      "flavours": ["GF DF Lemon"]
     },   
     "booties-and-bunting-pink": {
       "images": ["Booties-and-Bunting-Pink.jpg"],   
@@ -1796,7 +1829,8 @@
         "name": "Ruth"
       },
       "product": "celebration-cake",
-      "occasion": "birthday"
+      "occasion": "birthday",
+      "flavours": ["Vanilla"]
     },    
     "fault-line-red-roses": {
       "images": ["Fault-Line-Red-Roses.jpg"],   
@@ -1848,7 +1882,8 @@
         "name": "Sandy"
       },
       "product": "celebration-cake",
-      "occasion": "birthday"
+      "occasion": "birthday",
+      "flavours": ["Chocolate Biscoff"]
     },    
     "mixed-swirls-blue": {
       "images": ["Mixed-Swirls-Blue.jpg"],   
@@ -1858,7 +1893,8 @@
         "name": "Sam"
       },
       "product": "cupcakes",
-      "occasion": ["birthday","anniversary","baby-shower"]
+      "occasion": ["birthday","anniversary","baby-shower"],
+      "flavours": ["Vanilla"]
     },    
     "double-choc-and-cupcakes": {
       "images": ["Double-Choc-and-Cupcakes.jpg"],   
@@ -1977,7 +2013,8 @@
         "location": "New York"
       },
       "product": "cupcakes",
-      "occasion": "birthday"
+      "occasion": "birthday",
+      "flavours": ["Vanilla & Chocolate"]
     },    
     "fif-tee": {
       "images": ["Fif-Tee.jpg"],   
@@ -2056,14 +2093,14 @@
       "product": "celebration-cake",
       "occasion": "birthday"
     },    
-"serve-and-slice": {
+    "serve-and-slice": {
       "images": ["Serve-and-Slice.jpg"],
       "squareImage": "Serve-and-Slice-square.jpg",
       "name": "Serve and Slice",
       "product": "celebration-cake",
       "occasion": "birthday"
     },
- "simply-gold-blue": {
+    "simply-gold-blue": {
       "images": ["Simply-Gold-Blue.jpg"],
       "name": "Simply Gold - Blue",
       "testimonial": {
@@ -2071,7 +2108,8 @@
         "name": "Neil"
       },
       "product": "celebration-cake",
-      "occasion": "birthday"
+      "occasion": "birthday",
+      "flavours": ["Carrot"]
     },
       "desert-drift": {
       "images": ["Desert-Drift.jpg"],
@@ -2123,7 +2161,8 @@
         "name": "Ellie"
       },
       "product": "celebration-cake",
-      "occasion": "birthday"
+      "occasion": "birthday",
+      "flavours": ["Vanilla"]
     },
    
     "corporate-cupcake-anniversary": {
@@ -2158,7 +2197,8 @@
         "name": "Alex"
      },
      "product":"celebration-cake",
-      "occasion":"birthday"
+      "occasion":"birthday",
+      "flavours": ["Lemon", "Chocolate"]
     },
    
     "all-wrapped-up": {
@@ -2169,7 +2209,8 @@
         "name": "Scott"
      },
      "product":"celebration-cake",
-      "occasion":"birthday"
+      "occasion":"birthday",
+      "flavours": ["Vanilla"]
     },
     "all-aboard": {
       "images": ["All-Aboard.jpg"],
@@ -2223,7 +2264,8 @@
           "location": "Headley"
         },
         "product": "celebration-cake",
-      "occasion":"baby-shower"
+      "occasion":"baby-shower",
+      "flavours": ["Vanilla"]
     },
   
     "cocoa-and-cream-mini": {
@@ -2234,7 +2276,8 @@
         "name": "Anne"
      },
      "product": "celebration-cake",
-      "occasion":"birthday"
+      "occasion":"birthday",
+      "flavours": ["Chocolate Orange"]
     },
     "country-life": {
       "images": ["Country-Life.jpg"],
@@ -2281,7 +2324,8 @@
           "location": "Thatcham"
         },
         "product": "celebration-cake",
-      "occasion":"birthday"
+      "occasion":"birthday",
+      "flavours": ["GF Chocolate"]
     },
     "edible-image-multi": {
       "images": ["Edible-Image-Multi.jpg"],
@@ -2309,7 +2353,8 @@
         "name": "Rob"
       },
       "product": "celebration-cake",
-      "occasion":"birthday"
+      "occasion":"birthday",
+      "flavours": ["Chocolate Biscoff"]
     },
    
     "edible-image-games": {
@@ -2345,7 +2390,8 @@
           "location": "Headley"
         },
         "product": "celebration-cake",
-      "occasion":"birthday"
+      "occasion":"birthday",
+      "flavours": ["Vanilla"]
     },    
    
     "puppy-in-pink": {
@@ -2393,7 +2439,8 @@
           "location": "Cold Ash"
         },
         "product": "celebration-cake",
-        "occasion":"birthday"
+        "occasion":"birthday",
+        "flavours": ["Vanilla"]
     },
     "birthday-shades-lilac-blue": {
       "images": ["Birthday-Shades-Lilac-Blue.jpg"],
@@ -2523,7 +2570,8 @@
         "name": "Alexandra"
      },
      "product": "cupcakes",
-      "occasion": "graduation"
+      "occasion": "graduation",
+      "flavours": ["Toffee", "Chocolate"]
     },
     "ditsy-pink": {
       "images": ["Ditsy-Pink.jpg"],
@@ -2558,7 +2606,8 @@
         "location": "Chieveley"
       },
       "product": "celebration-cake",
-      "occasion":"birthday"
+      "occasion":"birthday",
+      "flavours": ["Vanilla"]
     },
     "fun-guy": {
       "images": ["Fun-Guy.jpg"],
@@ -2611,7 +2660,8 @@
           "location": "Newbury"
         },
         "product": "celebration-cake",
-      "occasion":"birthday"
+      "occasion":"birthday",
+      "flavours":["Lemon & Elderflower"]
     },
     "puppy-paws": {
       "images": ["Puppy-Paws.jpg"],
@@ -2681,7 +2731,8 @@
         "location": "Reading"
       },
       "product": "celebration-cake",
-      "occasion":"birthday"
+      "occasion":"birthday",
+      "flavours": ["Vanilla"]
     },
     "leonard": {
       "images": ["Leonard.jpg"],
@@ -2769,7 +2820,8 @@
         "location": "Thatcham"
       },
       "product": "celebration-cake",
-      "occasion":"birthday"
+      "occasion":"birthday",
+      "flavours": ["Lemon"]
     },
     "chocolate-decadence-milestone": {
       "images": ["Chocolate-Decadence-Milestone.jpg"],
@@ -2780,7 +2832,8 @@
         "location": "West Berkshire"
       },
       "product": "celebration-cake",
-      "occasion":"birthday"
+      "occasion":"birthday",
+      "flavours": ["Chocolate Orange"]
     },
     "shades-of-chocoate-narrow": {
       "images": ["Shades-of-Chocolate-Narrow.jpg"],
@@ -2797,7 +2850,8 @@
         "location": "Thatcham"
       },
       "product": "celebration-cake",
-      "occasion": "birthday"
+      "occasion": "birthday",
+      "flavours": ["Vanilla"]
     },
     "centre-stage": {
       "images": ["Centre-Stage.jpg"],
@@ -2808,7 +2862,8 @@
         "location": ""
       },
       "product": "celebration-cake",
-      "occasion":"birthday"
+      "occasion":"birthday",
+      "flavours": ["Vanilla"]
     },
     "frosty-snowflakes": {
       "images": ["Frosty-Snowflakes.jpg"],
@@ -2967,7 +3022,8 @@
         }
       ],
       "product": "celebration-cake",
-      "occasion": "birthday"
+      "occasion": "birthday",
+      "flavours": ["Chocolate"]
     },
     "birthday-beach-mix": {
       "images": ["Birthday-Beach-Mix.jpg", "Birthday-Beach-Mix-Box.jpg"],
@@ -3020,7 +3076,8 @@
         "location": "West Berkshire"
       },
       "product": "deluxe-cupcake",
-      "occasion": ["birthday", "afternoon-tea", "gift"]
+      "occasion": ["birthday", "afternoon-tea", "gift"],
+      "flavours": ["Lemon & Pink Gin", "Ferror Rocher", "Nutella", "Chocolate Oreo"]
     },
     "ready-set-go-kart": {
       "images": ["Ready-Set-Go-Kart.jpg"],
@@ -3055,7 +3112,8 @@
         "location": "Thatcham"
       },
       "product": "celebration-cake",
-      "occasion": "birthday"
+      "occasion": "birthday",
+      "flavours": ["Chocolate"]
     },
     "pink-cascade": {
       "images": ["Pink-Cascade.jpg"],
@@ -3079,7 +3137,8 @@
         "location": "Tadley"
       },
       "product": "celebration-cake",
-      "occasion": "birthday"
+      "occasion": "birthday",
+      "flavours": ["Lemon"]
     },
     "cocktails-and-seashells": {
       "images": ["Cocktails-and-Seashells.jpg"],
@@ -3096,7 +3155,8 @@
         "location": "Midgham "
       },
       "product": "celebration-cake",
-      "occasion": "birthday"
+      "occasion": "birthday",
+      "flavours": ["Lime"]
     },
     "birthday-books": {
       "images": ["Birthday-Books.jpg"],
@@ -3144,7 +3204,8 @@
         "location": "Newbury"
       },
       "product": "celebration-cake",
-      "occasion":"anniversary"
+      "occasion":"anniversary",
+      "flavours": ["Vanilla"]
     },
     "sun-sand-and-seashells": {
       "images": ["Sun-Sand-and-Seashells.jpg"],
@@ -3161,7 +3222,8 @@
         }
       ],
       "product": "celebration-cake",
-      "occasion": "birthday"
+      "occasion": "birthday",
+      "flavours": ["Chocolate"]
     },
     "fresh-flowers-yellow-sunshine": {
       "images": ["Fresh-Flowers-Yellow-Sunshine.jpg"],
@@ -3173,7 +3235,8 @@
         "location": "Bucklebury"
       },
       "product": "celebration-cake",
-      "occasion": "birthday"
+      "occasion": "birthday",
+      "flavours": ["Vanilla"]
     },
     "booties-and-bunting": {
       "images": ["Booties-and-Bunting.jpg"],
@@ -3306,6 +3369,7 @@
       "product": "celebration-cake",
       "occasion": "easter"
     }
+  
   },
   "portfolioSample": [
     "serve-and-slice",
@@ -3534,3 +3598,6 @@
     }
   }
 }
+  
+
+
