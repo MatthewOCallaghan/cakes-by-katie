@@ -358,11 +358,7 @@
           "description": "These cakes have a hidden surprise and have a special appeal to children. They can be filled with sweets or chocolate.",
           "examples": ["easter-surprise"]
         },
-        {
-          "name": "Money cakes",
-          "description": "Money, attached to a cake topper, is inserted into clear film wallets encased in a plastic box that is hidden inside the cake. Just pull out the topper and the money roll is revealed! Great for a 21st or other milestone birthday.",
-          "examples": ["golden-drip-cake-with-age"]
-        },
+      
         {
           "name": "Balloons",
           "description": "Topping the cake with a balloon gives an extra touch.",
