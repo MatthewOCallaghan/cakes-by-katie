@@ -8,8 +8,15 @@
 
 {% block main %}
 
-    {# Grid of images #}
+    
     <div class="portfolio-grid-container">
+
+        <div id="portfolio-filters">
+            <button id="portfolio-filter-product">Filter by wedding cake</button>
+            <button id="portfolio-filter-occasion">Filter by anniversary</button>
+        </div>
+
+        {# Grid of images #}
         <div class="portfolio-grid">
             {% for key, item in portfolio %}
                 <button
@@ -18,6 +25,8 @@
                     data-name="{{ item.name }}"
                     data-images="{{ item.images | stringifyElements | join(';') }}"
                     data-description="{{ item.description }}"
+                    data-product="{{ item.product }}"
+                    data-occasions="{{ item.occasions }}"
                     {% if item.videos %}
                         data-videos="{{ item.videos | stringifyElements | join(';') }}"
                     {% endif %}
@@ -27,7 +36,7 @@
                         data-testimonial-location="{{ item.testimonial.location }}"
                     {% endif %}
                 >
-                    {{ pictureElement("portfolio/" + item.images[0].src, item.name, "230px") }}
+                    {# Javascript will create <picture> element here #}
                 </button>
             {% endfor %}
         </div>
@@ -60,6 +69,7 @@
 
 
 {% block scripts %}
+    <script type="text/javascript" src="js/portfolioUtils.js"></script>
     <script type="text/javascript" src="js/portfolioGrid.js"></script>
     <script type="text/javascript" src="js/portfolioModal.js" defer></script>
 {% endblock %}

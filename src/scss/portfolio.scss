@@ -22,11 +22,13 @@
         min-height: 100vh;
 
         .grid-item {
-            // Script will set `top` and `left` values
+
+            // Scrit will set `top` and `left` values
             position: absolute;
 
+            background: #ececec;
+
             // Remove button styles
-            background: none;
             padding: 0;
             border: none;
 
@@ -34,7 +36,7 @@
             height: min-content;
             cursor: pointer;
 
-            // Item fades in once grid has been set up and image has loaded
+            // Item fades in once grid has been set up
             opacity: 0;
             transition: opacity .3s;
 
@@ -42,20 +44,32 @@
                 // Button will be set to correct aspect ratio for image
                 width: 100%;
                 height: 100%;
-
-                // Zoom slightly on hover
+  
                 transition: transform .7s;
 
+                // Image fades in once loaded
+                opacity: 0;
+
+                // Zoom slightly on hover
                 @include mixins.hover {
                     transform: scale(1.2);
                 }
+                
+                // Hover and load transitions
+                transition: transform .7s, opacity .3s;
+            }
             }
         }
 
         // Fade in only once grid set up and image has loaded
         &.grid-initialised {
-            .grid-item.image-loaded {
+            .grid-item {
+            
                 opacity: 1;
+
+                &.image-loaded img {
+                    opacity: 1;
+                }
             }
         }
     }
