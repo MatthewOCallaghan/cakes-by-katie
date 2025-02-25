@@ -817,7 +817,7 @@
       "occasion":"birthday"
     },
     "dreamland-hugs": {
-      "images": ["Dreamland-Hugs.jpg"],
+      "images": ["Dreamland-Hugs.jpg", "Dreamland-Hugs-Plaque.jpg"],
       "name": "Dreamland Hugs",
       "product":"celebration-cake",
       "occasion": "christening"
@@ -1176,6 +1176,12 @@
       "product": "cupcakes",
       "occasion": ["birthday", "anniversary", "afternoon-tea", "gift"]
     },
+    "dreamland-golden-hugs": {
+      "images": ["Dreamland-Golden-Hugs-2.jpg", "Dreamland-Golden-Hugs.jpg"],   
+      "name": "Dreamland Golden Hugs",
+      "product": "celebration-cake",
+      "occasion": "christening"
+    },
     "terrys-temptation": {
       "images": ["Terrys-Temptation.jpg"],   
       "name": "Terrys' Temptation",
@@ -1262,6 +1268,12 @@
       "occasion": "birthday"
     },
 
+    "choo-choo": {
+      "images": ["Choo-Choo.jpg"],
+      "name": "Choo-Choo",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+      },
     "gone-fishing": {
       "images": ["Gone-Fishing.jpg"],
       "name": "Gone Fishing",
@@ -1320,6 +1332,12 @@
       "name": "Lilac Sea",
       "product": "celebration-cake",
       "occasion": "birthday"
+    },
+    "tiny-terry": {
+      "images": ["Tiny-Terry.jpg"],   
+      "name": "Tiny Terry",
+      "product": "celebration-cake",
+      "occasion": "christening"
     },
     "chocolate-and-charmander": {
       "images": ["Choc-Charmander.jpg"],   
