@@ -1320,6 +1320,12 @@
       "product": "cupcakes",
       "occasion": ["corporate", "gift"]
     },
+    "monster-trucks": {
+      "images": ["Monster-Trucks.jpg"],
+      "name": "Monster Trucks",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
     "milk-and-peanut": {
       "images": ["Milk-and-Peanut.jpg"],
       "name": "Milk & Peanut",
@@ -1380,6 +1386,18 @@
       "product": "cupcakes",
       "occasion": ["afternoon-tea", "gift"]
     },
+    "fault-line-beige-gold-2-tier": {
+      "images": ["Fault-Line-Beige-Gold-2tier.jpg"],
+      "name": "Fault Line - Beige & Gold",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
+    "icey-stripes":{
+      "images": ["Icey-Stripes2.jpg", "Icey-Stripes.jpg"],   
+      "name": "Icey Stripes",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
     "lilac-sea": {
       "images": ["Lilac-Sea.jpg"],
       "name": "Lilac Sea",
@@ -1391,6 +1409,12 @@
       "name": "Tiny Terry",
       "product": "celebration-cake",
       "occasion": "christening"
+    },
+    "fault-line-beige-ferrero-rocher": {
+      "images": ["Fault-Line-Beige-Ferrero-Rochers.jpg"],
+      "name": "Fault Line - Beige & Ferrero Rochers",
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "chocolate-and-charmander": {
       "images": ["Choc-Charmander.jpg"],   
@@ -1430,6 +1454,12 @@
     "ninja-turtles": {
       "images": ["Ninja-Turtles.jpg"],   
       "name": "Ninja Turtles",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
+    "bluey-shades": {
+      "images": ["Bluey-Shades.jpg"],   
+      "name": "Bluey Shades",
       "product": "celebration-cake",
       "occasion": "birthday"
     },
