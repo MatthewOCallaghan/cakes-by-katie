@@ -981,6 +981,19 @@
       "occasion": "birthday",
       "flavours": ["Vanilla"]
     },
+    "rosalia": {
+      "images": ["Rosalia3.jpg", "Rosalia.jpg","Rosalia2.jpg"],
+      "name": "Rosalia",
+      "product": "celebration-cake",
+      "occasion": ["birthday", "christening"]
+    },
+
+    "wild-one": {
+      "images": ["Wild-One.jpg", "Wild-One2.jpg"],
+      "name": "Wild One",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
     "fault-line-pink-roses": {
       "images": ["Fault-Line-Pink-Roses.jpg", "Fault-Line-Pink-Roses-v2.jpg"],
       "name": "Fault Line - Pink Roses",
@@ -1145,6 +1158,12 @@
       "occasion": "birthday",
       "flavours": ["Baileys"]
     },
+    "frozen-fault-line": {
+      "images": ["Frozen-Fault-Line.jpg"],
+      "name": "Frozen Fault Line",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
     "fuchsia-and-gold": {
       "images": ["Fuchsia-and-Gold.jpg"],   
       "name": "Fuchsia & Gold",
@@ -1162,6 +1181,18 @@
       "name": "Floral Bunny",
       "product": "celebration-cake",
       "occasion": ["birthday", "afternoon-tea", "baby-shower", "gender-reveal"]
+    },
+    "stencilled-opulence": {
+      "images": ["Stencilled-Opulence2.jpg", "Stencilled-Opulence.jpg"],
+      "name": "Stencilled Opulence",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
+    "sweet-beginnings": {
+      "images": ["Sweet-Beginnings.jpg"],
+      "name": "Sweet Beginnings",
+      "product": "celebration-cake",
+      "occasion": ["baby-shower", "gender-reveal"]
     },
     "time-for-tea": {
       "images": ["Time-For-Tea.jpg"],
@@ -1200,6 +1231,12 @@
     },    "fault-line-safari-gold": {
       "images": ["Fault-Line-Safari-Gold.jpg"],
       "name": "Fault Line - Safari & Gold",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
+    "experimental": {
+      "images": ["Experimental.jpg"],   
+      "name": "Experimental",
       "product": "celebration-cake",
       "occasion": "birthday"
     },
