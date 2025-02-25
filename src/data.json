@@ -1050,10 +1050,22 @@
       "product": "wedding-cake",
       "occasion": "wedding"
     },
+    "petals-and-birthday-wishes": {
+      "images": ["Petals-and-Birthday-Wishes.jpg", "Petals-Birthday-Wish-30-2.jpg",  "Petals-Birthday-Wish-30.jpg"],
+      "name": "Petals & Birthday Wishes",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
     "birthday-mix-xbox": {
       "images": ["Birthday-Mix-Xbox.jpg"],
       "name": "Birthday Mix - Xbox",
       "product": "cupcakes",
+      "occasion": "birthday"
+    },
+    "pink-cascade-silk": {
+      "images": ["Pink-Cascade-Silk.jpg"],
+      "name": "Pink Cascade - Silk",
+      "product": "celebration-cake",
       "occasion": "birthday"
     },
     "fresh-flowers-winter-pinks": {
@@ -1134,7 +1146,12 @@
       "product": "celebration-cake",
       "occasion": "birthday"
     },
-   
+    "yellow-cascade-silk": {
+      "images": ["Yellow-Cascade-Silk.jpg"],
+      "name": "Yellow Cascade - Silk",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
     "floral-bunny": {
       "images": ["Floral-Bunny.jpg"],
       "name": "Floral Bunny",
@@ -1196,6 +1213,12 @@
       "product": "celebration-cake",
       "occasion": "birthday"
     },
+    "moana": {
+      "images": ["Moana.jpg", "Moana2.jpg"],
+      "name": "Moana",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
     "fault-line-pink-silver": {
       "images": ["Fault-Line-Pink-Silver.jpg"],
       "name": "Fault Line - Pink & Silver",
@@ -1207,6 +1230,12 @@
       "name": "For Everything",
       "product": "cupcakes",
       "occasion": ["birthday", "afternoon-tea", "gift"]
+    },
+    "grace-18th": {
+      "images": ["Grace-18th2.jpg", "Grace-18th.jpg"],
+      "name": "Grace - 18th",
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "golden-biscoff": {
       "images": ["Golden-Biscoff.jpg"],
@@ -1226,6 +1255,13 @@
       "product": "celebration-cake",
       "occasion": "birthday"
     },
+"disco-queen": {
+      "images": ["Disco-Queen2.jpg", "Disco-Queen.jpg"],   
+      "name": "Disco Queen",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
+
     "gone-fishing": {
       "images": ["Gone-Fishing.jpg"],
       "name": "Gone Fishing",
@@ -1262,7 +1298,7 @@
       "occasion": "birthday"
     },
     "let-it-go": {
-      "images": ["Let-It-Go.jpg"],
+      "images": ["Let-It-Go.jpg", "Let-it-Go-2.jpg"],
       "name": "Let It Go",
       "product": "celebration-cake",
       "occasion": "birthday"
@@ -1296,6 +1332,12 @@
       "name": "Baby Boy Mix",
       "product": "cupcakes",
       "occasion": ["birthday", "gift"]
+    },
+    "captain-underpants": {
+      "images": ["Captain-Underpants.jpg"],
+      "name": "Captain Underpants",
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "corporate-birthday": {
       "images": ["Corporate-Birthday.jpg"],   
@@ -1528,7 +1570,7 @@
     },
     "birthday-swirls-plaques": {
       "images": ["Birthday-Swirls-Plaques.jpg"],   
-      "name": "Birthday Swrils - Plaques",
+      "name": "Birthday Swirls - Plaques",
       "product": "cupcakes",
       "occasion": "birthday"
     },
@@ -1854,7 +1896,7 @@
       "occasion": "birthday"
     },    
     "cupcakes-birthday-plaques": {
-      "images": ["Cupcakes-Birthday-Plaques.jpg"],   
+      "images": ["Birthday-Swirls-Plaques-ChocBiscoff.jpg", "Cupcakes-Birthday-Plaques.jpg"],   
       "name": "Cupcakes - Birthday Plaques",
       "product": "cupcakes",
       "occasion": "birthday"
