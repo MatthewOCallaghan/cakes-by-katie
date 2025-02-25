@@ -1224,6 +1224,12 @@
       "product": "celebration-cake",
       "occasion": "birthday"
     },
+    "booties-and-stars": {
+      "images": ["Booties-and-Stars.jpg","Booties-and-Stars2.jpg"],
+      "name": "Booties & Stars",
+      "product": "celebration-cake",
+      "occasion": "baby-shower"
+    },
     "moana": {
       "images": ["Moana.jpg", "Moana2.jpg"],
       "name": "Moana",
@@ -1263,6 +1269,12 @@
     "birthday-cupcake": {
       "images": ["Birthday-Cupcake.jpg"],   
       "name": "Birthday Cupcake",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
+    "shades-of-blue": {
+      "images": ["Shades-of-Blue.jpg","Shades-of-Blue2.jpg"],   
+      "name": "Shades of Blue",
       "product": "celebration-cake",
       "occasion": "birthday"
     },
@@ -1338,9 +1350,21 @@
       "product": "celebration-cake",
       "occasion": "birthday"
     },
+    "adorned-in-blue": {
+      "images": ["Adorned-in-Blue.jpg"],
+      "name": "Adorned in Blue",
+      "product": "celebration-cake",
+      "occasion": "anniversary"
+    },
     "let-it-go": {
       "images": ["Let-It-Go.jpg", "Let-it-Go-2.jpg"],
       "name": "Let It Go",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
+    "arlo": {
+      "images": ["Arlo.jpg"],
+      "name": "Arlo",
       "product": "celebration-cake",
       "occasion": "birthday"
     },
@@ -1754,6 +1778,12 @@
       "product": "celebration-cake",
       "occasion": "birthday"
     },
+    "floral-log": {
+      "images": ["Floral-Log2.jpg", "Floral-Log.jpg"],   
+      "name": "Floral Log",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
     "daisy-baby": {
       "images": ["Daisy-Baby.jpg"],   
       "name": "Daisy Baby",
@@ -1943,7 +1973,7 @@
       "occasion": "birthday"
     },
     "paw-patrol": {
-      "images": ["Paw-Patrol.jpg"],   
+      "images": ["Paw-Patrol.jpg", "Paw-Patrol-Mini.jpg"],   
       "name": "Paw Patrol",
       "product": "celebration-cake",
       "occasion": "birthday"
@@ -2430,7 +2460,7 @@
       "occasion":"birthday"
     },
   "parker-penguin": {
-      "images": ["Parker-penguin.jpg"],
+      "images": ["Parker-penguin.jpg","Parker2.jpg"],
       "squareImage": "Parker-Penguin-square.jpg",
       "name": "Parker Penguin",
       "product": "celebration-cake",
