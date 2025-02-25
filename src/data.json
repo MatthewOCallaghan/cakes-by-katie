@@ -639,6 +639,12 @@
       "product":"cupcakes",
       "occasion": "birthday"
     },
+    "puddles-the-penguin": {
+      "images": ["Puddles-the-Penguin.jpg"],
+      "name": "Puddles the Penguin",
+      "product": "celebration-cake",
+      "occasion":"birthday"
+    },
     "bryony": {
       "images": ["Bryony.jpg"],
       "name": "Bryony",
@@ -651,6 +657,12 @@
         "Fault-Line-Green-and-Gold-2.jpg"
       ],
       "name": "Fault Line - Green & Gold",
+      "product": "celebration-cake",
+      "occasion":"birthday"
+    },
+    "woodland-fairytales": {
+      "images": ["Woodland-Fairytales.jpg"],
+      "name": "Woodland Fairytales",
       "product": "celebration-cake",
       "occasion":"birthday"
     },
@@ -685,12 +697,12 @@
       "product": "wedding-cake",
       "occasion":"wedding"
     },
-    "vinyl-vibes": {
-      "images": ["Vinyl-Vibes.jpg"],
-      "name": "Vinyl Vibes",
-      "product":"celebration-cake",
-      "occasion": "birthday"
-    }, 
+  "natalia": {
+      "images": ["Natalia.jpg","Natalia-Low.jpg","Natalia-Top.jpg"],
+      "name": "Natalia",
+      "product": "wedding-cake",
+      "occasion": ["wedding","birthday","anniversary"]
+        },
     "petals-and-promises-olly": {
       "images": ["Petals-and-Promises-Olly-2.jpg", "Petals-and-Promises-Olly.jpg"],
       "name": "Petals & Promises",
@@ -970,13 +982,13 @@
       "flavours": ["Vanilla"]
     },
     "fault-line-pink-roses": {
-      "images": ["Fault-Line-Pink-Roses.jpg"],
+      "images": ["Fault-Line-Pink-Roses.jpg", "Fault-Line-Pink-Roses-v2.jpg"],
       "name": "Fault Line - Pink Roses",
       "product": "celebration-cake",
       "occasion": "birthday"
     },
     "fault-line-beige-gold": {
-      "images": ["Fault-Line-Beige-Gold-70-Side.jpg", "Fault-Line-Beige-Gold-70.jpg"],
+      "images": ["Fault-Line-Beige-Gold-70-Side.jpg", "Fault-Line-Beige-Gold-70.jpg", "Fault-Line-Beige-and-Gold.jpg"],
       "name": "Fault Line - Beige & Gold",
       "product":"celebration-cake",
       "occasion": "birthday"
@@ -1098,12 +1110,7 @@
       "occasion": "birthday",
       "flavours": ["Chocolate Oreo"]
     },
-    "natalia": {
-      "images": ["Natalia.jpg","Natalia-Low.jpg","Natalia-Top.jpg"],
-      "name": "Natalia",
-      "product": "wedding-cake",
-      "occasion": ["wedding","birthday","anniversary"]
-        },
+    
     "fault-line-mixed": {
       "images": ["Fault-Line-Mixed.jpg"],
       "name": "Fault Line - Mixed",
@@ -1111,7 +1118,7 @@
       "occasion": "birthday"
     },
     "classic-drips-golden-chocolate": {
-      "images": ["Classic-Drips-Golden-Chocolate.jpg", "Classic-Drips-Golden-Chocolate2.jpg"],
+      "images": ["Classic-Drips-Golden-Chocolate.jpg", "Classic-Drips-Golden-Chocolate2.jpg", "Classic-Drips-Golden-ChocV2.jpg"],
       "name": "Classic Drips - Golden Chocolate",
       "testimonial": {
         "text": "It was absolutely amazing, tasted fantastic, best cake I've ever eaten. Presentation, I have no words, 10 out of 10. I've got your number in my contacts, lots of people asked me last night where I got the cake from and I recommend you. Delicious!!!",
@@ -1140,7 +1147,12 @@
       "product": "celebration-cake",
       "occasion": "birthday"
     },
- 
+     "vinyl-vibes": {
+      "images": ["Vinyl-Vibes.jpg"],
+      "name": "Vinyl Vibes",
+      "product":"celebration-cake",
+      "occasion": "birthday"
+    }, 
     "cheeky-cows": {
       "images": ["Cheeky-Cows.jpg"],
       "name": "Cheeky Cows",
@@ -1531,12 +1543,6 @@
       "product": "celebration-cake",
       "occasion": "birthday"
     },
-    "fault-line-pink-roses-2": {
-      "images": ["Fault-Line-Pink-Roses-v2.jpg"],   
-      "name": "Fault Line - Pink Roses",
-      "product": "celebration-cake",
-      "occasion": "birthday"
-    },
     "simply-swirled": {
       "images": ["Simply-Swirled.jpg"],   
       "name": "Simply Swirled",
@@ -1568,12 +1574,7 @@
       "product": "celebration-cake",
       "occasion": "birthday"
     },
-    "edible-image-interest": {
-      "images": ["Edible-Image-Interest.jpg"],   
-      "name": "Edible Image - Interest",
-      "product": "celebration-cake",
-      "occasion": "birthday"
-    },
+    
     "flopsy-in-pink": {
       "images": ["Flopsy-in-Pink.jpg"],   
       "name": "Flopsy in Pink",
@@ -2148,7 +2149,12 @@
         "gift"
       ]
     },
-    
+    "edible-image-interest": {
+      "images": ["Edible-Image-Interest.jpg"],   
+      "name": "Edible Image - Interest",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
     "sweets-galore": {
       "images": ["Sweets-Galore.jpg"],
       "name": "Sweets Galore",
@@ -2329,11 +2335,12 @@
       "product": "celebration-cake",
       "occasion":"birthday"
     },
-    "fault-line-beige-and-gold": {
-      "images": ["Fault-Line-Beige-and-Gold.jpg"],
-      "name": "Fault Line - Beige & Gold",
+  "parker-penguin": {
+      "images": ["Parker-penguin.jpg"],
+      "squareImage": "Parker-Penguin-square.jpg",
+      "name": "Parker Penguin",
       "product": "celebration-cake",
-      "occasion":"birthday"
+      "occasion": "birthday"
     },
     "edible-image-gift-wrapped": {
       "images": ["Edible-Image-Gift-Wrapped.jpg"],
@@ -3304,13 +3311,7 @@
       "product": "celebration-cake",
       "occasion": "birthday"
     },
-    "parker-penguin": {
-      "images": ["Parker-penguin.jpg"],
-      "squareImage": "Parker-Penguin-square.jpg",
-      "name": "Parker Penguin",
-      "product": "celebration-cake",
-      "occasion": "birthday"
-    },
+    
     "easter-surprise": {
       "images": ["Easter-Surprise-Inside.jpg", "Easter-Surprise.jpg"],
       "name": "Easter Surprise",
@@ -3547,6 +3548,3 @@
     }
   }
 }
-  
-
-
