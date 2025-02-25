@@ -1285,6 +1285,12 @@
       "product": "celebration-cake",
       "occasion": "birthday"
       },
+      "pilot-wings": {
+        "images": ["Pilot-Wings.jpg"],
+        "name": "Pilot-Wings",
+        "product": "celebration-cake",
+        "occasion": ["birthday","anniversary"]
+        },
     "gone-fishing": {
       "images": ["Gone-Fishing.jpg"],
       "name": "Gone Fishing",
@@ -1302,6 +1308,12 @@
       "product": "cupcakes",
       "occasion": ["corporate", "gift"]
     },
+    "milk-and-peanut": {
+      "images": ["Milk-and-Peanut.jpg"],
+      "name": "Milk & Peanut",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
     "grecian": {
       "images": ["Grecian.jpg"],
       "name": "Grecian",
@@ -1318,6 +1330,12 @@
       "images": ["Super-Princess.jpg"],   
       "name": "Super Princess",
       "product": "cupcake",
+      "occasion": "birthday"
+    },
+    "simple-and-classic": {
+      "images": ["Simple-and-Classic.jpg"],
+      "name": "Simple & Classic",
+      "product": "celebration-cake",
       "occasion": "birthday"
     },
     "let-it-go": {
