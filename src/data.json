@@ -1005,7 +1005,12 @@
       "product": "celebration-cake",
       "occasion": "birthday"
     },
-     
+    "mr-one-derful": {
+      "images": ["Mr-One-Derful.jpg"],
+      "name": "Mr One-Derful",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
     "chocolate-mix": {
       "images": ["Chocolate-Mix.jpg"],
       "name": "Chocolate Mix",
@@ -1222,6 +1227,12 @@
     "moana": {
       "images": ["Moana.jpg", "Moana2.jpg"],
       "name": "Moana",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
+    "blue-gold": {
+      "images": ["Blue-Gold.jpg"],
+      "name": "Blue & Gold",
       "product": "celebration-cake",
       "occasion": "birthday"
     },
@@ -1454,6 +1465,12 @@
     "flower-elegance-2024": {
       "images": ["Flower-Elegance-Amanda2.jpg", "Flower-Elegance-Amanda.jpg","Flower-Elegance-2024.jpg"],   
       "name": "Flower Elegance",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
+    "blast-off": {
+      "images": ["Blast-Off2.jpg", "Blast-Off.jpg","Blast-Off3.jpg"],   
+      "name": "Blast Off",
       "product": "celebration-cake",
       "occasion": "birthday"
     },
