@@ -1668,6 +1668,12 @@
       "product": "celebration-cake",
       "occasion": "birthday"
     },
+    "pretty-in-lemon": {
+      "images": ["Pretty-in-Lemon.jpg"],   
+      "name": "Pretty in Lemon",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
     "simply-swirled": {
       "images": ["Simply-Swirled.jpg"],   
       "name": "Simply Swirled",
@@ -1742,6 +1748,12 @@
       "product": "celebration-cake",
       "occasion": "christening"
     },
+    "birthday-mix-frozen": {
+      "images": ["Birthday-Mix-Frozen.jpg"],   
+      "name": "Birthday Mix - Frozen",
+      "product": "cupcakes",
+      "occasion": "birthday"
+    },
     "champagne-bubbles": {
       "images": ["Champagne-Bubbles.jpg"],   
       "name": "Champange Bubbles",
@@ -1789,6 +1801,12 @@
       "name": "Daisy Baby",
       "product": "celebration-cake",
       "occasion": "birthday"
+    },
+    "baby-sprinkles": {
+      "images": ["Baby-Sprinkles.jpg"],   
+      "name": "Baby Sprinkles",
+      "product": "cupcakes",
+      "occasion": ["baby-shower", "gender-reveal"]
     },
     "felix": {
       "images": ["Felix.jpg"],   
@@ -1850,6 +1868,12 @@
       "product": "celebration-cake",
       "occasion": "birthday"
     },    
+    "vibrant-wishes": {
+      "images": ["Vibrant-Wishes.jpg"],   
+      "name": "Vibrant Wishes",
+      "product": "cupcakes",
+      "occasion": "birthday"
+    },
     "birthday-mix-one-piece": {
       "images": ["Birthday-Mix-One-Piece.jpg"],   
       "name": "Birthday Mix- One Piece",
