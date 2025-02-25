@@ -823,7 +823,7 @@
       "occasion": "christening"
     },
     "birthday-mix-pink-flowers": {
-      "images": ["Birthday-Mix-Pink-Flowers.jpg"],
+      "images": ["Birthday-Mix-Pink-Flowers-2.jpg", "Birthday-Mix-Pink-Flowers.jpg"],
       "name": "Birthday Mix - Pink Flowers",
       "product": "cupcakes",
       "occasion": "birthday"
@@ -1385,8 +1385,14 @@
       "product": "celebration-cake",
       "occasion": ["baby-shower","christening"]
     },
+    "birthday-mix-gold-nudes": {
+      "images": ["Birthday-Mix-Gold-Nudes.jpg"],   
+      "name": "Birthday Mix - Gold Nudes",
+      "product": "cupcakes",
+      "occasion": "birthday"
+    },
     "flower-elegance-2024": {
-      "images": ["Flower-Elegance-2024.jpg"],   
+      "images": ["Flower-Elegance-Amanda2.jpg", "Flower-Elegance-Amanda.jpg","Flower-Elegance-2024.jpg"],   
       "name": "Flower Elegance",
       "product": "celebration-cake",
       "occasion": "birthday"
@@ -1778,7 +1784,7 @@
       "occasion": ["gender-reveal","baby-shower"]
     },
     "corporate-cupcakes-anniversaries": {
-      "images": ["Corporate-Cupcakes-Anniversaries.jpg"],   
+      "images": ["Corporate-Cupcakes-Anniversaries.jpg", "Corporate-Cupcakes-20years.jpg"],   
       "name": "Corporate Cupcakes - Anniversaires",
       "product": "cupcakes",
       "occasion": "corporate"
@@ -2165,13 +2171,6 @@
       "product": "celebration-cake",
       "occasion": "birthday",
       "flavours": ["Vanilla"]
-    },
-   
-    "corporate-cupcake-anniversary": {
-      "images": ["Corporate-Cupcakes-20years.jpg"],
-      "name": "Corporate Cupcakes - Anniversary",
-      "product": "cupcakes",
-      "occasion": "corporate"
     },
     "the-king": {
       "images": ["The-King.jpg"],
