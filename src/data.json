@@ -639,6 +639,12 @@
       "product":"cupcakes",
       "occasion": "birthday"
     },
+    "puddles-the-penguin": {
+      "images": ["Puddles-the-Penguin.jpg"],
+      "name": "Puddles the Penguin",
+      "product": "celebration-cake",
+      "occasion":"birthday"
+    },
     "bryony": {
       "images": ["Bryony.jpg"],
       "name": "Bryony",
@@ -651,6 +657,12 @@
         "Fault-Line-Green-and-Gold-2.jpg"
       ],
       "name": "Fault Line - Green & Gold",
+      "product": "celebration-cake",
+      "occasion":"birthday"
+    },
+    "woodland-fairytales": {
+      "images": ["Woodland-Fairytales.jpg"],
+      "name": "Woodland Fairytales",
       "product": "celebration-cake",
       "occasion":"birthday"
     },
@@ -685,12 +697,12 @@
       "product": "wedding-cake",
       "occasion":"wedding"
     },
-    "vinyl-vibes": {
-      "images": ["Vinyl-Vibes.jpg"],
-      "name": "Vinyl Vibes",
-      "product":"celebration-cake",
-      "occasion": "birthday"
-    }, 
+  "natalia": {
+      "images": ["Natalia.jpg","Natalia-Low.jpg","Natalia-Top.jpg"],
+      "name": "Natalia",
+      "product": "wedding-cake",
+      "occasion": ["wedding","birthday","anniversary"]
+        },
     "petals-and-promises-olly": {
       "images": ["Petals-and-Promises-Olly-2.jpg", "Petals-and-Promises-Olly.jpg"],
       "name": "Petals & Promises",
@@ -805,13 +817,13 @@
       "occasion":"birthday"
     },
     "dreamland-hugs": {
-      "images": ["Dreamland-Hugs.jpg"],
+      "images": ["Dreamland-Hugs.jpg", "Dreamland-Hugs-Plaque.jpg"],
       "name": "Dreamland Hugs",
       "product":"celebration-cake",
       "occasion": "christening"
     },
     "birthday-mix-pink-flowers": {
-      "images": ["Birthday-Mix-Pink-Flowers.jpg"],
+      "images": ["Birthday-Mix-Pink-Flowers-2.jpg", "Birthday-Mix-Pink-Flowers.jpg"],
       "name": "Birthday Mix - Pink Flowers",
       "product": "cupcakes",
       "occasion": "birthday"
@@ -969,14 +981,27 @@
       "occasion": "birthday",
       "flavours": ["Vanilla"]
     },
+    "rosalia": {
+      "images": ["Rosalia3.jpg", "Rosalia.jpg","Rosalia2.jpg"],
+      "name": "Rosalia",
+      "product": "celebration-cake",
+      "occasion": ["birthday", "christening"]
+    },
+
+    "wild-one": {
+      "images": ["Wild-One.jpg", "Wild-One2.jpg"],
+      "name": "Wild One",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
     "fault-line-pink-roses": {
-      "images": ["Fault-Line-Pink-Roses.jpg"],
+      "images": ["Fault-Line-Pink-Roses.jpg", "Fault-Line-Pink-Roses-v2.jpg"],
       "name": "Fault Line - Pink Roses",
       "product": "celebration-cake",
       "occasion": "birthday"
     },
     "fault-line-beige-gold": {
-      "images": ["Fault-Line-Beige-Gold-70-Side.jpg", "Fault-Line-Beige-Gold-70.jpg"],
+      "images": ["Fault-Line-Beige-Gold-70-Side.jpg", "Fault-Line-Beige-Gold-70.jpg", "Fault-Line-Beige-and-Gold.jpg"],
       "name": "Fault Line - Beige & Gold",
       "product":"celebration-cake",
       "occasion": "birthday"
@@ -993,7 +1018,12 @@
       "product": "celebration-cake",
       "occasion": "birthday"
     },
-     
+    "mr-one-derful": {
+      "images": ["Mr-One-Derful.jpg"],
+      "name": "Mr One-Derful",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
     "chocolate-mix": {
       "images": ["Chocolate-Mix.jpg"],
       "name": "Chocolate Mix",
@@ -1038,10 +1068,22 @@
       "product": "wedding-cake",
       "occasion": "wedding"
     },
+    "petals-and-birthday-wishes": {
+      "images": ["Petals-and-Birthday-Wishes.jpg", "Petals-Birthday-Wish-30-2.jpg",  "Petals-Birthday-Wish-30.jpg"],
+      "name": "Petals & Birthday Wishes",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
     "birthday-mix-xbox": {
       "images": ["Birthday-Mix-Xbox.jpg"],
       "name": "Birthday Mix - Xbox",
       "product": "cupcakes",
+      "occasion": "birthday"
+    },
+    "pink-cascade-silk": {
+      "images": ["Pink-Cascade-Silk.jpg"],
+      "name": "Pink Cascade - Silk",
+      "product": "celebration-cake",
       "occasion": "birthday"
     },
     "fresh-flowers-winter-pinks": {
@@ -1098,12 +1140,7 @@
       "occasion": "birthday",
       "flavours": ["Chocolate Oreo"]
     },
-    "natalia": {
-      "images": ["Natalia.jpg","Natalia-Low.jpg","Natalia-Top.jpg"],
-      "name": "Natalia",
-      "product": "wedding-cake",
-      "occasion": ["wedding","birthday","anniversary"]
-        },
+    
     "fault-line-mixed": {
       "images": ["Fault-Line-Mixed.jpg"],
       "name": "Fault Line - Mixed",
@@ -1111,7 +1148,7 @@
       "occasion": "birthday"
     },
     "classic-drips-golden-chocolate": {
-      "images": ["Classic-Drips-Golden-Chocolate.jpg", "Classic-Drips-Golden-Chocolate2.jpg"],
+      "images": ["Classic-Drips-Golden-Chocolate.jpg", "Classic-Drips-Golden-Chocolate2.jpg", "Classic-Drips-Golden-ChocV2.jpg"],
       "name": "Classic Drips - Golden Chocolate",
       "testimonial": {
         "text": "It was absolutely amazing, tasted fantastic, best cake I've ever eaten. Presentation, I have no words, 10 out of 10. I've got your number in my contacts, lots of people asked me last night where I got the cake from and I recommend you. Delicious!!!",
@@ -1121,18 +1158,41 @@
       "occasion": "birthday",
       "flavours": ["Baileys"]
     },
+    "frozen-fault-line": {
+      "images": ["Frozen-Fault-Line.jpg"],
+      "name": "Frozen Fault Line",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
     "fuchsia-and-gold": {
       "images": ["Fuchsia-and-Gold.jpg"],   
       "name": "Fuchsia & Gold",
       "product": "celebration-cake",
       "occasion": "birthday"
     },
-   
+    "yellow-cascade-silk": {
+      "images": ["Yellow-Cascade-Silk.jpg"],
+      "name": "Yellow Cascade - Silk",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
     "floral-bunny": {
       "images": ["Floral-Bunny.jpg"],
       "name": "Floral Bunny",
       "product": "celebration-cake",
       "occasion": ["birthday", "afternoon-tea", "baby-shower", "gender-reveal"]
+    },
+    "stencilled-opulence": {
+      "images": ["Stencilled-Opulence2.jpg", "Stencilled-Opulence.jpg"],
+      "name": "Stencilled Opulence",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
+    "sweet-beginnings": {
+      "images": ["Sweet-Beginnings.jpg"],
+      "name": "Sweet Beginnings",
+      "product": "celebration-cake",
+      "occasion": ["baby-shower", "gender-reveal"]
     },
     "time-for-tea": {
       "images": ["Time-For-Tea.jpg"],
@@ -1140,12 +1200,23 @@
       "product": "celebration-cake",
       "occasion": "birthday"
     },
- 
+     "vinyl-vibes": {
+      "images": ["Vinyl-Vibes.jpg"],
+      "name": "Vinyl Vibes",
+      "product":"celebration-cake",
+      "occasion": "birthday"
+    }, 
     "cheeky-cows": {
       "images": ["Cheeky-Cows.jpg"],
       "name": "Cheeky Cows",
       "product": "cupcakes",
       "occasion": ["birthday", "anniversary", "afternoon-tea", "gift"]
+    },
+    "dreamland-golden-hugs": {
+      "images": ["Dreamland-Golden-Hugs-2.jpg", "Dreamland-Golden-Hugs.jpg"],   
+      "name": "Dreamland Golden Hugs",
+      "product": "celebration-cake",
+      "occasion": "christening"
     },
     "terrys-temptation": {
       "images": ["Terrys-Temptation.jpg"],   
@@ -1160,6 +1231,12 @@
     },    "fault-line-safari-gold": {
       "images": ["Fault-Line-Safari-Gold.jpg"],
       "name": "Fault Line - Safari & Gold",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
+    "experimental": {
+      "images": ["Experimental.jpg"],   
+      "name": "Experimental",
       "product": "celebration-cake",
       "occasion": "birthday"
     },
@@ -1184,6 +1261,24 @@
       "product": "celebration-cake",
       "occasion": "birthday"
     },
+    "booties-and-stars": {
+      "images": ["Booties-and-Stars.jpg","Booties-and-Stars2.jpg"],
+      "name": "Booties & Stars",
+      "product": "celebration-cake",
+      "occasion": "baby-shower"
+    },
+    "moana": {
+      "images": ["Moana.jpg", "Moana2.jpg"],
+      "name": "Moana",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
+    "blue-gold": {
+      "images": ["Blue-Gold.jpg"],
+      "name": "Blue & Gold",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
     "fault-line-pink-silver": {
       "images": ["Fault-Line-Pink-Silver.jpg"],
       "name": "Fault Line - Pink & Silver",
@@ -1195,6 +1290,12 @@
       "name": "For Everything",
       "product": "cupcakes",
       "occasion": ["birthday", "afternoon-tea", "gift"]
+    },
+    "grace-18th": {
+      "images": ["Grace-18th2.jpg", "Grace-18th.jpg"],
+      "name": "Grace - 18th",
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "golden-biscoff": {
       "images": ["Golden-Biscoff.jpg"],
@@ -1208,12 +1309,37 @@
       "product": "celebration-cake",
       "occasion": "birthday"
     },
+    "shades-of-blue": {
+      "images": ["Shades-of-Blue.jpg","Shades-of-Blue2.jpg"],   
+      "name": "Shades of Blue",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
     "triple-milk": {
       "images": ["Triple-Milk.jpg"],   
       "name": "Triple Milk",
       "product": "celebration-cake",
       "occasion": "birthday"
     },
+"disco-queen": {
+      "images": ["Disco-Queen2.jpg", "Disco-Queen.jpg"],   
+      "name": "Disco Queen",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
+
+    "choo-choo": {
+      "images": ["Choo-Choo.jpg"],
+      "name": "Choo-Choo",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+      },
+      "pilot-wings": {
+        "images": ["Pilot-Wings.jpg"],
+        "name": "Pilot-Wings",
+        "product": "celebration-cake",
+        "occasion": ["birthday","anniversary"]
+        },
     "gone-fishing": {
       "images": ["Gone-Fishing.jpg"],
       "name": "Gone Fishing",
@@ -1230,6 +1356,18 @@
       "name": "Good Riddance",
       "product": "cupcakes",
       "occasion": ["corporate", "gift"]
+    },
+    "monster-trucks": {
+      "images": ["Monster-Trucks.jpg"],
+      "name": "Monster Trucks",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
+    "milk-and-peanut": {
+      "images": ["Milk-and-Peanut.jpg"],
+      "name": "Milk & Peanut",
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "grecian": {
       "images": ["Grecian.jpg"],
@@ -1249,9 +1387,27 @@
       "product": "cupcake",
       "occasion": "birthday"
     },
+    "simple-and-classic": {
+      "images": ["Simple-and-Classic.jpg"],
+      "name": "Simple & Classic",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
+    "adorned-in-blue": {
+      "images": ["Adorned-in-Blue.jpg"],
+      "name": "Adorned in Blue",
+      "product": "celebration-cake",
+      "occasion": "anniversary"
+    },
     "let-it-go": {
-      "images": ["Let-It-Go.jpg"],
+      "images": ["Let-It-Go.jpg", "Let-it-Go-2.jpg"],
       "name": "Let It Go",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
+    "arlo": {
+      "images": ["Arlo.jpg"],
+      "name": "Arlo",
       "product": "celebration-cake",
       "occasion": "birthday"
     },
@@ -1267,9 +1423,33 @@
       "product": "cupcakes",
       "occasion": ["afternoon-tea", "gift"]
     },
+    "fault-line-beige-gold-2-tier": {
+      "images": ["Fault-Line-Beige-Gold-2tier.jpg"],
+      "name": "Fault Line - Beige & Gold",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
+    "icey-stripes":{
+      "images": ["Icey-Stripes2.jpg", "Icey-Stripes.jpg"],   
+      "name": "Icey Stripes",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
     "lilac-sea": {
       "images": ["Lilac-Sea.jpg"],
       "name": "Lilac Sea",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
+    "tiny-terry": {
+      "images": ["Tiny-Terry.jpg"],   
+      "name": "Tiny Terry",
+      "product": "celebration-cake",
+      "occasion": "christening"
+    },
+    "fault-line-beige-ferrero-rocher": {
+      "images": ["Fault-Line-Beige-Ferrero-Rochers.jpg"],
+      "name": "Fault Line - Beige & Ferrero Rochers",
       "product": "celebration-cake",
       "occasion": "birthday"
     },
@@ -1284,6 +1464,12 @@
       "name": "Baby Boy Mix",
       "product": "cupcakes",
       "occasion": ["birthday", "gift"]
+    },
+    "captain-underpants": {
+      "images": ["Captain-Underpants.jpg"],
+      "name": "Captain Underpants",
+      "product": "celebration-cake",
+      "occasion": "birthday"
     },
     "corporate-birthday": {
       "images": ["Corporate-Birthday.jpg"],   
@@ -1305,6 +1491,12 @@
     "ninja-turtles": {
       "images": ["Ninja-Turtles.jpg"],   
       "name": "Ninja Turtles",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
+    "bluey-shades": {
+      "images": ["Bluey-Shades.jpg"],   
+      "name": "Bluey Shades",
       "product": "celebration-cake",
       "occasion": "birthday"
     },
@@ -1373,9 +1565,21 @@
       "product": "celebration-cake",
       "occasion": ["baby-shower","christening"]
     },
+    "birthday-mix-gold-nudes": {
+      "images": ["Birthday-Mix-Gold-Nudes.jpg"],   
+      "name": "Birthday Mix - Gold Nudes",
+      "product": "cupcakes",
+      "occasion": "birthday"
+    },
     "flower-elegance-2024": {
-      "images": ["Flower-Elegance-2024.jpg"],   
+      "images": ["Flower-Elegance-Amanda2.jpg", "Flower-Elegance-Amanda.jpg","Flower-Elegance-2024.jpg"],   
       "name": "Flower Elegance",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
+    "blast-off": {
+      "images": ["Blast-Off2.jpg", "Blast-Off.jpg","Blast-Off3.jpg"],   
+      "name": "Blast Off",
       "product": "celebration-cake",
       "occasion": "birthday"
     },
@@ -1510,7 +1714,7 @@
     },
     "birthday-swirls-plaques": {
       "images": ["Birthday-Swirls-Plaques.jpg"],   
-      "name": "Birthday Swrils - Plaques",
+      "name": "Birthday Swirls - Plaques",
       "product": "cupcakes",
       "occasion": "birthday"
     },
@@ -1531,9 +1735,9 @@
       "product": "celebration-cake",
       "occasion": "birthday"
     },
-    "fault-line-pink-roses-2": {
-      "images": ["Fault-Line-Pink-Roses-v2.jpg"],   
-      "name": "Fault Line - Pink Roses",
+    "pretty-in-lemon": {
+      "images": ["Pretty-in-Lemon.jpg"],   
+      "name": "Pretty in Lemon",
       "product": "celebration-cake",
       "occasion": "birthday"
     },
@@ -1568,12 +1772,7 @@
       "product": "celebration-cake",
       "occasion": "birthday"
     },
-    "edible-image-interest": {
-      "images": ["Edible-Image-Interest.jpg"],   
-      "name": "Edible Image - Interest",
-      "product": "celebration-cake",
-      "occasion": "birthday"
-    },
+    
     "flopsy-in-pink": {
       "images": ["Flopsy-in-Pink.jpg"],   
       "name": "Flopsy in Pink",
@@ -1616,6 +1815,12 @@
       "product": "celebration-cake",
       "occasion": "christening"
     },
+    "birthday-mix-frozen": {
+      "images": ["Birthday-Mix-Frozen.jpg"],   
+      "name": "Birthday Mix - Frozen",
+      "product": "cupcakes",
+      "occasion": "birthday"
+    },
     "champagne-bubbles": {
       "images": ["Champagne-Bubbles.jpg"],   
       "name": "Champange Bubbles",
@@ -1652,11 +1857,23 @@
       "product": "celebration-cake",
       "occasion": "birthday"
     },
+    "floral-log": {
+      "images": ["Floral-Log2.jpg", "Floral-Log.jpg"],   
+      "name": "Floral Log",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
     "daisy-baby": {
       "images": ["Daisy-Baby.jpg"],   
       "name": "Daisy Baby",
       "product": "celebration-cake",
       "occasion": "birthday"
+    },
+    "baby-sprinkles": {
+      "images": ["Baby-Sprinkles.jpg"],   
+      "name": "Baby Sprinkles",
+      "product": "cupcakes",
+      "occasion": ["baby-shower", "gender-reveal"]
     },
     "felix": {
       "images": ["Felix.jpg"],   
@@ -1718,6 +1935,12 @@
       "product": "celebration-cake",
       "occasion": "birthday"
     },    
+    "vibrant-wishes": {
+      "images": ["Vibrant-Wishes.jpg"],   
+      "name": "Vibrant Wishes",
+      "product": "cupcakes",
+      "occasion": "birthday"
+    },
     "birthday-mix-one-piece": {
       "images": ["Birthday-Mix-One-Piece.jpg"],   
       "name": "Birthday Mix- One Piece",
@@ -1777,7 +2000,7 @@
       "occasion": ["gender-reveal","baby-shower"]
     },
     "corporate-cupcakes-anniversaries": {
-      "images": ["Corporate-Cupcakes-Anniversaries.jpg"],   
+      "images": ["Corporate-Cupcakes-Anniversaries.jpg", "Corporate-Cupcakes-20years.jpg"],   
       "name": "Corporate Cupcakes - Anniversaires",
       "product": "cupcakes",
       "occasion": "corporate"
@@ -1841,13 +2064,13 @@
       "occasion": "birthday"
     },
     "paw-patrol": {
-      "images": ["Paw-Patrol.jpg"],   
+      "images": ["Paw-Patrol.jpg", "Paw-Patrol-Mini.jpg"],   
       "name": "Paw Patrol",
       "product": "celebration-cake",
       "occasion": "birthday"
     },    
     "cupcakes-birthday-plaques": {
-      "images": ["Cupcakes-Birthday-Plaques.jpg"],   
+      "images": ["Birthday-Swirls-Plaques-ChocBiscoff.jpg", "Cupcakes-Birthday-Plaques.jpg"],   
       "name": "Cupcakes - Birthday Plaques",
       "product": "cupcakes",
       "occasion": "birthday"
@@ -2148,7 +2371,12 @@
         "gift"
       ]
     },
-    
+    "edible-image-interest": {
+      "images": ["Edible-Image-Interest.jpg"],   
+      "name": "Edible Image - Interest",
+      "product": "celebration-cake",
+      "occasion": "birthday"
+    },
     "sweets-galore": {
       "images": ["Sweets-Galore.jpg"],
       "name": "Sweets Galore",
@@ -2159,13 +2387,6 @@
       "product": "celebration-cake",
       "occasion": "birthday",
       "flavours": ["Vanilla"]
-    },
-   
-    "corporate-cupcake-anniversary": {
-      "images": ["Corporate-Cupcakes-20years.jpg"],
-      "name": "Corporate Cupcakes - Anniversary",
-      "product": "cupcakes",
-      "occasion": "corporate"
     },
     "the-king": {
       "images": ["The-King.jpg"],
@@ -2329,11 +2550,12 @@
       "product": "celebration-cake",
       "occasion":"birthday"
     },
-    "fault-line-beige-and-gold": {
-      "images": ["Fault-Line-Beige-and-Gold.jpg"],
-      "name": "Fault Line - Beige & Gold",
+  "parker-penguin": {
+      "images": ["Parker-penguin.jpg","Parker2.jpg"],
+      "squareImage": "Parker-Penguin-square.jpg",
+      "name": "Parker Penguin",
       "product": "celebration-cake",
-      "occasion":"birthday"
+      "occasion": "birthday"
     },
     "edible-image-gift-wrapped": {
       "images": ["Edible-Image-Gift-Wrapped.jpg"],
@@ -3304,13 +3526,7 @@
       "product": "celebration-cake",
       "occasion": "birthday"
     },
-    "parker-penguin": {
-      "images": ["Parker-penguin.jpg"],
-      "squareImage": "Parker-Penguin-square.jpg",
-      "name": "Parker Penguin",
-      "product": "celebration-cake",
-      "occasion": "birthday"
-    },
+    
     "easter-surprise": {
       "images": ["Easter-Surprise-Inside.jpg", "Easter-Surprise.jpg"],
       "name": "Easter Surprise",
@@ -3547,6 +3763,3 @@
     }
   }
 }
-  
-
-
