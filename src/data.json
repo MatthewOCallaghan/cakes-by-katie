@@ -695,7 +695,14 @@
       "name": "Jessica",
       "description": "Photographer: Jack Aldridge Photography (jackaldridgephotography.co.uk)",
       "product": "wedding-cake",
-      "occasions": ["wedding"]
+      "occasions": ["wedding"],
+      "testimonial": {
+        "text": "Just wanted to say thank you so so much for our amazing wedding cake! Everyone commented on it and how nice it was! It was better than we could have ever expected!",
+        "name": "Jess",
+        "location": "Basingstoke"
+      },
+      "flavours": ["Coffee", "Raspberry & White Chocolate", "Lemon & Elderflower"]
+
     },
   "natalia": {
       "images": ["Natalia.jpg","Natalia-Low.jpg","Natalia-Top.jpg"],
@@ -820,7 +827,13 @@
       "images": ["Dreamland-Hugs.jpg", "Dreamland-Hugs-Plaque.jpg"],
       "name": "Dreamland Hugs",
       "product":"celebration-cake",
-      "occasions": ["christening"]
+      "occasions": ["christening"],
+      "testimonial": {
+        "text": "I just wanted to write to say thank you for Elsie's christening cake, it was so beautiful and delicious. We received so many compliments from the guests everyone was so impressed and our daughter was thrilled, Without doubt we will be returning for our next big celebration and I will recommend you to everyone :) Thank you again Katie for making us such a beautiful cake.",
+        "name": "Nikki"
+      },
+      "flavours": ["Vanilla"]
+
     },
     "birthday-mix-pink-flowers": {
       "images": ["Birthday-Mix-Pink-Flowers-2.jpg", "Birthday-Mix-Pink-Flowers.jpg"],
@@ -1066,13 +1079,26 @@
       "description": "Photographer: Chris Kemp Photography",
       "name": "Katherine",
       "product": "wedding-cake",
-      "occasions": ["wedding"]
+      "occasions": ["wedding"],
+      "testimonial": {
+        "text": "Just wanted to say a huge thank you for the cake you made for us.  It was absolutely stunning and delicious!",
+        "name": "Katherine",
+        "location": "Woodley"
+      },
+      "flavours": ["Raspberry & White Chocolate", "Lemon"]
+      
     },
     "petals-and-birthday-wishes": {
       "images": ["Petals-and-Birthday-Wishes.jpg", "Petals-Birthday-Wish-30-2.jpg",  "Petals-Birthday-Wish-30.jpg"],
       "name": "Petals & Birthday Wishes",
       "product": "celebration-cake",
-      "occasions": ["birthday"]
+      "occasions": ["birthday"],
+"testimonial": {
+        "text": "The most delicious cake for a 90th bday! Thankyou so much. I will definately be in touch again!",
+        "name": "Louise"
+      },
+      "flavours": ["Lemon"]
+
     },
     "birthday-mix-xbox": {
       "images": ["Birthday-Mix-Xbox.jpg"],
@@ -1232,7 +1258,13 @@
       "images": ["Fault-Line-Safari-Gold.jpg"],
       "name": "Fault Line - Safari & Gold",
       "product": "celebration-cake",
-      "occasions": ["birthday"]
+      "occasions": ["birthday"],
+      "testimonial": {
+        "text": "Thank you so much for the stunning cake. It was absolutely beautiful and everyone commented how delicious it was. ",
+        "name": "Lisa"
+      },
+      "flavours": ["Vanilla"]
+
     },
     "experimental": {
       "images": ["Experimental.jpg"],   
@@ -2263,7 +2295,12 @@
       "images": ["Just-Chocolate-Plain.jpg"],   
       "name": "Just Chocolate",
       "product": "celebration-cake",
-      "occasions": ["birthday"]
+      "occasions": ["birthday"],
+      "testimonial": {
+        "text": "I just wanted to say a huge thank you for the delicious chocolate cake you made for me. It was exactly what I wanted and was very much enjoyed by us all!",
+        "name": "Carolyn"
+      },
+      "flavours": ["Chocolate"]
     },    
     "quavers-and-quarks": {
       "images": ["Quavers-and-Quarks.jpg"],   
