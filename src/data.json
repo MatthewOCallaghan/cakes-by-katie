@@ -1757,7 +1757,8 @@
       "occasions": ["birthday","gift"],
       "testimonial": {
         "text": "The giant cupcake and cupcakes were delicious everyone loved them and all the different decorations. All gone!",
-        "name": "Beryl"
+        "name": "Beryl",
+        "location": "Newbury"
       },
       "flavours" : ["Vanilla", "Chocolate", "Raspberry & White Chocolate","Lemon"]
     },
