@@ -1008,6 +1008,17 @@
       "occasions": ["birthday"],
       "flavours": ["Vanilla"]
     },
+    "classic-drips-golden-chocolate": {
+      "images": ["Classic-Drips-Golden-Chocolate.jpg", "Classic-Drips-Golden-Chocolate2.jpg", "Classic-Drips-Golden-ChocV2.jpg"],
+      "name": "Classic Drips - Golden Chocolate",
+      "testimonial": {
+        "text": "It was absolutely amazing, tasted fantastic, best cake I've ever eaten. Presentation, I have no words, 10 out of 10. I've got your number in my contacts, lots of people asked me last night where I got the cake from and I recommend you. Delicious!!!",
+        "name": "Dave"
+      },
+      "product": "celebration-cake",
+      "occasions": ["birthday"],
+      "flavours": ["Baileys"]
+    },
     "rosalia": {
       "images": ["Rosalia3.jpg", "Rosalia.jpg","Rosalia2.jpg"],
       "name": "Rosalia",
@@ -1187,17 +1198,7 @@
       "product": "celebration-cake",
       "occasions": ["birthday"]
     },
-    "classic-drips-golden-chocolate": {
-      "images": ["Classic-Drips-Golden-Chocolate.jpg", "Classic-Drips-Golden-Chocolate2.jpg", "Classic-Drips-Golden-ChocV2.jpg"],
-      "name": "Classic Drips - Golden Chocolate",
-      "testimonial": {
-        "text": "It was absolutely amazing, tasted fantastic, best cake I've ever eaten. Presentation, I have no words, 10 out of 10. I've got your number in my contacts, lots of people asked me last night where I got the cake from and I recommend you. Delicious!!!",
-        "name": "Dave"
-      },
-      "product": "celebration-cake",
-      "occasions": ["birthday"],
-      "flavours": ["Baileys"]
-    },
+   
     "frozen-fault-line": {
       "images": ["Frozen-Fault-Line.jpg"],
       "name": "Frozen Fault Line",
