@@ -1305,6 +1305,12 @@
       "product": "celebration-cake",
       "occasions": ["birthday"]
     },
+    "summer-appreciation": {
+      "images": ["Summer-Appreciation.jpg"],
+      "name": "Summer Appreciation",
+      "product": "cupcakes",
+      "occasions": ["birthday","gift","mothers-day"]
+    },
     "blue-gold": {
       "images": ["Blue-Gold.jpg"],
       "name": "Blue & Gold",
@@ -1326,6 +1332,12 @@
     "grace-18th": {
       "images": ["Grace-18th2.jpg", "Grace-18th.jpg"],
       "name": "Grace - 18th",
+      "product": "celebration-cake",
+      "occasions": ["birthday"]
+    },
+    "my-fav-things": {
+      "images": ["My-Fav-Things.jpg"],
+      "name": "My Favourite Things",
       "product": "celebration-cake",
       "occasions": ["birthday"]
     },
@@ -1399,6 +1411,12 @@
       "product": "cupcakes",
       "occasions": ["corporate", "gift"]
     },
+    "floral-mix": {
+      "images": ["Floral-Mix.jpg"],
+      "name": "Floral Mix",
+      "product": "cupcakes",
+      "occasions": ["birthday","gift","mothers-day"]
+    },
     "monster-trucks": {
       "images": ["Monster-Trucks.jpg"],
       "name": "Monster Trucks",
@@ -1437,7 +1455,7 @@
     "super-princess": {
       "images": ["Super-Princess.jpg"],   
       "name": "Super Princess",
-      "product": "cupcake",
+      "product": "cupcakes",
       "occasions": ["birthday"],
       "testimonial": {
         "text": "I just wanted to say thank you so much, the cakes were beautiful and we got rave reviews from the guests too!",
@@ -1704,7 +1722,7 @@
     "mixed-purple-gold": {
       "images": ["Mixed-Purple-Gold.jpg"],   
       "name": "Mixed - Purple & Gold",
-      "product": "cupcake",
+      "product": "cupcakes",
       "occasions": ["birthday","gift"]
     },
     "saphire-present": {
@@ -2171,7 +2189,7 @@
       "occasions": ["christening"]
     },     
     "pink-mix-flowers": {
-      "images": ["Pink-Mix-Flowers.jpg"],   
+      "images": ["Pink-Mix-Flowers.jpg","Pink-Mix-Bday-Flowers.jpg"],   
       "name": "Pink Mix - Flowers",
       "product": "cupcakes",
       "occasions": ["birthday", "anniversary"]
@@ -3422,7 +3440,7 @@
         "name": "Andy",
         "location": "West Berkshire"
       },
-      "product": "deluxe-cupcake",
+      "product": "deluxe-cupcakes",
       "occasions": ["birthday", "afternoon-tea", "gift"],
       "flavours": ["Lemon", "Chocolate", "Chocolate Oreo"]
     },
