@@ -678,6 +678,13 @@
       "occasions": ["birthday"],
       "flavours": ["Lemon"]
     },
+    "jenifer": {
+      "images": ["Jenifer.jpg"],
+      "name": "Jenfier",
+      "description": "Photographer: Rachel Jane Photography (racheljanephoto.co.uk)",
+      "product":"wedding-cake",
+      "occasions": ["wedding"]
+    },
     "our-story": {
       "images": ["Our-Story.jpg"],
       "name": "Our Story",
