@@ -1754,7 +1754,12 @@
       "images": ["Mixed-Purple-Gold.jpg"],   
       "name": "Mixed - Purple & Gold",
       "product": "cupcakes",
-      "occasions": ["birthday","gift"]
+      "occasions": ["birthday","gift"],
+      "testimonial": {
+        "text": "The giant cupcake and cupcakes were delicious everyone loved them and all the different decorations. All gone!",
+        "name": "Beryl"
+      },
+      "flavours" : ["Vanilla", "Chocolate", "Raspberry & White Chocolate","Lemon"]
     },
     "saphire-present": {
       "images": ["Saphire-Present.jpg"],
