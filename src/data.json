@@ -1392,7 +1392,12 @@
         "images": ["Pilot-Wings.jpg"],
         "name": "Pilot-Wings",
         "product": "celebration-cake",
-        "occasions": ["birthday","anniversary"]
+        "occasions": ["birthday","anniversary"],
+        "testimonial": {
+          "text": "Thank you! Also my husband wanted me to let you know how brilliant he thought the cake was.",
+          "name": "Hazel"
+        },
+        "flavours": ["Vanilla"]
         },
     "gone-fishing": {
       "images": ["Gone-Fishing.jpg"],
