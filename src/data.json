@@ -673,6 +673,12 @@
       "product": "celebration-cake",
       "occasions": ["birthday"]
     },
+    "elegancia": {
+      "images": ["Elegancia2.jpg", "Elegancia.jpg"],
+      "name": "Elegancia",
+      "product": "celebration-cake",
+      "occasions":["birthday"]
+    },
     "woodland-fairytales": {
       "images": ["Woodland-Fairytales.jpg"],
       "name": "Woodland Fairytales",
