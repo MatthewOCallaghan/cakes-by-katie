@@ -704,6 +704,13 @@
       "flavours": ["Coffee", "Raspberry & White Chocolate", "Lemon & Elderflower"]
 
     },
+    "charlotte-olive": {
+      "images": ["Charlotte-Olive.jpg", "Charlotte-Olive2.jpg"],
+      "name": "Charlotte & Olive",
+      "description": "Photographer: Dana Sonia (danasoniaphotography.com)",
+      "product": "wedding-cake",
+      "occasions": ["wedding"]
+    },
   "natalia": {
       "images": ["Natalia.jpg","Natalia-Low.jpg","Natalia-Top.jpg"],
       "name": "Natalia",
@@ -722,6 +729,13 @@
       "product": "wedding-cake",
       "occasions": ["wedding"],
       "flavours": ["Lemon", "Orange"]
+    },
+    "youre-the-chosen-one": {
+      "images": ["Youre-the-Chosen-One.jpg", "Youre-the-Chosen-One2.jpg"],
+      "name": "You're The Chosen One",
+      "description": "Second Photo - Photographer: Steffen Milsom Photography (steffenmilsomphotography.co.uk)",
+      "product": "wedding-cake",
+      "occasions": ["wedding"]
     },
     "diamond-toast": {
       "images": ["Diamond-Toast.jpg"],
