@@ -1359,7 +1359,17 @@
       "product": "celebration-cake",
       "occasions": ["birthday"]
     },
-
+"riding-the-waves": {
+      "images": ["Riding-the-Waves.jpg"],
+      "name": "Riding the Waves",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "testimonial": {
+         "text": "Just to say that the cake and favours were amazing. Soo happy with them. Thank you!! All the guests spoke very highly of the cake and loved the cookies design and taste. ",
+         "name": "Emma"
+      },
+      "flavours": ["Carrot"]
+    },
     "choo-choo": {
       "images": ["Choo-Choo.jpg"],
       "name": "Choo-Choo",
@@ -1417,7 +1427,13 @@
       "images": ["Super-Princess.jpg"],   
       "name": "Super Princess",
       "product": "cupcake",
-      "occasions": ["birthday"]
+      "occasions": ["birthday"],
+      "testimonial": {
+        "text": "I just wanted to say thank you so much, the cakes were beautiful and we got rave reviews from the guests too!",
+        "name": "Iona"
+      },
+      "flavours": ["Vegan Chocolate"]
+
     },
     "simple-and-classic": {
       "images": ["Simple-and-Classic.jpg"],
@@ -1441,7 +1457,12 @@
       "images": ["Arlo.jpg"],
       "name": "Arlo",
       "product": "celebration-cake",
-      "occasions": ["birthday"]
+      "occasions": ["birthday"],
+      "testimonial": {
+         "text": "My husband picked up a cake today that you made for my birthday! It is gorgeous! I love it! Thank you so much!",
+         "name": "Emma"
+      },
+      "flavours": ["Chocolate Biscoff"]
     },
      "enchanted": {
       "images": ["Enchanted.jpg"],
@@ -1503,11 +1524,23 @@
       "product": "celebration-cake",
       "occasions": ["birthday"]
     },
+    "lavender-swifty": {
+      "images": ["Lavender-Swifty.jpg", "Lavender-Swifty2.jpg"],
+      "name": "Lavender Swifty",
+      "product": "celebration-cake",
+      "occasions": ["birthday"]
+    },
     "corporate-birthday": {
       "images": ["Corporate-Birthday.jpg"],   
       "name": "Corporate - Birthday",
       "product": "celebration-cake",
       "occasions": ["corporate"]
+    },
+    "ahoy": {
+      "images": ["Ahoy.jpg"],
+      "name": "Ahoy",
+      "product": "celebration-cake",
+      "occasions": ["birthday"]
     },
     "muppet-mania": {
       "images": ["Muppet-Mania.jpg"],   
@@ -1535,6 +1568,12 @@
     "bricktastic": {
       "images": ["Bricktastic.jpg"],   
       "name": "Bricktastic",
+      "product": "celebration-cake",
+      "occasions": ["birthday"]
+    },
+    "birthday-keys": {
+      "images": ["Birthday-Keys.jpg"],   
+      "name": "Birthday Keys",
       "product": "celebration-cake",
       "occasions": ["birthday"]
     },
@@ -1702,6 +1741,18 @@
       "name": "Edibel Image - Animal",
       "product": "celebration-cake",
       "occasions": ["birthday"]
+    },
+    "joint-celebrations": {
+      "images": ["Joint-Celebrations.jpg"],
+      "name": "Joint Celebrations",
+      "product":"celebration-cake",
+      "occasions": ["birthday"],
+      "testimonial": {
+        "text": "Just want to say thank you very much for the cake, you did a brilliant job and everyone loved it. Sponge was delicious.",
+        "name": "Linda"
+      },
+      "flavours": ["Vanilla"]
+
     },
     "corporate-cupcakes-colour": {
       "images": ["Corporate-Cupcakes-Branding-Colour.jpg"],   
