@@ -1299,6 +1299,12 @@
       "product": "celebration-cake",
       "occasions": ["baby-shower"]
     },
+    "bride-to-be": {
+      "images": ["Bride-to-Be.jpg"],
+      "name": "Bride to Be",
+      "product": "cupcakes",
+      "occasions": ["gift", "bridal-shower"]
+      },
     "moana": {
       "images": ["Moana.jpg", "Moana2.jpg"],
       "name": "Moana",
@@ -1652,6 +1658,12 @@
       "product": "celebration-cake",
       "occasions": ["womensday"]
     },
+    "themed-retirement": {
+      "images": ["Themed-Retirement.jpg"],
+      "name": "Themed Retirement",
+      "product": "cupcakes",
+      "occasions": ["gift", "retirement"]
+      },
     "sweet-crescendo": {
       "images": ["Sweet-Crescendo.jpg"],   
       "name": "Sweet Crescendo",
