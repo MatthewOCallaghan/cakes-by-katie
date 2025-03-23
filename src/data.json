@@ -645,6 +645,19 @@
       "product": "celebration-cake",
       "occasions": ["birthday"]
     },
+    "petals-and-promises-olly": {
+      "images": ["Petals-and-Promises-Olly-2.jpg", "Petals-and-Promises-Olly.jpg"],
+      "name": "Petals & Promises",
+      "description": "Photographer: Murray Clarke Photography (murrayclarke.co.uk)",
+      "testimonial": {
+        "text": "Just a quick message to say thank you so much for making our wedding cake. So many of our guests commented upon how beautiful it was and also how amazing it tasted; and having now sampled quite a bit of it ourselves (!), we can confirm that it was absolutely delicious.",
+        "name": "Olly & Niamh",
+        "location": "Kingsclere"
+      },
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "flavours": ["Lemon", "Orange"]
+    },
     "bryony": {
       "images": ["Bryony.jpg"],
       "name": "Bryony",
@@ -724,19 +737,7 @@
       "product": "wedding-cake",
       "occasions": ["wedding","birthday","anniversary"]
         },
-    "petals-and-promises-olly": {
-      "images": ["Petals-and-Promises-Olly-2.jpg", "Petals-and-Promises-Olly.jpg"],
-      "name": "Petals & Promises",
-      "description": "Photographer: Murray Clarke Photography (murrayclarke.co.uk)",
-      "testimonial": {
-        "text": "Just a quick message to say thank you so much for making our wedding cake. So many of our guests commented upon how beautiful it was and also how amazing it tasted; and having now sampled quite a bit of it ourselves (!), we can confirm that it was absolutely delicious.",
-        "name": "Olly & Niamh",
-        "location": "Kingsclere"
-      },
-      "product": "wedding-cake",
-      "occasions": ["wedding"],
-      "flavours": ["Lemon", "Orange"]
-    },
+   
     "youre-the-chosen-one": {
       "images": ["Youre-the-Chosen-One.jpg", "Youre-the-Chosen-One2.jpg"],
       "name": "You're The Chosen One",
