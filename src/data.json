@@ -1405,6 +1405,17 @@
       "product": "celebration-cake",
       "occasions": ["birthday"]
     },
+    "spiderman": {
+      "images": ["Spiderman.jpg"],
+      "name": "Spiderman",
+      "product": "celebration-cake",
+      "occasions": ["birthday"],
+      "testimonial": {
+        "text": "The Spider-Man cake not only looked awesome but also tasted delicious. A great combination!",
+        "name": "Hannah"
+      },
+      "flavours": ["Chocolate Oreo"]
+    },
     "milk-and-peanut": {
       "images": ["Milk-and-Peanut.jpg"],
       "name": "Milk & Peanut",
@@ -1470,6 +1481,12 @@
       "product": "celebration-cake",
       "occasions": ["birthday"]
     },
+    "dad-to-be-birthday": {
+      "images": ["Dad-to-be-Birthday.jpg"],   
+      "name": "Dad to be's Birthday",
+      "product": "celebration-cake",
+      "occasions": ["birthday", "baby-shower", "gender-reveal"]
+    },
     "kinder-bueno": {
       "images": ["Kinder-Bueno.jpg"],
       "name": "Kinder Bueno",
@@ -1516,7 +1533,13 @@
       "images": ["Baby-Boy-Mix.jpg"],
       "name": "Baby Boy Mix",
       "product": "cupcakes",
-      "occasions": ["birthday", "gift"]
+      "occasions": ["baby-shower", "gift"]
+    },
+    "chocolate-blue-green": {
+      "images": ["Chocolate-Blue-Green.jpg"],
+      "name": "Chocolate - Blue & Green",
+      "product": "cupcakes",
+      "occasions": ["baby-shower","birthday","gift"]
     },
     "captain-underpants": {
       "images": ["Captain-Underpants.jpg"],
@@ -1552,6 +1575,12 @@
       "product": "cupcakes",
       "occasions": ["birthday"],
       "flavours": ["Chocolate"]
+    },
+    "diamond-quilted": {
+      "images": ["Diamond-Quilted.jpg"],
+      "name": "Diamon Quilted",
+      "product": "celebration-cake",
+      "occasions": ["anniversary"]
     },
     "ninja-turtles": {
       "images": ["Ninja-Turtles.jpg"],   
@@ -1630,6 +1659,12 @@
       "product": "celebration-cake",
       "occasions": ["birthday"]
     },
+    "teenage-crush": {
+      "images": ["Teenage-Crush.jpg"],   
+      "name": "Teenage Crush",
+      "product": "celebration-cake",
+      "occasions": ["birthday"]
+    },
     "adventures-await": {
       "images": ["Adventures-Await-2.jpg","Adventures-Await.jpg"],   
       "name": "Adventures Await",
@@ -1660,15 +1695,33 @@
       "product": "celebration-cake",
       "occasions": ["birthday"]
     },
+    "eras-poster": {
+      "images": ["Eras-Poster.jpg"],   
+      "name": "Eras Poster",
+      "product": "celebration-cake",
+      "occasions": ["birthday"]
+    },
     "mixed-purple-gold": {
       "images": ["Mixed-Purple-Gold.jpg"],   
       "name": "Mixed - Purple & Gold",
       "product": "cupcake",
       "occasions": ["birthday","gift"]
     },
+    "saphire-present": {
+      "images": ["Saphire-Present.jpg"],
+      "name": "Saphire Present",
+      "product": "celebration-cake",
+      "occasions": ["anniversary"]
+    },
     "pink-and-sparkle": {
       "images": ["Pink-and-Sparkle.jpg"],   
       "name": "Pink & Sparkle",
+      "product": "celebration-cake",
+      "occasions": ["birthday"]
+    },
+    "taylor-swift-eras": {
+      "images": ["Taylor-Swift-Eras.jpg"],   
+      "name": "Taylor Swift Eras",
       "product": "celebration-cake",
       "occasions": ["birthday"]
     },
