@@ -44,6 +44,9 @@
                 // Button will be set to correct aspect ratio for image
                 width: 100%;
                 height: 100%;
+
+                // Rendering inline adds extra space below in Safari
+                display: block;
   
                 transition: transform .7s;
 
