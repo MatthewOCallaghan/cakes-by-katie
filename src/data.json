@@ -152,7 +152,7 @@
         },
         {
           "title": "South England Prestige Awards 2024/25",
-          "subtitle": "Cakes by Katie Cake Designer of the Year",
+          "subtitle": "Cakes by Katie<br>Cake Designer of the Year",
           "text": "<p>The Prestige Awards recognise small and medium-sized businesses that have proven to be the best in their market over the past 12 months.  The judging panel base their decision upon areas such as service excellence, quality of the product/service provided, innovative practices, value, ethical or sustainable methods of working, as well as consistency in performance. The winners selected are those who can best demonstrate their strengths in these areas.</p>",
           "image": {
             "path": "features/prestige-2025-winner.png",
@@ -161,7 +161,7 @@
         },
         {
           "title": "Luxlife Food & Drinks Awards 2024",
-          "subtitle": "Cakes by Katie Best Bespoke Celebration Cake Bakery - Berkshire",
+          "subtitle": "Cakes by Katie<br>Best Bespoke Celebration Cake Bakery - Berkshire",
           "text": "<p>Luxury Lifestyle Awards is a global award program that selects, recognises, celebrates and promotes the best luxury goods and services worldwide. Through comprehensive market research and a meticulous nomination and selection process, excellence is identified and honoured.</p>",
           "image": {
             "path": "features/luxlife-2024-winner.png",
@@ -645,6 +645,19 @@
       "product": "celebration-cake",
       "occasions": ["birthday"]
     },
+    "petals-and-promises-olly": {
+      "images": ["Petals-and-Promises-Olly-2.jpg", "Petals-and-Promises-Olly.jpg"],
+      "name": "Petals & Promises",
+      "description": "Photographer: Murray Clarke Photography (murrayclarke.co.uk)",
+      "testimonial": {
+        "text": "Just a quick message to say thank you so much for making our wedding cake. So many of our guests commented upon how beautiful it was and also how amazing it tasted; and having now sampled quite a bit of it ourselves (!), we can confirm that it was absolutely delicious.",
+        "name": "Olly & Niamh",
+        "location": "Kingsclere"
+      },
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "flavours": ["Lemon", "Orange"]
+    },
     "bryony": {
       "images": ["Bryony.jpg"],
       "name": "Bryony",
@@ -659,6 +672,12 @@
       "name": "Fault Line - Green & Gold",
       "product": "celebration-cake",
       "occasions": ["birthday"]
+    },
+    "elegancia": {
+      "images": ["Elegancia2.jpg", "Elegancia.jpg"],
+      "name": "Elegancia",
+      "product": "celebration-cake",
+      "occasions":["birthday"]
     },
     "woodland-fairytales": {
       "images": ["Woodland-Fairytales.jpg"],
@@ -678,6 +697,13 @@
       "occasions": ["birthday"],
       "flavours": ["Lemon"]
     },
+    "jenifer": {
+      "images": ["Jenifer.jpg"],
+      "name": "Jenfier",
+      "description": "Photographer: Rachel Jane Photography (racheljanephoto.co.uk)",
+      "product":"wedding-cake",
+      "occasions": ["wedding"]
+    },
     "our-story": {
       "images": ["Our-Story.jpg"],
       "name": "Our Story",
@@ -695,6 +721,20 @@
       "name": "Jessica",
       "description": "Photographer: Jack Aldridge Photography (jackaldridgephotography.co.uk)",
       "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "testimonial": {
+        "text": "Just wanted to say thank you so so much for our amazing wedding cake! Everyone commented on it and how nice it was! It was better than we could have ever expected!",
+        "name": "Jess",
+        "location": "Basingstoke"
+      },
+      "flavours": ["Coffee", "Raspberry & White Chocolate", "Lemon & Elderflower"]
+
+    },
+    "charlotte-olive": {
+      "images": ["Charlotte-Olive.jpg", "Charlotte-Olive2.jpg"],
+      "name": "Charlotte & Olive",
+      "description": "Photographer: Dana Sonia (danasoniaphotography.com)",
+      "product": "wedding-cake",
       "occasions": ["wedding"]
     },
   "natalia": {
@@ -703,18 +743,13 @@
       "product": "wedding-cake",
       "occasions": ["wedding","birthday","anniversary"]
         },
-    "petals-and-promises-olly": {
-      "images": ["Petals-and-Promises-Olly-2.jpg", "Petals-and-Promises-Olly.jpg"],
-      "name": "Petals & Promises",
-      "description": "Photographer: Murray Clarke Photography (murrayclarke.co.uk)",
-      "testimonial": {
-        "text": "Just a quick message to say thank you so much for making our wedding cake. So many of our guests commented upon how beautiful it was and also how amazing it tasted; and having now sampled quite a bit of it ourselves (!), we can confirm that it was absolutely delicious.",
-        "name": "Olly & Niamh",
-        "location": "Kingsclere"
-      },
+   
+    "youre-the-chosen-one": {
+      "images": ["Youre-the-Chosen-One.jpg", "Youre-the-Chosen-One2.jpg"],
+      "name": "You're The Chosen One",
+      "description": "Second Photo - Photographer: Steffen Milsom Photography (steffenmilsomphotography.co.uk)",
       "product": "wedding-cake",
-      "occasions": ["wedding"],
-      "flavours": ["Lemon", "Orange"]
+      "occasions": ["wedding"]
     },
     "diamond-toast": {
       "images": ["Diamond-Toast.jpg"],
@@ -820,7 +855,13 @@
       "images": ["Dreamland-Hugs.jpg", "Dreamland-Hugs-Plaque.jpg"],
       "name": "Dreamland Hugs",
       "product":"celebration-cake",
-      "occasions": ["christening"]
+      "occasions": ["christening"],
+      "testimonial": {
+        "text": "I just wanted to write to say thank you for Elsie's christening cake, it was so beautiful and delicious. We received so many compliments from the guests everyone was so impressed and our daughter was thrilled, Without doubt we will be returning for our next big celebration and I will recommend you to everyone :) Thank you again Katie for making us such a beautiful cake.",
+        "name": "Nikki"
+      },
+      "flavours": ["Vanilla"]
+
     },
     "birthday-mix-pink-flowers": {
       "images": ["Birthday-Mix-Pink-Flowers-2.jpg", "Birthday-Mix-Pink-Flowers.jpg"],
@@ -981,6 +1022,17 @@
       "occasions": ["birthday"],
       "flavours": ["Vanilla"]
     },
+    "classic-drips-golden-chocolate": {
+      "images": ["Classic-Drips-Golden-Chocolate.jpg", "Classic-Drips-Golden-Chocolate2.jpg", "Classic-Drips-Golden-ChocV2.jpg"],
+      "name": "Classic Drips - Golden Chocolate",
+      "testimonial": {
+        "text": "It was absolutely amazing, tasted fantastic, best cake I've ever eaten. Presentation, I have no words, 10 out of 10. I've got your number in my contacts, lots of people asked me last night where I got the cake from and I recommend you. Delicious!!!",
+        "name": "Dave"
+      },
+      "product": "celebration-cake",
+      "occasions": ["birthday"],
+      "flavours": ["Baileys"]
+    },
     "rosalia": {
       "images": ["Rosalia3.jpg", "Rosalia.jpg","Rosalia2.jpg"],
       "name": "Rosalia",
@@ -1066,13 +1118,26 @@
       "description": "Photographer: Chris Kemp Photography",
       "name": "Katherine",
       "product": "wedding-cake",
-      "occasions": ["wedding"]
+      "occasions": ["wedding"],
+      "testimonial": {
+        "text": "Just wanted to say a huge thank you for the cake you made for us.  It was absolutely stunning and delicious!",
+        "name": "Katherine",
+        "location": "Woodley"
+      },
+      "flavours": ["Raspberry & White Chocolate", "Lemon"]
+      
     },
     "petals-and-birthday-wishes": {
       "images": ["Petals-and-Birthday-Wishes.jpg", "Petals-Birthday-Wish-30-2.jpg",  "Petals-Birthday-Wish-30.jpg"],
       "name": "Petals & Birthday Wishes",
       "product": "celebration-cake",
-      "occasions": ["birthday"]
+      "occasions": ["birthday"],
+"testimonial": {
+        "text": "The most delicious cake for a 90th bday! Thankyou so much. I will definately be in touch again!",
+        "name": "Louise"
+      },
+      "flavours": ["Lemon"]
+
     },
     "birthday-mix-xbox": {
       "images": ["Birthday-Mix-Xbox.jpg"],
@@ -1147,17 +1212,7 @@
       "product": "celebration-cake",
       "occasions": ["birthday"]
     },
-    "classic-drips-golden-chocolate": {
-      "images": ["Classic-Drips-Golden-Chocolate.jpg", "Classic-Drips-Golden-Chocolate2.jpg", "Classic-Drips-Golden-ChocV2.jpg"],
-      "name": "Classic Drips - Golden Chocolate",
-      "testimonial": {
-        "text": "It was absolutely amazing, tasted fantastic, best cake I've ever eaten. Presentation, I have no words, 10 out of 10. I've got your number in my contacts, lots of people asked me last night where I got the cake from and I recommend you. Delicious!!!",
-        "name": "Dave"
-      },
-      "product": "celebration-cake",
-      "occasions": ["birthday"],
-      "flavours": ["Baileys"]
-    },
+   
     "frozen-fault-line": {
       "images": ["Frozen-Fault-Line.jpg"],
       "name": "Frozen Fault Line",
@@ -1232,7 +1287,13 @@
       "images": ["Fault-Line-Safari-Gold.jpg"],
       "name": "Fault Line - Safari & Gold",
       "product": "celebration-cake",
-      "occasions": ["birthday"]
+      "occasions": ["birthday"],
+      "testimonial": {
+        "text": "Thank you so much for the stunning cake. It was absolutely beautiful and everyone commented how delicious it was. ",
+        "name": "Lisa"
+      },
+      "flavours": ["Vanilla"]
+
     },
     "experimental": {
       "images": ["Experimental.jpg"],   
@@ -1267,11 +1328,23 @@
       "product": "celebration-cake",
       "occasions": ["baby-shower"]
     },
+    "bride-to-be": {
+      "images": ["Bride-to-Be.jpg"],
+      "name": "Bride to Be",
+      "product": "cupcakes",
+      "occasions": ["gift", "bridal-shower"]
+      },
     "moana": {
       "images": ["Moana.jpg", "Moana2.jpg"],
       "name": "Moana",
       "product": "celebration-cake",
       "occasions": ["birthday"]
+    },
+    "summer-appreciation": {
+      "images": ["Summer-Appreciation.jpg"],
+      "name": "Summer Appreciation",
+      "product": "cupcakes",
+      "occasions": ["birthday","gift","mothers-day"]
     },
     "blue-gold": {
       "images": ["Blue-Gold.jpg"],
@@ -1294,6 +1367,12 @@
     "grace-18th": {
       "images": ["Grace-18th2.jpg", "Grace-18th.jpg"],
       "name": "Grace - 18th",
+      "product": "celebration-cake",
+      "occasions": ["birthday"]
+    },
+    "my-fav-things": {
+      "images": ["My-Fav-Things.jpg"],
+      "name": "My Favourite Things",
       "product": "celebration-cake",
       "occasions": ["birthday"]
     },
@@ -1327,7 +1406,17 @@
       "product": "celebration-cake",
       "occasions": ["birthday"]
     },
-
+"riding-the-waves": {
+      "images": ["Riding-the-Waves.jpg"],
+      "name": "Riding the Waves",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "testimonial": {
+         "text": "Just to say that the cake and favours were amazing. Soo happy with them. Thank you!! All the guests spoke very highly of the cake and loved the cookies design and taste. ",
+         "name": "Emma"
+      },
+      "flavours": ["Carrot"]
+    },
     "choo-choo": {
       "images": ["Choo-Choo.jpg"],
       "name": "Choo-Choo",
@@ -1338,7 +1427,12 @@
         "images": ["Pilot-Wings.jpg"],
         "name": "Pilot-Wings",
         "product": "celebration-cake",
-        "occasions": ["birthday","anniversary"]
+        "occasions": ["birthday","anniversary"],
+        "testimonial": {
+          "text": "Thank you! Also my husband wanted me to let you know how brilliant he thought the cake was.",
+          "name": "Hazel"
+        },
+        "flavours": ["Vanilla"]
         },
     "gone-fishing": {
       "images": ["Gone-Fishing.jpg"],
@@ -1357,11 +1451,28 @@
       "product": "cupcakes",
       "occasions": ["corporate", "gift"]
     },
+    "floral-mix": {
+      "images": ["Floral-Mix.jpg"],
+      "name": "Floral Mix",
+      "product": "cupcakes",
+      "occasions": ["birthday","gift","mothers-day"]
+    },
     "monster-trucks": {
       "images": ["Monster-Trucks.jpg"],
       "name": "Monster Trucks",
       "product": "celebration-cake",
       "occasions": ["birthday"]
+    },
+    "spiderman": {
+      "images": ["Spiderman.jpg"],
+      "name": "Spiderman",
+      "product": "celebration-cake",
+      "occasions": ["birthday"],
+      "testimonial": {
+        "text": "The Spider-Man cake not only looked awesome but also tasted delicious. A great combination!",
+        "name": "Hannah"
+      },
+      "flavours": ["Chocolate Oreo"]
     },
     "milk-and-peanut": {
       "images": ["Milk-and-Peanut.jpg"],
@@ -1384,8 +1495,14 @@
     "super-princess": {
       "images": ["Super-Princess.jpg"],   
       "name": "Super Princess",
-      "product": "cupcake",
-      "occasions": ["birthday"]
+      "product": "cupcakes",
+      "occasions": ["birthday"],
+      "testimonial": {
+        "text": "I just wanted to say thank you so much, the cakes were beautiful and we got rave reviews from the guests too!",
+        "name": "Iona"
+      },
+      "flavours": ["Vegan Chocolate"]
+
     },
     "simple-and-classic": {
       "images": ["Simple-and-Classic.jpg"],
@@ -1409,13 +1526,24 @@
       "images": ["Arlo.jpg"],
       "name": "Arlo",
       "product": "celebration-cake",
-      "occasions": ["birthday"]
+      "occasions": ["birthday"],
+      "testimonial": {
+         "text": "My husband picked up a cake today that you made for my birthday! It is gorgeous! I love it! Thank you so much!",
+         "name": "Emma"
+      },
+      "flavours": ["Chocolate Biscoff"]
     },
      "enchanted": {
       "images": ["Enchanted.jpg"],
       "name": "Enchanted",
       "product": "celebration-cake",
       "occasions": ["birthday"]
+    },
+    "dad-to-be-birthday": {
+      "images": ["Dad-to-be-Birthday.jpg"],   
+      "name": "Dad to be's Birthday",
+      "product": "celebration-cake",
+      "occasions": ["birthday", "baby-shower", "gender-reveal"]
     },
     "kinder-bueno": {
       "images": ["Kinder-Bueno.jpg"],
@@ -1463,11 +1591,23 @@
       "images": ["Baby-Boy-Mix.jpg"],
       "name": "Baby Boy Mix",
       "product": "cupcakes",
-      "occasions": ["birthday", "gift"]
+      "occasions": ["baby-shower", "gift"]
+    },
+    "chocolate-blue-green": {
+      "images": ["Chocolate-Blue-Green.jpg"],
+      "name": "Chocolate - Blue & Green",
+      "product": "cupcakes",
+      "occasions": ["baby-shower","birthday","gift"]
     },
     "captain-underpants": {
       "images": ["Captain-Underpants.jpg"],
       "name": "Captain Underpants",
+      "product": "celebration-cake",
+      "occasions": ["birthday"]
+    },
+    "lavender-swifty": {
+      "images": ["Lavender-Swifty.jpg", "Lavender-Swifty2.jpg"],
+      "name": "Lavender Swifty",
       "product": "celebration-cake",
       "occasions": ["birthday"]
     },
@@ -1476,6 +1616,12 @@
       "name": "Corporate - Birthday",
       "product": "celebration-cake",
       "occasions": ["corporate"]
+    },
+    "ahoy": {
+      "images": ["Ahoy.jpg"],
+      "name": "Ahoy",
+      "product": "celebration-cake",
+      "occasions": ["birthday"]
     },
     "muppet-mania": {
       "images": ["Muppet-Mania.jpg"],   
@@ -1487,6 +1633,12 @@
       "product": "cupcakes",
       "occasions": ["birthday"],
       "flavours": ["Chocolate"]
+    },
+    "diamond-quilted": {
+      "images": ["Diamond-Quilted.jpg"],
+      "name": "Diamon Quilted",
+      "product": "celebration-cake",
+      "occasions": ["anniversary"]
     },
     "ninja-turtles": {
       "images": ["Ninja-Turtles.jpg"],   
@@ -1503,6 +1655,12 @@
     "bricktastic": {
       "images": ["Bricktastic.jpg"],   
       "name": "Bricktastic",
+      "product": "celebration-cake",
+      "occasions": ["birthday"]
+    },
+    "birthday-keys": {
+      "images": ["Birthday-Keys.jpg"],   
+      "name": "Birthday Keys",
       "product": "celebration-cake",
       "occasions": ["birthday"]
     },
@@ -1529,6 +1687,12 @@
       "product": "celebration-cake",
       "occasions": ["womensday"]
     },
+    "themed-retirement": {
+      "images": ["Themed-Retirement.jpg"],
+      "name": "Themed Retirement",
+      "product": "cupcakes",
+      "occasions": ["gift", "retirement"]
+      },
     "sweet-crescendo": {
       "images": ["Sweet-Crescendo.jpg"],   
       "name": "Sweet Crescendo",
@@ -1556,6 +1720,12 @@
     "cocoa-corners-birthday":{
       "images": ["Cocoa-Corners-Birthday.jpg"],   
       "name": "Cocoa Corners - Birthday",
+      "product": "celebration-cake",
+      "occasions": ["birthday"]
+    },
+    "teenage-crush": {
+      "images": ["Teenage-Crush.jpg"],   
+      "name": "Teenage Crush",
       "product": "celebration-cake",
       "occasions": ["birthday"]
     },
@@ -1589,15 +1759,39 @@
       "product": "celebration-cake",
       "occasions": ["birthday"]
     },
+    "eras-poster": {
+      "images": ["Eras-Poster.jpg"],   
+      "name": "Eras Poster",
+      "product": "celebration-cake",
+      "occasions": ["birthday"]
+    },
     "mixed-purple-gold": {
       "images": ["Mixed-Purple-Gold.jpg"],   
       "name": "Mixed - Purple & Gold",
-      "product": "cupcake",
-      "occasions": ["birthday","gift"]
+      "product": "cupcakes",
+      "occasions": ["birthday","gift"],
+      "testimonial": {
+        "text": "The giant cupcake and cupcakes were delicious everyone loved them and all the different decorations. All gone!",
+        "name": "Beryl",
+        "location": "Newbury"
+      },
+      "flavours" : ["Vanilla", "Chocolate", "Raspberry & White Chocolate","Lemon"]
+    },
+    "saphire-present": {
+      "images": ["Saphire-Present.jpg"],
+      "name": "Saphire Present",
+      "product": "celebration-cake",
+      "occasions": ["anniversary"]
     },
     "pink-and-sparkle": {
       "images": ["Pink-and-Sparkle.jpg"],   
       "name": "Pink & Sparkle",
+      "product": "celebration-cake",
+      "occasions": ["birthday"]
+    },
+    "taylor-swift-eras": {
+      "images": ["Taylor-Swift-Eras.jpg"],   
+      "name": "Taylor Swift Eras",
       "product": "celebration-cake",
       "occasions": ["birthday"]
     },
@@ -1670,6 +1864,18 @@
       "name": "Edibel Image - Animal",
       "product": "celebration-cake",
       "occasions": ["birthday"]
+    },
+    "joint-celebrations": {
+      "images": ["Joint-Celebrations.jpg"],
+      "name": "Joint Celebrations",
+      "product":"celebration-cake",
+      "occasions": ["birthday"],
+      "testimonial": {
+        "text": "Just want to say thank you very much for the cake, you did a brilliant job and everyone loved it. Sponge was delicious.",
+        "name": "Linda"
+      },
+      "flavours": ["Vanilla"]
+
     },
     "corporate-cupcakes-colour": {
       "images": ["Corporate-Cupcakes-Branding-Colour.jpg"],   
@@ -2035,7 +2241,7 @@
       "occasions": ["christening"]
     },     
     "pink-mix-flowers": {
-      "images": ["Pink-Mix-Flowers.jpg"],   
+      "images": ["Pink-Mix-Flowers.jpg","Pink-Mix-Bday-Flowers.jpg"],   
       "name": "Pink Mix - Flowers",
       "product": "cupcakes",
       "occasions": ["birthday", "anniversary"]
@@ -2263,7 +2469,12 @@
       "images": ["Just-Chocolate-Plain.jpg"],   
       "name": "Just Chocolate",
       "product": "celebration-cake",
-      "occasions": ["birthday"]
+      "occasions": ["birthday"],
+      "testimonial": {
+        "text": "I just wanted to say a huge thank you for the delicious chocolate cake you made for me. It was exactly what I wanted and was very much enjoyed by us all!",
+        "name": "Carolyn"
+      },
+      "flavours": ["Chocolate"]
     },    
     "quavers-and-quarks": {
       "images": ["Quavers-and-Quarks.jpg"],   
@@ -3281,7 +3492,7 @@
         "name": "Andy",
         "location": "West Berkshire"
       },
-      "product": "deluxe-cupcake",
+      "product": "deluxe-cupcakes",
       "occasions": ["birthday", "afternoon-tea", "gift"],
       "flavours": ["Lemon", "Chocolate", "Chocolate Oreo"]
     },
