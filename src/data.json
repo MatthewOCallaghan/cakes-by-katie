@@ -144,7 +144,7 @@
         {
           "title": "The United Kingdom Weddings & Honeymoons Awards 2025",
           "subtitle": "Wedding Cake Designer (Finalist)",
-          "text": "<p>Cakes by Katie is a finalist in the 'Wedding Cake Designer' category in this year's UKWHA, which recognise excellence in the wedding and honeymoon industries. The winners will be announced at the awards ceremony on 13 February 2025 at The Dorchester, London in Mayfair.</p>",
+          "text": "<p>I was delighted to be a finalist in the 'Wedding Cake Designer' category of the UK Weddings and Honeymoons Awards 2025, which were held at The Dorchester Hotel in Mayfair, London in February. These awards recognise excellence in the wedding and honeymoon industries.</p>",
           "image": {
             "path": "features/ukwha-2025-finalist.png",
             "alt": "UKWHA 2025 finalist rosette"
@@ -152,7 +152,7 @@
         },
         {
           "title": "South England Prestige Awards 2024/25",
-          "subtitle": "Cake Designer of the Year",
+          "subtitle": "Cakes by Katie<br>Cake Designer of the Year",
           "text": "<p>The Prestige Awards recognise small and medium-sized businesses that have proven to be the best in their market over the past 12 months.  The judging panel base their decision upon areas such as service excellence, quality of the product/service provided, innovative practices, value, ethical or sustainable methods of working, as well as consistency in performance. The winners selected are those who can best demonstrate their strengths in these areas.</p>",
           "image": {
             "path": "features/prestige-2025-winner.png",
@@ -161,7 +161,7 @@
         },
         {
           "title": "Luxlife Food & Drinks Awards 2024",
-          "subtitle": "Best Bespoke Celebration Cake Bakery - Berkshire",
+          "subtitle": "Cakes by Katie<br>Best Bespoke Celebration Cake Bakery - Berkshire",
           "text": "<p>Luxury Lifestyle Awards is a global award program that selects, recognises, celebrates and promotes the best luxury goods and services worldwide. Through comprehensive market research and a meticulous nomination and selection process, excellence is identified and honoured.</p>",
           "image": {
             "path": "features/luxlife-2024-winner.png",
@@ -180,7 +180,7 @@
         {
           "title": "The United Kingdom Weddings & Honeymoons Awards 2024",
           "subtitle": "Rising Star (Finalist)",
-          "text": "<p>The UKWHA recognise excellence in the wedding and honeymoon industries.  We were honoured to be a finalist in the ‘Rising Star’ category of the UKWHA 2024 awards which was held at a spectacular gala evening at Kew Gardens in February 2024.</p>",
+          "text": "<p>The UKWHA recognise excellence in the wedding and honeymoon industries.  I was honoured to be a finalist in the ‘Rising Star’ category of the UKWHA 2024 awards which was held at a spectacular gala evening at Kew Gardens in February 2024.</p>",
           "image": {
             "path": "features/wh-Rising-Star-Rosette.png",
             "alt": "The United Kingdom Weddings & Honeymoons Awards 2024 'Rising Star' finalist rosette"
@@ -699,7 +699,7 @@
     },
     "jenifer": {
       "images": ["Jenifer.jpg"],
-      "name": "Jenfier",
+      "name": "Jenifer",
       "description": "Photographer: Rachel Jane Photography (racheljanephoto.co.uk)",
       "product":"wedding-cake",
       "occasions": ["wedding"]

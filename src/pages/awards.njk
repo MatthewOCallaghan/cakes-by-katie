@@ -17,7 +17,7 @@
             <div class="award">
                 {{ pictureElement(post.image.path, post.image.alt, "50vw") }}
                 <h2>{{ post.title }}</h2>
-                <h3>{{ post.subtitle }}</h3>
+                <h3>{{ post.subtitle | safe }}</h3>
                 <hr />
                 {{ post.text | safe }}
             </div>
