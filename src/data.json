@@ -337,13 +337,13 @@
         {
           "name": "Carved cakes",
           "description": "Cut to the desired shape, hand carved cakes bring to life the cake design.",
-          "examples": ["parker-penguin", "reading-football-shirt"]
+          "examples": ["parker-penguin", "prime-ice-pop"]
         },
         {
           "name": "Edible images",
           "description": "Edible images can be placed on either a buttercream or fondant finished cake. They offer greater design flexibility and are cheaper than fondant models. An edible image of a favourite photograph will also add that personal touch.",
           "examples": [
-            "superhero-ombre",
+            "let-it-go",
             "pink-and-bluey",
             "football-print-arsenal"
           ]
@@ -362,7 +362,7 @@
         {
           "name": "Balloons",
           "description": "Topping the cake with a balloon gives an extra touch.",
-          "examples": ["celebration-pink-gin", "celebration"]
+          "examples": ["choc-confetti"]
         }
       ],
       "cta": {
