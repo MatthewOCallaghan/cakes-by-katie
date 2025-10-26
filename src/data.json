@@ -515,7 +515,14 @@
     }
   },
   "portfolio": {
-    "fishing-for-dreams": {
+    "emily": {
+      "images": ["emily.jpg"],
+      "name": "Emily",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["Family Farm"]
+    },
+  "fishing-for-dreams": {
       "images": ["Fishing-for-Dreams.jpg"],
       "squareImage": "Fishing-for-Dreams-square.jpg",
       "name": "Fishing for Dreams",
@@ -527,123 +534,47 @@
       "occasions": ["baby-shower", "christening"],
       "flavours": ["GF Vanilla"]
     },
-    "arabella": {
-      "images": ["Arabella.jpg"],
-      "name": "Arabella",
+    "lotty": {
+      "images": ["lotty.jpg", "lotty2.jpg"],
+      "description": "Photographer: Charly Woodhouse Photography ",
+      "name": "Lotty",
       "product": "wedding-cake",
-      "occasions": ["wedding"]
-    },
-    "milk-and-white": {
-      "images": ["Milk-and-White.jpg"],
-      "name": "Milk & White",
-      "testimonial": {
-          "text": "Just wanted to say a big thank you on behalf of my son and daughter-in-law for the cake. It was incredible and they were delighted with it.",
-          "name": "Anne",
-          "location": "Newbury"
-        },
-      "product": "celebration-cake",
-      "occasions": ["birthday"],
-      "flavours": ["Chocolate"]
-    },
-    "welcome-to-the-jungle": {
-      "images": ["Welcome-to-the-Jungle.jpg"],
-      "name": "Welcome to the Jungle",
-      "testimonial": {
-        "text": "I just wanted to say thank you so much for the cake! It's literally perfect and better than the photos, thank you!!",
-        "name": "Chloe",
-        "location": "Thatcham"
+      "occasions": ["wedding"],
+      "venue" : ["Ufton Court"],
+      "testimonial":{
+        "text": "I just wanted to say a huge thank you for our wedding cake on Sunday, it was absolutely perfect. It looked beautiful and was everything we had imagined (and more!), and every single layer tasted amazing. We had so many guests comment on how good it was, and I am so glad we chose you to make it for us. You were so lovely to work with from start to finish, and it honestly felt so special seeing the cake on the day after all the planning. Apologies about the cake ribbon though - Chloe saved the day and it was just as beautiful as I had planned.",
+        "name": "Lotty & George",
+        "location": "Tilehurst"
       },
-      "product":"celebration-cake",
-      "occasions": ["birthday"],
-      "flavours": ["Vanilla"]
+      "flavours": ["Lemon", "Toffee", "Vanilla"]
+    }, 
+    "jules": {
+      "images": ["jules.jpg"],
+      "name": "Jules",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["The Post Barn"]
     },
-    "the-one-where-its-your-birthday": {
-      "images": ["The-One-Where-its-your-Birthday.jpg"],
-      "name": "The One Where It's Your Birthday",
-      "product": "cupcakes",
-      "occasions": ["birthday", "gift"]
+
+    "hannah": {
+      "images": ["hannah.jpg"],
+      "name": "Hannah",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["Wasing Park"]
+    },
+   "bryony": {
+      "images": ["Bryony.jpg"],
+      "name": "Bryony",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["Sheepdrove"]
     },
     "flopsy-in-pink-christening": {
       "images": ["Flopsy-in-Pink-Christening.jpg","Flopsy-in-Pink-Christening-2.jpg"],
       "name": "Flopsy in Pink - Christening",
       "product":"celebration-cake",
       "occasions": ["christening"]
-    },
-    
-    "wild-west": {
-      "images": ["Wild-West.jpg"],
-      "name": "Wild West",
-      "product":"celebration-cake",
-      "occasions": ["birthday"]
-    },
-    "charlotte": {
-      "images": ["Charlotte.jpg"],
-      "squareImage": "Charlotte-square.jpg",
-      "description": "Photographer: Jade Koh Photography",
-      "name": "Charlotte",
-      "product": "wedding-cake",
-      "occasions": ["wedding"]
-    },
-    "jeffrey": {
-      "images": ["Jeffrey.jpg"],
-      "squareImage": "Jeffrey-square.jpg",
-      "name": "Jeffrey",
-      "product": "celebration-cake",
-      "occasions": ["birthday"]
-    },
-    "semi-naked-bethj": {
-      "images": ["Semi-Naked-BethJ.jpg", "Semi-Naked-BethJ-Side.jpg"],
-      "description": "Photographer: DM Photography", 
-      "name": "Semi Naked",
-      "product":"wedding-cake",
-      "occasions": ["wedding"]
-    },
-    "corporate-cupcake-hearts": {
-      "images": ["Corporate-Cupcakes-Hearts.jpg"],
-      "name": "Corporate Cupcakes - Event Logo",
-      "testimonial": {
-        "text": "Again massive thank you for the cupcakes. Everyone loved them as they were truly delicious!",
-        "name": "Marianna, Freixenet Copestick Limited"
-      },
-      "product": "cupcakes",
-      "occasions": ["corporate"],
-      "flavours": ["GF Vanilla", "GF Chocolate", "Vegan Vanilla", "Vegan Chocolate"]
-    },
-     "dreamland-express": {
-      "images": ["Dreamland-Express.jpg"],
-      "squareImage": "Dreamland-Express-square.jpg",
-      "name": "Dreamland Express",
-      "product": "celebration-cake",
-      "occasions": ["christening"]
-    },
-    "black-gold-milestone": {
-      "images": ["Black-Gold-Milestone.jpg"],
-      "name": "Black & Gold Milestone",
-      "testimonial": {
-        "text": "Katie was brilliant at taking time to talk through with me the best cake concept and ideas for our corporate event. The finished cake was safely delivered to our venue and was absolutely stunning! Even better, it tasted so good. It really was the centrepiece for our event that we hoped for, thank you Katie!",
-        "name": "Bex, Barracuda, Reading"
-      },
-      "product": "celebration-cake",
-      "occasions": ["anniversary", "corporate"],
-      "flavours": ["Vanilla", "Chocolate"]
-    },
-    "chapt-30": {
-      "images": ["Chapt-30.jpg"],
-      "name": "Chapter 30",
-      "product":"celebration-cake",
-      "occasions": ["birthday"]
-    }, 
-    "21-Today": {
-      "images": ["21-Today.jpg"],
-      "name": "21 Today!",
-      "product":"cupcakes",
-      "occasions": ["birthday"]
-    },
-    "puddles-the-penguin": {
-      "images": ["Puddles-the-Penguin.jpg"],
-      "name": "Puddles the Penguin",
-      "product": "celebration-cake",
-      "occasions": ["birthday"]
     },
     "petals-and-promises-olly": {
       "images": ["Petals-and-Promises-Olly-2.jpg", "Petals-and-Promises-Olly.jpg"],
@@ -656,15 +587,275 @@
       },
       "product": "wedding-cake",
       "occasions": ["wedding"],
-      "flavours": ["Lemon", "Orange"]
+      "flavours": ["Lemon", "Orange"],
+      "venue" : ["St Barnabas Church"]
     },
-    "bryony": {
-      "images": ["Bryony.jpg"],
-      "name": "Bryony",
+    "janelle": {
+      "images": ["janelle.jpg","janelle-distance.jpg"],
+      "name": "Janelle",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["The Old Mill"]
+    },
+    "natalie": {
+      "images": ["natalie.jpg"],
+      "name": "Natalie",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["The Post Barn"]
+    }, 
+   "arabella": {
+      "images": ["Arabella.jpg"],
+      "name": "Arabella",
       "product": "wedding-cake",
       "occasions": ["wedding"]
+    }, 
+
+    "semi-naked-george-austin": {
+      "images": ["semi-naked-george-austin.jpg"],
+      "description": "Photographer: Golden Moments Photos & Events",
+      "name": "Semi Naked",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["The Retreat, Elcot ParK"]
+    },"elegancia": {
+      "images": ["Elegancia2.jpg", "Elegancia.jpg"],
+      "name": "Elegancia",
+      "product": "celebration-cake",
+      "occasions":["birthday"]
     },
-     "fault-line-green-and-gold": {
+    "youre-the-chosen-one": {
+      "images": ["Youre-the-Chosen-One.jpg", "Youre-the-Chosen-One2.jpg"],
+      "name": "You're The Chosen One",
+      "description": "Second Photo - Photographer: Steffen Milsom Photography (steffenmilsomphotography.co.uk)",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue": ["Donnington Grove"]
+    },
+    "ellie": {
+      "images": ["ellie.jpg"],
+      "name": "Ellie",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["Wasing Park"]
+    },
+    "vintage-zainab": {
+      "images": ["vintage-zainab.jpg", "vintage-zainab2.jpg"],
+      "name": "Vintage - Zainab",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["The Victory Hall"]
+    },
+    "vintage-hayley": {
+      "images": ["vintage-hayley.jpg"],
+      "name": "Vintage - Hayley",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["Hedsor House"]
+    },
+ "sian": {
+      "images": ["sian.jpg","sian2.jpg"],
+      "name": "Siân",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["The Chequers Hotel, Newbury"]
+    },
+    "amy": {
+      "images": ["amy.jpg"],
+      "name": "Amy",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["The Post Barn"]
+    },
+   "welcome-to-the-jungle": {
+      "images": ["Welcome-to-the-Jungle.jpg"],
+      "name": "Welcome to the Jungle",
+      "testimonial": {
+        "text": "I just wanted to say thank you so much for the cake! It's literally perfect and better than the photos, thank you!!",
+        "name": "Chloe",
+        "location": "Thatcham"
+      },
+      "product":"celebration-cake",
+      "occasions": ["birthday"],
+      "flavours": ["Vanilla"]
+    },
+    "eliane": {
+      "images": ["eliane.jpg"],
+      "name": "Eliane",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["Shaw House"],
+      "testimonial":{
+        "text": "I’d like to thank you so much for your excellent service. The cake décor looked absolutely stunning, and I was truly delighted with the final result. Everyone loved the cake, we served it to all our guests, and many even went back for a second slice! It was a real highlight of the day. Thank you again for your incredible work and attention to detail.",
+        "name": "Eliane & Oliver",
+        "location": "Thatcham"
+      },
+      "flavours": ["Coffee & Walnut"]
+    },
+    "abby": {
+      "images": ["abby.jpg"],
+      "name": "Abby",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["Combe Manor"]
+    },
+    "lorraine": {
+      "images": ["lorraine.jpg"],
+      "name": "Lorraine",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["Carey's Manor"]
+    },
+    "jeffrey": {
+      "images": ["Jeffrey.jpg"],
+      "squareImage": "Jeffrey-square.jpg",
+      "name": "Jeffrey",
+      "product": "celebration-cake",
+      "occasions": ["birthday"]
+    },
+"natalia": {
+      "images": ["Natalia.jpg","Natalia-Low.jpg","Natalia-Top.jpg"],
+      "name": "Natalia",
+      "product": "wedding-cake",
+      "occasions": ["wedding","birthday","anniversary"]
+        },
+"jessica": {
+      "images": ["Jessica-Close-Up.jpg", "Jessica.jpg"],
+      "name": "Jessica",
+      "description": "Photographer: Jack Aldridge Photography (jackaldridgephotography.co.uk)",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "testimonial": {
+        "text": "Just wanted to say thank you so so much for our amazing wedding cake! Everyone commented on it and how nice it was! It was better than we could have ever expected!",
+        "name": "Jess",
+        "location": "Basingstoke"
+      },
+      "flavours": ["Coffee", "Raspberry & White Chocolate", "Lemon & Elderflower"],
+      "venue" : ["The Post Barn"]
+    },
+    "bee-happy-with-pooh": {
+      "images": ["Bee-Happy-with-Pooh.jpg"],
+      "name": "Bee Happy with Pooh",
+      "product":"celebration-cake",
+      "occasions": ["birthday"]
+    },
+    "kirsten-3tier": {
+      "images": ["kirsten-3tier.jpg"],
+      "name": "Kirsten - 3 tier",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["Trunkwell House"],
+      "testimonial": {
+        "text": "Thank you so much for the cake! It was delicious, so beautiful and exactly what we wanted, and everyone loved it so much! Most people didn’t realise it was vegan it was that good!",
+        "name": "Anna & Elias",
+        "location": "Feltham"
+      },
+      "flavours": ["Vegan Chocolate"]
+    },
+  "doughnut-tower": {
+    "images": ["doughnut-tower.jpg"],
+   "description": "Photographer: Benjamin Stuart Photography",
+    "name": "Doughnut Tower",
+    "product": "wedding-cake",
+    "occasions": ["wedding"],
+    "venue" : ["Wasing Park"]
+  },
+  "the-one-where-its-your-birthday": {
+      "images": ["The-One-Where-its-your-Birthday.jpg"],
+      "name": "The One Where It's Your Birthday",
+      "product": "cupcakes",
+      "occasions": ["birthday", "gift"]
+    },
+    "dreamland-express": {
+      "images": ["Dreamland-Express.jpg"],
+      "squareImage": "Dreamland-Express-square.jpg",
+      "name": "Dreamland Express",
+      "product": "celebration-cake",
+      "occasions": ["christening"]
+    },
+"leah": {
+      "images": ["leah.jpg", "leah2.jpg"],
+      "description": "Photographer: Kevin James Photogarphy",
+      "name": "Leah",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["The Swan at Streatley"],
+      "testimonial":{
+        "text": "We just wanted to say a massive thank you for the cake last Saturday, it looked absolutely stunning and our guests were raving about how good it tasted. Thankfully we've got some stashed in our freezer to look forward to eating once we're back from honeymoon!",
+        "name": "Leah & Ryan",
+        "location": "London"
+      },
+      "flavours": ["Toffee", "Lemon & Elderflower", "Vanilla"]
+    },
+    "woodland-fairytales": {
+      "images": ["Woodland-Fairytales.jpg"],
+      "name": "Woodland Fairytales",
+      "product": "celebration-cake",
+      "occasions":["birthday"]
+    },
+ "courtney": {
+      "images": ["courtney2.jpg", "courtney.jpg"],
+      "description": "Photographer: Olga J Photography",
+      "name": "Courtney",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["The Post Barn"]
+    },
+    "puddles-the-penguin": {
+      "images": ["Puddles-the-Penguin.jpg"],
+      "name": "Puddles the Penguin",
+      "product": "celebration-cake",
+      "occasions": ["birthday"]
+    },
+ "semi-naked-anna": {
+      "images": ["semi-naked-anna.jpg"],
+      "name": "Semi Naked",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["Stanlake Park"]
+    },
+    "kemi": {
+      "images": ["kemi.jpg","kemi2.jpg"],
+      "description": "Photographer: Dream Team Photographer & Film",
+      "name": "Kemi",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["The Post Barn"],
+      "testimonial": {
+        "text": "The cake was absolutely stunning and matched the decor perfectly. We are glad to have had your work as a part of our special day.",
+        "name": "Zac & Kemi",
+        "location": "Staines"
+      },
+     "flavours": ["Raspberry & White Chocolate", "Vanilla"]
+    },
+    "diamond-toast": {
+      "images": ["Diamond-Toast.jpg"],
+      "squareImage": "Diamond-Toast-square.jpg",
+      "name": "Diamond Toast",
+      "product": "celebration-cake",
+      "occasions": ["anniversary"]
+    },
+    "samantha": {
+      "images": ["samantha.jpg"],
+      "name": "Samantha",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["Forest Edge Tipis, Welford Park"]
+    },
+     "tiny-terry": {
+      "images": ["Tiny-Terry.jpg"],   
+      "name": "Tiny Terry",
+      "product": "celebration-cake",
+      "occasions": ["christening"]
+    },
+    "jessica-katherine": {
+      "images": ["jessica-katherine.jpg"],
+      "name": "Jessica",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["Wasing Park"]
+    },
+    "fault-line-green-and-gold": {
       "images": [
         "Fault-Line-Green-and-Gold.jpg",
         "Fault-Line-Green-and-Gold-2.jpg"
@@ -673,17 +864,32 @@
       "product": "celebration-cake",
       "occasions": ["birthday"]
     },
-    "elegancia": {
-      "images": ["Elegancia2.jpg", "Elegancia.jpg"],
-      "name": "Elegancia",
-      "product": "celebration-cake",
-      "occasions":["birthday"]
+    "semi-naked-jess-c": {
+      "images": ["semi-naked-jessica-c.jpg"],
+      "name": "Semi Naked",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["Wasing Park"]
     },
-    "woodland-fairytales": {
-      "images": ["Woodland-Fairytales.jpg"],
-      "name": "Woodland Fairytales",
+    "time-for-tea": {
+      "images": ["Time-For-Tea.jpg"],
+      "name": "Time for Tea",
       "product": "celebration-cake",
-      "occasions":["birthday"]
+      "occasions": ["birthday"]
+    },
+    "francesca": {
+      "images": ["francesca.jpg"],
+      "description": "Photographer: Indiego Photogarphy",
+      "name": "Francesca",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["Pembroke Lodge"],
+      "testimonial": {
+        "text": "We couldn’t have asked for a more perfect wedding cake! Not only was it stunningly beautiful but it tasted absolutely amazing. Every detail was crafted with care and our guests couldn’t stop talking about it. You truly made our vision come to life and we are so grateful for your talent and professionalism. Thank you for being part of our special day and creating such a memorable centrepiece!",
+        "name": "Frankie &  Josh",
+        "location": "Devon"
+      },
+      "flavours": ["GF Choocolate", "GF Lemon & Elderflower", "GF Raspberry & White Chocolate"]
     },
     "petals-and-pearls": {
       "images": ["Petals-and-Pearls.jpg"],
@@ -697,85 +903,20 @@
       "occasions": ["birthday"],
       "flavours": ["Lemon"]
     },
-    "jenifer": {
-      "images": ["Jenifer.jpg"],
-      "name": "Jenifer",
-      "description": "Photographer: Rachel Jane Photography (racheljanephoto.co.uk)",
-      "product":"wedding-cake",
-      "occasions": ["wedding"]
-    },
-    "our-story": {
-      "images": ["Our-Story.jpg"],
-      "name": "Our Story",
-      "product":"celebration-cake",
-      "occasions": ["birthday","anniversary"]
-    },
-    "bee-happy-with-pooh": {
-      "images": ["Bee-Happy-with-Pooh.jpg"],
-      "name": "Bee Happy with Pooh",
-      "product":"celebration-cake",
-      "occasions": ["birthday"]
-    },
-    "jessica": {
-      "images": ["Jessica-Close-Up.jpg", "Jessica.jpg"],
-      "name": "Jessica",
-      "description": "Photographer: Jack Aldridge Photography (jackaldridgephotography.co.uk)",
+    "renee": {
+      "images": ["renee2.jpg","renee.jpg"],
+      "description": "Photographer: Will Hartop",
+      "name": "Vintage - Renée",
       "product": "wedding-cake",
       "occasions": ["wedding"],
-      "testimonial": {
-        "text": "Just wanted to say thank you so so much for our amazing wedding cake! Everyone commented on it and how nice it was! It was better than we could have ever expected!",
-        "name": "Jess",
-        "location": "Basingstoke"
-      },
-      "flavours": ["Coffee", "Raspberry & White Chocolate", "Lemon & Elderflower"]
-
+      "venue" : ["Old Gore"]
     },
-    "charlotte-olive": {
-      "images": ["Charlotte-Olive.jpg", "Charlotte-Olive2.jpg"],
-      "name": "Charlotte & Olive",
-      "description": "Photographer: Dana Sonia (danasoniaphotography.com)",
-      "product": "wedding-cake",
-      "occasions": ["wedding"]
-    },
-  "natalia": {
-      "images": ["Natalia.jpg","Natalia-Low.jpg","Natalia-Top.jpg"],
-      "name": "Natalia",
-      "product": "wedding-cake",
-      "occasions": ["wedding","birthday","anniversary"]
-        },
-   
-    "youre-the-chosen-one": {
-      "images": ["Youre-the-Chosen-One.jpg", "Youre-the-Chosen-One2.jpg"],
-      "name": "You're The Chosen One",
-      "description": "Second Photo - Photographer: Steffen Milsom Photography (steffenmilsomphotography.co.uk)",
-      "product": "wedding-cake",
-      "occasions": ["wedding"]
-    },
-    "diamond-toast": {
-      "images": ["Diamond-Toast.jpg"],
-      "squareImage": "Diamond-Toast-square.jpg",
-      "name": "Diamond Toast",
-      "product": "celebration-cake",
-      "occasions": ["anniversary"]
-    },
-    "bouquet-pink-mix": {
-      "images": ["Bouquet-Pink-Mix.jpg"],
-      "name": "Bouquet - Pink Mix",
-      "product": "cupcakes",
-      "occasions": ["birthday", "anniversary", "afternoon-tea", "gift"]
-    },
-   
-    "celebrate-with-champagne": {
-      "images": ["Celebrate-with-Champagne.jpg"],
-      "name": "Celebrate with Champagne",
+    "baby-bears": {
+      "images": ["Baby-Bears.jpg"],
+      "squareImage": "Baby-Bears-square.jpg",
+      "name": "Baby Bears",
       "product":"celebration-cake",
-      "occasions": ["birthday","anniversary","corporate"]
-    },
-   "charming-flopsy": {
-      "images": ["Charming-Flopsy.jpg"],
-      "name": "Charming Flopsy",
-      "product": "celebration-cake",
-      "occasions": ["christening", "baby-shower"]
+      "occasions":["baby-shower", "gender-reveal"]
     }, 
     "floral-tower": {
       "images": ["Floral-Tower.jpg"],
@@ -786,14 +927,463 @@
       },
       "product": "cupcakes",
       "occasions": ["wedding","birthday","anniversary"],
-      "flavours": ["Chocolate Orange", "Coffee & Walnut", "Orange", "Lemon", "Carrot"]
+      "flavours": ["Chocolate Orange", "Coffee & Walnut", "Orange", "Lemon", "Carrot"],
+      "venue" : ["The Retreat, Elcot ParK"]
     },
-    "alisha":{
-      "images": ["Alisha-Close-Up.jpg", "Alisha.jpg"],
-      "description": "Photographer: Jim Cossey Photography",
-      "name": "Alisha",
+"bella-and-bubbles": {
+      "images": ["Bella-and-Bubbles.jpg"],
+      "name": "Bella & Bubbles",
+      "product": "celebration-cake",
+      "occasions": ["birthday"]
+    },
+    "louisa": {
+      "images": ["louisa.jpg"],
+      "name": "Louisa",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["The Beatle & Wedge"]
+    },
+    "lavender-swifty": {
+      "images": ["Lavender-Swifty.jpg", "Lavender-Swifty2.jpg"],
+      "name": "Lavender Swifty",
+      "product": "celebration-cake",
+      "occasions": ["birthday"]
+    },
+    "just-vintage": {
+      "images": ["just-vintage.jpg"],
+      "description": "Photographer: Photogarphy by Linas",
+      "name": "Just Vintage",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["Wasing Park"]
+    },
+    "enchanted-castle": {
+      "images": ["Enchanted-Castle.jpg"],
+      "name": "Enchanted Castle",
+      "testimonial": {
+        "text": "Just wanted to say an enormous thank you for Isabella's castle cake. It was incredible! I'll be back in touch for my son's birthday in June.",
+        "name": "Charlotte"
+      },
+      "product": "celebration-cake",
+      "occasions": ["birthday"],
+      "flavours": ["Raspberry & White Chocolate", "Vanilla"]
+    },
+"semi-naked-connie": {
+      "images": ["semi-naked-connie.jpg"],
+      "name": "Semi Naked",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["The Post Barn"],
+      "testimonial": {
+        "text": "We just wanted to say a big thank you for our lovely wedding cake and for all your help in the build up to the day! The cake looked and tasted amazing!",
+        "name": "Connie & Matt",
+        "location": "Reading"
+      },
+      "flavours": ["Vanilla", "Raspberry & White Chocolate"]
+    },
+    "off-to-the-ball": {
+      "images": ["Off-to-the-Ball.jpg"],
+      "squareImage": "Off-to-the-Ball-square.jpg",
+      "name": "Off to the Ball",
+      "product": "celebration-cake",
+      "occasions": ["birthday"]
+    },
+"ellie-satin": {
+      "images": ["ellie-satin.jpg"],
+      "name": "Ellie - Satin",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["Monkey Island"]
+    },
+    "pretty-in-pink": {
+      "images": ["Pretty-in-Pink.jpg"],
+      "squareImage": "Pretty-in-Pink-square.jpg",
+      "name": "Pretty ih Pink",
+      "product": "celebration-cake",
+      "occasions": ["birthday"]
+    },
+    "marjorie": {
+      "images": ["marjorie.jpg"],
+      "name": "Marjorie",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["Wasing Park"]
+    },
+    "let-it-go": {
+      "images": ["Let-It-Go.jpg", "Let-it-Go-2.jpg"],
+      "name": "Let It Go",
+      "product": "celebration-cake",
+      "occasions": ["birthday"]
+    },
+    "vintage-sophie": {
+      "images": ["vintage-sophie.jpg"],
+      "name": "Vintage Sophie",
       "product": "wedding-cake",
       "occasions": ["wedding"]
+    },
+    "jungle-joyride": {
+      "images": ["Jungle-Joyride.jpg"],
+      "name": "Jungle Joyride",
+      "product":"celebration-cake",
+      "occasions": ["baby-shower"]
+    },
+    "elle": {
+      "images": ["elle.jpg","elle2.jpg"],
+      "name": "Elle",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["Thatcham Football Club"],
+      "testimonial": {
+        "text": "Thank you so much for the cakes. They went down a treat. They were delicious. Again thank you so much!",
+        "name": "Elle & Harley",
+        "location": "Thatcham"
+      },
+     "flavours": ["Raspberry & White Chocolate", "Lemon", "Vanilla Cupcakes"]
+    },
+    "spiderman": {
+      "images": ["Spiderman.jpg"],
+      "name": "Spiderman",
+      "product": "celebration-cake",
+      "occasions": ["birthday"],
+      "testimonial": {
+        "text": "The Spider-Man cake not only looked awesome but also tasted delicious. A great combination!",
+        "name": "Hannah"
+      },
+      "flavours": ["Chocolate Oreo"]
+    },
+    "just-louisa": {
+      "images": ["just-louisa.jpg"],
+      "name": "Just Louisa",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["The Dolphin, Newbury"]
+    },
+    "enchanted": {
+    "images": ["Enchanted.jpg"],
+    "name": "Enchanted",
+    "product": "celebration-cake",
+    "occasions": ["birthday"]
+  },
+  "bon-voyage-corfu": {
+    "images": ["Bon-Voyage-Corfu.jpg"],
+    "name": "Bon Voyage - Corfu",
+    "testimonial": {
+      "text": "Just wanted to say a massive thank you for making my mum's 60th birthday cake…it was amazing, it looked fab and tasted amazing. Your buttercream is to die for…my mum was over the moon with it.",
+      "name": "Penny"
+   },
+   "product":"celebration-cake",
+    "occasions": ["birthday"],
+    "flavours": ["Vanilla"]
+  },
+    "louisa-angel": {
+      "images": ["louisa-angel.jpg"],
+      "name": "Louisa",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["Hedsor House"],
+      "testimonial": {
+          "text": "We wanted to thank you for the beautiful cake you made for our wedding. The design was elegant and exactly what we had hoped for. The cake tasted wonderful as well — our guests really enjoyed it and many mentioned how delicious it was. We truly appreciate your care and attention to detail in bringing everything together. It was a pleasure working with you and having your creation as part of our special day.",
+          "name": "Angel & Edwin",
+          "location": "London"
+        },
+        "flavours": ["Vanilla", "Vanilla Biscoff", "Toffee"]
+    },
+    "wild-west": {
+      "images": ["Wild-West.jpg"],
+      "name": "Wild West",
+      "product":"celebration-cake",
+      "occasions": ["birthday"]
+    },
+    "sage-lily-3tier": {
+      "images": ["sage-lily-3tier.jpg"],
+      "name": "Sage & Lily - 3 tier",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["Dean Court Community Centre"]
+    },
+
+    "bouquet-pink-mix": {
+      "images": ["Bouquet-Pink-Mix.jpg"],
+      "name": "Bouquet - Pink Mix",
+      "product": "cupcakes",
+      "occasions": ["birthday", "anniversary", "afternoon-tea", "gift"]
+    },
+    "semi-naked-alex-sarah": {
+      "images": ["semi-naked-alex-sarah2.jpg", "semi-naked-alex-sarah.jpg"],
+      "description": "Photographer: Liam Collard Photography",
+      "name": "Semi Naked",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["Wasing Park"]
+    },
+    "celebrate-with-champagne": {
+      "images": ["Celebrate-with-Champagne.jpg"],
+      "name": "Celebrate with Champagne",
+      "product":"celebration-cake",
+      "occasions": ["birthday","anniversary","corporate"]
+    },
+   "lauren": {
+      "images": ["lauren.jpg"],
+      "description": "Photographer: Kevin James Photogarphy",
+      "name": "Lauren",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["East Hampstead Park"]
+    },
+    "charming-flopsy": {
+      "images": ["Charming-Flopsy.jpg"],
+      "name": "Charming Flopsy",
+      "product": "celebration-cake",
+      "occasions": ["christening", "baby-shower"]
+    }, 
+     "just-kirsten": {
+      "images": ["just-kirsten.jpg"],
+      "name": "Just Kirsten",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["The Post Barn"]
+    },
+"milk-and-white": {
+      "images": ["Milk-and-White.jpg"],
+      "name": "Milk & White",
+      "testimonial": {
+          "text": "Just wanted to say a big thank you on behalf of my son and daughter-in-law for the cake. It was incredible and they were delighted with it.",
+          "name": "Anne",
+          "location": "Newbury"
+        },
+      "product": "celebration-cake",
+      "occasions": ["birthday"],
+      "flavours": ["Chocolate"]
+    },
+ "dreamland-hugs": {
+      "images": ["Dreamland-Hugs.jpg", "Dreamland-Hugs-Plaque.jpg"],
+      "name": "Dreamland Hugs",
+      "product":"celebration-cake",
+      "occasions": ["christening"],
+      "testimonial": {
+        "text": "I just wanted to write to say thank you for Elsie's christening cake, it was so beautiful and delicious. We received so many compliments from the guests everyone was so impressed and our daughter was thrilled, Without doubt we will be returning for our next big celebration and I will recommend you to everyone :) Thank you again Katie for making us such a beautiful cake.",
+        "name": "Nikki"
+      },
+      "flavours": ["Vanilla"]
+
+    },
+"emma": {
+      "images": ["emma.jpg"],
+      "name": "Emma",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["Cantley House Hotel"]
+    },
+    "subtle-in-pink": {
+      "images": ["Subtle-in-Pink.jpg"],
+      "name": "Subtle in Pink",
+      "testimonial": {
+        "text": "Wanted to say a huge thank you for the cakes. They were amazing and went down very well!",
+        "name": "Paul"
+     },
+     "product": "celebration-cake",
+      "occasions": ["birthday"],
+      "flavours": ["Chocolate Oreo", "Vegan Vanilla Cupcakes"]
+    },
+    "semi-naked-oceane": {
+      "images": ["semi-naked-oceane.jpg"],
+      "name": "Semi Naked",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["Stanlake Park"]
+    },
+    "our-story": {
+      "images": ["Our-Story.jpg"],
+      "name": "Our Story",
+      "product":"celebration-cake",
+      "occasions": ["birthday","anniversary"]
+    },
+    "kirsten-autumn": {
+      "images": ["kirsten-autumn.jpg"],
+      "description": "Photographer: Phil Stock Photogarphy",
+      "name": "Kirsten - Autumn",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["The Red House Pub"]
+    },
+    "chapt-30": {
+      "images": ["Chapt-30.jpg"],
+      "name": "Chapter 30",
+      "product":"celebration-cake",
+      "occasions": ["birthday"]
+    }, 
+"charlotte-hannah": {
+      "images": ["charlotte-hannah.jpg"],
+      "name": "Charlotte",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["Cantley House Hotel"],
+      "testimonial":{
+        "text": "We just wanted to send a quick message to say thank you for providing our amazing wedding cake yesterday, as we never ended up crossing paths during the day. It looked fantastic and tasted great - there wasn't much left!",
+        "name": "Hannah & Ben",
+        "location": "Guildford"
+      },
+      "flavours": ["Coffee", "Lemon & Elderflower", "Raspberry & White Chocolate"]
+    },
+    "corporate-cupcake-hearts": {
+      "images": ["Corporate-Cupcakes-Hearts.jpg"],
+      "name": "Corporate Cupcakes - Event Logo",
+      "testimonial": {
+        "text": "Again massive thank you for the cupcakes. Everyone loved them as they were truly delicious!",
+        "name": "Marianna, Freixenet Copestick Limited"
+      },
+      "product": "cupcakes",
+      "occasions": ["corporate"],
+      "flavours": ["GF Vanilla", "GF Chocolate", "Vegan Vanilla", "Vegan Chocolate"]
+    },
+"just-leah": {
+      "images": ["just-leah.jpg"],
+      "name": "Just Leah",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["The Great House"]
+    },
+    "come-fly-with-me": {
+      "images": ["Come-Fly-With-Me.jpg"],
+      "name": "Come Fly With Me",
+      "videos": [
+        {
+          "thumb": "Come-Fly-With-Me.jpg",
+          "file": "Come-Fly-With-Me.mp4"
+        }
+      ],
+      "product": "celebration-cake",
+      "occasions": ["birthday"]
+    },
+    "vintage-evans": {
+      "images": ["vintage-evans.jpg"],
+      "name": "Vintage - Evans",
+      "product": "wedding-cake",
+      "occasions": ["wedding"]
+    },
+"black-gold-milestone": {
+      "images": ["Black-Gold-Milestone.jpg"],
+      "name": "Black & Gold Milestone",
+      "testimonial": {
+        "text": "Katie was brilliant at taking time to talk through with me the best cake concept and ideas for our corporate event. The finished cake was safely delivered to our venue and was absolutely stunning! Even better, it tasted so good. It really was the centrepiece for our event that we hoped for, thank you Katie!",
+        "name": "Bex, Barracuda, Reading"
+      },
+      "product": "celebration-cake",
+      "occasions": ["anniversary", "corporate"],
+      "flavours": ["Vanilla", "Chocolate"]
+    },
+"semi-naked-george": {
+      "images": ["semi-naked-george.jpg"],
+      "name": "Semi Named",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["Old Luxtors"]
+    },
+"two-infinity": {
+      "images": ["Two-Infinity.jpg"],
+      "name": "Two Infinity",
+      "product": "celebration-cake",
+      "occasions": ["birthday"]
+    },
+    "semi-naked-steph": {
+      "images": ["semi-naked-steph.jpg"],
+      "name": "Semi Naked",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["The Retreat, Elcot ParK"]
+    },
+    "pink-cascade-2": {
+      "images": ["Pink-Cascade-2.jpg"],
+      "name": "Pink Cascade",
+      "product": "celebration-cake",
+      "occasions": ["birthday"]
+    }, 
+    "semi-naked-ross": {
+      "images": ["semi-naked-ross.jpg"],
+      "name": "Semi Naked",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["Oakely Hall"]
+    },
+    "shades-of-chocolate": {
+      "images": ["Shades-of-Chocolate-2.jpg", "Shades-of-Chocolate.jpg"],
+      "squareImage": "Shades-of-Chocolate-square.jpg",
+      "name": "Shades of Chocolate",
+      "product": "celebration-cake",
+      "occasions": ["birthday"]
+    },
+    "vintage-georgina": {
+      "images": ["vintage-georgina.jpg"],
+      "name": "Vintage - Georgina",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["Moor Hall"]
+    },
+"beautifully-rustic": {
+      "images": ["Beautifully-Rustic.jpg"],
+      "name": "Beautifully Rustic",
+      "product":"celebration-cake",
+      "occasions":["birthday","christening", "baby-shower"]
+    },    
+    "alice": {
+      "images": ["alice.jpg","alice2.jpg"],
+      "name": "Alice",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["The Retreat, Elcot ParK"]
+    },
+   "bears-and-bunting": {
+      "images": ["Bears-and-Bunting.jpg"],
+      "name": "Bears & Bunting",
+      "testimonial": { 
+        "text": "I just wanted to say the cake was absolutely delicious and lovely. No one thought it was gluten free, that's how tasty it was. Thank you so much. You are great at what you do.",
+        "name": "Pam"
+      },
+      "product": "celebration-cake",
+      "occasions": ["birthday"],
+      "flavours": ["GF Vanilla"]
+    },
+    "charlotte": {
+      "images": ["Charlotte.jpg"],
+      "squareImage": "Charlotte-square.jpg",
+      "description": "Photographer: Jade Koh Photography",
+      "name": "Charlotte",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["Sheepdrove"]
+    },
+     "21-Today": {
+      "images": ["21-Today.jpg"],
+      "name": "21 Today!",
+      "product":"cupcakes",
+      "occasions": ["birthday"]
+    },
+    "semi-naked-bethj": {
+      "images": ["Semi-Naked-BethJ.jpg", "Semi-Naked-BethJ-Side.jpg"],
+      "description": "Photographer: DM Photography", 
+      "name": "Semi Naked",
+      "product":"wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["Wasing Park"]
+    },
+    "grace": {
+      "images": ["Grace.jpg"],   
+      "name": "Grace",
+      "testimonial":{
+        "text": "I just wanted to thank you very much for the lovely cake you made for me - it was amazing and it got so many compliments. Very grateful - thanks.",
+        "name":"Jane"
+      },
+      "product": "celebration-cake",
+      "occasions": ["birthday"],
+      "flavours": ["Vanilla"]
+    },
+    "jenifer": {
+      "images": ["Jenifer.jpg"],
+      "name": "Jenifer",
+      "description": "Photographer: Rachel Jane Photography (racheljanephoto.co.uk)",
+      "product":"wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["The Retreat, Elcot ParK"]
     },
     "piano-forte": {
       "images": ["Piano-Forte.jpg"],
@@ -807,220 +1397,27 @@
      "product": "celebration-cake",
       "occasions": ["graduation"]
     },
-    
-     "two-infinity": {
-      "images": ["Two-Infinity.jpg"],
-      "name": "Two Infinity",
-      "product": "celebration-cake",
-      "occasions": ["birthday"]
-    },
-    "pink-cascade-2": {
-      "images": ["Pink-Cascade-2.jpg"],
-      "name": "Pink Cascade",
-      "product": "celebration-cake",
-      "occasions": ["birthday"]
-    }, 
-    "come-fly-with-me": {
-      "images": ["Come-Fly-With-Me.jpg"],
-      "name": "Come Fly With Me",
-      "videos": [
-        {
-          "thumb": "Come-Fly-With-Me.jpg",
-          "file": "Come-Fly-With-Me.mp4"
-        }
-      ],
-      "product": "celebration-cake",
-      "occasions": ["birthday"]
-    },
-    "enchanted-ever-after": {
-      "images": ["Enchanted-Ever-After.jpg", "Enchanted-Ever-After-Couple.jpg"],
-      "description": "Photographer: Matthew Johnston Photography",
-      "name": "Enchanted Ever After",
-      "testimonial": {
-        "text": "My husband and I got married on 13.7.24 and Katie created (I say \"created\" rather than \"made\" because it was a visual spectacle as well as something delicious to eat!) our wedding cake. My grandmother actually found Katie and booked her as a surprise for us, revealing it at our engagement party. She said that she had spoken to so many bakers and none of them seemed to care just as much as Katie, who understood that this wasn't just a cake, it was a part of the most important day of our lives. Katie has been so brilliant at being communicative. Nothing was too much bother and, after our consultation, she knew exactly the kind of thing I was looking for. When I asked if we could put little Disney ears on the bottom tier without it being too much, she said \"absolutely,\" and did it in a way that was tasteful and really adorable. I loved our tasting, too, as she sent them through the post and we got to sample a lot of different (and delicious) flavours. From then I knew we were in safe hands! The cake was absolutely stunning to look at and to eat. Guests adored it (specifically the carrot cake!) and I couldn't be happier. Katie, thank you so much for your flexibility, your listening skills, your talent and your patience with us. We really feel you cared about our wedding day and giving us the perfect cake that encapsulated our personalities. If you're looking for someone to create a really special cake (and one that tastes amazing) for an event, we couldn't recommend Katie highly enough!",
-        "name": "Nadine & David",
-        "location": "Eastleigh"
-      },
-      "product":"wedding-cake",
+    "charlotte-olive": {
+      "images": ["Charlotte-Olive.jpg", "Charlotte-Olive2.jpg"],
+      "name": "Charlotte & Olive",
+      "description": "Photographer: Dana Sonia (danasoniaphotography.com)",
+      "product": "wedding-cake",
       "occasions": ["wedding"],
-      "flavours": ["Carrot, Lemon, Chocolate Biscoff"]
+      "venue" : ["The Mill House Hotel"]
     },
-    "baby-shark-lullaby": {
-      "images": ["Baby-Shark-Lullaby.jpg"],
-      "name": "Baby Shark Lullaby",
-      "product":"celebration-cake",
-      "occasions": ["birthday"]
-    },
-    "dreamland-hugs": {
-      "images": ["Dreamland-Hugs.jpg", "Dreamland-Hugs-Plaque.jpg"],
-      "name": "Dreamland Hugs",
-      "product":"celebration-cake",
-      "occasions": ["christening"],
-      "testimonial": {
-        "text": "I just wanted to write to say thank you for Elsie's christening cake, it was so beautiful and delicious. We received so many compliments from the guests everyone was so impressed and our daughter was thrilled, Without doubt we will be returning for our next big celebration and I will recommend you to everyone :) Thank you again Katie for making us such a beautiful cake.",
-        "name": "Nikki"
-      },
-      "flavours": ["Vanilla"]
-
-    },
-    "birthday-mix-pink-flowers": {
+  "birthday-mix-pink-flowers": {
       "images": ["Birthday-Mix-Pink-Flowers-2.jpg", "Birthday-Mix-Pink-Flowers.jpg"],
       "name": "Birthday Mix - Pink Flowers",
       "product": "cupcakes",
       "occasions": ["birthday"]
     },
-   "enchanted-castle": {
-      "images": ["Enchanted-Castle.jpg"],
-      "name": "Enchanted Castle",
-      "testimonial": {
-        "text": "Just wanted to say an enormous thank you for Isabella's castle cake. It was incredible! I'll be back in touch for my son's birthday in June.",
-        "name": "Charlotte"
-      },
-      "product": "celebration-cake",
-      "occasions": ["birthday"],
-      "flavours": ["Raspberry & White Chocolate", "Vanilla"]
-    },
-    "zara": {
-      "images": ["Zara.jpg"],
-      "name": "Zara",
-      "testimonial": {
-        "text":"I just wanted to say a BIG thank you for your beautiful cake at our reception last week. Everyone absolutely loved it. ",
-        "name":"Faraz & Zara",
-        "location":"Earley"
-      },
+    "alisha":{
+      "images": ["Alisha-Close-Up.jpg", "Alisha.jpg"],
+      "description": "Photographer: Jim Cossey Photography",
+      "name": "Alisha",
       "product": "wedding-cake",
       "occasions": ["wedding"],
-      "flavours": ["Chocolate Biscoff", " Chocolate Oreo", "Lemon"]
-    },
-    "bears-and-bunting": {
-      "images": ["Bears-and-Bunting.jpg"],
-      "name": "Bears & Bunting",
-      "testimonial": { 
-        "text": "I just wanted to say the cake was absolutely delicious and lovely. No one thought it was gluten free, that's how tasty it was. Thank you so much. You are great at what you do.",
-        "name": "Pam"
-      },
-      "product": "celebration-cake",
-      "occasions": ["birthday"],
-      "flavours": ["GF Vanilla"]
-    },
-    "off-to-the-ball": {
-      "images": ["Off-to-the-Ball.jpg"],
-      "squareImage": "Off-to-the-Ball-square.jpg",
-      "name": "Off to the Ball",
-      "product": "celebration-cake",
-      "occasions": ["birthday"]
-    },
-    "shades-of-chocolate": {
-      "images": ["Shades-of-Chocolate-2.jpg", "Shades-of-Chocolate.jpg"],
-      "squareImage": "Shades-of-Chocolate-square.jpg",
-      "name": "Shades of Chocolate",
-      "product": "celebration-cake",
-      "occasions": ["birthday"]
-    },
-    "beautifully-rustic": {
-      "images": ["Beautifully-Rustic.jpg"],
-      "name": "Beautifully Rustic",
-      "product":"celebration-cake",
-      "occasions":["birthday","christening", "baby-shower"]
-    },
-    "petals-and-promises": {
-      "images": ["Petals-and-Promises-2.jpg", "Petals-and-Promises.jpg"],
-      "squareImage": "Petals-and-Promises-square.jpg",
-      "name": "Petals & Promises",
-      "description": "First photo taken by Simon Withyman Photography",
-      "testimonial": {
-        "text": "Thank you so much for the stunning wedding cake, we were all delighted with it!",
-        "name": "June",
-        "location": "Thatcham"
-      },
-      "product": "wedding-cake",
-      "occasions": ["wedding"],
-      "flavours": ["Vanilla"]
-    },
-    "baby-bears": {
-      "images": ["Baby-Bears.jpg"],
-      "squareImage": "Baby-Bears-square.jpg",
-      "name": "Baby Bears",
-      "product":"celebration-cake",
-      "occasions":["baby-shower", "gender-reveal"]
-    }, 
-    "pretty-in-pink": {
-      "images": ["Pretty-in-Pink.jpg"],
-      "squareImage": "Pretty-in-Pink-square.jpg",
-      "name": "Pretty ih Pink",
-      "product": "celebration-cake",
-      "occasions": ["birthday"]
-    },
-   "kirsten": {
-      "images": ["Kirsten.jpg"],
-      "name": "Kirsten",
-      "product": "wedding-cake",
-      "occasions": ["wedding"],
-      "testimonial": {
-        "text": "I cannot recommend the wedding cake made by Cakes by Katie highly enough! It was absolutely stunning to look at and tasted even better than it looked. Our guests were raving about it all night! Katie was an absolute pleasure to work with throughout the entire process. She listened and understood our vision and created a cake that was exactly what we had in mind. Thank you so much for creating such a memorable and delicious centrepiece for our wedding!",
-        "name": "Jason, Benson"
-      },
-    "flavours": ["Raspberry & White Chocolate", "Chocolate Biscoff"]
-    }, 
-    "golden-50th": {
-      "images": ["Golden-50th.jpg"],
-      "name": "Golden 50th",
-      "product": "cupcakes",
-      "occasions": ["anniversary"]
-    },
-     "a-stylish-affair": {
-      "images": ["A-Stylish-Affair.jpg"],
-      "name": "A Stylish Affair",
-      "product": "celebration-cake",
-      "occasions": ["birthday", "anniversary"]
-    },
-    "bella-and-bubbles": {
-      "images": ["Bella-and-Bubbles.jpg"],
-      "name": "Bella & Bubbles",
-      "product": "celebration-cake",
-      "occasions": ["birthday"]
-    },
-    "ivy": {
-      "images": ["Ivy.jpg"],
-      "name": "Ivy",
-      "description": "Photographer: Jade Koh Photography",
-      "product": "wedding-cake",
-      "occasions": ["wedding"]
-    },
-    "jungle-joyride": {
-      "images": ["Jungle-Joyride.jpg"],
-      "name": "Jungle Joyride",
-      "product":"celebration-cake",
-      "occasions": ["baby-shower"]
-    },
-    "semi-naked-three-tier-dog": {
-      "images": ["Semi-Naked-3tier-Dog.jpg"],
-      "name": "Semi Naked",
-      "testimonial":{
-        "text": "Katie did a fantastic job of creating our wedding cake, which was just nearby at Wasing Park. The cake looked fantastic and she was really professional and responsive in making sure it was exactly what we wanted. She catered to my husband's nut allergy whilst still being able to offer us a wide range of flavours and the cake absolutely disappeared on the day as everyone loved it! Her pricing is also really reasonable compared to some of the specialist wedding cake providers I looked at.  I'd highly recommend her ",
-        "name": "Ellie & Ed",
-        "location": "London"
-      },
-      "product":"wedding-cake",
-      "occasions": ["wedding"],
-      "flavours": ["Lemon & Elderflower", "Chocolate Orange", "Raspberry & White Chocolate"]
-    }, 
-    "birthday-mix-blue-cars": {
-      "images": ["Birthday-Mix-Blue-Cars.jpg"],
-      "name": "Birthday Mix - Blue Cars",
-      "product": "cupcakes",
-      "occasions": ["birthday"]
-    }, 
-    "grace": {
-      "images": ["Grace.jpg"],   
-      "name": "Grace",
-      "testimonial":{
-        "text": "I just wanted to thank you very much for the lovely cake you made for me - it was amazing and it got so many compliments. Very grateful - thanks.",
-        "name":"Jane"
-      },
-      "product": "celebration-cake",
-      "occasions": ["birthday"],
-      "flavours": ["Vanilla"]
+      "venue" : ["The Post Barn"]
     },
     "classic-drips-golden-chocolate": {
       "images": ["Classic-Drips-Golden-Chocolate.jpg", "Classic-Drips-Golden-Chocolate2.jpg", "Classic-Drips-Golden-ChocV2.jpg"],
@@ -1033,18 +1430,124 @@
       "occasions": ["birthday"],
       "flavours": ["Baileys"]
     },
+    "enchanted-ever-after": {
+      "images": ["Enchanted-Ever-After.jpg", "Enchanted-Ever-After-Couple.jpg"],
+      "description": "Photographer: Matthew Johnston Photography",
+      "name": "Enchanted Ever After",
+      "testimonial": {
+        "text": "My husband and I got married on 13.7.24 and Katie created (I say \"created\" rather than \"made\" because it was a visual spectacle as well as something delicious to eat!) our wedding cake. My grandmother actually found Katie and booked her as a surprise for us, revealing it at our engagement party. She said that she had spoken to so many bakers and none of them seemed to care just as much as Katie, who understood that this wasn't just a cake, it was a part of the most important day of our lives. Katie has been so brilliant at being communicative. Nothing was too much bother and, after our consultation, she knew exactly the kind of thing I was looking for. When I asked if we could put little Disney ears on the bottom tier without it being too much, she said \"absolutely,\" and did it in a way that was tasteful and really adorable. I loved our tasting, too, as she sent them through the post and we got to sample a lot of different (and delicious) flavours. From then I knew we were in safe hands! The cake was absolutely stunning to look at and to eat. Guests adored it (specifically the carrot cake!) and I couldn't be happier. Katie, thank you so much for your flexibility, your listening skills, your talent and your patience with us. We really feel you cared about our wedding day and giving us the perfect cake that encapsulated our personalities. If you're looking for someone to create a really special cake (and one that tastes amazing) for an event, we couldn't recommend Katie highly enough!",
+        "name": "Nadine & David",
+        "location": "Eastleigh"
+      },
+      "product":"wedding-cake",
+      "occasions": ["wedding"],
+      "flavours": ["Carrot, Lemon, Chocolate Biscoff"],
+      "venue" : ["Highcliffe Castle"]
+    },
     "rosalia": {
       "images": ["Rosalia3.jpg", "Rosalia.jpg","Rosalia2.jpg"],
       "name": "Rosalia",
       "product": "celebration-cake",
       "occasions": ["birthday", "christening"]
     },
-
+    "zara": {
+      "images": ["Zara.jpg"],
+      "name": "Zara",
+      "testimonial": {
+        "text":"I just wanted to say a BIG thank you for your beautiful cake at our reception last week. Everyone absolutely loved it. ",
+        "name":"Faraz & Zara",
+        "location":"Earley"
+      },
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "flavours": ["Chocolate Biscoff", " Chocolate Oreo", "Lemon"],
+      "venue" : ["Crowne Plaza, Marlow"]
+    },
     "wild-one": {
       "images": ["Wild-One.jpg", "Wild-One2.jpg"],
       "name": "Wild One",
       "product": "celebration-cake",
       "occasions": ["birthday"]
+    },
+"petals-and-promises": {
+      "images": ["Petals-and-Promises-2.jpg", "Petals-and-Promises.jpg"],
+      "squareImage": "Petals-and-Promises-square.jpg",
+      "name": "Petals & Promises",
+      "description": "First photo taken by Simon Withyman Photography",
+      "testimonial": {
+        "text": "Thank you so much for the stunning wedding cake, we were all delighted with it!",
+        "name": "June",
+        "location": "Thatcham"
+      },
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "flavours": ["Vanilla"],
+      "venue" : ["Forest Edge Tipis, Welford Park"]
+    },
+    "baby-shark-lullaby": {
+      "images": ["Baby-Shark-Lullaby.jpg"],
+      "name": "Baby Shark Lullaby",
+      "product":"celebration-cake",
+      "occasions": ["birthday"]
+    },
+   "kirsten": {
+      "images": ["Kirsten.jpg"],
+      "name": "Kirsten",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "testimonial": {
+        "text": "I cannot recommend the wedding cake made by Cakes by Katie highly enough! It was absolutely stunning to look at and tasted even better than it looked. Our guests were raving about it all night! Katie was an absolute pleasure to work with throughout the entire process. She listened and understood our vision and created a cake that was exactly what we had in mind. Thank you so much for creating such a memorable and delicious centrepiece for our wedding!",
+        "name": "Jason, Benson"
+      },
+    "flavours": ["Raspberry & White Chocolate", "Chocolate Biscoff"],
+    "venue" : ["Mercure Thame Lambert Hotel"]
+    }, 
+    "golden-50th": {
+      "images": ["Golden-50th.jpg"],
+      "name": "Golden 50th",
+      "product": "cupcakes",
+      "occasions": ["anniversary"]
+    },
+    "ivy": {
+      "images": ["Ivy.jpg"],
+      "name": "Ivy",
+      "description": "Photographer: Jade Koh Photography",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["Sheepdrove"]
+    },
+     "a-stylish-affair": {
+      "images": ["A-Stylish-Affair.jpg"],
+      "name": "A Stylish Affair",
+      "product": "celebration-cake",
+      "occasions": ["birthday", "anniversary"]
+    },
+    "semi-naked-three-tier-dog": {
+      "images": ["Semi-Naked-3tier-Dog.jpg"],
+      "name": "Semi Naked",
+      "testimonial":{
+        "text": "Katie did a fantastic job of creating our wedding cake, which was just nearby at Wasing Park. The cake looked fantastic and she was really professional and responsive in making sure it was exactly what we wanted. She catered to my husband's nut allergy whilst still being able to offer us a wide range of flavours and the cake absolutely disappeared on the day as everyone loved it! Her pricing is also really reasonable compared to some of the specialist wedding cake providers I looked at.  I'd highly recommend her ",
+        "name": "Ellie & Ed",
+        "location": "London"
+      },
+      "product":"wedding-cake",
+      "occasions": ["wedding"],
+      "flavours": ["Lemon & Elderflower", "Chocolate Orange", "Raspberry & White Chocolate"],
+      "venue" : ["Wasing Park"]
+    }, 
+    "birthday-mix-blue-cars": {
+      "images": ["Birthday-Mix-Blue-Cars.jpg"],
+      "name": "Birthday Mix - Blue Cars",
+      "product": "cupcakes",
+      "occasions": ["birthday"]
+    }, 
+    "simply-wed": {
+      "images": ["Simply-Wed.jpg", "Simply-Wed-Topper.jpg"],
+      "description": "Photographer: Alison Busby Photography",
+      "name": "Simply Wed",
+      "product":"wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["Newbury Rugby Club"]
     },
     "fault-line-pink-roses": {
       "images": ["Fault-Line-Pink-Roses.jpg", "Fault-Line-Pink-Roses-v2.jpg"],
@@ -1052,17 +1555,84 @@
       "product": "celebration-cake",
       "occasions": ["birthday"]
     },
+    "kirsten-buttercream": {
+      "images": ["Kirsten-Buttercream.jpg"],
+      "name": "Kirsten -  Buttercream",
+      "squareImage": "Kirsten-Buttercream-square.jpg",
+      "product": "wedding-cake",
+      "occasions": ["wedding"]
+    },
     "fault-line-beige-gold": {
       "images": ["Fault-Line-Beige-Gold-70-Side.jpg", "Fault-Line-Beige-Gold-70.jpg", "Fault-Line-Beige-and-Gold.jpg"],
       "name": "Fault Line - Beige & Gold",
       "product":"celebration-cake",
       "occasions": ["birthday"]
-    }, 
+    },
+    "katherine":{
+      "images": ["Katherine.jpg", "Katherine-Flowers.jpg"],
+      "description": "Photographer: Chris Kemp Photography",
+      "name": "Katherine",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "testimonial": {
+        "text": "Just wanted to say a huge thank you for the cake you made for us.  It was absolutely stunning and delicious!",
+        "name": "Katherine",
+        "location": "Woodley"
+      },
+      "flavours": ["Raspberry & White Chocolate", "Lemon"],
+      "venue" : ["The Vineyard"]
+    },
     "chocolate-box": {
       "images": ["Chocolate-Box.jpg", "Chocolate-Box-Open.jpg"],
       "name": "Chocolate Box",
       "product": "cupcakes",
       "occasions": ["birthday", "anniversary", "afternoon-tea", "gift"]
+    },
+    "onyx-and-snow":{
+      "images": ["Onyx-Snow.jpg"],
+      "description": "Photographer: Stephen Baron Photography",
+      "name": "Onyx & Snow",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["The Royal Oak, Yattendon"]
+    },
+    "chocolate-drips-mms": {
+      "images": ["Chocolate-Drips-MMs.jpg"],
+      "name": "Chocolate Drips - M&Ms",
+      "product": "celebration-cake",
+      "occasions": ["birthday"]
+    },
+    "semi-naked-sage": {
+      "images": ["Semi-Naked-Sage.jpg"],
+      "name": "Semi Naked - Sage",
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "venue" : ["Wasing Park"]
+    },
+    "confetti-in-the-clouds": {
+      "images": ["Confetti-in-the-Clouds.jpg"],
+      "name": "Confetti in the Clouds",
+      "testimonial": {
+        "text": "From the start Katie was extremely helpful with her ideas and very professional. The cake tasted delicious and my daughter was over the moon. I will certainly be using Katie again. Highly recommend.",
+        "name": "Harriet",
+        "location": "Hungerford"
+      },
+      "product": "celebration-cake",
+      "occasions": ["birthday"],
+      "flavours": ["Chocolate Oreo"]
+    },
+    "semi-naked-drips": {
+      "images": ["Semi-Naked-Drip.jpg"],
+      "name": "Semi Naked - Drips",
+      "testimonial": {
+        "text": "THANK YOU SO MUCH for the cake. It looked beautiful thank you and it's all gone! Everyone enjoyed eating it. Sorry I didn't see you Saturday, but thank you, it was fantastic!!",
+        "name": "Robyn",
+        "location": "Thatcham"
+      },
+      "product": "wedding-cake",
+      "occasions": ["wedding"],
+      "flavours": ["Chocolate", "Raspberry & White Chocolate"],
+      "venue" : ["Donnington Grove"]
     },
     "bluey-in-blue": {
       "images": ["Bluey-in-Blue.jpg"],
@@ -1082,51 +1652,13 @@
       "product": "celebration-cake",
       "occasions": ["birthday"]
     },
-    
-    "subtle-in-pink": {
-      "images": ["Subtle-in-Pink.jpg"],
-      "name": "Subtle in Pink",
-      "testimonial": {
-        "text": "Wanted to say a huge thank you for the cakes. They were amazing and went down very well!",
-        "name": "Paul"
-     },
-     "product": "celebration-cake",
-      "occasions": ["birthday"],
-      "flavours": ["Chocolate Oreo", "Vegan Vanilla Cupcakes"]
-    },
-    "simply-wed": {
-      "images": ["Simply-Wed.jpg", "Simply-Wed-Topper.jpg"],
-      "description": "Photographer: Alison Busby Photography",
-      "name": "Simply Wed",
-      "product":"wedding-cake",
-      "occasions": ["wedding"]
-    },
     "diamond-anniversary-2": {
       "images": ["Diamond-Anniversary-2.jpg"],
       "name": "Diamond Anniversary 2",
       "product": "celebration-cake",
       "occasions": ["anniversary"]
-    },"kirsten-buttercream": {
-      "images": ["Kirsten-Buttercream.jpg"],
-      "name": "Kirsten -  Buttercream",
-      "squareImage": "Kirsten-Buttercream-square.jpg",
-      "product": "wedding-cake",
-      "occasions": ["wedding"]
-    }, 
-       "katherine":{
-      "images": ["Katherine.jpg", "Katherine-Flowers.jpg"],
-      "description": "Photographer: Chris Kemp Photography",
-      "name": "Katherine",
-      "product": "wedding-cake",
-      "occasions": ["wedding"],
-      "testimonial": {
-        "text": "Just wanted to say a huge thank you for the cake you made for us.  It was absolutely stunning and delicious!",
-        "name": "Katherine",
-        "location": "Woodley"
-      },
-      "flavours": ["Raspberry & White Chocolate", "Lemon"]
-      
     },
+       
     "petals-and-birthday-wishes": {
       "images": ["Petals-and-Birthday-Wishes.jpg", "Petals-Birthday-Wish-30-2.jpg",  "Petals-Birthday-Wish-30.jpg"],
       "name": "Petals & Birthday Wishes",
@@ -1156,13 +1688,7 @@
       "name": "Fresh FLowers - Winter Pinks",
       "product": "celebration-cake",
       "occasions": ["birthday"]
-    }, "onyx-and-snow":{
-      "images": ["Onyx-Snow.jpg"],
-      "description": "Photographer: Stephen Baron Photography",
-      "name": "Onyx & Snow",
-      "product": "wedding-cake",
-      "occasions": ["wedding"]
-    },
+    }, 
     
     "bouquet-pink-blue": {
       "images": ["Bouquet-Pink-Blue.jpg"],
@@ -1170,41 +1696,7 @@
       "product": "cupcakes",
       "occasions": ["birthday", "anniversary", "afternoon-tea", "gift"]
     },
-    "chocolate-drips-mms": {
-      "images": ["Chocolate-Drips-MMs.jpg"],
-      "name": "Chocolate Drips - M&Ms",
-      "product": "celebration-cake",
-      "occasions": ["birthday"]
-    },"semi-naked-sage": {
-      "images": ["Semi-Naked-Sage.jpg"],
-      "name": "Semi Naked - Sage",
-      "product": "wedding-cake",
-      "occasions": ["wedding"]
-    },
-    "semi-naked-drips": {
-      "images": ["Semi-Naked-Drip.jpg"],
-      "name": "Semi Naked - Drips",
-      "testimonial": {
-        "text": "THANK YOU SO MUCH for the cake. It looked beautiful thank you and it's all gone! Everyone enjoyed eating it. Sorry I didn't see you Saturday, but thank you, it was fantastic!!",
-        "name": "Robyn",
-        "location": "Thatcham"
-      },
-      "product": "wedding-cake",
-      "occasions": ["wedding"],
-      "flavours": ["Chocolate", "Raspberry & White Chocolate"]
-    },
-    "confetti-in-the-clouds": {
-      "images": ["Confetti-in-the-Clouds.jpg"],
-      "name": "Confetti in the Clouds",
-      "testimonial": {
-        "text": "From the start Katie was extremely helpful with her ideas and very professional. The cake tasted delicious and my daughter was over the moon. I will certainly be using Katie again. Highly recommend.",
-        "name": "Harriet",
-        "location": "Hungerford"
-      },
-      "product": "celebration-cake",
-      "occasions": ["birthday"],
-      "flavours": ["Chocolate Oreo"]
-    },
+  
     
     "fault-line-mixed": {
       "images": ["Fault-Line-Mixed.jpg"],
@@ -1249,12 +1741,7 @@
       "product": "celebration-cake",
       "occasions": ["baby-shower", "gender-reveal"]
     },
-    "time-for-tea": {
-      "images": ["Time-For-Tea.jpg"],
-      "name": "Time for Tea",
-      "product": "celebration-cake",
-      "occasions": ["birthday"]
-    },
+   
      "vinyl-vibes": {
       "images": ["Vinyl-Vibes.jpg"],
       "name": "Vinyl Vibes",
@@ -1298,12 +1785,6 @@
     "experimental": {
       "images": ["Experimental.jpg"],   
       "name": "Experimental",
-      "product": "celebration-cake",
-      "occasions": ["birthday"]
-    },
-    "football-crazy": {
-      "images": ["Football-Crazy.jpg"],
-      "name": "Football Crazy",
       "product": "celebration-cake",
       "occasions": ["birthday"]
     },
@@ -1376,12 +1857,6 @@
       "product": "celebration-cake",
       "occasions": ["birthday"]
     },
-    "golden-biscoff": {
-      "images": ["Golden-Biscoff.jpg"],
-      "name": "Golden Biscoff",
-      "product": "celebration-cake",
-      "occasions": ["birthday"]
-    },
     "birthday-cupcake": {
       "images": ["Birthday-Cupcake.jpg"],   
       "name": "Birthday Cupcake",
@@ -1415,7 +1890,8 @@
          "text": "Just to say that the cake and favours were amazing. Soo happy with them. Thank you!! All the guests spoke very highly of the cake and loved the cookies design and taste. ",
          "name": "Emma"
       },
-      "flavours": ["Carrot"]
+      "flavours": ["Carrot"],
+      "venue" : ["Pennyhill Park"]
     },
     "choo-choo": {
       "images": ["Choo-Choo.jpg"],
@@ -1463,17 +1939,7 @@
       "product": "celebration-cake",
       "occasions": ["birthday"]
     },
-    "spiderman": {
-      "images": ["Spiderman.jpg"],
-      "name": "Spiderman",
-      "product": "celebration-cake",
-      "occasions": ["birthday"],
-      "testimonial": {
-        "text": "The Spider-Man cake not only looked awesome but also tasted delicious. A great combination!",
-        "name": "Hannah"
-      },
-      "flavours": ["Chocolate Oreo"]
-    },
+   
     "milk-and-peanut": {
       "images": ["Milk-and-Peanut.jpg"],
       "name": "Milk & Peanut",
@@ -1516,12 +1982,7 @@
       "product": "celebration-cake",
       "occasions": ["anniversary"]
     },
-    "let-it-go": {
-      "images": ["Let-It-Go.jpg", "Let-it-Go-2.jpg"],
-      "name": "Let It Go",
-      "product": "celebration-cake",
-      "occasions": ["birthday"]
-    },
+ 
     "arlo": {
       "images": ["Arlo.jpg"],
       "name": "Arlo",
@@ -1533,12 +1994,7 @@
       },
       "flavours": ["Chocolate Biscoff"]
     },
-     "enchanted": {
-      "images": ["Enchanted.jpg"],
-      "name": "Enchanted",
-      "product": "celebration-cake",
-      "occasions": ["birthday"]
-    },
+   
     "dad-to-be-birthday": {
       "images": ["Dad-to-be-Birthday.jpg"],   
       "name": "Dad to be's Birthday",
@@ -1563,18 +2019,7 @@
       "product": "celebration-cake",
       "occasions": ["birthday"]
     },
-    "lilac-sea": {
-      "images": ["Lilac-Sea.jpg"],
-      "name": "Lilac Sea",
-      "product": "celebration-cake",
-      "occasions": ["birthday"]
-    },
-    "tiny-terry": {
-      "images": ["Tiny-Terry.jpg"],   
-      "name": "Tiny Terry",
-      "product": "celebration-cake",
-      "occasions": ["christening"]
-    },
+   
     "fault-line-beige-ferrero-rocher": {
       "images": ["Fault-Line-Beige-Ferrero-Rochers.jpg"],
       "name": "Fault Line - Beige & Ferrero Rochers",
@@ -1605,12 +2050,7 @@
       "product": "celebration-cake",
       "occasions": ["birthday"]
     },
-    "lavender-swifty": {
-      "images": ["Lavender-Swifty.jpg", "Lavender-Swifty2.jpg"],
-      "name": "Lavender Swifty",
-      "product": "celebration-cake",
-      "occasions": ["birthday"]
-    },
+   
     "corporate-birthday": {
       "images": ["Corporate-Birthday.jpg"],   
       "name": "Corporate - Birthday",
@@ -1753,12 +2193,6 @@
       "product": "celebration-cake",
       "occasions": ["birthday"]
     },
-    "golden-50": {
-      "images": ["Golden-50.jpg"],   
-      "name": "Golden 50",
-      "product": "celebration-cake",
-      "occasions": ["birthday"]
-    },
     "eras-poster": {
       "images": ["Eras-Poster.jpg"],   
       "name": "Eras Poster",
@@ -1817,12 +2251,6 @@
       "name": "Petals & Pinks",
       "product": "celebration-cake",
       "occasions": ["birthday"]
-    },
-    "cupcakes-summer-fruits": {
-      "images": ["Summer-Fruits.jpg"],
-      "name": "Summer Fruits",
-      "product": "cupcakes",
-      "occasions": ["wedding"]
     },
     "pac-man": {
       "images": ["Pac-Man.jpg"],   
@@ -1907,17 +2335,7 @@
       "occasions": ["birthday"],
       "flavours": ["Chocolate Orange"]
     },
-    "bon-voyage-corfu": {
-      "images": ["Bon-Voyage-Corfu.jpg"],
-      "name": "Bon Voyage - Corfu",
-      "testimonial": {
-        "text": "Just wanted to say a massive thank you for making my mum's 60th birthday cake…it was amazing, it looked fab and tasted amazing. Your buttercream is to die for…my mum was over the moon with it.",
-        "name": "Penny"
-     },
-     "product":"celebration-cake",
-      "occasions": ["birthday"],
-      "flavours": ["Vanilla"]
-    },
+    
     "birthday-swirls-plaques": {
       "images": ["Birthday-Swirls-Plaques.jpg"],   
       "name": "Birthday Swirls - Plaques",
@@ -2263,12 +2681,6 @@
       "product": "celebration-cake",
       "occasions": ["birthday","anniversary","valentines"]
     },    
-    "edbile-express": {
-      "images": ["Edible-Express.jpg"],
-      "name": "Edible Express",
-      "product": "celebration-cake",
-      "occasions": ["birthday"]
-    },
     "paw-patrol": {
       "images": ["Paw-Patrol.jpg", "Paw-Patrol-Mini.jpg"],   
       "name": "Paw Patrol",
@@ -2452,13 +2864,7 @@
       "name": "Birthday Mix - Monster Trucks",
       "product": "cupcakes",
       "occasions": ["birthday"]
-    },    
-    "literary-waves": {
-      "images": ["Literary-Waves.jpg"],   
-      "name": "Literary Waves",
-      "product": "celebration-cake",
-      "occasions": ["birthday"]
-    },    
+    },   
     "cupcakes-vanilla-malteser": {
       "images": ["Cupcakes-Vanilla-Malteser.jpg"],
       "name": "Vanilla - Malteser",
@@ -2582,34 +2988,11 @@
         "gift"
       ]
     },
-    "edible-image-interest": {
-      "images": ["Edible-Image-Interest.jpg"],   
-      "name": "Edible Image - Interest",
-      "product": "celebration-cake",
-      "occasions": ["birthday"]
-    },
-    "sweets-galore": {
-      "images": ["Sweets-Galore.jpg"],
-      "name": "Sweets Galore",
-      "testimonial": {
-        "text": "Just wanted to say the cake was perfect and a huge hit! So thank you so much!",
-        "name": "Ellie"
-      },
-      "product": "celebration-cake",
-      "occasions": ["birthday"],
-      "flavours": ["Vanilla"]
-    },
     "the-king": {
       "images": ["The-King.jpg"],
       "name": "The King",
       "product": "celebration-cake",
       "occasions": ["birthday"]
-    },
-    "white-ruffles": {
-      "images": ["White-Ruffles.jpg"],
-      "name": "White Ruffles",
-      "product": "celebration-cake",
-      "occasions": ["birthday", "anniversary", "afternoon-tea", "baby-shower"]
     },
     "cupcake-plaque-age": {
       "images": ["Cupcake-Plaque-80.jpg"],
@@ -2655,13 +3038,6 @@
     "barrel-of-blooms": {
       "images": ["Barrel-of-Blooms.jpg"],
       "name": "Barrel of Blooms",
-      "product":"celebration-cake",
-      "occasions": ["birthday"]
-    },
-    
-    "cheers-to-80": {
-      "images": ["Cheers-To-80.jpg"],
-      "name": "Cheers to 80",
       "product":"celebration-cake",
       "occasions": ["birthday"]
     },
@@ -3002,12 +3378,7 @@
       "occasions": ["graduation"],
       "flavours": ["Toffee", "Chocolate"]
     },
-    "ditsy-pink": {
-      "images": ["Ditsy-Pink.jpg"],
-      "name": "Ditsy - Pink",
-      "product": "celebration-cake",
-      "occasions": ["birthday"]
-    },
+ 
     "fathers-day-cupcake-mix": {
       "images": ["Fathers-Day-Cupcake-Mix.jpg"],
       "name": "Father's Day Cupcake Mix",
@@ -3098,12 +3469,7 @@
       "product": "celebration-cake",
       "occasions": ["birthday"]
     },
-    "throwback": {
-      "images": ["Throwback.jpg"],
-      "name": "Throwback",
-      "product": "celebration-cake",
-      "occasions": ["birthday"]
-    },
+
     "fit-for-a-princess": {
       "images": ["Fit-for-a-Princess.jpg"],
       "name": "Fit for a Princess",
@@ -3252,18 +3618,7 @@
       "occasions": ["birthday"],
       "flavours": ["Lemon"]
     },
-    "chocolate-decadence-milestone": {
-      "images": ["Chocolate-Decadence-Milestone.jpg"],
-      "name": "Chocolate Decadence - Milestone",
-      "testimonial": {
-        "text": "A huge thank you for the absolutely stunning cake; it's really taken my breath away. It was certainly a centre piece, it had lots of great comments and tasted delicious. Thank you again for everything.",
-        "name": "Tracy",
-        "location": "West Berkshire"
-      },
-      "product": "celebration-cake",
-      "occasions": ["birthday"],
-      "flavours": ["Chocolate Orange"]
-    },
+   
     "shades-of-chocoate-narrow": {
       "images": ["Shades-of-Chocolate-Narrow.jpg"],
       "name": "Shades of Chocolate - Narrow",
@@ -3294,12 +3649,7 @@
       "occasions": ["birthday"],
       "flavours": ["Vanilla"]
     },
-    "frosty-snowflakes": {
-      "images": ["Frosty-Snowflakes.jpg"],
-      "name": "Frosty Snowflakes",
-      "product": "cupcakes",
-      "occasions": ["birthday", "christmas", "afternoon-tea", "gift"]
-    },
+   
     "a-touch-of-pink-with-chocolate ": {
       "images": [
         "A-Touch-of-Pink-with-Chocolate-Cupcakes.jpg",
@@ -3339,24 +3689,6 @@
       "product": "celebration-cake",
       "occasions": ["birthday"]
     },    
-    "dragon-ball-goku": {
-      "images": ["Dragon-Ball-Goku.jpg"],
-      "name": "Dragon Ball - Goku",
-      "product": "celebration-cake",
-      "occasions": ["birthday"]
-    },
-    "cupcakes-chocolate-decorations": {
-      "images": ["Cupcakes-Chocolate-Decorations.jpg"],
-      "name": "Cupcakes - Chocolate Decorations",
-      "product": "cupcakes",
-      "occasions": ["birthday"]
-    },
-    "birthday-baker": {
-      "images": ["Birthday-Baker.jpg"],
-      "name": "Birthday Baker",
-      "product": "celebration-cake",
-      "occasions": ["birthday"]
-    },
     "christmas-cupcake-ensemble": {
       "images": [
         "Christmas-Cupcake-Ensemble-Box.jpg",
@@ -3394,24 +3726,7 @@
       "product": "cupcakes",
       "occasions": ["birthday", "gift"]
     },
-    "chocolate-decadence": {
-      "images": ["Chocolate-Decadence.jpg"],
-      "name": "Chocolate Decadence",
-      "product": "celebration-cake",
-      "occasions": ["birthday","afternoon-tea"]
-    },
-    "minecraft": {
-      "images": ["Minecraft.jpg"],
-      "name": "Minecraft",
-      "videos": [
-        {
-          "thumb": "Minecraft.jpg",
-          "file": "Minecraft.mp4"
-        }
-      ],
-      "product": "celebration-cake",
-      "occasions": ["birthday"]
-    },
+  
     "pink-and-bluey": {
       "images": ["Pink-and-Bluey.jpg"],
       "name": "Pink & Bluey",
@@ -3441,12 +3756,6 @@
       "product": "celebration-cake",
       "occasions": ["birthday"],
       "flavours": ["Chocolate"]
-    },
-    "birthday-beach-mix": {
-      "images": ["Birthday-Beach-Mix.jpg", "Birthday-Beach-Mix-Box.jpg"],
-      "name": "Birthday Beach Mix",
-      "product": "cupcakes",
-      "occasions": ["birthday", "gift"]
     },
     "psychedelic-symphony": {
       "images": [
@@ -3484,18 +3793,7 @@
       "product": "cupcakes",
       "occasions": ["corporate"]
     },
-    "deluxe-mix": {
-      "images": ["Deluxe-Mix-Gift-Wrap.jpg", "Deluxe-Mix-Open.jpg"],
-      "name": "Deluxe Mix",
-      "testimonial": {
-        "text": "The cupcakes were great thanks - very tasty and a great finish on them.",
-        "name": "Andy",
-        "location": "West Berkshire"
-      },
-      "product": "deluxe-cupcakes",
-      "occasions": ["birthday", "afternoon-tea", "gift"],
-      "flavours": ["Lemon", "Chocolate", "Chocolate Oreo"]
-    },
+  
     "ready-set-go-kart": {
       "images": ["Ready-Set-Go-Kart.jpg"],
       "name": "Ready Set Go-Kart",
@@ -3542,24 +3840,6 @@
       "images": ["Rose-Mix.jpg", "Rose-Mix-Triple.jpg", "Rose-Mix-Single.jpg"],
       "squareImage": ["Rose-Mix-Triple-square.jpg"],
       "name": "Rose Mix",
-      "product": "cupcakes",
-      "occasions": ["birthday", "afternoon-tea", "gift"]
-    },
-    "superhero-ombre": {
-      "images": ["Superhero-Ombre.jpg"],
-      "name": "Superhero Ombré",
-      "testimonial": {
-        "text": "I just wanted to say thank you for such a great cake. It looked and tasted amazing and is almost gone already!! ",
-        "name": "Nicola",
-        "location": "Tadley"
-      },
-      "product": "celebration-cake",
-      "occasions": ["birthday"],
-      "flavours": ["Lemon"]
-    },
-    "cocktails-and-seashells": {
-      "images": ["Cocktails-and-Seashells.jpg"],
-      "name": "Cocktails & Seashells",
       "product": "cupcakes",
       "occasions": ["birthday", "afternoon-tea", "gift"]
     },
@@ -3718,19 +3998,7 @@
       "product": "celebration-cake",
       "occasions": ["birthday"]
     },
-    "ferrero-rocher-cake": {
-      "images": ["Ferrero-Rocher-Cake.jpg"],
-      "squareImage": "Ferrero-Rocher-Cake-square.jpg",
-      "name": "Ferrero Rocher Cake",
-      "videos": [
-        {
-          "thumb": "Ferrero-Rocher-Cake.jpg",
-          "file": "Ferrero-Rocher-Cake.mp4"
-        }
-      ],
-      "product": "celebration-cake",
-      "occasions": ["birthday", "afternoon-tea"]
-    },
+    
     "shades-of-pink-and-gold-fault-line-flowers": {
       "images": ["Shades-of-Pink-and-Gold-Fault-Line-Flowers.jpg"],
       "name": "Fault Line Flowers - Pink & Gold",
@@ -3759,11 +4027,13 @@
     "dreamland-express"
   ],
   "featuredTestimonials": [
-    "semi-naked-drips",
+
+"petals-and-promises-olly",
+"fishing-for-dreams",
     "welcome-to-the-jungle",
-    "chocolate-decadence-milestone",
-    "fresh-flowers-vibrant-pink",
-    "golden-anniversary"
+"jessica",
+    "kirsten-3tier",
+    "black-gold-milestone"
   ],
   "flavours": [
     {
