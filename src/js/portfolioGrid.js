@@ -11,18 +11,22 @@ const GUTTER = 5;
 // This is so we don't load all images are once
 // This function creates the <picture> element within a button
 const createPictureForItem = item => {
-    createPictureElement(item, JSON.parse(item.getAttribute('data-images').split(';')[0]).src, item.getAttribute('data-name'), '230px');
-    
-    // Add `image-loaded` class to item when its image loads
-    // CSS will then fade it in
-    const onLoad = () => {
-        item.classList.add('image-loaded');
-    }
-    const image = item.querySelector('img');
-    if (image.complete) {
-        onLoad();
-    } else {
-        image.addEventListener('load', onLoad);
+    // Only create <picture> element if we haven't already done so
+    // For example, this function can be called repeatedly for the same item when the screen is resized
+    if (!item.querySelector('picture')) {
+        createPictureElement(item, JSON.parse(item.getAttribute('data-images').split(';')[0]).src, item.getAttribute('data-name'), '230px');
+        
+        // Add `image-loaded` class to item when its image loads
+        // CSS will then fade it in
+        const onLoad = () => {
+            item.classList.add('image-loaded');
+        }
+        const image = item.querySelector('img');
+        if (image.complete) {
+            onLoad();
+        } else {
+            image.addEventListener('load', onLoad);
+        }
     }
 }
 
