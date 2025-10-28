@@ -11,10 +11,20 @@
     
     <div class="portfolio-grid-container">
 
-        {# <div id="portfolio-filters">
-            <button id="portfolio-filter-product">Filter by wedding cake</button>
-            <button id="portfolio-filter-occasion">Filter by anniversary</button>
-        </div> #}
+        <div id="portfolio-filters">
+            <button aria-label="Show all cakes"><span>All cakes</span></button>
+            {% for item in [
+                { label: 'Celebration cakes', value: 'celebration-cake' },
+                { label: 'Wedding cakes', value: 'wedding-cake' },
+                { label: 'Cupcakes', value: 'cupcakes' }
+            ]%}
+                <button
+                    aria-label="Filter by {{ item.label | lower }}"
+                    data-product="{{ item.value }}"
+                ><span>{{ item.label }}</span></button>
+            {% endfor %}
+            {# <button id="portfolio-filter-occasion">Filter by anniversary</button> #}
+        </div>
 
         {# Grid of images #}
         <div class="portfolio-grid">

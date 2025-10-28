@@ -10,7 +10,117 @@
     margin: $grid-padding 0;
     padding: 0 $grid-padding;
 
+
+    &[data-filters-product='wedding-cake'] {
+        #portfolio-filters button#portfolio-filter-product {
+            background: pink;
+        }
+    }
+    &[data-filters-occasion='anniversary'] {
+        #portfolio-filters button#portfolio-filter-occasion {
+            background: pink;
+        }
+    }
+
+    #portfolio-filters {
+        display: grid;
+        gap: 5px;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        grid-template-columns: repeat(4, minmax(auto, 1fr));
+        grid-template-rows: auto;
+
+        button {
+            background: none;
+            color: #aaa;
+            border: 2px solid #aaa;
+            border-radius: 5px;
+            width: 100%;
+            padding: 4px 5px;
+            cursor: pointer;
+            transition: color .3s, border .2s, background-color .2s;
+            box-shadow: 0px 0px 3px 0px #0000003d;
+
+            span {
+                // Wrap all text
+                width: min-content;
+                display: block;
+                margin: auto;
+            }
+
+            @include mixins.hover {
+                opacity: 1;
+                color: #000;
+            }
+            &:active {
+                opacity: 1;
+                color: #000;
+            }
+        }
+
+        // Buttons larger on desktop
+        @media (min-width: 700px) {
+            max-width: 900px;
+            gap: 10px;
+
+            button {
+
+                padding: 6px 10px;
+
+                span {
+                    // Stop forcing text wrapping
+                    display: inline;
+                }
+            }
+        }
+    }
+
+    // Selected and hover filter button styles
+    // This is the "All cakes" button
+    #portfolio-filters button:not([data-product]) {
+        @include mixins.hover {
+            border-color: variables.$pink;
+        }
+        &:focus-visible {
+            border-color: variables.$pink;
+        }
+    }
+    &:not([data-filters-product]) {
+        #portfolio-filters button:not([data-product]) {
+            background: variables.$pink;
+            border-color: white;
+            color: #000;
+            opacity: 1;
+        }
+    }
+    // Iterate through product buttons
+    @each $name, $colour in (celebration-cake: #dff6ff, wedding-cake: #fbe4ff, cupcakes: #FFF7CE) {
+
+        #portfolio-filters button[data-product='#{$name}'] {
+
+            @include mixins.hover {
+                border-color: $colour;
+            }
+            &:focus-visible {
+                border-color: $colour;
+            }
+        }
+
+        &[data-filters-product='#{$name}'] {
+            #portfolio-filters button[data-product='#{$name}'] {
+                background: $colour;
+                border-color: white;
+                color: #000;
+                opacity: 1;
+            }
+        }
+    }
+
     .portfolio-grid {
+
+        // Margin below filters
+        margin-top: $grid-padding;
 
         // Grid items use absolute positioning to create masonry layout
         position: relative;
@@ -60,6 +170,13 @@
                 
                 // Hover and load transitions
                 transition: transform .7s, opacity .3s;
+            }
+
+
+            // Only show this item if it meets filters
+            display: none;
+            &.filtered {
+                display: block;
             }
         }
 
