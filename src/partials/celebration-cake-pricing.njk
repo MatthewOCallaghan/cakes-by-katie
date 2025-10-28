@@ -5,11 +5,11 @@
         <th>Round (diameter)</th>
         <th>Square (side length)</th>
     </tr>
-    {% for size, roundPrice in pricing.celebrationCakes.round %}
+    {% for size, roundPrice in products.celebrationCakes.pricing.round %}
         <tr>    
             <td>{{size}}</td>
             <td>£{{roundPrice}}</td>
-            <td>£{{pricing.celebrationCakes.square[size]}}</td>
+            <td>£{{products.celebrationCakes.pricing.square[size]}}</td>
         </tr>
     {% endfor %}
 </table>

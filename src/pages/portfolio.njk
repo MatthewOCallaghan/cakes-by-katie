@@ -14,11 +14,12 @@
         <div id="portfolio-filters">
             <button aria-label="Show all cakes"><span>All cakes</span></button>
             {% for item in [
-                { label: 'Celebration cakes', value: 'celebration-cake' },
-                { label: 'Wedding cakes', value: 'wedding-cake' },
-                { label: 'Cupcakes', value: 'cupcakes' }
+                { label: 'Celebration cakes', value: 'celebration-cake', lightColour: products.celebrationCakes.colours.light, darkColour: products.celebrationCakes.colours.dark },
+                { label: 'Wedding cakes', value: 'wedding-cake', lightColour: products.weddingCakes.colours.light, darkColour: products.weddingCakes.colours.dark },
+                { label: 'Cupcakes', value: 'cupcakes', lightColour: products.cupcakes.colours.light, darkColour: products.cupcakes.colours.dark }
             ]%}
                 <button
+                    style="--selectedBackground: linear-gradient(45deg, {{ item.darkColour }}, {{ item.lightColour }});"
                     aria-label="Filter by {{ item.label | lower }}"
                     data-product="{{ item.value }}"
                 ><span>{{ item.label }}</span></button>

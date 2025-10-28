@@ -4211,37 +4211,53 @@
       "image": "choices/flavours/raspberry.jpg"
     }
   ],
-  "pricing": {
+  "products": {
     "celebrationCakes": {
-      "round": {
-        "4": 45,
-        "5": 50,
-        "6": 55,
-        "7": 60,
-        "8": 65,
-        "9": 70,
-        "10": 80,
-        "11": 85,
-        "12": 90
+      "pricing": {
+        "round": {
+          "4": 45,
+          "5": 50,
+          "6": 55,
+          "7": 60,
+          "8": 65,
+          "9": 70,
+          "10": 80,
+          "11": 85,
+          "12": 90
+        },
+        "square": {
+          "4": 50,
+          "5": 55,
+          "6": 60,
+          "7": 65,
+          "8": 70,
+          "9": 75,
+          "10": 85,
+          "11": 90,
+          "12": 95 
+        }
       },
-      "square": {
-        "4": 50,
-        "5": 55,
-        "6": 60,
-        "7": 65,
-        "8": 70,
-        "9": 75,
-        "10": 85,
-        "11": 90,
-        "12": 95 
-      },
-      "colour": "#dff6ff"
+      "colours": {
+        "light": "#dff6ff",
+        "dark": "#ace7ff"
+      }
     },
     "weddingCakes": {
-      "colour": "#fbe4ff"
+      "colours": {
+        "light": "#fbe4ff",
+        "dark": "#c5a3ff"
+      }
     },
     "cupcakes": {
-      "colour": "#fff7cf"
+      "colours": {
+        "light": "#fff7cf",
+        "dark": "#f8df81"
+      }
+    },
+    "weddingFavours": {
+      "colours": {
+        "dark": "#fca669"
+      }
     }
   }
 }
