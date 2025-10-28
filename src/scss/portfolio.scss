@@ -33,8 +33,8 @@
 
         button {
             background: none;
-            color: #aaa;
-            border: 2px solid #aaa;
+            color: #a4a2a2;
+            border: 2px solid #d3d3d3;
             border-radius: 5px;
             width: 100%;
             padding: 4px 5px;
@@ -80,18 +80,16 @@
     // This is the "All cakes" button
     #portfolio-filters button:not([data-product]) {
         @include mixins.hover {
-            border-color: variables.$pink;
+            background-color: variables.$pink;
         }
         &:focus-visible {
-            border-color: variables.$pink;
+            background-color: variables.$pink;
         }
     }
     &:not([data-filters-product]) {
         #portfolio-filters button:not([data-product]) {
-            background: variables.$pink;
-            border-color: white;
+            background-color: variables.$pink;
             color: #000;
-            opacity: 1;
         }
     }
     // Iterate through product buttons
@@ -100,19 +98,17 @@
         #portfolio-filters button[data-product='#{$name}'] {
 
             @include mixins.hover {
-                border-color: $colour;
+                background-color: $colour;
             }
             &:focus-visible {
-                border-color: $colour;
+                background-color: $colour;
             }
         }
 
         &[data-filters-product='#{$name}'] {
             #portfolio-filters button[data-product='#{$name}'] {
-                background: $colour;
-                border-color: white;
+                background-color: $colour;
                 color: #000;
-                opacity: 1;
             }
         }
     }
