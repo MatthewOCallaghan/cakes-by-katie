@@ -10,7 +10,128 @@
     margin: $grid-padding 0;
     padding: 0 $grid-padding;
 
+
+    &[data-filters-product='wedding-cake'] {
+        #portfolio-filters button#portfolio-filter-product {
+            background: pink;
+        }
+    }
+    &[data-filters-occasion='anniversary'] {
+        #portfolio-filters button#portfolio-filter-occasion {
+            background: pink;
+        }
+    }
+
+    #portfolio-filters {
+        display: grid;
+        gap: 5px;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        grid-template-columns: repeat(4, minmax(auto, 1fr));
+        grid-template-rows: auto;
+
+        button {
+            background: none;
+            border: none;
+            color: #a4a2a2;
+            border-radius: 5px;
+            width: 100%;
+            padding: 4px 5px;
+            cursor: pointer;
+            background: #0000;
+            transition: color .2s;
+            box-shadow: 0px 0px 3px 0px #0000003d;
+            overflow: hidden;
+
+            span {
+                // Wrap all text
+                width: min-content;
+                display: block;
+                margin: auto;
+            }
+
+            // Gradient background for selected button (also shown on hover)
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: var(--selectedBackground);
+                opacity: 0;
+                transition: opacity .2s;
+                z-index: -1;
+            }
+
+            @include mixins.hover {
+                color: #000;
+
+                &::before {
+                    opacity: 1;
+                }
+            }
+            &:focus-visible {
+                color: #000;
+
+                &::before {
+                    opacity: 1;
+                }
+            }
+        }
+
+        // Buttons larger on desktop
+        @media (min-width: 700px) {
+            max-width: 900px;
+            gap: 10px;
+
+            button {
+
+                padding: 6px 10px;
+
+                span {
+                    // Stop forcing text wrapping
+                    display: inline;
+                }
+            }
+        }
+    }
+
+    // Selected abutton styles
+    // This is the "All cakes" button
+    #portfolio-filters button:not([data-product]) {
+        --selectedBackground: linear-gradient(45deg, #f9bbb9, #ffe8e8);
+    }
+    &:not([data-filters-product]) {
+        #portfolio-filters button:not([data-product]) {
+            color: #000;
+
+            &::before {
+                opacity: 1;
+            }
+        }
+    }
+    // Iterate through product buttons
+    @each $name in (celebration-cake, wedding-cake, cupcakes) {
+
+        &[data-filters-product='#{$name}'] {
+            #portfolio-filters button[data-product='#{$name}'] {
+
+                color: #000;
+
+                &::before {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
     .portfolio-grid {
+
+        // Margin below filters
+        margin-top: $grid-padding;
 
         // Grid items use absolute positioning to create masonry layout
         position: relative;
@@ -60,6 +181,13 @@
                 
                 // Hover and load transitions
                 transition: transform .7s, opacity .3s;
+            }
+
+
+            // Only show this item if it meets filters
+            display: none;
+            &.filtered {
+                display: block;
             }
         }
 

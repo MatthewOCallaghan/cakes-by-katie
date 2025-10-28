@@ -12,8 +12,8 @@
         {{ fixedBackground("backgrounds/marble-background.jpg", "Marble background image") }}
 
         {% from "macros/picture.njk" import pictureElement with context %}
-        
-        <div id="celebration-cakes" class="price-group" style="background:{{pricing.celebrationCakes.colour}}">
+
+        <div id="celebration-cakes" class="price-group" style="background:{{products.celebrationCakes.colours.light}}">
             <div class="image-container">
                 {{ pictureElement("cake-cutouts/" ~ "shades-of-chocolate.png", "Celebration cake", "220px") }}
             </div>
@@ -22,7 +22,7 @@
             {% include "celebration-cake-pricing.njk" %}
         </div>
 
-        <div id="wedding-cakes" class="price-group"  style="background:{{pricing.weddingCakes.colour}}">
+        <div id="wedding-cakes" class="price-group"  style="background:{{products.weddingCakes.colours.light}}">
             <div class="image-container">
                 {{ pictureElement("cake-cutouts/" ~ "wedding.png", "Wedding cake", "220px") }}
             </div>
@@ -31,7 +31,7 @@
             {% include "wedding-cake-pricing.njk" %}
         </div>
 
-        <div id="cupcakes" class="price-group" style="background:{{pricing.cupcakes.colour}}">
+        <div id="cupcakes" class="price-group" style="background:{{products.cupcakes.colours.light}}">
             <div class="image-container">
                 {{ pictureElement("cake-cutouts/" ~ "rose-mix-triple.png", "Cupcakes", "220px") }}
             </div>

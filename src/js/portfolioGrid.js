@@ -1,8 +1,17 @@
 // Manages the grid of portfolio images
 
+const pageContainer = document.querySelector('.portfolio-grid-container');
+
 const gridContainer = document.getElementsByClassName('portfolio-grid')[0];
 
 const items = document.getElementsByClassName('grid-item');
+
+// Filters
+// Filters are multi-choice with values separated by commas
+const ATTRIBUTE_FILTERS_PRODUCT = 'data-filters-product';
+const ATTRIBUTE_FILTERS_OCCASION = 'data-filters-occasion';
+const getFilteredProducts = () => pageContainer.getAttribute(ATTRIBUTE_FILTERS_PRODUCT)?.split(',') ?? [];
+const getFilteredOccasions = () => pageContainer.getAttribute(ATTRIBUTE_FILTERS_OCCASION)?.split(',') ?? [];
 
 // Gap between images in px
 const GUTTER = 5;
@@ -30,16 +39,20 @@ const createPictureForItem = item => {
     }
 }
 
-// Next item index that hasn't had an image created yet
+// Next item index (out of filtered items) that hasn't had an image created yet
 // Remember items will be rendered in order vertically as they get added in turn to the shortest column
 let nextItemToLoadImage = 0;
 // Function to check if any more images need to be created from screen height and scroll position
 const createItemImagesIfWithinScroll = () => {
-    if (nextItemToLoadImage < items.length) {
+
+    // Only filtered items are visible
+    const filteredItems = Array.from(items).filter(item => item.classList.contains('filtered'));
+
+    if (nextItemToLoadImage < filteredItems.length) {
         // Items with `top` values less than this boundary should have images
         const boundary = window.scrollY + window.innerHeight * 2;
 
-        for (const item of [...items].slice(nextItemToLoadImage)) {
+        for (const item of filteredItems.slice(nextItemToLoadImage)) {
             const top = parseInt(item.style.top);
             if (top < boundary) {
                 createPictureForItem(item);
@@ -77,9 +90,28 @@ const initialiseGrid = () => {
     // Reset variable
     nextItemToLoadImage = 0;
 
+    // Filter values
+    const filteredProducts = getFilteredProducts();
+    const filteredOccasions = getFilteredOccasions();
+
     // Iterate over each item
     for (let index = 0; index < items.length; index++) {
         const item = items[index];
+
+        const product = item.getAttribute('data-product');
+        const occasions = item.getAttribute('data-occasions')?.split(',');
+        if (
+            (filteredProducts.length > 0 && !filteredProducts.includes(product)) ||
+            (filteredOccasions.length > 0 && !filteredOccasions.some(occasion => occasions.includes(occasion)))
+        ) {
+            // Filters are being used and this item does not match
+            item.classList.remove('filtered');
+            item.querySelector('picture')?.remove();
+            continue;
+        }
+
+        // To get this far, the item must match the filters
+        item.classList.add('filtered');
 
         // Set item width
         item.style.width = itemWidthCSS;
@@ -121,3 +153,45 @@ window.addEventListener('scroll', createItemImagesIfWithinScroll);
 
 // Recalculate grid whenever window changes size
 window.addEventListener('resize', initialiseGrid);
+
+// Product filter button handlers
+const productFilterButtons = document.querySelectorAll('#portfolio-filters button');
+productFilterButtons.forEach(button => {
+    button.onclick = function() {
+
+        const product = button.getAttribute('data-product');
+
+        // Logic supports multiple selected products in attribute (separated by commas), but UI only allows one at a time for now
+        if (product) {
+            pageContainer.setAttribute(ATTRIBUTE_FILTERS_PRODUCT, product);
+        } else {
+            // "All cakes" button
+            pageContainer.removeAttribute(ATTRIBUTE_FILTERS_PRODUCT);
+        }
+
+        initialiseGrid();
+    };
+});
+
+// Logic has been implemented to support occasion filters, but UI does not currently have any buttons for this
+// const anniversaryFilterButton = document.querySelector('#portfolio-filters button#portfolio-filter-occasion');
+// anniversaryFilterButton.onclick = function() {
+    
+//     const OCCASION = 'anniversary';
+//     const currentFilteredOccasions = getFilteredOccasions();
+
+//     let newFilteredOccasions;
+//     if (currentFilteredOccasions.includes(OCCASION)) {
+//         newFilteredOccasions = currentFilteredOccasions.filter(occasion => occasion !== OCCASION);
+//     } else {
+//         newFilteredOccasions = [...currentFilteredOccasions, OCCASION];
+//     }
+
+//     if (newFilteredOccasions.length > 0) {
+//         pageContainer.setAttribute(ATTRIBUTE_FILTERS_OCCASION, newFilteredOccasions.join(','));
+//     } else {
+//         pageContainer.removeAttribute(ATTRIBUTE_FILTERS_OCCASION);
+//     }
+
+//     initialiseGrid();
+// }
