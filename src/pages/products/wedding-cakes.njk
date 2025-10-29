@@ -151,9 +151,9 @@
         )
     }}
 
-    {{ imageCarousel(getMatchingCakes({ product: 'wedding-cake' }, 30, 30), 'linear-gradient(to bottom, #000, ' ~ pricing.weddingCakes.colour ~ ')') }}
+    {{ imageCarousel(getMatchingCakes({ product: 'wedding-cake' }, 30, 30), 'linear-gradient(to bottom, #000, ' ~ products.weddingCakes.colours.light ~ ')') }}
 
-    <section id="pricing" style="background:{{pricing.weddingCakes.colour}}">
+    <section id="pricing" style="background:{{products.weddingCakes.colours.light}}">
         <h2 style="margin-top:0;">Pricing</h2>
         {% include "wedding-cake-pricing.njk" %}
     </section>
