@@ -131,7 +131,7 @@
       "hasCSSFile": true
     },
     "awards": {
-      "title": "New and Awards | Cakes by Katie",
+      "title": "News and Awards | Cakes by Katie",
       "description": "Cakes by Katie, a cake maker in Thatcham, West Berkshire, is honoured to have received a variety of awards for their wedding cakes, celebration cakes and cupcakes.",
       "heading": {
         "text": "News & Awards",
@@ -493,7 +493,7 @@
         "text": "Order now for collection in the lead up to Christmas",
         "image": {
           "path": "backgrounds/santa-and-child.jpg",
-          "alt": "Santa Clause and child background",
+          "alt": "Santa Claus and child background",
           "position": "50% 30%"
         }
       },
@@ -617,7 +617,7 @@
       "name": "Semi Naked",
       "product": "wedding-cake",
       "occasions": ["wedding"],
-      "venue" : ["The Retreat, Elcot ParK"]
+      "venue" : ["The Retreat, Elcot Park"]
     },"elegancia": {
       "images": ["Elegancia2.jpg", "Elegancia.jpg"],
       "name": "Elegancia",
@@ -704,7 +704,7 @@
       "name": "Lorraine",
       "product": "wedding-cake",
       "occasions": ["wedding"],
-      "venue" : ["Carey's Manor"]
+      "venue" : ["Careys Manor"]
     },
     "jeffrey": {
       "images": ["Jeffrey.jpg"],
@@ -775,7 +775,7 @@
     },
 "leah": {
       "images": ["leah.jpg", "leah2.jpg"],
-      "description": "Photographer: Kevin James Photogarphy",
+      "description": "Photographer: Kevin James Photography",
       "name": "Leah",
       "product": "wedding-cake",
       "occasions": ["wedding"],
@@ -795,7 +795,7 @@
     },
  "courtney": {
       "images": ["courtney2.jpg", "courtney.jpg"],
-      "description": "Photographer: Olga J Photography",
+      "description": "Photographer: Olga J. Photography",
       "name": "Courtney",
       "product": "wedding-cake",
       "occasions": ["wedding"],
@@ -879,7 +879,7 @@
     },
     "francesca": {
       "images": ["francesca.jpg"],
-      "description": "Photographer: Indiego Photogarphy",
+      "description": "Photographer: Indiego Photography",
       "name": "Francesca",
       "product": "wedding-cake",
       "occasions": ["wedding"],
@@ -889,13 +889,13 @@
         "name": "Frankie &  Josh",
         "location": "Devon"
       },
-      "flavours": ["GF Choocolate", "GF Lemon & Elderflower", "GF Raspberry & White Chocolate"]
+      "flavours": ["GF Chocolate", "GF Lemon & Elderflower", "GF Raspberry & White Chocolate"]
     },
     "petals-and-pearls": {
       "images": ["Petals-and-Pearls.jpg"],
       "name": "Petals & Pearls",
       "testimonial": {
-        "text": "Thank you so much Katie, the cake was stunning, so beautiful and tasted delicous too! It all went the day it was cut! We'll certainly be ordering more cakes from you and highly recommending you to all our family and friends.",
+        "text": "Thank you so much Katie, the cake was stunning, so beautiful and tasted delicious too! It all went the day it was cut! We'll certainly be ordering more cakes from you and highly recommending you to all our family and friends.",
         "name": "Nikki",
         "location": "Thatcham"
       },
@@ -922,13 +922,13 @@
       "images": ["Floral-Tower.jpg"],
       "name": "Floral Tower",
       "testimonial":{
-        "text":"I just wanted to thank you for the gorgeous cupcakes on Saturday.  They looked perfect and tasted absolutely delicious.  Everyone really enjoyed them (including my very naughty dog who swiped one of the remaining few off the table when we got home).  I'm sorry I didn't get to see you on Saturday, but thank you for doing such a fantastic and professional job. Many many thanks.",
+        "text":"I just wanted to thank you for the gorgeous cupcakes on Saturday.  They looked perfect and tasted absolutely delicious.  Everyone really enjoyed them (including my very naughty dog who swiped one of the remaining few off the table when we got home).  I'm sorry I didn't get to see you on Saturday, but thank you for doing such a fantastic and professional job. Many, many thanks.",
         "name":"Victoria & Nicholas"
       },
       "product": "cupcakes",
       "occasions": ["wedding","birthday","anniversary"],
       "flavours": ["Chocolate Orange", "Coffee & Walnut", "Orange", "Lemon", "Carrot"],
-      "venue" : ["The Retreat, Elcot ParK"]
+      "venue" : ["The Retreat, Elcot Park"]
     },
 "bella-and-bubbles": {
       "images": ["Bella-and-Bubbles.jpg"],
@@ -941,7 +941,7 @@
       "name": "Louisa",
       "product": "wedding-cake",
       "occasions": ["wedding"],
-      "venue" : ["The Beatle & Wedge"]
+      "venue" : ["The Beetle & Wedge"]
     },
     "lavender-swifty": {
       "images": ["Lavender-Swifty.jpg", "Lavender-Swifty2.jpg"],
@@ -951,7 +951,7 @@
     },
     "just-vintage": {
       "images": ["just-vintage.jpg"],
-      "description": "Photographer: Photogarphy by Linas",
+      "description": "Photographer: Photography by Linas",
       "name": "Just Vintage",
       "product": "wedding-cake",
       "occasions": ["wedding"],
@@ -998,7 +998,7 @@
     "pretty-in-pink": {
       "images": ["Pretty-in-Pink.jpg"],
       "squareImage": "Pretty-in-Pink-square.jpg",
-      "name": "Pretty ih Pink",
+      "name": "Pretty in Pink",
       "product": "celebration-cake",
       "occasions": ["birthday"]
     },
@@ -1124,7 +1124,7 @@
     },
    "lauren": {
       "images": ["lauren.jpg"],
-      "description": "Photographer: Kevin James Photogarphy",
+      "description": "Photographer: Kevin James Photography",
       "name": "Lauren",
       "product": "wedding-cake",
       "occasions": ["wedding"],
@@ -1200,7 +1200,7 @@
     },
     "kirsten-autumn": {
       "images": ["kirsten-autumn.jpg"],
-      "description": "Photographer: Phil Stock Photogarphy",
+      "description": "Photographer: Phil Stock Photography",
       "name": "Kirsten - Autumn",
       "product": "wedding-cake",
       "occasions": ["wedding"],
@@ -1274,7 +1274,7 @@
     },
 "semi-naked-george": {
       "images": ["semi-naked-george.jpg"],
-      "name": "Semi Named",
+      "name": "Semi Naked",
       "product": "wedding-cake",
       "occasions": ["wedding"],
       "venue" : ["Old Luxtors"]
@@ -1290,7 +1290,7 @@
       "name": "Semi Naked",
       "product": "wedding-cake",
       "occasions": ["wedding"],
-      "venue" : ["The Retreat, Elcot ParK"]
+      "venue" : ["The Retreat, Elcot Park"]
     },
     "pink-cascade-2": {
       "images": ["Pink-Cascade-2.jpg"],
@@ -1303,7 +1303,7 @@
       "name": "Semi Naked",
       "product": "wedding-cake",
       "occasions": ["wedding"],
-      "venue" : ["Oakely Hall"]
+      "venue" : ["Oakley Hall"]
     },
     "shades-of-chocolate": {
       "images": ["Shades-of-Chocolate-2.jpg", "Shades-of-Chocolate.jpg"],
@@ -1330,7 +1330,7 @@
       "name": "Alice",
       "product": "wedding-cake",
       "occasions": ["wedding"],
-      "venue" : ["The Retreat, Elcot ParK"]
+      "venue" : ["The Retreat, Elcot Park"]
     },
    "bears-and-bunting": {
       "images": ["Bears-and-Bunting.jpg"],
@@ -1383,11 +1383,11 @@
       "description": "Photographer: Rachel Jane Photography (racheljanephoto.co.uk)",
       "product":"wedding-cake",
       "occasions": ["wedding"],
-      "venue" : ["The Retreat, Elcot ParK"]
+      "venue" : ["The Retreat, Elcot Park"]
     },
     "piano-forte": {
       "images": ["Piano-Forte.jpg"],
-      "name": "Paino Forte",
+      "name": "Piano Forte",
       "product":"celebration-cake",
       "occasions": ["birthday"]
     },
@@ -1441,7 +1441,7 @@
       },
       "product":"wedding-cake",
       "occasions": ["wedding"],
-      "flavours": ["Carrot, Lemon, Chocolate Biscoff"],
+      "flavours": ["Carrot" ,"Lemon", "Chocolate Biscoff"],
       "venue" : ["Highcliffe Castle"]
     },
     "rosalia": {
