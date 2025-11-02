@@ -4,10 +4,9 @@
 <p>Over the years, we've had the joy of creating cakes for many stunning wedding venues across Berkshire and the surrounding counties, from rustic barns and countryside estates to elegant manor houses and chic modern spaces.</p>
 <p>This guide showcases some of our favourite local venues, along with cake inspiration tailored to each setting. Whether you're celebrating in a romantic barn, a grand country house, or a garden marquee, you'll find ideas to help you imagine how your cake can look in your chosen space.</p>
 <ul class="venue-list">
-    <li><a href="/delivery/wasing-park"><span class="venue-name">Wasing Park</span><span class="venue-location">Berkshire</span></a></li>
-    <li><a href="/delivery/wasing-park"><span class="venue-name">Wasing Park</span><span class="venue-location">Berkshire</span></a></li>
-    <li><a href="/delivery/wasing-park"><span class="venue-name">Wasing Park</span><span class="venue-location">Berkshire</span></a></li>
-    <li><a href="/delivery/wasing-park"><span class="venue-name">Wasing Park</span><span class="venue-location">Berkshire</span></a></li>
-    <li><a href="/delivery/wasing-park"><span class="venue-name">Wasing Park</span><span class="venue-location">Berkshire</span></a></li>
-    <li><a href="/delivery/wasing-park"><span class="venue-name">Wasing Park</span><span class="venue-location">Berkshire</span></a></li>
+    {% for key, page in pages %}
+        {% if page.venue and venues[page.venue].occasion === "wedding" %}
+            <li><a href="/delivery/{{ page.venue }}"><span class="venue-name">{{ venues[page.venue].name }}</span><span class="venue-location">{{ venues[page.venue].location }}</span></a></li>
+        {% endif %}
+    {% endfor %}
 </ul>
