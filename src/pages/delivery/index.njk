@@ -1,0 +1,14 @@
+{% set page = "delivery" %}
+{% extends "layout.njk" %}
+
+{% block main %}
+
+    <div class="intro-text">
+        <p>Paragraph about delivery here.</p> 
+    </div>
+
+    <section style="background:{{products.weddingCakes.colours.light}}">
+        {% include "wedding-venues.njk" %}
+    </section>
+
+{% endblock %}

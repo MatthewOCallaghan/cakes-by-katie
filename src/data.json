@@ -528,6 +528,34 @@
       "cta": {
         "text": "Ready to order?"
       }
+    },
+    "delivery": {
+      "title": "Delivery | Cakes by Katie",
+      "description": "I'm a cake maker in Thatcham, West Berkshire, delivering high quality bespoke cakes for birthdays, weddings, anniversaries, christenings, or any occasion.",
+      "heading": {
+        "text": "Delivery"
+      }
+    },
+    "venueWasingPark": {
+      "title": "Wedding cakes delivered to Wasing Park | Cakes by Katie",
+      "description": "Delivering to Wasing Park, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "Wasing Park",
+        "afterText": "Berkshire",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at Wasing Park!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "wasing-park"
     }
   },
   "portfolio": {
@@ -540,9 +568,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Family Farm"
-      ]
+      "venue": "Family Farm"
     },
     "fishing-for-dreams": {
       "images": [
@@ -574,9 +600,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Ufton Court"
-      ],
+      "venue": "Ufton Court",
       "testimonial": {
         "text": "I just wanted to say a huge thank you for our wedding cake on Sunday, it was absolutely perfect. It looked beautiful and was everything we had imagined (and more!), and every single layer tasted amazing. We had so many guests comment on how good it was, and I am so glad we chose you to make it for us. You were so lovely to work with from start to finish, and it honestly felt so special seeing the cake on the day after all the planning. Apologies about the cake ribbon though - Chloe saved the day and it was just as beautiful as I had planned.",
         "name": "Lotty & George",
@@ -597,9 +621,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Post Barn"
-      ]
+      "venue": "The Post Barn"
     },
     "hannah": {
       "images": [
@@ -610,9 +632,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Wasing Park"
-      ]
+      "venue": "wasing-park"
     },
     "bryony": {
       "images": [
@@ -623,9 +643,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Sheepdrove"
-      ]
+      "venue": "Sheepdrove"
     },
     "flopsy-in-pink-christening": {
       "images": [
@@ -658,9 +676,7 @@
         "Lemon",
         "Orange"
       ],
-      "venue": [
-        "St Barnabas Church"
-      ]
+      "venue": "St Barnabas Church"
     },
     "janelle": {
       "images": [
@@ -672,9 +688,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Old Mill"
-      ]
+      "venue": "The Old Mill"
     },
     "natalie": {
       "images": [
@@ -685,9 +699,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Post Barn"
-      ]
+      "venue": "The Post Barn"
     },
     "arabella": {
       "images": [
@@ -709,9 +721,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Retreat, Elcot ParK"
-      ]
+      "venue": "The Retreat, Elcot ParK"
     },
     "elegancia": {
       "images": [
@@ -735,9 +745,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Donnington Grove"
-      ]
+      "venue": "Donnington Grove"
     },
     "ellie": {
       "images": [
@@ -748,9 +756,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Wasing Park"
-      ]
+      "venue": "wasing-park"
     },
     "vintage-zainab": {
       "images": [
@@ -762,9 +768,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Victory Hall"
-      ]
+      "venue": "The Victory Hall"
     },
     "vintage-hayley": {
       "images": [
@@ -775,9 +779,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Hedsor House"
-      ]
+      "venue": "Hedsor House"
     },
     "sian": {
       "images": [
@@ -789,9 +791,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Chequers Hotel, Newbury"
-      ]
+      "venue": "The Chequers Hotel, Newbury"
     },
     "amy": {
       "images": [
@@ -802,9 +802,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Post Barn"
-      ]
+      "venue": "The Post Barn"
     },
     "welcome-to-the-jungle": {
       "images": [
@@ -833,9 +831,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Shaw House"
-      ],
+      "venue": "Shaw House",
       "testimonial": {
         "text": "I’d like to thank you so much for your excellent service. The cake décor looked absolutely stunning, and I was truly delighted with the final result. Everyone loved the cake, we served it to all our guests, and many even went back for a second slice! It was a real highlight of the day. Thank you again for your incredible work and attention to detail.",
         "name": "Eliane & Oliver",
@@ -854,9 +850,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Combe Manor"
-      ]
+      "venue": "Combe Manor"
     },
     "lorraine": {
       "images": [
@@ -867,9 +861,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Carey's Manor"
-      ]
+      "venue": "Carey's Manor"
     },
     "jeffrey": {
       "images": [
@@ -917,9 +909,7 @@
         "Raspberry & White Chocolate",
         "Lemon & Elderflower"
       ],
-      "venue": [
-        "The Post Barn"
-      ]
+      "venue": "The Post Barn"
     },
     "bee-happy-with-pooh": {
       "images": [
@@ -940,9 +930,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Trunkwell House"
-      ],
+      "venue": "Trunkwell House",
       "testimonial": {
         "text": "Thank you so much for the cake! It was delicious, so beautiful and exactly what we wanted, and everyone loved it so much! Most people didn’t realise it was vegan it was that good!",
         "name": "Anna & Elias",
@@ -962,9 +950,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Wasing Park"
-      ]
+      "venue": "wasing-park"
     },
     "the-one-where-its-your-birthday": {
       "images": [
@@ -999,9 +985,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Swan at Streatley"
-      ],
+      "venue": "The Swan at Streatley",
       "testimonial": {
         "text": "We just wanted to say a massive thank you for the cake last Saturday, it looked absolutely stunning and our guests were raving about how good it tasted. Thankfully we've got some stashed in our freezer to look forward to eating once we're back from honeymoon!",
         "name": "Leah & Ryan",
@@ -1034,9 +1018,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Post Barn"
-      ]
+      "venue": "The Post Barn"
     },
     "puddles-the-penguin": {
       "images": [
@@ -1057,9 +1039,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Stanlake Park"
-      ]
+      "venue": "Stanlake Park"
     },
     "kemi": {
       "images": [
@@ -1072,9 +1052,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Post Barn"
-      ],
+      "venue": "The Post Barn",
       "testimonial": {
         "text": "The cake was absolutely stunning and matched the decor perfectly. We are glad to have had your work as a part of our special day.",
         "name": "Zac & Kemi",
@@ -1105,9 +1083,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Forest Edge Tipis, Welford Park"
-      ]
+      "venue": "Forest Edge Tipis, Welford Park"
     },
     "tiny-terry": {
       "images": [
@@ -1128,9 +1104,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Wasing Park"
-      ]
+      "venue": "wasing-park"
     },
     "fault-line-green-and-gold": {
       "images": [
@@ -1152,9 +1126,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Wasing Park"
-      ]
+      "venue": "wasing-park"
     },
     "time-for-tea": {
       "images": [
@@ -1176,9 +1148,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Pembroke Lodge"
-      ],
+      "venue": "Pembroke Lodge",
       "testimonial": {
         "text": "We couldn’t have asked for a more perfect wedding cake! Not only was it stunningly beautiful but it tasted absolutely amazing. Every detail was crafted with care and our guests couldn’t stop talking about it. You truly made our vision come to life and we are so grateful for your talent and professionalism. Thank you for being part of our special day and creating such a memorable centrepiece!",
         "name": "Frankie &  Josh",
@@ -1219,9 +1189,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Old Gore"
-      ]
+      "venue": "Old Gore"
     },
     "baby-bears": {
       "images": [
@@ -1257,9 +1225,7 @@
         "Lemon",
         "Carrot"
       ],
-      "venue": [
-        "The Retreat, Elcot ParK"
-      ]
+      "venue": "The Retreat, Elcot ParK"
     },
     "bella-and-bubbles": {
       "images": [
@@ -1280,9 +1246,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Beatle & Wedge"
-      ]
+      "venue": "The Beatle & Wedge"
     },
     "lavender-swifty": {
       "images": [
@@ -1305,9 +1269,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Wasing Park"
-      ]
+      "venue": "wasing-park"
     },
     "enchanted-castle": {
       "images": [
@@ -1336,9 +1298,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Post Barn"
-      ],
+      "venue": "The Post Barn",
       "testimonial": {
         "text": "We just wanted to say a big thank you for our lovely wedding cake and for all your help in the build up to the day! The cake looked and tasted amazing!",
         "name": "Connie & Matt",
@@ -1369,9 +1329,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Monkey Island"
-      ]
+      "venue": "Monkey Island"
     },
     "pretty-in-pink": {
       "images": [
@@ -1393,9 +1351,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Wasing Park"
-      ]
+      "venue": "wasing-park"
     },
     "let-it-go": {
       "images": [
@@ -1438,9 +1394,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Thatcham Football Club"
-      ],
+      "venue": "Thatcham Football Club",
       "testimonial": {
         "text": "Thank you so much for the cakes. They went down a treat. They were delicious. Again thank you so much!",
         "name": "Elle & Harley",
@@ -1478,9 +1432,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Dolphin, Newbury"
-      ]
+      "venue": "The Dolphin, Newbury"
     },
     "enchanted": {
       "images": [
@@ -1518,9 +1470,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Hedsor House"
-      ],
+      "venue": "Hedsor House",
       "testimonial": {
         "text": "We wanted to thank you for the beautiful cake you made for our wedding. The design was elegant and exactly what we had hoped for. The cake tasted wonderful as well — our guests really enjoyed it and many mentioned how delicious it was. We truly appreciate your care and attention to detail in bringing everything together. It was a pleasure working with you and having your creation as part of our special day.",
         "name": "Angel & Edwin",
@@ -1551,9 +1501,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Dean Court Community Centre"
-      ]
+      "venue": "Dean Court Community Centre"
     },
     "bouquet-pink-mix": {
       "images": [
@@ -1579,9 +1527,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Wasing Park"
-      ]
+      "venue": "wasing-park"
     },
     "celebrate-with-champagne": {
       "images": [
@@ -1605,9 +1551,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "East Hampstead Park"
-      ]
+      "venue": "East Hampstead Park"
     },
     "charming-flopsy": {
       "images": [
@@ -1629,9 +1573,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Post Barn"
-      ]
+      "venue": "The Post Barn"
     },
     "milk-and-white": {
       "images": [
@@ -1678,9 +1620,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Cantley House Hotel"
-      ]
+      "venue": "Cantley House Hotel"
     },
     "subtle-in-pink": {
       "images": [
@@ -1709,9 +1649,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Stanlake Park"
-      ]
+      "venue": "Stanlake Park"
     },
     "our-story": {
       "images": [
@@ -1734,9 +1672,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Red House Pub"
-      ]
+      "venue": "The Red House Pub"
     },
     "chapt-30": {
       "images": [
@@ -1757,9 +1693,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Cantley House Hotel"
-      ],
+      "venue": "Cantley House Hotel",
       "testimonial": {
         "text": "We just wanted to send a quick message to say thank you for providing our amazing wedding cake yesterday, as we never ended up crossing paths during the day. It looked fantastic and tasted great - there wasn't much left!",
         "name": "Hannah & Ben",
@@ -1800,9 +1734,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Great House"
-      ]
+      "venue": "The Great House"
     },
     "come-fly-with-me": {
       "images": [
@@ -1858,9 +1790,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Old Luxtors"
-      ]
+      "venue": "Old Luxtors"
     },
     "two-infinity": {
       "images": [
@@ -1881,9 +1811,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Retreat, Elcot ParK"
-      ]
+      "venue": "The Retreat, Elcot ParK"
     },
     "pink-cascade-2": {
       "images": [
@@ -1904,9 +1832,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Oakely Hall"
-      ]
+      "venue": "Oakely Hall"
     },
     "shades-of-chocolate": {
       "images": [
@@ -1929,9 +1855,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Moor Hall"
-      ]
+      "venue": "Moor Hall"
     },
     "beautifully-rustic": {
       "images": [
@@ -1955,9 +1879,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Retreat, Elcot ParK"
-      ]
+      "venue": "The Retreat, Elcot ParK"
     },
     "bears-and-bunting": {
       "images": [
@@ -1987,9 +1909,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Sheepdrove"
-      ]
+      "venue": "Sheepdrove"
     },
     "21-Today": {
       "images": [
@@ -2012,9 +1932,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Wasing Park"
-      ]
+      "venue": "wasing-park"
     },
     "grace": {
       "images": [
@@ -2043,9 +1961,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Retreat, Elcot ParK"
-      ]
+      "venue": "The Retreat, Elcot ParK"
     },
     "piano-forte": {
       "images": [
@@ -2078,9 +1994,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Mill House Hotel"
-      ]
+      "venue": "The Mill House Hotel"
     },
     "birthday-mix-pink-flowers": {
       "images": [
@@ -2104,9 +2018,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Post Barn"
-      ]
+      "venue": "The Post Barn"
     },
     "classic-drips-golden-chocolate": {
       "images": [
@@ -2146,9 +2058,7 @@
       "flavours": [
         "Carrot, Lemon, Chocolate Biscoff"
       ],
-      "venue": [
-        "Highcliffe Castle"
-      ]
+      "venue": "Highcliffe Castle"
     },
     "rosalia": {
       "images": [
@@ -2182,9 +2092,7 @@
         " Chocolate Oreo",
         "Lemon"
       ],
-      "venue": [
-        "Crowne Plaza, Marlow"
-      ]
+      "venue": "Crowne Plaza, Marlow"
     },
     "wild-one": {
       "images": [
@@ -2217,9 +2125,7 @@
       "flavours": [
         "Vanilla"
       ],
-      "venue": [
-        "Forest Edge Tipis, Welford Park"
-      ]
+      "venue": "Forest Edge Tipis, Welford Park"
     },
     "baby-shark-lullaby": {
       "images": [
@@ -2248,9 +2154,7 @@
         "Raspberry & White Chocolate",
         "Chocolate Biscoff"
       ],
-      "venue": [
-        "Mercure Thame Lambert Hotel"
-      ]
+      "venue": "Mercure Thame Lambert Hotel"
     },
     "golden-50th": {
       "images": [
@@ -2272,9 +2176,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Sheepdrove"
-      ]
+      "venue": "Sheepdrove"
     },
     "a-stylish-affair": {
       "images": [
@@ -2293,7 +2195,7 @@
       ],
       "name": "Semi Naked",
       "testimonial": {
-        "text": "Katie did a fantastic job of creating our wedding cake, which was just nearby at Wasing Park. The cake looked fantastic and she was really professional and responsive in making sure it was exactly what we wanted. She catered to my husband's nut allergy whilst still being able to offer us a wide range of flavours and the cake absolutely disappeared on the day as everyone loved it! Her pricing is also really reasonable compared to some of the specialist wedding cake providers I looked at.  I'd highly recommend her ",
+        "text": "Katie did a fantastic job of creating our wedding cake, which was just nearby at wasing-park. The cake looked fantastic and she was really professional and responsive in making sure it was exactly what we wanted. She catered to my husband's nut allergy whilst still being able to offer us a wide range of flavours and the cake absolutely disappeared on the day as everyone loved it! Her pricing is also really reasonable compared to some of the specialist wedding cake providers I looked at.  I'd highly recommend her ",
         "name": "Ellie & Ed",
         "location": "London"
       },
@@ -2306,9 +2208,7 @@
         "Chocolate Orange",
         "Raspberry & White Chocolate"
       ],
-      "venue": [
-        "Wasing Park"
-      ]
+      "venue": "wasing-park"
     },
     "birthday-mix-blue-cars": {
       "images": [
@@ -2331,9 +2231,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Newbury Rugby Club"
-      ]
+      "venue": "Newbury Rugby Club"
     },
     "fault-line-pink-roses": {
       "images": [
@@ -2389,9 +2287,7 @@
         "Raspberry & White Chocolate",
         "Lemon"
       ],
-      "venue": [
-        "The Vineyard"
-      ]
+      "venue": "The Vineyard"
     },
     "chocolate-box": {
       "images": [
@@ -2417,9 +2313,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Royal Oak, Yattendon"
-      ]
+      "venue": "The Royal Oak, Yattendon"
     },
     "chocolate-drips-mms": {
       "images": [
@@ -2440,9 +2334,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Wasing Park"
-      ]
+      "venue": "wasing-park"
     },
     "confetti-in-the-clouds": {
       "images": [
@@ -2480,9 +2372,7 @@
         "Chocolate",
         "Raspberry & White Chocolate"
       ],
-      "venue": [
-        "Donnington Grove"
-      ]
+      "venue": "Donnington Grove"
     },
     "bluey-in-blue": {
       "images": [
@@ -2917,9 +2807,7 @@
       "flavours": [
         "Carrot"
       ],
-      "venue": [
-        "Pennyhill Park"
-      ]
+      "venue": "Pennyhill Park"
     },
     "choo-choo": {
       "images": [
@@ -6636,6 +6524,26 @@
       "colours": {
         "dark": "#fca669"
       }
+    }
+  },
+  "venues": {
+    "wasing-park": {
+      "name": "Wasing Park",
+      "tagline": "A romantic countryside estate for timeless, elegant weddings.",
+      "location": "Berkshire",
+      "address": ["Wasing Park", "Wasing Lane", "Aldermaston", "Berkshire", "RG7 4NG"],
+      "featuredCakes": ["semi-naked-sage"],
+      "popularCakeStyles": [
+        "Elegant semi-naked cakes decorated with soft blooms - perfect for the rustic charm of the Castle Barn",
+        "Classic white tiered cakes with sugar flowers to complement the venue's timeless elegance",
+        "Buttercream textures with gold or pastel accents for modern, romantic receptions",
+        "Seasonal designs inspired by Wasing Park's garden and natural surroundings"
+      ],
+      "flavourTip": {
+        "text": "For Spring and Summer weddings, flavours like % or % are perfect complements to Wasing Park's light, airy feel.",
+        "flavours": ["Lemon & Elderflower", "Champagne & Strawberry"]
+      },
+      "myExperience": "I've had the pleasure of crafting cakes for weddings at Wasing Park, and it's always a joy to see how beautifully my designs fit the venue's refined, romantic atmosphere. The spacious setup makes it easy to present even the tallest, most detailed creations."
     }
   }
 }
