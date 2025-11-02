@@ -33,7 +33,12 @@
     </section>
 
     {% from "macros/image-carousel.njk" import imageCarousel with context %}
-    {{ imageCarousel(getMatchingCakes({ venue: venueKey }, 0, 0) if venueKey == 'wasing-park' else getMatchingCakes({ product: 'wedding-cake' }, 30, 0), 'linear-gradient(to bottom, #fff, ' ~ products.weddingCakes.colours.light ~ ')') }}
+    {{
+        imageCarousel(
+            getMatchingCakes({ venue: venueKey }) if getMatchingCakes({ venue: venueKey }).length > 5 else getMatchingCakes({ product: 'wedding-cake' }),
+            'linear-gradient(to bottom, #fff, ' ~ products.weddingCakes.colours.light ~ ')'
+        )
+    }}
 
     <section style="background:{{products.weddingCakes.colours.light}}">
         <div class="venue-content">
@@ -70,7 +75,12 @@
         </div>
     </section>
 
-    {{ imageCarousel(getMatchingCakes({ venue: venueKey }, 0, 0) if venueKey == 'wasing-park' else getMatchingCakes({ product: 'wedding-cake' }, 30, 30), 'linear-gradient(to bottom, #fff, #000)') }}
+    {{
+        imageCarousel(
+            getMatchingCakes({ venue: venueKey }) if getMatchingCakes({ venue: venueKey }).length > 5 else getMatchingCakes({ product: 'wedding-cake' }),
+            'linear-gradient(to bottom, #fff, #000)'
+        )
+    }}
 
     {% include "featured-in.njk" %}
 
