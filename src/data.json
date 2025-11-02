@@ -556,6 +556,23 @@
         }
       },
       "venue": "wasing-park"
+    },
+    "venueDowneHouse": {
+      "title": "Birthday cakes delivered to Downe House School | Cakes by Katie",
+      "description": "Delivering to Downe House School, Cakes by Katie offers bespoke birthday cakes and cupcakes in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Birthday cakes for",
+        "text": "Downe House School",
+        "afterText": "Cold Ash",
+        "image": {
+          "path": "backgrounds/birthday-balloons.jpg",
+          "alt": "Birthday background"
+        }
+      },
+      "cta": {
+        "text": "Get a cake delivered to Downe House School!"
+      },
+      "venue": "downe-house-school"
     }
   },
   "portfolio": {
@@ -6527,6 +6544,11 @@
     }
   },
   "venues": {
+    "downe-house-school": {
+      "name": "Downe House School",
+      "location": "Cold Ash",
+      "featuredCakes": ["psychedelic-symphony"]
+    },
     "wasing-park": {
       "name": "Wasing Park",
       "tagline": "A romantic countryside estate for timeless, elegant weddings.",

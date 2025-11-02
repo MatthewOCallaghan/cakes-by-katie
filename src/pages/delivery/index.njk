@@ -11,4 +11,16 @@
         {% include "wedding-venues.njk" %}
     </section>
 
+    {% from "macros/half-image-section.njk" import halfImageSection with context %}
+    {{ halfImageSection(
+        'Birthday cakes for Downe House School',
+        [
+            "Some intro text about Downe House School here."
+        ],
+        "/delivery/downe-house-school",
+        "Read more",
+        "/portfolio/" ~ portfolio[venues["downe-house-school"].featuredCakes[0]].images[0].src,
+        "Birthday cake delivered to Downe House School"
+    ) }}
+
 {% endblock %}
