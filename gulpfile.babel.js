@@ -111,9 +111,9 @@ function processNunjucks() {
 
         // Get array of cake keys matching specified filters
         // filters is object, e.g. { product: 'celebration-cake', occasion: 'birthday' }
-        // `count` is desired number of cakes
+        // `count` is desired number of cakes. If not specified, all matching cakes are returned
         // `offset` is index of matching cake to return first (use to avoid duplicate image carousels on same page)
-        environment.addGlobal('getMatchingCakes', (filters, count, offset = 0) => {
+        environment.addGlobal('getMatchingCakes', (filters, { count, offset = 0 } = {}) => {
 
             // Cakes in portfolio that match filters
             const matchingCakes = Object.entries(data.portfolio).reduce((acc, [key, info]) => {
@@ -130,6 +130,12 @@ function processNunjucks() {
 
             if (matchingCakes.length === 0) {
                 return [];
+            }
+
+            // If no count specified, return all matching cakes
+            if (!count) {
+                // Cap count at 90 which is more than we'd actually need
+                count = Math.min(matchingCakes.length, 90);
             }
 
             // Index of `matchingCakes` to return first
