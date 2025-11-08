@@ -1,11 +1,6 @@
 {% set page = "cupcakes" %}
 {% extends "layout.njk" %}
 
-{% block head %}
-    {% from "macros/image-carousel-head.njk" import imageCarouselHead %}
-    {{ imageCarouselHead() }}
-{% endblock %}
-
 {% block main %}
 
     <section class="intro">
@@ -47,7 +42,7 @@
     </section>
 
     {% from "macros/image-carousel.njk" import imageCarousel with context %}
-    {{ imageCarousel(getMatchingCakes({ product: 'cupcakes' }, 30), 'linear-gradient(to bottom, #fff, #000)') }}
+    {{ imageCarousel(getMatchingCakes({ product: 'cupcakes' }), 'linear-gradient(to bottom, #fff, #000)') }}
 
     {% from "macros/design-choices.njk" import designChoices with context %}
     {{
@@ -171,14 +166,15 @@
         )
     }}
 
-    {{ imageCarousel(getMatchingCakes({ product: 'cupcakes' }, 30, 30), 'linear-gradient(to bottom, #000, ' ~ pricing.cupcakes.colour ~ ')') }}
+    {{ imageCarousel(getMatchingCakes({ product: 'cupcakes' }), 'linear-gradient(to bottom, #000, ' ~ products.cupcakes.colours.light ~ ')') }}
 
-    <section id="pricing" style="background:{{pricing.cupcakes.colour}}">
+    <section id="pricing" style="background:{{products.cupcakes.colours.light}}">
         <h2 style="margin-top:0;">Pricing</h2>
         {% include "cupcakes-pricing.njk" %}
     </section>
 {% endblock %}
 
 {% block scripts %}
-    
+    {% from "macros/image-carousel-scripts.njk" import imageCarouselScripts %}
+    {{ imageCarouselScripts() }}
 {% endblock %}

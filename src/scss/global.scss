@@ -35,8 +35,8 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    // font-size: 4em;
     font-size: 5em;
+    margin: 0.6em 0;
 }
 
 h2 {
@@ -1534,6 +1534,162 @@ section.products-range {
                 order: 999;
             }
         }        
+    }
+}
+
+section.testimonials {
+    background: variables.$pink;
+    padding-right: 0;
+    padding-left: 0;
+
+    // Left and right padding applied to each item in slideshow
+    $itemHorizontalPadding: 45px;
+
+    .testimonials-slideshow {
+
+        // Needs a fixed height for slideshow to work
+        height: 300px;
+
+        --swiper-pagination-top-margin: 5px;
+        --swiper-pagination-bullet-size: 8px;
+
+        @media (hover: none) {
+            // Use larger bullets on touch devices
+            --swiper-pagination-top-margin: 10px;
+            --swiper-pagination-bullet-size: 16px;
+            --swiper-pagination-bullet-horizontal-gap: 8px;
+        }
+
+        .swiper-wrapper {
+            // Need to allow for pagination bullets
+            height: calc(100% - var(--swiper-pagination-top-margin) - var(--swiper-pagination-bullet-size));
+        }
+
+        .swiper-button-prev, .swiper-button-next {
+            // Make arrow buttons white
+            color: #fff;
+        }
+
+        // Style pagination bullets
+        .swiper-pagination {
+            position: static;
+            margin-top: var(--swiper-pagination-top-margin);
+
+            // Ensure height is purely just the bullets
+            line-height: 0;
+
+            .swiper-pagination-bullet-active {
+                /* purgecss ignore current */
+                background: #fff;
+            }
+        }
+
+        .item {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 $itemHorizontalPadding 10px;
+            gap: 40px;
+            overflow: hidden;
+
+            // Item displayed with horizontal layout on desktop
+
+            .image {
+                max-width: 40%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                overflow: hidden;
+                
+                // --aspect-ratio variable gets set in style attribute
+                // This makes sure div is no wider than image on Safari and Firefox
+                aspect-ratio: var(--aspect-ratio);
+
+                picture {
+                    display: flex;
+                    justify-self: center;
+                    align-items: center;
+                }
+                
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                    width: auto;
+                    height: auto;
+                }
+            }
+
+            .quote {
+                width: 40%;
+                color: #6d6d6d;
+
+                @include mixins.testimonial-quote;
+            }
+        }
+    }
+
+    // For narrow screens, show item vertically with image above quote
+    @media only screen and (max-width: 900px) {
+
+        .testimonials-slideshow {
+            height: 400px;
+
+            .item {
+                flex-direction: column;
+                gap: 10px;
+
+                /*
+                    Layout is slightly complex.
+                    We want text to take up whatever vertical height it needs.
+                    Then display image as large as possible in remaining space.
+                    However if those two combined don't take up full height, centre them vertically.
+
+                    We achieve this by applying a small height on image that we know would always be safe,
+                    and adding flex grow to it so that it expands as much as possible.
+                    
+                    However, depending on the aspect ratio of the image, the containing div may grow to be far
+                    taller than the image. This would cause the text to be pushed to bottom of slide with
+                    a large gap above it to the image. To solve this we put a max-height on the image container
+                    based on its aspect ratio.
+                */
+                .image {
+                    max-width: 100%;
+
+                    // Max height = max width / aspect ratio
+                    // --aspect-ratio variable gets set in style attribute
+                    // Max width = Screen width - item left padding - item right padding
+                    max-height: calc((100vw - 2 * $itemHorizontalPadding) / var(--aspect-ratio));
+                    width: auto;
+                    height: 20%;
+                    flex-grow: 1;
+                }
+
+                .quote {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    // Can allow a greater gap between arrow buttons and screen edge on wide devices
+    @media only screen and (min-width: 1150px) {
+
+        .swiper-button-prev {
+            left: 25px;
+        }
+
+        .swiper-button-next {
+            right: 25px;
+        }
+    }
+
+
+    .testimonials-link-container {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
     }
 }
 

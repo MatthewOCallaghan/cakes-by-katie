@@ -11,8 +11,10 @@
                         <div
                             class="image-container"
                             style="aspect-ratio: {{ portfolio[cake].images[0].aspectRatio }}"
+                            data-image="{{ portfolio[cake].images[0].src }}"
+                            data-alt="{{ portfolio[cake].name }}"
                         >
-                            {{ pictureElement("portfolio/" + portfolio[cake].images[0].src, portfolio[cake].name, '250px') }}
+                            {# Code will insert <picture> here #}
                         </div>
                     </div>
                 {% endfor %}

@@ -2,11 +2,6 @@
 {% extends "layout.njk" %}
 
 {% block head %}
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-/>
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-snow@2/tsparticles.preset.snow.bundle.min.js"></script>
 {% endblock %}
 
@@ -135,56 +130,10 @@
             </div>
         </div>
     </section>
-
-    <section id="testimonials">
-
-        <!-- Slider main container -->
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                {% for cake in featuredTestimonials %}
-                    {% set testimonial = portfolio[cake].testimonial %}
-                    <div class="swiper-slide">
-                        <div class="item">
-                            <div
-                                class="image"
-                                style="--aspect-ratio: {{ portfolio[cake].images[0].aspectRatio }}"
-                            >
-                                {{ pictureElement("portfolio/" + portfolio[cake].images[0].src, portfolio[cake].name, { '900': '90vw', any: '45vw' }) }}
-                            </div>
-                            <div class="quote">
-                                <blockquote>{{ testimonial.text }}</blockquote>
-                                <span>{{ testimonial.name }}, {{ testimonial.location }}</span>
-                            </div>
-                        </div>
-                    </div>
-                {% endfor %}
-            </div>
-
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-
-        <div class="testimonials-link-container">
-            <a
-                class="button button-white"
-                href="/testimonials"
-            >
-                Read more testimonials
-            </a>
-        </div>
-    </section>
 {% endblock %}
 
 
 {% block scripts %}
-    <script type="text/javascript" src="/js/slideshow.js" defer></script>
-
     {# Christmas snowflakes #}
     {# <script type="text/javascript" src="/js/snow.js" defer></script> #}
 {% endblock %}

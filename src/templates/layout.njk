@@ -70,6 +70,13 @@
             })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
         </script>
 
+        {# Swiper for testimonials slideshows and image carousels #}
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+        />
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
     </head>
     <body>
         {% from "macros/picture.njk" import pictureElement with context %}
@@ -286,27 +293,43 @@
 
             {% block main %}{% endblock %}
 
-            {% if page != "index" %}
-                <section id="bottom-panel-cta">
-                    {{
-                        pictureElement(
-                            pages[page].cta.image.path if pages[page].cta.image else "backgrounds/cake-selection.jpg",
-                            pages[page].cta.image.alt if pages[page].cta.image else "Selection of cakes",
-                            "100vw",
-                            "object-position: " ~ pages[page].cta.image.position if pages[page].cta.image.position
-                        )
-                    }}
-                    <div>
-                        <h3>{{ pages[page].cta.text | safe if pages[page].cta.text else "Get a quote for your occasion!" }}</h3>
-                        <a
-                            class="button button-white"
-                            href="/#contact"
-                        >
-                            Contact me
-                        </a>
-                    </div>
-                </section>
+            {% from "macros/testimonials-slideshow.njk" import testimonialsSlideshow with context %}
+            {% if pages[page].testimonials !== "none" %}
+                {%
+                    set cakeFilters =
+                        { occasions: pages[page].occasion } if pages[page].occasion else (
+                        { product: pages[page].product } if pages[page].product else
+                        null)
+                %}
+                {% for cake in getMatchingCakes(cakeFilters, { testimonials: true }) %}
+                <span>{{cake.name}}</span>
+                {% endfor %}
+                {{
+                    testimonialsSlideshow(
+                        pages[page].testimonials or (getMatchingCakes(cakeFilters, { testimonials: true }) if cakeFilters and getMatchingCakes(cakeFilters, { testimonials: true }).length > 0 else featuredTestimonials)
+                    )
+                }}
             {% endif %}
+
+            <section id="bottom-panel-cta">
+                {{
+                    pictureElement(
+                        pages[page].cta.image.path if pages[page].cta.image else "backgrounds/cake-selection.jpg",
+                        pages[page].cta.image.alt if pages[page].cta.image else "Selection of cakes",
+                        "100vw",
+                        "object-position: " ~ pages[page].cta.image.position if pages[page].cta.image.position
+                    )
+                }}
+                <div>
+                    <h3>{{ pages[page].cta.text | safe if pages[page].cta.text else "Get a quote for your occasion!" }}</h3>
+                    <a
+                        class="button button-white"
+                        href="/#contact"
+                    >
+                        Contact me
+                    </a>
+                </div>
+            </section>
         </main>
 
         <footer>
@@ -389,6 +412,7 @@
 
         <!-- build:js(local/) js/{{ page }}.min.js -->
         <script type="text/javascript" src="/js/nav-menu.js" defer></script>
+        <script type="text/javascript" src="/js/testimonialsSlideshow.js" defer></script>
         {% block scripts %}{% endblock %}
         <!-- endbuild -->
     </body>
