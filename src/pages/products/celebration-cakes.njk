@@ -1,11 +1,6 @@
 {% set page = "celebrationCakes" %}
 {% extends "layout.njk" %}
 
-{% block head %}
-    {% from "macros/image-carousel-head.njk" import imageCarouselHead %}
-    {{ imageCarouselHead() }}
-{% endblock %}
-
 {% block main %}
 
     <section class="intro">
@@ -172,5 +167,6 @@
 {% endblock %}
 
 {% block scripts %}
-    
+    {% from "macros/image-carousel-scripts.njk" import imageCarouselScripts %}
+    {{ imageCarouselScripts() }}
 {% endblock %}
