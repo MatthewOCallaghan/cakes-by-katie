@@ -572,7 +572,8 @@
           "alt": "Wedding background"
         }
       },
-      "venue": "wasing-park"
+      "venue": "wasing-park",
+      "occasion": "wedding"
     },
     "venueDowneHouse": {
       "title": "Birthday cakes delivered to Downe House School | Cakes by Katie",
@@ -589,7 +590,8 @@
       "cta": {
         "text": "Get a cake delivered to Downe House School!"
       },
-      "venue": "downe-house-school"
+      "venue": "downe-house-school",
+      "occasion": "birthday"
     }
   },
   "portfolio": {

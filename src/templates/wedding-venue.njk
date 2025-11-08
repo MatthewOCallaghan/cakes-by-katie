@@ -1,11 +1,6 @@
 {% set type = "weddingVenue" %}
 {% extends "layout.njk" %}
 
-{% block head %}
-    {% from "macros/image-carousel-head.njk" import imageCarouselHead %}
-    {{ imageCarouselHead() }}
-{% endblock %}
-
 {% block main %}
 
     {% set venueKey = pages[page].venue %}
@@ -86,4 +81,9 @@
 
     {% include "wedding-favours.njk" %}
     
+{% endblock %}
+
+{% block scripts %}
+    {% from "macros/image-carousel-scripts.njk" import imageCarouselScripts %}
+    {{ imageCarouselScripts() }}
 {% endblock %}
