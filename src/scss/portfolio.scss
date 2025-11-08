@@ -30,6 +30,10 @@
         margin: 0 auto;
         grid-template-columns: repeat(4, minmax(auto, 1fr));
         grid-template-rows: auto;
+        overflow-x: auto;
+
+        // Stop button box-shadow getting cut off by overflow
+        padding: 3px;
 
         button {
             background: none;
@@ -37,6 +41,7 @@
             color: #a4a2a2;
             border-radius: 5px;
             width: 100%;
+            min-width: min-content;
             padding: 4px 5px;
             cursor: pointer;
             background: #0000;
