@@ -103,7 +103,7 @@ carousels.forEach(carousel => {
 });
 
 // Initialise Swiper for each carousel
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.image-slideshow .swiper', {
     // Show grab cursor on mouse hover
     grabCursor: true,
     // Infinite loop
