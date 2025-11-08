@@ -1,5 +1,6 @@
 {% macro testimonialsSlideshow(cakes) %}
 {% from "macros/picture.njk" import pictureElement with context %}
+{% if cakes.length > 0 %}
 <section class="testimonials">
     <!-- Slider main container -->
     <div class="testimonials-slideshow swiper">
@@ -18,7 +19,7 @@
                         </div>
                         <div class="quote">
                             <blockquote>{{ testimonial.text }}</blockquote>
-                            <span>{{ testimonial.name }}, {{ testimonial.location }}</span>
+                            <span>{{ testimonial.name }}{{ ', ' ~ testimonial.location if testimonial.location }}</span>
                         </div>
                     </div>
                 </div>
@@ -44,4 +45,5 @@
         </a>
     </div>
 </section>
+{% endif %}
 {% endmacro %}

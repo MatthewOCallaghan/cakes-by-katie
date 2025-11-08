@@ -35,7 +35,8 @@
           "alt": "Writing background"
         }
       },
-      "hasCSSFile": true
+      "hasCSSFile": true,
+      "testimonials": "none"
     },
     "faqs": {
       "title": "Frequently Asked Questions | Cakes by Katie",
@@ -212,7 +213,8 @@
       },
       "cta": {
         "text": "Get a quote for a celebration cake!"
-      }
+      },
+      "product": "celebration-cake"
     },
     "weddingCakes": {
       "title": "Wedding cakes | Cakes by Katie",
@@ -230,7 +232,8 @@
           "path": "backgrounds/wedding.jpg",
           "alt": "Wedding background"
         }
-      }
+      },
+      "product": "wedding-cake"
     },
     "weddingFavours": {
       "title": "Wedding favours | Cakes by Katie",
@@ -248,7 +251,8 @@
           "path": "backgrounds/wedding.jpg",
           "alt": "Wedding background"
         }
-      }
+      },
+      "testimonials": ["riding-the-waves"]
     },
     "gifts": {
       "title": "Gifts | Cakes by Katie",
@@ -280,7 +284,8 @@
           "path": "portfolio/Pastel-and-Choc-Roses.jpg",
           "alt": "Cupcakes background"
         }
-      }
+      },
+      "product": "cupcakes"
     },
     "occasions": {
       "title": "Occasions | Cakes by Katie",
@@ -384,7 +389,8 @@
       "cta": {
         "text": "Want a quote for a birthday cake?"
       },
-      "hasCSSFile": true
+      "hasCSSFile": true,
+      "occasion": "birthday"
     },
     "wedding": {
       "title": "Weddings | Cakes by Katie",
@@ -402,7 +408,8 @@
           "path": "backgrounds/wedding.jpg",
           "alt": "Wedding background"
         }
-      }
+      },
+      "occasion": "wedding"
     },
     "anniversary": {
       "title": "Anniversary cakes and cupcakes | Cakes by Katie",
@@ -416,7 +423,8 @@
       },
       "cta": {
         "text": "Want a quote for an anniversary cake?"
-      }
+      },
+      "occasion": "anniversary"
     },
     "christening": {
       "title": "Christening cakes and cupcakes | Cakes by Katie",
@@ -427,7 +435,8 @@
           "path": "backgrounds/christening.jpg",
           "alt": "Christening background"
         }
-      }
+      },
+      "occasion": "christening"
     },
     "babyShower": {
       "title": "Baby shower cakes and cupcakes | Cakes by Katie",
@@ -438,7 +447,8 @@
           "path": "backgrounds/baby-feet.jpg",
           "alt": "Baby's feet background"
         }
-      }
+      },
+      "occasion": "baby-shower"
     },
     "genderReveal": {
       "title": "Gender reveal cakes and cupcakes | Cakes by Katie",
@@ -449,7 +459,8 @@
           "path": "backgrounds/baby-feet.jpg",
           "alt": "Baby's feet background"
         }
-      }
+      },
+      "occasion": "gender-reveal"
     },
     "corporate": {
       "title": "Corporate cakes and cupcakes | Cakes by Katie",
@@ -463,7 +474,8 @@
       },
       "cta": {
         "text": "Want a quote for your corporate event?"
-      }
+      },
+      "occasion": "corporate"
     },
     "valentines": {
       "title": "Valentine's cakes and cupcakes | Cakes by Katie",
@@ -477,7 +489,8 @@
       },
       "cta": {
         "text": "Ready to make your Valentine's special?"
-      }
+      },
+      "occasion": "valentines"
     },
     "easter": {
       "title": "Easter cakes and cupcakes | Cakes by Katie",
@@ -493,7 +506,8 @@
       "productName": "Easter cake",
       "cta": {
         "text": "Ready to order for Easter?"
-      }
+      },
+      "occasion": "easter"
     },
     "christmas": {
       "title": "Christmas cakes, cupcakes and gifts | Cakes by Katie",
@@ -513,7 +527,9 @@
           "position": "50% 30%"
         }
       },
-      "hasCSSFile": true
+      "hasCSSFile": true,
+      "occasion": "christmas",
+      "testimonials": "none"
     },
     "afternoon-tea": {
       "title": "Afternoon tea cakes and cupcakes | Cakes by Katie",
@@ -527,7 +543,8 @@
       },
       "cta": {
         "text": "Ready to order?"
-      }
+      },
+      "occasion": "afternoon-tea"
     }
   },
   "portfolio": {
@@ -556,8 +573,7 @@
       },
       "product": "celebration-cake",
       "occasions": [
-        "baby-shower",
-        "christening"
+        "baby-shower"
       ],
       "flavours": [
         "GF Vanilla"
@@ -4863,7 +4879,7 @@
       },
       "product": "celebration-cake",
       "occasions": [
-        "baby-shower"
+        "birthday"
       ],
       "flavours": [
         "Vanilla"

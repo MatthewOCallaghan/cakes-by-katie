@@ -113,7 +113,8 @@ function processNunjucks() {
         // filters is object, e.g. { product: 'celebration-cake', occasion: 'birthday' }
         // `count` is desired number of cakes. If not specified, all matching cakes are returned
         // `offset` is index of matching cake to return first (use to avoid duplicate image carousels on same page)
-        environment.addGlobal('getMatchingCakes', (filters, { count, offset = 0 } = {}) => {
+        // `testimonials` is a boolean indicating whether these cakes will be used for testimonials
+        environment.addGlobal('getMatchingCakes', (filters, { count, offset = 0, testimonials = false } = {}) => {
 
             // Cakes in portfolio that match filters
             const matchingCakes = Object.entries(data.portfolio).reduce((acc, [key, info]) => {
@@ -123,6 +124,10 @@ function processNunjucks() {
                     if (!cakeData.includes(filters[filterKey])) {
                         return acc;
                     }
+                }
+
+                if (testimonials && (!info.testimonial || info.testimonial.text.length > 320)) {
+                    return acc;
                 }
 
                 return acc.concat(key);
@@ -135,7 +140,8 @@ function processNunjucks() {
             // If no count specified, return all matching cakes
             if (!count) {
                 // Cap count at 90 which is more than we'd actually need
-                count = Math.min(matchingCakes.length, 90);
+                // Except for testimonials slideshows which we cap at 6
+                count = Math.min(matchingCakes.length, testimonials ? 6 : 90);
             }
 
             // Index of `matchingCakes` to return first
