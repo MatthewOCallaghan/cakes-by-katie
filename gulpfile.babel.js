@@ -67,7 +67,7 @@ function setupData() {
         const venue = data.venues[venueKey];
         if (venue.flavourTip) {
             const { text, flavours } = venue.flavourTip;
-            venue.flavourTip = text.replace(/%/g, () => `<span class="flavour">${flavours.shift()}</span>`);
+            venue.flavourTip = text.replace(/%/g, () => `<span class="flavour">${data.flavours[flavours.shift()].name}</span>`);
         }
     }
 
