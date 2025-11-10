@@ -4291,7 +4291,7 @@
       },
       "variants": ["dairy-free", "vegan", "eggless", "nut-free"],
       "allergenInfo": "Lotus contains soya.",
-      "image": "choices/flavours/van-biscoff.jpg",
+      "image": "choices/flavours/lotus.jpg",
       "group": ["the-biscuit-edit"]
     },
     "lotus-noir": {
@@ -4405,6 +4405,9 @@
       },
       "variants": ["gluten-free", "dairy-free", "vegan", "eggless", "nut-free", "soya-free"],
       "image": "choices/flavours/toffee.jpg",
+      "variantImages": {
+        "vegan": "choices/flavours/toffee-vegan.jpg"
+      },
       "group": ["indulgence"]
     },
     "golden-salted": {
@@ -4416,6 +4419,9 @@
       },
       "variants": ["gluten-free", "dairy-free", "vegan", "eggless", "nut-free", "soya-free"],
       "image": "choices/flavours/toffee.jpg",
+      "variantImages": {
+        "vegan": "choices/flavours/toffee-vegan.jpg"
+      },
       "group": ["indulgence"]
     },
     "irish-cream": {
@@ -4425,7 +4431,7 @@
       },
       "variants": ["gluten-free", "eggless", "soya-free", "nut-free"],
       "allergenInfo": "Irish Cream is made with Baileys alcohol.",
-      "image": "choices/flavours/baileys.jpg",
+      "image": "choices/flavours/baileys-dreams.jpg",
       "group": ["indulgence"]
     },
     "pink-bubbles": {
