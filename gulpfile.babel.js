@@ -109,6 +109,10 @@ function processNunjucks() {
             return array.map(JSON.stringify);
         });
 
+        environment.addFilter('objectToArray', object => {
+            return Object.values(object);
+        });
+
         // Get array of cake keys matching specified filters
         // filters is object, e.g. { product: 'celebration-cake', occasion: 'birthday' }
         // `count` is desired number of cakes
