@@ -4035,182 +4035,434 @@
     "kirsten-3tier",
     "black-gold-milestone"
   ],
-  "flavours": [
-    {
+  "flavours": {
+    "vanilla": {
       "name": "Vanilla",
       "descriptions": {
-        "standard": "Light vanilla sponge filled with strawberry jam and buttercream",
-        "dairy-free": "Light vanilla sponge filled with strawberry jam and filling cream",
-        "vegan": "Light vanilla sponge filled with strawberry jam and filling cream"
+        "standard": "Vanilla sponge filled with strawberry jam and buttercream",
+        "dairy-free": "Vanilla sponge filled with strawberry jam and DF \"buttercream\"",
+        "vegan": "Vanilla sponge filled with strawberry jam and DF \"buttercream\""
       },
-      "variants": ["gluten-free", "dairy-free", "vegan", "eggless"],
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless", "nut-free", "soya-free"],
       "image": "choices/flavours/vanilla.jpg",
       "variantImages": {
         "vegan": "choices/flavours/vanilla-vegan.jpg",
         "eggless": "choices/flavours/vanilla-vegan.jpg"
-      }
+      },
+      "group": ["the-classics"]
     },
-    {
+    "chocolate":{
       "name": "Chocolate",
       "descriptions": {
         "standard": "Chocolate sponge filled with chocolate buttercream",
-        "dairy-free": "Chocolate sponge filled with chocolate filling cream",
-        "vegan": "Chocolate sponge filled with chocolate filling cream"
+        "dairy-free": "Chocolate sponge filled with chocolate DF \"buttercream\"",
+        "vegan": "Chocolate sponge filled with chocolate DF \"buttercream\""
       },
-      "variants": ["gluten-free", "dairy-free", "vegan", "eggless"],
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless", "nut-free", "soya-free", "gluten-free-vegan"],
       "image": "choices/flavours/chocolate.jpg",
       "variantImages": {
         "vegan": "choices/flavours/chocolate-vegan.jpg",
         "eggless": "choices/flavours/chocolate-vegan.jpg"
-      }
-    },
-    {
-      "name": "Chocolate Biscoff",
-      "descriptions": {
-        "standard": "Classic chocolate sponge layered with Biscoff flavoured buttercream and Biscoff spread",
-        "dairy-free": "Classic chocolate sponge layered with Biscoff flavoured filling cream and Biscoff spread",
-        "vegan": "Classic chocolate sponge layered with Biscoff flavoured filling cream and Biscoff spread"
       },
-      "variants": ["dairy-free", "vegan", "eggless"],
-      "allergenInfo": "Chocolate Biscoff sponge contains soya.",
-      "image": "choices/flavours/biscoff.jpg",
+      "group": ["the-classics"]
+    },
+    "milky-dream": {
+      "name": "Milky Dream",
+      "descriptions": {
+        "standard": "Chocolate sponge filled with milk chocolate spread and milk chocolate spread buttercream"
+      },
+      "variants": ["gluten-free", "eggless", "nut-free", "soya-free"],
+      "image": "choices/flavours/choc-spread.jpg",
+      "group": ["truffle-box"]
+    },
+    "dreams":{
+      "name": "Dreams",
+      "descriptions": {
+        "standard": "White chocolate flavoured sponge filled with white chocolate buttercream"
+      },
+      "variants": ["gluten-free", "eggless", "nut-free"],
+      "image": "choices/flavours/baileys-dreams.jpg",
+      "allergenInfo": "Dreams contains soya.",
+      "group": ["truffle-box"]
+    },
+    "dream-trio": {
+      "name": "Dream Trio",
+      "descriptions": {
+      "standard": "White chocolate flavoured sponge filled with milk chocolate spread and dark chocolate buttercream"
+      },
+      "variants": ["gluten-free", "eggless", "nut-free"],
+       "allergenInfo": "Dream Trio contains soya.",
+      "image": "choices/flavours/triple-choc.jpg",
+      "group": ["truffle-box"]
+    },
+    "raspberry-dream": {
+      "name": "Raspberry Dream",
+      "descriptions": {
+        "standard": "Raspberry sponge filled with white chocolate buttercream"
+      },
+      "variants": ["gluten-free", "eggless", "nut-free"],
+      "allergenInfo": "Raspberry Dream contains soya.",
+      "image": "choices/flavours/raspberry.jpg",
+      "group": ["truffle-box"]
+    },
+    "millionaires": {
+      "name": "Millionaires",
+      "descriptions": {
+        "standard": "Vanilla sponge filled with salted caramel sauce and chocolate buttercream"
+      },
+      "variants": ["gluten-free", "eggless", "nut-free", "soya-free"], 
+      "image": "choices/flavours/millionaires.jpg",
+      "group": ["truffle-box"]
+    },
+    "pearl-salted": {
+      "name": "Pearl Salted",
+      "descriptions": {
+        "standard": "Vanilla sponge filled with salted caramel sauce and salted caramel buttercream",
+        "dairy-free": "Vanilla sponge filled with salted caramel DF \"buttercream\"",
+        "vegan": "Vanilla sponge filled with salted caramel DF \"buttercream\""
+      },
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless", "nut-free", "soya-free"],
+      "image": "choices/flavours/van-salted-c.jpg",
+      "group": ["truffle-box"]
+    },
+    "salted-noir": {
+      "name": "Salted Noir",
+      "descriptions": {
+        "standard": "Chocolate sponge filled with salted caramel sauce and salted caramel buttercream",
+        "dairy-free": "Chocolate sponge filled with salted caramel DF \"buttercream\"",
+        "vegan": "Chocolate sponge filled with salted caramel DF \"buttercream\""
+      },
+      "variants": ["gluten-free", "dairy-free", "vegan", "gluten-free-vegan", "eggless", "nut-free", "soya-free"],
+      "image": "choices/flavours/choc-salted-c.jpg",
+      "group": ["truffle-box"]
+    },
+    "midnight-orange": {
+      "name": "Midnight Orange",
+      "descriptions": {
+        "standard": "Chocolate orange sponge filled with chocolate orange buttercream",
+        "dairy-free": "Chocolate orange sponge filled with chocolate orange DF \"buttercream\"",
+        "vegan": "Chocolate orange sponge filled with chocolate orange DF \"buttercream\""
+      },
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless", "nut-free", "soya-free", "gluten-free-vegan"],
+      "image": "choices/flavours/chocolate.jpg",
       "variantImages": {
-        "vegan": "choices/flavours/biscoff-vegan.jpg",
-        "eggless": "choices/flavours/biscoff-vegan.jpg"
-      }
-    },
-    {
-      "name": "Chocolate Oreo",
-      "descriptions": {
-        "standard": "Classic chocolate sponge filled with Oreo buttercream",
-        "dairy-free": "Classic chocolate sponge filled with Oreo filling cream",
-        "vegan": "Classic chocolate sponge filled with Oreo filling cream"
+        "vegan": "choices/flavours/chocolate-vegan.jpg",
+        "eggless": "choices/flavours/chocolate-vegan.jpg"
       },
-      "variants": ["dairy-free", "vegan", "eggless"],
+      "group": ["truffle-box"]
+    },
+    "midnight-mint": {
+      "name": "Midnight Mint",
+      "descriptions": {
+        "standard": "Chocolate sponge filled with chocolate mint buttercream",
+        "dairy-free": "Chocolate sponge filled with chocolate mint DF \"buttercream\"",
+        "vegan": "Chocolate sponge filled with chocolate mint DF \"buttercream\""
+      },
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless", "nut-free", "soya-free", "gluten-free-vegan"],
+      "image": "choices/flavours/chocolate.jpg",
+      "variantImages": {
+        "vegan": "choices/flavours/chocolate-vegan.jpg",
+        "eggless": "choices/flavours/chocolate-vegan.jpg"
+      },
+        "group": ["truffle-box"]
+    },
+    "lemon-essence": {
+      "name": "Lemon Essence",
+      "descriptions": {
+        "standard": "Lemon sponge filled with lemon buttercream",
+        "dairy-free": "Lemon sponge filled with lemon DF \"buttercream\"",
+        "vegan": "Lemon sponge filled with lemon DF \"buttercream\""
+      },
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless", "nut-free", "soya-free"],
+      "image": "choices/flavours/lemon-elderflower-orange.jpg",
+      "variantImages": {
+        "vegan": "choices/flavours/lemon-vegan.jpg",
+        "eggless": "choices/flavours/lemon-vegan.jpg"
+      },
+      "group": ["fresh-fruity"]
+    },
+    "lemon-blossom": {
+      "name": "Lemon Blossom",
+      "descriptions": {
+        "standard": "Lemon sponge filled with elderflower buttercream",
+        "dairy-free": "Lemon sponge filled with elderflower DF \"buttercream\"",
+        "vegan": "Lemon sponge filled with elderflower DF \"buttercream\""
+      },
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless", "nut-free", "soya-free"],
+      "image": "choices/flavours/lemon-elderflower-orange.jpg",
+      "variantImages": {
+        "vegan": "choices/flavours/lemon-vegan.jpg",
+        "eggless": "choices/flavours/lemon-vegan.jpg"
+      },
+      "group": ["fresh-fruity"]
+    },
+    "lemon-sapphire": {
+      "name": "Lemon Sapphire",
+      "descriptions": {
+        "standard": "Lemon sponge with blueberry pieces filled with blueberry jam and blueberry buttercream",
+        "dairy-free": "Lemon sponge with blueberry pieces filled with blueberry jam and blueberry DF \"buttercream\"",
+        "vegan": "Lemon sponge with blueberry pieces filled with blueberry jam and blueberry DF \"buttercream\""
+      },
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless", "nut-free", "soya-free"],
+      "image": "choices/flavours/lemon-blue.jpg",
+      "group": ["fresh-fruity"]
+    },
+    "orange-essence": {
+      "name": "Orange Essence",
+      "descriptions": {
+        "standard": "Orange sponge filled with orange buttercream",
+        "dairy-free": "Orange sponge filled with orange DF \"buttercream\"",
+        "vegan": "Orange sponge filled with orange DF \"buttercream\""
+      },
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless", "nut-free", "soya-free"],
+      "image": "choices/flavours/lemon-elderflower-orange.jpg",
+      "variantImages": {
+        "vegan": "choices/flavours/lemon-vegan.jpg",
+        "eggless": "choices/flavours/lemon-vegan.jpg"
+      },
+      "group": ["fresh-fruity"]
+    },
+    "sunset-glow": {
+      "name": "Sunset Glow",
+      "descriptions": {
+        "standard": "Orange sponge filled with passionfruit & mango curd and white chocolate buttercream"
+      },
+      "variants": ["gluten-free", "nut-free"],
+      "allergenInfo": "Sunset Glow contains soya.",
+      "image": "choices/flavours/orange-p.jpg",
+      "group": ["fresh-fruity"]
+    },
+    "coconut-ripple": {
+      "name": "Coconut Ripple",
+      "descriptions": {
+        "standard": "Coconut sponge filled with raspberry jam and raspberry buttercream",
+        "dairy-free": "Coconut sponge filled with raspberry jam and raspberry DF \"buttercream\"",
+        "vegan": "Coconut sponge filled with raspberry jam and raspberry DF \"buttercream\""
+      },
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless", "nut-free", "soya-free"],
+      "image": "choices/flavours/coconut-rasp-champ.jpg",
+      "group": ["fresh-fruity"]
+    },
+    "tropical-zest": {
+      "name": "Tropical Zest",
+      "descriptions": {
+        "standard": "Coconut sponge filled with lemon buttercream",
+        "dairy-free": "Coconut sponge filled with lemon DF \"buttercream\"",
+        "vegan": "Coconut sponge filled with lemon DF \"buttercream\""
+      },
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless", "nut-free", "soya-free"],
+      "image": "choices/flavours/coconut-lemon.jpg",
+      "group": ["fresh-fruity"]
+    },
+    "cookies-cream":{
+      "name": "Cookies & Cream",
+      "descriptions": {
+        "standard": "Vanilla sponge filled with Oreo buttercream",
+        "dairy-free": "Vanilla sponge filled with Oreo DF \"buttercream\"",
+        "vegan": "Vanilla sponge filled with Oreo DF \"buttercream\""
+      },
+      "variants": ["dairy-free", "vegan", "eggless", "nut-free"],
+      "allergenInfo": "Cookies & Cream contains soya.",
+      "image": "choices/flavours/van-oreo.jpg",
+      "group": ["the-biscuit-edit"]
+    },
+    "chocolate-cream":{
+      "name": "Cookies & Chocolate",
+      "descriptions": {
+        "standard": "Chocolate sponge filled with Oreo buttercream",
+        "dairy-free": "Chocolate sponge filled with Oreo DF \"buttercream\"",
+        "vegan": "Chocolate sponge filled with Oreo DF \"buttercream\""
+      },
+      "variants": ["dairy-free", "vegan", "eggless", "nut-free"],
+        "allergenInfo": "Cookies & Chocolate contains soya.",
       "image": "choices/flavours/oreo.jpg",
       "variantImages": {
         "vegan": "choices/flavours/oreo-vegan.jpg",
         "eggless": "choices/flavours/oreo-vegan.jpg"
-      }
-    },
-    {
-      "name": "Chocolate Orange",
-      "descriptions": {
-        "standard": "Chocolate sponge flavoured with orange zest and filled with chocolate orange flavoured buttercream",
-        "dairy-free": "Chocolate sponge flavoured with orange zest and filled with chocolate orange flavoured filling cream",
-        "vegan": "Chocolate sponge flavoured with orange zest and filled with chocolate orange flavoured filling cream"
       },
-      "variants": ["gluten-free", "dairy-free", "vegan", "eggless"],
-      "image": "choices/flavours/chocolate.jpg",
+      "group": ["the-biscuit-edit"]  
+    },
+    "lotus": {
+      "name": "Lotus",
+      "descriptions": {
+        "standard": "Vanilla sponge filled with Biscoff sauce and Biscoff buttercream",
+        "dairy-free": "Vanilla sponge filled with Biscoff sauce and Biscoff DF \"buttercream\"",
+        "vegan": "Vanilla sponge filled with Biscoff sauce and Biscoff DF \"buttercream\""
+      },
+      "variants": ["dairy-free", "vegan", "eggless", "nut-free"],
+      "allergenInfo": "Lotus contains soya.",
+      "image": "choices/flavours/van-biscoff.jpg",
+      "group": ["the-biscuit-edit"]
+    },
+    "lotus-noir": {
+      "name": "Lotus Noir",
+      "descriptions": {
+        "standard": "Chocolate sponge filled with Biscoff sauce and Biscoff buttercream",
+        "dairy-free": "Chocolate sponge filled with Biscoff sauce and Biscoff DF \"buttercream\"",
+        "vegan": "Chocolate sponge filled with Biscoff sauce and Biscoff DF \"buttercream\""
+      },
+      "variants": ["dairy-free", "vegan", "eggless", "nut-free"],
+      "allergenInfo": "Lotus Noir sponge contains soya.",
+      "image": "choices/flavours/biscoff.jpg",
       "variantImages": {
-        "vegan": "choices/flavours/chocolate-vegan.jpg",
-        "eggless": "choices/flavours/chocolate-vegan.jpg"
-      }
-    },
-    {
-      "name": "Lemon",
-      "descriptions": {
-        "standard": "Fresh tasting sponge filled with lemon buttercream",
-        "dairy-free": "Fresh tasting sponge filled with lemon filling cream",
-        "vegan": "Fresh tasting sponge filled with lemon filling cream"
+        "vegan": "choices/flavours/biscoff-vegan.jpg",
+        "eggless": "choices/flavours/biscoff-vegan.jpg"
       },
-      "variants": ["gluten-free", "dairy-free", "vegan", "eggless"],
-      "image": "choices/flavours/lemon-elderflower-orange.jpg",
-      "variantImages": {
-        "vegan": "choices/flavours/lemon-vegan.jpg",
-        "eggless": "choices/flavours/lemon-vegan.jpg"
-      }
+      "group": ["the-biscuit-edit"] 
     },
-    {
-      "name": "Lemon and Elderflower",
+    "espresso":{
+      "name": "Espresso",
       "descriptions": {
-        "standard": "Light lemon sponge filled with elderflower flavour buttercream",
-        "dairy-free": "Light lemon sponge filled with elderflower flavour filling cream",
-        "vegan": "Light lemon sponge filled with elderflower flavour filling cream"
+        "standard": "Coffee sponge filled with coffee buttercream",
+        "dairy-free": "Coffee sponge filled with coffee DF \"buttercream\""
       },
-      "variants": ["gluten-free", "dairy-free", "vegan", "eggless"],
-      "image": "choices/flavours/lemon-elderflower-orange.jpg",
-      "variantImages": {
-        "vegan": "choices/flavours/lemon-vegan.jpg",
-        "eggless": "choices/flavours/lemon-vegan.jpg"
-      }
+      "variants": ["gluten-free", "dairy-free", "nut-free", "soya-free"],
+      "image": "choices/flavours/coffee.jpg",
+      "group": ["cafe-katie"]
     },
-    {
-      "name": "Orange",
+    "vanilla-latte": {
+      "name": "Vanilla Latte",
       "descriptions": {
-        "standard": "Sponge flavoured with zesty orange filled with orange buttercream",
-        "dairy-free": "Sponge flavoured with zesty orange filled with orange filling cream",
-        "vegan": "Sponge flavoured with zesty orange filled with orange filling cream"
+        "standard": "Vanilla sponge filled with coffee buttercream",
+        "dairy-free": "Vanilla sponge filled with coffee DF \"buttercream\"",
+        "vegan": "Vanilla sponge filled with coffee DF \"buttercream\""
       },
-      "variants": ["gluten-free", "dairy-free", "vegan", "eggless"],
-      "image": "choices/flavours/lemon-elderflower-orange.jpg",
-      "variantImages": {
-        "vegan": "choices/flavours/lemon-vegan.jpg",
-        "eggless": "choices/flavours/lemon-vegan.jpg"
-      }
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless", "nut-free", "soya-free"],
+      "image": "choices/flavours/van-coffee.jpg",
+      "group": ["cafe-katie"]
     },
-    {
-      "name": "Coffee",
+    "mocha": {
+      "name": "Mocha",
       "descriptions": {
-        "standard": "Rich coffee sponge filled with coffee buttercream",
-        "dairy-free": "Rich coffee sponge filled with coffee filling cream"
+        "standard": "Chocolate sponge filled with coffee buttercream",
+        "dairy-free": "Chocolate sponge filled with coffee DF \"buttercream\"",
+        "vegan": "Chocolate sponge filled with coffee DF \"buttercream\""
       },
-      "variants": ["gluten-free", "dairy-free"],
-      "image": "choices/flavours/coffee.jpg"
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless", "nut-free", "soya-free", "gluten-free-vegan"],
+      "image": "choices/flavours/choc-coffee.jpg",
+      "group": ["cafe-katie"]
     },
-    {
-      "name": "Coffee and walnut",
-      "descriptions": {
-        "standard": "Rich coffee and walnut sponge filled with coffee buttercream and walnut pieces",
-        "dairy-free": "Rich coffee and walnut sponge filled with coffee filling cream and walnut pieces"
-      },
-      "variants": ["gluten-free", "dairy-free"],
-      "allergenInfo": "Coffee and walnut sponge is made using Nuts (walnuts).",
-      "image": "choices/flavours/coffee-walnut.jpg"
-    },
-    {
+    "carrot": {
       "name": "Carrot",
       "descriptions": {
-        "standard": "Moist with a hint of a spice flavour filled with cream cheese buttercream",
-        "dairy-free": "Moist with a hint of a spice flavour filled with cream cheese (dairy free alternative) filling cream"
+        "standard": "Carrot sponge (with a hint of cinnamon) filled with cream cheese buttercream"
       },
-      "variants": ["gluten-free"],
-      "allergenInfo": "Carrot sponge is made using Nuts (walnuts).",
-      "image": "choices/flavours/carrot.jpg"
+      "variants": ["gluten-free", "soya-free"],
+      "allergenInfo": "Carrot contains walnuts.",
+      "image": "choices/flavours/carrot.jpg",
+      "group": ["nutty-delights"]
     },
-    {
-      "name": "Baileys",
+    "pistachio-whisper": {
+      "name": "Pistachio Whisper",
       "descriptions": {
-        "standard": "Light sponge flavoured with Baileys and filled with Baileys buttercream",
-        "dairy-free": "Light sponge flavoured with Baileys and filled with Baileys filling cream"
+        "standard": "Vanilla sponge filled with pistachio buttercream",
+        "dairy-free": "Vanilla sponge filled with pistachio DF \"buttercream\"",
+        "vegan": "Vanilla sponge filled with pistachio DF \"buttercream\""
+      },
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless", "soya-free"],
+      "allergenInfo": "Pistachio Whisper contains pistachios.",
+      "image": "choices/flavours/pistachio.jpg",
+      "group": ["nutty-delights"]
+    },
+    "hazelnut-truffle": {
+      "name": "Hazelnut Truffle",
+      "descriptions": {
+        "standard": "Chocolate sponge filled with Nutella spread and Nutella buttercream"
       },
       "variants": ["gluten-free", "eggless"],
-      "image": "choices/flavours/baileys.jpg"
+      "allergenInfo": "Hazelnut Truffle contains hazelnuts and soya.",
+      "image": "choices/flavours/nutella.jpg",
+      "group": ["nutty-delights"]
     },
-    {
-      "name": "Toffee",
+    "peanut-truffle": {
+      "name": "Peanut Truffle",
+    "descriptions": {
+      "standard": "Chocolate sponge filled with peanut butter spread and peanut butter buttercream",
+      "dairy-free": "Chocolate sponge filled with peanut butter spread and peanut butter DF \"buttercream\"",
+      "vegan": "Chocolate sponge filled with peanut butter spread and peanut butter DF \"buttercream\""
+    },
+    "variants": ["gluten-free", "eggless", "dairy-free", "vegan", "soya-free", "gluten-free-vegan"],
+    "allergenInfo": "Peanut Truffle contains peanuts.",
+    "image": "choices/flavours/peanut-butter.jpg",
+    "group": ["nutty-delights"]
+    },
+    "nutty-espresso": {
+      "name": "Nutty Espresso",
       "descriptions": {
-        "standard": "Delicious toffee flavoured sponge filled with toffee flavour buttercream and a layer of salted caramel sauce",
-        "dairy-free": "Delicious toffee flavoured sponge filled with toffee flavour filling cream",
-        "vegan": "Delicious toffee flavoured sponge filled with toffee flavour filling cream"
+        "standard": "Coffee and walnut sponge filled with walnut pieces and coffee buttercream",
+        "dairy-free": "Coffee and walnut sponge filled with walnut pieces and coffee DF \"buttercream\""
       },
-      "variants": ["gluten-free", "dairy-free", "vegan", "eggless"],
+      "variants": ["gluten-free", "dairy-free", "soya-free"],
+      "allergenInfo": "Nutty Espresso contains walnuts.",
+      "image": "choices/flavours/coffee-walnut.jpg"
+    },
+    "golden-caramel": {
+      "name": "Golden Caramel",
+      "descriptions": {
+        "standard": "Caramel sponge filled with salted caramel sauce and caramel buttercream",
+        "dairy-free": "Caramel sponge filled with caramel DF \"buttercream\"",
+        "vegan": "Caramel sponge filled with caramel DF \"buttercream\""
+      },
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless", "nut-free", "soya-free"],
       "image": "choices/flavours/toffee.jpg",
-      "variantImages": {
-        "dairy-free": "choices/flavours/toffee-vegan.jpg",
-        "vegan": "choices/flavours/toffee-vegan.jpg"
-      }
+      "group": ["indulgence"]
     },
-    {
-      "name": "Raspberry and white chocolate",
+    "golden-salted": {
+      "name": "Golden Salted",
       "descriptions": {
-        "standard": "Classic sponge containing raspberry pieces filled with white chocolate buttercream"
+        "standard": "Caramel sponge filled with salted caramel sauce and salted caramel buttercream",
+        "dairy-free": "Caramel sponge filled with salted caramel DF \"buttercream\"",
+        "vegan": "Caramel sponge filled with salted caramel DF \"buttercream\""
       },
-      "variants": ["gluten-free", "eggless"],
-      "allergenInfo": "Raspberry and white chocolate sponge contains soya.",
-      "image": "choices/flavours/raspberry.jpg"
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless", "nut-free", "soya-free"],
+      "image": "choices/flavours/toffee.jpg",
+      "group": ["indulgence"]
+    },
+    "irish-cream": {
+      "name": "Irish Cream",
+      "descriptions": {
+        "standard": "Baileys sponge filled with Baileys buttercream"
+      },
+      "variants": ["gluten-free", "eggless", "soya-free", "nut-free"],
+      "allergenInfo": "Irish Cream is made with Baileys alcohol.",
+      "image": "choices/flavours/baileys.jpg",
+      "group": ["indulgence"]
+    },
+    "pink-bubbles": {
+      "name": "Pink Bubbles",
+      "descriptions": {
+        "standard": "Champagne flavoured sponge filled with strawberry jam and strawberry buttercream",
+        "dairy-free": "Champagne flavoured sponge filled with strawberry jam and strawberry DF \"buttercream\"",
+        "vegan": "Champagne flavoured sponge filled with strawberry jam and strawberry DF \"buttercream\""
+      },
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless", "soya-free", "nut-free"],
+      "image": "choices/flavours/coconut-rasp-champ.jpg",
+      "group": ["indulgence"]
     }
-  ],
+  },
+  "flavourGroups": {
+    "the-classics": {
+      "flavours": ["vanilla", "chocolate"]
+    },
+    "truffle-box":{
+      "flavours": ["milky-dream", "dreams", "dream-trio", "raspberry-dream", "millionaires", "pearl-salted", "salted-noir", "midnight-orange", "midnight-mint"]
+    },
+    "fresh-fruity":{
+      "flavours": ["lemon-essence", "lemon-blossom", "lemon-sapphire", "orange-essence", "sunset-glow", "coconut-ripple", "coconut-ripple", "tropical-zest"]
+    },
+    "the-biscuit-edit": {
+      "flavours": ["cookies-cream", "chocolate-cream", "lotus", "lotus-noir"]
+    },
+    "cafe-katie": {
+      "flavours" : ["espresso", "vanilla-latte", "mocha"]
+    },
+    "nutty-delights": {
+      "flavours": ["carrot", "pistachio-whisper", "hazelnut-truffle", "peanut-truffle", "nutty-espresso"]
+    },
+    "indulgence": {
+      "flavours": ["golden-caramel", "golden-salted", "irish-cream", "pink-bubbles"]
+    }
+  },
   "products": {
     "celebrationCakes": {
       "pricing": {
