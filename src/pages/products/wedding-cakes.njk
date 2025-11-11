@@ -95,7 +95,7 @@
                 },
                 {
                     name: "Flavours",
-                    items: flavours
+                    items: flavours | objectToArray
                 },
                 {
                     name: "Decoration",
@@ -153,19 +153,15 @@
         {% include "wedding-cake-pricing.njk" %}
     </section>
 
-    {% from "macros/half-image-section.njk" import halfImageSection with context %}
-    {{ halfImageSection(
-        'How about some wedding favours?',
-        [
-            "My wedding favours are lovingly crafted to delight your guests and include cake jars, sugar cookies and cakesicles. They are the perfect gesture to thank your guests for sharing in your special day."
-        ],
-        "/products/wedding-favours",
-        "See wedding favours",
-        "wedding-favours/bombe-landscape.jpg",
-        "Hot chocolate bombe wedding favour"
-    ) }}
+    {% include "wedding-favours.njk" %}
 
     {% include "featured-in.njk" %}
+
+    {{ imageCarousel(getMatchingCakes({ product: 'wedding-cake' }), 'linear-gradient(to bottom, #000, ' ~ products.weddingCakes.colours.light ~ ')') }}
+
+    <section style="background:{{products.weddingCakes.colours.light}}">
+        {% include "wedding-venues.njk" %}
+    </section>
 {% endblock %}
 
 {% block scripts %}

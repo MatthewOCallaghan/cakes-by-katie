@@ -1,8 +1,16 @@
-{% macro pageTitle(title, imagePath="backgrounds/marble-background.jpg", imageAlt="Marble background image") %}
+{% macro pageTitle(title, imagePath="backgrounds/marble-background.jpg", imageAlt="Marble background image", beforeText = "", afterText = "") %}
 {% from "macros/picture.njk" import pictureElement with context %}
 {# Darken the background image if it isn't the default marble one. This makes text stand out better. #}
-<div class="page-title{{ " darkened" if imagePath !== "backgrounds/marble-background.jpg"}}">
+<div class="page-title{{ " darkened" if imagePath !== "backgrounds/marble-background.jpg"}}{{ " small-text" if beforeText or afterText }}">
     {{ pictureElement(imagePath, imageAlt) }}
-    <h1>{{ title }}</h1>
+    <h1>
+        {% if beforeText %}
+            <span>{{ beforeText }}</span>
+        {% endif %}
+        {{ title }}
+        {% if afterText %}
+            <span>{{ afterText }}</span>
+        {% endif %}
+    </h1>
 </div>
 {% endmacro %}

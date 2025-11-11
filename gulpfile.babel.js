@@ -62,6 +62,15 @@ function setupData() {
     // Collect testimonials separately to make them easier to process
     data.testimonials = Object.entries(data.portfolio).reduce((acc, [cake, { testimonial }]) => testimonial ? acc.concat({ cake, ...testimonial }) : acc, []);
 
+    // Inject flavour names into venue flavour tips
+    for (const venueKey in data.venues) {
+        const venue = data.venues[venueKey];
+        if (venue.flavourTip) {
+            const { text, flavours } = venue.flavourTip;
+            venue.flavourTip = text.replace(/%/g, () => `<span class="flavour">${data.flavours[flavours.shift()].name}</span>`);
+        }
+    }
+
     // Get size of each portfolio image and video
     let videoPromises = [];
 
@@ -107,6 +116,10 @@ function processNunjucks() {
 
         environment.addFilter('stringifyElements', array => {
             return array.map(JSON.stringify);
+        });
+
+        environment.addFilter('objectToArray', object => {
+            return Object.values(object);
         });
 
         // Get array of cake keys matching specified filters

@@ -37,7 +37,7 @@
 
                         {% from "macros/picture.njk" import pictureElement with context %}
         
-                        {% for flavour in flavours %}
+                        {% for key, flavour in flavours %}
                             <div class="flavour-row flavour standard{{ " " ~ (flavour.variants | join(" ")) if flavour.variants }}">
                                 
                                 {% for variant in ["gluten-free", "dairy-free", "vegan", "eggless"] %}

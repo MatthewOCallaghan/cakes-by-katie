@@ -1,0 +1,113 @@
+div.venue-intro {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+
+    .venue-text {
+        > p:first-child {
+            margin-top: 0;
+        }
+
+        .venue-address {
+            font-size: 0.9rem;
+            font-style: italic;
+            text-wrap: balance;
+            text-wrap: pretty;
+        }
+    }
+
+    .venue-image {
+        img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 100%;
+        }
+    }
+
+    @media (max-width: 950px) {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+div.venue-content {
+
+    max-width: 1000px;
+    margin: auto;
+
+    h2 {
+        margin-top: 0;
+    }
+
+    ul {
+        max-width: 800px;
+        margin: auto;
+        
+        li {
+            margin: 0.5em 0;
+        }
+    }
+
+    div.flavour-tip {
+        border: 1px solid gold;
+        background: #fff6f2;
+        padding: 1rem;
+        border-radius: 8px;
+        max-width: 600px;
+        margin: auto;
+        margin-top: 2rem;
+
+        .flavour-tip-heading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 1rem;
+            color: #818181;
+
+            .flavour-icon {
+                width: 30px;
+            }
+            
+
+            h3 {
+                margin: 0;
+                font-family: inherit;
+                font-size: 1.5rem;
+            }
+        }
+        
+        p {
+            margin-top: 0;
+        }
+
+        .flavour {
+            font-style: italic;
+        }
+
+        a {
+            color: #818181;
+        }
+    }
+
+    div.dividing-image {
+
+        margin: 3rem 0;
+
+        img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 100%;
+        }
+    }
+}
+
+.wedding-venue-cta-button {
+    margin-top: 1em;
+}

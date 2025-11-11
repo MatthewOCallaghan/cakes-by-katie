@@ -132,7 +132,7 @@
       "hasCSSFile": true
     },
     "awards": {
-      "title": "New and Awards | Cakes by Katie",
+      "title": "News and Awards | Cakes by Katie",
       "description": "Cakes by Katie, a cake maker in Thatcham, West Berkshire, is honoured to have received a variety of awards for their wedding cakes, celebration cakes and cupcakes.",
       "heading": {
         "text": "News & Awards",
@@ -523,7 +523,7 @@
         "text": "Order now for collection in the lead up to Christmas",
         "image": {
           "path": "backgrounds/santa-and-child.jpg",
-          "alt": "Santa Clause and child background",
+          "alt": "Santa Claus and child background",
           "position": "50% 30%"
         }
       },
@@ -545,6 +545,53 @@
         "text": "Ready to order?"
       },
       "occasion": "afternoon-tea"
+    },
+    "delivery": {
+      "title": "Delivery | Cakes by Katie",
+      "description": "I'm a cake maker in Thatcham, West Berkshire, delivering high quality bespoke cakes for birthdays, weddings, anniversaries, christenings, or any occasion.",
+      "heading": {
+        "text": "Delivery"
+      }
+    },
+    "venueWasingPark": {
+      "title": "Wedding cakes delivered to Wasing Park | Cakes by Katie",
+      "description": "Delivering to Wasing Park, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "Wasing Park",
+        "afterText": "Berkshire",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at Wasing Park!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "wasing-park",
+      "occasion": "wedding"
+    },
+    "venueDowneHouse": {
+      "title": "Birthday cakes delivered to Downe House School | Cakes by Katie",
+      "description": "Delivering to Downe House School, Cakes by Katie offers bespoke birthday cakes and cupcakes in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Birthday cakes for",
+        "text": "Downe House School",
+        "afterText": "Cold Ash",
+        "image": {
+          "path": "backgrounds/birthday-balloons.jpg",
+          "alt": "Birthday background"
+        }
+      },
+      "cta": {
+        "text": "Get a cake delivered to Downe House School!"
+      },
+      "venue": "downe-house-school",
+      "occasion": "birthday"
     }
   },
   "portfolio": {
@@ -557,9 +604,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Family Farm"
-      ]
+      "venue": "Family Farm"
     },
     "fishing-for-dreams": {
       "images": [
@@ -590,9 +635,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Ufton Court"
-      ],
+      "venue": "Ufton Court",
       "testimonial": {
         "text": "I just wanted to say a huge thank you for our wedding cake on Sunday, it was absolutely perfect. It looked beautiful and was everything we had imagined (and more!), and every single layer tasted amazing. We had so many guests comment on how good it was, and I am so glad we chose you to make it for us. You were so lovely to work with from start to finish, and it honestly felt so special seeing the cake on the day after all the planning. Apologies about the cake ribbon though - Chloe saved the day and it was just as beautiful as I had planned.",
         "name": "Lotty & George",
@@ -613,9 +656,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Post Barn"
-      ]
+      "venue": "The Post Barn"
     },
     "hannah": {
       "images": [
@@ -626,9 +667,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Wasing Park"
-      ]
+      "venue": "wasing-park"
     },
     "bryony": {
       "images": [
@@ -639,9 +678,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Sheepdrove"
-      ]
+      "venue": "Sheepdrove"
     },
     "flopsy-in-pink-christening": {
       "images": [
@@ -674,9 +711,7 @@
         "Lemon",
         "Orange"
       ],
-      "venue": [
-        "St Barnabas Church"
-      ]
+      "venue": "St Barnabas Church"
     },
     "janelle": {
       "images": [
@@ -688,9 +723,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Old Mill"
-      ]
+      "venue": "The Old Mill"
     },
     "natalie": {
       "images": [
@@ -701,9 +734,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Post Barn"
-      ]
+      "venue": "The Post Barn"
     },
     "arabella": {
       "images": [
@@ -725,9 +756,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Retreat, Elcot ParK"
-      ]
+      "venue": "The Retreat, Elcot Park"
     },
     "elegancia": {
       "images": [
@@ -751,9 +780,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Donnington Grove"
-      ]
+      "venue": "Donnington Grove"
     },
     "ellie": {
       "images": [
@@ -764,9 +791,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Wasing Park"
-      ]
+      "venue": "wasing-park"
     },
     "vintage-zainab": {
       "images": [
@@ -778,9 +803,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Victory Hall"
-      ]
+      "venue": "The Victory Hall"
     },
     "vintage-hayley": {
       "images": [
@@ -791,9 +814,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Hedsor House"
-      ]
+      "venue": "Hedsor House"
     },
     "sian": {
       "images": [
@@ -805,9 +826,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Chequers Hotel, Newbury"
-      ]
+      "venue": "The Chequers Hotel, Newbury"
     },
     "amy": {
       "images": [
@@ -818,9 +837,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Post Barn"
-      ]
+      "venue": "The Post Barn"
     },
     "welcome-to-the-jungle": {
       "images": [
@@ -849,9 +866,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Shaw House"
-      ],
+      "venue": "Shaw House",
       "testimonial": {
         "text": "I’d like to thank you so much for your excellent service. The cake décor looked absolutely stunning, and I was truly delighted with the final result. Everyone loved the cake, we served it to all our guests, and many even went back for a second slice! It was a real highlight of the day. Thank you again for your incredible work and attention to detail.",
         "name": "Eliane & Oliver",
@@ -870,9 +885,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Combe Manor"
-      ]
+      "venue": "Combe Manor"
     },
     "lorraine": {
       "images": [
@@ -880,12 +893,8 @@
       ],
       "name": "Lorraine",
       "product": "wedding-cake",
-      "occasions": [
-        "wedding"
-      ],
-      "venue": [
-        "Carey's Manor"
-      ]
+      "occasions": ["wedding"],
+      "venue": "Careys Manor"
     },
     "jeffrey": {
       "images": [
@@ -933,9 +942,7 @@
         "Raspberry & White Chocolate",
         "Lemon & Elderflower"
       ],
-      "venue": [
-        "The Post Barn"
-      ]
+      "venue": "The Post Barn"
     },
     "bee-happy-with-pooh": {
       "images": [
@@ -956,9 +963,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Trunkwell House"
-      ],
+      "venue": "Trunkwell House",
       "testimonial": {
         "text": "Thank you so much for the cake! It was delicious, so beautiful and exactly what we wanted, and everyone loved it so much! Most people didn’t realise it was vegan it was that good!",
         "name": "Anna & Elias",
@@ -978,9 +983,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Wasing Park"
-      ]
+      "venue": "wasing-park"
     },
     "the-one-where-its-your-birthday": {
       "images": [
@@ -1004,20 +1007,15 @@
         "christening"
       ]
     },
-    "leah": {
-      "images": [
-        "leah.jpg",
-        "leah2.jpg"
-      ],
-      "description": "Photographer: Kevin James Photogarphy",
+"leah": {
+      "images": ["leah.jpg", "leah2.jpg"],
+      "description": "Photographer: Kevin James Photography",
       "name": "Leah",
       "product": "wedding-cake",
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Swan at Streatley"
-      ],
+      "venue": "The Swan at Streatley",
       "testimonial": {
         "text": "We just wanted to say a massive thank you for the cake last Saturday, it looked absolutely stunning and our guests were raving about how good it tasted. Thankfully we've got some stashed in our freezer to look forward to eating once we're back from honeymoon!",
         "name": "Leah & Ryan",
@@ -1039,20 +1037,15 @@
         "birthday"
       ]
     },
-    "courtney": {
-      "images": [
-        "courtney2.jpg",
-        "courtney.jpg"
-      ],
-      "description": "Photographer: Olga J Photography",
+ "courtney": {
+      "images": ["courtney2.jpg", "courtney.jpg"],
+      "description": "Photographer: Olga J. Photography",
       "name": "Courtney",
       "product": "wedding-cake",
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Post Barn"
-      ]
+      "venue": "The Post Barn"
     },
     "puddles-the-penguin": {
       "images": [
@@ -1073,9 +1066,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Stanlake Park"
-      ]
+      "venue": "Stanlake Park"
     },
     "kemi": {
       "images": [
@@ -1088,9 +1079,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Post Barn"
-      ],
+      "venue": "The Post Barn",
       "testimonial": {
         "text": "The cake was absolutely stunning and matched the decor perfectly. We are glad to have had your work as a part of our special day.",
         "name": "Zac & Kemi",
@@ -1121,9 +1110,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Forest Edge Tipis, Welford Park"
-      ]
+      "venue": "Forest Edge Tipis, Welford Park"
     },
     "tiny-terry": {
       "images": [
@@ -1144,9 +1131,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Wasing Park"
-      ]
+      "venue": "wasing-park"
     },
     "fault-line-green-and-gold": {
       "images": [
@@ -1168,9 +1153,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Wasing Park"
-      ]
+      "venue": "wasing-park"
     },
     "time-for-tea": {
       "images": [
@@ -1183,28 +1166,20 @@
       ]
     },
     "francesca": {
-      "images": [
-        "francesca.jpg"
-      ],
-      "description": "Photographer: Indiego Photogarphy",
+      "images": ["francesca.jpg"],
+      "description": "Photographer: Indiego Photography",
       "name": "Francesca",
       "product": "wedding-cake",
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Pembroke Lodge"
-      ],
+      "venue": "Pembroke Lodge",
       "testimonial": {
         "text": "We couldn’t have asked for a more perfect wedding cake! Not only was it stunningly beautiful but it tasted absolutely amazing. Every detail was crafted with care and our guests couldn’t stop talking about it. You truly made our vision come to life and we are so grateful for your talent and professionalism. Thank you for being part of our special day and creating such a memorable centrepiece!",
         "name": "Frankie &  Josh",
         "location": "Devon"
       },
-      "flavours": [
-        "GF Choocolate",
-        "GF Lemon & Elderflower",
-        "GF Raspberry & White Chocolate"
-      ]
+      "flavours": ["GF Chocolate", "GF Lemon & Elderflower", "GF Raspberry & White Chocolate"]
     },
     "petals-and-pearls": {
       "images": [
@@ -1212,7 +1187,7 @@
       ],
       "name": "Petals & Pearls",
       "testimonial": {
-        "text": "Thank you so much Katie, the cake was stunning, so beautiful and tasted delicous too! It all went the day it was cut! We'll certainly be ordering more cakes from you and highly recommending you to all our family and friends.",
+        "text": "Thank you so much Katie, the cake was stunning, so beautiful and tasted delicious too! It all went the day it was cut! We'll certainly be ordering more cakes from you and highly recommending you to all our family and friends.",
         "name": "Nikki",
         "location": "Thatcham"
       },
@@ -1235,9 +1210,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Old Gore"
-      ]
+      "venue": "Old Gore"
     },
     "baby-bears": {
       "images": [
@@ -1256,9 +1229,9 @@
         "Floral-Tower.jpg"
       ],
       "name": "Floral Tower",
-      "testimonial": {
-        "text": "I just wanted to thank you for the gorgeous cupcakes on Saturday.  They looked perfect and tasted absolutely delicious.  Everyone really enjoyed them (including my very naughty dog who swiped one of the remaining few off the table when we got home).  I'm sorry I didn't get to see you on Saturday, but thank you for doing such a fantastic and professional job. Many many thanks.",
-        "name": "Victoria & Nicholas"
+      "testimonial":{
+        "text":"I just wanted to thank you for the gorgeous cupcakes on Saturday.  They looked perfect and tasted absolutely delicious.  Everyone really enjoyed them (including my very naughty dog who swiped one of the remaining few off the table when we got home).  I'm sorry I didn't get to see you on Saturday, but thank you for doing such a fantastic and professional job. Many, many thanks.",
+        "name":"Victoria & Nicholas"
       },
       "product": "cupcakes",
       "occasions": [
@@ -1273,9 +1246,7 @@
         "Lemon",
         "Carrot"
       ],
-      "venue": [
-        "The Retreat, Elcot ParK"
-      ]
+      "venue": "The Retreat, Elcot Park"
     },
     "bella-and-bubbles": {
       "images": [
@@ -1293,12 +1264,8 @@
       ],
       "name": "Louisa",
       "product": "wedding-cake",
-      "occasions": [
-        "wedding"
-      ],
-      "venue": [
-        "The Beatle & Wedge"
-      ]
+      "occasions": ["wedding"],
+      "venue": "The Beetle & Wedge"
     },
     "lavender-swifty": {
       "images": [
@@ -1312,18 +1279,14 @@
       ]
     },
     "just-vintage": {
-      "images": [
-        "just-vintage.jpg"
-      ],
-      "description": "Photographer: Photogarphy by Linas",
+      "images": ["just-vintage.jpg"],
+      "description": "Photographer: Photography by Linas",
       "name": "Just Vintage",
       "product": "wedding-cake",
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Wasing Park"
-      ]
+      "venue": "wasing-park"
     },
     "enchanted-castle": {
       "images": [
@@ -1352,9 +1315,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Post Barn"
-      ],
+      "venue": "The Post Barn",
       "testimonial": {
         "text": "We just wanted to say a big thank you for our lovely wedding cake and for all your help in the build up to the day! The cake looked and tasted amazing!",
         "name": "Connie & Matt",
@@ -1385,16 +1346,14 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Monkey Island"
-      ]
+      "venue": "Monkey Island"
     },
     "pretty-in-pink": {
       "images": [
         "Pretty-in-Pink.jpg"
       ],
       "squareImage": "Pretty-in-Pink-square.jpg",
-      "name": "Pretty ih Pink",
+      "name": "Pretty in Pink",
       "product": "celebration-cake",
       "occasions": [
         "birthday"
@@ -1409,9 +1368,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Wasing Park"
-      ]
+      "venue": "wasing-park"
     },
     "let-it-go": {
       "images": [
@@ -1454,9 +1411,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Thatcham Football Club"
-      ],
+      "venue": "Thatcham Football Club",
       "testimonial": {
         "text": "Thank you so much for the cakes. They went down a treat. They were delicious. Again thank you so much!",
         "name": "Elle & Harley",
@@ -1494,9 +1449,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Dolphin, Newbury"
-      ]
+      "venue": "The Dolphin, Newbury"
     },
     "enchanted": {
       "images": [
@@ -1534,9 +1487,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Hedsor House"
-      ],
+      "venue": "Hedsor House",
       "testimonial": {
         "text": "We wanted to thank you for the beautiful cake you made for our wedding. The design was elegant and exactly what we had hoped for. The cake tasted wonderful as well — our guests really enjoyed it and many mentioned how delicious it was. We truly appreciate your care and attention to detail in bringing everything together. It was a pleasure working with you and having your creation as part of our special day.",
         "name": "Angel & Edwin",
@@ -1567,9 +1518,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Dean Court Community Centre"
-      ]
+      "venue": "Dean Court Community Centre"
     },
     "bouquet-pink-mix": {
       "images": [
@@ -1595,9 +1544,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Wasing Park"
-      ]
+      "venue": "wasing-park"
     },
     "celebrate-with-champagne": {
       "images": [
@@ -1611,19 +1558,15 @@
         "corporate"
       ]
     },
-    "lauren": {
-      "images": [
-        "lauren.jpg"
-      ],
-      "description": "Photographer: Kevin James Photogarphy",
+   "lauren": {
+      "images": ["lauren.jpg"],
+      "description": "Photographer: Kevin James Photography",
       "name": "Lauren",
       "product": "wedding-cake",
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "East Hampstead Park"
-      ]
+      "venue": "East Hampstead Park"
     },
     "charming-flopsy": {
       "images": [
@@ -1645,9 +1588,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Post Barn"
-      ]
+      "venue": "The Post Barn"
     },
     "milk-and-white": {
       "images": [
@@ -1694,9 +1635,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Cantley House Hotel"
-      ]
+      "venue": "Cantley House Hotel"
     },
     "subtle-in-pink": {
       "images": [
@@ -1725,9 +1664,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Stanlake Park"
-      ]
+      "venue": "Stanlake Park"
     },
     "our-story": {
       "images": [
@@ -1741,18 +1678,14 @@
       ]
     },
     "kirsten-autumn": {
-      "images": [
-        "kirsten-autumn.jpg"
-      ],
-      "description": "Photographer: Phil Stock Photogarphy",
+      "images": ["kirsten-autumn.jpg"],
+      "description": "Photographer: Phil Stock Photography",
       "name": "Kirsten - Autumn",
       "product": "wedding-cake",
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Red House Pub"
-      ]
+      "venue": "The Red House Pub"
     },
     "chapt-30": {
       "images": [
@@ -1773,9 +1706,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Cantley House Hotel"
-      ],
+      "venue": "Cantley House Hotel",
       "testimonial": {
         "text": "We just wanted to send a quick message to say thank you for providing our amazing wedding cake yesterday, as we never ended up crossing paths during the day. It looked fantastic and tasted great - there wasn't much left!",
         "name": "Hannah & Ben",
@@ -1816,9 +1747,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Great House"
-      ]
+      "venue": "The Great House"
     },
     "come-fly-with-me": {
       "images": [
@@ -1865,18 +1794,14 @@
         "Chocolate"
       ]
     },
-    "semi-naked-george": {
-      "images": [
-        "semi-naked-george.jpg"
-      ],
-      "name": "Semi Named",
+"semi-naked-george": {
+      "images": ["semi-naked-george.jpg"],
+      "name": "Semi Naked",
       "product": "wedding-cake",
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Old Luxtors"
-      ]
+      "venue": "Old Luxtors"
     },
     "two-infinity": {
       "images": [
@@ -1897,9 +1822,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Retreat, Elcot ParK"
-      ]
+      "venue": "The Retreat, Elcot Park"
     },
     "pink-cascade-2": {
       "images": [
@@ -1917,12 +1840,8 @@
       ],
       "name": "Semi Naked",
       "product": "wedding-cake",
-      "occasions": [
-        "wedding"
-      ],
-      "venue": [
-        "Oakely Hall"
-      ]
+      "occasions": ["wedding"],
+      "venue" : "Oakley Hall"
     },
     "shades-of-chocolate": {
       "images": [
@@ -1945,9 +1864,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Moor Hall"
-      ]
+      "venue": "Moor Hall"
     },
     "beautifully-rustic": {
       "images": [
@@ -1971,9 +1888,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Retreat, Elcot ParK"
-      ]
+      "venue": "The Retreat, Elcot Park"
     },
     "bears-and-bunting": {
       "images": [
@@ -2003,9 +1918,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Sheepdrove"
-      ]
+      "venue": "Sheepdrove"
     },
     "21-Today": {
       "images": [
@@ -2028,9 +1941,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Wasing Park"
-      ]
+      "venue": "wasing-park"
     },
     "grace": {
       "images": [
@@ -2059,19 +1970,13 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Retreat, Elcot ParK"
-      ]
+      "venue": "The Retreat, Elcot Park"
     },
     "piano-forte": {
-      "images": [
-        "Piano-Forte.jpg"
-      ],
-      "name": "Paino Forte",
-      "product": "celebration-cake",
-      "occasions": [
-        "birthday"
-      ]
+      "images": ["Piano-Forte.jpg"],
+      "name": "Piano Forte",
+      "product":"celebration-cake",
+      "occasions": ["birthday"]
     },
     "with-honours": {
       "images": [
@@ -2094,9 +1999,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Mill House Hotel"
-      ]
+      "venue": "The Mill House Hotel"
     },
     "birthday-mix-pink-flowers": {
       "images": [
@@ -2120,9 +2023,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Post Barn"
-      ]
+      "venue": "The Post Barn"
     },
     "classic-drips-golden-chocolate": {
       "images": [
@@ -2155,16 +2056,10 @@
         "name": "Nadine & David",
         "location": "Eastleigh"
       },
-      "product": "wedding-cake",
-      "occasions": [
-        "wedding"
-      ],
-      "flavours": [
-        "Carrot, Lemon, Chocolate Biscoff"
-      ],
-      "venue": [
-        "Highcliffe Castle"
-      ]
+      "product":"wedding-cake",
+      "occasions": ["wedding"],
+      "flavours": ["Carrot" ,"Lemon", "Chocolate Biscoff"],
+      "venue" : "Highcliffe Castle"
     },
     "rosalia": {
       "images": [
@@ -2198,9 +2093,7 @@
         " Chocolate Oreo",
         "Lemon"
       ],
-      "venue": [
-        "Crowne Plaza, Marlow"
-      ]
+      "venue": "Crowne Plaza, Marlow"
     },
     "wild-one": {
       "images": [
@@ -2233,9 +2126,7 @@
       "flavours": [
         "Vanilla"
       ],
-      "venue": [
-        "Forest Edge Tipis, Welford Park"
-      ]
+      "venue": "Forest Edge Tipis, Welford Park"
     },
     "baby-shark-lullaby": {
       "images": [
@@ -2264,9 +2155,7 @@
         "Raspberry & White Chocolate",
         "Chocolate Biscoff"
       ],
-      "venue": [
-        "Mercure Thame Lambert Hotel"
-      ]
+      "venue": "Mercure Thame Lambert Hotel"
     },
     "golden-50th": {
       "images": [
@@ -2288,9 +2177,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Sheepdrove"
-      ]
+      "venue": "Sheepdrove"
     },
     "a-stylish-affair": {
       "images": [
@@ -2309,7 +2196,7 @@
       ],
       "name": "Semi Naked",
       "testimonial": {
-        "text": "Katie did a fantastic job of creating our wedding cake, which was just nearby at Wasing Park. The cake looked fantastic and she was really professional and responsive in making sure it was exactly what we wanted. She catered to my husband's nut allergy whilst still being able to offer us a wide range of flavours and the cake absolutely disappeared on the day as everyone loved it! Her pricing is also really reasonable compared to some of the specialist wedding cake providers I looked at.  I'd highly recommend her ",
+        "text": "Katie did a fantastic job of creating our wedding cake, which was just nearby at wasing-park. The cake looked fantastic and she was really professional and responsive in making sure it was exactly what we wanted. She catered to my husband's nut allergy whilst still being able to offer us a wide range of flavours and the cake absolutely disappeared on the day as everyone loved it! Her pricing is also really reasonable compared to some of the specialist wedding cake providers I looked at.  I'd highly recommend her ",
         "name": "Ellie & Ed",
         "location": "London"
       },
@@ -2322,9 +2209,7 @@
         "Chocolate Orange",
         "Raspberry & White Chocolate"
       ],
-      "venue": [
-        "Wasing Park"
-      ]
+      "venue": "wasing-park"
     },
     "birthday-mix-blue-cars": {
       "images": [
@@ -2347,9 +2232,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Newbury Rugby Club"
-      ]
+      "venue": "Newbury Rugby Club"
     },
     "fault-line-pink-roses": {
       "images": [
@@ -2405,9 +2288,7 @@
         "Raspberry & White Chocolate",
         "Lemon"
       ],
-      "venue": [
-        "The Vineyard"
-      ]
+      "venue": "The Vineyard"
     },
     "chocolate-box": {
       "images": [
@@ -2433,9 +2314,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Royal Oak, Yattendon"
-      ]
+      "venue": "The Royal Oak, Yattendon"
     },
     "chocolate-drips-mms": {
       "images": [
@@ -2456,9 +2335,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Wasing Park"
-      ]
+      "venue": "wasing-park"
     },
     "confetti-in-the-clouds": {
       "images": [
@@ -2496,9 +2373,7 @@
         "Chocolate",
         "Raspberry & White Chocolate"
       ],
-      "venue": [
-        "Donnington Grove"
-      ]
+      "venue": "Donnington Grove"
     },
     "bluey-in-blue": {
       "images": [
@@ -2933,9 +2808,7 @@
       "flavours": [
         "Carrot"
       ],
-      "venue": [
-        "Pennyhill Park"
-      ]
+      "venue": "Pennyhill Park"
     },
     "choo-choo": {
       "images": [
@@ -6372,239 +6245,440 @@
     "kirsten-3tier",
     "black-gold-milestone"
   ],
-  "flavours": [
-    {
+  "flavours": {
+    "vanilla": {
       "name": "Vanilla",
       "descriptions": {
-        "standard": "Light vanilla sponge filled with strawberry jam and buttercream",
-        "dairy-free": "Light vanilla sponge filled with strawberry jam and filling cream",
-        "vegan": "Light vanilla sponge filled with strawberry jam and filling cream"
+        "standard": "Vanilla sponge filled with strawberry jam and buttercream",
+        "dairy-free": "Vanilla sponge filled with strawberry jam and DF \"buttercream\"",
+        "vegan": "Vanilla sponge filled with strawberry jam and DF \"buttercream\""
       },
-      "variants": [
-        "gluten-free",
-        "dairy-free",
-        "vegan",
-        "eggless"
-      ],
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless", "nut-free", "soya-free"],
       "image": "choices/flavours/vanilla.jpg",
       "variantImages": {
         "vegan": "choices/flavours/vanilla-vegan.jpg",
         "eggless": "choices/flavours/vanilla-vegan.jpg"
-      }
+      },
+      "group": ["the-classics"]
     },
-    {
+    "chocolate":{
       "name": "Chocolate",
       "descriptions": {
         "standard": "Chocolate sponge filled with chocolate buttercream",
-        "dairy-free": "Chocolate sponge filled with chocolate filling cream",
-        "vegan": "Chocolate sponge filled with chocolate filling cream"
+        "dairy-free": "Chocolate sponge filled with chocolate DF \"buttercream\"",
+        "vegan": "Chocolate sponge filled with chocolate DF \"buttercream\""
       },
-      "variants": [
-        "gluten-free",
-        "dairy-free",
-        "vegan",
-        "eggless"
-      ],
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless", "nut-free", "soya-free", "gluten-free-vegan"],
       "image": "choices/flavours/chocolate.jpg",
       "variantImages": {
         "vegan": "choices/flavours/chocolate-vegan.jpg",
         "eggless": "choices/flavours/chocolate-vegan.jpg"
-      }
-    },
-    {
-      "name": "Chocolate Biscoff",
-      "descriptions": {
-        "standard": "Classic chocolate sponge layered with Biscoff flavoured buttercream and Biscoff spread",
-        "dairy-free": "Classic chocolate sponge layered with Biscoff flavoured filling cream and Biscoff spread",
-        "vegan": "Classic chocolate sponge layered with Biscoff flavoured filling cream and Biscoff spread"
       },
-      "variants": [
-        "dairy-free",
-        "vegan",
-        "eggless"
-      ],
-      "allergenInfo": "Chocolate Biscoff sponge contains soya.",
-      "image": "choices/flavours/biscoff.jpg",
+      "group": ["the-classics"]
+    },
+    "milky-dream": {
+      "name": "Milky Dream",
+      "descriptions": {
+        "standard": "Chocolate sponge filled with milk chocolate spread and milk chocolate spread buttercream"
+      },
+      "variants": ["gluten-free", "eggless", "nut-free", "soya-free"],
+      "image": "choices/flavours/choc-spread.jpg",
+      "group": ["truffle-box"]
+    },
+    "dreams":{
+      "name": "Dreams",
+      "descriptions": {
+        "standard": "White chocolate flavoured sponge filled with white chocolate buttercream"
+      },
+      "variants": ["gluten-free", "eggless", "nut-free"],
+      "image": "choices/flavours/baileys-dreams.jpg",
+      "allergenInfo": "Dreams contains soya.",
+      "group": ["truffle-box"]
+    },
+    "dream-trio": {
+      "name": "Dream Trio",
+      "descriptions": {
+      "standard": "White chocolate flavoured sponge filled with milk chocolate spread and dark chocolate buttercream"
+      },
+      "variants": ["gluten-free", "eggless", "nut-free"],
+       "allergenInfo": "Dream Trio contains soya.",
+      "image": "choices/flavours/triple-choc.jpg",
+      "group": ["truffle-box"]
+    },
+    "raspberry-dream": {
+      "name": "Raspberry Dream",
+      "descriptions": {
+        "standard": "Raspberry sponge filled with white chocolate buttercream"
+      },
+      "variants": ["gluten-free", "eggless", "nut-free"],
+      "allergenInfo": "Raspberry Dream contains soya.",
+      "image": "choices/flavours/raspberry.jpg",
+      "group": ["truffle-box"]
+    },
+    "millionaires": {
+      "name": "Millionaires",
+      "descriptions": {
+        "standard": "Vanilla sponge filled with salted caramel sauce and chocolate buttercream"
+      },
+      "variants": ["gluten-free", "eggless", "nut-free", "soya-free"], 
+      "image": "choices/flavours/millionaires.jpg",
+      "group": ["truffle-box"]
+    },
+    "pearl-salted": {
+      "name": "Pearl Salted",
+      "descriptions": {
+        "standard": "Vanilla sponge filled with salted caramel sauce and salted caramel buttercream",
+        "dairy-free": "Vanilla sponge filled with salted caramel DF \"buttercream\"",
+        "vegan": "Vanilla sponge filled with salted caramel DF \"buttercream\""
+      },
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless", "nut-free", "soya-free"],
+      "image": "choices/flavours/van-salted-c.jpg",
+      "group": ["truffle-box"]
+    },
+    "salted-noir": {
+      "name": "Salted Noir",
+      "descriptions": {
+        "standard": "Chocolate sponge filled with salted caramel sauce and salted caramel buttercream",
+        "dairy-free": "Chocolate sponge filled with salted caramel DF \"buttercream\"",
+        "vegan": "Chocolate sponge filled with salted caramel DF \"buttercream\""
+      },
+      "variants": ["gluten-free", "dairy-free", "vegan", "gluten-free-vegan", "eggless", "nut-free", "soya-free"],
+      "image": "choices/flavours/choc-salted-c.jpg",
+      "group": ["truffle-box"]
+    },
+    "midnight-orange": {
+      "name": "Midnight Orange",
+      "descriptions": {
+        "standard": "Chocolate orange sponge filled with chocolate orange buttercream",
+        "dairy-free": "Chocolate orange sponge filled with chocolate orange DF \"buttercream\"",
+        "vegan": "Chocolate orange sponge filled with chocolate orange DF \"buttercream\""
+      },
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless", "nut-free", "soya-free", "gluten-free-vegan"],
+      "image": "choices/flavours/chocolate.jpg",
       "variantImages": {
-        "vegan": "choices/flavours/biscoff-vegan.jpg",
-        "eggless": "choices/flavours/biscoff-vegan.jpg"
-      }
-    },
-    {
-      "name": "Chocolate Oreo",
-      "descriptions": {
-        "standard": "Classic chocolate sponge filled with Oreo buttercream",
-        "dairy-free": "Classic chocolate sponge filled with Oreo filling cream",
-        "vegan": "Classic chocolate sponge filled with Oreo filling cream"
+        "vegan": "choices/flavours/chocolate-vegan.jpg",
+        "eggless": "choices/flavours/chocolate-vegan.jpg"
       },
-      "variants": [
-        "dairy-free",
-        "vegan",
-        "eggless"
-      ],
+      "group": ["truffle-box"]
+    },
+    "midnight-mint": {
+      "name": "Midnight Mint",
+      "descriptions": {
+        "standard": "Chocolate sponge filled with chocolate mint buttercream",
+        "dairy-free": "Chocolate sponge filled with chocolate mint DF \"buttercream\"",
+        "vegan": "Chocolate sponge filled with chocolate mint DF \"buttercream\""
+      },
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless", "nut-free", "soya-free", "gluten-free-vegan"],
+      "image": "choices/flavours/chocolate.jpg",
+      "variantImages": {
+        "vegan": "choices/flavours/chocolate-vegan.jpg",
+        "eggless": "choices/flavours/chocolate-vegan.jpg"
+      },
+        "group": ["truffle-box"]
+    },
+    "lemon-essence": {
+      "name": "Lemon Essence",
+      "descriptions": {
+        "standard": "Lemon sponge filled with lemon buttercream",
+        "dairy-free": "Lemon sponge filled with lemon DF \"buttercream\"",
+        "vegan": "Lemon sponge filled with lemon DF \"buttercream\""
+      },
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless", "nut-free", "soya-free"],
+      "image": "choices/flavours/lemon-elderflower-orange.jpg",
+      "variantImages": {
+        "vegan": "choices/flavours/lemon-vegan.jpg",
+        "eggless": "choices/flavours/lemon-vegan.jpg"
+      },
+      "group": ["fresh-fruity"]
+    },
+    "lemon-blossom": {
+      "name": "Lemon Blossom",
+      "descriptions": {
+        "standard": "Lemon sponge filled with elderflower buttercream",
+        "dairy-free": "Lemon sponge filled with elderflower DF \"buttercream\"",
+        "vegan": "Lemon sponge filled with elderflower DF \"buttercream\""
+      },
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless", "nut-free", "soya-free"],
+      "image": "choices/flavours/lemon-elderflower-orange.jpg",
+      "variantImages": {
+        "vegan": "choices/flavours/lemon-vegan.jpg",
+        "eggless": "choices/flavours/lemon-vegan.jpg"
+      },
+      "group": ["fresh-fruity"]
+    },
+    "lemon-sapphire": {
+      "name": "Lemon Sapphire",
+      "descriptions": {
+        "standard": "Lemon sponge with blueberry pieces filled with blueberry jam and blueberry buttercream",
+        "dairy-free": "Lemon sponge with blueberry pieces filled with blueberry jam and blueberry DF \"buttercream\"",
+        "vegan": "Lemon sponge with blueberry pieces filled with blueberry jam and blueberry DF \"buttercream\""
+      },
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless", "nut-free", "soya-free"],
+      "image": "choices/flavours/lemon-blue.jpg",
+      "group": ["fresh-fruity"]
+    },
+    "orange-essence": {
+      "name": "Orange Essence",
+      "descriptions": {
+        "standard": "Orange sponge filled with orange buttercream",
+        "dairy-free": "Orange sponge filled with orange DF \"buttercream\"",
+        "vegan": "Orange sponge filled with orange DF \"buttercream\""
+      },
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless", "nut-free", "soya-free"],
+      "image": "choices/flavours/lemon-elderflower-orange.jpg",
+      "variantImages": {
+        "vegan": "choices/flavours/lemon-vegan.jpg",
+        "eggless": "choices/flavours/lemon-vegan.jpg"
+      },
+      "group": ["fresh-fruity"]
+    },
+    "sunset-glow": {
+      "name": "Sunset Glow",
+      "descriptions": {
+        "standard": "Orange sponge filled with passionfruit & mango curd and white chocolate buttercream"
+      },
+      "variants": ["gluten-free", "nut-free"],
+      "allergenInfo": "Sunset Glow contains soya.",
+      "image": "choices/flavours/orange-p.jpg",
+      "group": ["fresh-fruity"]
+    },
+    "coconut-ripple": {
+      "name": "Coconut Ripple",
+      "descriptions": {
+        "standard": "Coconut sponge filled with raspberry jam and raspberry buttercream",
+        "dairy-free": "Coconut sponge filled with raspberry jam and raspberry DF \"buttercream\"",
+        "vegan": "Coconut sponge filled with raspberry jam and raspberry DF \"buttercream\""
+      },
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless", "nut-free", "soya-free"],
+      "image": "choices/flavours/coconut-rasp-champ.jpg",
+      "group": ["fresh-fruity"]
+    },
+    "tropical-zest": {
+      "name": "Tropical Zest",
+      "descriptions": {
+        "standard": "Coconut sponge filled with lemon buttercream",
+        "dairy-free": "Coconut sponge filled with lemon DF \"buttercream\"",
+        "vegan": "Coconut sponge filled with lemon DF \"buttercream\""
+      },
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless", "nut-free", "soya-free"],
+      "image": "choices/flavours/coconut-lemon.jpg",
+      "group": ["fresh-fruity"]
+    },
+    "cookies-cream":{
+      "name": "Cookies & Cream",
+      "descriptions": {
+        "standard": "Vanilla sponge filled with Oreo buttercream",
+        "dairy-free": "Vanilla sponge filled with Oreo DF \"buttercream\"",
+        "vegan": "Vanilla sponge filled with Oreo DF \"buttercream\""
+      },
+      "variants": ["dairy-free", "vegan", "eggless", "nut-free"],
+      "allergenInfo": "Cookies & Cream contains soya.",
+      "image": "choices/flavours/van-oreo.jpg",
+      "group": ["the-biscuit-edit"]
+    },
+    "chocolate-cream":{
+      "name": "Cookies & Chocolate",
+      "descriptions": {
+        "standard": "Chocolate sponge filled with Oreo buttercream",
+        "dairy-free": "Chocolate sponge filled with Oreo DF \"buttercream\"",
+        "vegan": "Chocolate sponge filled with Oreo DF \"buttercream\""
+      },
+      "variants": ["dairy-free", "vegan", "eggless", "nut-free"],
+        "allergenInfo": "Cookies & Chocolate contains soya.",
       "image": "choices/flavours/oreo.jpg",
       "variantImages": {
         "vegan": "choices/flavours/oreo-vegan.jpg",
         "eggless": "choices/flavours/oreo-vegan.jpg"
-      }
-    },
-    {
-      "name": "Chocolate Orange",
-      "descriptions": {
-        "standard": "Chocolate sponge flavoured with orange zest and filled with chocolate orange flavoured buttercream",
-        "dairy-free": "Chocolate sponge flavoured with orange zest and filled with chocolate orange flavoured filling cream",
-        "vegan": "Chocolate sponge flavoured with orange zest and filled with chocolate orange flavoured filling cream"
       },
-      "variants": [
-        "gluten-free",
-        "dairy-free",
-        "vegan",
-        "eggless"
-      ],
-      "image": "choices/flavours/chocolate.jpg",
+      "group": ["the-biscuit-edit"]  
+    },
+    "lotus": {
+      "name": "Lotus",
+      "descriptions": {
+        "standard": "Vanilla sponge filled with Biscoff sauce and Biscoff buttercream",
+        "dairy-free": "Vanilla sponge filled with Biscoff sauce and Biscoff DF \"buttercream\"",
+        "vegan": "Vanilla sponge filled with Biscoff sauce and Biscoff DF \"buttercream\""
+      },
+      "variants": ["dairy-free", "vegan", "eggless", "nut-free"],
+      "allergenInfo": "Lotus contains soya.",
+      "image": "choices/flavours/lotus.jpg",
+      "group": ["the-biscuit-edit"]
+    },
+    "lotus-noir": {
+      "name": "Lotus Noir",
+      "descriptions": {
+        "standard": "Chocolate sponge filled with Biscoff sauce and Biscoff buttercream",
+        "dairy-free": "Chocolate sponge filled with Biscoff sauce and Biscoff DF \"buttercream\"",
+        "vegan": "Chocolate sponge filled with Biscoff sauce and Biscoff DF \"buttercream\""
+      },
+      "variants": ["dairy-free", "vegan", "eggless", "nut-free"],
+      "allergenInfo": "Lotus Noir sponge contains soya.",
+      "image": "choices/flavours/biscoff.jpg",
       "variantImages": {
-        "vegan": "choices/flavours/chocolate-vegan.jpg",
-        "eggless": "choices/flavours/chocolate-vegan.jpg"
-      }
-    },
-    {
-      "name": "Lemon",
-      "descriptions": {
-        "standard": "Fresh tasting sponge filled with lemon buttercream",
-        "dairy-free": "Fresh tasting sponge filled with lemon filling cream",
-        "vegan": "Fresh tasting sponge filled with lemon filling cream"
+        "vegan": "choices/flavours/biscoff-vegan.jpg",
+        "eggless": "choices/flavours/biscoff-vegan.jpg"
       },
-      "variants": [
-        "gluten-free",
-        "dairy-free",
-        "vegan",
-        "eggless"
-      ],
-      "image": "choices/flavours/lemon-elderflower-orange.jpg",
-      "variantImages": {
-        "vegan": "choices/flavours/lemon-vegan.jpg",
-        "eggless": "choices/flavours/lemon-vegan.jpg"
-      }
+      "group": ["the-biscuit-edit"] 
     },
-    {
-      "name": "Lemon and Elderflower",
+    "espresso":{
+      "name": "Espresso",
       "descriptions": {
-        "standard": "Light lemon sponge filled with elderflower flavour buttercream",
-        "dairy-free": "Light lemon sponge filled with elderflower flavour filling cream",
-        "vegan": "Light lemon sponge filled with elderflower flavour filling cream"
+        "standard": "Coffee sponge filled with coffee buttercream",
+        "dairy-free": "Coffee sponge filled with coffee DF \"buttercream\""
       },
-      "variants": [
-        "gluten-free",
-        "dairy-free",
-        "vegan",
-        "eggless"
-      ],
-      "image": "choices/flavours/lemon-elderflower-orange.jpg",
-      "variantImages": {
-        "vegan": "choices/flavours/lemon-vegan.jpg",
-        "eggless": "choices/flavours/lemon-vegan.jpg"
-      }
+      "variants": ["gluten-free", "dairy-free", "nut-free", "soya-free"],
+      "image": "choices/flavours/coffee.jpg",
+      "group": ["cafe-katie"]
     },
-    {
-      "name": "Orange",
+    "vanilla-latte": {
+      "name": "Vanilla Latte",
       "descriptions": {
-        "standard": "Sponge flavoured with zesty orange filled with orange buttercream",
-        "dairy-free": "Sponge flavoured with zesty orange filled with orange filling cream",
-        "vegan": "Sponge flavoured with zesty orange filled with orange filling cream"
+        "standard": "Vanilla sponge filled with coffee buttercream",
+        "dairy-free": "Vanilla sponge filled with coffee DF \"buttercream\"",
+        "vegan": "Vanilla sponge filled with coffee DF \"buttercream\""
       },
-      "variants": [
-        "gluten-free",
-        "dairy-free",
-        "vegan",
-        "eggless"
-      ],
-      "image": "choices/flavours/lemon-elderflower-orange.jpg",
-      "variantImages": {
-        "vegan": "choices/flavours/lemon-vegan.jpg",
-        "eggless": "choices/flavours/lemon-vegan.jpg"
-      }
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless", "nut-free", "soya-free"],
+      "image": "choices/flavours/van-coffee.jpg",
+      "group": ["cafe-katie"]
     },
-    {
-      "name": "Coffee",
+    "mocha": {
+      "name": "Mocha",
       "descriptions": {
-        "standard": "Rich coffee sponge filled with coffee buttercream",
-        "dairy-free": "Rich coffee sponge filled with coffee filling cream"
+        "standard": "Chocolate sponge filled with coffee buttercream",
+        "dairy-free": "Chocolate sponge filled with coffee DF \"buttercream\"",
+        "vegan": "Chocolate sponge filled with coffee DF \"buttercream\""
       },
-      "variants": [
-        "gluten-free",
-        "dairy-free"
-      ],
-      "image": "choices/flavours/coffee.jpg"
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless", "nut-free", "soya-free", "gluten-free-vegan"],
+      "image": "choices/flavours/choc-coffee.jpg",
+      "group": ["cafe-katie"]
     },
-    {
-      "name": "Coffee and walnut",
-      "descriptions": {
-        "standard": "Rich coffee and walnut sponge filled with coffee buttercream and walnut pieces",
-        "dairy-free": "Rich coffee and walnut sponge filled with coffee filling cream and walnut pieces"
-      },
-      "variants": [
-        "gluten-free",
-        "dairy-free"
-      ],
-      "allergenInfo": "Coffee and walnut sponge is made using Nuts (walnuts).",
-      "image": "choices/flavours/coffee-walnut.jpg"
-    },
-    {
+    "carrot": {
       "name": "Carrot",
       "descriptions": {
-        "standard": "Moist with a hint of a spice flavour filled with cream cheese buttercream",
-        "dairy-free": "Moist with a hint of a spice flavour filled with cream cheese (dairy free alternative) filling cream"
+        "standard": "Carrot sponge (with a hint of cinnamon) filled with cream cheese buttercream"
       },
-      "variants": [
-        "gluten-free"
-      ],
-      "allergenInfo": "Carrot sponge is made using Nuts (walnuts).",
-      "image": "choices/flavours/carrot.jpg"
+      "variants": ["gluten-free", "soya-free"],
+      "allergenInfo": "Carrot contains walnuts.",
+      "image": "choices/flavours/carrot.jpg",
+      "group": ["nutty-delights"]
     },
-    {
-      "name": "Baileys",
+    "pistachio-whisper": {
+      "name": "Pistachio Whisper",
       "descriptions": {
-        "standard": "Light sponge flavoured with Baileys and filled with Baileys buttercream",
-        "dairy-free": "Light sponge flavoured with Baileys and filled with Baileys filling cream"
+        "standard": "Vanilla sponge filled with pistachio buttercream",
+        "dairy-free": "Vanilla sponge filled with pistachio DF \"buttercream\"",
+        "vegan": "Vanilla sponge filled with pistachio DF \"buttercream\""
       },
-      "variants": [
-        "gluten-free",
-        "eggless"
-      ],
-      "image": "choices/flavours/baileys.jpg"
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless", "soya-free"],
+      "allergenInfo": "Pistachio Whisper contains pistachios.",
+      "image": "choices/flavours/pistachio.jpg",
+      "group": ["nutty-delights"]
     },
-    {
-      "name": "Toffee",
+    "hazelnut-truffle": {
+      "name": "Hazelnut Truffle",
       "descriptions": {
-        "standard": "Delicious toffee flavoured sponge filled with toffee flavour buttercream and a layer of salted caramel sauce",
-        "dairy-free": "Delicious toffee flavoured sponge filled with toffee flavour filling cream",
-        "vegan": "Delicious toffee flavoured sponge filled with toffee flavour filling cream"
+        "standard": "Chocolate sponge filled with Nutella spread and Nutella buttercream"
       },
-      "variants": [
-        "gluten-free",
-        "dairy-free",
-        "vegan",
-        "eggless"
-      ],
+      "variants": ["gluten-free", "eggless"],
+      "allergenInfo": "Hazelnut Truffle contains hazelnuts and soya.",
+      "image": "choices/flavours/nutella.jpg",
+      "group": ["nutty-delights"]
+    },
+    "peanut-truffle": {
+      "name": "Peanut Truffle",
+    "descriptions": {
+      "standard": "Chocolate sponge filled with peanut butter spread and peanut butter buttercream",
+      "dairy-free": "Chocolate sponge filled with peanut butter spread and peanut butter DF \"buttercream\"",
+      "vegan": "Chocolate sponge filled with peanut butter spread and peanut butter DF \"buttercream\""
+    },
+    "variants": ["gluten-free", "eggless", "dairy-free", "vegan", "soya-free", "gluten-free-vegan"],
+    "allergenInfo": "Peanut Truffle contains peanuts.",
+    "image": "choices/flavours/peanut-butter.jpg",
+    "group": ["nutty-delights"]
+    },
+    "nutty-espresso": {
+      "name": "Nutty Espresso",
+      "descriptions": {
+        "standard": "Coffee and walnut sponge filled with walnut pieces and coffee buttercream",
+        "dairy-free": "Coffee and walnut sponge filled with walnut pieces and coffee DF \"buttercream\""
+      },
+      "variants": ["gluten-free", "dairy-free", "soya-free"],
+      "allergenInfo": "Nutty Espresso contains walnuts.",
+      "image": "choices/flavours/coffee-walnut.jpg"
+    },
+    "golden-caramel": {
+      "name": "Golden Caramel",
+      "descriptions": {
+        "standard": "Caramel sponge filled with salted caramel sauce and caramel buttercream",
+        "dairy-free": "Caramel sponge filled with caramel DF \"buttercream\"",
+        "vegan": "Caramel sponge filled with caramel DF \"buttercream\""
+      },
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless", "nut-free", "soya-free"],
       "image": "choices/flavours/toffee.jpg",
       "variantImages": {
-        "dairy-free": "choices/flavours/toffee-vegan.jpg",
         "vegan": "choices/flavours/toffee-vegan.jpg"
-      }
-    },
-    {
-      "name": "Raspberry and white chocolate",
-      "descriptions": {
-        "standard": "Classic sponge containing raspberry pieces filled with white chocolate buttercream"
       },
-      "variants": [
-        "gluten-free",
-        "eggless"
-      ],
-      "allergenInfo": "Raspberry and white chocolate sponge contains soya.",
-      "image": "choices/flavours/raspberry.jpg"
+      "group": ["indulgence"]
+    },
+    "golden-salted": {
+      "name": "Golden Salted",
+      "descriptions": {
+        "standard": "Caramel sponge filled with salted caramel sauce and salted caramel buttercream",
+        "dairy-free": "Caramel sponge filled with salted caramel DF \"buttercream\"",
+        "vegan": "Caramel sponge filled with salted caramel DF \"buttercream\""
+      },
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless", "nut-free", "soya-free"],
+      "image": "choices/flavours/toffee.jpg",
+      "variantImages": {
+        "vegan": "choices/flavours/toffee-vegan.jpg"
+      },
+      "group": ["indulgence"]
+    },
+    "irish-cream": {
+      "name": "Irish Cream",
+      "descriptions": {
+        "standard": "Baileys sponge filled with Baileys buttercream"
+      },
+      "variants": ["gluten-free", "eggless", "soya-free", "nut-free"],
+      "allergenInfo": "Irish Cream is made with Baileys alcohol.",
+      "image": "choices/flavours/baileys-dreams.jpg",
+      "group": ["indulgence"]
+    },
+    "pink-bubbles": {
+      "name": "Pink Bubbles",
+      "descriptions": {
+        "standard": "Champagne flavoured sponge filled with strawberry jam and strawberry buttercream",
+        "dairy-free": "Champagne flavoured sponge filled with strawberry jam and strawberry DF \"buttercream\"",
+        "vegan": "Champagne flavoured sponge filled with strawberry jam and strawberry DF \"buttercream\""
+      },
+      "variants": ["gluten-free", "dairy-free", "vegan", "eggless", "soya-free", "nut-free"],
+      "image": "choices/flavours/coconut-rasp-champ.jpg",
+      "group": ["indulgence"]
     }
-  ],
+  },
+  "flavourGroups": {
+    "the-classics": {
+      "flavours": ["vanilla", "chocolate"]
+    },
+    "truffle-box":{
+      "flavours": ["milky-dream", "dreams", "dream-trio", "raspberry-dream", "millionaires", "pearl-salted", "salted-noir", "midnight-orange", "midnight-mint"]
+    },
+    "fresh-fruity":{
+      "flavours": ["lemon-essence", "lemon-blossom", "lemon-sapphire", "orange-essence", "sunset-glow", "coconut-ripple", "coconut-ripple", "tropical-zest"]
+    },
+    "the-biscuit-edit": {
+      "flavours": ["cookies-cream", "chocolate-cream", "lotus", "lotus-noir"]
+    },
+    "cafe-katie": {
+      "flavours" : ["espresso", "vanilla-latte", "mocha"]
+    },
+    "nutty-delights": {
+      "flavours": ["carrot", "pistachio-whisper", "hazelnut-truffle", "peanut-truffle", "nutty-espresso"]
+    },
+    "indulgence": {
+      "flavours": ["golden-caramel", "golden-salted", "irish-cream", "pink-bubbles"]
+    }
+  },
   "products": {
     "celebrationCakes": {
       "pricing": {
@@ -6652,6 +6726,32 @@
       "colours": {
         "dark": "#fca669"
       }
+    }
+  },
+  "venues": {
+    "downe-house-school": {
+      "name": "Downe House School",
+      "location": "Cold Ash",
+      "featuredCakes": ["psychedelic-symphony"]
+    },
+    "wasing-park": {
+      "name": "Wasing Park",
+      "tagline": "A romantic countryside estate for timeless, elegant weddings.",
+      "location": "Berkshire",
+      "address": ["Wasing Park", "Wasing Lane", "Aldermaston", "Berkshire", "RG7 4NG"],
+      "featuredCakes": ["semi-naked-sage"],
+      "popularCakeStyles": [
+        "Elegant semi-naked cakes decorated with soft blooms - perfect for the rustic charm of the Castle Barn",
+        "Classic white tiered cakes with sugar flowers to complement the venue's timeless elegance",
+        "Buttercream textures with gold or pastel accents for modern, romantic receptions",
+        "Seasonal designs inspired by Wasing Park's garden and natural surroundings"
+      ],
+      "flavourTip": {
+        "text": "For Spring and Summer weddings, flavours like % or % are perfect complements to Wasing Park's light, airy feel.",
+        "flavours": ["lemon-blossom", "pink-bubbles"]
+      },
+      "myExperience": "I've had the pleasure of crafting cakes for weddings at Wasing Park, and it's always a joy to see how beautifully my designs fit the venue's refined, romantic atmosphere. The spacious setup makes it easy to present even the tallest, most detailed creations.",
+      "occasion": "wedding"
     }
   }
 }
