@@ -4406,6 +4406,7 @@
       "variants": ["gluten-free", "dairy-free", "vegan", "eggless", "nut-free", "soya-free"],
       "image": "choices/flavours/toffee.jpg",
       "variantImages": {
+        "dairy-free": "choices/flavours/toffee-vegan.jpg",
         "vegan": "choices/flavours/toffee-vegan.jpg"
       },
       "group": ["indulgence"]
@@ -4420,6 +4421,7 @@
       "variants": ["gluten-free", "dairy-free", "vegan", "eggless", "nut-free", "soya-free"],
       "image": "choices/flavours/toffee.jpg",
       "variantImages": {
+        "dairy-free": "choices/flavours/toffee-vegan.jpg",
         "vegan": "choices/flavours/toffee-vegan.jpg"
       },
       "group": ["indulgence"]
