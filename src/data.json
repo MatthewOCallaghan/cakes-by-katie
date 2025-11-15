@@ -597,6 +597,28 @@
       "venue": "post-barn",
       "occasion": "wedding"
     },
+    "venueOldMill": {
+      "title": "Wedding cakes delivered to The Old Mill | Cakes by Katie",
+      "description": "Delivering to The Old Mill, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "The Old Mill",
+        "afterText": "Aldermaston",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at The Old Mill!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "old-mill",
+      "occasion": "wedding"
+    },
     "venueDowneHouse": {
       "title": "Birthday cakes delivered to Downe House School | Cakes by Katie",
       "description": "Delivering to Downe House School, Cakes by Katie offers bespoke birthday cakes and cupcakes in a wide range of flavours and catering for specific dietary requirements.",
@@ -6794,6 +6816,26 @@
         "flavours": ["lemon-blossom", "pink-bubbles"]
       },
       "myExperience": "I've created cakes for several weddings at the Post Barn, and it's always such a pleasure to see how beautifully each design stands out in the light-filled space. The team are incredibly professional and helpful, making delivery and setup seamless every time.",
+      "occasion": "wedding"
+    },
+    "old-mill": {
+      "name": "The Old Mill",
+      "tagline": "A romantic riverside venue full of rustic charm",
+      "location": "Aldermaston",
+      "address": ["The Old Mill", "Basingstoke Road", "Aldermaston", "Reading", "Berkshire", "RG7 4LB"],
+      "featuredCakes": ["semi-naked-sage"],
+      "cakeStylesIntro": "The rustic elegance of The Old Mill pairs perfectly with cakes that are natural, textured and full of charm.",
+      "popularCakeStyles": [
+        "Semi-naked cakes decorated with fresh or dried flowers for a relaxed countryside feel",
+        "Buttercream designs with soft textures and foliage accents",
+        "Rustic stacked tiers displayed on wooden or stone cake stands to suit the mill setting",
+        "Seasonal floral designs that complement the riverside garden surroundings"
+      ],
+      "flavourTip": {
+        "text": "Add tip wording.",
+        "flavours": ["lemon-blossom", "pink-bubbles"]
+      },
+      "myExperience": "I've had the pleasure of creating wedding cakes for couples celebrating at The Old Mill in Aldermaston, and it's always a joy to see how well my cake designs complement the venue's charm. The staff are wonderful to work with, and the riverside setting provides a truly picturesque backdrop for your cake display.",
       "occasion": "wedding"
     }
   }
