@@ -559,7 +559,7 @@
       "heading": {
         "beforeText": "Wedding cakes for",
         "text": "Wasing Park",
-        "afterText": "Berkshire",
+        "afterText": "Aldermaston",
         "image": {
           "path": "backgrounds/wedding.jpg",
           "alt": "Wedding background"
@@ -573,6 +573,28 @@
         }
       },
       "venue": "wasing-park",
+      "occasion": "wedding"
+    },
+    "venuePostBarn": {
+      "title": "Wedding cakes delivered to The Post Barn | Cakes by Katie",
+      "description": "Delivering to The Post Barn, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "The Post Barn",
+        "afterText": "Newbury",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at The Post Barn!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "post-barn",
       "occasion": "wedding"
     },
     "venueDowneHouse": {
@@ -6737,9 +6759,10 @@
     "wasing-park": {
       "name": "Wasing Park",
       "tagline": "A romantic countryside estate for timeless, elegant weddings.",
-      "location": "Berkshire",
+      "location": "Aldermaston",
       "address": ["Wasing Park", "Wasing Lane", "Aldermaston", "Berkshire", "RG7 4NG"],
       "featuredCakes": ["semi-naked-sage"],
+      "cakeStylesIntro": "Wasing Park is the perfect backdrop for a beautifully designed wedding cake.",
       "popularCakeStyles": [
         "Elegant semi-naked cakes decorated with soft blooms - perfect for the rustic charm of the Castle Barn",
         "Classic white tiered cakes with sugar flowers to complement the venue's timeless elegance",
@@ -6750,7 +6773,27 @@
         "text": "For Spring and Summer weddings, flavours like % or % are perfect complements to Wasing Park's light, airy feel.",
         "flavours": ["lemon-blossom", "pink-bubbles"]
       },
-      "myExperience": "I've had the pleasure of crafting cakes for weddings at Wasing Park, and it's always a joy to see how beautifully my designs fit the venue's refined, romantic atmosphere. The spacious setup makes it easy to present even the tallest, most detailed creations.",
+      "myExperience": "I've had the pleasure of creating cakes for weddings at Wasing Park, and it's always a joy to see how beautifully my designs fit the venue's refined, romantic atmosphere. The spacious setup makes it easy to present even the tallest, most detailed creations.",
+      "occasion": "wedding"
+    },
+    "post-barn": {
+      "name": "The Post Barn",
+      "tagline": "A striking, contemporary countryside barn for modern, stylish weddings",
+      "location": "Newbury",
+      "address": ["The Post Barn", "Snelsmore House", "Snelsmore Common", "Newbury", "Berkshire", "RG14 3AL"],
+      "featuredCakes": ["semi-naked-sage"],
+      "cakeStylesIntro": "The Post Barn's contemporary design pairs beautifully with cakes that are both stylish and timeless.",
+      "popularCakeStyles": [
+        "Smooth buttercream or fondant tiers with minimalist decoration - perfect for a modern, elegant look",
+        "Tall, structured cakes that complement the venue's high ceilings and open layout",
+        "Metallic or marble-effect finishes to echo the venue's modern style",
+        "Seasonal florals or dried flower details for a romantic rustic touch"
+      ],
+      "flavourTip": {
+        "text": "Add tip wording.",
+        "flavours": ["lemon-blossom", "pink-bubbles"]
+      },
+      "myExperience": "I've created cakes for several weddings at the Post Barn, and it's always such a pleasure to see how beautifully each design stands out in the light-filled space. The team are incredibly professional and helpful, making delivery and setup seamless every time.",
       "occasion": "wedding"
     }
   }
