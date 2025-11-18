@@ -707,6 +707,28 @@
       "venue": "elcot-park",
       "occasion": "wedding"
     },
+    "venueUftonCourt": {
+      "title": "Wedding cakes delivered to Ufton Court | Cakes by Katie",
+      "description": "Delivering to Ufton Court, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "Ufton Court",
+        "afterText": "Reading",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at Ufton Court!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "ufton-court",
+      "occasion": "wedding"
+    },
     "venueDowneHouse": {
       "title": "Birthday cakes delivered to Downe House School | Cakes by Katie",
       "description": "Delivering to Downe House School, Cakes by Katie offers bespoke birthday cakes and cupcakes in a wide range of flavours and catering for specific dietary requirements.",
@@ -7004,6 +7026,26 @@
         "flavours": ["lemon-blossom", "pink-bubbles"]
       },
       "myExperience": "I love going to Great Fosters - its charm and history make it such a special place to deliver to - and I love designing cakes that complement its grand interiors and exquisite gardens. It's the perfect backdrop for displaying statement wedding cakes.",
+      "occasion": "wedding"
+    },
+      "ufton-court": {
+      "name": "Ufton Court",
+      "tagline": "A charming heritage barn for rustic, romantic weddings",
+      "location": "Reading",
+      "address": ["Green Lane, Ufton Nervet, Reading, Berkshire, RG7 4HD"],
+      "featuredCakes": ["semi-naked-sage"],
+      "cakeStylesIntro": "The rustic-elegant Ufton Court suits wedding cakes that feel soft, natural and timeless, with details inspired by the barn's beams, its surrounding gardens and the gently historic setting.",
+      "popularCakeStyles": [
+        "Soft buttercream finishes such as textured, rustic or semi-naked styles",
+        "Seasonal floral arrangements using fresh or sugar flowers to reflect the gardens",
+        "Warm, neutral palettes with ivory, taupe, blush or muted greens",
+        "Soft touches of elegance such as gold leaf, silk ribbon or delicate piping"
+      ],
+      "flavourTip": {
+        "text": "Add tip wording.",
+        "flavours": ["lemon-blossom", "pink-bubbles"]
+      },
+      "myExperience": "I enjoy creating wedding cakes for couples celebrating at Ufton Court. The venue team are always wonderful to work with, and my experience delivering and setting up here means your cake will be styled beautifully within this charming space.",
       "occasion": "wedding"
     }
   }
