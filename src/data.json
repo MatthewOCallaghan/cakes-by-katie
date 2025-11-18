@@ -553,6 +553,50 @@
         "text": "Delivery"
       }
     },
+    "venueForestEdge": {
+      "title": "Wedding cakes delivered to Forest Edge Tipis at Welford Park | Cakes by Katie",
+      "description": "Delivering to Forest Edge Tipis at Welford Park, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "Forest Edge Tipis at Welford Park",
+        "afterText": "Newbury",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at Forest Edge Tipis at Welford Park!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "forest-edge",
+      "occasion": "wedding"
+    },
+    "venueGreatFosters": {
+      "title": "Wedding cakes delivered to Great Fosters| Cakes by Katie",
+      "description": "Delivering to Great Fosters Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "Great Fosters",
+        "afterText": "Egham",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at Great Fosters!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "great-fosters",
+      "occasion": "wedding"
+    },
     "venueWasingPark": {
       "title": "Wedding cakes delivered to Wasing Park | Cakes by Katie",
       "description": "Delivering to Wasing Park, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
@@ -617,6 +661,50 @@
         }
       },
       "venue": "old-mill",
+      "occasion": "wedding"
+    },
+    "venueMonkeyIsland": {
+      "title": "Wedding cakes delivered to Monkey Island Estate | Cakes by Katie",
+      "description": "Delivering to Monkey Island Estate, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "Monkey Island Estate",
+        "afterText": "Bray",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at Monkey Island Estate!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "monkey-island",
+      "occasion": "wedding"
+    },
+    "venueElcotPark": {
+      "title": "Wedding cakes delivered to The Retreat at Elcot Park | Cakes by Katie",
+      "description": "Delivering to The Retreat at Elcot Park, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "The Retreat at Elcot Park",
+        "afterText": "Newbury",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at The Retreat at Elcot Park!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "elcot-park",
       "occasion": "wedding"
     },
     "venueDowneHouse": {
@@ -6836,6 +6924,86 @@
         "flavours": ["lemon-blossom", "pink-bubbles"]
       },
       "myExperience": "I've had the pleasure of creating wedding cakes for couples celebrating at The Old Mill in Aldermaston, and it's always a joy to see how well my cake designs complement the venue's charm. The staff are wonderful to work with, and the riverside setting provides a truly picturesque backdrop for your cake display.",
+      "occasion": "wedding"
+    },
+    "monkey-island": {
+      "name": "Monkey Island Estate",
+      "tagline": "A luxurious riverside venue steeped in history and elegance",
+      "location": "Bray",
+      "address": ["Bray-on-Thames, Royal Borough of Windsor, SL6 2EE"],
+      "featuredCakes": ["semi-naked-sage"],
+      "cakeStylesIntro": "With its refined interiors and romantic setting, Monkey Island Estate suits elegant, timeless cake designs that reflect its luxury atmosphere.",
+      "popularCakeStyles": [
+        "Classic tiered cakes with smooth fondant or buttercream finishes and sugar flowers",
+        "Soft ivory or blush palettes with gold leaf or pearl detils for added glamour",
+        "Statement floral arrangements to complement the Ballroom's grand decor",
+        "Delicate textured cakes for a refined, modern-luxury look"
+      ],
+      "flavourTip": {
+        "text": "Add tip wording.",
+        "flavours": ["lemon-blossom", "pink-bubbles"]
+      },
+      "myExperience": "I've had the pleasure of creating bespoke wedding cakes for couples celebrating at Monkey Island Estate, and every event there feels truly special. The venue's riverside setting and elegant interiors provide a stunning backdrop for your wedding cake display.",
+      "occasion": "wedding"
+    },
+    "forest-edge": {
+      "name": "Forest Edge Tipis at Welford Park",
+      "tagline": "A magical woodland setting for relaxed, rustic weddings",
+      "location": "Newbury",
+      "address": ["Welford Road, Welford, Newbury, Berkshire, RG20 8HU"],
+      "featuredCakes": ["semi-naked-sage"],
+      "cakeStylesIntro": "With its natural woodland charm, Forest Edge Tipis is perfectly suited to cakeds that feel organic, relaxed and beautifully in tune with nature.",
+      "popularCakeStyles": [
+        "Semi-naked or buttercream cakes decorated with wildflowers, greenery and seasonal blooms",
+        "Rustic buttercream textures with foliage or dried flower details",
+        "Woodland-inspired cakes with edible bark effects or natural tones",
+        "Whimsical designs featuring berries, ferns or floral cascades"
+      ],
+      "flavourTip": {
+        "text": "Add tip wording.",
+        "flavours": ["lemon-blossom", "pink-bubbles"]
+      },
+      "myExperience": "I've had the pleasure of creating cakes for weddings at Forest Edge Tipis at Welford Park, and I always love how relaxed and creative these celebrations feel. The natural surroundings provide a stunning backdrop, and my rustic and floral cake designs fit seamlessly into the tipi atmosphere.",
+      "occasion": "wedding"
+    },
+    "elcot-park": {
+      "name": "The Retreat at Elcot Park",
+      "tagline": "A stylish country house hotel with timeless charm",
+      "location": "Newbury",
+      "address": ["Elcot, Newbury, Berkshire, RG20 8NJ"],
+      "featuredCakes": ["semi-naked-sage"],
+      "cakeStylesIntro": "The Retreat at Elcot Park's blend of sophistication and comfort suits wedding cakes that are elegant, refined and full of romantic detail.",
+      "popularCakeStyles": [
+        "Classic tiered cakes with soft buttercream or fondant finishes and delicate floral details",
+        "Pastel or neutral colour palettes with touches of gold, pearl or lace texture",
+        "Modern, minimalist designs that complement the venue's chic interiors",
+        "Seasonal floral arrangements inspired by The Retreat's stunning gardens"
+      ],
+      "flavourTip": {
+        "text": "Add tip wording.",
+        "flavours": ["lemon-blossom", "pink-bubbles"]
+      },
+      "myExperience": "I've had the pleasure of creating wedding cakes for celebrations at The Retreat at Elcot Park, and it's always a joy to see how perfectly my designs fit this elegant country house. The beautiful interiors provide the perfect backdrop for displaying statement wedding cakes.",
+      "occasion": "wedding"
+    },
+    "great-fosters": {
+      "name": "Great Fosters",
+      "tagline": "A grand heritage estate for elegant, timeless weddings",
+      "location": "Egham",
+      "address": ["Stroude Road, Egham, Surrey, TW20 9UR"],
+      "featuredCakes": ["semi-naked-sage"],
+      "cakeStylesIntro": "The majestic tudor Great Fosters suits wedding cakes that echo its elegance and sense of history, while still feeling fresh and contemporary.",
+      "popularCakeStyles": [
+        "Romantic floral designs inspired by the sunken gardens and manicured grounds",
+        "Timeless colour palettes - whites, ivories, champagnes and subtle pastels",
+        "Touches of luxury like edible pearls, gold leaf or delicate sugar flowers",
+        "Grand statement cakes that suit the elegance of the Orangery and Tithe Barn"
+      ],
+      "flavourTip": {
+        "text": "Add tip wording.",
+        "flavours": ["lemon-blossom", "pink-bubbles"]
+      },
+      "myExperience": "I love going to Great Fosters - its charm and history make it such a special place to deliver to - and I love designing cakes that complement its grand interiors and exquisite gardens. It's the perfect backdrop for displaying statement wedding cakes.",
       "occasion": "wedding"
     }
   }
