@@ -553,6 +553,28 @@
         "text": "Delivery"
       }
     },
+    "venueEasthampstedPark": {
+      "title": "Wedding cakes delivered to Easthampsted Park | Cakes by Katie",
+      "description": "Delivering to Easthampsted Park, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "Easthampsted Park",
+        "afterText": "Wokingham",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at Easthampsted Park!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "easthampsted-park",
+      "occasion": "wedding"
+    },
     "venueForestEdge": {
       "title": "Wedding cakes delivered to Forest Edge Tipis at Welford Park | Cakes by Katie",
       "description": "Delivering to Forest Edge Tipis at Welford Park, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
@@ -595,6 +617,28 @@
         }
       },
       "venue": "great-fosters",
+      "occasion": "wedding"
+    },
+    "venuePennyhillPark": {
+      "title": "Wedding cakes delivered to Pennyhill Park | Cakes by Katie",
+      "description": "Delivering to Pennyhill Park, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "Pennyhill Park",
+        "afterText": "Bagshot",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at Pennyhill Park!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "pennyhill-park",
       "occasion": "wedding"
     },
     "venueWasingPark": {
@@ -685,6 +729,28 @@
       "venue": "monkey-island",
       "occasion": "wedding"
     },
+    "venueOldGore": {
+      "title": "Wedding cakes delivered to Old Gore by Yard Space | Cakes by Katie",
+      "description": "Delivering to Old Gore, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "Old Gore",
+        "afterText": "Cirencester",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at Old Gore!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "old-gore",
+      "occasion": "wedding"
+    },
     "venueElcotPark": {
       "title": "Wedding cakes delivered to The Retreat at Elcot Park | Cakes by Katie",
       "description": "Delivering to The Retreat at Elcot Park, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
@@ -705,6 +771,28 @@
         }
       },
       "venue": "elcot-park",
+      "occasion": "wedding"
+    },
+    "venueTrunkwellHouse": {
+      "title": "Wedding cakes delivered to Trunkwell House | Cakes by Katie",
+      "description": "Delivering to Trunkwell House, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "Trunkwell House",
+        "afterText": "Reading",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at Trunkwell House!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "trunkwell-house",
       "occasion": "wedding"
     },
     "venueUftonCourt": {
@@ -7046,6 +7134,86 @@
         "flavours": ["lemon-blossom", "pink-bubbles"]
       },
       "myExperience": "I enjoy creating wedding cakes for couples celebrating at Ufton Court. The venue team are always wonderful to work with, and my experience delivering and setting up here means your cake will be styled beautifully within this charming space.",
+      "occasion": "wedding"
+    },
+    "pennyhill-park": {
+      "name": "Pennyhill Park",
+      "tagline": "A luxurious country house for elegant,romantic weddings",
+      "location": "Bagshot",
+      "address": ["London Road, Bagshot, Surrey, GU19 5EU"],
+      "featuredCakes": ["semi-naked-sage"],
+      "cakeStylesIntro": "The elegant Pennyhill Park pairs wonderfully with cakes that are timeless, polished and delicately detailed - designs that feel at home within the hotel's elegant suites and landscaped surroundings.",
+      "popularCakeStyles": [
+        "Classic tiered cakes with smooth buttercream or fondant for a refined finish",
+        "Soft, romantic palettes in ivory, blush, champagne or mutel pastels",
+        "Deliate detailing such as lacework, pearl touches or soft texture",
+        "Gold or metallic accents for a hint of luxurious glamour"
+      ],
+      "flavourTip": {
+        "text": "Add tip wording.",
+        "flavours": ["lemon-blossom", "pink-bubbles"]
+      },
+      "myExperience": "I love the opportunity of designing wedding cakes for couples celebrating at Pennyhill Park and always enjoy the refined atmosphere there. I ensure every delivery and setup is handled smoothly, coordinating with your team so your cake is presented just as you imagined.",
+      "occasion": "wedding"
+    },
+    "easthampsted-park": {
+      "name": "Easthampsted Park",
+      "tagline": "A grand Victorian mansion for elegant, timeless weddings",
+      "location": "Wokingham",
+      "address": ["Off Peacock Lane, Wokingham, RG40 3DF"],
+      "featuredCakes": ["semi-naked-sage"],
+      "cakeStylesIntro": "The elegant Easthampsted Park suits wedding cakes that blend timeless beauty with soft, romantic details - designs that complement the mansion's grand rooms, sweeping staircase and picturesque grounds.",
+      "popularCakeStyles": [
+        "Classic tiered cakes with smooth buttercream or fondant for a refined finish",
+        "Floral arrangements inspired by the gardens - fresh or delicate sugar flowers",
+        "Elegant detailing such as lace textures or fine piping",
+        "Tall, graceful silhouettes that suit the grandeur of the mansion's reception spaces"
+      ],
+      "flavourTip": {
+        "text": "Add tip wording.",
+        "flavours": ["lemon-blossom", "pink-bubbles"]
+      },
+      "myExperience": "I love working with the mansion's elegant setting, creating cakes to the couple's chosen style. I liaise with the venue team to make sure everything runs smoothly, with your cake set up and styled beautifully in your chosen room.",
+      "occasion": "wedding"
+    },
+    "trunkwell-house": {
+      "name": "Trunkwell House",
+      "tagline": "A charming country house for relaxed, elegant weddings",
+      "location": "Reading",
+      "address": ["Beech Hill Road, Beech Hill, Reading, RG7 2AT"],
+      "featuredCakes": ["semi-naked-sage"],
+      "cakeStylesIntro": "The relaxed yet elegant Trunkwell House pairs beautfully with wedding cakes that have soft finishes, gentle detailing and a touch of classic charm - designs that sit perfectly within both the country house and marquee settings.",
+      "popularCakeStyles": [
+        "Soft buttercream finishes such as smooth, textured or semi-naked designs",
+        "Seasonal florals inspired by the gardens, with fresh or sugar flowers",
+        "Modern rustic touches like subtle texture or foliage accents",
+        "Classic tiered cakes for a refined look that suits the marquee setting beautifully"
+      ],
+      "flavourTip": {
+        "text": "Add tip wording.",
+        "flavours": ["lemon-blossom", "pink-bubbles"]
+      },
+      "myExperience": "I've had the pleasure of creating wedding cakes for couples celebrating at Trunkwell House and know the venue well.  My experience working here means your cake is designed to suit the space beautifully, and delivered and arranged smoothly on the day in coordination with the Trunkwell House team.",
+      "occasion": "wedding"
+    },
+    "old-gore": {
+      "name": "Old Gore by Yard Space",
+      "tagline": "A laid-back Cotswold party barn for fun, relaxed weddings",
+      "location": "Cirencester",
+      "address": ["Fosse Cross, near Cirencester, Gloucestershire, GL54 4BZ"],
+      "featuredCakes": ["semi-naked-sage"],
+      "cakeStylesIntro": "With its mix of rustic stone, industrial touches and open kitchen, Old Gore suits cake designs that are stylish, relaxed and a little bit playful.",
+      "popularCakeStyles": [
+        "Semi-naked or textured buttercream cakes that echo the natural Cotswold stone and countryside setting",
+        "Seasonal florals and foliage to tie in with the surrounding valley and outdoor spaces",
+        "Modern rustic designs with clean tiers, soft edges and simple, impactful decoration",
+        "Laid-back 'feast-style' displays - cupcakes to complement the street-food feel"
+      ],
+      "flavourTip": {
+        "text": "Add tip wording.",
+        "flavours": ["lemon-blossom", "pink-bubbles"]
+      },
+      "myExperience": "I've had the pleasure of creating wedding cakes for couples celebrating at Old Gore by Yard Space,and it's always such fun. I'm familiar with the barn layout and I coordinate with the team on timings and setup so your cake is delivered and arranged smoothly on the day, ready to sit beautifully alongside the venue's incredible food.",
       "occasion": "wedding"
     }
   }
