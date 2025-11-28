@@ -553,6 +553,28 @@
         "text": "Delivery"
       }
     },
+    "venueClockBarn": {
+      "title": "Wedding cakes delivered to Clock Barn | Cakes by Katie",
+      "description": "Delivering to Clock Barn, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "Clock Barn",
+        "afterText": "Whitchurch",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at Clock Barn!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "clock-barn",
+      "occasion": "wedding"
+    },
     "venueEasthampstedPark": {
       "title": "Wedding cakes delivered to Easthampsted Park | Cakes by Katie",
       "description": "Delivering to Easthampsted Park, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
@@ -661,6 +683,28 @@
         }
       },
       "venue": "highcliffe-castle",
+      "occasion": "wedding"
+    },
+    "venueOakleyHall": {
+      "title": "Wedding cakes delivered to Oakley Hall | Cakes by Katie",
+      "description": "Delivering to Oakley Hall, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "Oakley Hall",
+        "afterText": "Basingstoke",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at Oakley Hall!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "oakley-hall",
       "occasion": "wedding"
     },
     "venuePennyhillPark": {
@@ -859,6 +903,28 @@
         }
       },
       "venue": "stanlake-park",
+      "occasion": "wedding"
+    },
+    "venueTheVineyard": {
+      "title": "Wedding cakes delivered to The Vineyard | Cakes by Katie",
+      "description": "Delivering to The Vineyard, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "The Vineyard",
+        "afterText": "Stockcross",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at The Vineyard!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "vineyard-stockcross",
       "occasion": "wedding"
     },
     "venueTrunkwellHouse": {
@@ -7382,6 +7448,66 @@
         "flavours": ["lemon-blossom", "pink-bubbles"]
       },
       "myExperience": "I've had the pleasure of delivering wedding cakes to Hedsor House and always appreciate the elegance and scale of the space. I'm familiar with the venue layout, particularly the Centre Hall and Ballroom, and I coordinate with the team on timings and setup so your cake is delivered and arranged smoothly on the day.",
+      "occasion": "wedding"
+    },
+    "oakley-hall": {
+      "name": "Oakley Hall",
+      "tagline": "A grand Georgian country estate for classic, elegant weddings",
+      "location": "Basingstoke",
+      "address": ["Rectory Road, Oakley, Basingstoke, Hampshire, RG23 7EL"],
+      "featuredCakes": ["semi-naked-sage"],
+      "cakeStylesIntro": "The refined, traditional feel of Oakley Hall lends itself beautifully to elegant, classic and floral cake designs.",
+      "popularCakeStyles": [
+        "Tall, traditional tiered cakes that suit the grandeur of the reception spaces",
+        "Soft floral arrangements inspired by the gardens and grounds",
+        "Smooth buttercream or fondant finishes for a polished, timeless look",
+        "Romantic palettes - ivory, champagne, blush, soft pastels"
+      ],
+      "flavourTip": {
+        "text": "Add tip wording.",
+        "flavours": ["lemon-blossom", "pink-bubbles"]
+      },
+      "myExperience": "I've had the pleasure of delivering wedding cakes to Oakley Hall and always enjoy working in its elegant, welcoming spaces.  The beautiful interiors provide the perfect backdrop for displaying statement wedding cakes.",
+      "occasion": "wedding"
+    },
+    "clock-barn": {
+      "name": "Clock Barn",
+      "tagline": "A charming, rustic Hampshire barn for warm, relaxed countryside weddings",
+      "location": "Whitchurch",
+      "address": ["Tufton Warren, Whitchurch, Hampshire, RG28 7RB"],
+      "featuredCakes": ["semi-naked-sage"],
+      "cakeStylesIntro": "Clock Barn's natural textures and rustic atmosphere pair perfectly with cakes that feel organic, textural and elegantly understated.",
+      "popularCakeStyles": [
+        "Semi-naked or textured buttercream cakes that complement the wooden beams",
+        "Soft floral designs using seasonal fresh flowers or foliage",
+        "Natural, earthy palettes - ivory, stone, warm taupes, soft greens",
+        "Subtle details like dried flowers or delicate meadow-inspired accents"
+      ],
+      "flavourTip": {
+        "text": "Add tip wording.",
+        "flavours": ["lemon-blossom", "pink-bubbles"]
+      },
+      "myExperience": "I've had the opportunity to create and deliver wedding cakes for couples celebrating at Clock Barn and love its warm, rustic setting. I handle delivery and setup in coordination with the venue team so your cake is presented perfectly for your celebration.",
+      "occasion": "wedding"
+    },
+    "vineyard-stockcross": {
+      "name": "The Vineyard",
+      "tagline": "Luxury, Art-Led, Five-Star Hotel Weddings in Berkshire",
+      "location": "Stockcross",
+      "address": ["Stockcross, Newbury, Berkshire, RG20 8JU"],
+      "featuredCakes": ["semi-naked-sage"],
+      "cakeStylesIntro": "The Vineyard's interiors feature clean lines, modern art and a refined palette, which all pair beautifully with more luxurious, contemporary cake designs.",
+      "popularCakeStyles": [
+        "Tall, structured cakes with smooth fondant, crisp edges and elegant details such as edible gold leaf",
+        "Designs that nod to The Vineyard's incredible art colletion - textured buttercream or soft marbled tones",
+        "Traditional tiered cakes with refined sugar flowers, delicate detailing and timeless neutrals to complement the venue's stylish interiors",
+        "Soft floral designs using seasonal flowers or foliage"
+      ],
+      "flavourTip": {
+        "text": "Add tip wording.",
+        "flavours": ["lemon-blossom", "pink-bubbles"]
+      },
+      "myExperience": "I've had the pleasure of creaing wedding cakes for celebrations at The Vineyard, and it's always a wonderful venue to work with. The elegant interiors offer a beautiful setting for showcasing your cake. I liaise directly with the venue team in advance which makes the setup seamless and stress-free for you.",
       "occasion": "wedding"
     }
   }
