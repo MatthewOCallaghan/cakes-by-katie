@@ -707,6 +707,50 @@
       "venue": "oakley-hall",
       "occasion": "wedding"
     },
+    "venueOldLuxtersBarn": {
+      "title": "Wedding cakes delivered to Old Luxters Barn | Cakes by Katie",
+      "description": "Delivering to Old Luxters Barn, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "Old Luxters Barn",
+        "afterText": "Henley-on-Thames",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at Old Luxters Barn!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "old-luxters",
+      "occasion": "wedding"
+    },
+    "venuePembrokeLodge": {
+      "title": "Wedding cakes delivered to Pembroke Lodge | Cakes by Katie",
+      "description": "Delivering to Pembroke Lodge, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "Pembroke Lodge",
+        "afterText": "Richmond",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at Pembroke Lodge!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "pembroke-lodge",
+      "occasion": "wedding"
+    },
     "venuePennyhillPark": {
       "title": "Wedding cakes delivered to Pennyhill Park | Cakes by Katie",
       "description": "Delivering to Pennyhill Park, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
@@ -903,6 +947,50 @@
         }
       },
       "venue": "stanlake-park",
+      "occasion": "wedding"
+    },
+    "venueTheGreatHouseatSonning": {
+      "title": "Wedding cakes delivered to The Great House at Sonning | Cakes by Katie",
+      "description": "Delivering to The Great House at Sonning, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "The Great House at Sonning",
+        "afterText": "Sonning",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at The Great House at Sonning!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "great-house",
+      "occasion": "wedding"
+    },
+    "venueTheSwanatStreatley": {
+      "title": "Wedding cakes delivered to The Swan at Streatley | Cakes by Katie",
+      "description": "Delivering to The Swan at Streatley, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "The Swan at Streatley",
+        "afterText": "Streatley-on-Thames",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at The Swan at Streatley!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "swan-streatley",
       "occasion": "wedding"
     },
     "venueTheVineyard": {
@@ -7508,6 +7596,86 @@
         "flavours": ["lemon-blossom", "pink-bubbles"]
       },
       "myExperience": "I've had the pleasure of creaing wedding cakes for celebrations at The Vineyard, and it's always a wonderful venue to work with. The elegant interiors offer a beautiful setting for showcasing your cake. I liaise directly with the venue team in advance which makes the setup seamless and stress-free for you.",
+      "occasion": "wedding"
+    },
+    "pembroke-lodge": {
+      "name": "Pembroke Lodge",
+      "tagline": "Elegant, historic and surrounded by sweeping parkland views, Pembroke Lodge is a romantic wedding venue set within the heart of Richmond Park",
+      "location": "Richmond",
+      "address": ["Richmond Park, Richmond, Surrey, TW10 5HX"],
+      "featuredCakes": ["semi-naked-sage"],
+      "cakeStylesIntro": "The blend of Georgian architecture, soft garden landscapes and classic interiors suits a range of refined cake styles.",
+      "popularCakeStyles": [
+        "Soft buttercream or fondant cakes with sugar flowers or fresh florals that echo the seasonal gardens",
+        "A clean, neutral palette with greenery accents - perfect for couples who want understated elegance that enhances Pembroke Lodge's natural beauty",
+        "Lightly textured buttercream or subtle detailing that complements the calm, airy interiors",
+        "Traditional tiered cakes with elegant piping or gentle metallic touches for a sophisticated feel"
+      ],
+      "flavourTip": {
+        "text": "Add tip wording.",
+        "flavours": ["lemon-blossom", "pink-bubbles"]
+      },
+      "myExperience": "I've delivered to Pembroke Lodge and it's a fantastic venue to work with. The elegant, light-filled rooms create a beautiful setting for showcasing your wedding cake. I'm familiar with the layout and delivery access, making the setup smooth and stress-free for your day.",
+      "occasion": "wedding"
+    },
+    "swan-streatley": {
+      "name": "The Swan at Streatley",
+      "tagline": "A riverside boutique-hotel venue for relaxed, romantic weddings by the Thames",
+      "location": "Streatley-on-Thames",
+      "address": ["High Street, Streatley-on-Thames, Berkshire, RG8 9HR"],
+      "featuredCakes": ["semi-naked-sage"],
+      "cakeStylesIntro": "Because The Swan blends riverside charm, relaxed luxury and boutique-hotel style, it works beautifully with cake designs that feel elegant, soft and romantic.",
+      "popularCakeStyles": [
+        "Soft, classic tiered cakes with smooth butterream or fondant finishes and subtle detailing - perfect for the hotel's refined interiors",
+        "Romantic floral cakes - sugar flowers or fresh blooms to echo the gardens and riverside surroundings",
+        "Gentle colour palettes - soft ivories, blushes or pastel tones to complement the light-filled spaces and garden setting",
+        "Elegant, understated textures - smooth finishes or subtle buttercream texture for a timeless look that suits the venue"
+      ],
+      "flavourTip": {
+        "text": "Add tip wording.",
+        "flavours": ["lemon-blossom", "pink-bubbles"]
+      },
+      "myExperience": "I've delivered wedding cakes to The Swan and always enjoy the relaxed atmosphere and friendly team. The layout is very straightforward for setup, and the riverside light makes it an especially beautiful venue to showase your cake.",
+      "occasion": "wedding"
+    },
+    "great-house": {
+      "name": "The Great House at Sonning",
+      "tagline": "A beautifully stylish riverside wedding venue set along a peaceful stretch of the Thames",
+      "location": "Sonning",
+      "address": ["Thames Street, Sonning, Berkshire, RG4 6UT"],
+      "featuredCakes": ["semi-naked-sage"],
+      "cakeStylesIntro": "With its relaxed, contemporary interiors, beautiful lawns and charming waterside views, The Great House at Sonning suits cakes that feel fresh, relaxed and effortlessly elegant.",
+      "popularCakeStyles": [
+        "Softly textured buttercream designs",
+        "Fresh or sugar flowers in seasonal, natural tones",
+        "Smooth fondant tiers with clean, modern lines",
+        "Greenery accents inspired by the riverside surroundings"
+      ],
+      "flavourTip": {
+        "text": "Add tip wording.",
+        "flavours": ["lemon-blossom", "pink-bubbles"]
+      },
+      "myExperience": "I've had the pleasure of creating cakes for celebrations at The Great House and always enjoy the relaxed riverside feel and modern interiors. The team are friendly and helpful, and the setup is straightforward, making the whole process smooth and stress-free. It's a beautiful venue to showcase your wedding cake.",
+      "occasion": "wedding"
+    },
+    "old-luxters": {
+      "name": "Old Luxters Barn",
+      "tagline": "A charming 18th century converted barn set in the idyllic Hambleden Valley for weddings with a natural, timeless feel",
+      "location": "Henley-on-Thames",
+      "address": ["Hambleden, Henley-on-Thames, Oxfordshire, RG9 6JW"],
+      "featuredCakes": ["semi-naked-sage"],
+      "cakeStylesIntro": "The rustic charm and countryside setting of Old Luxters Barn lend themselves beautifully to cakes that feel natural, relaxed and effortlessly elegant.",
+      "popularCakeStyles": [
+        "Semi-naked or textured buttercream cakes - the slightly rough, organic finish complements the barn's rustic beams and stone",
+        "Soft floral or foliage decoration - fresh or sugar flowers, greenery or seasonal foliage to tie in with the woodland and vineyard surroundings",
+        "Neutral, earthy palettes - creams, ivories, soft taupes, subtle greenery tones - understated and natural to match the barn setting",
+        "Rustic-elegant hybrid cakes - combining smooth finishes (for a touch of refinement) with natural decoration or soft textures to bridge rustic and elegant vibes"
+      ],
+      "flavourTip": {
+        "text": "Add tip wording.",
+        "flavours": ["lemon-blossom", "pink-bubbles"]
+      },
+      "myExperience": "I've worked at Old Luxters Barn and always appreciate the warmth and countryside charm it offers. The layout - with its barn interior, courtyard, vineyard surroundings and optional marquee/orchard area - gives flexibility in display and cake setup. I coordinate with the venue team on the day to make sure delivery and setup are smooth, and I take care to style the cake so it complements the rustic, relaxed atmosphere beautifully.",
       "occasion": "wedding"
     }
   }
