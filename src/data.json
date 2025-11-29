@@ -685,6 +685,28 @@
       "venue": "highcliffe-castle",
       "occasion": "wedding"
     },
+    "venueMonkeyIsland": {
+      "title": "Wedding cakes delivered to Monkey Island Estate | Cakes by Katie",
+      "description": "Delivering to Monkey Island Estate, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "Monkey Island Estate",
+        "afterText": "Bray",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at Monkey Island Estate!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "monkey-island",
+      "occasion": "wedding"
+    },
     "venueOakleyHall": {
       "title": "Wedding cakes delivered to Oakley Hall | Cakes by Katie",
       "description": "Delivering to Oakley Hall, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
@@ -705,6 +727,28 @@
         }
       },
       "venue": "oakley-hall",
+      "occasion": "wedding"
+    },
+    "venueOldGore": {
+      "title": "Wedding cakes delivered to Old Gore by Yard Space | Cakes by Katie",
+      "description": "Delivering to Old Gore, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "Old Gore",
+        "afterText": "Cirencester",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at Old Gore!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "old-gore",
       "occasion": "wedding"
     },
     "venueOldLuxtersBarn": {
@@ -773,138 +817,6 @@
       "venue": "pennyhill-park",
       "occasion": "wedding"
     },
-    "venueWasingPark": {
-      "title": "Wedding cakes delivered to Wasing Park | Cakes by Katie",
-      "description": "Delivering to Wasing Park, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
-      "heading": {
-        "beforeText": "Wedding cakes for",
-        "text": "Wasing Park",
-        "afterText": "Aldermaston",
-        "image": {
-          "path": "backgrounds/wedding.jpg",
-          "alt": "Wedding background"
-        }
-      },
-      "cta": {
-        "text": "Let's talk about your wedding at Wasing Park!",
-        "image": {
-          "path": "backgrounds/wedding.jpg",
-          "alt": "Wedding background"
-        }
-      },
-      "venue": "wasing-park",
-      "occasion": "wedding"
-    },
-    "venuePostBarn": {
-      "title": "Wedding cakes delivered to The Post Barn | Cakes by Katie",
-      "description": "Delivering to The Post Barn, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
-      "heading": {
-        "beforeText": "Wedding cakes for",
-        "text": "The Post Barn",
-        "afterText": "Newbury",
-        "image": {
-          "path": "backgrounds/wedding.jpg",
-          "alt": "Wedding background"
-        }
-      },
-      "cta": {
-        "text": "Let's talk about your wedding at The Post Barn!",
-        "image": {
-          "path": "backgrounds/wedding.jpg",
-          "alt": "Wedding background"
-        }
-      },
-      "venue": "post-barn",
-      "occasion": "wedding"
-    },
-    "venueOldMill": {
-      "title": "Wedding cakes delivered to The Old Mill | Cakes by Katie",
-      "description": "Delivering to The Old Mill, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
-      "heading": {
-        "beforeText": "Wedding cakes for",
-        "text": "The Old Mill",
-        "afterText": "Aldermaston",
-        "image": {
-          "path": "backgrounds/wedding.jpg",
-          "alt": "Wedding background"
-        }
-      },
-      "cta": {
-        "text": "Let's talk about your wedding at The Old Mill!",
-        "image": {
-          "path": "backgrounds/wedding.jpg",
-          "alt": "Wedding background"
-        }
-      },
-      "venue": "old-mill",
-      "occasion": "wedding"
-    },
-    "venueMonkeyIsland": {
-      "title": "Wedding cakes delivered to Monkey Island Estate | Cakes by Katie",
-      "description": "Delivering to Monkey Island Estate, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
-      "heading": {
-        "beforeText": "Wedding cakes for",
-        "text": "Monkey Island Estate",
-        "afterText": "Bray",
-        "image": {
-          "path": "backgrounds/wedding.jpg",
-          "alt": "Wedding background"
-        }
-      },
-      "cta": {
-        "text": "Let's talk about your wedding at Monkey Island Estate!",
-        "image": {
-          "path": "backgrounds/wedding.jpg",
-          "alt": "Wedding background"
-        }
-      },
-      "venue": "monkey-island",
-      "occasion": "wedding"
-    },
-    "venueOldGore": {
-      "title": "Wedding cakes delivered to Old Gore by Yard Space | Cakes by Katie",
-      "description": "Delivering to Old Gore, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
-      "heading": {
-        "beforeText": "Wedding cakes for",
-        "text": "Old Gore",
-        "afterText": "Cirencester",
-        "image": {
-          "path": "backgrounds/wedding.jpg",
-          "alt": "Wedding background"
-        }
-      },
-      "cta": {
-        "text": "Let's talk about your wedding at Old Gore!",
-        "image": {
-          "path": "backgrounds/wedding.jpg",
-          "alt": "Wedding background"
-        }
-      },
-      "venue": "old-gore",
-      "occasion": "wedding"
-    },
-    "venueElcotPark": {
-      "title": "Wedding cakes delivered to The Retreat at Elcot Park | Cakes by Katie",
-      "description": "Delivering to The Retreat at Elcot Park, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
-      "heading": {
-        "beforeText": "Wedding cakes for",
-        "text": "The Retreat at Elcot Park",
-        "afterText": "Newbury",
-        "image": {
-          "path": "backgrounds/wedding.jpg",
-          "alt": "Wedding background"
-        }
-      },
-      "cta": {
-        "text": "Let's talk about your wedding at The Retreat at Elcot Park!",
-        "image": {
-          "path": "backgrounds/wedding.jpg",
-          "alt": "Wedding background"
-        }
-      },
-      "venue": "elcot-park",
-      "occasion": "wedding"
-    },
     "venueSheepdrove": {
       "title": "Wedding cakes delivered to Sheepdrove | Cakes by Katie",
       "description": "Delivering to Sheepdrove, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
@@ -969,6 +881,72 @@
         }
       },
       "venue": "great-house",
+      "occasion": "wedding"
+    },
+    "venueOldMill": {
+      "title": "Wedding cakes delivered to The Old Mill | Cakes by Katie",
+      "description": "Delivering to The Old Mill, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "The Old Mill",
+        "afterText": "Aldermaston",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at The Old Mill!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "old-mill",
+      "occasion": "wedding"
+    },
+    "venuePostBarn": {
+      "title": "Wedding cakes delivered to The Post Barn | Cakes by Katie",
+      "description": "Delivering to The Post Barn, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "The Post Barn",
+        "afterText": "Newbury",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at The Post Barn!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "post-barn",
+      "occasion": "wedding"
+    },
+    "venueElcotPark": {
+      "title": "Wedding cakes delivered to The Retreat at Elcot Park | Cakes by Katie",
+      "description": "Delivering to The Retreat at Elcot Park, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "The Retreat at Elcot Park",
+        "afterText": "Newbury",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at The Retreat at Elcot Park!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "elcot-park",
       "occasion": "wedding"
     },
     "venueTheSwanatStreatley": {
@@ -1037,6 +1015,28 @@
       "venue": "trunkwell-house",
       "occasion": "wedding"
     },
+    "venueTylneyHall": {
+      "title": "Wedding cakes delivered to Tylney Hall | Cakes by Katie",
+      "description": "Delivering to Tylney Hall, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "Tylney Hall",
+        "afterText": "Hook",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at Tylney Hall!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "tylney-hall",
+      "occasion": "wedding"
+    },
     "venueUftonCourt": {
       "title": "Wedding cakes delivered to Ufton Court | Cakes by Katie",
       "description": "Delivering to Ufton Court, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
@@ -1057,6 +1057,28 @@
         }
       },
       "venue": "ufton-court",
+      "occasion": "wedding"
+    },
+    "venueWasingPark": {
+      "title": "Wedding cakes delivered to Wasing Park | Cakes by Katie",
+      "description": "Delivering to Wasing Park, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "Wasing Park",
+        "afterText": "Aldermaston",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at Wasing Park!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "wasing-park",
       "occasion": "wedding"
     },
     "venueDowneHouse": {
@@ -7646,10 +7668,10 @@
       "featuredCakes": ["semi-naked-sage"],
       "cakeStylesIntro": "With its relaxed, contemporary interiors, beautiful lawns and charming waterside views, The Great House at Sonning suits cakes that feel fresh, relaxed and effortlessly elegant.",
       "popularCakeStyles": [
-        "Softly textured buttercream designs",
-        "Fresh or sugar flowers in seasonal, natural tones",
-        "Smooth fondant tiers with clean, modern lines",
-        "Greenery accents inspired by the riverside surroundings"
+        "Textured buttercream designs - soft, organic finishes that suit the modern yet relaxed atmosphere",
+        "Fresh or sugar flowers - delicate blooms in seasonal, natural tones that echo the riverside gardens",
+        "Clean fondant tiers - smooth, modern lines to complement the venue's contemporary aesthetic",
+        "Greenery accents - subtle foliage inspired by the riverside surroundings"
       ],
       "flavourTip": {
         "text": "Add tip wording.",
@@ -7676,6 +7698,26 @@
         "flavours": ["lemon-blossom", "pink-bubbles"]
       },
       "myExperience": "I've worked at Old Luxters Barn and always appreciate the warmth and countryside charm it offers. The layout - with its barn interior, courtyard, vineyard surroundings and optional marquee/orchard area - gives flexibility in display and cake setup. I coordinate with the venue team on the day to make sure delivery and setup are smooth, and I take care to style the cake so it complements the rustic, relaxed atmosphere beautifully.",
+      "occasion": "wedding"
+    },
+    "tylney-hall": {
+      "name": "Tylney Hall",
+      "tagline": "A luxury country house made for elegant, unforgettable weddings",
+      "location": "Hook",
+      "address": ["Ridge Lane, Rotherwick, Hook, Hampshire, RG27 9AZ"],
+      "featuredCakes": ["semi-naked-sage"],
+      "cakeStylesIntro": "The elegant interiors, manicured gardens and timeless architecture of Tylney Hall pair beautifully with cakes that feel classic, refined and romantic.",
+      "popularCakeStyles": [
+        "Smooth fondant or buttercream finishes - perfect for complementing Tylney Hall's grand, traditional interiors",
+        "Soft floral decoration - fresh or sugar flowers in delicate, romantic tones to reflect the beautiful gardens",
+        "Subtle metallic accents - gold or pearl touches to echo the luxurious, stately feel of the house",
+        "Classic white or pastel palettes - elegant, understated colours that suit Tylney Hall's timeless style"
+      ],
+      "flavourTip": {
+        "text": "Add tip wording and use percentage signs to insert correct flavour names like % and %.",
+        "flavours": ["lemon-blossom", "pink-bubbles"]
+      },
+      "myExperience": "I'm familiar with Tylney Hall and its beautifully arranged event spaces. The team are welcoming and well organised, and the layout makes delivery and setup smooth and straightforward. It's a wonderful venue for showcasing elegant, romantic wedding cakes.",
       "occasion": "wedding"
     }
   }
