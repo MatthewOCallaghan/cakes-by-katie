@@ -62,6 +62,13 @@ function setupData() {
     // Collect testimonials separately to make them easier to process
     data.testimonials = Object.entries(data.portfolio).reduce((acc, [cake, { testimonial }]) => testimonial ? acc.concat({ cake, ...testimonial }) : acc, []);
 
+    // Flavours entry for design-choices macro
+    data.designChoicesFlavours = {
+        name: 'Flavours',
+        items: Object.values(data.flavours).map(({ name, variants }) => ({ name, image: variants[0].image })),
+        seeMoreLink: '/flavours'
+    };
+
     // Get size of each portfolio image and video
     let videoPromises = [];
 

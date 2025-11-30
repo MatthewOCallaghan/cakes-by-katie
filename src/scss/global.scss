@@ -1160,8 +1160,10 @@ footer {
         margin: 1em auto;
     }
 
+    $categoryMargin: min(max(35px, 5%), 60px);
+
     .category {
-        margin-top: min(max(35px, 5%), 60px);
+        margin-top: $categoryMargin;
 
         &::before {
             content: "";
@@ -1174,7 +1176,7 @@ footer {
 
         h3 {
             font-size: 2.5em;
-            margin: min(max(35px, 5%), 60px) 0;
+            margin: $categoryMargin 0;
         }
 
         .items {
@@ -1202,8 +1204,9 @@ footer {
                     margin: 0;
                 }
 
+                $imgSize: min(100%, 150px);
                 img {
-                    width: min(100%, 150px);
+                    width: $imgSize;
                     aspect-ratio: 1;
                     border-radius: 100%;
                     object-fit: cover;
@@ -1212,8 +1215,46 @@ footer {
                 h4 {
                     font-size: min(2em, 7vw);
                 }
+
+                &.more {
+
+                    position: relative;
+
+                    img {
+                        filter: brightness(0.5);
+                    }
+
+                    div.overlay-text {
+                        
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+
+                        // Make text appear more centred
+                        padding: 5px 5px 0 0;
+
+                        span {
+                            font-family: variables.$handwriting;
+                            font-size: min(3em, 10vw);
+                            display: flex;
+                            width: $imgSize;
+                            aspect-ratio: 1;
+                            justify-content: center;
+                            align-items: center;
+                            line-height: 0;
+                            margin: 0 auto;
+                        }
+                    }
+                }
             }
 
+        }
+
+        .see-more-link {
+            display: block;
+            font-size: 1.1em;
+            margin-top: $categoryMargin;
         }
     }
 }
