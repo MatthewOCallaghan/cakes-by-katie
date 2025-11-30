@@ -35,7 +35,7 @@
             </div>
             {% if category.seeMoreLink %}
                 <div class="see-more-link">
-                    <a href="{{ category.seeMoreLink }}">See more {{ category.name | lower }}</a>
+                    <a href="{{ category.seeMoreLink }}">See all {{ category.items | length}} {{ category.name | lower }}</a>
                 </div>
             {% endif %}
         </div>
