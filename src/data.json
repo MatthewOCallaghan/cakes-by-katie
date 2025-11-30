@@ -4045,7 +4045,12 @@
           "description": "Vanilla sponge filled with strawberry jam and buttercream"
         },
         {
-          "diets": ["dairy-free", "gluten-free", "vegan", "eggless", "nut-free", "soya-free"],
+          "diets": ["dairy-free", "gluten-free", "nut-free", "soya-free"],
+          "image": "choices/flavours/vanilla.jpg",
+          "description": "Vanilla sponge filled with strawberry jam and DF \"buttercream\""
+        },
+        {
+          "diets": ["dairy-free", "vegan", "eggless", "nut-free"],
           "image": "choices/flavours/vanilla-vegan.jpg",
           "description": "Vanilla sponge filled with strawberry jam and DF \"buttercream\""
         }
