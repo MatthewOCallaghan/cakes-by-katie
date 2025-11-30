@@ -7325,18 +7325,15 @@
       "tagline": "A magical woodland setting for relaxed, rustic weddings",
       "location": "Newbury",
       "address": ["Welford Road, Welford, Newbury, Berkshire, RG20 8HU"],
-      "featuredCakes": ["semi-naked-sage"],
-      "cakeStylesIntro": "With its natural woodland charm, Forest Edge Tipis is perfectly suited to cakeds that feel organic, relaxed and beautifully in tune with nature.",
+      "featuredCakes": ["samantha"],
+      "cakeStylesIntro": "With its natural woodland charm, Forest Edge Tipis is perfectly suited to cakes that feel organic, relaxed and beautifully in tune with nature.",
       "popularCakeStyles": [
-        "Semi-naked or buttercream cakes decorated with wildflowers, greenery and seasonal blooms",
-        "Rustic buttercream textures with foliage or dried flower details",
-        "Woodland-inspired cakes with edible bark effects or natural tones",
-        "Whimsical designs featuring berries, ferns or floral cascades"
+        "Semi-naked or rustic buttercream textured cakes that complement the woodland setting",
+        "Foral designs created with wildflowers, greenery and seasonal blooms",
+        "Woodland inspired decoration such as dried flowers, berries and pressed flowers/foliage",
+        "Natural effects like edible bark or natural tones"
       ],
-      "flavourTip": {
-        "text": "Add tip wording.",
-        "flavours": ["lemon-blossom", "pink-bubbles"]
-      },
+      "flavourTip": "For light, outdoorsy flavours that suit the meadow setting, choose from the <em>Fresh & Fruity</em> collection. To pair with the fairy tale aesthetic, choose from the <em>Classic</em> collection.",
       "myExperience": "I've had the pleasure of creating cakes for weddings at Forest Edge Tipis at Welford Park, and I always love how relaxed and creative these celebrations feel. The natural surroundings provide a stunning backdrop, and my rustic and floral cake designs fit seamlessly into the tipi atmosphere.",
       "occasion": "wedding"
     },
@@ -7425,18 +7422,15 @@
       "tagline": "A grand Victorian mansion for elegant, timeless weddings",
       "location": "Wokingham",
       "address": ["Off Peacock Lane, Wokingham, RG40 3DF"],
-      "featuredCakes": ["semi-naked-sage"],
+      "featuredCakes": ["lauren"],
       "cakeStylesIntro": "The elegant Easthampsted Park suits wedding cakes that blend timeless beauty with soft, romantic details - designs that complement the mansion's grand rooms, sweeping staircase and picturesque grounds.",
       "popularCakeStyles": [
         "Classic tiered cakes with smooth buttercream or fondant for a refined finish",
+        "Tall, graceful silhouettes that suit the grandeur of the mansion's reception spaces",
         "Floral arrangements inspired by the gardens - fresh or delicate sugar flowers",
-        "Elegant detailing such as lace textures or fine piping",
-        "Tall, graceful silhouettes that suit the grandeur of the mansion's reception spaces"
+        "Elegant detailing such as lace textures or fine piping"
       ],
-      "flavourTip": {
-        "text": "Add tip wording.",
-        "flavours": ["lemon-blossom", "pink-bubbles"]
-      },
+      "flavourTip":"To match the refineness of this stately home, choose from the <em>Classic</em> collection. For a more modern twist that suits the elegant ballroom, choose from the <em>Truffle Box</em> collection.",
       "myExperience": "I love working with the mansion's elegant setting, creating cakes to the couple's chosen style. I liaise with the venue team to make sure everything runs smoothly, with your cake set up and styled beautifully in your chosen room.",
       "occasion": "wedding"
     },
@@ -7590,14 +7584,11 @@
       "popularCakeStyles": [
         "Semi-naked or textured buttercream cakes that complement the wooden beams",
         "Soft floral designs using seasonal fresh flowers or foliage",
-        "Natural, earthy palettes - ivory, stone, warm taupes, soft greens",
-        "Subtle details like dried flowers or delicate meadow-inspired accents"
+        "Subtle details like dried flowers or delicate meadow-inspired accents",
+        "Natural, earthy palettes - ivory, stone, warm taupes, soft greens"
       ],
-      "flavourTip": {
-        "text": "Add tip wording.",
-        "flavours": ["lemon-blossom", "pink-bubbles"]
-      },
-      "myExperience": "I've had the opportunity to create and deliver wedding cakes for couples celebrating at Clock Barn and love its warm, rustic setting. I handle delivery and setup in coordination with the venue team so your cake is presented perfectly for your celebration.",
+      "flavourTip":"To suit the freshness of the natural surroundings, choose from the <em>Fresh & Fruity</em> collection. For rustic, cosy flavours similar to the barn's feel, choose from the <em>Café Katie</em> collection.",
+      "myExperience": "I've delivered to the Clock Barn and love its warm, rustic setting. I handle delivery and setup in coordination with the venue team so your cake is presented perfectly for your celebration.",
       "occasion": "wedding"
     },
     "vineyard-stockcross": {
