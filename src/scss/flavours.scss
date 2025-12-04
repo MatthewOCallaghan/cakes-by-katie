@@ -39,33 +39,13 @@
             // Colours
             $colours: ("standard": #fbe4ff, "gluten-free": #fff7cf, "dairy-free": #dff6ff, "vegan": #e2ffd1, "eggless":	#ffdfba);
 
-            $borderColour: #e6e6e6;
-
-            .flavours-tabs {
-                display: flex;
-
-                button {
-                    border: none;
-                    padding: 0.6em .3em;
-                    width: 9em;
-                    min-width: min-content;
-                    max-width: 20%;
-                    margin: 0;
-                    transform: translateY(1px);
-                    z-index: 1;
-                    border: 1px solid $borderColour;
-                    border-radius: 10px 10px 0 0;
-                    cursor: pointer;
-                    color: #000;
-                }
-
-            }
-
             .flavours-list {
                 text-align: center;
                 padding: 7%;
                 border: 1px solid #e6e6e6;
                 box-shadow: 0 0 4px 1px #cacaca47;
+
+                background: #fbe4ff;
 
                 .flavours-list-grid {
                     display: grid;
@@ -81,25 +61,43 @@
 
                     .flavour-row {
 
-                        .image-container {
+                        // Hide flavour if it doesn't meet filters
+                        &:not(.flavour-valid) {
+                            display: none;
+                        }
 
-                            margin-bottom: 1em;
+                        .variant {
 
-                            img {
-                                width: 120px;
-                                height: 120px;
-                                border-radius: 120px;
+                            display: none;
+                            &.variant-valid {
+                                display: block;
+                            }
+
+                            .image-container {
+
+                                margin-bottom: 1em;
+
+                                img {
+                                    width: 120px;
+                                    height: 120px;
+                                    border-radius: 120px;
+                                }
+                            }
+
+                            h2 {
+                                margin: 0;
+                                font-size: min(3em, 9vw);
+                            }
+
+                            p {
+                                font-family: variables.$thin-font;
+                                margin-bottom: 0;
                             }
                         }
 
-                        h2 {
-                            margin: 0;
-                            font-size: min(3em, 9vw);
-                        }
-
-                        p {
-                            font-family: variables.$thin-font;
-                            margin-bottom: 0;
+                        // Hide all variants after the first valid one
+                        .variant-valid ~ .variant {
+                            display: none;
                         }
                     }
                 }
@@ -116,30 +114,7 @@
                     }
                 }
                 
-            }
-
-            @each $variant, $colour in $colours {
-                ##{$variant}-button {
-                    background: $colour;
-                }
-
-                &.#{$variant} {
-                    ##{$variant}-button {
-                        border-bottom-color: $colour;
-                    }
-
-                    .flavour:not(.#{$variant}) {
-                        display: none;
-                    }
-
-                    .flavours-list {
-                        background: $colour;
-                    }
-
-                }
-            }
-
-            
+            }            
         }
     }
 }
