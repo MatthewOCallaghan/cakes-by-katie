@@ -4692,25 +4692,39 @@
   },
   "flavourGroups": {
     "the-classics": {
-      "flavours": ["vanilla", "chocolate"]
+      "name": "The Classics",
+      "flavours": ["vanilla", "chocolate"],
+      "colour": "var(--colour-blue-light)"
     },
     "truffle-box":{
-      "flavours": ["milky-dream", "dreams", "dream-trio", "raspberry-dream", "millionaires", "pearl-salted", "salted-noir", "midnight-orange", "midnight-mint"]
+      "name": "Truffle Box",
+      "flavours": ["milky-dream", "dreams", "dream-trio", "raspberry-dream", "millionaires", "pearl-salted", "salted-noir", "midnight-orange", "midnight-mint"],
+      "colour": "var(--colour-pink-light)"
     },
     "fresh-fruity":{
-      "flavours": ["lemon-essence", "lemon-blossom", "lemon-sapphire", "orange-essence", "sunset-glow", "coconut-ripple", "coconut-ripple", "tropical-zest"]
+      "name": "Fresh & Fruity",
+      "flavours": ["lemon-essence", "lemon-blossom", "lemon-sapphire", "orange-essence", "sunset-glow", "coconut-ripple", "coconut-ripple", "tropical-zest"],
+      "colour": "var(--colour-yellow-light)"
     },
     "the-biscuit-edit": {
-      "flavours": ["cookies-cream", "chocolate-cream", "lotus", "lotus-noir"]
+      "name": "The Biscuit Edit",
+      "flavours": ["cookies-cream", "chocolate-cream", "lotus", "lotus-noir"],
+      "colour": "var(--colour-red-dark)"
     },
     "cafe-katie": {
-      "flavours" : ["espresso", "vanilla-latte", "mocha"]
+      "name": "Café Katie",
+      "flavours" : ["espresso", "vanilla-latte", "mocha"],
+      "colour": "var(--colour-orange-light)"
     },
     "nutty-delights": {
-      "flavours": ["carrot", "pistachio-whisper", "hazelnut-truffle", "peanut-truffle", "nutty-espresso"]
+      "name": "Nutty Delights",
+      "flavours": ["carrot", "pistachio-whisper", "hazelnut-truffle", "peanut-truffle", "nutty-espresso"],
+      "colour": "var(--colour-green-light)"
     },
     "indulgence": {
-      "flavours": ["golden-caramel", "golden-salted", "irish-cream", "pink-bubbles"]
+      "name": "Indulgence",
+      "flavours": ["golden-caramel", "golden-salted", "irish-cream", "pink-bubbles"],
+      "colour": "var(--colour-yellow-dark)"
     }
   },
   "products": {

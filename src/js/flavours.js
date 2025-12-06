@@ -5,7 +5,7 @@ const selectedDiets = [];
 const dietaryFilters = document.querySelectorAll('.dietary-filters input[type="checkbox"]');
 
 // Flavours and their variants
-const flavours = document.querySelectorAll('.flavour-row');
+const flavours = document.querySelectorAll('.flavour');
 const variantsPerFlavour = [...flavours].map(flavour => ({ flavour, variants: flavour.querySelectorAll('.variant') }));
 
 const FLAVOUR_VALID_CLASS = 'flavour-valid';

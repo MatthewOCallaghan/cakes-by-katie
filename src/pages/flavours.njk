@@ -50,43 +50,51 @@
                         </label>
                     {% endfor %}
                 </div>
+                
+                {% from "macros/picture.njk" import pictureElement with context %}
 
-                <div class="flavours-list">
-                    <div class="flavours-list-grid">
+                <div class="flavours-groups-container">
+                    {% for key, group in flavourGroups %}
+                        <div class="flavour-group" data-group="{{ key }}" style="background:{{ group.colour }};">
+                            <h2>{{ group.name }}</h2>
+                            <div class="flavours-list">
+                                {% for flavourKey in group.flavours %}
+                                    <div class="flavour flavour-valid">
 
-                        {% from "macros/picture.njk" import pictureElement with context %}
-        
-                        {% for key, flavour in flavours %}
-                            <div class="flavour-row flavour-valid">
+                                        {% set flavour = flavours[flavourKey] %}
 
-                                {% for variant in flavour.variants %}
-                                    <div class="variant variant-valid" data-diets="{{ variant.diets | join(";") }}">
-                                        <div class="image-container">
-                                            {{ pictureElement(variant.image, flavour.name, "150px") }}
-                                        </div>
+                                        {% for variant in flavour.variants %}
+                                            <div class="variant variant-valid" data-diets="{{ variant.diets | join(";") }}">
+                                                <div class="image-container">
+                                                    {{ pictureElement(variant.image, flavour.name, "150px") }}
+                                                </div>
 
-                                        <h2>{{flavour.name}}</h2>
-                                        
-                                        <p>{{variant.description}}</p>
+                                                <h3>{{flavour.name}}</h3>
+                                                
+                                                <p>{{variant.description}}</p>
+                                            </div>
+                                        {% endfor %}
                                     </div>
                                 {% endfor %}
                             </div>
-                        {% endfor %}
-                    </div>
-                    {# <div class="allergen-info">
-                        <p><small>Allergen information</small></p>
-                        <p class="flavour standard"><small>All cakes contain: Gluten, Eggs, Dairy and may contain traces of Nuts and Soya.</small></p>
-                        <p class="flavour gluten-free"><small>All cakes contain: Eggs, Dairy and may contain traces of Nuts and Soya.</small></p>
-                        <p class="flavour dairy-free"><small>All cakes contain: Gluten, Eggs and may contain traces of Nuts and Soya.</small></p>
-                        <p class="flavour vegan"><small>All cakes contain: Gluten and may contain traces of Nuts and Soya.</small></p>
-                        <p class="flavour eggless"><small>All cakes contain: Gluten, Dairy and may contain traces of Nuts and Soya.</small></p>
-                        {% for flavour in flavours %}
-                            {% if flavour.allergenInfo %}
-                                <p class="flavour standard{{ " " ~ (flavour.variants | join(" ")) if flavour.variants }}"><small>{{flavour.allergenInfo}}</small></p>
-                            {% endif %}
-                        {% endfor %}
-                    </div> #}
+                        </div>
+                    {% endfor %}
                 </div>
+
+                
+                {# <div class="allergen-info">
+                    <p><small>Allergen information</small></p>
+                    <p class="flavour standard"><small>All cakes contain: Gluten, Eggs, Dairy and may contain traces of Nuts and Soya.</small></p>
+                    <p class="flavour gluten-free"><small>All cakes contain: Eggs, Dairy and may contain traces of Nuts and Soya.</small></p>
+                    <p class="flavour dairy-free"><small>All cakes contain: Gluten, Eggs and may contain traces of Nuts and Soya.</small></p>
+                    <p class="flavour vegan"><small>All cakes contain: Gluten and may contain traces of Nuts and Soya.</small></p>
+                    <p class="flavour eggless"><small>All cakes contain: Gluten, Dairy and may contain traces of Nuts and Soya.</small></p>
+                    {% for flavour in flavours %}
+                        {% if flavour.allergenInfo %}
+                            <p class="flavour standard{{ " " ~ (flavour.variants | join(" ")) if flavour.variants }}"><small>{{flavour.allergenInfo}}</small></p>
+                        {% endif %}
+                    {% endfor %}
+                </div> #}
             </div>
         </div>
     </div>
