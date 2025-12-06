@@ -4740,25 +4740,25 @@
         }
       },
       "colours": {
-        "light": "#dff6ff",
-        "dark": "#ace7ff"
+        "light": "var(--colour-blue-light)",
+        "dark": "var(--colour-blue-mid)"
       }
     },
     "weddingCakes": {
       "colours": {
-        "light": "#fbe4ff",
-        "dark": "#c5a3ff"
+        "light": "var(--colour-purple-light)",
+        "dark": "var(--colour-purple-dark)"
       }
     },
     "cupcakes": {
       "colours": {
-        "light": "#fff7cf",
-        "dark": "#f8df81"
+        "light": "var(--colour-yellow-light)",
+        "dark": "var(--colour-yellow-dark)"
       }
     },
     "weddingFavours": {
       "colours": {
-        "dark": "#fca669"
+        "dark": "var(--colour-orange-dark)"
       }
     }
   }
