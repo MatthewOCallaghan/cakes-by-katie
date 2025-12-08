@@ -7164,24 +7164,31 @@
   },
   "flavourGroups": {
     "the-classics": {
+      "name": "Testing",
       "flavours": ["vanilla", "chocolate"]
     },
     "truffle-box":{
+      "name": "Testing",
       "flavours": ["milky-dream", "dreams", "dream-trio", "raspberry-dream", "millionaires", "pearl-salted", "salted-noir", "midnight-orange", "midnight-mint"]
     },
     "fresh-fruity":{
+      "name": "Testing",
       "flavours": ["lemon-essence", "lemon-blossom", "lemon-sapphire", "orange-essence", "sunset-glow", "coconut-ripple", "coconut-ripple", "tropical-zest"]
     },
     "the-biscuit-edit": {
+      "name": "Testing",
       "flavours": ["cookies-cream", "chocolate-cream", "lotus", "lotus-noir"]
     },
     "cafe-katie": {
+      "name": "Testing",
       "flavours" : ["espresso", "vanilla-latte", "mocha"]
     },
     "nutty-delights": {
+      "name": "Testing",
       "flavours": ["carrot", "pistachio-whisper", "hazelnut-truffle", "peanut-truffle", "nutty-espresso"]
     },
     "indulgence": {
+      "name": "Testing",
       "flavours": ["golden-caramel", "golden-salted", "irish-cream", "pink-bubbles"]
     }
   },
@@ -7255,7 +7262,7 @@
       ],
       "flavourTip": {
         "text": "For Spring and Summer weddings, flavours like % or % are perfect complements to Wasing Park's light, airy feel.",
-        "flavours": ["lemon-blossom", "pink-bubbles"]
+        "flavourGroups": ["lemon-blossom", "pink-bubbles"]
       },
       "myExperience": "I've had the pleasure of creating cakes for weddings at Wasing Park, and it's always a joy to see how beautifully my designs fit the venue's refined, romantic atmosphere. The spacious setup makes it easy to present even the tallest, most detailed creations.",
       "occasion": "wedding"
@@ -7275,7 +7282,7 @@
       ],
       "flavourTip": {
         "text": "Add tip wording.",
-        "flavours": ["lemon-blossom", "pink-bubbles"]
+        "flavourGroups": ["lemon-blossom", "pink-bubbles"]
       },
       "myExperience": "I've created cakes for several weddings at the Post Barn, and it's always such a pleasure to see how beautifully each design stands out in the light-filled space. The team are incredibly professional and helpful, making delivery and setup seamless every time.",
       "occasion": "wedding"
@@ -7295,7 +7302,7 @@
       ],
       "flavourTip": {
         "text": "Add tip wording.",
-        "flavours": ["lemon-blossom", "pink-bubbles"]
+        "flavourGroups": ["lemon-blossom", "pink-bubbles"]
       },
       "myExperience": "I've had the pleasure of creating wedding cakes for couples celebrating at The Old Mill in Aldermaston, and it's always a joy to see how well my cake designs complement the venue's charm. The staff are wonderful to work with, and the riverside setting provides a truly picturesque backdrop for your cake display.",
       "occasion": "wedding"
@@ -7315,7 +7322,7 @@
       ],
       "flavourTip": {
         "text": "Add tip wording.",
-        "flavours": ["lemon-blossom", "pink-bubbles"]
+        "flavourGroups": ["the-classics"]
       },
       "myExperience": "I've had the pleasure of creating bespoke wedding cakes for couples celebrating at Monkey Island Estate, and every event there feels truly special. The venue's riverside setting and elegant interiors provide a stunning backdrop for your wedding cake display.",
       "occasion": "wedding"
@@ -7333,7 +7340,10 @@
         "Woodland inspired decoration such as dried flowers, berries and pressed flowers/foliage",
         "Natural effects like edible bark or natural tones"
       ],
-      "flavourTip": "For light, outdoorsy flavours that suit the meadow setting, choose from the <em>Fresh & Fruity</em> collection. To pair with the fairy tale aesthetic, choose from the <em>Classic</em> collection.",
+      "flavourTip": {
+        "text": "For light, outdoorsy flavours that suit the meadow setting, choose from the % collection. To pair with the fairy tale aesthetic, choose from the % collection.",
+        "flavourGroups": ["fresh-fruity", "the-classics"]
+      },
       "myExperience": "I've had the pleasure of creating cakes for weddings at Forest Edge Tipis at Welford Park, and I always love how relaxed and creative these celebrations feel. The natural surroundings provide a stunning backdrop, and my rustic and floral cake designs fit seamlessly into the tipi atmosphere.",
       "occasion": "wedding"
     },
