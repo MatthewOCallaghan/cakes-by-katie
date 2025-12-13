@@ -5,9 +5,20 @@ const selectedDiets = [];
 const dietaryFilters = document.querySelectorAll('.dietary-filters input[type="checkbox"]');
 
 // Flavours and their variants
-const flavours = document.querySelectorAll('.flavour');
-const variantsPerFlavour = [...flavours].map(flavour => ({ flavour, variants: flavour.querySelectorAll('.variant') }));
+const groupContainers = document.querySelectorAll('.flavour-group');
+const groups = [...groupContainers].map(groupDiv => {
+    
+    const flavours = groupDiv.querySelectorAll('.flavour');
+    return {
+        element: groupDiv,
+        flavours: [...flavours].map(flavours => ({
+            element: flavours,
+            variants: flavours.querySelectorAll('.variant')
+        }))
+    };
+});
 
+const GROUP_VALID_CLASS = 'group-valid';
 const FLAVOUR_VALID_CLASS = 'flavour-valid';
 const VARIANT_VALID_CLASS = 'variant-valid';
 
@@ -25,39 +36,55 @@ dietaryFilters.forEach(filter => {
             selectedDiets.splice(index, 1);
         }
 
-        // Update flavours and variants visibility
-        variantsPerFlavour.forEach(({ flavour, variants }) => {
+        // Update groups/flavours/variants visibility
+        groups.forEach(({ element: groupElement, flavours }) => {
 
-            // Is there at least one valid variant for this flavour?
-            let flavourValid = false;
+            // Does this group have at least one valid flavour?
+            let groupHasValidFlavours = false;
 
-            variants.forEach(variant => {
-                const variantDiets = variant.dataset.diets.split(";");
+            flavours.forEach(({ element: flavourElement, variants }) => {
 
-                let isValid = true;
-                for (const diet of selectedDiets) {
-                    if (!variantDiets.includes(diet)) {
-                        // Variant does not meet selected diet
-                        isValid = false;
-                        break;
+                // Is there at least one valid variant for this flavour?
+                let flavourValid = false;
+
+                variants.forEach(variant => {
+                    const variantDiets = variant.dataset.diets.split(";");
+
+                    let variantValid = true;
+                    for (const diet of selectedDiets) {
+                        if (!variantDiets.includes(diet)) {
+                            // Variant does not meet selected diet
+                            variantValid = false;
+                            break;
+                        }
                     }
-                }
 
-                if (isValid) {
-                    variant.classList.add(VARIANT_VALID_CLASS);
+                    if (variantValid) {
+                        variant.classList.add(VARIANT_VALID_CLASS);
 
-                    // Flavour contains at least one valid variant
-                    flavourValid = true;
+                        // Flavour contains at least one valid variant
+                        flavourValid = true;
+                    } else {
+                        variant.classList.remove(VARIANT_VALID_CLASS); 
+                    }
+                });
+
+                // Update class for flavour
+                if (flavourValid) {
+                    flavourElement.classList.add(FLAVOUR_VALID_CLASS);
+
+                    // Group contains at least one valid flavour
+                    groupHasValidFlavours = true;
                 } else {
-                    variant.classList.remove(VARIANT_VALID_CLASS); 
+                    flavourElement.classList.remove(FLAVOUR_VALID_CLASS);
                 }
             });
 
-            // Update class for flavour
-            if (flavourValid) {
-                flavour.classList.add(FLAVOUR_VALID_CLASS);
+            // Update class for group
+            if (groupHasValidFlavours) {
+                groupElement.classList.add(GROUP_VALID_CLASS);
             } else {
-                flavour.classList.remove(FLAVOUR_VALID_CLASS);
+                groupElement.classList.remove(GROUP_VALID_CLASS);
             }
         });
     };

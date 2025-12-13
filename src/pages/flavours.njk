@@ -55,7 +55,7 @@
 
                 <div class="flavours-groups-container">
                     {% for key, group in flavourGroups %}
-                        <div class="flavour-group" data-group="{{ key }}" style="background:{{ group.colour }};">
+                        <div class="flavour-group group-valid" data-group="{{ key }}" style="background:{{ group.colour }};">
                             <h2>{{ group.name }}</h2>
                             <div class="flavours-list">
                                 {% for flavourKey in group.flavours %}

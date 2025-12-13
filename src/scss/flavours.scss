@@ -53,6 +53,11 @@
                     box-shadow: 0 0 4px 1px #cacaca47;
                     border-radius: 8px;
 
+                    // Hide group if it has no flavours meeting filters
+                    &:not(.group-valid) {
+                        display: none;
+                    }
+
                     h2 {
                         margin: 0;
                         margin-bottom: max(5%, 2rem);
