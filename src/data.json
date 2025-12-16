@@ -5143,17 +5143,17 @@
     "fresh-fruity":{
       "name": "Fresh & Fruity",
       "flavours": ["lemon-essence", "lemon-blossom", "lemon-sapphire", "orange-essence", "sunset-glow", "coconut-ripple", "tropical-zest"],
-      "colour": "var(--colour-yellow-light)"
+      "colour": "var(--colour-lemon-light)"
     },
     "the-biscuit-edit": {
       "name": "The Biscuit Edit",
       "flavours": ["cookies-cream", "chocolate-cream", "lotus", "lotus-noir"],
-      "colour": "var(--colour-red-dark)"
+      "colour": "var(--colour-purple-light)"
     },
     "cafe-katie": {
       "name": "Café Katie",
       "flavours" : ["espresso", "vanilla-latte", "mocha"],
-      "colour": "var(--colour-orange-light)"
+      "colour": "var(--colour-beige-light)"
     },
     "nutty-delights": {
       "name": "Nutty Delights",

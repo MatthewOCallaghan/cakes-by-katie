@@ -14,42 +14,45 @@
 
             <div class="flavours-menu">
 
-                <div class="dietary-filters">
-                    {% set diets = [
-                        {
-                            "value": "gluten-free",
-                            "label": "Gluten free"
-                        },                            
-                        {
-                            "value": "dairy-free",
-                            "label": "Dairy free"
-                        },
-                        {
-                            "value": "vegan",
-                            "label": "Vegan"
-                        },
-                        {
-                            "value": "eggless",
-                            "label": "Eggless"
-                        },
-                        {
-                            "value": "nut-free",
-                            "label": "Nut free"
-                        },
-                        {
-                            "value": "soya-free",
-                            "label": "Soya free"
-                        }
-                    ] %}
-                    {% for diet in diets %}
-                        <label>
-                            <input type="checkbox" id="{{ diet.value }}-checkbox" name="{{ diet.value }}-checkbox" value="{{ diet.value }}">
-                            <span>
-                                {{ diet.label }}
-                            </span>
-                        </label>
-                    {% endfor %}
+                <div class="dietary-requirements">
+                    <p>Any dietary requirements?</p>
+                    <div class="dietary-filters">
+                        {% set diets = [
+                            {
+                                "value": "gluten-free",
+                                "label": "Gluten free"
+                            },                            
+                            {
+                                "value": "dairy-free",
+                                "label": "Dairy free"
+                            },
+                            {
+                                "value": "vegan",
+                                "label": "Vegan"
+                            },
+                            {
+                                "value": "eggless",
+                                "label": "Eggless"
+                            },
+                            {
+                                "value": "nut-free",
+                                "label": "Nut free"
+                            },
+                            {
+                                "value": "soya-free",
+                                "label": "Soya free"
+                            }
+                        ] %}
+                        {% for diet in diets %}
+                            <label>
+                                <input type="checkbox" id="{{ diet.value }}-checkbox" name="{{ diet.value }}-checkbox" value="{{ diet.value }}">
+                                <span>{{ diet.label }}</span>
+                            </label>
+                        {% endfor %}
+                    </div>
                 </div>
+
+                <p id="flavours-count-text">Showing {{ flavours | length }} flavours...</p>
                 
                 {% from "macros/picture.njk" import pictureElement with context %}
 

@@ -2,7 +2,11 @@
 const selectedDiets = [];
 
 // Filter checkboxes
-const dietaryFilters = document.querySelectorAll('.dietary-filters input[type="checkbox"]');
+const dietaryFilterSelector = '.dietary-filters input[type="checkbox"]';
+const dietaryFilters = document.querySelectorAll(dietaryFilterSelector);
+
+// Text
+const flavoursCountText = document.getElementById('flavours-count-text');
 
 // Flavours and their variants
 const groupContainers = document.querySelectorAll('.flavour-group');
@@ -35,6 +39,8 @@ dietaryFilters.forEach(filter => {
             const index = selectedDiets.indexOf(filter.value);
             selectedDiets.splice(index, 1);
         }
+
+        let validFlavourCount = 0;
 
         // Update groups/flavours/variants visibility
         groups.forEach(({ element: groupElement, flavours }) => {
@@ -75,6 +81,7 @@ dietaryFilters.forEach(filter => {
 
                     // Group contains at least one valid flavour
                     groupHasValidFlavours = true;
+                    validFlavourCount++;
                 } else {
                     flavourElement.classList.remove(FLAVOUR_VALID_CLASS);
                 }
@@ -87,5 +94,10 @@ dietaryFilters.forEach(filter => {
                 groupElement.classList.remove(GROUP_VALID_CLASS);
             }
         });
+
+        // Update flavours count text
+        const selectedDietsLabels = selectedDiets.map(diet => `<span>${document.querySelector(`${dietaryFilterSelector}[value="${diet}"]`).nextElementSibling.textContent}</span>`);
+        const selectedDietsString = selectedDiets.length > 0 ? ` which ${validFlavourCount === 1 ? 'is' : 'are'} ${selectedDietsLabels.length >= 3 ? `${selectedDietsLabels.slice(0, -1).join(', ')}, and ${selectedDietsLabels[selectedDietsLabels.length - 1]}` : selectedDietsLabels.join(' and ')}` : '';
+        flavoursCountText.innerHTML = validFlavourCount === 0 ? `There are no flavours ${selectedDietsString}.` : `Showing ${validFlavourCount} flavour${validFlavourCount !== 1 ? 's' : ''}${selectedDietsString}...`;
     };
 });
