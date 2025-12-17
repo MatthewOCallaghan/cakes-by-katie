@@ -5,7 +5,7 @@ const selectedDiets = [];
 const dietaryFilterSelector = '.dietary-filters input[type="checkbox"]';
 const dietaryFilters = document.querySelectorAll(dietaryFilterSelector);
 
-// Text
+// Flavour count text
 const flavoursCountText = document.getElementById('flavours-count-text');
 
 // Flavours and their variants
@@ -21,6 +21,11 @@ const groups = [...groupContainers].map(groupDiv => {
         }))
     };
 });
+
+// Allergen text
+const allCakesContainText = document.getElementById('allergen-all-cakes-contain');
+const nutsText = document.getElementById('allergen-nuts');
+const soyaText = document.getElementById('allergen-soya');
 
 const GROUP_VALID_CLASS = 'group-valid';
 const FLAVOUR_VALID_CLASS = 'flavour-valid';
@@ -40,7 +45,12 @@ dietaryFilters.forEach(filter => {
             selectedDiets.splice(index, 1);
         }
 
+        // Track flavour count for text
         let validFlavourCount = 0;
+        
+        // Track flavours with nuts/soya for allergen text
+        let flavoursWithNuts = [];
+        let flavoursWithSoya = [];
 
         // Update groups/flavours/variants visibility
         groups.forEach(({ element: groupElement, flavours }) => {
@@ -68,8 +78,19 @@ dietaryFilters.forEach(filter => {
                     if (variantValid) {
                         variant.classList.add(VARIANT_VALID_CLASS);
 
-                        // Flavour contains at least one valid variant
-                        flavourValid = true;
+                        if (!flavourValid) {
+                            // This is first valid variant for this flavour
+                            flavourValid = true;
+
+                            if (!variantDiets.includes('nut-free')) {
+                                // Flavour contains nuts
+                                flavoursWithNuts.push(flavourElement.getElementsByTagName('h3')[0].textContent);
+                            }
+                            if (!variantDiets.includes('soya-free')) {
+                                // Flavour contains soya
+                                flavoursWithSoya.push(flavourElement.getElementsByTagName('h3')[0].textContent);
+                            }
+                        }                        
                     } else {
                         variant.classList.remove(VARIANT_VALID_CLASS); 
                     }
@@ -95,9 +116,52 @@ dietaryFilters.forEach(filter => {
             }
         });
 
+
         // Update flavours count text
         const selectedDietsLabels = selectedDiets.map(diet => `<span>${document.querySelector(`${dietaryFilterSelector}[value="${diet}"]`).nextElementSibling.textContent}</span>`);
-        const selectedDietsString = selectedDiets.length > 0 ? ` which ${validFlavourCount === 1 ? 'is' : 'are'} ${selectedDietsLabels.length >= 3 ? `${selectedDietsLabels.slice(0, -1).join(', ')}, and ${selectedDietsLabels[selectedDietsLabels.length - 1]}` : selectedDietsLabels.join(' and ')}` : '';
+        const selectedDietsString = selectedDiets.length > 0 ? ` which ${validFlavourCount === 1 ? 'is' : 'are'} ${joinTextList(selectedDietsLabels)}` : '';
         flavoursCountText.innerHTML = validFlavourCount === 0 ? `There are no flavours ${selectedDietsString}.` : `Showing ${validFlavourCount} flavour${validFlavourCount !== 1 ? 's' : ''}${selectedDietsString}...`;
+
+
+        // Update allergen text
+
+        // "All cakes contain: ..." text
+        let allCakesContainAllergens = [];
+        if (!selectedDiets.includes('gluten-free')) {
+            allCakesContainAllergens = allCakesContainAllergens.concat(['Gluten']);
+        }
+        if (!selectedDiets.includes('eggless')) {
+            allCakesContainAllergens = allCakesContainAllergens.concat(['Eggs']);
+        }
+        if (!selectedDiets.includes('dairy-free')) {
+            allCakesContainAllergens = allCakesContainAllergens.concat(['Dairy']);
+        }
+        if (allCakesContainAllergens.length > 0) {
+            allCakesContainText.classList.add('text-valid');
+            allCakesContainText.innerHTML = `All cakes contain: ${joinTextList(allCakesContainAllergens)}.`;
+        } else {
+            allCakesContainText.classList.remove('text-valid');
+        }
+
+        // Update "Nuts" text
+        if (flavoursWithNuts.length > 0) {
+            nutsText.classList.add('text-valid');
+            nutsText.innerHTML = `The following flavours contain Nuts: ${joinTextList(flavoursWithNuts)}.`;
+        } else {
+            nutsText.classList.remove('text-valid');
+        }
+
+        // Update "Soya" text
+        if (flavoursWithSoya.length > 0) {
+            soyaText.classList.add('text-valid');
+            soyaText.innerHTML = `The following flavours contain Soya: ${joinTextList(flavoursWithSoya)}.`;
+        } else {
+            soyaText.classList.remove('text-valid');
+        }
     };
 });
+
+// Join list with commas and "and"
+const joinTextList = (items) => {
+    return items.length > 2 ? `${items.slice(0, -1).join(', ')}, and ${items[items.length - 1]}` : items.join(' and ');
+}

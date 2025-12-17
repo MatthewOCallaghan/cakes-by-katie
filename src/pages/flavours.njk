@@ -83,21 +83,13 @@
                         </div>
                     {% endfor %}
                 </div>
-
                 
-                {# <div class="allergen-info">
-                    <p><small>Allergen information</small></p>
-                    <p class="flavour standard"><small>All cakes contain: Gluten, Eggs, Dairy and may contain traces of Nuts and Soya.</small></p>
-                    <p class="flavour gluten-free"><small>All cakes contain: Eggs, Dairy and may contain traces of Nuts and Soya.</small></p>
-                    <p class="flavour dairy-free"><small>All cakes contain: Gluten, Eggs and may contain traces of Nuts and Soya.</small></p>
-                    <p class="flavour vegan"><small>All cakes contain: Gluten and may contain traces of Nuts and Soya.</small></p>
-                    <p class="flavour eggless"><small>All cakes contain: Gluten, Dairy and may contain traces of Nuts and Soya.</small></p>
-                    {% for flavour in flavours %}
-                        {% if flavour.allergenInfo %}
-                            <p class="flavour standard{{ " " ~ (flavour.variants | join(" ")) if flavour.variants }}"><small>{{flavour.allergenInfo}}</small></p>
-                        {% endif %}
-                    {% endfor %}
-                </div> #}
+                <div class="allergen-info">
+                    <p>Allergen information</p>
+                    <p id="allergen-all-cakes-contain" class="text-valid">All cakes contain: Gluten, Eggs, and Dairy.</p>
+                    <p id="allergen-nuts" class="text-valid">The following flavours contain Nuts: {{ getFlavoursWithDietExclusion(flavours, 'nut-free') }}.</p>
+                    <p id="allergen-soya" class="text-valid">The following flavours contain Soya: {{ getFlavoursWithDietExclusion(flavours, 'soya-free') }}.</p>
+                </div>
             </div>
         </div>
     </div>

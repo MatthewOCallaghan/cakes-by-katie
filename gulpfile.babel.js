@@ -160,6 +160,18 @@ function processNunjucks() {
 
             return selectedCakes;
         });
+
+        // Get list of flavour names as string (with commas and 'and') where first variant excludes specified diet
+        environment.addGlobal('getFlavoursWithDietExclusion', (flavours, diet) => {
+            const matchingFlavours = Object.values(flavours).reduce((acc, { name, variants }) => {
+                if (!variants[0].diets.includes(diet)) {
+                    acc.push(name);
+                }
+                return acc;
+            }, []);
+
+            return matchingFlavours.length > 2 ? `${matchingFlavours.slice(0, -1).join(', ')}, and ${matchingFlavours[matchingFlavours.length - 1]}` : matchingFlavours.join(' and ');
+        });
     }
 
     return src('src/pages/**/*.njk')
