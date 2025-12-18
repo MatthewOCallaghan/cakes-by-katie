@@ -8,7 +8,7 @@
 
     <section class="intro">
         <div class="venue-intro">
-            <div class="venue-image">
+            <div class="venue-image {{ "image-circle" if portfolio[venue.featuredCakes[0]].images[0].aspectRatio > 0.9 and portfolio[venue.featuredCakes[0]].images[0].aspectRatio < 1.1 }}">
                 {% from "macros/picture.njk" import pictureElement with context %}
                 {{ pictureElement("portfolio/" ~ portfolio[venue.featuredCakes[0]].images[0].src, "Wedding cake at " ~ venue.name, "250px") }}
             </div>
