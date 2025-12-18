@@ -550,7 +550,11 @@
       "title": "Delivery | Cakes by Katie",
       "description": "I'm a cake maker in Thatcham, West Berkshire, delivering high quality bespoke cakes for birthdays, weddings, anniversaries, christenings, or any occasion.",
       "heading": {
-        "text": "Delivery"
+        "text": "Delivery",
+        "image": {
+          "path": "backgrounds/village.jpg",
+          "alt": "Village road background"
+        }
       }
     },
     "venueClockBarn": {
