@@ -123,10 +123,13 @@
                     }
 
                     .flavours-list {
-                        display: grid;
-                        grid-template-columns: repeat(2, 47%);
-                        justify-content: space-between;
-                        column-gap: 6%;
+
+                        $columnGap: 6%;
+
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        column-gap: $columnGap;
                         row-gap: 40px;
 
                         @media (min-width: 1100px) {
@@ -134,6 +137,8 @@
                         }
 
                         .flavour {
+
+                            width: 50% - ($columnGap / 2);
 
                             // Hide flavour if it doesn't meet filters
                             &:not(.flavour-valid) {
@@ -213,10 +218,12 @@
                         &[data-group="truffle-box"], &[data-group="fresh-fruity"], &[data-group="the-biscuit-edit"], &[data-group="nutty-delights"], &[data-group="cafe-katie"] {
                             // Single column groups must show one flavour per row
                             .flavours-list {
-                                grid-template-columns: 100%;
+                                .flavour {
+                                    width: 100%;
+                                }
                             }
                         }
-                        
+
                         // Row/column positions
                         &[data-group="the-classics"] {
                             grid-column: 1 / span 2;
