@@ -100,9 +100,12 @@
                 gap: var(--group-gap);
                 
                 .flavour-group {
+
+                    $verticalPadding: min(55px, 5vw);
+                    $horizontalPadding: min(77px, 5vw);
                     
                     text-align: center;
-                    padding: max(5%, 2em) 7%;
+                    padding: $verticalPadding $horizontalPadding;
                     border: 1px solid #e6e6e6;
                     box-shadow: 0 0 4px 1px #cacaca47;
                     border-radius: $borderRadius;
@@ -114,7 +117,7 @@
 
                     h2 {
                         margin: 0;
-                        margin-bottom: max(5%, 2rem);
+                        margin-bottom: $verticalPadding;
                         opacity: 0.6;
                         font-size: min(3.5em, 10vw);
 
@@ -124,7 +127,8 @@
 
                     .flavours-list {
 
-                        $columnGap: 6%;
+                        // Set gap to line up columns in wider groups with the narrow groups
+                        $columnGap: calc(2 * $horizontalPadding + var(--group-gap));
 
                         display: flex;
                         flex-wrap: wrap;
@@ -138,7 +142,7 @@
 
                         .flavour {
 
-                            width: 50% - ($columnGap / 2);
+                            width: calc(50% - ($columnGap / 2));
 
                             // Hide flavour if it doesn't meet filters
                             &:not(.flavour-valid) {
