@@ -766,6 +766,8 @@ header[data-nav-submenu] {
         // Fixed position makes mobile browser UA components appear expanded and stops page being scrollable
         // This also resets scroll position but to click nav icon they must be very close to top anyway
         position: fixed;
+        // iOS Safari sets width to ~3000+px with fixed positioning without this
+        width: 100%;
 
         header {
             position: fixed;

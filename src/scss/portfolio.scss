@@ -405,6 +405,9 @@ body.portfolio-modal-open {
     overflow: hidden;
     position: fixed;
     top: var(--portfolio-scroll);
+    // iOS Safari sets width to ~3000+px with fixed positioning without this
+    // If width exceeds viewport width, portfolio grid layout gets messed up
+    width: 100%;
 
     #portfolio-modal {
         display: grid;
