@@ -5150,15 +5150,15 @@
       "flavours": ["cookies-cream", "chocolate-cream", "lotus", "lotus-noir"],
       "colour": "var(--colour-purple-light)"
     },
-    "cafe-katie": {
-      "name": "Café Katie",
-      "flavours" : ["espresso", "vanilla-latte", "mocha"],
-      "colour": "var(--colour-beige-light)"
-    },
     "nutty-delights": {
       "name": "Nutty Delights",
       "flavours": ["carrot", "pistachio-whisper", "hazelnut-truffle", "peanut-truffle", "nutty-espresso"],
       "colour": "var(--colour-green-light)"
+    },
+    "cafe-katie": {
+      "name": "Café Katie",
+      "flavours" : ["espresso", "vanilla-latte", "mocha"],
+      "colour": "var(--colour-beige-light)"
     },
     "indulgence": {
       "name": "Indulgence",

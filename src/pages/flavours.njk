@@ -56,7 +56,7 @@
                 
                 {% from "macros/picture.njk" import pictureElement with context %}
 
-                <div class="flavours-groups-container">
+                <div class="flavours-groups-container no-filters">
                     {% for key, group in flavourGroups %}
                         <div class="flavour-group group-valid" data-group="{{ key }}" style="background:{{ group.colour }};">
                             <h2>{{ group.name }}</h2>

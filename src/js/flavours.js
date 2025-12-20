@@ -8,6 +8,9 @@ const dietaryFilters = document.querySelectorAll(dietaryFilterSelector);
 // Flavour count text
 const flavoursCountText = document.getElementById('flavours-count-text');
 
+// Container for all flavour groups
+const groupsContainer = document.querySelector('.flavours-groups-container');
+
 // Flavours and their variants
 const groupContainers = document.querySelectorAll('.flavour-group');
 const groups = [...groupContainers].map(groupDiv => {
@@ -27,6 +30,7 @@ const allCakesContainText = document.getElementById('allergen-all-cakes-contain'
 const nutsText = document.getElementById('allergen-nuts');
 const soyaText = document.getElementById('allergen-soya');
 
+const GROUPS_CONTAINER_NO_FILTERS_CLASS = 'no-filters';
 const GROUP_VALID_CLASS = 'group-valid';
 const FLAVOUR_VALID_CLASS = 'flavour-valid';
 const VARIANT_VALID_CLASS = 'variant-valid';
@@ -39,10 +43,17 @@ dietaryFilters.forEach(filter => {
         if (filter.checked && !selectedDiets.includes(filter.value)) {
             // Diet has just been selected
             selectedDiets.push(filter.value);
+            // There is at least one filter selected
+            groupsContainer.classList.remove(GROUPS_CONTAINER_NO_FILTERS_CLASS);
         } else if (!filter.checked && selectedDiets.includes(filter.value)) {
             // Diet has just been deselected
             const index = selectedDiets.indexOf(filter.value);
             selectedDiets.splice(index, 1);
+
+            if (selectedDiets.length === 0) {
+                // No filters selected
+                groupsContainer.classList.add(GROUPS_CONTAINER_NO_FILTERS_CLASS);
+            }
         }
 
         // Track flavour count for text
