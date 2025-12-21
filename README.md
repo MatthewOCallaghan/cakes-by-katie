@@ -20,6 +20,7 @@ Code for website [cakesbykatie.co.uk](https://www.cakesbykatie.co.uk).
     3. Create new `.njk` file in `src/pages/delivery` folder. The name of the file will be the pathname of the web page. Do this by copying `src/pages/delivery/wasing-park.njk` and updating the `page` key to whatever `venueXXXX` key name you added to the `pages` object in `data.json`
 - Distinguish wedding anniversary portfolio cakes with occasion `anniversary` by changing occasion to `anniversary-wedding`
 - Review all `description` wording in `pages` objects in `data.json`
+- Use venue keys in porfolio cake `venue` rather than name, e.g. `post-barn` instead of `The Post Barn`
 
 
 Page descripotions, anniversary c akes

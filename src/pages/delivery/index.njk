@@ -3,11 +3,13 @@
 
 {% block main %}
 
-    <div class="intro-text">
-        <p>I offer delivery for wedding, celebration cakes and cupcakes. Delivery charges vary depending on location - I regularly deliver throughout Berkshire and the surrounding counties, and have also travelled to venues in London, Worcestershire and along the south coast.</p> 
-        <p>All wedding cakes are personally delivered and set up at your venue to ensure they arrive in perfect condition.</p>
-        <p>Celebration cakes are usually collected, but I can deliver if needed.</p>
-    </div>
+    <section class="intro">
+        <div class="intro-text">
+            <p>I offer delivery for wedding, celebration cakes and cupcakes. Delivery charges vary depending on location - I regularly deliver throughout Berkshire and the surrounding counties, and have also travelled to venues in London, Worcestershire and along the south coast.</p> 
+            <p>All wedding cakes are personally delivered and set up at your venue to ensure they arrive in perfect condition.</p>
+            <p>Celebration cakes are usually collected, but I can deliver if needed.</p>
+        </div>
+    </section>
 
     <section style="background:{{products.weddingCakes.colours.light}}">
         {% include "wedding-venues.njk" %}

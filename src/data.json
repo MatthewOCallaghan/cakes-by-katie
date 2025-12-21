@@ -550,7 +550,11 @@
       "title": "Delivery | Cakes by Katie",
       "description": "I'm a cake maker in Thatcham, West Berkshire, delivering high quality bespoke cakes for birthdays, weddings, anniversaries, christenings, or any occasion.",
       "heading": {
-        "text": "Delivery"
+        "text": "Delivery",
+        "image": {
+          "path": "backgrounds/village.jpg",
+          "alt": "Village road background"
+        }
       }
     },
     "venueClockBarn": {
@@ -7272,7 +7276,7 @@
       "tagline": "A striking, contemporary countryside barn for modern, stylish weddings",
       "location": "Newbury",
       "address": ["The Post Barn", "Snelsmore House", "Snelsmore Common", "Newbury", "Berkshire", "RG14 3AL"],
-      "featuredCakes": ["semi-naked-sage"],
+      "featuredCakes": ["natalie"],
       "cakeStylesIntro": "The Post Barn's contemporary design pairs beautifully with cakes that are both stylish and timeless.",
       "popularCakeStyles": [
         "Tall, structured cakes that complement the venue's high ceilings and open layout",
