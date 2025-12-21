@@ -1608,7 +1608,7 @@
       "name": "Diamond Toast",
       "product": "celebration-cake",
       "occasions": [
-        "anniversary"
+        "anniversary-wedding"
       ]
     },
     "samantha": {
@@ -2674,7 +2674,7 @@
       "name": "Golden 50th",
       "product": "cupcakes",
       "occasions": [
-        "anniversary"
+        "anniversary-wedding"
       ]
     },
     "ivy": {
@@ -2922,7 +2922,7 @@
       "name": "Diamond Anniversary 2",
       "product": "celebration-cake",
       "occasions": [
-        "anniversary"
+        "anniversary-wedding"
       ]
     },
     "petals-and-birthday-wishes": {
@@ -3463,7 +3463,7 @@
       "name": "Adorned in Blue",
       "product": "celebration-cake",
       "occasions": [
-        "anniversary"
+        "anniversary-wedding"
       ]
     },
     "arlo": {
@@ -3624,7 +3624,7 @@
       "name": "Diamon Quilted",
       "product": "celebration-cake",
       "occasions": [
-        "anniversary"
+        "anniversary-wedding"
       ]
     },
     "ninja-turtles": {
@@ -3860,7 +3860,7 @@
       "name": "Saphire Present",
       "product": "celebration-cake",
       "occasions": [
-        "anniversary"
+        "anniversary-wedding"
       ]
     },
     "pink-and-sparkle": {
@@ -4022,7 +4022,7 @@
       "name": "Fault Line - Ruby",
       "product": "celebration-cake",
       "occasions": [
-        "anniversary"
+        "anniversary-wedding"
       ]
     },
     "marbled-accents": {
@@ -4167,7 +4167,7 @@
         "Lemon-and-Choc.jpg"
       ],
       "name": "Lemon & Chocolate",
-      "product": "celebration-cake",
+      "product": "cupcakes",
       "occasions": [
         "birthday"
       ]
@@ -4190,7 +4190,7 @@
       "name": "Simply Scrolls",
       "product": "celebration-cake",
       "occasions": [
-        "anniversary"
+        "anniversary-wedding"
       ]
     },
     "lavender-dream": {
@@ -6408,7 +6408,7 @@
       ],
       "product": "celebration-cake",
       "occasions": [
-        "anniversary"
+        "anniversary-wedding"
       ]
     },
     "ttmc-cupcakes": {
@@ -6533,7 +6533,7 @@
       "name": "Silver Anniversary",
       "product": "celebration-cake",
       "occasions": [
-        "anniversary"
+        "anniversary-wedding"
       ]
     },
     "flower-elegance": {
@@ -6581,7 +6581,7 @@
       },
       "product": "celebration-cake",
       "occasions": [
-        "anniversary"
+        "anniversary-wedding"
       ],
       "flavours": [
         "Vanilla"
@@ -7249,14 +7249,14 @@
     "downe-house-school": {
       "name": "Downe House School",
       "location": "Cold Ash",
-      "featuredCakes": ["psychedelic-symphony"]
+      "featuredCakes": ["bouquet-pink-mix"]
     },
     "wasing-park": {
       "name": "Wasing Park",
       "tagline": "A romantic countryside estate for timeless, elegant weddings.",
       "location": "Aldermaston",
       "address": ["Wasing Park", "Wasing Lane", "Aldermaston", "Berkshire", "RG7 4NG"],
-      "featuredCakes": ["semi-naked-sage"],
+      "featuredCakes": ["hannah", "marjorie"],
       "cakeStylesIntro": "Wasing Park is the perfect backdrop for a beautifully designed wedding cake.",
       "popularCakeStyles": [
         "Elegant rustic finishes perfect for the rustic charm of the Castle Barn",
@@ -7276,7 +7276,7 @@
       "tagline": "A striking, contemporary countryside barn for modern, stylish weddings",
       "location": "Newbury",
       "address": ["The Post Barn", "Snelsmore House", "Snelsmore Common", "Newbury", "Berkshire", "RG14 3AL"],
-      "featuredCakes": ["natalie"],
+      "featuredCakes": ["jules", "jessica"],
       "cakeStylesIntro": "The Post Barn's contemporary design pairs beautifully with cakes that are both stylish and timeless.",
       "popularCakeStyles": [
         "Tall, structured cakes that complement the venue's high ceilings and open layout",
@@ -7296,7 +7296,7 @@
       "tagline": "A romantic riverside venue full of rustic charm",
       "location": "Aldermaston",
       "address": ["The Old Mill", "Basingstoke Road", "Aldermaston", "Reading", "Berkshire", "RG7 4LB"],
-      "featuredCakes": ["semi-naked-sage"],
+      "featuredCakes": ["janelle"],
       "cakeStylesIntro": "The rustic elegance of The Old Mill pairs perfectly with cakes that are natural, textured and full of charm.",
       "popularCakeStyles": [
         "Rustic cakes to complement the wooden beams and relaxed countryside feel",
@@ -7336,7 +7336,7 @@
       "tagline": "A magical woodland setting for relaxed, rustic weddings",
       "location": "Newbury",
       "address": ["Welford Road, Welford, Newbury, Berkshire, RG20 8HU"],
-      "featuredCakes": ["samantha"],
+      "featuredCakes": ["samantha", "petals-and-promises"],
       "cakeStylesIntro": "With its natural woodland charm, Forest Edge Tipis is perfectly suited to cakes that feel organic, relaxed and beautifully in tune with nature.",
       "popularCakeStyles": [
         "Semi-naked or rustic buttercream textured cakes that complement the woodland setting",
@@ -7356,7 +7356,7 @@
       "tagline": "A stylish country house hotel with timeless charm",
       "location": "Newbury",
       "address": ["Elcot, Newbury, Berkshire, RG20 8NJ"],
-      "featuredCakes": ["semi-naked-sage"],
+      "featuredCakes": ["semi-naked-george-austin", "jenifer"],
       "cakeStylesIntro": "The Retreat at Elcot Park's blend of sophistication and comfort suits wedding cakes that are elegant, refined and full of romantic detail.",
       "popularCakeStyles": [
         "Soft, neutral finishes to pair with the surrounding landscape",
@@ -7496,7 +7496,7 @@
       "tagline": "A romantic vineyard estate for relaxed, elegant weddings",
       "location": "Twyford",
       "address": ["Twyford, Berkshire, RG10 0BN"],
-      "featuredCakes": ["semi-naked-anna"],
+      "featuredCakes": ["semi-naked-anna", "semi-naked-oceane"],
       "cakeStylesIntro": "Stanlake Park pairs wonderfully with cakes that feel organic, textural and stylish - inspired by the natural surroundings, soft tones and wine-country ambience.",
       "popularCakeStyles": [
         "Soft buttercream cakes such as semi-naked, textured or modern rustic finishes",
@@ -7516,7 +7516,7 @@
       "tagline": "A sustainable countryside venue for relaxed, nature-inspired weddings",
       "location": "Lambourn",
       "address": ["Warren Farm, Sheepdrove Road, Lambourn, Hungerford,Berkshire, RG17 7UU"],
-      "featuredCakes": ["charlotte"],
+      "featuredCakes": ["charlotte", "ivy"],
       "cakeStylesIntro": "As a nature-led venue Sheepdrove works wonderfully with cakes designs that feel organic, textural and inspired by the surrounding landscape.",
       "popularCakeStyles": [
         "Natural or textured finished that reflect a rustic, natural look",
@@ -7556,7 +7556,7 @@
       "tagline": "A grand Georgian country house for timeless, luxurious weddings",
       "location": "Taplow",
       "address": ["Hedsor Park, Taplow, Buckinghamshire, SL6 0HX"],
-      "featuredCakes": ["semi-naked-sage"],
+      "featuredCakes": ["louisa-angel", "vintage-hayley"],
       "cakeStylesIntro": "Hedsor House's dramatic interiors and luxurious aesthetic are beautifully complemented by refined, statement wedding cakes.",
       "popularCakeStyles": [
         "Tall, elegant tiered cakes designedf to stand proudly in the Centre Hall",
@@ -7716,7 +7716,7 @@
       "tagline": "A luxury country house made for elegant, unforgettable weddings",
       "location": "Hook",
       "address": ["Ridge Lane, Rotherwick, Hook, Hampshire, RG27 9AZ"],
-      "featuredCakes": ["semi-naked-sage"],
+      "featuredCakes": ["kirsten-buttercream", "vintage-sophie"],
       "cakeStylesIntro": "The elegant interiors, manicured gardens and timeless architecture of Tylney Hall pair beautifully with cakes that feel classic, refined and romantic.",
       "popularCakeStyles": [
         "A classic smooth finish perfect for complementing the grand, traditional interiors",
