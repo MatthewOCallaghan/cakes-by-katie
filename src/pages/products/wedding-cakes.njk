@@ -20,7 +20,7 @@
                 },
                 {
                     image: 'lemon.svg',
-                    heading: flavours.length ~ ' flavours',
+                    heading: flavours | length ~ ' flavours',
                     description: "With so many sponge flavours, there's something for everyone."
                 },
                 {
@@ -93,10 +93,7 @@
                         }
                     ]
                 },
-                {
-                    name: "Flavours",
-                    items: flavours
-                },
+                designChoicesFlavours,
                 {
                     name: "Decoration",
                     items: [

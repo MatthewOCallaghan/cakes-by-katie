@@ -11,16 +11,33 @@
         <div class="category">
             <h3>{{category.name}}</h3>
             <div class="items">
+                {% set maxItemsToShow = 14 %}
                 {% for item in category.items %}
-                    <div>
-                        {{ pictureElement(item.image, item.name ~ " example", '150px') }}
-                        <h4>{{ item.name }}</h4>
-                        {% if item.description %}
-                            <p>{{ item.description }}</p>
-                        {% endif %}
-                    </div>
+                    {% if loop.index0 > maxItemsToShow and category.seeMoreLink %}
+
+                    {% elif loop.index0 === maxItemsToShow and category.seeMoreLink %}
+                        <div class="more">
+                            {{ pictureElement(item.image, item.name ~ " example", '150px') }}
+                            <div class="overlay-text">
+                                <span>+{{ loop.length - maxItemsToShow }}</span>
+                            </div>
+                        </div>
+                    {% else %}
+                        <div>
+                            {{ pictureElement(item.image, item.name ~ " example", '150px') }}
+                            <h4>{{ item.name }}</h4>
+                            {% if item.description %}
+                                <p>{{ item.description }}</p>
+                            {% endif %}
+                        </div>
+                    {% endif %}
                 {% endfor %}
             </div>
+            {% if category.seeMoreLink %}
+                <div class="see-more-link">
+                    <a href="{{ category.seeMoreLink }}">See all {{ category.items | length}} {{ category.name | lower }}</a>
+                </div>
+            {% endif %}
         </div>
     {% endfor %}
 </section>
