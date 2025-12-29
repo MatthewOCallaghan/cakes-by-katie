@@ -283,7 +283,7 @@
                         margin: 0;
                     }
 
-                    &:not(.text-valid):not(:first-child) {
+                    &:not(.text-valid)[id] {
                         display: none;
                     }
                 }

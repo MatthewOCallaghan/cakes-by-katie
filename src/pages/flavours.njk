@@ -4,7 +4,9 @@
 {% block main %}
 
     <div class="flavours-text">
-        <p>I offer a wide range of flavours that can be used in both celebration cakes and cupcakes. I also cater for the following dietary requirements: gluten free, dairy free, vegan and eggless.</p> 
+        <p>From well-loved classics to more playful or decadent options, there's something to suit every occasion. Flavours are grouped into the following curated collections: The Classics, Truffle Box, Fresh & Fruity, The Biscuit Edit, Nutty Delights, Café Katie, and Indulgence, making it easy to explore and find the perfect fit.</p> 
+
+        <p>Use the filters below to tailor the flavour list to your allergen requirements.</p> 
     </div>
     <div class="flavours-menu-section">
         <div class="flavours-menu-container">
@@ -89,6 +91,8 @@
                     <p id="allergen-all-cakes-contain" class="text-valid">All cakes contain: Gluten, Eggs, and Dairy.</p>
                     <p id="allergen-nuts" class="text-valid">The following flavours contain Nuts: {{ getFlavoursWithDietExclusion(flavours, 'nut-free') }}.</p>
                     <p id="allergen-soya" class="text-valid">The following flavours contain Soya: {{ getFlavoursWithDietExclusion(flavours, 'soya-free') }}.</p>
+                    <p>Although individual flavours may not include certain ingredients, all cakes are made in a shared kitchen where the other listed allergens are present.</p>
+                    <p>Please note that final finishes and decorative elements may introduce additional allergens.</p>
                 </div>
             </div>
         </div>
