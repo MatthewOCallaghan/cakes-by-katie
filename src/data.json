@@ -4244,12 +4244,12 @@
         },
         {
           "diets": ["dairy-free", "nut-free", "soya-free"],
-          "image": "choices/flavours/blank.jpg",
+          "image": "choices/flavours/van-caramel-df.jpg",
           "description": "DF Vanilla sponge filled with salted caramel DF \"buttercream\""
         },
         {
           "diets": ["dairy-free", "gluten-free", "nut-free", "soya-free"],
-          "image": "choices/flavours/blank.jpg",
+          "image": "choices/flavours/van-caramel-df.jpg",
           "description": "GF DF Vanilla sponge filled with salted caramel DF \"buttercream\""
         },
         {
@@ -4259,7 +4259,7 @@
         },
         {
           "diets": ["dairy-free", "vegan", "eggless", "nut-free"],
-          "image": "choices/flavours/blank.jpg",
+          "image": "choices/flavours/van-caramel-df.jpg",
           "description": "Vanilla sponge filled with salted caramel DF \"buttercream\""
         }
 
@@ -4281,12 +4281,12 @@
         },
         {
           "diets": ["dairy-free", "nut-free", "soya-free"],
-          "image": "choices/flavours/blank.jpg",
+          "image": "choices/flavours/choc-caramel-df.jpg",
           "description":  "DF Chocolate sponge filled with salted caramel DF \"buttercream\""
         },
         {
           "diets": ["dairy-free", "gluten-free", "nut-free", "soya-free"],
-          "image": "choices/flavours/blank.jpg",
+          "image": "choices/flavours/choc-caramel-df.jpg",
           "description":  "GF DF Chocolate sponge filled with salted caramel DF \"buttercream\""
         },
         {
@@ -4301,12 +4301,12 @@
         },
         {
           "diets": ["dairy-free",  "vegan", "eggless", "nut-free", "soya-free"],
-          "image": "choices/flavours/blank.jpg",
+          "image": "choices/flavours/choc-caramel-df.jpg",
           "description": "Vegan Chocolate sponge filled with salted caramel DF \"buttercream\""
         },
         {
           "diets": ["dairy-free",  "vegan", "gluten-free", "eggless", "nut-free", "soya-free"],
-          "image": "choices/flavours/blank.jpg",
+          "image": "choices/flavours/choc-caramel-df.jpg",
           "description": "GF Vegan Chocolate sponge filled with salted caramel DF \"buttercream\""
         }
 
