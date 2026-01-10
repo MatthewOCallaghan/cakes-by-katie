@@ -306,9 +306,6 @@
                         { product: pages[page].product } if pages[page].product else
                         null)
                 %}
-                {% for cake in getMatchingCakes(cakeFilters, { testimonials: true }) %}
-                <span>{{cake.name}}</span>
-                {% endfor %}
                 {{
                     testimonialsSlideshow(
                         pages[page].testimonials or (getMatchingCakes(cakeFilters, { testimonials: true }) if cakeFilters and getMatchingCakes(cakeFilters, { testimonials: true }).length > 0 else featuredTestimonials)

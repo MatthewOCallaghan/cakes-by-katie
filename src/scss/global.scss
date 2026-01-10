@@ -89,7 +89,7 @@ section.intro {
     position: relative;
     cursor: pointer;
     text-decoration: none;
-    border: 1px solid #f9bbb9;
+    border: 1px solid var(--colour-pink-mid);
     font-family: variables.$handwriting;
     font-size: 1.6em;
     z-index: 1;
@@ -219,6 +219,34 @@ section.intro {
         padding: 5px;
         width: 33%;
     }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Colours                                  */
+/* -------------------------------------------------------------------------- */
+
+:root {
+    --colour-pink: variables.$pink;
+
+    --colour-beige-light: #ffefcb;
+    --colour-blue-light: #dff6ff;
+    --colour-blue-mid: #ace7ff;
+    --colour-blue-dark: #6eb5ff;
+    --colour-green-light: #e2ffd1;
+    --colour-green-dark: #a5de9c;
+    --colour-lemon-light: #f6f3a9;
+    --colour-orange-light: #ffdfba;
+    --colour-orange-dark: #fca669;
+    --colour-pink-light: #ffe8e8;
+    --colour-pink-mid: #f9bbb9;
+    --colour-pink-dark: #ffabab;
+    --colour-pink-bright: #ffb3c6;
+    --colour-purple-light: #fbe4ff;
+    --colour-purple-dark: #c5a3ff;
+    --colour-red-dark: #fd8a8a;
+    --colour-turquoise-dark: #82e1cb;
+    --colour-yellow-light: #fff7cf;
+    --colour-yellow-dark: #f8df81;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -771,6 +799,8 @@ header[data-nav-submenu] {
         // Fixed position makes mobile browser UA components appear expanded and stops page being scrollable
         // This also resets scroll position but to click nav icon they must be very close to top anyway
         position: fixed;
+        // iOS Safari sets width to ~3000+px with fixed positioning without this
+        width: 100%;
 
         header {
             position: fixed;
@@ -1179,8 +1209,10 @@ footer {
         margin: 1em auto;
     }
 
+    $categoryMargin: min(max(35px, 5%), 60px);
+
     .category {
-        margin-top: min(max(35px, 5%), 60px);
+        margin-top: $categoryMargin;
 
         &::before {
             content: "";
@@ -1193,7 +1225,7 @@ footer {
 
         h3 {
             font-size: 2.5em;
-            margin: min(max(35px, 5%), 60px) 0;
+            margin: $categoryMargin 0;
         }
 
         .items {
@@ -1221,8 +1253,9 @@ footer {
                     margin: 0;
                 }
 
+                $imgSize: min(100%, 150px);
                 img {
-                    width: min(100%, 150px);
+                    width: $imgSize;
                     aspect-ratio: 1;
                     border-radius: 100%;
                     object-fit: cover;
@@ -1231,8 +1264,46 @@ footer {
                 h4 {
                     font-size: min(2em, 7vw);
                 }
+
+                &.more {
+
+                    position: relative;
+
+                    img {
+                        filter: brightness(0.5);
+                    }
+
+                    div.overlay-text {
+                        
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+
+                        // Make text appear more centred
+                        padding: 5px 5px 0 0;
+
+                        span {
+                            font-family: variables.$handwriting;
+                            font-size: min(3em, 10vw);
+                            display: flex;
+                            width: $imgSize;
+                            aspect-ratio: 1;
+                            justify-content: center;
+                            align-items: center;
+                            line-height: 0;
+                            margin: 0 auto;
+                        }
+                    }
+                }
             }
 
+        }
+
+        .see-more-link {
+            display: block;
+            font-size: 1.1em;
+            margin-top: $categoryMargin;
         }
     }
 }

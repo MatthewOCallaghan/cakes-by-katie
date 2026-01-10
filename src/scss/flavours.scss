@@ -29,117 +29,266 @@
             top: 0;
             left: 0;
             right: 0;
-            height: 200px;
+            height: 300px;
             background: #fff;
             z-index: -1;
         }
 
         .flavours-menu {
 
-            // Colours
-            $colours: ("standard": #fbe4ff, "gluten-free": #fff7cf, "dairy-free": #dff6ff, "vegan": #e2ffd1, "eggless":	#ffdfba);
+            $borderRadius: 8px;
 
-            $borderColour: #e6e6e6;
-
-            .flavours-tabs {
-                display: flex;
-
-                button {
-                    border: none;
-                    padding: 0.6em .3em;
-                    width: 9em;
-                    min-width: min-content;
-                    max-width: 20%;
-                    margin: 0;
-                    transform: translateY(1px);
-                    z-index: 1;
-                    border: 1px solid $borderColour;
-                    border-radius: 10px 10px 0 0;
-                    cursor: pointer;
-                    color: #000;
-                }
-
+            --group-gap: 1em;
+            @media (max-width: 700px) {
+                --group-gap: 0.3em;
             }
 
-            .flavours-list {
-                text-align: center;
-                padding: 7%;
-                border: 1px solid #e6e6e6;
-                box-shadow: 0 0 4px 1px #cacaca47;
+            .dietary-requirements {
 
-                .flavours-list-grid {
+                color: rgb(84, 84, 84);
+                border: 1px dashed currentColor;
+                padding: 1em;
+                border-radius: $borderRadius;
+                background: #f5f5f5;
+
+                p {
+                    margin-top: 0;
+                    font-weight: 400;
+                }
+
+                .dietary-filters {
                     display: grid;
-                    grid-template-columns: repeat(2, 47%);
-                    justify-content: space-between;
-                    column-gap: 6%;
-                    row-gap: 40px;
+                    grid-template-columns: repeat(6, max-content);
+                    grid-template-rows: auto;
 
-                    @media (min-width: 1100px) {
-                        row-gap: 56px;
+                    @media (max-width: 750px) {
+                        grid-template-columns: repeat(3, max-content);
+                        grid-template-rows: auto auto;
                     }
-                    
 
-                    .flavour-row {
 
-                        .image-container {
+                    gap: 0.5em 1em;
+                    justify-content: center;
+                    align-items: center;
 
-                            margin-bottom: 1em;
+                    label {
+                        cursor: pointer;
+                        text-align: left;
 
-                            img {
-                                width: 120px;
-                                height: 120px;
-                                border-radius: 120px;
-                            }
-                        }
-
-                        h2 {
-                            margin: 0;
-                            font-size: min(3em, 9vw);
-                        }
-
-                        p {
-                            font-family: variables.$thin-font;
-                            margin-bottom: 0;
+                        input {
+                            margin-right: 0.2em;
+                            cursor: pointer;
                         }
                     }
                 }
-
-                .allergen-info {
-                    padding-top: 10%;
-
-                    p {
-                        margin: 0;
-
-                        &:first-child small {
-                            font-weight: 400;
-                        }
-                    }
-                }
-                
             }
 
-            @each $variant, $colour in $colours {
-                ##{$variant}-button {
-                    background: $colour;
+            #flavours-count-text {
+                font-weight: 400;
+                padding: 0 5%;
+                margin: 2em;
+
+                span {
+                    font-weight: 400;
+                    font-style: italic;
                 }
+            }
 
-                &.#{$variant} {
-                    ##{$variant}-button {
-                        border-bottom-color: $colour;
-                    }
+            .flavours-groups-container {
+                display: flex;
+                flex-direction: column;
+                gap: var(--group-gap);
+                
+                .flavour-group {
 
-                    .flavour:not(.#{$variant}) {
+                    $verticalPadding: min(55px, 5vw);
+                    $horizontalPadding: min(77px, 5vw);
+                    
+                    text-align: center;
+                    padding: $verticalPadding $horizontalPadding;
+                    border: 1px solid #e6e6e6;
+                    box-shadow: 0 0 4px 1px #cacaca47;
+                    border-radius: $borderRadius;
+
+                    // Hide group if it has no flavours meeting filters
+                    &:not(.group-valid) {
                         display: none;
                     }
 
-                    .flavours-list {
-                        background: $colour;
+                    h2 {
+                        margin: 0;
+                        margin-bottom: $verticalPadding;
+                        opacity: 0.6;
+                        font-size: min(3.5em, 10vw);
+
+                        font-family: variables.$thin-font;
+                        opacity: 0.5;
                     }
 
+                    .flavours-list {
+
+                        // Set gap to line up columns in wider groups with the narrow groups
+                        $columnGap: calc(2 * $horizontalPadding + var(--group-gap));
+
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        column-gap: $columnGap;
+                        row-gap: 40px;
+
+                        @media (min-width: 1100px) {
+                            row-gap: 56px;
+                        }
+
+                        .flavour {
+
+                            width: calc(50% - ($columnGap / 2));
+
+                            // Hide flavour if it doesn't meet filters
+                            &:not(.flavour-valid) {
+                                display: none;
+                            }
+
+                            .variant {
+
+                                display: none;
+                                &.variant-valid {
+                                    display: block;
+                                }
+
+                                .image-container {
+
+                                    margin-bottom: 1em;
+
+                                    img {
+                                        width: 120px;
+                                        height: 120px;
+                                        border-radius: 120px;
+                                    }
+                                }
+
+                                h3 {
+                                    margin: 0;
+                                    font-size: min(2.5em, 8vw);
+                                }
+
+                                p {
+                                    font-family: variables.$thin-font;
+                                    margin-bottom: 0;
+                                }
+                            }
+
+                            // Hide all variants after the first valid one
+                            .variant-valid ~ .variant {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+                // Show ideal grid layout when no filters are selected
+                &.no-filters {
+
+                    /*
+                        Desired grid:
+
+                        -------------------------
+                        |       Classics        |
+                        -------------------------
+                        |           |  Fresh &  |
+                        |  Truffle  |  Fruity   |
+                        |    Box    |-----------|
+                        |           |    The    |
+                        |-----------|  Biscuit  |
+                        |           |    Edit   |
+                        |   Nutty   |-----------|
+                        | Delights  |   Café    |
+                        |           |   Katie   |
+                        -------------------------
+                        |      Indulgence       |
+                        -------------------------
+                    */
+
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: repeat(6, auto);
+
+                    .flavour-group {
+
+                        // Spans
+                        &[data-group="the-classics"], &[data-group="indulgence"] {
+                            grid-column: span 2;
+                        }
+                        &[data-group="truffle-box"], &[data-group="fresh-fruity"], &[data-group="the-biscuit-edit"], &[data-group="nutty-delights"], &[data-group="cafe-katie"] {
+                            // Single column groups must show one flavour per row
+                            .flavours-list {
+                                .flavour {
+                                    width: 100%;
+                                }
+                            }
+                        }
+
+                        // Row/column positions
+                        &[data-group="the-classics"] {
+                            grid-column: 1 / span 2;
+                            grid-row: 1;
+                        }
+                        &[data-group="truffle-box"] {
+                            grid-column: 1;
+                            grid-row: 2 / span 2;
+                        }
+                        &[data-group="fresh-fruity"] {
+                            grid-column: 2;
+                            grid-row: 2;
+                        }
+                        &[data-group="the-biscuit-edit"] {
+                            grid-column: 2;
+                            grid-row: 3 / span 2;
+                        }
+                        &[data-group="nutty-delights"] {
+                            grid-column: 1;
+                            grid-row: 4 / span 2;
+                        }
+                        &[data-group="cafe-katie"] {
+                            grid-column: 2;
+                            grid-row: 5;
+                        }
+                        &[data-group="indulgence"] {
+                            grid-column: 1 / span 2;
+                            grid-row: 6;
+                        }
+                    }
                 }
             }
-
             
+            .allergen-info {
+
+                margin: var(--group-gap) 0;
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: $borderRadius;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(4px);
+                -webkit-backdrop-filter: blur(5px);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                padding: 3%;
+
+                p {
+                    margin: 0;
+                    text-wrap: balance;
+                    font-size: small;
+                    margin-top: 0.5em;
+
+                    &:first-child {
+                        font-weight: 400;
+                        margin: 0;
+                    }
+
+                    &:not(.text-valid)[id] {
+                        display: none;
+                    }
+                }
+            }
+                     
         }
     }
 }

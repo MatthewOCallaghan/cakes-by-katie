@@ -62,6 +62,13 @@ function setupData() {
     // Collect testimonials separately to make them easier to process
     data.testimonials = Object.entries(data.portfolio).reduce((acc, [cake, { testimonial }]) => testimonial ? acc.concat({ cake, ...testimonial }) : acc, []);
 
+    // Flavours entry for design-choices macro
+    data.designChoicesFlavours = {
+        name: 'Flavours',
+        items: Object.values(data.flavours).map(({ name, variants }) => ({ name, image: variants[0].image })),
+        seeMoreLink: '/flavours'
+    };
+
     // Inject flavour names into venue flavour tips
     for (const venueKey in data.venues) {
         const venue = data.venues[venueKey];
@@ -173,6 +180,18 @@ function processNunjucks() {
             }
 
             return selectedCakes;
+        });
+
+        // Get list of flavour names as string (with commas and 'and') where first variant excludes specified diet
+        environment.addGlobal('getFlavoursWithDietExclusion', (flavours, diet) => {
+            const matchingFlavours = Object.values(flavours).reduce((acc, { name, variants }) => {
+                if (!variants[0].diets.includes(diet)) {
+                    acc.push(name);
+                }
+                return acc;
+            }, []);
+
+            return matchingFlavours.length > 2 ? `${matchingFlavours.slice(0, -1).join(', ')}, and ${matchingFlavours[matchingFlavours.length - 1]}` : matchingFlavours.join(' and ');
         });
     }
 

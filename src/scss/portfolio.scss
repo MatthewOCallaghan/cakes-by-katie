@@ -10,18 +10,6 @@
     margin: $grid-padding 0;
     padding: 0 $grid-padding;
 
-
-    &[data-filters-product='wedding-cake'] {
-        #portfolio-filters button#portfolio-filter-product {
-            background: pink;
-        }
-    }
-    &[data-filters-occasion='anniversary'] {
-        #portfolio-filters button#portfolio-filter-occasion {
-            background: pink;
-        }
-    }
-
     #portfolio-filters {
         display: grid;
         gap: 5px;
@@ -107,7 +95,7 @@
     // Selected abutton styles
     // This is the "All cakes" button
     #portfolio-filters button:not([data-product]) {
-        --selectedBackground: linear-gradient(45deg, #f9bbb9, #ffe8e8);
+        --selectedBackground: linear-gradient(45deg, var(--colour-pink-mid), var(--colour-pink-light));
     }
     &:not([data-filters-product]) {
         #portfolio-filters button:not([data-product]) {
@@ -410,6 +398,9 @@ body.portfolio-modal-open {
     overflow: hidden;
     position: fixed;
     top: var(--portfolio-scroll);
+    // iOS Safari sets width to ~3000+px with fixed positioning without this
+    // If width exceeds viewport width, portfolio grid layout gets messed up
+    width: 100%;
 
     #portfolio-modal {
         display: grid;
