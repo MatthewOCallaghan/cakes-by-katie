@@ -13,6 +13,8 @@
         <link rel="stylesheet" type="text/css" href="/css/global.css">
         {% if type === "occasion" %}
             <link rel="stylesheet" type="text/css" href="/css/occasion.css">
+        {% elif type === "weddingVenue" %}
+            <link rel="stylesheet" type="text/css" href="/css/wedding-venue.css">
         {% elif pages[page].hasCSSFile %}
             <link rel="stylesheet" type="text/css" href="{{ "/css/" ~ page ~ ".css"}}">
         {% endif %}
@@ -127,6 +129,9 @@
                                     </li>
                                     <li>
                                         <a href="/testimonials">Testimonials</a>
+                                    </li>
+                                    <li>
+                                        <a href="/delivery">Delivery</a>
                                     </li>
                                     <li>
                                         <a href="/awards">News &amp; Awards</a>
@@ -285,9 +290,9 @@
             {% if pages[page].heading %}
                 {% from "macros/page-title.njk" import pageTitle with context %}
                 {% if pages[page].heading.image %}
-                    {{ pageTitle(pages[page].heading.text, pages[page].heading.image.path, pages[page].heading.image.alt) }}
+                    {{ pageTitle(pages[page].heading.text, pages[page].heading.image.path, pages[page].heading.image.alt, pages[page].heading.beforeText, afterText=pages[page].heading.afterText) }}
                 {% else %}
-                    {{ pageTitle(pages[page].heading.text) }}
+                    {{ pageTitle(pages[page].heading.text, beforeText=pages[page].heading.beforeText, afterText=pages[page].heading.afterText) }}
                 {% endif %}
             {% endif %}
 
@@ -357,6 +362,7 @@
                     <li><small><a href="/pricing">Pricing</a></small></li>
                     <li><small><a href="/flavours">Flavours</a></small></li>
                     <li><small><a href="/testimonials">Testimonials</a></small></li>
+                    <li><small><a href="/delivery">Delivery</a></small></li>
                     <li><small><a href="/awards">News &amp; Awards</a></small></li>
                     <li><small><a href="/faqs">FAQs</a></small></li>
                 </ul>

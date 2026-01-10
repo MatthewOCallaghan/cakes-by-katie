@@ -1,0 +1,41 @@
+{% set page = "venueDowneHouse" %}
+{% extends "layout.njk" %}
+
+{% block main %}
+
+    <section class="intro">
+        <div class="intro-text">
+            <p>Many parents order cakes to be delivered directly to the school, so their children can enjoy a special surprise on their birthday, exam day, or any milestone celebration.</p>
+            <p>Every cake is freshly baked to order, beautifully decorated, and available in a wide range of flavours and styles.</p>
+            <p>I'm based locally and can deliver straight to Downe House School, making it easy for parents to send a thoughtful, delicious treat from afar.</p>
+        </div>
+    </section>
+
+    {% from "macros/half-image-section.njk" import halfImageSection with context %}
+    {{ halfImageSection(
+        'Birthday cakes',
+        [
+            "Birthdays are all about celebrating individuality, and my custom celebration cakes are designed to do just that. Whether your child prefers a classic or themed design, or something that reflects their unique personality, I'll take care of it."
+        ],
+        "/products/celebration-cakes",
+        "See celebration cakes",
+        "portfolio/Pretty-in-Pink.jpg",
+        "Birthday cake",
+        tall = true
+    ) }}
+
+    {{ halfImageSection(
+        'Birthday cupcakes',
+        [
+            "Get ready to add a sprinkle of happiness to your child's birthday with my scrumptious birthday cupcakes!  From classic favourites to creative themes, my birthday cupcakes are baked with love and sure to make their special day even more memorable."
+        ],
+        "/products/cupcakes",
+        "See cupcakes",
+        "portfolio/The-One-Where-its-your-Birthday.jpg",
+        "Birthday cupcakes",
+        tall = true,
+        inverse = true,
+        background = '#fff'
+    ) }}
+
+{% endblock %}

@@ -424,7 +424,7 @@
       "cta": {
         "text": "Want a quote for an anniversary cake?"
       },
-      "occasion": "anniversary"
+      "occasion": "anniversary-wedding"
     },
     "christening": {
       "title": "Christening cakes and cupcakes | Cakes by Katie",
@@ -545,6 +545,563 @@
         "text": "Ready to order?"
       },
       "occasion": "afternoon-tea"
+    },
+    "delivery": {
+      "title": "Delivery | Cakes by Katie",
+      "description": "I'm a cake maker in Thatcham, West Berkshire, delivering high quality bespoke cakes for birthdays, weddings, anniversaries, christenings, or any occasion.",
+      "heading": {
+        "text": "Delivery",
+        "image": {
+          "path": "backgrounds/village.jpg",
+          "alt": "Village road background"
+        }
+      }
+    },
+    "venueClockBarn": {
+      "title": "Wedding cakes delivered to Clock Barn | Cakes by Katie",
+      "description": "Delivering to Clock Barn, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "Clock Barn",
+        "afterText": "Whitchurch",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at Clock Barn!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "clock-barn",
+      "occasion": "wedding"
+    },
+    "venueEasthampstedPark": {
+      "title": "Wedding cakes delivered to Easthampsted Park | Cakes by Katie",
+      "description": "Delivering to Easthampsted Park, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "Easthampsted Park",
+        "afterText": "Wokingham",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at Easthampsted Park!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "easthampsted-park",
+      "occasion": "wedding"
+    },
+    "venueForestEdge": {
+      "title": "Wedding cakes delivered to Forest Edge Tipis at Welford Park | Cakes by Katie",
+      "description": "Delivering to Forest Edge Tipis at Welford Park, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "Forest Edge Tipis at Welford Park",
+        "afterText": "Newbury",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at Forest Edge Tipis at Welford Park!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "forest-edge",
+      "occasion": "wedding"
+    },
+    "venueGreatFosters": {
+      "title": "Wedding cakes delivered to Great Fosters| Cakes by Katie",
+      "description": "Delivering to Great Fosters Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "Great Fosters",
+        "afterText": "Egham",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at Great Fosters!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "great-fosters",
+      "occasion": "wedding"
+    },
+    "venueHedsorHouse": {
+      "title": "Wedding cakes delivered to Hedsor House | Cakes by Katie",
+      "description": "Delivering to Hedsor House, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "Hedsor House",
+        "afterText": "Taplow",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at Hedsor House!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "hedsor-house",
+      "occasion": "wedding"
+    },
+    "venueHighcliffeCastle": {
+      "title": "Wedding cakes delivered to Highcliffe Castle | Cakes by Katie",
+      "description": "Delivering to Highcliffe Castle, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "Highcliffe Castle",
+        "afterText": "Highcliffe",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at Highcliffe Castle!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "highcliffe-castle",
+      "occasion": "wedding"
+    },
+    "venueMonkeyIsland": {
+      "title": "Wedding cakes delivered to Monkey Island Estate | Cakes by Katie",
+      "description": "Delivering to Monkey Island Estate, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "Monkey Island Estate",
+        "afterText": "Bray",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at Monkey Island Estate!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "monkey-island",
+      "occasion": "wedding"
+    },
+    "venueOakleyHall": {
+      "title": "Wedding cakes delivered to Oakley Hall | Cakes by Katie",
+      "description": "Delivering to Oakley Hall, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "Oakley Hall",
+        "afterText": "Basingstoke",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at Oakley Hall!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "oakley-hall",
+      "occasion": "wedding"
+    },
+    "venueOldGore": {
+      "title": "Wedding cakes delivered to Old Gore by Yard Space | Cakes by Katie",
+      "description": "Delivering to Old Gore, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "Old Gore",
+        "afterText": "Cirencester",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at Old Gore!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "old-gore",
+      "occasion": "wedding"
+    },
+    "venueOldLuxtersBarn": {
+      "title": "Wedding cakes delivered to Old Luxters Barn | Cakes by Katie",
+      "description": "Delivering to Old Luxters Barn, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "Old Luxters Barn",
+        "afterText": "Henley-on-Thames",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at Old Luxters Barn!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "old-luxters",
+      "occasion": "wedding"
+    },
+    "venuePembrokeLodge": {
+      "title": "Wedding cakes delivered to Pembroke Lodge | Cakes by Katie",
+      "description": "Delivering to Pembroke Lodge, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "Pembroke Lodge",
+        "afterText": "Richmond",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at Pembroke Lodge!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "pembroke-lodge",
+      "occasion": "wedding"
+    },
+    "venuePennyhillPark": {
+      "title": "Wedding cakes delivered to Pennyhill Park | Cakes by Katie",
+      "description": "Delivering to Pennyhill Park, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "Pennyhill Park",
+        "afterText": "Bagshot",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at Pennyhill Park!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "pennyhill-park",
+      "occasion": "wedding"
+    },
+    "venueSheepdrove": {
+      "title": "Wedding cakes delivered to Sheepdrove | Cakes by Katie",
+      "description": "Delivering to Sheepdrove, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "Sheepdrove",
+        "afterText": "Lambourn",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at Sheepdrove!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "sheep-drove",
+      "occasion": "wedding"
+    },
+    "venueStanlakePark": {
+      "title": "Wedding cakes delivered to Stanlake Park | Cakes by Katie",
+      "description": "Delivering to Stanlake Park, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "Stanlake Park",
+        "afterText": "Twyford",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at Stanlake Park!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "stanlake-park",
+      "occasion": "wedding"
+    },
+    "venueTheGreatHouseatSonning": {
+      "title": "Wedding cakes delivered to The Great House at Sonning | Cakes by Katie",
+      "description": "Delivering to The Great House at Sonning, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "The Great House at Sonning",
+        "afterText": "Sonning",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at The Great House at Sonning!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "great-house",
+      "occasion": "wedding"
+    },
+    "venueOldMill": {
+      "title": "Wedding cakes delivered to The Old Mill | Cakes by Katie",
+      "description": "Delivering to The Old Mill, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "The Old Mill",
+        "afterText": "Aldermaston",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at The Old Mill!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "old-mill",
+      "occasion": "wedding"
+    },
+    "venuePostBarn": {
+      "title": "Wedding cakes delivered to The Post Barn | Cakes by Katie",
+      "description": "Delivering to The Post Barn, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "The Post Barn",
+        "afterText": "Newbury",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at The Post Barn!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "post-barn",
+      "occasion": "wedding"
+    },
+    "venueElcotPark": {
+      "title": "Wedding cakes delivered to The Retreat at Elcot Park | Cakes by Katie",
+      "description": "Delivering to The Retreat at Elcot Park, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "The Retreat at Elcot Park",
+        "afterText": "Newbury",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at The Retreat at Elcot Park!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "elcot-park",
+      "occasion": "wedding"
+    },
+    "venueTheSwanatStreatley": {
+      "title": "Wedding cakes delivered to The Swan at Streatley | Cakes by Katie",
+      "description": "Delivering to The Swan at Streatley, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "The Swan at Streatley",
+        "afterText": "Streatley-on-Thames",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at The Swan at Streatley!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "swan-streatley",
+      "occasion": "wedding"
+    },
+    "venueTheVineyard": {
+      "title": "Wedding cakes delivered to The Vineyard | Cakes by Katie",
+      "description": "Delivering to The Vineyard, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "The Vineyard",
+        "afterText": "Stockcross",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at The Vineyard!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "vineyard-stockcross",
+      "occasion": "wedding"
+    },
+    "venueTrunkwellHouse": {
+      "title": "Wedding cakes delivered to Trunkwell House | Cakes by Katie",
+      "description": "Delivering to Trunkwell House, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "Trunkwell House",
+        "afterText": "Reading",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at Trunkwell House!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "trunkwell-house",
+      "occasion": "wedding"
+    },
+    "venueTylneyHall": {
+      "title": "Wedding cakes delivered to Tylney Hall | Cakes by Katie",
+      "description": "Delivering to Tylney Hall, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "Tylney Hall",
+        "afterText": "Hook",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at Tylney Hall!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "tylney-hall",
+      "occasion": "wedding"
+    },
+    "venueUftonCourt": {
+      "title": "Wedding cakes delivered to Ufton Court | Cakes by Katie",
+      "description": "Delivering to Ufton Court, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "Ufton Court",
+        "afterText": "Reading",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at Ufton Court!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "ufton-court",
+      "occasion": "wedding"
+    },
+    "venueWasingPark": {
+      "title": "Wedding cakes delivered to Wasing Park | Cakes by Katie",
+      "description": "Delivering to Wasing Park, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Wedding cakes for",
+        "text": "Wasing Park",
+        "afterText": "Aldermaston",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "cta": {
+        "text": "Let's talk about your wedding at Wasing Park!",
+        "image": {
+          "path": "backgrounds/wedding.jpg",
+          "alt": "Wedding background"
+        }
+      },
+      "venue": "wasing-park",
+      "occasion": "wedding"
+    },
+    "venueDowneHouse": {
+      "title": "Birthday cakes delivered to Downe House School | Cakes by Katie",
+      "description": "Delivering to Downe House School, Cakes by Katie offers bespoke birthday cakes and cupcakes in a wide range of flavours and catering for specific dietary requirements.",
+      "heading": {
+        "beforeText": "Birthday cakes for",
+        "text": "Downe House School",
+        "afterText": "Cold Ash",
+        "image": {
+          "path": "backgrounds/birthday-balloons.jpg",
+          "alt": "Birthday background"
+        }
+      },
+      "cta": {
+        "text": "Get a cake delivered to Downe House School!"
+      },
+      "venue": "downe-house-school",
+      "occasion": "birthday"
     }
   },
   "portfolio": {
@@ -557,9 +1114,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Family Farm"
-      ]
+      "venue": "Family Farm"
     },
     "fishing-for-dreams": {
       "images": [
@@ -590,9 +1145,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Ufton Court"
-      ],
+      "venue": "ufton-court",
       "testimonial": {
         "text": "I just wanted to say a huge thank you for our wedding cake on Sunday, it was absolutely perfect. It looked beautiful and was everything we had imagined (and more!), and every single layer tasted amazing. We had so many guests comment on how good it was, and I am so glad we chose you to make it for us. You were so lovely to work with from start to finish, and it honestly felt so special seeing the cake on the day after all the planning. Apologies about the cake ribbon though - Chloe saved the day and it was just as beautiful as I had planned.",
         "name": "Lotty & George",
@@ -606,16 +1159,15 @@
     },
     "jules": {
       "images": [
-        "jules.jpg"
+        "jules.jpg", "jules2.jpg"
       ],
       "name": "Jules",
+      "description": "Photographer: Eye Imagine Photography (second picture)",
       "product": "wedding-cake",
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Post Barn"
-      ]
+      "venue": "post-barn"
     },
     "hannah": {
       "images": [
@@ -626,9 +1178,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Wasing Park"
-      ]
+      "venue": "wasing-park"
     },
     "bryony": {
       "images": [
@@ -639,9 +1189,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Sheepdrove"
-      ]
+      "venue": "Sheepdrove"
     },
     "flopsy-in-pink-christening": {
       "images": [
@@ -674,9 +1222,7 @@
         "Lemon",
         "Orange"
       ],
-      "venue": [
-        "St Barnabas Church"
-      ]
+      "venue": "St Barnabas Church"
     },
     "janelle": {
       "images": [
@@ -688,9 +1234,18 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Old Mill"
-      ]
+      "venue": "old-mill"
+    },
+    "emily-james":{
+      "images": [
+        "emily-james.jpg", "emily-james2.jpg"
+      ],
+      "name": "Emily",
+      "product": "wedding-cake",
+      "occasions": [
+        "wedding"
+      ],
+      "venue": "old-mill"
     },
     "natalie": {
       "images": [
@@ -701,9 +1256,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Post Barn"
-      ]
+      "venue": "post-barn"
     },
     "arabella": {
       "images": [
@@ -725,9 +1278,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Retreat, Elcot ParK"
-      ]
+      "venue": "elcot-park"
     },
     "elegancia": {
       "images": [
@@ -751,9 +1302,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Donnington Grove"
-      ]
+      "venue": "Donnington Grove"
     },
     "ellie": {
       "images": [
@@ -764,9 +1313,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Wasing Park"
-      ]
+      "venue": "wasing-park"
     },
     "vintage-zainab": {
       "images": [
@@ -778,9 +1325,18 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Victory Hall"
-      ]
+      "venue": "The Victory Hall"
+    },
+    "karis": {
+      "images": [
+        "karis.jpg", "karis2.jpg"
+      ],
+      "name": "Karis",
+      "product": "wedding-cake",
+      "occasions": [
+        "wedding"
+      ],
+      "venue": "great-fosters"
     },
     "vintage-hayley": {
       "images": [
@@ -791,9 +1347,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Hedsor House"
-      ]
+      "venue": "hedsor-house"
     },
     "sian": {
       "images": [
@@ -805,9 +1359,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Chequers Hotel, Newbury"
-      ]
+      "venue": "The Chequers Hotel, Newbury"
     },
     "amy": {
       "images": [
@@ -818,9 +1370,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Post Barn"
-      ]
+      "venue": "post-barn"
     },
     "welcome-to-the-jungle": {
       "images": [
@@ -840,6 +1390,17 @@
         "Vanilla"
       ]
     },
+    "semi-naked-autumn": {
+      "images": [
+        "semi-naked-autumn.jpg", "semi-naked-autumn2.jpg"
+      ],
+      "name": "Semi Naked",
+      "product": "wedding-cake",
+      "occasions": [
+        "wedding"
+      ],
+      "venue": "clock-barn"
+    },
     "eliane": {
       "images": [
         "eliane.jpg"
@@ -849,9 +1410,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Shaw House"
-      ],
+      "venue": "Shaw House",
       "testimonial": {
         "text": "I’d like to thank you so much for your excellent service. The cake décor looked absolutely stunning, and I was truly delighted with the final result. Everyone loved the cake, we served it to all our guests, and many even went back for a second slice! It was a real highlight of the day. Thank you again for your incredible work and attention to detail.",
         "name": "Eliane & Oliver",
@@ -870,9 +1429,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Combe Manor"
-      ]
+      "venue": "Combe Manor"
     },
     "lorraine": {
       "images": [
@@ -880,12 +1437,8 @@
       ],
       "name": "Lorraine",
       "product": "wedding-cake",
-      "occasions": [
-        "wedding"
-      ],
-      "venue": [
-        "Carey's Manor"
-      ]
+      "occasions": ["wedding"],
+      "venue": "Careys Manor"
     },
     "jeffrey": {
       "images": [
@@ -933,9 +1486,7 @@
         "Raspberry & White Chocolate",
         "Lemon & Elderflower"
       ],
-      "venue": [
-        "The Post Barn"
-      ]
+      "venue": "post-barn"
     },
     "bee-happy-with-pooh": {
       "images": [
@@ -956,9 +1507,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Trunkwell House"
-      ],
+      "venue": "trunkwell-house",
       "testimonial": {
         "text": "Thank you so much for the cake! It was delicious, so beautiful and exactly what we wanted, and everyone loved it so much! Most people didn’t realise it was vegan it was that good!",
         "name": "Anna & Elias",
@@ -978,9 +1527,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Wasing Park"
-      ]
+      "venue": "wasing-park"
     },
     "the-one-where-its-your-birthday": {
       "images": [
@@ -1004,20 +1551,15 @@
         "christening"
       ]
     },
-    "leah": {
-      "images": [
-        "leah.jpg",
-        "leah2.jpg"
-      ],
-      "description": "Photographer: Kevin James Photogarphy",
+"leah": {
+      "images": ["leah.jpg", "leah2.jpg"],
+      "description": "Photographer: Kevin James Photography",
       "name": "Leah",
       "product": "wedding-cake",
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Swan at Streatley"
-      ],
+      "venue": "swan-streatley",
       "testimonial": {
         "text": "We just wanted to say a massive thank you for the cake last Saturday, it looked absolutely stunning and our guests were raving about how good it tasted. Thankfully we've got some stashed in our freezer to look forward to eating once we're back from honeymoon!",
         "name": "Leah & Ryan",
@@ -1039,20 +1581,15 @@
         "birthday"
       ]
     },
-    "courtney": {
-      "images": [
-        "courtney2.jpg",
-        "courtney.jpg"
-      ],
-      "description": "Photographer: Olga J Photography",
+ "courtney": {
+      "images": ["courtney2.jpg", "courtney.jpg"],
+      "description": "Photographer: Olga J. Photography",
       "name": "Courtney",
       "product": "wedding-cake",
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Post Barn"
-      ]
+      "venue": "post-barn"
     },
     "puddles-the-penguin": {
       "images": [
@@ -1073,9 +1610,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Stanlake Park"
-      ]
+      "venue": "stanlake-park"
     },
     "kemi": {
       "images": [
@@ -1088,9 +1623,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Post Barn"
-      ],
+      "venue": "post-barn",
       "testimonial": {
         "text": "The cake was absolutely stunning and matched the decor perfectly. We are glad to have had your work as a part of our special day.",
         "name": "Zac & Kemi",
@@ -1109,8 +1642,19 @@
       "name": "Diamond Toast",
       "product": "celebration-cake",
       "occasions": [
-        "anniversary"
+        "anniversary-wedding"
       ]
+    },
+    "semi-naked-hannah": {
+      "images": [
+        "semi-naked-hannah.jpg"
+      ],
+      "name": "Semi Naked",
+      "product": "wedding-cake",
+      "occasions": [
+        "wedding"
+      ],
+      "venue": "Oxford Wine Bar"
     },
     "samantha": {
       "images": [
@@ -1121,9 +1665,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Forest Edge Tipis, Welford Park"
-      ]
+      "venue": "forest-edge"
     },
     "tiny-terry": {
       "images": [
@@ -1144,9 +1686,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Wasing Park"
-      ]
+      "venue": "wasing-park"
     },
     "fault-line-green-and-gold": {
       "images": [
@@ -1168,9 +1708,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Wasing Park"
-      ]
+      "venue": "wasing-park"
     },
     "time-for-tea": {
       "images": [
@@ -1183,28 +1721,20 @@
       ]
     },
     "francesca": {
-      "images": [
-        "francesca.jpg"
-      ],
-      "description": "Photographer: Indiego Photogarphy",
+      "images": ["francesca.jpg"],
+      "description": "Photographer: Indiego Photography",
       "name": "Francesca",
       "product": "wedding-cake",
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Pembroke Lodge"
-      ],
+      "venue": "pembroke-lodge",
       "testimonial": {
         "text": "We couldn’t have asked for a more perfect wedding cake! Not only was it stunningly beautiful but it tasted absolutely amazing. Every detail was crafted with care and our guests couldn’t stop talking about it. You truly made our vision come to life and we are so grateful for your talent and professionalism. Thank you for being part of our special day and creating such a memorable centrepiece!",
         "name": "Frankie &  Josh",
         "location": "Devon"
       },
-      "flavours": [
-        "GF Choocolate",
-        "GF Lemon & Elderflower",
-        "GF Raspberry & White Chocolate"
-      ]
+      "flavours": ["GF Chocolate", "GF Lemon & Elderflower", "GF Raspberry & White Chocolate"]
     },
     "petals-and-pearls": {
       "images": [
@@ -1224,7 +1754,7 @@
         "Lemon"
       ]
     },
-    "renee": {
+    "vintage-renee": {
       "images": [
         "renee2.jpg",
         "renee.jpg"
@@ -1235,9 +1765,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Old Gore"
-      ]
+      "venue": "old-gore"
     },
     "baby-bears": {
       "images": [
@@ -1256,8 +1784,8 @@
         "Floral-Tower.jpg"
       ],
       "name": "Floral Tower",
-      "testimonial": {
-        "text": "I just wanted to thank you for the gorgeous cupcakes on Saturday.  They looked perfect and tasted absolutely delicious.  Everyone really enjoyed them (including my very naughty dog who swiped one of the remaining few off the table when we got home).  I'm sorry I didn't get to see you on Saturday, but thank you for doing such a fantastic and professional job. Many many thanks.",
+      "testimonial":{
+        "text": "I just wanted to thank you for the gorgeous cupcakes on Saturday.  They looked perfect and tasted absolutely delicious.  Everyone really enjoyed them (including my very naughty dog who swiped one of the remaining few off the table when we got home).  I'm sorry I didn't get to see you on Saturday, but thank you for doing such a fantastic and professional job. Many, many thanks.",
         "name": "Victoria & Nicholas"
       },
       "product": "cupcakes",
@@ -1273,9 +1801,7 @@
         "Lemon",
         "Carrot"
       ],
-      "venue": [
-        "The Retreat, Elcot ParK"
-      ]
+      "venue": "elcot-park"
     },
     "bella-and-bubbles": {
       "images": [
@@ -1293,12 +1819,8 @@
       ],
       "name": "Louisa",
       "product": "wedding-cake",
-      "occasions": [
-        "wedding"
-      ],
-      "venue": [
-        "The Beatle & Wedge"
-      ]
+      "occasions": ["wedding"],
+      "venue": "The Beetle & Wedge"
     },
     "lavender-swifty": {
       "images": [
@@ -1312,18 +1834,14 @@
       ]
     },
     "just-vintage": {
-      "images": [
-        "just-vintage.jpg"
-      ],
-      "description": "Photographer: Photogarphy by Linas",
+      "images": ["just-vintage.jpg"],
+      "description": "Photographer: Photography by Linas",
       "name": "Just Vintage",
       "product": "wedding-cake",
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Wasing Park"
-      ]
+      "venue": "wasing-park"
     },
     "enchanted-castle": {
       "images": [
@@ -1352,9 +1870,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Post Barn"
-      ],
+      "venue": "post-barn",
       "testimonial": {
         "text": "We just wanted to say a big thank you for our lovely wedding cake and for all your help in the build up to the day! The cake looked and tasted amazing!",
         "name": "Connie & Matt",
@@ -1385,9 +1901,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Monkey Island"
-      ]
+      "venue": "monkey-island"
     },
     "pretty-in-pink": {
       "images": [
@@ -1409,9 +1923,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Wasing Park"
-      ]
+      "venue": "wasing-park"
     },
     "let-it-go": {
       "images": [
@@ -1454,9 +1966,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Thatcham Football Club"
-      ],
+      "venue": "Thatcham Football Club",
       "testimonial": {
         "text": "Thank you so much for the cakes. They went down a treat. They were delicious. Again thank you so much!",
         "name": "Elle & Harley",
@@ -1494,9 +2004,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Dolphin, Newbury"
-      ]
+      "venue": "The Dolphin, Newbury"
     },
     "enchanted": {
       "images": [
@@ -1534,9 +2042,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Hedsor House"
-      ],
+      "venue": "hedsor-house",
       "testimonial": {
         "text": "We wanted to thank you for the beautiful cake you made for our wedding. The design was elegant and exactly what we had hoped for. The cake tasted wonderful as well — our guests really enjoyed it and many mentioned how delicious it was. We truly appreciate your care and attention to detail in bringing everything together. It was a pleasure working with you and having your creation as part of our special day.",
         "name": "Angel & Edwin",
@@ -1567,9 +2073,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Dean Court Community Centre"
-      ]
+      "venue": "Dean Court Community Centre"
     },
     "bouquet-pink-mix": {
       "images": [
@@ -1595,9 +2099,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Wasing Park"
-      ]
+      "venue": "wasing-park"
     },
     "celebrate-with-champagne": {
       "images": [
@@ -1611,19 +2113,15 @@
         "corporate"
       ]
     },
-    "lauren": {
-      "images": [
-        "lauren.jpg"
-      ],
-      "description": "Photographer: Kevin James Photogarphy",
+   "lauren": {
+      "images": ["lauren.jpg"],
+      "description": "Photographer: Kevin James Photography",
       "name": "Lauren",
       "product": "wedding-cake",
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "East Hampstead Park"
-      ]
+      "venue": "easthampstead-park"
     },
     "charming-flopsy": {
       "images": [
@@ -1645,9 +2143,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Post Barn"
-      ]
+      "venue": "post-barn"
     },
     "milk-and-white": {
       "images": [
@@ -1687,16 +2183,15 @@
     },
     "emma": {
       "images": [
-        "emma.jpg"
+        "emma.jpg", "emma2.jpg"
       ],
       "name": "Emma",
+      "description": "Photographer: Seattle to London Photography",
       "product": "wedding-cake",
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Cantley House Hotel"
-      ]
+      "venue": "Cantley House Hotel"
     },
     "subtle-in-pink": {
       "images": [
@@ -1725,9 +2220,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Stanlake Park"
-      ]
+      "venue": "stanlake-park"
     },
     "our-story": {
       "images": [
@@ -1741,18 +2234,14 @@
       ]
     },
     "kirsten-autumn": {
-      "images": [
-        "kirsten-autumn.jpg"
-      ],
-      "description": "Photographer: Phil Stock Photogarphy",
+      "images": ["kirsten-autumn.jpg"],
+      "description": "Photographer: Phil Stock Photography",
       "name": "Kirsten - Autumn",
       "product": "wedding-cake",
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Red House Pub"
-      ]
+      "venue": "The Red House Pub"
     },
     "chapt-30": {
       "images": [
@@ -1773,9 +2262,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Cantley House Hotel"
-      ],
+      "venue": "Cantley House Hotel",
       "testimonial": {
         "text": "We just wanted to send a quick message to say thank you for providing our amazing wedding cake yesterday, as we never ended up crossing paths during the day. It looked fantastic and tasted great - there wasn't much left!",
         "name": "Hannah & Ben",
@@ -1816,9 +2303,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Great House"
-      ]
+      "venue": "great-house"
     },
     "come-fly-with-me": {
       "images": [
@@ -1866,17 +2351,13 @@
       ]
     },
     "semi-naked-george": {
-      "images": [
-        "semi-naked-george.jpg"
-      ],
-      "name": "Semi Named",
+      "images": ["semi-naked-george.jpg"],
+      "name": "Semi Naked",
       "product": "wedding-cake",
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Old Luxtors"
-      ]
+      "venue": "old-luxtors"
     },
     "two-infinity": {
       "images": [
@@ -1897,9 +2378,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Retreat, Elcot ParK"
-      ]
+      "venue": "elcot-park"
     },
     "pink-cascade-2": {
       "images": [
@@ -1917,12 +2396,8 @@
       ],
       "name": "Semi Naked",
       "product": "wedding-cake",
-      "occasions": [
-        "wedding"
-      ],
-      "venue": [
-        "Oakely Hall"
-      ]
+      "occasions": ["wedding"],
+      "venue": "oakley-hall"
     },
     "shades-of-chocolate": {
       "images": [
@@ -1945,9 +2420,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Moor Hall"
-      ]
+      "venue": "Moor Hall"
     },
     "beautifully-rustic": {
       "images": [
@@ -1971,9 +2444,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Retreat, Elcot ParK"
-      ]
+      "venue": "elcot-park"
     },
     "bears-and-bunting": {
       "images": [
@@ -2003,9 +2474,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Sheepdrove"
-      ]
+      "venue": "Sheepdrove"
     },
     "21-Today": {
       "images": [
@@ -2028,9 +2497,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Wasing Park"
-      ]
+      "venue": "wasing-park"
     },
     "grace": {
       "images": [
@@ -2059,19 +2526,13 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Retreat, Elcot ParK"
-      ]
+      "venue": "elcot-park"
     },
     "piano-forte": {
-      "images": [
-        "Piano-Forte.jpg"
-      ],
-      "name": "Paino Forte",
-      "product": "celebration-cake",
-      "occasions": [
-        "birthday"
-      ]
+      "images": ["Piano-Forte.jpg"],
+      "name": "Piano Forte",
+      "product":"celebration-cake",
+      "occasions": ["birthday"]
     },
     "with-honours": {
       "images": [
@@ -2094,9 +2555,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Mill House Hotel"
-      ]
+      "venue": "The Mill House Hotel"
     },
     "birthday-mix-pink-flowers": {
       "images": [
@@ -2120,9 +2579,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Post Barn"
-      ]
+      "venue": "post-barn"
     },
     "classic-drips-golden-chocolate": {
       "images": [
@@ -2155,16 +2612,10 @@
         "name": "Nadine & David",
         "location": "Eastleigh"
       },
-      "product": "wedding-cake",
-      "occasions": [
-        "wedding"
-      ],
-      "flavours": [
-        "Carrot, Lemon, Chocolate Biscoff"
-      ],
-      "venue": [
-        "Highcliffe Castle"
-      ]
+      "product":"wedding-cake",
+      "occasions": ["wedding"],
+      "flavours": ["Carrot" ,"Lemon", "Chocolate Biscoff"],
+      "venue": "highcliffe-castle"
     },
     "rosalia": {
       "images": [
@@ -2198,9 +2649,7 @@
         " Chocolate Oreo",
         "Lemon"
       ],
-      "venue": [
-        "Crowne Plaza, Marlow"
-      ]
+      "venue": "Crowne Plaza, Marlow"
     },
     "wild-one": {
       "images": [
@@ -2233,9 +2682,7 @@
       "flavours": [
         "Vanilla"
       ],
-      "venue": [
-        "Forest Edge Tipis, Welford Park"
-      ]
+      "venue": "forest-edge"
     },
     "baby-shark-lullaby": {
       "images": [
@@ -2264,9 +2711,7 @@
         "Raspberry & White Chocolate",
         "Chocolate Biscoff"
       ],
-      "venue": [
-        "Mercure Thame Lambert Hotel"
-      ]
+      "venue": "Mercure Thame Lambert Hotel"
     },
     "golden-50th": {
       "images": [
@@ -2275,7 +2720,7 @@
       "name": "Golden 50th",
       "product": "cupcakes",
       "occasions": [
-        "anniversary"
+        "anniversary-wedding"
       ]
     },
     "ivy": {
@@ -2288,9 +2733,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Sheepdrove"
-      ]
+      "venue": "Sheepdrove"
     },
     "a-stylish-affair": {
       "images": [
@@ -2309,7 +2752,7 @@
       ],
       "name": "Semi Naked",
       "testimonial": {
-        "text": "Katie did a fantastic job of creating our wedding cake, which was just nearby at Wasing Park. The cake looked fantastic and she was really professional and responsive in making sure it was exactly what we wanted. She catered to my husband's nut allergy whilst still being able to offer us a wide range of flavours and the cake absolutely disappeared on the day as everyone loved it! Her pricing is also really reasonable compared to some of the specialist wedding cake providers I looked at.  I'd highly recommend her ",
+        "text": "Katie did a fantastic job of creating our wedding cake, which was just nearby at wasing-park. The cake looked fantastic and she was really professional and responsive in making sure it was exactly what we wanted. She catered to my husband's nut allergy whilst still being able to offer us a wide range of flavours and the cake absolutely disappeared on the day as everyone loved it! Her pricing is also really reasonable compared to some of the specialist wedding cake providers I looked at.  I'd highly recommend her ",
         "name": "Ellie & Ed",
         "location": "London"
       },
@@ -2322,9 +2765,7 @@
         "Chocolate Orange",
         "Raspberry & White Chocolate"
       ],
-      "venue": [
-        "Wasing Park"
-      ]
+      "venue": "wasing-park"
     },
     "birthday-mix-blue-cars": {
       "images": [
@@ -2347,9 +2788,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Newbury Rugby Club"
-      ]
+      "venue": "Newbury Rugby Club"
     },
     "fault-line-pink-roses": {
       "images": [
@@ -2405,9 +2844,7 @@
         "Raspberry & White Chocolate",
         "Lemon"
       ],
-      "venue": [
-        "The Vineyard"
-      ]
+      "venue": "vineyard-stockcross"
     },
     "chocolate-box": {
       "images": [
@@ -2433,9 +2870,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "The Royal Oak, Yattendon"
-      ]
+      "venue": "The Royal Oak, Yattendon"
     },
     "chocolate-drips-mms": {
       "images": [
@@ -2456,9 +2891,7 @@
       "occasions": [
         "wedding"
       ],
-      "venue": [
-        "Wasing Park"
-      ]
+      "venue": "wasing-park"
     },
     "confetti-in-the-clouds": {
       "images": [
@@ -2496,9 +2929,7 @@
         "Chocolate",
         "Raspberry & White Chocolate"
       ],
-      "venue": [
-        "Donnington Grove"
-      ]
+      "venue": "Donnington Grove"
     },
     "bluey-in-blue": {
       "images": [
@@ -2537,7 +2968,7 @@
       "name": "Diamond Anniversary 2",
       "product": "celebration-cake",
       "occasions": [
-        "anniversary"
+        "anniversary-wedding"
       ]
     },
     "petals-and-birthday-wishes": {
@@ -2933,9 +3364,7 @@
       "flavours": [
         "Carrot"
       ],
-      "venue": [
-        "Pennyhill Park"
-      ]
+      "venue": "pennyhill-park"
     },
     "choo-choo": {
       "images": [
@@ -3080,7 +3509,7 @@
       "name": "Adorned in Blue",
       "product": "celebration-cake",
       "occasions": [
-        "anniversary"
+        "anniversary-wedding"
       ]
     },
     "arlo": {
@@ -3241,7 +3670,7 @@
       "name": "Diamon Quilted",
       "product": "celebration-cake",
       "occasions": [
-        "anniversary"
+        "anniversary-wedding"
       ]
     },
     "ninja-turtles": {
@@ -3477,7 +3906,7 @@
       "name": "Saphire Present",
       "product": "celebration-cake",
       "occasions": [
-        "anniversary"
+        "anniversary-wedding"
       ]
     },
     "pink-and-sparkle": {
@@ -3639,7 +4068,7 @@
       "name": "Fault Line - Ruby",
       "product": "celebration-cake",
       "occasions": [
-        "anniversary"
+        "anniversary-wedding"
       ]
     },
     "marbled-accents": {
@@ -3784,7 +4213,7 @@
         "Lemon-and-Choc.jpg"
       ],
       "name": "Lemon & Chocolate",
-      "product": "celebration-cake",
+      "product": "cupcakes",
       "occasions": [
         "birthday"
       ]
@@ -3807,7 +4236,7 @@
       "name": "Simply Scrolls",
       "product": "celebration-cake",
       "occasions": [
-        "anniversary"
+        "anniversary-wedding"
       ]
     },
     "lavender-dream": {
@@ -6025,7 +6454,7 @@
       ],
       "product": "celebration-cake",
       "occasions": [
-        "anniversary"
+        "anniversary-wedding"
       ]
     },
     "ttmc-cupcakes": {
@@ -6150,7 +6579,7 @@
       "name": "Silver Anniversary",
       "product": "celebration-cake",
       "occasions": [
-        "anniversary"
+        "anniversary-wedding"
       ]
     },
     "flower-elegance": {
@@ -6198,7 +6627,7 @@
       },
       "product": "celebration-cake",
       "occasions": [
-        "anniversary"
+        "anniversary-wedding"
       ],
       "flavours": [
         "Vanilla"
@@ -7551,5 +7980,492 @@
         "dark": "var(--colour-orange-dark)"
       }
     }
+  },
+  "venues": {
+    "downe-house-school": {
+      "name": "Downe House School",
+      "location": "Cold Ash",
+      "featuredCakes": ["bouquet-pink-mix"]
+    },
+    "wasing-park": {
+      "name": "Wasing Park",
+      "tagline": "A romantic countryside estate for timeless, elegant weddings.",
+      "location": "Aldermaston",
+      "address": ["Wasing Park", "Wasing Lane", "Aldermaston", "Berkshire", "RG7 4NG"],
+      "featuredCakes": ["hannah", "marjorie"],
+      "cakeStylesIntro": "Wasing Park is the perfect backdrop for a beautifully designed wedding cake.",
+      "popularCakeStyles": [
+        "Elegant rustic finishes perfect for the rustic charm of the Castle Barn",
+        "Classic neutral finished tiered cakes to complement the venue's timeless elegance",
+        "Gold or pastel accents for modern, romantic receptions",
+        "Seasonal designs inspired by Wasing Park's garden and natural surroundings"
+      ],
+      "flavourTip": {
+        "text": "To complement this luxurious, romantic venue, choose from the % collection. To suit the estate's natural, outdoor feel, choose from the % collection.",
+        "flavourGroups": ["indulgence", "fresh-fruity"]
+      },
+      "myExperience": "I've had the pleasure of creating cakes for weddings at Wasing Park, and it's always a joy to see how beautifully my designs fit the venue's refined, romantic atmosphere. The spacious setup makes it easy to present even the tallest, most detailed creations.",
+      "occasion": "wedding"
+    },
+    "post-barn": {
+      "name": "The Post Barn",
+      "tagline": "A striking, contemporary countryside barn for modern, stylish weddings",
+      "location": "Newbury",
+      "address": ["The Post Barn", "Snelsmore House", "Snelsmore Common", "Newbury", "Berkshire", "RG14 3AL"],
+      "featuredCakes": ["jules", "jessica"],
+      "cakeStylesIntro": "The Post Barn's contemporary design pairs beautifully with cakes that are both stylish and timeless.",
+      "popularCakeStyles": [
+        "Tall, structured cakes that complement the venue's high ceilings and open layout",
+        "Minimalist decoration to create a perfect modern, elegant look",
+        "Metallic or marble-effect finishes to echo the venue's modern style",
+        "Seasonal florals or dried flower details for a romantic rustic touch"
+      ],
+      "flavourTip": {
+        "text": "For a modern twist that also complements the champagne tower, choose from the % collection. For something a little different to match the venue's uniquness, choose from the % collection.",
+        "flavourGroups": ["indulgence", "nutty-delights"]
+      },
+      "myExperience": "I've created cakes for several weddings at the Post Barn, and it's always such a pleasure to see how beautifully each design stands out in the light-filled space. The team are incredibly professional and helpful, making delivery and setup seamless every time.",
+      "occasion": "wedding"
+    },
+    "old-mill": {
+      "name": "The Old Mill",
+      "tagline": "A romantic riverside venue full of rustic charm",
+      "location": "Aldermaston",
+      "address": ["The Old Mill", "Basingstoke Road", "Aldermaston", "Reading", "Berkshire", "RG7 4LB"],
+      "featuredCakes": ["janelle", "emily-james"],
+      "cakeStylesIntro": "The rustic elegance of The Old Mill pairs perfectly with cakes that are natural, textured and full of charm.",
+      "popularCakeStyles": [
+        "Rustic cakes to complement the wooden beams and relaxed countryside feel",
+        "Seasonal floral designs that complement the riverside garden surroundings",
+        "Rustic stacked tiers displayed on wooden or stone cake stands to suit The Mill setting",
+        "Seasonal colour palettes that echo the surrounding area"
+      ],
+      "flavourTip": {
+        "text": "To give a nod to the riverside setting, choose from the % collection. For a warm rustic feel to match the exposed beams, choose from the % collection.",
+        "flavourGroups": ["fresh-fruity", "cafe-katie"]
+      },
+      "myExperience": "I've had the pleasure of creating wedding cakes for couples celebrating at The Old Mill in Aldermaston, and it's always a joy to see how well my cake designs complement the venue's charm. The staff are wonderful to work with, and the riverside setting provides a truly picturesque backdrop for your cake display.",
+      "occasion": "wedding"
+    },
+    "monkey-island": {
+      "name": "Monkey Island Estate",
+      "tagline": "A luxurious riverside venue steeped in history and elegance",
+      "location": "Bray",
+      "address": ["Bray-on-Thames, Royal Borough of Windsor, SL6 2EE"],
+      "featuredCakes": ["ellie-satin"],
+      "cakeStylesIntro": "With its refined interiors and romantic setting, Monkey Island Estate suits elegant, timeless cake designs that reflect its luxury atmosphere.",
+      "popularCakeStyles": [
+        "Delicate textured cakes for a refined, modern-luxury look",
+        "Statement decorations to complement the Ballroom's grand decor",
+        "Elegant floral arrangements that compliment the grounds and river setting",
+        "Soft ivory or blush tone colour palettes with touches of shine or sparkle for added glamour"
+      ],
+      "flavourTip": {
+        "text": "For timeless flavours to suit   this refined venue, choose from % collection. To complement this luxurious island hotel, choose from the % collection.",
+        "flavourGroups": ["the-classics", "truffle-box"]
+      },
+      "myExperience": "I've had the pleasure of creating bespoke wedding cakes for couples celebrating at Monkey Island Estate, and every event there feels truly special. The venue's riverside setting and elegant interiors provide a stunning backdrop for your wedding cake display.",
+      "occasion": "wedding"
+    },
+    "forest-edge": {
+      "name": "Forest Edge Tipis at Welford Park",
+      "tagline": "A magical woodland setting for relaxed, rustic weddings",
+      "location": "Newbury",
+      "address": ["Welford Road, Welford, Newbury, Berkshire, RG20 8HU"],
+      "featuredCakes": ["samantha", "petals-and-promises"],
+      "cakeStylesIntro": "With its natural woodland charm, Forest Edge Tipis is perfectly suited to cakes that feel organic, relaxed and beautifully in tune with nature.",
+      "popularCakeStyles": [
+        "Semi-naked or rustic buttercream textured cakes that complement the woodland setting",
+        "Foral designs created with wildflowers, greenery and seasonal blooms",
+        "Woodland inspired decoration such as dried flowers, berries & pressed flowers/foliage",
+        "Natural effects like edible bark or natural tones"
+      ],
+      "flavourTip": {
+        "text": "For light, outdoorsy flavours that suit the meadow setting, choose from the % collection. To pair with the fairy tale aesthetic, choose from % collection.",
+        "flavourGroups": ["fresh-fruity", "the-classics"]
+      },
+      "myExperience": "I've had the pleasure of creating cakes for weddings at Forest Edge Tipis at Welford Park, and I always love how relaxed and creative these celebrations feel. The natural surroundings provide a stunning backdrop, and my rustic and floral cake designs fit seamlessly into the tipi atmosphere.",
+      "occasion": "wedding"
+    },
+    "elcot-park": {
+      "name": "The Retreat at Elcot Park",
+      "tagline": "A stylish country house hotel with timeless charm",
+      "location": "Newbury",
+      "address": ["Elcot, Newbury, Berkshire, RG20 8NJ"],
+      "featuredCakes": ["semi-naked-george-austin", "jenifer"],
+      "cakeStylesIntro": "The Retreat at Elcot Park's blend of sophistication and comfort suits wedding cakes that are elegant, refined and full of romantic detail.",
+      "popularCakeStyles": [
+        "Soft, neutral finishes to pair with the surrounding landscape",
+        "Modern, minimalist designs that complement the venue's chic interiors",
+        "Seasonal floral arrangements inspired by The Retreat's stunning gardens",
+        "Pastel or neutral colour palettes with touches of gold, pearl or lace texture"
+      ],
+      "flavourTip": {
+        "text": "To complement the airiness of the Orangery, choose froom the % collection. To match the homely feel of this boutique hotel, choose from %.",
+        "flavourGroups": ["fresh-fruity", "the-biscuit-edit"]
+      },
+      "myExperience": "I've had the pleasure of creating wedding cakes for celebrations at The Retreat at Elcot Park, and it's always a joy to see how perfectly my designs fit this elegant country house. The beautiful interiors provide the perfect backdrop for displaying statement wedding cakes.",
+      "occasion": "wedding"
+    },
+    "great-fosters": {
+      "name": "Great Fosters",
+      "tagline": "A grand heritage estate for elegant, timeless weddings",
+      "location": "Egham",
+      "address": ["Stroude Road, Egham, Surrey, TW20 9UR"],
+      "featuredCakes": ["karis"],
+      "cakeStylesIntro": "The majestic tudor Great Fosters suits wedding cakes that echo its elegance and sense of history, while still feeling fresh and contemporary.",
+      "popularCakeStyles": [
+        "Grand statement cakes that suit the elegance of the Orangery and Tithe Barn",
+        "Romantic floral designs inspired by the sunken gardens and manicured grounds",
+        "Touches of luxury like pearls or gold leaf",
+        "Timeless colour palettes - whites, ivories, champagnes & subtle pastels"
+      ],
+      "flavourTip": {
+        "text": "For timeless flavours to match this historic estate, choose from % collection. For romantic and garden inspired flavours, choose from the % collection.",
+        "flavourGroups": ["the-classics", "fresh-fruity"]
+      },
+      "myExperience": "I love going to Great Fosters - its charm and history make it such a special place to deliver to - and I love designing cakes that complement its grand interiors and exquisite gardens. It's the perfect backdrop for displaying statement wedding cakes.",
+      "occasion": "wedding"
+    },
+    "ufton-court": {
+      "name": "Ufton Court",
+      "tagline": "A charming heritage barn for rustic, romantic weddings",
+      "location": "Reading",
+      "address": ["Green Lane, Ufton Nervet, Reading, Berkshire, RG7 4HD"],
+      "featuredCakes": ["lotty"],
+      "cakeStylesIntro": "The rustic-elegant Ufton Court suits wedding cakes that feel soft, natural and timeless, with details inspired by the barn's beams, its surrounding gardens and the gently historic setting.",
+      "popularCakeStyles": [
+        "Soft, rustic finishes to complement the barn's feel",
+        "Soft touches of elegance such as gold leaf, silk ribbon or delicate piping",
+        "Seasonal elegant floral arrangements to reflect the gardens",
+        "Warm, neutral palettes with ivory, taupe, blush or muted greens"
+      ],
+      "flavourTip": {
+        "text": "For rustic flavours to complement the barn setting, choose from the % collection. To suit the Tudor house and gardens. choose from % collection.",
+        "flavourGroups": ["cafe-katie", "the-classics"]
+      },
+      "myExperience": "I enjoy creating wedding cakes for couples celebrating at Ufton Court. The venue team are always wonderful to work with, and my experience delivering and setting up here means your cake will be styled beautifully within this charming space.",
+      "occasion": "wedding"
+    },
+    "pennyhill-park": {
+      "name": "Pennyhill Park",
+      "tagline": "A luxurious country house for elegant,romantic weddings",
+      "location": "Bagshot",
+      "address": ["London Road, Bagshot, Surrey, GU19 5EU"],
+      "featuredCakes": ["riding-the-waves"],
+      "cakeStylesIntro": "The elegant Pennyhill Park pairs wonderfully with cakes that are timeless, polished and delicately detailed - designs that feel at home within the hotel's elegant suites and landscaped surroundings.",
+      "popularCakeStyles": [
+        "Classic tiered cakes with smooth buttercream or fondant for a refined finish",
+        "Delicate detailing such as lacework, pearl touches or soft texture",
+        "Gold or metallic accents for a hint of luxurious glamour",
+        "Soft, romantic palettes in ivory, blush, champagne or muted pastels"
+      ],
+      "flavourTip": {
+        "text": "For rich flavours to match the opulent interiors, choose from the % collection. For a hint of luxury, choose from the % collection.",
+        "flavourGroups": ["indulgence", "truffle-box"]
+      },
+      "myExperience": "I love the opportunity of designing wedding cakes for couples celebrating at Pennyhill Park and always enjoy the refined atmosphere there. I ensure every delivery and setup is handled smoothly, coordinating with your team so your cake is presented just as you imagined.",
+      "occasion": "wedding"
+    },
+    "easthampsted-park": {
+      "name": "Easthampsted Park",
+      "tagline": "A grand Victorian mansion for elegant, timeless weddings",
+      "location": "Wokingham",
+      "address": ["Off Peacock Lane, Wokingham, RG40 3DF"],
+      "featuredCakes": ["lauren"],
+      "cakeStylesIntro": "The elegant Easthampsted Park suits wedding cakes that blend timeless beauty with soft, romantic details - designs that complement the mansion's grand rooms, sweeping staircase and picturesque grounds.",
+      "popularCakeStyles": [
+        "Classic tiered cakes with smooth buttercream or fondant for a refined finish",
+        "Tall, graceful silhouettes that suit the grandeur of the mansion's reception spaces",
+        "Floral arrangements inspired by the gardens - fresh or delicate sugar flowers",
+        "Elegant detailing such as lace textures or fine piping"
+      ],
+      "flavourTip":{
+        "text": "To match the refineness of this stately home, choose from % collection. For a more modern twist that suits the elegant ballroom, choose from the % collection.",
+        "flavourGroups": ["the-classics", "truffle-box"]
+      },
+      "myExperience": "I love working with the mansion's elegant setting, creating cakes to the couple's chosen style. I liaise with the venue team to make sure everything runs smoothly, with your cake set up and styled beautifully in your chosen room.",
+      "occasion": "wedding"
+    },
+    "trunkwell-house": {
+      "name": "Trunkwell House",
+      "tagline": "A charming country house for relaxed, elegant weddings",
+      "location": "Reading",
+      "address": ["Beech Hill Road, Beech Hill, Reading, RG7 2AT"],
+      "featuredCakes": ["kirsten-3tier"],
+      "cakeStylesIntro": "The relaxed yet elegant Trunkwell House pairs beautfully with wedding cakes that have soft finishes, gentle detailing and a touch of classic charm - designs that sit perfectly within both the country house and marquee settings.",
+      "popularCakeStyles": [
+        "Classic tiered cakes for a refined look that suits the marquee setting beautifully",
+        "Modern rustic touches like subtle texture or foliage accents",
+        "Delicate floral designs inspired by the gardens or wedding bouquets",
+        "Seasonal colour palettes to complement the surrounding grounds"  
+      ],
+      "flavourTip": {
+        "text": "For timeless, crowd-pleasing flavours that suit the country house, choose from % collection. For flavours that complement the house's gardens, choose from the % collection.",
+        "flavourGroups": ["the-classics", "fresh-fruity"]
+      },
+      "myExperience": "I've had the pleasure of creating wedding cakes for couples celebrating at Trunkwell House and know the venue well.  My experience working here means your cake is designed to suit the space beautifully, and delivered and arranged smoothly on the day in coordination with the Trunkwell House team.",
+      "occasion": "wedding"
+    },
+    "old-gore": {
+      "name": "Old Gore by Yard Space",
+      "tagline": "A laid-back Cotswold party barn for fun, relaxed weddings",
+      "location": "Cirencester",
+      "address": ["Fosse Cross, near Cirencester, Gloucestershire, GL54 4BZ"],
+      "featuredCakes": ["vintage-renee"],
+      "cakeStylesIntro": "With its mix of rustic stone, industrial touches and open kitchen, Old Gore suits cake designs that are stylish, relaxed and a little bit playful.",
+      "popularCakeStyles": [
+        "Rustic buttercream cakes that echo the natural countryside hills",
+        "Textured decoration or finishes that suit the natural Cotswold stone and setting",
+        "Seasonal florals & foliage to tie in with the surrounding valley",
+        "Dessert table displays to complement the wedding breakfast layout and street-food feel"
+      ],
+      "flavourTip": {
+        "text": "To match this countryside Cotswold venue, choose from the % collection. To complement the breakfast style and layout, choose from the % collection.",
+        "flavourGroups": ["fresh-fruity", "truffle-box"]
+      },
+      "myExperience": "I've had the pleasure of creating wedding cakes for couples celebrating at Old Gore by Yard Space,and it's always such fun. I'm familiar with the barn layout and I coordinate with the team on timings and setup so your cake is delivered and arranged smoothly on the day, ready to sit beautifully alongside the venue's incredible food.",
+      "occasion": "wedding"
+    },
+    "stanlake-park": {
+      "name": "Stanlake Park",
+      "tagline": "A romantic vineyard estate for relaxed, elegant weddings",
+      "location": "Twyford",
+      "address": ["Twyford, Berkshire, RG10 0BN"],
+      "featuredCakes": ["semi-naked-anna", "semi-naked-oceane"],
+      "cakeStylesIntro": "Stanlake Park pairs wonderfully with cakes that feel organic, textural and stylish - inspired by the natural surroundings, soft tones and wine-country ambience.",
+      "popularCakeStyles": [
+        "Soft buttercream cakes such as semi-naked, textured or modern rustic finishes",
+        "Vineyard inspired designs featuring foliage, grapes or botanitical flowers",
+        "Romantic floral arrangements that echo the estate's gardens",
+        "Elegant neutrals - ivory, soft blush, stone and muted greens"
+      ],
+      "flavourTip": {
+        "text": "To complement this vineyard venue, choose from the % collection. For warm, rustic flavours that suit the countryside setting, choose from the % collection.",
+        "flavourGroups": ["fresh-fruity", "nutty-delights"]
+      },
+      "myExperience": "I've had the pleasure of creating cakes for weddings at Stanlake Park and love working within its beautiful vineyard surroundings. I'm familiar with the layout of the barns and the best setup points. This experience means your cake is thoughtfully placed and styled to suit the space perfectly, working smoothly alongside the venue team on the day.",
+      "occasion": "wedding"
+    },
+    "sheep-drove": {
+      "name": "Sheepdrove",
+      "tagline": "A sustainable countryside venue for relaxed, nature-inspired weddings",
+      "location": "Lambourn",
+      "address": ["Warren Farm, Sheepdrove Road, Lambourn, Hungerford,Berkshire, RG17 7UU"],
+      "featuredCakes": ["charlotte", "ivy"],
+      "cakeStylesIntro": "As a nature-led venue Sheepdrove works wonderfully with cakes designs that feel organic, textural and inspired by the surrounding landscape.",
+      "popularCakeStyles": [
+        "Natural or textured finished that reflect a rustic, natural look",
+        "Floral or foliage dominant designs in seasonal colours",
+        "Botantical or meadow-inspired accents to echo Sheepdrove's outdoor environment",
+        "Earthy, neutral palettes - ivory, soft greens, warm taupes and muted pastels"
+      ],
+      "flavourTip": {
+        "text": "For natural flavours that suit this eco-friendly venue, choose from the % collection. For earthy flavours for a countryside feel, choose from the % collection.",
+        "flavourGroups": ["fresh-fruity", "nutty-delights"]
+      },
+      "myExperience": "I've had the pleasure of creating wedding cakes for couples celebrating at Sheepdrove and love working within its peaceful countryside setting. I'm familiar with the flow of the venue and the best setup points, and I coordinate with the team on the day so your cake is delivered and arranged smoothly within the space.",
+      "occasion": "wedding"
+    },
+    "highcliffe-castle": {
+      "name": "Highcliffe Castle",
+      "tagline": "A romantic cliff-top Gothic revival castle for historic, elegant weddings",
+      "location": "Highcliffe",
+      "address": ["Rothesay Drive, Highcliffe, Dorset, BH23 4LE"],
+      "featuredCakes": ["enchanted-ever-after"],
+      "cakeStylesIntro": "Highcliffe Castle's grandeur and historic elegance lend themselves beautifully to sophisticated, timeless cake designs.",
+      "popularCakeStyles": [
+        "Classic tiered cakes with smooth fondant or refined buttercream",
+        "Statement weddding cakes that complement the Great Hall's soaring windows and grand interior",
+        "Elegant floral arrangements inspired by the castle's gardens & landscaped grounds",
+        "Regal touches such as gold leaf, pearls or delicate piping"
+      ],
+      "flavourTip": {
+        "text": "For flavours fit for a fairytale wedding, choose from the % collection. To complement the beautiful gardens, choose from the % collection.",
+        "flavourGroups": ["indulgence", "fresh-fruity"]
+      },
+      "myExperience": "I love going to Highcliffe Castle and always appreciate its romantic, historic atmosphere. It's the perfect backdrop for a statement wedding cake. I coordinate closely with the castle's wedding team to ensure your cake is delivered and set up elegantly on the day.",
+      "occasion": "wedding"
+    },
+    "hedsor-house": {
+      "name": "Hedsor House",
+      "tagline": "A grand Georgian country house for timeless, luxurious weddings",
+      "location": "Taplow",
+      "address": ["Hedsor Park, Taplow, Buckinghamshire, SL6 0HX"],
+      "featuredCakes": ["louisa-angel", "vintage-hayley"],
+      "cakeStylesIntro": "Hedsor House's dramatic interiors and luxurious aesthetic are beautifully complemented by refined, statement wedding cakes.",
+      "popularCakeStyles": [
+        "Tall, elegant tiered cakes designedf to stand proudly in the Centre Hall",
+        "Vintage style cakes to compliment the historical decor",
+        "Delicate detailing such as fresh floral arrangements, soft ruffles, lacework or pearl accents",
+        "Classic ivory or soft pastel palettes to suit Hedsor House's timeless decor"
+      ],
+      "flavourTip": {
+        "text": "To complement the refined, grand interiors, choose from % collection. For a modern luxurious twist, choose from the % collection.",
+        "flavourGroups": ["the-classics", "truffle-box"]
+      },
+      "myExperience": "I've had the pleasure of delivering wedding cakes to Hedsor House and always appreciate the elegance and scale of the space. I'm familiar with the venue layout, particularly the Centre Hall and Ballroom, and I coordinate with the team on timings and setup so your cake is delivered and arranged smoothly on the day.",
+      "occasion": "wedding"
+    },
+    "oakley-hall": {
+      "name": "Oakley Hall",
+      "tagline": "A grand Georgian country estate for classic, elegant weddings",
+      "location": "Basingstoke",
+      "address": ["Rectory Road, Oakley, Basingstoke, Hampshire, RG23 7EL"],
+      "featuredCakes": ["semi-naked-ross"],
+      "cakeStylesIntro": "The refined, traditional feel of Oakley Hall lends itself beautifully to elegant, classic and floral cake designs.",
+      "popularCakeStyles": [
+        "Smooth buttercream or fondant finishes for a polished, timeless look",
+        "Tall, traditional tiered cakes that suit the grandeur of the reception spaces",
+        "Soft floral arrangements inspired by the gardens and grounds",
+        "Romantic palettes - ivory, champagne, blush, soft pastels"
+      ],
+      "flavourTip": {
+        "text": "To suit this traditional manor house, choose from % collection. For natural flavours that suit the countryside setting, choose from the % collection.",
+        "flavourGroups": ["the-classics", "fresh-fruity"]
+      },
+      "myExperience": "I've had the pleasure of delivering wedding cakes to Oakley Hall and always enjoy working in its elegant, welcoming spaces.  The beautiful interiors provide the perfect backdrop for displaying statement wedding cakes.",
+      "occasion": "wedding"
+    },
+    "clock-barn": { 
+      "name": "Clock Barn",
+      "tagline": "A charming, rustic Hampshire barn for warm, relaxed countryside weddings",
+      "location": "Whitchurch",
+      "address": ["Tufton Warren, Whitchurch, Hampshire, RG28 7RB"],
+      "featuredCakes": ["semi-naked-autumn"],
+      "cakeStylesIntro": "Clock Barn's natural textures and rustic atmosphere pair perfectly with cakes that feel organic, textural and elegantly understated.",
+      "popularCakeStyles": [
+        "Semi-naked or textured buttercream cakes that complement the wooden beams",
+        "Soft floral designs using seasonal fresh flowers or foliage",
+        "Subtle details like dried flowers or delicate meadow-inspired accents",
+        "Natural, earthy palettes - ivory, stone, warm taupes, soft greens"
+      ],
+      "flavourTip": {
+        "text": "To suit the freshness of the natural surroundings, choose from the % collection. For rustic, cosy flavours similar to the barn's feel, choose from the % collection.",
+        "flavourGroups": ["fresh-fruity", "cafe-katie"]
+      },
+      "myExperience": "I've delivered to the Clock Barn and love its warm, rustic setting. I handle delivery and setup in coordination with the venue team so your cake is presented perfectly for your celebration.",
+      "occasion": "wedding"
+    },
+    "vineyard-stockcross": {
+      "name": "The Vineyard",
+      "tagline": "Luxury, Art-Led, Five-Star Hotel Weddings in Berkshire",
+      "location": "Stockcross",
+      "address": ["Stockcross, Newbury, Berkshire, RG20 8JU"],
+      "featuredCakes": ["katherine"],
+      "cakeStylesIntro": "The Vineyard's interiors feature clean lines, modern art and a refined palette, which all pair beautifully with more luxurious, contemporary cake designs.",
+      "popularCakeStyles": [
+        "Tall, structured cakes with crisp edges to complement the venue's stylish interiors",
+        "Artistic detailing that nods to The Vineyard's incredible art collection",
+        "Touches of metallics and refined details like pearls",
+        "Soft floral designs using seasonal flowers or foliage"
+      ],
+      "flavourTip": {
+        "text": "To pair perfectly with this wine-led venue, choose from the % collection. For flavours that add a little luxury, choose from the % collection.",
+        "flavourGroups": ["truffle-box", "indulgence"]
+      },
+      "myExperience": "I've had the pleasure of creaing wedding cakes for celebrations at The Vineyard, and it's always a wonderful venue to work with. The elegant interiors offer a beautiful setting for showcasing your cake. I liaise directly with the venue team in advance which makes the setup seamless and stress-free for you.",
+      "occasion": "wedding"
+    },
+    "pembroke-lodge": {
+      "name": "Pembroke Lodge",
+      "tagline": "Elegant, historic and surrounded by sweeping parkland views, Pembroke Lodge is a romantic wedding venue set within the heart of Richmond Park",
+      "location": "Richmond",
+      "address": ["Richmond Park, Richmond, Surrey, TW10 5HX"],
+      "featuredCakes": ["francesca"],
+      "cakeStylesIntro": "The blend of Georgian architecture, soft garden landscapes and classic interiors suits a range of refined cake styles.",
+      "popularCakeStyles": [        
+        "Soft, subtle detailing to complement the calm, airy interiors",
+        "Elegant piping or gentle metallic touches to add a sophisticated feel",
+        "Floral arrangements that echo the seasonal gardens",
+        "Classic, clean palettes - neutrals, natural and subtle"
+      ],
+      "flavourTip": {
+        "text": "For timeless flavours befitting of this historic venue, choose from % collection. To pair with the bright Georgian rooms, choose from the % collection.",
+        "flavourGroups": ["the-classics", "fresh-fruity"]
+      },
+      "myExperience": "I've delivered to Pembroke Lodge and it's a fantastic venue to work with. The elegant, light-filled rooms create a beautiful setting for showcasing your wedding cake. I'm familiar with the layout and delivery access, making the setup smooth and stress-free for your day.",
+      "occasion": "wedding"
+    },
+    "swan-streatley": {
+      "name": "The Swan at Streatley",
+      "tagline": "A riverside boutique-hotel venue for relaxed, romantic weddings by the Thames",
+      "location": "Streatley-on-Thames",
+      "address": ["High Street, Streatley-on-Thames, Berkshire, RG8 9HR"],
+      "featuredCakes": ["leah"],
+      "cakeStylesIntro": "Because The Swan blends riverside charm, relaxed luxury and boutique-hotel style, it works beautifully with cake designs that feel elegant, soft and romantic.",
+      "popularCakeStyles": [
+        "Soft, classic tiered cakes perfect for the hotel's refined interiors",
+        "Elegant, understated textured detailing for a timeless look that suits the venue",
+        "Romantic floral arrangments to echo the gardens and riverside surroundings", 
+        "Gentle colour palettes - soft ivories, blushes or pastel tones"
+      ],
+      "flavourTip": {
+        "text": "To complement the relaxing atmosphere, choose from %. For a romantic touch, choose from the % collection.",
+        "flavourGroups": ["the-biscuit-edit", "truffle-box"]
+      },
+      "myExperience": "I've delivered wedding cakes to The Swan and always enjoy the relaxed atmosphere and friendly team. The layout is very straightforward for setup, and the riverside light makes it an especially beautiful venue to showase your cake.",
+      "occasion": "wedding"
+    },
+    "great-house": {
+      "name": "The Great House at Sonning",
+      "tagline": "A beautifully stylish riverside wedding venue set along a peaceful stretch of the Thames",
+      "location": "Sonning",
+      "address": ["Thames Street, Sonning, Berkshire, RG4 6UT"],
+      "featuredCakes": ["just-leah"],
+      "cakeStylesIntro": "With its relaxed, contemporary interiors, beautiful lawns and charming waterside views, The Great House at Sonning suits cakes that feel fresh, relaxed and effortlessly elegant.",
+      "popularCakeStyles": [
+        "Soft, organic finishes that suit the modern yet relaxed atomosphere",
+        "Clean tiers with smooth, modern lines to complement the venue's contemporary aesthetic",
+        "Delicate blooms in seasonal, natural tones that echo the riverside gardens",
+        "Subtle foliage accents inspired by the riverside surroundings"
+      ],
+      "flavourTip": {
+        "text": "To suit the riverside setting, choose from the % collection. For a more contemporary touch, choose from the % collection.",
+        "flavourGroups": ["fresh-fruity", "nutty-delights"]
+      },
+      "myExperience": "I've had the pleasure of creating cakes for celebrations at The Great House and always enjoy the relaxed riverside feel and modern interiors. The team are friendly and helpful, and the setup is straightforward, making the whole process smooth and stress-free. It's a beautiful venue to showcase your wedding cake.",
+      "occasion": "wedding"
+    },
+    "old-luxters": {
+      "name": "Old Luxters Barn",
+      "tagline": "A charming 18th century converted barn set in the idyllic Hambleden Valley for weddings with a natural, timeless feel",
+      "location": "Henley-on-Thames",
+      "address": ["Hambleden, Henley-on-Thames, Oxfordshire, RG9 6JW"],
+      "featuredCakes": ["semi-naked-george"],
+      "cakeStylesIntro": "The rustic charm and countryside setting of Old Luxters Barn lend themselves beautifully to cakes that feel natural, relaxed and effortlessly elegant.",
+      "popularCakeStyles": [
+        "Rustic cakes to complement the barn's beam and stone work",
+        "Smooth finishes with soft textures & natural decor to combine the rustic feel with wedding elegance",
+        "Soft floral or foliage decoration to tie in with the woodland and vineyard surroundings",
+        "Neutral, earthy palettes - creams, ivories, soft taupes, subtle greenery tones"
+      ],
+      "flavourTip": {
+        "text": "For comforting, homely flavours that suit the barn's warm, characterful setting, choose from the % collection. For a richer countryside feel, choose from the % collection.",
+        "flavourGroups": ["cafe-katie", "nutty-delights"]
+      },
+      "myExperience": "I've worked at Old Luxters Barn and always appreciate the warmth and countryside charm it offers. The layout - with its barn interior, courtyard, vineyard surroundings and optional marquee/orchard area - gives flexibility in display and cake setup. I coordinate with the venue team on the day to make sure delivery and setup are smooth, and I take care to style the cake so it complements the rustic, relaxed atmosphere beautifully.",
+      "occasion": "wedding"
+    },
+    "tylney-hall": {
+      "name": "Tylney Hall",
+      "tagline": "A luxury country house made for elegant, unforgettable weddings",
+      "location": "Hook",
+      "address": ["Ridge Lane, Rotherwick, Hook, Hampshire, RG27 9AZ"],
+      "featuredCakes": ["kirsten-buttercream", "vintage-sophie"],
+      "cakeStylesIntro": "The elegant interiors, manicured gardens and timeless architecture of Tylney Hall pair beautifully with cakes that feel classic, refined and romantic.",
+      "popularCakeStyles": [
+        "A classic smooth finish perfect for complementing the grand, traditional interiors",
+        "Subtle metallic or pearl accents echo the luxurious, stately feel of the house",
+        "Soft floral arrangments that reflect the beautiful gardens",
+        "Understated, delicate, romantic palettes - classic white, pastels, warm tones"
+      ],
+      "flavourTip": {
+        "text": "To style with this grand, romantic country house, choose from % collection. For a touch of luxury to complement the estate's elegant feel, choose from the % collection.",
+        "flavourGroups": ["the-classics", "truffle-box"]
+      },
+      "myExperience": "I'm familiar with Tylney Hall and its beautifully arranged event spaces. The team are welcoming and well organised, and the layout makes delivery and setup smooth and straightforward. It's a wonderful venue for showcasing elegant, romantic wedding cakes.",
+      "occasion": "wedding"
+    }
   }
-}
+} 

@@ -69,6 +69,15 @@ function setupData() {
         seeMoreLink: '/flavours'
     };
 
+    // Inject flavour names into venue flavour tips
+    for (const venueKey in data.venues) {
+        const venue = data.venues[venueKey];
+        if (venue.flavourTip) {
+            const { text, flavourGroups } = venue.flavourTip;
+            venue.flavourTip = text.replace(/%/g, () => `<span class="flavour">${data.flavourGroups[flavourGroups.shift()].name}</span>`);
+        }
+    }
+
     // Get size of each portfolio image and video
     let videoPromises = [];
 

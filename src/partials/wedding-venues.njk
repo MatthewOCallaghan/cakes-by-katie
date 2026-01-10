@@ -1,0 +1,12 @@
+<h2 style="margin-top: 0;">Wedding venues I love</h2>
+<p class="handwritten-tagline">Find your perfect venue - and the perfect cake to match.</p>
+<p>Your wedding venue sets the tone for your entire day — and your cake should complement it beautifully.</p>
+<p>I've had the joy of creating cakes for many stunning wedding venues across Berkshire and the surrounding counties, from rustic barns and countryside estates to elegant manor houses and chic modern spaces.</p>
+<p>This guide showcases just some of my favourite venues, along with cake inspiration tailored to each setting. Whether you're celebrating in a romantic barn, a grand country house, or a garden marquee, you'll find ideas to help you imagine how your cake can look in your chosen space.</p>
+<ul class="venue-list">
+    {% for key, page in pages %}
+        {% if page.venue and venues[page.venue].occasion === "wedding" %}
+            <li><a href="/delivery/{{ page.venue }}"><span class="venue-name">{{ venues[page.venue].name }}</span><span class="venue-location">{{ venues[page.venue].location }}</span></a></li>
+        {% endif %}
+    {% endfor %}
+</ul>

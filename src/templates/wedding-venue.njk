@@ -1,0 +1,92 @@
+{% set type = "weddingVenue" %}
+{% extends "layout.njk" %}
+
+{% block main %}
+
+    {% set venueKey = pages[page].venue %}
+    {% set venue = venues[venueKey] %}
+
+    <section class="intro">
+        <div class="venue-intro">
+            <div class="venue-image {{ "image-circle" if portfolio[venue.featuredCakes[0]].images[0].aspectRatio > 0.9 and portfolio[venue.featuredCakes[0]].images[0].aspectRatio < 1.1 }}">
+                {% from "macros/picture.njk" import pictureElement with context %}
+                {{ pictureElement("portfolio/" ~ portfolio[venue.featuredCakes[0]].images[0].src, "Wedding cake at " ~ venue.name, "250px") }}
+            </div>
+            <div class="venue-text">
+                <p class="handwritten-tagline">{{ venue.tagline }}</p>
+
+                <p class="venue-address">{{ venue.address | join(", ") }}</p>
+
+                <a
+                    class="button wedding-venue-cta-button"
+                    href="/products/wedding-cakes"
+                >
+                    Shop wedding cakes
+                </a>
+            </div>
+        </div>
+    </section>
+
+    {% from "macros/image-carousel.njk" import imageCarousel with context %}
+    {{
+        imageCarousel(
+            getMatchingCakes({ venue: venueKey }) if getMatchingCakes({ venue: venueKey }).length > 5 else getMatchingCakes({ product: 'wedding-cake' }),
+            'linear-gradient(to bottom, #fff, ' ~ products.weddingCakes.colours.light ~ ')'
+        )
+    }}
+
+    <section style="background:{{products.weddingCakes.colours.light}}">
+        <div class="venue-content">
+            <h2>Wedding cake inspiration for {{ venue.name }}</h2>
+            <p>{{ venue.cakeStylesIntro }}</p>
+            <p>Potential cake elements for the venue include:</p>
+            <ul>
+                {% for style in venue.popularCakeStyles %}
+                    <li>{{ style }}</li>
+                {% endfor %}
+            </ul>
+            <div class="flavour-tip">
+                <div class="flavour-tip-heading">
+                    <div class="flavour-icon">
+                        {% include "lemon.svg" %}
+                    </div>
+                    <h3>Flavour tip</h3>
+                </div>
+                <p>{{ venue.flavourTip | safe }}</p>
+                <a href="/flavours">Explore flavours</a>
+            </div>
+
+            {% set dividingImage = portfolio[venue.featuredCakes[1] if venue.featuredCakes[1] else venue.featuredCakes[0]].images[0] %}
+            <div class="venue-image {{ "image-circle" if dividingImage.aspectRatio > 0.9 and dividingImage.aspectRatio < 1.1 }}">
+                {{ pictureElement("portfolio/" ~ dividingImage.src, "Wedding cake at " ~ venue.name, "220px") }}
+            </div>
+
+            <h2>My experience at {{ venue.name }}</h2>
+            <p>{{ venue.myExperience }}</p>
+
+            <a
+                class="button wedding-venue-cta-button"
+                href="/products/wedding-cakes"
+            >
+                Shop wedding cakes
+            </a>
+        </div>
+    </section>
+
+    {{
+        imageCarousel(
+            getMatchingCakes({ venue: venueKey }) if getMatchingCakes({ venue: venueKey }).length > 5 else getMatchingCakes({ product: 'wedding-cake' }),
+            'linear-gradient(to bottom, #fff, #000)'
+        )
+    }}
+
+    {% include "featured-in.njk" %}
+
+    {% include "wedding-favours.njk" %}
+    
+{% endblock %}
+
+{% block scripts %}
+    {% from "macros/image-carousel-scripts.njk" import imageCarouselScripts %}
+    {{ imageCarouselScripts() }}
+{% endblock %}
