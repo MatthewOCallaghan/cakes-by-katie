@@ -1159,9 +1159,10 @@
     },
     "jules": {
       "images": [
-        "jules.jpg"
+        "jules.jpg", "jules2.jpg"
       ],
       "name": "Jules",
+      "description": "Second photo Photographer: Eye Imagine Photography",
       "product": "wedding-cake",
       "occasions": [
         "wedding"
@@ -1229,6 +1230,17 @@
         "janelle-distance.jpg"
       ],
       "name": "Janelle",
+      "product": "wedding-cake",
+      "occasions": [
+        "wedding"
+      ],
+      "venue": "old-mill"
+    },
+    "emily-james":{
+      "images": [
+        "emily-james.jpg", "emily-james2.jpg"
+      ],
+      "name": "Emily",
       "product": "wedding-cake",
       "occasions": [
         "wedding"
@@ -1315,6 +1327,17 @@
       ],
       "venue": "The Victory Hall"
     },
+    "karis": {
+      "images": [
+        "karis.jpg", "karis2.jpg"
+      ],
+      "name": "Karis",
+      "product": "wedding-cake",
+      "occasions": [
+        "wedding"
+      ],
+      "venue": "great-fosters"
+    },
     "vintage-hayley": {
       "images": [
         "vintage-hayley.jpg"
@@ -1366,6 +1389,17 @@
       "flavours": [
         "Vanilla"
       ]
+    },
+    "semi-naked-autumn": {
+      "images": [
+        "semi-naked-autumn.jpg", "semi-naked-autumn2.jpg"
+      ],
+      "name": "Semi Naked",
+      "product": "wedding-cake",
+      "occasions": [
+        "wedding"
+      ],
+      "venue": "clock-barn"
     },
     "eliane": {
       "images": [
@@ -1610,6 +1644,17 @@
       "occasions": [
         "anniversary-wedding"
       ]
+    },
+    "semi-naked-hannah": {
+      "images": [
+        "semi-naked-hannah.jpg"
+      ],
+      "name": "Semi Naked",
+      "product": "wedding-cake",
+      "occasions": [
+        "wedding"
+      ],
+      "venue": "Oxford Wine Bar"
     },
     "samantha": {
       "images": [
@@ -2138,9 +2183,10 @@
     },
     "emma": {
       "images": [
-        "emma.jpg"
+        "emma.jpg", "emma2.jpg"
       ],
       "name": "Emma",
+      "description": "Photographer: Seattle to London Photography",
       "product": "wedding-cake",
       "occasions": [
         "wedding"
@@ -7296,7 +7342,7 @@
       "tagline": "A romantic riverside venue full of rustic charm",
       "location": "Aldermaston",
       "address": ["The Old Mill", "Basingstoke Road", "Aldermaston", "Reading", "Berkshire", "RG7 4LB"],
-      "featuredCakes": ["janelle"],
+      "featuredCakes": ["janelle", "emily-james"],
       "cakeStylesIntro": "The rustic elegance of The Old Mill pairs perfectly with cakes that are natural, textured and full of charm.",
       "popularCakeStyles": [
         "Rustic cakes to complement the wooden beams and relaxed countryside feel",
@@ -7376,7 +7422,7 @@
       "tagline": "A grand heritage estate for elegant, timeless weddings",
       "location": "Egham",
       "address": ["Stroude Road, Egham, Surrey, TW20 9UR"],
-      "featuredCakes": ["semi-naked-sage"],
+      "featuredCakes": ["karis"],
       "cakeStylesIntro": "The majestic tudor Great Fosters suits wedding cakes that echo its elegance and sense of history, while still feeling fresh and contemporary.",
       "popularCakeStyles": [
         "Grand statement cakes that suit the elegance of the Orangery and Tithe Barn",
@@ -7596,7 +7642,7 @@
       "tagline": "A charming, rustic Hampshire barn for warm, relaxed countryside weddings",
       "location": "Whitchurch",
       "address": ["Tufton Warren, Whitchurch, Hampshire, RG28 7RB"],
-      "featuredCakes": ["semi-naked-sage"],
+      "featuredCakes": ["semi-naked-autumn"],
       "cakeStylesIntro": "Clock Barn's natural textures and rustic atmosphere pair perfectly with cakes that feel organic, textural and elegantly understated.",
       "popularCakeStyles": [
         "Semi-naked or textured buttercream cakes that complement the wooden beams",
