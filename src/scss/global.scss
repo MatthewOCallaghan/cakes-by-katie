@@ -1088,70 +1088,100 @@ footer {
 
 .grid-menu-links {
     
-    padding: 0 20px;
-
     h2 {
         text-align: center;
-        margin-bottom: 0;
+        margin-top: 0;
+
+        text-wrap: balance;
+        text-wrap: pretty;
     }
 
     > p {
         text-align: center;
+        margin-top: -1.2em;
+        margin-bottom: 2em;
     }
 
     div.links-container {
         display: flex;
         flex-wrap: wrap;
-        margin: 30px auto;
-        max-width: 1200px;
+        max-width: 1300px;
         justify-content: center;
-        gap: min(3vw, 30px);
+        margin: auto;
 
-        a {
-            display: block;
-            width: 20vw;
-            min-width: 160px;
-            max-width: 280px;
-            aspect-ratio: 1;
-            
-            border-radius: 20px;
-            box-shadow: 0 0 4px 0 #00000030, inset 0 0 4px 0 #00000030;
-            color: #fff;
-            text-decoration: none;
-            text-align: center;
-            overflow: hidden;
+        $gap: min(2vw, 30px);
+        gap: $gap;
 
-            div.link-inner {
-                transition: all .5s;
-                display: grid;
-                grid-template-rows: 50% 1fr;
-                height: 100%;
+        .links-row {
 
-                h3 {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    height: 100%;
-                    margin: 0;
-                    text-shadow: 0 0 4px #00000036;
-                    font-size: min(max(3vw, 2em), 3em);
-                    padding: 0 10%;
-                    line-height: 90%;
-                }
+            display: flex;
+            justify-content: center;
+            gap: $gap;
+
+            a {
+                display: block;
+                width: 300px;
+                aspect-ratio: 1;
                 
-                img {
-                    width: 80%;
+                border-radius: 20px;
+                box-shadow: 0 0 4px 0 #00000030, inset 0 0 4px 0 #00000030;
+                color: #fff;
+                text-decoration: none;
+                text-align: center;
+                overflow: hidden;
+
+                div.link-inner {
                     transition: all .5s;
-                    transform-origin: top;
+                    display: grid;
+                    grid-template-rows: 50% 1fr;
+                    height: 100%;
+
+                    h3 {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 100%;
+                        margin: 0;
+                        text-shadow: 0px 1px 2px rgb(0 0 0 / 70%);
+                        font-size: 2.8em;
+                        padding: 0 10%;
+                        line-height: 90%;
+
+                        @media (max-width: 450px) {
+                            margin: auto;
+                            width: min-content;
+                        }
+                    }
+                    
+                    img {
+                        width: 80%;
+                        transition: all .5s;
+                        transform-origin: top;
+                    }
+                }
+
+                @include mixins.hover {
+                    div.link-inner {
+                        transform: translateY(calc(10px - 50%));
+
+                        img {
+                            transform: scale(1.12);
+                        }
+                    }
                 }
             }
 
-            @include mixins.hover {
-                div.link-inner {
-                    transform: translateY(calc(10px - 50%));
+            // Min 2 per row
+            @media (max-width: 700px) {
+                display: contents;
 
-                    img {
-                        transform: scale(1.12);
+                a {
+                    min-width: auto;
+                    max-width: none;
+                    width: calc(50% - $gap / 2);
+
+                    div.link-inner h3 {
+                        font-size: 7vw;
                     }
                 }
             }
