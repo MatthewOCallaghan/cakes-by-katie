@@ -1,24 +1,31 @@
-{% macro gridMenuLinks(links, title, text) %}
+{% macro gridMenuLinks(links, title, text = null, multiples = 1) %}
     <section class="grid-menu-links" >
         {% from "macros/fixed-background.njk" import fixedBackground with context %}
         {{ fixedBackground("backgrounds/marble-background.jpg", "Marble background image") }}
 
         <h2>{{ title }}</h2>
         {% if text %}
-            <p>{{ text }}<p>
+            <p>{{ text }}</p>
         {% endif %}
         
         {% from "macros/picture.njk" import pictureElement with context %}
         
         <div class="links-container">
-            
             {% for link in links %}
+                {% if loop.index0 % multiples == 0 %}
+                    <div class="links-row">
+                {% endif %}
+                
                 <a href="{{ link.href }}" style="background:{{ link.colour }}">
                     <div class="link-inner">
                         <h3>{{ link.title }}</h3>
                         {{ pictureElement(link.imageSrc, link.imageAlt, "200px") }}
                     </div>
                 </a>
+                
+                {% if (loop.index % multiples == 0) or loop.last %}
+                    </div>
+                {% endif %}
             {% endfor %}
         </div>
     </section>
