@@ -75,6 +75,44 @@
         <a class="button" href="/portfolio" >See more of my portfolio</a>
     </section>
 
+    {% from "macros/grid-menu-links.njk" import gridMenuLinks with context %}
+    {{
+        gridMenuLinks(
+            [
+                {
+                    href: '/products/celebration-cakes',
+                    title: 'Celebration Cakes',
+                    imageSrc: 'cake-cutouts/parker-penguin.png',
+                    imageAlt: 'Parker penguin birthday cake',
+                    colour: 'linear-gradient(135deg, ' + products.celebrationCakes.colours.dark + ', ' + products.celebrationCakes.colours.light + ')'
+                },
+                {
+                    href: '/products/wedding-cakes',
+                    title: 'Wedding Cakes',
+                    imageSrc: 'cake-cutouts/wedding.png',
+                    imageAlt: 'Wedding cake',
+                    colour: 'linear-gradient(135deg, ' + products.weddingCakes.colours.dark + ', ' + products.weddingCakes.colours.light + ')'
+                },
+                {
+                    href: '/products/cupcakes',
+                    title: 'Cupcakes',
+                    imageSrc: 'cake-cutouts/rose-mix-triple.png',
+                    imageAlt: 'Rose mix cupcakes',
+                    colour: 'linear-gradient(135deg, ' + products.cupcakes.colours.dark + ', ' + products.cupcakes.colours.light + ')'
+                },
+                {
+                    href: '/products/wedding-favours',
+                    title: 'Wedding favours',
+                    imageSrc: 'wedding-favours/cake-jar-cutout.png',
+                    imageAlt: 'Cake jar wedding favour',
+                    colour: 'linear-gradient(135deg, ' + products.weddingFavours.colours.dark + ', ' + products.weddingFavours.colours.light + ')'
+                }
+            ],
+            "What are you looking for?",
+            multiples=2
+        )
+    }}
+
     {% include "featured-in.njk" %}
 
     {# Christmas section #}
