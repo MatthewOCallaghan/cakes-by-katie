@@ -14,8 +14,8 @@
         <div id="portfolio-filters">
             <button aria-label="Show all cakes"><span>All cakes</span></button>
             {% for item in [
+            { label: 'Wedding cakes', value: 'wedding-cake', lightColour: products.weddingCakes.colours.light, darkColour: products.weddingCakes.colours.dark },
                 { label: 'Celebration cakes', value: 'celebration-cake', lightColour: products.celebrationCakes.colours.light, darkColour: products.celebrationCakes.colours.dark },
-                { label: 'Wedding cakes', value: 'wedding-cake', lightColour: products.weddingCakes.colours.light, darkColour: products.weddingCakes.colours.dark },
                 { label: 'Cupcakes', value: 'cupcakes', lightColour: products.cupcakes.colours.light, darkColour: products.cupcakes.colours.dark }
             ]%}
                 <button

@@ -13,15 +13,6 @@
 
         {% from "macros/picture.njk" import pictureElement with context %}
 
-        <div id="celebration-cakes" class="price-group" style="background:{{products.celebrationCakes.colours.light}}">
-            <div class="image-container">
-                {{ pictureElement("cake-cutouts/" ~ "shades-of-chocolate.png", "Celebration cake", "220px") }}
-            </div>
-
-            <h2>Celebration cakes</h2>
-            {% include "celebration-cake-pricing.njk" %}
-        </div>
-
         <div id="wedding-cakes" class="price-group"  style="background:{{products.weddingCakes.colours.light}}">
             <div class="image-container">
                 {{ pictureElement("cake-cutouts/" ~ "wedding.png", "Wedding cake", "220px") }}
@@ -29,6 +20,15 @@
 
             <h2>Wedding cakes</h2>
             {% include "wedding-cake-pricing.njk" %}
+        </div>
+        
+        <div id="celebration-cakes" class="price-group" style="background:{{products.celebrationCakes.colours.light}}">
+            <div class="image-container">
+                {{ pictureElement("cake-cutouts/" ~ "shades-of-chocolate.png", "Celebration cake", "220px") }}
+            </div>
+
+            <h2>Celebration cakes</h2>
+            {% include "celebration-cake-pricing.njk" %}
         </div>
 
         <div id="cupcakes" class="price-group" style="background:{{products.cupcakes.colours.light}}">

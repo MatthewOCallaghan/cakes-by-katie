@@ -1152,8 +1152,8 @@
         "location": "Tilehurst"
       },
       "flavours": [
-        "Lemon",
-        "Toffee",
+        "Lemon Essence",
+        "Golden Caramel",
         "Vanilla"
       ]
     },
@@ -1219,8 +1219,8 @@
         "wedding"
       ],
       "flavours": [
-        "Lemon",
-        "Orange"
+        "Lemon Essence",
+        "Orange Essence"
       ],
       "venue": "St Barnabas Church"
     },
@@ -1417,7 +1417,7 @@
         "location": "Thatcham"
       },
       "flavours": [
-        "Coffee & Walnut"
+        "Nutty Espresso"
       ]
     },
     "abby": {
@@ -1482,9 +1482,9 @@
         "location": "Basingstoke"
       },
       "flavours": [
-        "Coffee",
-        "Raspberry & White Chocolate",
-        "Lemon & Elderflower"
+        "Espresso",
+        "Raspberry Dream",
+        "Lemon Blossom"
       ],
       "venue": "post-barn"
     },
@@ -1566,8 +1566,8 @@
         "location": "London"
       },
       "flavours": [
-        "Toffee",
-        "Lemon & Elderflower",
+        "Golden Caramel",
+        "Lemon Blossom",
         "Vanilla"
       ]
     },
@@ -1630,7 +1630,7 @@
         "location": "Staines"
       },
       "flavours": [
-        "Raspberry & White Chocolate",
+        "Raspberry Dream",
         "Vanilla"
       ]
     },
@@ -1734,7 +1734,7 @@
         "name": "Frankie &  Josh",
         "location": "Devon"
       },
-      "flavours": ["GF Chocolate", "GF Lemon & Elderflower", "GF Raspberry & White Chocolate"]
+      "flavours": ["GF Chocolate", "GF Lemon Blossom", "GF Raspberry Dream"]
     },
     "petals-and-pearls": {
       "images": [
@@ -1751,7 +1751,7 @@
         "birthday"
       ],
       "flavours": [
-        "Lemon"
+        "Lemon Essence"
       ]
     },
     "vintage-renee": {
@@ -1795,10 +1795,10 @@
         "anniversary"
       ],
       "flavours": [
-        "Chocolate Orange",
-        "Coffee & Walnut",
-        "Orange",
-        "Lemon",
+        "Midnight Orange",
+        "Nutty Espresso",
+        "Orange Essence",
+        "Lemon Essence",
         "Carrot"
       ],
       "venue": "elcot-park"
@@ -1857,7 +1857,7 @@
         "birthday"
       ],
       "flavours": [
-        "Raspberry & White Chocolate",
+        "Raspberry Dream",
         "Vanilla"
       ]
     },
@@ -1878,7 +1878,7 @@
       },
       "flavours": [
         "Vanilla",
-        "Raspberry & White Chocolate"
+        "Raspberry Dream"
       ]
     },
     "off-to-the-ball": {
@@ -1973,8 +1973,8 @@
         "location": "Thatcham"
       },
       "flavours": [
-        "Raspberry & White Chocolate",
-        "Lemon",
+        "Raspberry Dream",
+        "Lemon Essence",
         "Vanilla Cupcakes"
       ]
     },
@@ -1992,7 +1992,7 @@
         "name": "Hannah"
       },
       "flavours": [
-        "Chocolate Oreo"
+        "Cookies & Chocolate"
       ]
     },
     "just-louisa": {
@@ -2050,8 +2050,8 @@
       },
       "flavours": [
         "Vanilla",
-        "Vanilla Biscoff",
-        "Toffee"
+        "Lotus",
+        "Golden Caramel"
       ]
     },
     "wild-west": {
@@ -2207,7 +2207,7 @@
         "birthday"
       ],
       "flavours": [
-        "Chocolate Oreo",
+        "Cookies & Chocolate",
         "Vegan Vanilla Cupcakes"
       ]
     },
@@ -2269,9 +2269,9 @@
         "location": "Guildford"
       },
       "flavours": [
-        "Coffee",
-        "Lemon & Elderflower",
-        "Raspberry & White Chocolate"
+        "Espresso",
+        "Lemon Blossom",
+        "Raspberry Dream"
       ]
     },
     "corporate-cupcake-hearts": {
@@ -2597,7 +2597,7 @@
         "birthday"
       ],
       "flavours": [
-        "Baileys"
+        "Irish Cream"
       ]
     },
     "enchanted-ever-after": {
@@ -2614,7 +2614,7 @@
       },
       "product":"wedding-cake",
       "occasions": ["wedding"],
-      "flavours": ["Carrot" ,"Lemon", "Chocolate Biscoff"],
+      "flavours": ["Carrot" ,"Lemon Essence", "Lotus Noir"],
       "venue": "highcliffe-castle"
     },
     "rosalia": {
@@ -2645,9 +2645,9 @@
         "wedding"
       ],
       "flavours": [
-        "Chocolate Biscoff",
-        " Chocolate Oreo",
-        "Lemon"
+        "Lotus Noir",
+        "Cookies & Chocolate",
+        "Lemon Essence"
       ],
       "venue": "Crowne Plaza, Marlow"
     },
@@ -2708,8 +2708,8 @@
         "name": "Jason, Benson"
       },
       "flavours": [
-        "Raspberry & White Chocolate",
-        "Chocolate Biscoff"
+        "Raspberry Dream",
+        "Lotus Noir"
       ],
       "venue": "Mercure Thame Lambert Hotel"
     },
@@ -2761,9 +2761,9 @@
         "wedding"
       ],
       "flavours": [
-        "Lemon & Elderflower",
-        "Chocolate Orange",
-        "Raspberry & White Chocolate"
+        "Lemon Blossom",
+        "Midnight Orange",
+        "Raspberry Dream"
       ],
       "venue": "wasing-park"
     },
@@ -2841,8 +2841,8 @@
         "location": "Woodley"
       },
       "flavours": [
-        "Raspberry & White Chocolate",
-        "Lemon"
+        "Raspberry Dream",
+        "Lemon Essence"
       ],
       "venue": "vineyard-stockcross"
     },
@@ -2908,7 +2908,7 @@
         "birthday"
       ],
       "flavours": [
-        "Chocolate Oreo"
+        "Cookies & Chocolate"
       ]
     },
     "semi-naked-drips": {
@@ -2927,7 +2927,7 @@
       ],
       "flavours": [
         "Chocolate",
-        "Raspberry & White Chocolate"
+        "Raspberry Dream"
       ],
       "venue": "Donnington Grove"
     },
@@ -2987,7 +2987,7 @@
         "name": "Louise"
       },
       "flavours": [
-        "Lemon"
+        "Lemon Essence"
       ]
     },
     "birthday-mix-xbox": {
@@ -3156,7 +3156,7 @@
         "birthday"
       ],
       "flavours": [
-        "Chocolate Orange"
+        "Midnight Orange"
       ]
     },
     "fault-line-safari-gold": {
@@ -3526,7 +3526,7 @@
         "name": "Emma"
       },
       "flavours": [
-        "Chocolate Biscoff"
+        "Lotus Noir"
       ]
     },
     "dad-to-be-birthday": {
@@ -3895,8 +3895,8 @@
       "flavours": [
         "Vanilla",
         "Chocolate",
-        "Raspberry & White Chocolate",
-        "Lemon"
+        "Raspberry Dream",
+        "Lemon Essence"
       ]
     },
     "saphire-present": {
@@ -3943,7 +3943,7 @@
         "birthday"
       ],
       "flavours": [
-        "Lemon"
+        "Lemon Essence"
       ]
     },
     "joyeux-anniversaire": {
@@ -4096,7 +4096,7 @@
         "birthday"
       ],
       "flavours": [
-        "Chocolate Orange"
+        "Midnight Orange"
       ]
     },
     "birthday-swirls-plaques": {
@@ -4547,7 +4547,7 @@
         "birthday"
       ],
       "flavours": [
-        "Lemon & Elderflower"
+        "Lemon Blossom"
       ]
     },
     "colourful-swirls": {
@@ -4629,7 +4629,7 @@
         "birthday"
       ],
       "flavours": [
-        "GF DF Lemon"
+        "GF DF Lemon Essence"
       ]
     },
     "booties-and-bunting-pink": {
@@ -4751,7 +4751,7 @@
         "birthday"
       ],
       "flavours": [
-        "Chocolate Biscoff"
+        "Lotus Noir"
       ]
     },
     "mixed-swirls-blue": {
@@ -5214,7 +5214,7 @@
         "birthday"
       ],
       "flavours": [
-        "Lemon",
+        "Lemon Essence",
         "Chocolate"
       ]
     },
@@ -5328,7 +5328,7 @@
         "birthday"
       ],
       "flavours": [
-        "Chocolate Orange"
+        "Midnight Orange"
       ]
     },
     "country-life": {
@@ -5456,7 +5456,7 @@
         "birthday"
       ],
       "flavours": [
-        "Chocolate Biscoff"
+        "Lotus Noir"
       ]
     },
     "edible-image-games": {
@@ -5819,7 +5819,7 @@
         "graduation"
       ],
       "flavours": [
-        "Toffee",
+        "Golden Caramel",
         "Chocolate"
       ]
     },
@@ -5960,7 +5960,7 @@
         "birthday"
       ],
       "flavours": [
-        "Lemon & Elderflower"
+        "Lemon Blossom"
       ]
     },
     "puppy-paws": {
@@ -6219,7 +6219,7 @@
         "birthday"
       ],
       "flavours": [
-        "Lemon"
+        "Lemon Essence"
       ]
     },
     "shades-of-chocoate-narrow": {
