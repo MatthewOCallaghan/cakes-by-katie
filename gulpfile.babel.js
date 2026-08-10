@@ -25,7 +25,7 @@ import processData from 'gulp-data';
 import sharpResponsive from 'gulp-sharp-responsive';
 import sizeOf from 'image-size';
 import getVideoDimensions from 'get-media-dimensions';
-import { FORMATS, getSizesAttribute, getSrcsetAttribute, getWidthsArrayForImagePath, WIDTHS } from './utils/images';
+import { FORMATS, getDefaultSrc, getSizesAttribute, getSrcsetAttribute, getWidthsArrayForImagePath, WIDTHS } from './utils/images';
 import { removeExtension } from './utils/files';
 
 import ftp from 'vinyl-ftp';
@@ -118,6 +118,8 @@ function processNunjucks() {
         environment.addFilter('removeExtension', removeExtension);
 
         environment.addGlobal('createSrcset', getSrcsetAttribute);
+
+        environment.addGlobal('getDefaultSrc', getDefaultSrc);
 
         environment.addFilter('createSizes', getSizesAttribute);
 
@@ -247,8 +249,9 @@ const cleanLocalImages = () => {
             const { path, name, extension, copiedName, width, createdExtension } = match.groups;
             if (name) {
                 // Original image
-                // Delete if original is no longer in /src
-                return !srcImages.find(srcImage => srcImage === image);
+                // SVGs are copied as-is (no avif/webp equivalents are generated), so only delete if the original is no longer in /src
+                // All other original images are no longer wanted at all now that we only keep the generated avif/webp sizes
+                return extension === 'svg' ? !srcImages.find(srcImage => srcImage === image) : true;
             } else {
                 // Created image
                 const validWidths = getWidthsArrayForImagePath(image);
@@ -313,8 +316,8 @@ const createAndTransferNewImages = () => {
                     return match;
                 },
                 sharpResponsive({
-                    includeOriginalFile: true,
-                    formats: WIDTHS[folder].map(width => 
+                    includeOriginalFile: false,
+                    formats: WIDTHS[folder].map(width =>
                         FORMATS.map(format => ({
                             width,
                             format,
@@ -336,8 +339,8 @@ const createAndTransferNewImages = () => {
                 return !image.endsWith('.svg') && !imageFoldersWithUnqiueWidthsArray.some(folder => image.startsWith(folder));
             },
             sharpResponsive({
-                includeOriginalFile: true,
-                formats: WIDTHS.default.map(width => 
+                includeOriginalFile: false,
+                formats: WIDTHS.default.map(width =>
                     FORMATS.map(format => ({
                         width,
                         format,
