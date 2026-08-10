@@ -66,6 +66,14 @@ export const getSizesAttribute = (recommendedSizes) => {
 // These should go from smallest file size to largest
 export const FORMATS = ["avif", "webp"];
 
+// Get the src of the largest image in the most widely supported format (used as the fallback `<img src>` for browsers that don't use `<picture>`/`<source>`)
+export const getDefaultSrc = (pathWithoutExtension) => {
+    const widths = getWidthsArrayForImagePath(pathWithoutExtension);
+    const largestWidth = widths[widths.length - 1];
+    const defaultFormat = FORMATS[FORMATS.length - 1];
+    return `${pathWithoutExtension}-${largestWidth}.${defaultFormat}`;
+}
+
 export const WIDTHS = {
     default: [200, 400, 700, 1920],
     '/portfolio': [150, 300, 700, 1000, 1920],

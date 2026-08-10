@@ -8,6 +8,6 @@
             sizes="{{ recommendedSizes | createSizes }}"
         >
     {% endfor %}
-    <img src="/images/{{ path }}" alt="{{ alt }}" style="{{ imageStyle }}" />
+    <img src="{{ getDefaultSrc("/images/" + name) }}" alt="{{ alt }}" style="{{ imageStyle }}" />
 </picture>
 {% endmacro %}

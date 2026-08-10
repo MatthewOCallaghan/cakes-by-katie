@@ -39,6 +39,13 @@ const getSizesAttribute = (recommendedSizes) => {
 // These should go from smallest file size to largest
 const FORMATS = ["avif", "webp"];
 
+// Get the src of the largest image in the most widely supported format (used as the fallback `<img src>` for browsers that don't use `<picture>`/`<source>`)
+const getDefaultSrc = (pathWithoutExtension) => {
+    const largestWidth = PORTFOLIO_IMAGE_WIDTHS[PORTFOLIO_IMAGE_WIDTHS.length - 1];
+    const defaultFormat = FORMATS[FORMATS.length - 1];
+    return `${pathWithoutExtension}-${largestWidth}.${defaultFormat}`;
+}
+
 
 
 /* ---------------------------- End of images.js ---------------------------- */
@@ -74,5 +81,5 @@ const createPictureElement = (container, filename, alt, recommendedSizes) => {
     // For some reason Safari was fetching both avif and jpg files for each image
     // Not setting img src until it's appended to the DOM seems to fix this
     // Presumably this forces Safari to evaluate the <source> elements first
-    img.src = `/images/portfolio/${filename}`;
+    img.src = getDefaultSrc(`/images/portfolio/${removeExtension(filename)}`);
 }
