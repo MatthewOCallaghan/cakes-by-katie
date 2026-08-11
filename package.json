@@ -3,7 +3,21 @@
   "version": "1.0.0",
   "description": "Code for website [cakesbykatie.co.uk](https://www.cakesbykatie.co.uk).",
   "main": "index.js",
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
+    "clean": "rm -rf dist",
+    "build:images": "node scripts/generate-images.js",
+    "build:eleventy": "eleventy --config=eleventy.config.js",
+    "build:scss": "sass --load-path=node_modules src/scss:dist/css --no-source-map",
+    "build:css": "postcss dist/css/*.css --use autoprefixer cssnano --replace",
+    "build:purge": "purgecss --css dist/css/*.css --content 'dist/**/*.html' 'src/js/**/*.js' -o dist/css",
+    "build:js": "esbuild src/js/*.js --minify --outdir=dist/js",
+    "build": "npm run clean && npm run build:images && npm run build:eleventy && npm run build:scss && npm run build:css && npm run build:purge && npm run build:js",
+    "dev": "concurrently \"node scripts/generate-images.js --watch\" \"sass --load-path=node_modules src/scss:dist/css --watch --no-source-map\" \"eleventy --config=eleventy.config.js --serve\"",
+    "serve": "eleventy --config=eleventy.config.js --serve",
+    "deploy": "node scripts/deploy.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,37 +31,21 @@
   },
   "homepage": "https://github.com/MatthewOCallaghan/cakes-by-katie#readme",
   "devDependencies": {
-    "@babel/core": "^7.16.5",
-    "@babel/preset-env": "^7.18.2",
-    "@babel/register": "^7.17.7",
-    "autoprefixer": "^10.4.1",
-    "browser-sync": "^2.27.7",
-    "cssnano": "^5.0.14",
-    "del": "^6.0.0",
-    "gulp": "^4.0.2",
-    "gulp-babel": "^8.0.0",
-    "gulp-cache": "^1.1.3",
-    "gulp-data": "^1.3.1",
-    "gulp-filter": "^7.0.0",
-    "gulp-html-prettify": "^0.0.1",
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-if": "^3.0.0",
-    "gulp-nunjucks-render": "^2.2.3",
-    "gulp-postcss": "^9.0.1",
-    "gulp-purgecss": "^4.1.3",
-    "gulp-rev-all": "^3.0.0",
-    "gulp-sass": "^5.0.0",
-    "gulp-sharp-responsive": "^0.3.0",
-    "gulp-uglify": "^3.0.2",
-    "gulp-useref": "^5.0.0",
-    "sass": "^1.45.1"
+    "@11ty/eleventy": "^3.0.0",
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.1.0",
+    "cssnano": "^7.0.6",
+    "esbuild": "^0.24.0",
+    "postcss": "^8.4.49",
+    "postcss-cli": "^11.0.0",
+    "purgecss": "^6.0.0",
+    "sass": "^1.83.0"
   },
   "dependencies": {
-    "fancy-log": "^2.0.0",
+    "basic-ftp": "^5.0.5",
     "get-media-dimensions": "^2.0.2",
-    "gulp-imagemin": "^7.1.0",
     "image-size": "^1.0.2",
     "normalize.css": "^8.0.1",
-    "vinyl-ftp": "^0.6.1"
+    "sharp": "^0.33.5"
   }
 }

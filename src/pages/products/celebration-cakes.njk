@@ -41,7 +41,7 @@
     </section>
 
     {% from "macros/image-carousel.njk" import imageCarousel with context %}
-    {{ imageCarousel(getMatchingCakes({ product: 'celebration-cake' }), 'linear-gradient(to bottom, #fff, #000)') }}
+    {{ imageCarousel(portfolio | getMatchingCakes({ product: 'celebration-cake' }), 'linear-gradient(to bottom, #fff, #000)') }}
 
     {% from "macros/design-choices.njk" import designChoices with context %}
     {{
@@ -141,7 +141,7 @@
         )
     }}
 
-    {{ imageCarousel(getMatchingCakes({ product: 'celebration-cake' }), 'linear-gradient(to bottom, #000, ' ~ products.celebrationCakes.colours.light ~ ')') }}
+    {{ imageCarousel(portfolio | getMatchingCakes({ product: 'celebration-cake' }), 'linear-gradient(to bottom, #000, ' ~ products.celebrationCakes.colours.light ~ ')') }}
 
     <section id="pricing" style="background:{{products.celebrationCakes.colours.light}}">
         <h2 style="margin-top:0;">Pricing</h2>

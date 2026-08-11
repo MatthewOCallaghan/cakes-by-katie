@@ -1,5 +1,5 @@
 // Get relevant widths array from WIDTHS for this image
-export const getWidthsArrayForImagePath = path => {
+const getWidthsArrayForImagePath = path => {
     let imagePath = path.split('/images');
     imagePath = imagePath[imagePath.length - 1];
     for (const folder of Object.keys(WIDTHS)) {
@@ -11,7 +11,7 @@ export const getWidthsArrayForImagePath = path => {
 }
 
 // Get srcset attribute for <source> element
-export const getSrcsetAttribute = (pathWithoutExtension, extension) => {
+const getSrcsetAttribute = (pathWithoutExtension, extension) => {
     const sizes = getWidthsArrayForImagePath(pathWithoutExtension);
     return sizes.map(size => `${pathWithoutExtension}-${size}.${extension} ${size}w`).join(', ');
 }
@@ -35,7 +35,7 @@ export const getSrcsetAttribute = (pathWithoutExtension, extension) => {
     least half the screen width on all larger screens.
     Alternatively if recommendedSizes is a string it represents just the `any` value.
 */
-export const getSizesAttribute = (recommendedSizes) => {
+const getSizesAttribute = (recommendedSizes) => {
 
     if (!recommendedSizes) {
         // Max image width is screen width
@@ -64,19 +64,28 @@ export const getSizesAttribute = (recommendedSizes) => {
 }
 
 // These should go from smallest file size to largest
-export const FORMATS = ["avif", "webp"];
+const FORMATS = ["avif", "webp"];
 
 // Get the src of the largest image in the most widely supported format (used as the fallback `<img src>` for browsers that don't use `<picture>`/`<source>`)
-export const getDefaultSrc = (pathWithoutExtension) => {
+const getDefaultSrc = (pathWithoutExtension) => {
     const widths = getWidthsArrayForImagePath(pathWithoutExtension);
     const largestWidth = widths[widths.length - 1];
     const defaultFormat = FORMATS[FORMATS.length - 1];
     return `${pathWithoutExtension}-${largestWidth}.${defaultFormat}`;
 }
 
-export const WIDTHS = {
+const WIDTHS = {
     default: [200, 400, 700, 1920],
     '/portfolio': [150, 300, 700, 1000, 1920],
     '/backgrounds': [640, 768, 1024, 1366, 1600, 1920],
     '/choices': [150, 300]
+};
+
+module.exports = {
+    getWidthsArrayForImagePath,
+    getSrcsetAttribute,
+    getSizesAttribute,
+    FORMATS,
+    getDefaultSrc,
+    WIDTHS
 };

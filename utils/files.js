@@ -1,3 +1,5 @@
 // Get filename without extension
-export const removeExtension = (filename) =>
+const removeExtension = (filename) =>
     filename.split('.')[0];
+
+module.exports = { removeExtension };

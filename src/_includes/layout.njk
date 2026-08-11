@@ -9,7 +9,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Licorice&family=Open+Sans:ital,wght@0,300;0,500;1,300;1,400&family=Lato:wght@100;300&display=swap" rel="stylesheet">
 
-        <!-- build:css(local/) css/{{ page }}.min.css -->
         <link rel="stylesheet" type="text/css" href="/css/global.css">
         {% if type === "occasion" %}
             <link rel="stylesheet" type="text/css" href="/css/occasion.css">
@@ -18,7 +17,6 @@
         {% elif pages[page].hasCSSFile %}
             <link rel="stylesheet" type="text/css" href="{{ "/css/" ~ page ~ ".css"}}">
         {% endif %}
-        <!-- endbuild -->
 
         {% block head %}{% endblock %}
 
@@ -319,7 +317,7 @@
                 %}
                 {{
                     testimonialsSlideshow(
-                        pages[page].testimonials or (getMatchingCakes(cakeFilters, { testimonials: true }) if cakeFilters and getMatchingCakes(cakeFilters, { testimonials: true }).length > 0 else featuredTestimonials)
+                        pages[page].testimonials or ((portfolio | getMatchingCakes(cakeFilters, { testimonials: true })) if cakeFilters and (portfolio | getMatchingCakes(cakeFilters, { testimonials: true })).length > 0 else featuredTestimonials)
                     )
                 }}
             {% endif %}
@@ -424,10 +422,8 @@
             </div>
         </footer>
 
-        <!-- build:js(local/) js/{{ page }}.min.js -->
         <script type="text/javascript" src="/js/nav-menu.js" defer></script>
         <script type="text/javascript" src="/js/testimonialsSlideshow.js" defer></script>
         {% block scripts %}{% endblock %}
-        <!-- endbuild -->
     </body>
 </html>

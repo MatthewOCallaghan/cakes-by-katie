@@ -1,0 +1,1107 @@
+{
+    "404": {
+        "title": "Page not found | Cakes by Katie",
+        "heading": {
+            "text": "404"
+        },
+        "hasCSSFile": true
+    },
+    "index": {
+        "title": "Cakes by Katie",
+        "description": "Cake maker in Thatcham, near Newbury and Reading, in West Berkshire, who offers high quality bespoke cakes and cupcakes for birthdays, weddings, anniversaries, corporate events, or any occasion.",
+        "hasCSSFile": true
+    },
+    "about": {
+        "title": "About me | Cakes by Katie",
+        "description": "I'm a cake maker in Thatcham, West Berkshire, offering high quality bespoke cakes for birthdays, weddings, anniversaries, christenings, or any occasion.",
+        "heading": {
+            "text": "About me"
+        },
+        "hasCSSFile": true
+    },
+    "portfolio": {
+        "title": "Portfolio | Cakes by Katie",
+        "description": "See all the high quality bespoke cakes and cupcakes I have made for birthdays, weddings, anniversaries, corporate events and other occasions. I am based in Thatcham, West Berkshire, near Newbury and Reading.",
+        "heading": {
+            "text": "Portfolio",
+            "image": {
+                "path": "backgrounds/camera.jpg",
+                "alt": "Camera background"
+            }
+        },
+        "hasCSSFile": true
+    },
+    "testimonials": {
+        "title": "Testimonials | Cakes by Katie",
+        "description": "Read some of the glowing testimonials I have received for my bespoke cakes and cupcakes from my many wonderful customers.",
+        "heading": {
+            "text": "Testimonials",
+            "image": {
+                "path": "backgrounds/writing.jpg",
+                "alt": "Writing background"
+            }
+        },
+        "hasCSSFile": true,
+        "testimonials": "none"
+    },
+    "faqs": {
+        "title": "Frequently Asked Questions | Cakes by Katie",
+        "description": "Find the answers to some questions I commonly get asked by my customers.",
+        "heading": {
+            "text": "FAQs",
+            "image": {
+                "path": "backgrounds/question-mark.jpg",
+                "alt": "Question mark background"
+            }
+        },
+        "questions": [
+            {
+                "question": "Where are you based?",
+                "answer": "<p>I'm based in Thatcham, West Berkshire, so I am in easy reach of Basingstoke, Newbury, Reading, and their surrounding vicinities such as Basildon, Bucklebury, Coldash, Didcot, Donnington, Hungerford, Pangbourne, Purley, Sulhampstead, Tadley, Theale, Tidmarsh and Tilehurst.</p>"
+            },
+            {
+                "question": "What occasions do you cater for?",
+                "answer": "<p>I can make cakes for all occasions! Have you got a wedding, birthday or anniversary coming up? Maybe a religious occasion such as a christening, first communion or bar/bat mitzvah? Is there a little one involved - do you need a baby shower, gender reveal or cake smash cake? How about a cake to celebrate Christmas, Easter, Halloween or Valentine's Day? Or maybe you need something completely different? Get in touch with me at <a href=\"mailto:katie@cakesbykatie.co.uk\">katie@cakesbykatie.co.uk</a> and we'll start planning for your occasion!</p>"
+            },
+            {
+                "question": "What finishes do you provide?",
+                "answer": "<p>Cakes can be finished in either buttercream or fondant. I also provide semi naked cakes for weddings.</p>"
+            },
+            {
+                "question": "Do you cater for any special dietary requirements?",
+                "answer": "<p>Yes, I offer flavour ranges for gluten free, dairy free, vegan and eggless diets. I encourage you to get in touch and we can discuss whatever requirements you have. Please note that whilst the cakes will be made using free from products, they're made in a kitchen where the allergens are present.</p>"
+            },
+            {
+                "question": "Do you deliver?",
+                "answer": "<p>Wedding cakes will be delivered and set up at the venue. All other cakes are on a collection basis, but I can deliver for a fee.</p>"
+            },
+            {
+                "question": "What products do you offer?",
+                "answer": "<p>I offer <a href=\"/products/wedding-cakes\">wedding cakes</a>, <a href=\"/products/celebration-cakes\">celebration cakes</a> and <a href=\"/products/cupcakes\">cupcakes</a> in a range of flavours. I don't produce fresh cream cakes and fresh fruit is only an option for wedding orders. I also offer wedding favours.</p>"
+            },
+            {
+                "question": "How do I order a cake?",
+                "answer": "<p>Get in touch with me at <a href=\"mailto:katie@cakesbykatie.co.uk\">katie@cakesbykatie.co.uk</a> and we'll start discussing your perfect cake/cupcakes!</p>"
+            },
+            {
+                "question": "What cake design should I go for?",
+                "answer": "<p>Whether you know exactly what you want or have absolutely no idea, I'll work with you to create the perfect design for your occasion. If you're looking for inspiration why not check out my <a href=\"/portfolio\">portfolio page</a>?</p>"
+            },
+            {
+                "question": "What are your payment terms?",
+                "answer": "<p>Payment is by bank transfer. For celebration cakes and cupcakes I ask for a 50% deposit on order confirmation to secure your booking with the balance payable 14 days prior to collection/delivery. For wedding cakes, a £100 date reservation deposit is payable when you decide to book with me, with the balance due 30 days before your wedding. All deposits and final balances are non-refundable. Please see full <a href=\"/terms\">Terms & Conditions</a>.</p>"
+            }
+        ],
+        "hasCSSFile": true
+    },
+    "terms": {
+        "title": "Terms and Conditions | Cakes by Katie",
+        "description": "Terms and Conditions for placing an order with Cakes by Katie.",
+        "heading": {
+            "text": "Terms and Conditions",
+            "image": {
+                "path": "backgrounds/books.jpg",
+                "alt": "Books background"
+            }
+        },
+        "hasCSSFile": true
+    },
+    "pricing": {
+        "title": "Pricing | Cakes by Katie",
+        "description": "Get an idea of how much your high quality celebration cake, wedding cake or cupcakes will cost from Cakes by Katie, a bespoke cake maker in Thatcham, West Berkshire, near Newbury and Reading.",
+        "heading": {
+            "text": "Pricing",
+            "image": {
+                "path": "backgrounds/piggy-bank.jpg",
+                "alt": "Piggy bank background"
+            }
+        },
+        "hasCSSFile": true
+    },
+    "flavours": {
+        "title": "Flavours | Cakes by Katie",
+        "description": "See the wide range of flavours that Cakes by Katie, a cake maker in Thatcham, West Berkshire, offers for their high quality bespoke cakes. I also offer flavours as gluten free, dairy free or vegan.",
+        "heading": {
+            "text": "Flavours",
+            "image": {
+                "path": "backgrounds/chocolate.jpg",
+                "alt": "Chocolate background"
+            }
+        },
+        "hasCSSFile": true
+    },
+    "awards": {
+        "title": "News and Awards | Cakes by Katie",
+        "description": "Cakes by Katie, a cake maker in Thatcham, West Berkshire, is honoured to have received a variety of awards for their wedding cakes, celebration cakes and cupcakes.",
+        "heading": {
+            "text": "News & Awards",
+            "image": {
+                "path": "backgrounds/champagne.png",
+                "alt": "Champagne glasses background"
+            }
+        },
+        "posts": [
+            {
+                "title": "The United Kingdom Weddings & Honeymoons Awards 2025",
+                "subtitle": "Cakes by Katie<br>Wedding Cake Designer (Finalist)",
+                "text": "<p>I was delighted to be a finalist in the 'Wedding Cake Designer' category of the UK Weddings and Honeymoons Awards 2025, which were held at The Dorchester Hotel in Mayfair, London in February. These awards recognise excellence in the wedding and honeymoon industries.</p>",
+                "image": {
+                    "path": "features/ukwha-2025-finalist.png",
+                    "alt": "UKWHA 2025 finalist rosette"
+                }
+            },
+            {
+                "title": "South England Prestige Awards 2024/25",
+                "subtitle": "Cakes by Katie<br>Cake Designer of the Year",
+                "text": "<p>The Prestige Awards recognise small and medium-sized businesses that have proven to be the best in their market over the past 12 months.  The judging panel base their decision upon areas such as service excellence, quality of the product/service provided, innovative practices, value, ethical or sustainable methods of working, as well as consistency in performance. The winners selected are those who can best demonstrate their strengths in these areas.</p>",
+                "image": {
+                    "path": "features/prestige-2025-winner.png",
+                    "alt": "South England Prestige Awards 2024/25 Winner"
+                }
+            },
+            {
+                "title": "Luxlife Food & Drinks Awards 2024",
+                "subtitle": "Cakes by Katie<br>Best Bespoke Celebration Cake Bakery - Berkshire",
+                "text": "<p>Luxury Lifestyle Awards is a global award program that selects, recognises, celebrates and promotes the best luxury goods and services worldwide. Through comprehensive market research and a meticulous nomination and selection process, excellence is identified and honoured.</p>",
+                "image": {
+                    "path": "features/luxlife-2024-winner.png",
+                    "alt": "Luxlife Food & Drinks Awards Winner Banner"
+                }
+            },
+            {
+                "title": "Weddings & Honeymoons - February/March 2024",
+                "subtitle": "Top Cake Maker in Berkshire",
+                "text": "<p>I had the privilege of being featured in Weddings & Honeymoons Edition 26. The article ‘Baked with love’ gathered the top ten cake makers in the UK.</p>",
+                "image": {
+                    "path": "features/weddings-and-honeymoons-magazine.png",
+                    "alt": "Weddings and Honeymoons Edition 26 - February/March 2024"
+                }
+            },
+            {
+                "title": "The United Kingdom Weddings & Honeymoons Awards 2024",
+                "subtitle": "Cakes by Katie<br>Rising Star (Finalist)",
+                "text": "<p>The UKWHA recognise excellence in the wedding and honeymoon industries.  I was honoured to be a finalist in the ‘Rising Star’ category of the UKWHA 2024 awards which was held at a spectacular gala evening at Kew Gardens in February 2024.</p>",
+                "image": {
+                    "path": "features/wh-Rising-Star-Rosette.png",
+                    "alt": "The United Kingdom Weddings & Honeymoons Awards 2024 'Rising Star' finalist rosette"
+                }
+            }
+        ],
+        "hasCSSFile": true
+    },
+    "products": {
+        "title": "Products | Cakes by Katie",
+        "description": "I'm a cake maker in Thatcham, West Berkshire, near Newbury, offering high quality bespoke celebration cakes, cupcakes, wedding favours, cake jars, and other products.",
+        "heading": {
+            "text": "Products",
+            "image": {
+                "path": "backgrounds/gift-bags.jpg",
+                "alt": "Gift bags background"
+            }
+        }
+    },
+    "celebrationCakes": {
+        "title": "Celebration cakes | Cakes by Katie",
+        "description": "I'm a cake maker in Thatcham, West Berkshire, near Newbury, offering high quality bespoke celebration cakes in a range of flavours.",
+        "heading": {
+            "text": "Celebration cakes",
+            "image": {
+                "path": "backgrounds/confetti.jpg",
+                "alt": "Confetti background"
+            }
+        },
+        "cta": {
+            "text": "Get a quote for a celebration cake!"
+        },
+        "product": "celebration-cake"
+    },
+    "weddingCakes": {
+        "title": "Wedding cakes | Cakes by Katie",
+        "description": "I'm a cake maker in Thatcham, West Berkshire, near Newbury, offering high quality bespoke wedding cakes in a range of flavours.",
+        "heading": {
+            "text": "Wedding cakes",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "cta": {
+            "text": "Let's talk about your wedding cake!",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "product": "wedding-cake"
+    },
+    "weddingFavours": {
+        "title": "Wedding favours | Cakes by Katie",
+        "description": "I'm a cake maker in Thatcham, West Berkshire, near Newbury and Reading, offering high quality wedding favours.",
+        "heading": {
+            "text": "Wedding favours",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "cta": {
+            "text": "Let's talk about your wedding favours!",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "testimonials": [
+            "riding-the-waves"
+        ]
+    },
+    "gifts": {
+        "title": "Gifts | Cakes by Katie",
+        "description": "I'm a cake maker in Thatcham, West Berkshire, near Newbury and Reading, offering high quality cakes, biscuits and other gifts.",
+        "heading": {
+            "text": "Gifts",
+            "image": {
+                "path": "backgrounds/gift-bags.jpg",
+                "alt": "Gift bags background"
+            }
+        },
+        "cta": {
+            "text": "Ready to order for someone special?"
+        }
+    },
+    "cupcakes": {
+        "title": "Cupcakes | Cakes by Katie",
+        "description": "I'm a cake maker in Thatcham, West Berkshire, near Newbury, offering high quality bespoke cupcakes in a range of flavours.",
+        "heading": {
+            "text": "Cupcakes",
+            "image": {
+                "path": "portfolio/Pastel-and-Choc-Roses.jpg",
+                "alt": "Cupcakes background"
+            }
+        },
+        "cta": {
+            "text": "Get a quote for your cupcakes!",
+            "image": {
+                "path": "portfolio/Pastel-and-Choc-Roses.jpg",
+                "alt": "Cupcakes background"
+            }
+        },
+        "product": "cupcakes"
+    },
+    "occasions": {
+        "title": "Occasions | Cakes by Katie",
+        "description": "I'm a cake maker in Thatcham, near Newbury and Reading, West Berkshire, offering high quality bespoke cakes for birthdays, weddings, anniversaries, corporate events, or any occasion.",
+        "heading": {
+            "text": "Occasions",
+            "image": {
+                "path": "backgrounds/confetti.jpg",
+                "alt": "Confetti background"
+            }
+        },
+        "hasCSSFile": true
+    },
+    "birthday": {
+        "title": "Birthday cakes and cupcakes | Cakes by Katie",
+        "description": "Cakes by Katie is a cake maker in Thatcham, Berkshire, near Newbury and Reading, offering bespoke birthday cakes and cupcakes in a wide range of flavours and catering for specific dietary requirements.",
+        "heading": {
+            "text": "Birthday cakes",
+            "image": {
+                "path": "backgrounds/birthday-balloons.jpg",
+                "alt": "Birthday background"
+            }
+        },
+        "products": [
+            {
+                "name": "Buttercream cakes",
+                "description": "Buttercream cakes are finished completely in buttercream in either one or more colours to produce the desired effect. The finish can be smooth or textured.",
+                "examples": [
+                    "shades-of-chocolate",
+                    "shades-of-pink-and-gold-fault-line-flowers",
+                    "pink-ombre-daisies"
+                ]
+            },
+            {
+                "name": "Fondant cakes",
+                "description": "Cakes are covered in a smooth layer of sugarpaste and can be decorated with flowers, objects or figures modelled from fondant icing.",
+                "examples": [
+                    "flower-elegance",
+                    "wonder-woman",
+                    "come-fly-with-me"
+                ]
+            },
+            {
+                "name": "Themed cakes",
+                "description": "Themed cakes allow the design to be tailored to the recipient in terms of their likes, hobbies and personality for example.",
+                "examples": [
+                    "ready-set-go-kart",
+                    "hp-slytherin-edition",
+                    "birthday-books",
+                    "90-not-out"
+                ]
+            },
+            {
+                "name": "Birthday cupcakes",
+                "description": "Birthday cupcakes are easy to share and customise with a decoration of your choice. If some of your party have dietary requirements, cupcakes are a good way to cater for them separately. Cupcakes can also make a special birthday gift and can be presented in a gift box finished with ribbon and a bow and candle.",
+                "examples": [
+                    "birthday-beach-mix",
+                    "rose-mix",
+                    "deluxe-mix"
+                ]
+            },
+            {
+                "name": "Carved cakes",
+                "description": "Cut to the desired shape, hand carved cakes bring to life the cake design.",
+                "examples": [
+                    "parker-penguin",
+                    "prime-ice-pop"
+                ]
+            },
+            {
+                "name": "Edible images",
+                "description": "Edible images can be placed on either a buttercream or fondant finished cake. They offer greater design flexibility and are cheaper than fondant models. An edible image of a favourite photograph will also add that personal touch.",
+                "examples": [
+                    "let-it-go",
+                    "pink-and-bluey",
+                    "football-print-arsenal"
+                ]
+            },
+            {
+                "name": "Airbrushing",
+                "description": "Airbrushing adds an exciting dimension to a fondant cake, introducing additional colour either as an abstract or block design. Blending the colours can also add depth.",
+                "examples": [
+                    "psychedelic-symphony"
+                ]
+            },
+            {
+                "name": "Pinata cakes",
+                "description": "These cakes have a hidden surprise and have a special appeal to children. They can be filled with sweets or chocolate.",
+                "examples": [
+                    "easter-surprise"
+                ]
+            },
+            {
+                "name": "Balloons",
+                "description": "Topping the cake with a balloon gives an extra touch.",
+                "examples": [
+                    "choc-confetti"
+                ]
+            }
+        ],
+        "cta": {
+            "text": "Want a quote for a birthday cake?"
+        },
+        "hasCSSFile": true,
+        "occasion": "birthday"
+    },
+    "wedding": {
+        "title": "Weddings | Cakes by Katie",
+        "description": "Cakes by Katie is a cake maker in Thatcham, Berkshire, near Newbury and Reading, offering bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+        "heading": {
+            "text": "Weddings",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "cta": {
+            "text": "Let's talk about your wedding!",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "occasion": "wedding"
+    },
+    "anniversary": {
+        "title": "Anniversary cakes and cupcakes | Cakes by Katie",
+        "description": "Cakes by Katie is a cake maker in Thatcham, Berkshire, near Newbury and Reading, offering bespoke anniversary cakes and cupcakes in a wide range of flavours and catering for specific dietary requirements.",
+        "heading": {
+            "text": "Anniversary cakes",
+            "image": {
+                "path": "backgrounds/roses.jpg",
+                "alt": "Roses background"
+            }
+        },
+        "cta": {
+            "text": "Want a quote for an anniversary cake?"
+        },
+        "occasion": "anniversary-wedding"
+    },
+    "christening": {
+        "title": "Christening cakes and cupcakes | Cakes by Katie",
+        "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke cakes and cupcakes for christenings in a wide range of flavours and catering for specific dietary requirements.",
+        "heading": {
+            "text": "Christening cakes",
+            "image": {
+                "path": "backgrounds/christening.jpg",
+                "alt": "Christening background"
+            }
+        },
+        "occasion": "christening"
+    },
+    "babyShower": {
+        "title": "Baby shower cakes and cupcakes | Cakes by Katie",
+        "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke cakes and cupcakes for baby showers in a wide range of flavours and catering for specific dietary requirements.",
+        "heading": {
+            "text": "Baby shower cakes",
+            "image": {
+                "path": "backgrounds/baby-feet.jpg",
+                "alt": "Baby's feet background"
+            }
+        },
+        "occasion": "baby-shower"
+    },
+    "genderReveal": {
+        "title": "Gender reveal cakes and cupcakes | Cakes by Katie",
+        "description": "Cakes by Katie is a cake maker in Berkshire offering bespoke cakes and cupcakes for gender reveals in a wide range of flavours and catering for specific dietary requirements.",
+        "heading": {
+            "text": "Gender reveal cakes",
+            "image": {
+                "path": "backgrounds/baby-feet.jpg",
+                "alt": "Baby's feet background"
+            }
+        },
+        "occasion": "gender-reveal"
+    },
+    "corporate": {
+        "title": "Corporate cakes and cupcakes | Cakes by Katie",
+        "description": "Cakes by Katie is a cake maker in Thatcham, Berkshire, near Newbury and Reading, offering bespoke cakes and cupcakes for corporate events in a wide range of flavours and catering for specific dietary requirements.",
+        "heading": {
+            "text": "Corporate cakes and cupcakes",
+            "image": {
+                "path": "backgrounds/office.jpg",
+                "alt": "Office background"
+            }
+        },
+        "cta": {
+            "text": "Want a quote for your corporate event?"
+        },
+        "occasion": "corporate"
+    },
+    "valentines": {
+        "title": "Valentine's cakes and cupcakes | Cakes by Katie",
+        "description": "Cakes by Katie is a cake maker in Thatcham, Berkshire, near Newbury and Reading, offering bespoke Valentine's Day cakes and cupcakes in a wide range of flavours and catering for specific dietary requirements.",
+        "heading": {
+            "text": "Valentine's cakes",
+            "image": {
+                "path": "backgrounds/hearts.jpg",
+                "alt": "Hearts background"
+            }
+        },
+        "cta": {
+            "text": "Ready to make your Valentine's special?"
+        },
+        "occasion": "valentines"
+    },
+    "easter": {
+        "title": "Easter cakes and cupcakes | Cakes by Katie",
+        "description": "Cakes by Katie is a cake maker in Thatcham, Berkshire, near Newbury and Reading, offering bespoke Easter cakes and cupcakes in a wide range of flavours and catering for specific dietary requirements.",
+        "heading": {
+            "text": "Easter cakes",
+            "image": {
+                "path": "backgrounds/mini-eggs.jpg",
+                "alt": "Mini eggs background"
+            }
+        },
+        "exampleCake": "easter-surprise",
+        "productName": "Easter cake",
+        "cta": {
+            "text": "Ready to order for Easter?"
+        },
+        "occasion": "easter"
+    },
+    "christmas": {
+        "title": "Christmas cakes, cupcakes and gifts | Cakes by Katie",
+        "description": "Cakes by Katie is a cake maker in Thatcham, near Newbury and Reading, in Berkshire offering bespoke Christmas cakes, cupcakes and edible gifts in a wide range of flavours and catering for specific dietary requirements.",
+        "heading": {
+            "text": "Christmas",
+            "image": {
+                "path": "backgrounds/christmas-tree.jpg",
+                "alt": "Christmas tree background"
+            }
+        },
+        "cta": {
+            "text": "Order now for collection in the lead up to Christmas",
+            "image": {
+                "path": "backgrounds/santa-and-child.jpg",
+                "alt": "Santa Claus and child background",
+                "position": "50% 30%"
+            }
+        },
+        "hasCSSFile": true,
+        "occasion": "christmas",
+        "testimonials": "none"
+    },
+    "afternoon-tea": {
+        "title": "Afternoon tea cakes and cupcakes | Cakes by Katie",
+        "description": "Cakes by Katie is a cake maker in Thatcham, near Newbury and Reading, in Berkshire offering bespoke cakes and cupcakes for afternoon tea in a wide range of flavours and catering for specific dietary requirements.",
+        "heading": {
+            "text": "Afternoon tea cakes",
+            "image": {
+                "path": "backgrounds/tea-set.jpg",
+                "alt": "Afternoon tea background"
+            }
+        },
+        "cta": {
+            "text": "Ready to order?"
+        },
+        "occasion": "afternoon-tea"
+    },
+    "delivery": {
+        "title": "Delivery | Cakes by Katie",
+        "description": "I'm a cake maker in Thatcham, West Berkshire, delivering high quality bespoke cakes for birthdays, weddings, anniversaries, christenings, or any occasion.",
+        "heading": {
+            "text": "Delivery",
+            "image": {
+                "path": "backgrounds/village.jpg",
+                "alt": "Village road background"
+            }
+        }
+    },
+    "venueClockBarn": {
+        "title": "Wedding cakes delivered to Clock Barn | Cakes by Katie",
+        "description": "Delivering to Clock Barn, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+        "heading": {
+            "beforeText": "Wedding cakes for",
+            "text": "Clock Barn",
+            "afterText": "Whitchurch",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "cta": {
+            "text": "Let's talk about your wedding at Clock Barn!",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "venue": "clock-barn",
+        "occasion": "wedding"
+    },
+    "venueEasthampstedPark": {
+        "title": "Wedding cakes delivered to Easthampsted Park | Cakes by Katie",
+        "description": "Delivering to Easthampsted Park, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+        "heading": {
+            "beforeText": "Wedding cakes for",
+            "text": "Easthampsted Park",
+            "afterText": "Wokingham",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "cta": {
+            "text": "Let's talk about your wedding at Easthampsted Park!",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "venue": "easthampsted-park",
+        "occasion": "wedding"
+    },
+    "venueForestEdge": {
+        "title": "Wedding cakes delivered to Forest Edge Tipis at Welford Park | Cakes by Katie",
+        "description": "Delivering to Forest Edge Tipis at Welford Park, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+        "heading": {
+            "beforeText": "Wedding cakes for",
+            "text": "Forest Edge Tipis at Welford Park",
+            "afterText": "Newbury",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "cta": {
+            "text": "Let's talk about your wedding at Forest Edge Tipis at Welford Park!",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "venue": "forest-edge",
+        "occasion": "wedding"
+    },
+    "venueGreatFosters": {
+        "title": "Wedding cakes delivered to Great Fosters| Cakes by Katie",
+        "description": "Delivering to Great Fosters Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+        "heading": {
+            "beforeText": "Wedding cakes for",
+            "text": "Great Fosters",
+            "afterText": "Egham",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "cta": {
+            "text": "Let's talk about your wedding at Great Fosters!",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "venue": "great-fosters",
+        "occasion": "wedding"
+    },
+    "venueHedsorHouse": {
+        "title": "Wedding cakes delivered to Hedsor House | Cakes by Katie",
+        "description": "Delivering to Hedsor House, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+        "heading": {
+            "beforeText": "Wedding cakes for",
+            "text": "Hedsor House",
+            "afterText": "Taplow",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "cta": {
+            "text": "Let's talk about your wedding at Hedsor House!",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "venue": "hedsor-house",
+        "occasion": "wedding"
+    },
+    "venueHighcliffeCastle": {
+        "title": "Wedding cakes delivered to Highcliffe Castle | Cakes by Katie",
+        "description": "Delivering to Highcliffe Castle, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+        "heading": {
+            "beforeText": "Wedding cakes for",
+            "text": "Highcliffe Castle",
+            "afterText": "Highcliffe",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "cta": {
+            "text": "Let's talk about your wedding at Highcliffe Castle!",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "venue": "highcliffe-castle",
+        "occasion": "wedding"
+    },
+    "venueMonkeyIsland": {
+        "title": "Wedding cakes delivered to Monkey Island Estate | Cakes by Katie",
+        "description": "Delivering to Monkey Island Estate, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+        "heading": {
+            "beforeText": "Wedding cakes for",
+            "text": "Monkey Island Estate",
+            "afterText": "Bray",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "cta": {
+            "text": "Let's talk about your wedding at Monkey Island Estate!",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "venue": "monkey-island",
+        "occasion": "wedding"
+    },
+    "venueOakleyHall": {
+        "title": "Wedding cakes delivered to Oakley Hall | Cakes by Katie",
+        "description": "Delivering to Oakley Hall, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+        "heading": {
+            "beforeText": "Wedding cakes for",
+            "text": "Oakley Hall",
+            "afterText": "Basingstoke",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "cta": {
+            "text": "Let's talk about your wedding at Oakley Hall!",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "venue": "oakley-hall",
+        "occasion": "wedding"
+    },
+    "venueOldGore": {
+        "title": "Wedding cakes delivered to Old Gore by Yard Space | Cakes by Katie",
+        "description": "Delivering to Old Gore, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+        "heading": {
+            "beforeText": "Wedding cakes for",
+            "text": "Old Gore",
+            "afterText": "Cirencester",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "cta": {
+            "text": "Let's talk about your wedding at Old Gore!",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "venue": "old-gore",
+        "occasion": "wedding"
+    },
+    "venueOldLuxtersBarn": {
+        "title": "Wedding cakes delivered to Old Luxters Barn | Cakes by Katie",
+        "description": "Delivering to Old Luxters Barn, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+        "heading": {
+            "beforeText": "Wedding cakes for",
+            "text": "Old Luxters Barn",
+            "afterText": "Henley-on-Thames",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "cta": {
+            "text": "Let's talk about your wedding at Old Luxters Barn!",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "venue": "old-luxters",
+        "occasion": "wedding"
+    },
+    "venuePembrokeLodge": {
+        "title": "Wedding cakes delivered to Pembroke Lodge | Cakes by Katie",
+        "description": "Delivering to Pembroke Lodge, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+        "heading": {
+            "beforeText": "Wedding cakes for",
+            "text": "Pembroke Lodge",
+            "afterText": "Richmond",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "cta": {
+            "text": "Let's talk about your wedding at Pembroke Lodge!",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "venue": "pembroke-lodge",
+        "occasion": "wedding"
+    },
+    "venuePennyhillPark": {
+        "title": "Wedding cakes delivered to Pennyhill Park | Cakes by Katie",
+        "description": "Delivering to Pennyhill Park, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+        "heading": {
+            "beforeText": "Wedding cakes for",
+            "text": "Pennyhill Park",
+            "afterText": "Bagshot",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "cta": {
+            "text": "Let's talk about your wedding at Pennyhill Park!",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "venue": "pennyhill-park",
+        "occasion": "wedding"
+    },
+    "venueSheepdrove": {
+        "title": "Wedding cakes delivered to Sheepdrove | Cakes by Katie",
+        "description": "Delivering to Sheepdrove, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+        "heading": {
+            "beforeText": "Wedding cakes for",
+            "text": "Sheepdrove",
+            "afterText": "Lambourn",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "cta": {
+            "text": "Let's talk about your wedding at Sheepdrove!",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "venue": "sheep-drove",
+        "occasion": "wedding"
+    },
+    "venueStanlakePark": {
+        "title": "Wedding cakes delivered to Stanlake Park | Cakes by Katie",
+        "description": "Delivering to Stanlake Park, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+        "heading": {
+            "beforeText": "Wedding cakes for",
+            "text": "Stanlake Park",
+            "afterText": "Twyford",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "cta": {
+            "text": "Let's talk about your wedding at Stanlake Park!",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "venue": "stanlake-park",
+        "occasion": "wedding"
+    },
+    "venueTheGreatHouseatSonning": {
+        "title": "Wedding cakes delivered to The Great House at Sonning | Cakes by Katie",
+        "description": "Delivering to The Great House at Sonning, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+        "heading": {
+            "beforeText": "Wedding cakes for",
+            "text": "The Great House at Sonning",
+            "afterText": "Sonning",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "cta": {
+            "text": "Let's talk about your wedding at The Great House at Sonning!",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "venue": "great-house",
+        "occasion": "wedding"
+    },
+    "venueOldMill": {
+        "title": "Wedding cakes delivered to The Old Mill | Cakes by Katie",
+        "description": "Delivering to The Old Mill, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+        "heading": {
+            "beforeText": "Wedding cakes for",
+            "text": "The Old Mill",
+            "afterText": "Aldermaston",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "cta": {
+            "text": "Let's talk about your wedding at The Old Mill!",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "venue": "old-mill",
+        "occasion": "wedding"
+    },
+    "venuePostBarn": {
+        "title": "Wedding cakes delivered to The Post Barn | Cakes by Katie",
+        "description": "Delivering to The Post Barn, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+        "heading": {
+            "beforeText": "Wedding cakes for",
+            "text": "The Post Barn",
+            "afterText": "Newbury",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "cta": {
+            "text": "Let's talk about your wedding at The Post Barn!",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "venue": "post-barn",
+        "occasion": "wedding"
+    },
+    "venueElcotPark": {
+        "title": "Wedding cakes delivered to The Retreat at Elcot Park | Cakes by Katie",
+        "description": "Delivering to The Retreat at Elcot Park, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+        "heading": {
+            "beforeText": "Wedding cakes for",
+            "text": "The Retreat at Elcot Park",
+            "afterText": "Newbury",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "cta": {
+            "text": "Let's talk about your wedding at The Retreat at Elcot Park!",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "venue": "elcot-park",
+        "occasion": "wedding"
+    },
+    "venueTheSwanatStreatley": {
+        "title": "Wedding cakes delivered to The Swan at Streatley | Cakes by Katie",
+        "description": "Delivering to The Swan at Streatley, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+        "heading": {
+            "beforeText": "Wedding cakes for",
+            "text": "The Swan at Streatley",
+            "afterText": "Streatley-on-Thames",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "cta": {
+            "text": "Let's talk about your wedding at The Swan at Streatley!",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "venue": "swan-streatley",
+        "occasion": "wedding"
+    },
+    "venueTheVineyard": {
+        "title": "Wedding cakes delivered to The Vineyard | Cakes by Katie",
+        "description": "Delivering to The Vineyard, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+        "heading": {
+            "beforeText": "Wedding cakes for",
+            "text": "The Vineyard",
+            "afterText": "Stockcross",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "cta": {
+            "text": "Let's talk about your wedding at The Vineyard!",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "venue": "vineyard-stockcross",
+        "occasion": "wedding"
+    },
+    "venueTrunkwellHouse": {
+        "title": "Wedding cakes delivered to Trunkwell House | Cakes by Katie",
+        "description": "Delivering to Trunkwell House, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+        "heading": {
+            "beforeText": "Wedding cakes for",
+            "text": "Trunkwell House",
+            "afterText": "Reading",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "cta": {
+            "text": "Let's talk about your wedding at Trunkwell House!",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "venue": "trunkwell-house",
+        "occasion": "wedding"
+    },
+    "venueTylneyHall": {
+        "title": "Wedding cakes delivered to Tylney Hall | Cakes by Katie",
+        "description": "Delivering to Tylney Hall, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+        "heading": {
+            "beforeText": "Wedding cakes for",
+            "text": "Tylney Hall",
+            "afterText": "Hook",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "cta": {
+            "text": "Let's talk about your wedding at Tylney Hall!",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "venue": "tylney-hall",
+        "occasion": "wedding"
+    },
+    "venueUftonCourt": {
+        "title": "Wedding cakes delivered to Ufton Court | Cakes by Katie",
+        "description": "Delivering to Ufton Court, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+        "heading": {
+            "beforeText": "Wedding cakes for",
+            "text": "Ufton Court",
+            "afterText": "Reading",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "cta": {
+            "text": "Let's talk about your wedding at Ufton Court!",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "venue": "ufton-court",
+        "occasion": "wedding"
+    },
+    "venueWasingPark": {
+        "title": "Wedding cakes delivered to Wasing Park | Cakes by Katie",
+        "description": "Delivering to Wasing Park, Cakes by Katie offers bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.",
+        "heading": {
+            "beforeText": "Wedding cakes for",
+            "text": "Wasing Park",
+            "afterText": "Aldermaston",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "cta": {
+            "text": "Let's talk about your wedding at Wasing Park!",
+            "image": {
+                "path": "backgrounds/wedding.jpg",
+                "alt": "Wedding background"
+            }
+        },
+        "venue": "wasing-park",
+        "occasion": "wedding"
+    },
+    "venueDowneHouse": {
+        "title": "Birthday cakes delivered to Downe House School | Cakes by Katie",
+        "description": "Delivering to Downe House School, Cakes by Katie offers bespoke birthday cakes and cupcakes in a wide range of flavours and catering for specific dietary requirements.",
+        "heading": {
+            "beforeText": "Birthday cakes for",
+            "text": "Downe House School",
+            "afterText": "Cold Ash",
+            "image": {
+                "path": "backgrounds/birthday-balloons.jpg",
+                "alt": "Birthday background"
+            }
+        },
+        "cta": {
+            "text": "Get a cake delivered to Downe House School!"
+        },
+        "venue": "downe-house-school",
+        "occasion": "birthday"
+    }
+}

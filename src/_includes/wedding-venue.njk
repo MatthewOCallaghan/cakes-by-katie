@@ -30,7 +30,7 @@
     {% from "macros/image-carousel.njk" import imageCarousel with context %}
     {{
         imageCarousel(
-            getMatchingCakes({ venue: venueKey }) if getMatchingCakes({ venue: venueKey }).length > 5 else getMatchingCakes({ product: 'wedding-cake' }),
+            (portfolio | getMatchingCakes({ venue: venueKey })) if (portfolio | getMatchingCakes({ venue: venueKey })).length > 5 else (portfolio | getMatchingCakes({ product: 'wedding-cake' })),
             'linear-gradient(to bottom, #fff, ' ~ products.weddingCakes.colours.light ~ ')'
         )
     }}
@@ -75,7 +75,7 @@
 
     {{
         imageCarousel(
-            getMatchingCakes({ venue: venueKey }) if getMatchingCakes({ venue: venueKey }).length > 5 else getMatchingCakes({ product: 'wedding-cake' }),
+            (portfolio | getMatchingCakes({ venue: venueKey })) if (portfolio | getMatchingCakes({ venue: venueKey })).length > 5 else (portfolio | getMatchingCakes({ product: 'wedding-cake' })),
             'linear-gradient(to bottom, #fff, #000)'
         )
     }}

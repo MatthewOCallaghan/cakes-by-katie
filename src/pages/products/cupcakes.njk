@@ -42,7 +42,7 @@
     </section>
 
     {% from "macros/image-carousel.njk" import imageCarousel with context %}
-    {{ imageCarousel(getMatchingCakes({ product: 'cupcakes' }), 'linear-gradient(to bottom, #fff, #000)') }}
+    {{ imageCarousel(portfolio | getMatchingCakes({ product: 'cupcakes' }), 'linear-gradient(to bottom, #fff, #000)') }}
 
     {% from "macros/design-choices.njk" import designChoices with context %}
     {{
@@ -163,7 +163,7 @@
         )
     }}
 
-    {{ imageCarousel(getMatchingCakes({ product: 'cupcakes' }), 'linear-gradient(to bottom, #000, ' ~ products.cupcakes.colours.light ~ ')') }}
+    {{ imageCarousel(portfolio | getMatchingCakes({ product: 'cupcakes' }), 'linear-gradient(to bottom, #000, ' ~ products.cupcakes.colours.light ~ ')') }}
 
     <section id="pricing" style="background:{{products.cupcakes.colours.light}}">
         <h2 style="margin-top:0;">Pricing</h2>
