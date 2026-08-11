@@ -283,11 +283,13 @@ const createAndTransferNewImages = () => {
     let stream = src('src/images/**/*.*')
                         .pipe(filter(file => {
                             const image = file.path.split('/images')[1];
-                            
-                            // Process image if it is not in /local folder...
-                            let keep = !localImages.includes(image);
-                            // ... or if we are missing any required format/size
-                            if (!keep && !image.endsWith('.svg')) {
+
+                            let keep;
+                            if (image.endsWith('.svg')) {
+                                // SVGs are copied as-is, so process if not already copied
+                                keep = !localImages.includes(image);
+                            } else {
+                                // Originals aren't copied, so process if we are missing any required format/size
                                 const imageWithoutExtension = removeExtension(image);
                                 const widths = getWidthsArrayForImagePath(file.path);
                                 keep = !FORMATS.every(format => widths.every(width => localImages.includes(`${imageWithoutExtension}-${width}.${format}`)));
