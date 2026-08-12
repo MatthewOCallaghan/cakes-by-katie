@@ -2,15 +2,8 @@ ErrorDocument 404 /404.html
 
 <IfModule mod_headers.c>
 
-    <filesMatch ".(pdf|flv|jpg|jpeg|png|avif|webp|gif|swf|svg|mp4)$">
+    <filesMatch ".(pdf|flv|jpg|jpeg|png|avif|webp|gif|swf|svg|js|css|mp4)$">
         Header set Cache-Control "max-age=31536000, public"
-    </filesMatch>
-
-    <!-- CSS/JS filenames are no longer content-hashed on build (Eleventy migration dropped
-         gulp-rev-all), so a stale long-lived cache here could hide a deploy from returning
-         visitors. Keep this short. -->
-    <filesMatch ".(js|css)$">
-        Header set Cache-Control "max-age=3600, public"
     </filesMatch>
 
 </IfModule>
