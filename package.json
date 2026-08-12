@@ -14,7 +14,7 @@
     "build:css": "postcss dist/css/*.css --use autoprefixer cssnano --replace",
     "build:purge": "purgecss --css dist/css/*.css --content 'dist/**/*.html' 'src/js/**/*.js' -o dist/css",
     "build:js": "esbuild src/js/*.js --minify --outdir=dist/js",
-    "build": "npm run clean && npm run build:images && npm run build:eleventy && npm run build:scss && npm run build:css && npm run build:purge && npm run build:js",
+    "build": "npm run clean && npm run build:images && npm run build:eleventy && npm run build:scss && npm run build:purge && npm run build:css && npm run build:js",
     "dev": "concurrently \"node scripts/generate-images.js --watch\" \"sass --load-path=node_modules src/scss:dist/css --watch --no-source-map\" \"eleventy --config=eleventy.config.js --serve\"",
     "serve": "eleventy --config=eleventy.config.js --serve",
     "deploy": "node scripts/deploy.js",
