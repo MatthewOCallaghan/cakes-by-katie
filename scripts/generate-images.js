@@ -19,6 +19,11 @@ function listImageFiles(rootDir, dir = rootDir, results = []) {
         return results;
     }
     for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+        // Skip dotfiles (e.g. macOS .DS_Store) — Gulp's src() glob ignored these by default,
+        // but fs.readdirSync doesn't, so we filter them out ourselves.
+        if (entry.name.startsWith(".")) {
+            continue;
+        }
         const absolute = path.join(dir, entry.name);
         if (entry.isDirectory()) {
             listImageFiles(rootDir, absolute, results);
