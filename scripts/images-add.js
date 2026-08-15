@@ -32,8 +32,8 @@ async function generateVariants(srcImagePath, image) {
     return generated;
 }
 
-function existingOutputPaths(image) {
-    if (image.endsWith(".svg")) {
+function existingOutputPaths(image, isSvg) {
+    if (isSvg) {
         const outputPath = path.join(IMAGES_DIR, image);
         return fs.existsSync(outputPath) ? [outputPath] : [];
     }
@@ -54,7 +54,11 @@ function buildDestination(category, relativePath) {
 // as the input stream ends, and any question asked after that silently never resolves. Nesting
 // keeps each next question's registration synchronous with the previous answer, so it's safe
 // under both a real terminal and piped input.
-function promptForDestination(rl, defaultName) {
+//
+// Whether an image is SVG or raster is decided by the source file's real extension (isSvg),
+// not by whatever the operator types here — raster destinations are extensionless (matching how
+// portfolio.json/etc. now store image references), SVG destinations always keep a real `.svg`.
+function promptForDestination(rl, defaultName, isSvg) {
     const categories = Object.keys(WIDTHS);
     console.log("\nWhich category does this image belong to?");
     categories.forEach((category, index) => console.log(`  ${index + 1}) ${category}`));
@@ -70,8 +74,10 @@ function promptForDestination(rl, defaultName) {
             const destinationLabel = category === "default" ? "images/" : `images${category}/`;
 
             rl.question(`Destination path within ${destinationLabel} [${defaultName}]: `, (destinationAnswer) => {
-                const image = buildDestination(category, destinationAnswer.trim() || defaultName);
-                const existing = existingOutputPaths(image);
+                let image = buildDestination(category, destinationAnswer.trim() || defaultName);
+                image = isSvg ? (image.toLowerCase().endsWith(".svg") ? image : `${image}.svg`) : removeExtension(image);
+
+                const existing = existingOutputPaths(image, isSvg);
 
                 if (existing.length === 0) {
                     resolve(image);
@@ -104,16 +110,19 @@ async function main() {
         process.exit(1);
     }
 
+    const isSvg = sourcePath.toLowerCase().endsWith(".svg");
+    const defaultName = isSvg ? path.basename(sourcePath) : removeExtension(path.basename(sourcePath));
+
     const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
 
     try {
-        const image = await promptForDestination(rl, path.basename(sourcePath));
+        const image = await promptForDestination(rl, defaultName, isSvg);
         if (!image) {
             console.log("Aborted.");
             return;
         }
 
-        const generated = image.endsWith(".svg") ? copySvg(sourcePath, image) : await generateVariants(sourcePath, image);
+        const generated = isSvg ? copySvg(sourcePath, image) : await generateVariants(sourcePath, image);
 
         console.log(`\n[images:add] Generated ${generated.length} file(s):`);
         generated.forEach((file) => console.log(`  ${path.relative(ROOT, file)}`));

@@ -41,7 +41,7 @@
         </div>
     </div>
     <section id="about">
-            {{ pictureElement("katie3.jpg", "Katie", "calc(max(min(40vw, 30vh), 200px))") }}
+            {{ pictureElement("katie3", "Katie", "calc(max(min(40vw, 30vh), 200px))") }}
 
             <div>
                 {# Inner div used to vertically centre content within outer div #}
@@ -82,28 +82,28 @@
                 {
                     href: '/products/wedding-cakes',
                     title: 'Wedding Cakes',
-                    imageSrc: 'cake-cutouts/wedding.png',
+                    imageSrc: 'cake-cutouts/wedding',
                     imageAlt: 'Wedding cake',
                     colour: 'linear-gradient(135deg, ' + products.weddingCakes.colours.dark + ', ' + products.weddingCakes.colours.light + ')'
                 },
                 {
                     href: '/products/celebration-cakes',
                     title: 'Celebration Cakes',
-                    imageSrc: 'cake-cutouts/parker-penguin.png',
+                    imageSrc: 'cake-cutouts/parker-penguin',
                     imageAlt: 'Parker penguin birthday cake',
                     colour: 'linear-gradient(135deg, ' + products.celebrationCakes.colours.dark + ', ' + products.celebrationCakes.colours.light + ')'
                 },
                 {
                     href: '/products/cupcakes',
                     title: 'Cupcakes',
-                    imageSrc: 'cake-cutouts/rose-mix-triple.png',
+                    imageSrc: 'cake-cutouts/rose-mix-triple',
                     imageAlt: 'Rose mix cupcakes',
                     colour: 'linear-gradient(135deg, ' + products.cupcakes.colours.dark + ', ' + products.cupcakes.colours.light + ')'
                 },
                 {
                     href: '/products/wedding-favours',
                     title: 'Wedding favours',
-                    imageSrc: 'wedding-favours/cake-jar-cutout.png',
+                    imageSrc: 'wedding-favours/cake-jar-cutout',
                     imageAlt: 'Cake jar wedding favour',
                     colour: 'linear-gradient(135deg, ' + products.weddingFavours.colours.dark + ', ' + products.weddingFavours.colours.light + ')'
                 }
@@ -118,7 +118,7 @@
     {# Christmas section #}
     {# <section id="christmas">
 
-        {{ pictureElement("backgrounds/christmas-tree.jpg", "Christmas background", "100vw") }}
+        {{ pictureElement("backgrounds/christmas-tree", "Christmas background", "100vw") }}
 
         <div class="christmas-outer-container">
             <div class="christmas-inner-container">
@@ -136,7 +136,7 @@
                         </a>
                     </div>
                     <div class="christmas-collection-image">
-                        {{ pictureElement("christmas/christmas-collection.jpg", "Christmas product range", "min(400px, 40vw)") }}
+                        {{ pictureElement("christmas/christmas-collection", "Christmas product range", "min(400px, 40vw)") }}
                     </div>
                 </div>
             </div>
@@ -145,7 +145,7 @@
 
     <section id="contact">
         {% from "macros/fixed-background.njk" import fixedBackground with context %}
-        {{ fixedBackground("backgrounds/marble-background.jpg", "Marble background image") }}
+        {{ fixedBackground("backgrounds/marble-background", "Marble background image") }}
         <div class="contact-card">
             <div class="contact-card-first-half">
                 <div class="contact-card-first-half-inner">

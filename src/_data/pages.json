@@ -25,7 +25,7 @@
         "heading": {
             "text": "Portfolio",
             "image": {
-                "path": "backgrounds/camera.jpg",
+                "path": "backgrounds/camera",
                 "alt": "Camera background"
             }
         },
@@ -37,7 +37,7 @@
         "heading": {
             "text": "Testimonials",
             "image": {
-                "path": "backgrounds/writing.jpg",
+                "path": "backgrounds/writing",
                 "alt": "Writing background"
             }
         },
@@ -50,7 +50,7 @@
         "heading": {
             "text": "FAQs",
             "image": {
-                "path": "backgrounds/question-mark.jpg",
+                "path": "backgrounds/question-mark",
                 "alt": "Question mark background"
             }
         },
@@ -100,7 +100,7 @@
         "heading": {
             "text": "Terms and Conditions",
             "image": {
-                "path": "backgrounds/books.jpg",
+                "path": "backgrounds/books",
                 "alt": "Books background"
             }
         },
@@ -112,7 +112,7 @@
         "heading": {
             "text": "Pricing",
             "image": {
-                "path": "backgrounds/piggy-bank.jpg",
+                "path": "backgrounds/piggy-bank",
                 "alt": "Piggy bank background"
             }
         },
@@ -124,7 +124,7 @@
         "heading": {
             "text": "Flavours",
             "image": {
-                "path": "backgrounds/chocolate.jpg",
+                "path": "backgrounds/chocolate",
                 "alt": "Chocolate background"
             }
         },
@@ -136,7 +136,7 @@
         "heading": {
             "text": "News & Awards",
             "image": {
-                "path": "backgrounds/champagne.png",
+                "path": "backgrounds/champagne",
                 "alt": "Champagne glasses background"
             }
         },
@@ -146,7 +146,7 @@
                 "subtitle": "Cakes by Katie<br>Wedding Cake Designer (Finalist)",
                 "text": "<p>I was delighted to be a finalist in the 'Wedding Cake Designer' category of the UK Weddings and Honeymoons Awards 2025, which were held at The Dorchester Hotel in Mayfair, London in February. These awards recognise excellence in the wedding and honeymoon industries.</p>",
                 "image": {
-                    "path": "features/ukwha-2025-finalist.png",
+                    "path": "features/ukwha-2025-finalist",
                     "alt": "UKWHA 2025 finalist rosette"
                 }
             },
@@ -155,7 +155,7 @@
                 "subtitle": "Cakes by Katie<br>Cake Designer of the Year",
                 "text": "<p>The Prestige Awards recognise small and medium-sized businesses that have proven to be the best in their market over the past 12 months.  The judging panel base their decision upon areas such as service excellence, quality of the product/service provided, innovative practices, value, ethical or sustainable methods of working, as well as consistency in performance. The winners selected are those who can best demonstrate their strengths in these areas.</p>",
                 "image": {
-                    "path": "features/prestige-2025-winner.png",
+                    "path": "features/prestige-2025-winner",
                     "alt": "South England Prestige Awards 2024/25 Winner"
                 }
             },
@@ -164,7 +164,7 @@
                 "subtitle": "Cakes by Katie<br>Best Bespoke Celebration Cake Bakery - Berkshire",
                 "text": "<p>Luxury Lifestyle Awards is a global award program that selects, recognises, celebrates and promotes the best luxury goods and services worldwide. Through comprehensive market research and a meticulous nomination and selection process, excellence is identified and honoured.</p>",
                 "image": {
-                    "path": "features/luxlife-2024-winner.png",
+                    "path": "features/luxlife-2024-winner",
                     "alt": "Luxlife Food & Drinks Awards Winner Banner"
                 }
             },
@@ -173,7 +173,7 @@
                 "subtitle": "Top Cake Maker in Berkshire",
                 "text": "<p>I had the privilege of being featured in Weddings & Honeymoons Edition 26. The article ‘Baked with love’ gathered the top ten cake makers in the UK.</p>",
                 "image": {
-                    "path": "features/weddings-and-honeymoons-magazine.png",
+                    "path": "features/weddings-and-honeymoons-magazine",
                     "alt": "Weddings and Honeymoons Edition 26 - February/March 2024"
                 }
             },
@@ -182,7 +182,7 @@
                 "subtitle": "Cakes by Katie<br>Rising Star (Finalist)",
                 "text": "<p>The UKWHA recognise excellence in the wedding and honeymoon industries.  I was honoured to be a finalist in the ‘Rising Star’ category of the UKWHA 2024 awards which was held at a spectacular gala evening at Kew Gardens in February 2024.</p>",
                 "image": {
-                    "path": "features/wh-Rising-Star-Rosette.png",
+                    "path": "features/wh-Rising-Star-Rosette",
                     "alt": "The United Kingdom Weddings & Honeymoons Awards 2024 'Rising Star' finalist rosette"
                 }
             }
@@ -195,7 +195,7 @@
         "heading": {
             "text": "Products",
             "image": {
-                "path": "backgrounds/gift-bags.jpg",
+                "path": "backgrounds/gift-bags",
                 "alt": "Gift bags background"
             }
         }
@@ -206,7 +206,7 @@
         "heading": {
             "text": "Celebration cakes",
             "image": {
-                "path": "backgrounds/confetti.jpg",
+                "path": "backgrounds/confetti",
                 "alt": "Confetti background"
             }
         },
@@ -221,14 +221,14 @@
         "heading": {
             "text": "Wedding cakes",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
         "cta": {
             "text": "Let's talk about your wedding cake!",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
@@ -240,14 +240,14 @@
         "heading": {
             "text": "Wedding favours",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
         "cta": {
             "text": "Let's talk about your wedding favours!",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
@@ -261,7 +261,7 @@
         "heading": {
             "text": "Gifts",
             "image": {
-                "path": "backgrounds/gift-bags.jpg",
+                "path": "backgrounds/gift-bags",
                 "alt": "Gift bags background"
             }
         },
@@ -275,14 +275,14 @@
         "heading": {
             "text": "Cupcakes",
             "image": {
-                "path": "portfolio/Pastel-and-Choc-Roses.jpg",
+                "path": "portfolio/Pastel-and-Choc-Roses",
                 "alt": "Cupcakes background"
             }
         },
         "cta": {
             "text": "Get a quote for your cupcakes!",
             "image": {
-                "path": "portfolio/Pastel-and-Choc-Roses.jpg",
+                "path": "portfolio/Pastel-and-Choc-Roses",
                 "alt": "Cupcakes background"
             }
         },
@@ -294,7 +294,7 @@
         "heading": {
             "text": "Occasions",
             "image": {
-                "path": "backgrounds/confetti.jpg",
+                "path": "backgrounds/confetti",
                 "alt": "Confetti background"
             }
         },
@@ -306,7 +306,7 @@
         "heading": {
             "text": "Birthday cakes",
             "image": {
-                "path": "backgrounds/birthday-balloons.jpg",
+                "path": "backgrounds/birthday-balloons",
                 "alt": "Birthday background"
             }
         },
@@ -399,14 +399,14 @@
         "heading": {
             "text": "Weddings",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
         "cta": {
             "text": "Let's talk about your wedding!",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
@@ -418,7 +418,7 @@
         "heading": {
             "text": "Anniversary cakes",
             "image": {
-                "path": "backgrounds/roses.jpg",
+                "path": "backgrounds/roses",
                 "alt": "Roses background"
             }
         },
@@ -433,7 +433,7 @@
         "heading": {
             "text": "Christening cakes",
             "image": {
-                "path": "backgrounds/christening.jpg",
+                "path": "backgrounds/christening",
                 "alt": "Christening background"
             }
         },
@@ -445,7 +445,7 @@
         "heading": {
             "text": "Baby shower cakes",
             "image": {
-                "path": "backgrounds/baby-feet.jpg",
+                "path": "backgrounds/baby-feet",
                 "alt": "Baby's feet background"
             }
         },
@@ -457,7 +457,7 @@
         "heading": {
             "text": "Gender reveal cakes",
             "image": {
-                "path": "backgrounds/baby-feet.jpg",
+                "path": "backgrounds/baby-feet",
                 "alt": "Baby's feet background"
             }
         },
@@ -469,7 +469,7 @@
         "heading": {
             "text": "Corporate cakes and cupcakes",
             "image": {
-                "path": "backgrounds/office.jpg",
+                "path": "backgrounds/office",
                 "alt": "Office background"
             }
         },
@@ -484,7 +484,7 @@
         "heading": {
             "text": "Valentine's cakes",
             "image": {
-                "path": "backgrounds/hearts.jpg",
+                "path": "backgrounds/hearts",
                 "alt": "Hearts background"
             }
         },
@@ -499,7 +499,7 @@
         "heading": {
             "text": "Easter cakes",
             "image": {
-                "path": "backgrounds/mini-eggs.jpg",
+                "path": "backgrounds/mini-eggs",
                 "alt": "Mini eggs background"
             }
         },
@@ -516,14 +516,14 @@
         "heading": {
             "text": "Christmas",
             "image": {
-                "path": "backgrounds/christmas-tree.jpg",
+                "path": "backgrounds/christmas-tree",
                 "alt": "Christmas tree background"
             }
         },
         "cta": {
             "text": "Order now for collection in the lead up to Christmas",
             "image": {
-                "path": "backgrounds/santa-and-child.jpg",
+                "path": "backgrounds/santa-and-child",
                 "alt": "Santa Claus and child background",
                 "position": "50% 30%"
             }
@@ -538,7 +538,7 @@
         "heading": {
             "text": "Afternoon tea cakes",
             "image": {
-                "path": "backgrounds/tea-set.jpg",
+                "path": "backgrounds/tea-set",
                 "alt": "Afternoon tea background"
             }
         },
@@ -553,7 +553,7 @@
         "heading": {
             "text": "Delivery",
             "image": {
-                "path": "backgrounds/village.jpg",
+                "path": "backgrounds/village",
                 "alt": "Village road background"
             }
         }
@@ -566,14 +566,14 @@
             "text": "Clock Barn",
             "afterText": "Whitchurch",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
         "cta": {
             "text": "Let's talk about your wedding at Clock Barn!",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
@@ -588,14 +588,14 @@
             "text": "Easthampsted Park",
             "afterText": "Wokingham",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
         "cta": {
             "text": "Let's talk about your wedding at Easthampsted Park!",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
@@ -610,14 +610,14 @@
             "text": "Forest Edge Tipis at Welford Park",
             "afterText": "Newbury",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
         "cta": {
             "text": "Let's talk about your wedding at Forest Edge Tipis at Welford Park!",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
@@ -632,14 +632,14 @@
             "text": "Great Fosters",
             "afterText": "Egham",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
         "cta": {
             "text": "Let's talk about your wedding at Great Fosters!",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
@@ -654,14 +654,14 @@
             "text": "Hedsor House",
             "afterText": "Taplow",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
         "cta": {
             "text": "Let's talk about your wedding at Hedsor House!",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
@@ -676,14 +676,14 @@
             "text": "Highcliffe Castle",
             "afterText": "Highcliffe",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
         "cta": {
             "text": "Let's talk about your wedding at Highcliffe Castle!",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
@@ -698,14 +698,14 @@
             "text": "Monkey Island Estate",
             "afterText": "Bray",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
         "cta": {
             "text": "Let's talk about your wedding at Monkey Island Estate!",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
@@ -720,14 +720,14 @@
             "text": "Oakley Hall",
             "afterText": "Basingstoke",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
         "cta": {
             "text": "Let's talk about your wedding at Oakley Hall!",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
@@ -742,14 +742,14 @@
             "text": "Old Gore",
             "afterText": "Cirencester",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
         "cta": {
             "text": "Let's talk about your wedding at Old Gore!",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
@@ -764,14 +764,14 @@
             "text": "Old Luxters Barn",
             "afterText": "Henley-on-Thames",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
         "cta": {
             "text": "Let's talk about your wedding at Old Luxters Barn!",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
@@ -786,14 +786,14 @@
             "text": "Pembroke Lodge",
             "afterText": "Richmond",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
         "cta": {
             "text": "Let's talk about your wedding at Pembroke Lodge!",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
@@ -808,14 +808,14 @@
             "text": "Pennyhill Park",
             "afterText": "Bagshot",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
         "cta": {
             "text": "Let's talk about your wedding at Pennyhill Park!",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
@@ -830,14 +830,14 @@
             "text": "Sheepdrove",
             "afterText": "Lambourn",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
         "cta": {
             "text": "Let's talk about your wedding at Sheepdrove!",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
@@ -852,14 +852,14 @@
             "text": "Stanlake Park",
             "afterText": "Twyford",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
         "cta": {
             "text": "Let's talk about your wedding at Stanlake Park!",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
@@ -874,14 +874,14 @@
             "text": "The Great House at Sonning",
             "afterText": "Sonning",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
         "cta": {
             "text": "Let's talk about your wedding at The Great House at Sonning!",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
@@ -896,14 +896,14 @@
             "text": "The Old Mill",
             "afterText": "Aldermaston",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
         "cta": {
             "text": "Let's talk about your wedding at The Old Mill!",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
@@ -918,14 +918,14 @@
             "text": "The Post Barn",
             "afterText": "Newbury",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
         "cta": {
             "text": "Let's talk about your wedding at The Post Barn!",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
@@ -940,14 +940,14 @@
             "text": "The Retreat at Elcot Park",
             "afterText": "Newbury",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
         "cta": {
             "text": "Let's talk about your wedding at The Retreat at Elcot Park!",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
@@ -962,14 +962,14 @@
             "text": "The Swan at Streatley",
             "afterText": "Streatley-on-Thames",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
         "cta": {
             "text": "Let's talk about your wedding at The Swan at Streatley!",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
@@ -984,14 +984,14 @@
             "text": "The Vineyard",
             "afterText": "Stockcross",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
         "cta": {
             "text": "Let's talk about your wedding at The Vineyard!",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
@@ -1006,14 +1006,14 @@
             "text": "Trunkwell House",
             "afterText": "Reading",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
         "cta": {
             "text": "Let's talk about your wedding at Trunkwell House!",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
@@ -1028,14 +1028,14 @@
             "text": "Tylney Hall",
             "afterText": "Hook",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
         "cta": {
             "text": "Let's talk about your wedding at Tylney Hall!",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
@@ -1050,14 +1050,14 @@
             "text": "Ufton Court",
             "afterText": "Reading",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
         "cta": {
             "text": "Let's talk about your wedding at Ufton Court!",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
@@ -1072,14 +1072,14 @@
             "text": "Wasing Park",
             "afterText": "Aldermaston",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
         "cta": {
             "text": "Let's talk about your wedding at Wasing Park!",
             "image": {
-                "path": "backgrounds/wedding.jpg",
+                "path": "backgrounds/wedding",
                 "alt": "Wedding background"
             }
         },
@@ -1094,7 +1094,7 @@
             "text": "Downe House School",
             "afterText": "Cold Ash",
             "image": {
-                "path": "backgrounds/birthday-balloons.jpg",
+                "path": "backgrounds/birthday-balloons",
                 "alt": "Birthday background"
             }
         },

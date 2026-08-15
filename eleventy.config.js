@@ -1,8 +1,6 @@
-const { removeExtension } = require("./utils/files");
 const { getSrcsetAttribute, getSizesAttribute, getDefaultSrc } = require("./utils/images");
 
 module.exports = function (eleventyConfig) {
-    eleventyConfig.addNunjucksFilter("removeExtension", removeExtension);
     eleventyConfig.addNunjucksGlobal("createSrcset", getSrcsetAttribute);
     eleventyConfig.addNunjucksGlobal("getDefaultSrc", getDefaultSrc);
     eleventyConfig.addNunjucksFilter("createSizes", getSizesAttribute);

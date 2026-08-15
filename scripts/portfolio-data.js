@@ -3,7 +3,6 @@ const path = require("path");
 const sizeOf = require("image-size");
 const getVideoDimensions = require("get-media-dimensions");
 const { getWidthsArrayForImagePath, FORMATS } = require("../utils/images");
-const { removeExtension } = require("../utils/files");
 
 const ROOT = path.join(__dirname, "..");
 const PORTFOLIO_JSON = path.join(ROOT, "src/content/portfolio.json");
@@ -13,9 +12,8 @@ const PORTFOLIO_JSON = path.join(ROOT, "src/content/portfolio.json");
 // aspect ratio, so any generated variant gives the same ratio as the original.
 function getGeneratedImagePath(portfolioRelativeSrc) {
     const imagePath = "/portfolio/" + portfolioRelativeSrc;
-    const withoutExtension = removeExtension(imagePath);
     const smallestWidth = getWidthsArrayForImagePath(imagePath)[0];
-    return path.join(ROOT, "images", `${withoutExtension}-${smallestWidth}.${FORMATS[FORMATS.length - 1]}`);
+    return path.join(ROOT, "images", `${imagePath}-${smallestWidth}.${FORMATS[FORMATS.length - 1]}`);
 }
 
 // Computing this involves probing every portfolio image/video on disk (image-size, video
