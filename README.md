@@ -2,7 +2,29 @@
 
 Code for website [cakesbykatie.co.uk](https://www.cakesbykatie.co.uk).
 
-Built with [Eleventy](https://www.11ty.dev/) (Nunjucks templates + a JSON data cascade), Sass, PostCSS and esbuild, with a custom responsive-image pipeline (AVIF/WebP at multiple widths, via `sharp`). Deployed manually via FTP to the existing host.
+Built with [Eleventy](https://www.11ty.dev/) (Nunjucks templates + a JSON data cascade), Sass, PostCSS and esbuild, with a responsive-image pipeline (AVIF/WebP at multiple widths, via `sharp`). Deployed manually via FTP to the existing host.
+
+## Images
+
+Responsive image variants (AVIF/WebP at multiple widths per `utils/images.js`'s `WIDTHS` config) live in `images/` at the repo root and are **committed to git** — they're what the site actually serves, copied into `dist/images` as a plain passthrough at build time. No image processing happens during `npm run build` or on CI.
+
+Original source photos are **not** stored in the repo (they're kept in your own backup) — only the generated variants are.
+
+To add a new image:
+
+```
+npm run images:add -- <path-to-file>
+```
+
+This prompts you to pick a category (`default`/`portfolio`/`backgrounds`/`choices`, matching `WIDTHS`) and a destination path, then generates just that image's AVIF/WebP variants straight into `images/`. Afterwards, `git add images` to stage the new files.
+
+To remove images nothing references anymore:
+
+```
+npm run images:clean
+```
+
+This scans `images/` for files whose name doesn't turn up anywhere in `src/` (templates, JSON data, JS), lists the candidates, and asks for confirmation before deleting anything.
 
 ## Development
 
@@ -11,7 +33,7 @@ npm install
 npm run dev
 ```
 
-This starts Eleventy's dev server with live reload at `http://localhost:8080`, alongside a Sass watcher and the responsive image generator (`scripts/generate-images.js --watch`).
+This starts Eleventy's dev server with live reload at `http://localhost:8080`, alongside a Sass watcher.
 
 ## Building
 
@@ -19,7 +41,7 @@ This starts Eleventy's dev server with live reload at `http://localhost:8080`, a
 npm run build
 ```
 
-Builds the full production site into `dist/`: Eleventy renders the HTML, `scripts/generate-images.js` generates AVIF/WebP image variants into `.image-cache/` (cached across runs — only new/changed source images are reprocessed), Sass compiles to CSS, PostCSS (autoprefixer + cssnano) and PurgeCSS minify/trim the CSS, and esbuild minifies the JS.
+Builds the full production site into `dist/`: Eleventy renders the HTML (passthrough-copying the committed `images/`), Sass compiles to CSS, PostCSS (autoprefixer + cssnano) and PurgeCSS minify/trim the CSS, and esbuild minifies the JS.
 
 ## Deployment
 

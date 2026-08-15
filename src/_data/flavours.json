@@ -7,7 +7,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/vanilla.jpg",
+                "image": "choices/flavours/vanilla",
                 "description": "Vanilla sponge filled with strawberry jam and buttercream"
             },
             {
@@ -16,7 +16,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/vanilla.jpg",
+                "image": "choices/flavours/vanilla",
                 "description": "GF Vanilla sponge filled with strawberry jam and buttercream"
             },
             {
@@ -25,7 +25,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/vanilla.jpg",
+                "image": "choices/flavours/vanilla",
                 "description": "DF Vanilla sponge filled with strawberry jam and DF \"buttercream\""
             },
             {
@@ -35,7 +35,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/vanilla.jpg",
+                "image": "choices/flavours/vanilla",
                 "description": "GF DF Vanilla sponge filled with strawberry jam and DF \"buttercream\""
             },
             {
@@ -43,7 +43,7 @@
                     "eggless",
                     "nut-free"
                 ],
-                "image": "choices/flavours/vanilla-vegan.jpg",
+                "image": "choices/flavours/vanilla-vegan",
                 "description": "Eggless Vanilla sponge filled with strawberry jam and buttercream"
             },
             {
@@ -53,7 +53,7 @@
                     "eggless",
                     "nut-free"
                 ],
-                "image": "choices/flavours/vanilla-vegan.jpg",
+                "image": "choices/flavours/vanilla-vegan",
                 "description": "Vegan Vanilla sponge filled with strawberry jam and DF \"buttercream\""
             }
         ],
@@ -67,7 +67,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/chocolate.jpg",
+                "image": "choices/flavours/chocolate",
                 "description": "Chocolate sponge filled with chocolate buttercream"
             },
             {
@@ -76,7 +76,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/chocolate.jpg",
+                "image": "choices/flavours/chocolate",
                 "description": "GF Chocolate sponge filled with chocolate buttercream"
             },
             {
@@ -85,7 +85,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/chocolate.jpg",
+                "image": "choices/flavours/chocolate",
                 "description": "DF Chocolate sponge filled with chocolate DF \"buttercream\""
             },
             {
@@ -95,7 +95,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/chocolate.jpg",
+                "image": "choices/flavours/chocolate",
                 "description": "GF DF Chocolate sponge filled with chocolate DF \"buttercream\""
             },
             {
@@ -104,7 +104,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/chocolate-vegan.jpg",
+                "image": "choices/flavours/chocolate-vegan",
                 "description": "Eggless Chocolate sponge filled with chocolate buttercream"
             },
             {
@@ -114,7 +114,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/chocolate-vegan.jpg",
+                "image": "choices/flavours/chocolate-vegan",
                 "description": "GF Eggless Chocolate sponge filled with chocolate buttercream"
             },
             {
@@ -125,7 +125,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/chocolate-vegan.jpg",
+                "image": "choices/flavours/chocolate-vegan",
                 "description": "Vegan Chocolate sponge filled with chocolate DF \"buttercream\""
             },
             {
@@ -137,7 +137,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/chocolate-vegan.jpg",
+                "image": "choices/flavours/chocolate-vegan",
                 "description": "GF Vegan Chocolate sponge filled with chocolate DF \"buttercream\""
             }
         ],
@@ -151,7 +151,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/choc-spread.jpg",
+                "image": "choices/flavours/choc-spread",
                 "description": "Chocolate sponge filled with milk chocolate spread and milk chocolate spread buttercream"
             },
             {
@@ -160,7 +160,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/choc-spread.jpg",
+                "image": "choices/flavours/choc-spread",
                 "description": "GF Chocolate sponge filled with milk chocolate spread and milk chocolate spread buttercream"
             },
             {
@@ -169,7 +169,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/choc-spread.jpg",
+                "image": "choices/flavours/choc-spread",
                 "description": "Eggless Chocolate sponge filled with milk chocolate spread and milk chocolate spread buttercream"
             },
             {
@@ -179,7 +179,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/choc-spread.jpg",
+                "image": "choices/flavours/choc-spread",
                 "description": "GF Eggless Chocolate sponge filled with milk chocolate spread and milk chocolate spread buttercream"
             }
         ],
@@ -192,7 +192,7 @@
                 "diets": [
                     "nut-free"
                 ],
-                "image": "choices/flavours/baileys-dreams.jpg",
+                "image": "choices/flavours/baileys-dreams",
                 "description": "White chocolate flavoured sponge filled with white chocolate buttercream"
             },
             {
@@ -200,7 +200,7 @@
                     "gluten-free",
                     "nut-free"
                 ],
-                "image": "choices/flavours/baileys-dreams.jpg",
+                "image": "choices/flavours/baileys-dreams",
                 "description": "GF White chocolate flavoured sponge filled with white chocolate buttercream"
             },
             {
@@ -208,7 +208,7 @@
                     "eggless",
                     "nut-free"
                 ],
-                "image": "choices/flavours/baileys-dreams.jpg",
+                "image": "choices/flavours/baileys-dreams",
                 "description": "Eggless White chocolate flavoured sponge filled with white chocolate buttercream"
             }
         ],
@@ -221,7 +221,7 @@
                 "diets": [
                     "nut-free"
                 ],
-                "image": "choices/flavours/triple-choc.jpg",
+                "image": "choices/flavours/triple-choc",
                 "description": "White chocolate flavoured sponge filled with milk chocolate spread and dark chocolate buttercream"
             },
             {
@@ -229,7 +229,7 @@
                     "gluten-free",
                     "nut-free"
                 ],
-                "image": "choices/flavours/triple-choc.jpg",
+                "image": "choices/flavours/triple-choc",
                 "description": "GF White chocolate flavoured sponge filled with milk chocolate spread and dark chocolate buttercream"
             },
             {
@@ -237,7 +237,7 @@
                     "eggless",
                     "nut-free"
                 ],
-                "image": "choices/flavours/triple-choc.jpg",
+                "image": "choices/flavours/triple-choc",
                 "description": "Egggless White chocolate flavoured sponge filled with milk chocolate spread and dark chocolate buttercream"
             }
         ],
@@ -250,7 +250,7 @@
                 "diets": [
                     "nut-free"
                 ],
-                "image": "choices/flavours/raspberry.jpg",
+                "image": "choices/flavours/raspberry",
                 "description": "Raspberry sponge filled with white chocolate buttercream"
             },
             {
@@ -258,7 +258,7 @@
                     "gluten-free",
                     "nut-free"
                 ],
-                "image": "choices/flavours/raspberry.jpg",
+                "image": "choices/flavours/raspberry",
                 "description": "GF Raspberry sponge filled with white chocolate buttercream"
             },
             {
@@ -266,7 +266,7 @@
                     "eggless",
                     "nut-free"
                 ],
-                "image": "choices/flavours/raspberry.jpg",
+                "image": "choices/flavours/raspberry",
                 "description": "Eggless Raspberry sponge filled with white chocolate buttercream"
             }
         ],
@@ -280,7 +280,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/millionaires.jpg",
+                "image": "choices/flavours/millionaires",
                 "description": "Vanilla sponge filled with salted caramel sauce and chocolate buttercream"
             },
             {
@@ -289,7 +289,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/millionaires.jpg",
+                "image": "choices/flavours/millionaires",
                 "description": "GF Vanilla sponge filled with salted caramel sauce and chocolate buttercream"
             },
             {
@@ -297,7 +297,7 @@
                     "eggless",
                     "nut-free"
                 ],
-                "image": "choices/flavours/millionaires.jpg",
+                "image": "choices/flavours/millionaires",
                 "description": "Eggless Vanilla sponge filled with salted caramel sauce and chocolate buttercream"
             }
         ],
@@ -311,7 +311,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/van-salted-c.jpg",
+                "image": "choices/flavours/van-salted-c",
                 "description": "Vanilla sponge filled with salted caramel sauce and salted caramel buttercream"
             },
             {
@@ -320,7 +320,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/van-salted-c.jpg",
+                "image": "choices/flavours/van-salted-c",
                 "description": "GF Vanilla sponge filled with salted caramel sauce and salted caramel buttercream"
             },
             {
@@ -329,7 +329,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/van-caramel-df.jpg",
+                "image": "choices/flavours/van-caramel-df",
                 "description": "DF Vanilla sponge filled with salted caramel DF \"buttercream\""
             },
             {
@@ -339,7 +339,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/van-caramel-df.jpg",
+                "image": "choices/flavours/van-caramel-df",
                 "description": "GF DF Vanilla sponge filled with salted caramel DF \"buttercream\""
             },
             {
@@ -347,7 +347,7 @@
                     "eggless",
                     "nut-free"
                 ],
-                "image": "choices/flavours/van-salted-c.jpg",
+                "image": "choices/flavours/van-salted-c",
                 "description": "Eggless Vanilla sponge filled with salted caramel sauce and salted caramel buttercream"
             },
             {
@@ -357,7 +357,7 @@
                     "eggless",
                     "nut-free"
                 ],
-                "image": "choices/flavours/van-caramel-df.jpg",
+                "image": "choices/flavours/van-caramel-df",
                 "description": "Vanilla sponge filled with salted caramel DF \"buttercream\""
             }
         ],
@@ -371,7 +371,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/choc-salted-c.jpg",
+                "image": "choices/flavours/choc-salted-c",
                 "description": "Chocolate sponge filled with salted caramel sauce and salted caramel buttercream"
             },
             {
@@ -380,7 +380,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/choc-salted-c.jpg",
+                "image": "choices/flavours/choc-salted-c",
                 "description": "GF Chocolate sponge filled with salted caramel sauce and salted caramel buttercream"
             },
             {
@@ -389,7 +389,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/choc-caramel-df.jpg",
+                "image": "choices/flavours/choc-caramel-df",
                 "description": "DF Chocolate sponge filled with salted caramel DF \"buttercream\""
             },
             {
@@ -399,7 +399,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/choc-caramel-df.jpg",
+                "image": "choices/flavours/choc-caramel-df",
                 "description": "GF DF Chocolate sponge filled with salted caramel DF \"buttercream\""
             },
             {
@@ -408,7 +408,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/choc-salted-c.jpg",
+                "image": "choices/flavours/choc-salted-c",
                 "description": "Eggless Chocolate sponge filled with salted caramel sauce and salted caramel buttercream"
             },
             {
@@ -418,7 +418,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/choc-salted-c.jpg",
+                "image": "choices/flavours/choc-salted-c",
                 "description": "GF Eggless Chocolate sponge filled with salted caramel sauce and salted caramel buttercream"
             },
             {
@@ -429,7 +429,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/choc-caramel-df.jpg",
+                "image": "choices/flavours/choc-caramel-df",
                 "description": "Vegan Chocolate sponge filled with salted caramel DF \"buttercream\""
             },
             {
@@ -441,7 +441,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/choc-caramel-df.jpg",
+                "image": "choices/flavours/choc-caramel-df",
                 "description": "GF Vegan Chocolate sponge filled with salted caramel DF \"buttercream\""
             }
         ],
@@ -455,7 +455,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/chocolate.jpg",
+                "image": "choices/flavours/chocolate",
                 "description": "Chocolate orange sponge filled with chocolate orange buttercream"
             },
             {
@@ -464,7 +464,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/chocolate.jpg",
+                "image": "choices/flavours/chocolate",
                 "description": "GF Chocolate orange sponge filled with chocolate orange buttercream"
             },
             {
@@ -473,7 +473,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/chocolate.jpg",
+                "image": "choices/flavours/chocolate",
                 "description": "DF Chocolate orange sponge filled with chocolate orange DF \"buttercream\""
             },
             {
@@ -483,7 +483,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/chocolate.jpg",
+                "image": "choices/flavours/chocolate",
                 "description": "GF DF Chocolate orange sponge filled with chocolate orange DF \"buttercream\""
             },
             {
@@ -492,7 +492,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/chocolate-vegan.jpg",
+                "image": "choices/flavours/chocolate-vegan",
                 "description": "Eggless Chocolate orange sponge filled with chocolate orange buttercream"
             },
             {
@@ -502,7 +502,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/chocolate-vegan.jpg",
+                "image": "choices/flavours/chocolate-vegan",
                 "description": "GF Eggless Chocolate orange sponge filled with chocolate orange buttercream"
             },
             {
@@ -513,7 +513,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/chocolate-vegan.jpg",
+                "image": "choices/flavours/chocolate-vegan",
                 "description": "Vegan Chocolate orange sponge filled with chocolate orange DF \"buttercream\""
             },
             {
@@ -525,7 +525,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/chocolate-vegan.jpg",
+                "image": "choices/flavours/chocolate-vegan",
                 "description": "GF Vegan Chocolate orange sponge filled with chocolate orange DF \"buttercream\""
             }
         ],
@@ -539,7 +539,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/chocolate.jpg",
+                "image": "choices/flavours/chocolate",
                 "description": "Chocolate sponge filled with chocolate mint buttercream"
             },
             {
@@ -548,7 +548,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/chocolate.jpg",
+                "image": "choices/flavours/chocolate",
                 "description": "GF Chocolate sponge filled with chocolate mint buttercream"
             },
             {
@@ -557,7 +557,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/chocolate.jpg",
+                "image": "choices/flavours/chocolate",
                 "description": "DF Chocolate sponge filled with chocolate mint DF \"buttercream\""
             },
             {
@@ -567,7 +567,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/chocolate.jpg",
+                "image": "choices/flavours/chocolate",
                 "description": "GF DF Chocolate sponge filled with chocolate mint DF \"buttercream\""
             },
             {
@@ -576,7 +576,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/chocolate-vegan.jpg",
+                "image": "choices/flavours/chocolate-vegan",
                 "description": "Eggless Chocolate sponge filled with chocolate mint buttercream"
             },
             {
@@ -586,7 +586,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/chocolate-vegan.jpg",
+                "image": "choices/flavours/chocolate-vegan",
                 "description": "GF Eggless Chocolate sponge filled with chocolate mint buttercream"
             },
             {
@@ -597,7 +597,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/chocolate-vegan.jpg",
+                "image": "choices/flavours/chocolate-vegan",
                 "description": "Vegan Chocolate sponge filled with chocolate mint DF \"buttercream\""
             },
             {
@@ -609,7 +609,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/chocolate-vegan.jpg",
+                "image": "choices/flavours/chocolate-vegan",
                 "description": "GF Vegan Chocolate sponge filled with chocolate mint DF \"buttercream\""
             }
         ],
@@ -623,7 +623,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/lemon-elderflower-orange.jpg",
+                "image": "choices/flavours/lemon-elderflower-orange",
                 "description": "Lemon sponge filled with lemon buttercream"
             },
             {
@@ -632,7 +632,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/lemon-elderflower-orange.jpg",
+                "image": "choices/flavours/lemon-elderflower-orange",
                 "description": "GF Lemon sponge filled with lemon buttercream"
             },
             {
@@ -641,7 +641,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/lemon-elderflower-orange.jpg",
+                "image": "choices/flavours/lemon-elderflower-orange",
                 "description": "DF Lemon sponge filled with lemon DF \"buttercream\""
             },
             {
@@ -651,7 +651,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/lemon-elderflower-orange.jpg",
+                "image": "choices/flavours/lemon-elderflower-orange",
                 "description": "GF DF Lemon sponge filled with lemon DF \"buttercream\""
             },
             {
@@ -659,7 +659,7 @@
                     "eggless",
                     "nut-free"
                 ],
-                "image": "choices/flavours/lemon-vegan.jpg",
+                "image": "choices/flavours/lemon-vegan",
                 "description": "Eggless Lemon sponge filled with lemon buttercream"
             },
             {
@@ -669,7 +669,7 @@
                     "eggless",
                     "nut-free"
                 ],
-                "image": "choices/flavours/lemon-vegan.jpg",
+                "image": "choices/flavours/lemon-vegan",
                 "description": "Vegan Lemon sponge filled with lemon DF \"buttercream\""
             }
         ],
@@ -683,7 +683,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/lemon-elderflower-orange.jpg",
+                "image": "choices/flavours/lemon-elderflower-orange",
                 "description": "Lemon sponge filled with elderflower buttercream"
             },
             {
@@ -692,7 +692,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/lemon-elderflower-orange.jpg",
+                "image": "choices/flavours/lemon-elderflower-orange",
                 "description": "GF Lemon sponge filled with elderflower buttercream"
             },
             {
@@ -701,7 +701,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/lemon-elderflower-orange.jpg",
+                "image": "choices/flavours/lemon-elderflower-orange",
                 "description": "DF Lemon sponge filled with elderflower DF \"buttercream\""
             },
             {
@@ -711,7 +711,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/lemon-elderflower-orange.jpg",
+                "image": "choices/flavours/lemon-elderflower-orange",
                 "description": "GF DF Lemon sponge filled with elderflower DF \"buttercream\""
             },
             {
@@ -719,7 +719,7 @@
                     "eggless",
                     "nut-free"
                 ],
-                "image": "choices/flavours/lemon-vegan.jpg",
+                "image": "choices/flavours/lemon-vegan",
                 "description": "Eggless Lemon sponge filled with elderflower buttercream"
             },
             {
@@ -729,7 +729,7 @@
                     "eggless",
                     "nut-free"
                 ],
-                "image": "choices/flavours/lemon-vegan.jpg",
+                "image": "choices/flavours/lemon-vegan",
                 "description": "Vegan Lemon sponge filled with elderflower DF \"buttercream\""
             }
         ],
@@ -743,7 +743,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/lemon-blue.jpg",
+                "image": "choices/flavours/lemon-blue",
                 "description": "Lemon sponge with blueberry pieces filled with blueberry jam and blueberry buttercream"
             },
             {
@@ -752,7 +752,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/lemon-blue.jpg",
+                "image": "choices/flavours/lemon-blue",
                 "description": "GF Lemon sponge with blueberry pieces filled with blueberry jam and blueberry buttercream"
             },
             {
@@ -761,7 +761,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/lemon-blue.jpg",
+                "image": "choices/flavours/lemon-blue",
                 "description": "DF Lemon sponge with blueberry pieces filled with blueberry jam and blueberry DF \"buttercream\""
             },
             {
@@ -771,7 +771,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/lemon-blue.jpg",
+                "image": "choices/flavours/lemon-blue",
                 "description": "GF DF Lemon sponge with blueberry pieces filled with blueberry jam and blueberry DF \"buttercream\""
             },
             {
@@ -779,7 +779,7 @@
                     "eggless",
                     "nut-free"
                 ],
-                "image": "choices/flavours/lemon-blue.jpg",
+                "image": "choices/flavours/lemon-blue",
                 "description": "Eggless Lemon sponge with blueberry pieces filled with blueberry jam and blueberry buttercream"
             },
             {
@@ -789,7 +789,7 @@
                     "eggless",
                     "nut-free"
                 ],
-                "image": "choices/flavours/lemon-blue.jpg",
+                "image": "choices/flavours/lemon-blue",
                 "description": "Vegan Lemon sponge with blueberry pieces filled with blueberry jam and blueberry DF \"buttercream\""
             }
         ],
@@ -803,7 +803,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/lemon-elderflower-orange.jpg",
+                "image": "choices/flavours/lemon-elderflower-orange",
                 "description": "Orange sponge filled with orange buttercream"
             },
             {
@@ -812,7 +812,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/lemon-elderflower-orange.jpg",
+                "image": "choices/flavours/lemon-elderflower-orange",
                 "description": "GF Orange sponge filled with orange buttercream"
             },
             {
@@ -821,7 +821,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/lemon-elderflower-orange.jpg",
+                "image": "choices/flavours/lemon-elderflower-orange",
                 "description": "DF Orange sponge filled with orange DF \"buttercream\""
             },
             {
@@ -831,7 +831,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/lemon-elderflower-orange.jpg",
+                "image": "choices/flavours/lemon-elderflower-orange",
                 "description": "GF DF Orange sponge filled with orange DF \"buttercream\""
             },
             {
@@ -839,7 +839,7 @@
                     "eggless",
                     "nut-free"
                 ],
-                "image": "choices/flavours/lemon-vegan.jpg",
+                "image": "choices/flavours/lemon-vegan",
                 "description": "Eggless Orange sponge filled with orange buttercream"
             },
             {
@@ -849,7 +849,7 @@
                     "eggless",
                     "nut-free"
                 ],
-                "image": "choices/flavours/lemon-vegan.jpg",
+                "image": "choices/flavours/lemon-vegan",
                 "description": "Vegan Orange sponge filled with orange DF \"buttercream\""
             }
         ],
@@ -862,7 +862,7 @@
                 "diets": [
                     "nut-free"
                 ],
-                "image": "choices/flavours/orange-p.jpg",
+                "image": "choices/flavours/orange-p",
                 "description": "Orange sponge filled with passionfruit & mango curd and white chocolate buttercream"
             },
             {
@@ -870,7 +870,7 @@
                     "gluten-free",
                     "nut-free"
                 ],
-                "image": "choices/flavours/orange-p.jpg",
+                "image": "choices/flavours/orange-p",
                 "description": "GF Orange sponge filled with passionfruit & mango curd and white chocolate buttercream"
             }
         ],
@@ -884,7 +884,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/coconut-rasp-champ.jpg",
+                "image": "choices/flavours/coconut-rasp-champ",
                 "description": "Coconut sponge filled with raspberry jam and raspberry buttercream"
             },
             {
@@ -893,7 +893,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/coconut-rasp-champ.jpg",
+                "image": "choices/flavours/coconut-rasp-champ",
                 "description": "GF Coconut sponge filled with raspberry jam and raspberry buttercream"
             },
             {
@@ -902,7 +902,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/coconut-rasp-champ.jpg",
+                "image": "choices/flavours/coconut-rasp-champ",
                 "description": "DF Coconut sponge filled with raspberry jam and raspberry DF \"buttercream\""
             },
             {
@@ -912,7 +912,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/coconut-rasp-champ.jpg",
+                "image": "choices/flavours/coconut-rasp-champ",
                 "description": "GF DF Coconut sponge filled with raspberry jam and raspberry DF \"buttercream\""
             },
             {
@@ -920,7 +920,7 @@
                     "eggless",
                     "nut-free"
                 ],
-                "image": "choices/flavours/coconut-rasp-champ.jpg",
+                "image": "choices/flavours/coconut-rasp-champ",
                 "description": "Eggless Coconut sponge filled with raspberry jam and raspberry buttercream"
             },
             {
@@ -930,7 +930,7 @@
                     "eggless",
                     "nut-free"
                 ],
-                "image": "choices/flavours/coconut-rasp-champ.jpg",
+                "image": "choices/flavours/coconut-rasp-champ",
                 "description": "Vegan Coconut sponge filled with raspberry jam and raspberry DF \"buttercream\""
             }
         ],
@@ -944,7 +944,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/coconut-lemon.jpg",
+                "image": "choices/flavours/coconut-lemon",
                 "description": "Coconut sponge filled with lemon buttercream"
             },
             {
@@ -953,7 +953,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/coconut-lemon.jpg",
+                "image": "choices/flavours/coconut-lemon",
                 "description": "GF Coconut sponge filled with lemon buttercream"
             },
             {
@@ -962,7 +962,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/coconut-lemon.jpg",
+                "image": "choices/flavours/coconut-lemon",
                 "description": "DF Coconut sponge filled with lemon DF \"buttercream\""
             },
             {
@@ -972,7 +972,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/coconut-lemon.jpg",
+                "image": "choices/flavours/coconut-lemon",
                 "description": "GF DF Coconut sponge filled with lemon DF \"buttercream\""
             },
             {
@@ -980,7 +980,7 @@
                     "eggless",
                     "nut-free"
                 ],
-                "image": "choices/flavours/coconut-lemon.jpg",
+                "image": "choices/flavours/coconut-lemon",
                 "description": "Eggless Coconut sponge filled with lemon buttercream"
             },
             {
@@ -990,7 +990,7 @@
                     "eggless",
                     "nut-free"
                 ],
-                "image": "choices/flavours/coconut-lemon.jpg",
+                "image": "choices/flavours/coconut-lemon",
                 "description": "Vegan Coconut sponge filled with lemon DF \"buttercream\""
             }
         ],
@@ -1003,7 +1003,7 @@
                 "diets": [
                     "nut-free"
                 ],
-                "image": "choices/flavours/van-oreo.jpg",
+                "image": "choices/flavours/van-oreo",
                 "description": "Vanilla sponge filled Oreo buttercream"
             },
             {
@@ -1011,7 +1011,7 @@
                     "dairy-free",
                     "nut-free"
                 ],
-                "image": "choices/flavours/van-oreo.jpg",
+                "image": "choices/flavours/van-oreo",
                 "description": "DF Vanilla sponge filled Oreo DF \"buttercream\""
             },
             {
@@ -1019,7 +1019,7 @@
                     "eggless",
                     "nut-free"
                 ],
-                "image": "choices/flavours/van-oreo.jpg",
+                "image": "choices/flavours/van-oreo",
                 "description": "Eggless Vanilla sponge filled Oreo buttercream"
             },
             {
@@ -1029,7 +1029,7 @@
                     "eggless",
                     "nut-free"
                 ],
-                "image": "choices/flavours/van-oreo.jpg",
+                "image": "choices/flavours/van-oreo",
                 "description": "Vegan Vanilla sponge filled Oreo DF \"buttercream\""
             }
         ],
@@ -1042,7 +1042,7 @@
                 "diets": [
                     "nut-free"
                 ],
-                "image": "choices/flavours/oreo.jpg",
+                "image": "choices/flavours/oreo",
                 "description": "Chocolate sponge filled Oreo buttercream"
             },
             {
@@ -1050,7 +1050,7 @@
                     "dairy-free",
                     "nut-free"
                 ],
-                "image": "choices/flavours/oreo.jpg",
+                "image": "choices/flavours/oreo",
                 "description": "DF Chocolate sponge filled Oreo DF \"buttercream\""
             },
             {
@@ -1058,7 +1058,7 @@
                     "eggless",
                     "nut-free"
                 ],
-                "image": "choices/flavours/oreo.jpg",
+                "image": "choices/flavours/oreo",
                 "description": "Eggless Chocolate sponge filled Oreo buttercream"
             },
             {
@@ -1068,7 +1068,7 @@
                     "eggless",
                     "nut-free"
                 ],
-                "image": "choices/flavours/oreo.jpg",
+                "image": "choices/flavours/oreo",
                 "description": "Vegan Chocolate sponge filled Oreo DF \"buttercream\""
             }
         ],
@@ -1081,7 +1081,7 @@
                 "diets": [
                     "nut-free"
                 ],
-                "image": "choices/flavours/lotus.jpg",
+                "image": "choices/flavours/lotus",
                 "description": "Vanilla sponge filled with Biscoff sauce and Biscoff buttercream"
             },
             {
@@ -1089,7 +1089,7 @@
                     "dairy-free",
                     "nut-free"
                 ],
-                "image": "choices/flavours/lotus.jpg",
+                "image": "choices/flavours/lotus",
                 "description": "DF Vanilla sponge filled with Biscoff sauce and Biscoff DF \"buttercream\""
             },
             {
@@ -1097,7 +1097,7 @@
                     "eggless",
                     "nut-free"
                 ],
-                "image": "choices/flavours/lotus.jpg",
+                "image": "choices/flavours/lotus",
                 "description": "Eggless Vanilla sponge filled with Biscoff sauce and Biscoff buttercream"
             },
             {
@@ -1107,7 +1107,7 @@
                     "eggless",
                     "nut-free"
                 ],
-                "image": "choices/flavours/lotus.jpg",
+                "image": "choices/flavours/lotus",
                 "description": "Vegan Vanilla sponge filled with Biscoff sauce and Biscoff DF \"buttercream\""
             }
         ],
@@ -1120,7 +1120,7 @@
                 "diets": [
                     "nut-free"
                 ],
-                "image": "choices/flavours/biscoff.jpg",
+                "image": "choices/flavours/biscoff",
                 "description": "Chocolate sponge filled with Biscoff sauce and Biscoff buttercream"
             },
             {
@@ -1128,7 +1128,7 @@
                     "dairy-free",
                     "nut-free"
                 ],
-                "image": "choices/flavours/biscoff.jpg",
+                "image": "choices/flavours/biscoff",
                 "description": "DF Chocolate sponge filled with Biscoff sauce and Biscoff DF \"buttercream\""
             },
             {
@@ -1136,7 +1136,7 @@
                     "eggless",
                     "nut-free"
                 ],
-                "image": "choices/flavours/biscoff-vegan.jpg",
+                "image": "choices/flavours/biscoff-vegan",
                 "description": "Eggless Chocolate sponge filled with Biscoff sauce and Biscoff buttercream"
             },
             {
@@ -1146,7 +1146,7 @@
                     "eggless",
                     "nut-free"
                 ],
-                "image": "choices/flavours/biscoff-vegan.jpg",
+                "image": "choices/flavours/biscoff-vegan",
                 "description": "Vegan Chocolate sponge filled with Biscoff sauce and Biscoff DF \"buttercream\""
             }
         ],
@@ -1160,7 +1160,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/coffee.jpg",
+                "image": "choices/flavours/coffee",
                 "description": "Coffee sponge filled with coffee buttercream"
             },
             {
@@ -1169,7 +1169,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/coffee.jpg",
+                "image": "choices/flavours/coffee",
                 "description": "GF Coffee sponge filled with coffee buttercream"
             },
             {
@@ -1178,7 +1178,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/coffee.jpg",
+                "image": "choices/flavours/coffee",
                 "description": "DF Coffee sponge filled with coffee DF \"buttercream\""
             },
             {
@@ -1188,7 +1188,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/coffee.jpg",
+                "image": "choices/flavours/coffee",
                 "description": "GF DF Coffee sponge filled with coffee DF \"buttercream\""
             }
         ],
@@ -1202,7 +1202,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/van-coffee.jpg",
+                "image": "choices/flavours/van-coffee",
                 "description": "Vanilla sponge filled with coffee buttercream"
             },
             {
@@ -1211,7 +1211,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/van-coffee.jpg",
+                "image": "choices/flavours/van-coffee",
                 "description": "GF Vanilla sponge filled with coffee buttercream"
             },
             {
@@ -1220,7 +1220,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/van-coffee.jpg",
+                "image": "choices/flavours/van-coffee",
                 "description": "DF Vanilla sponge filled with coffee DF \"buttercream\""
             },
             {
@@ -1230,7 +1230,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/van-coffee.jpg",
+                "image": "choices/flavours/van-coffee",
                 "description": "GF DF Vanilla sponge filled with coffee DF \"buttercream\""
             },
             {
@@ -1238,7 +1238,7 @@
                     "eggless",
                     "nut-free"
                 ],
-                "image": "choices/flavours/van-coffee.jpg",
+                "image": "choices/flavours/van-coffee",
                 "description": "Eggless Vanilla sponge filled with coffee buttercream"
             },
             {
@@ -1248,7 +1248,7 @@
                     "eggless",
                     "nut-free"
                 ],
-                "image": "choices/flavours/van-coffee.jpg",
+                "image": "choices/flavours/van-coffee",
                 "description": "Vegan Vanilla sponge filled with coffee DF \"buttercream\""
             }
         ],
@@ -1262,7 +1262,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/choc-coffee.jpg",
+                "image": "choices/flavours/choc-coffee",
                 "description": "Chocolate sponge filled with coffee buttercream"
             },
             {
@@ -1271,7 +1271,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/choc-coffee.jpg",
+                "image": "choices/flavours/choc-coffee",
                 "description": "GF Chocolate sponge filled with coffee buttercream"
             },
             {
@@ -1280,7 +1280,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/choc-coffee.jpg",
+                "image": "choices/flavours/choc-coffee",
                 "description": "DF Chocolate sponge filled with coffee DF \"buttercream\""
             },
             {
@@ -1290,7 +1290,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/choc-coffee.jpg",
+                "image": "choices/flavours/choc-coffee",
                 "description": "GF DF Chocolate sponge filled with coffee DF \"buttercream\""
             },
             {
@@ -1299,7 +1299,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/choc-coffee.jpg",
+                "image": "choices/flavours/choc-coffee",
                 "description": "Eggless Chocolate sponge filled with coffee buttercream"
             },
             {
@@ -1309,7 +1309,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/choc-coffee.jpg",
+                "image": "choices/flavours/choc-coffee",
                 "description": "GF Eggless Chocolate sponge filled with coffee buttercream"
             },
             {
@@ -1320,7 +1320,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/choc-coffee.jpg",
+                "image": "choices/flavours/choc-coffee",
                 "description": "Vegan Chocolate sponge filled with coffee DF \"buttercream\""
             },
             {
@@ -1332,7 +1332,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/choc-coffee.jpg",
+                "image": "choices/flavours/choc-coffee",
                 "description": "GF Vegan Chocolate sponge filled with coffee DF \"buttercream\""
             }
         ],
@@ -1345,7 +1345,7 @@
                 "diets": [
                     "soya-free"
                 ],
-                "image": "choices/flavours/carrot.jpg",
+                "image": "choices/flavours/carrot",
                 "description": "Carrot sponge (with a hint of cinnamon) filled with cream cheese buttercream"
             },
             {
@@ -1353,7 +1353,7 @@
                     "gluten-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/carrot.jpg",
+                "image": "choices/flavours/carrot",
                 "description": "GF Carrot sponge (with a hint of cinnamon) filled with cream cheese buttercream"
             }
         ],
@@ -1366,7 +1366,7 @@
                 "diets": [
                     "soya-free"
                 ],
-                "image": "choices/flavours/pistachio.jpg",
+                "image": "choices/flavours/pistachio",
                 "description": "Vanilla sponge filled with pistachio buttercream"
             },
             {
@@ -1374,7 +1374,7 @@
                     "gluten-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/pistachio.jpg",
+                "image": "choices/flavours/pistachio",
                 "description": "GF Vanilla sponge filled with pistachio buttercream"
             },
             {
@@ -1382,7 +1382,7 @@
                     "dairy-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/pistachio.jpg",
+                "image": "choices/flavours/pistachio",
                 "description": "DF Vanilla sponge filled with pistachio DF \"buttercream\""
             },
             {
@@ -1391,14 +1391,14 @@
                     "gluten-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/pistachio.jpg",
+                "image": "choices/flavours/pistachio",
                 "description": "GF DF Vanilla sponge filled with pistachio DF \"buttercream\""
             },
             {
                 "diets": [
                     "eggless"
                 ],
-                "image": "choices/flavours/pistachio.jpg",
+                "image": "choices/flavours/pistachio",
                 "description": "Eggless Vanilla sponge filled with pistachio buttercream"
             },
             {
@@ -1407,7 +1407,7 @@
                     "vegan",
                     "eggless"
                 ],
-                "image": "choices/flavours/pistachio.jpg",
+                "image": "choices/flavours/pistachio",
                 "description": "Vegan Vanilla sponge filled with pistachio DF \"buttercream\""
             }
         ],
@@ -1418,21 +1418,21 @@
         "variants": [
             {
                 "diets": [],
-                "image": "choices/flavours/nutella.jpg",
+                "image": "choices/flavours/nutella",
                 "description": "Chocolate sponge filled with with Nutella spread and Nutella buttercream"
             },
             {
                 "diets": [
                     "gluten-free"
                 ],
-                "image": "choices/flavours/nutella.jpg",
+                "image": "choices/flavours/nutella",
                 "description": "GF Chocolate sponge filled with Nutella spread and Nutella buttercream"
             },
             {
                 "diets": [
                     "eggless"
                 ],
-                "image": "choices/flavours/nutella.jpg",
+                "image": "choices/flavours/nutella",
                 "description": "Eggless Chocolate sponge filled with Nutella spread and Nutella buttercream"
             },
             {
@@ -1440,7 +1440,7 @@
                     "eggless",
                     "gluten-free"
                 ],
-                "image": "choices/flavours/nutella.jpg",
+                "image": "choices/flavours/nutella",
                 "description": "GF Eggless Chocolate sponge filled with Nutella spread and Nutella buttercream"
             }
         ],
@@ -1453,7 +1453,7 @@
                 "diets": [
                     "soya-free"
                 ],
-                "image": "choices/flavours/peanut-butter.jpg",
+                "image": "choices/flavours/peanut-butter",
                 "description": "Chocolate sponge filled with peanut butter spread and peanut butter buttercream"
             },
             {
@@ -1461,7 +1461,7 @@
                     "gluten-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/peanut-butter.jpg",
+                "image": "choices/flavours/peanut-butter",
                 "description": "GF Chocolate sponge filled with peanut butter spread and peanut butter buttercream"
             },
             {
@@ -1469,7 +1469,7 @@
                     "dairy-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/peanut-butter.jpg",
+                "image": "choices/flavours/peanut-butter",
                 "description": "DF Chocolate sponge filled with peanut butter spread and peanut butter DF \"buttercream\""
             },
             {
@@ -1478,7 +1478,7 @@
                     "gluten-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/peanut-butter.jpg",
+                "image": "choices/flavours/peanut-butter",
                 "description": "GF DF Chocolate sponge filled with peanut butter spread and peanut butter DF \"buttercream\""
             },
             {
@@ -1486,7 +1486,7 @@
                     "eggless",
                     "soya-free"
                 ],
-                "image": "choices/flavours/peanut-butter.jpg",
+                "image": "choices/flavours/peanut-butter",
                 "description": "Eggless Chocolate sponge filled with peanut butter spread and peanut butter buttercream"
             },
             {
@@ -1495,7 +1495,7 @@
                     "gluten-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/peanut-butter.jpg",
+                "image": "choices/flavours/peanut-butter",
                 "description": "GF Eggless Chocolate sponge filled with peanut butter spread and peanut butter buttercream"
             },
             {
@@ -1505,7 +1505,7 @@
                     "eggless",
                     "soya-free"
                 ],
-                "image": "choices/flavours/peanut-butter.jpg",
+                "image": "choices/flavours/peanut-butter",
                 "description": "Vegan Chocolate sponge filled with peanut butter spread and peanut butter DF \"buttercream\""
             },
             {
@@ -1516,7 +1516,7 @@
                     "eggless",
                     "soya-free"
                 ],
-                "image": "choices/flavours/peanut-butter.jpg",
+                "image": "choices/flavours/peanut-butter",
                 "description": "GF Vegan Chocolate sponge filled with peanut butter spread and peanut butter DF \"buttercream\""
             }
         ],
@@ -1529,7 +1529,7 @@
                 "diets": [
                     "soya-free"
                 ],
-                "image": "choices/flavours/coffee-walnut.jpg",
+                "image": "choices/flavours/coffee-walnut",
                 "description": "Coffee and walnut sponge filled with walnut pieces and coffee buttercream"
             },
             {
@@ -1537,7 +1537,7 @@
                     "gluten-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/coffee-walnut.jpg",
+                "image": "choices/flavours/coffee-walnut",
                 "description": "GF Coffee and walnut sponge filled with walnut pieces and coffee buttercream"
             },
             {
@@ -1545,7 +1545,7 @@
                     "dairy-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/coffee-walnut.jpg",
+                "image": "choices/flavours/coffee-walnut",
                 "description": "DF Coffee and walnut sponge filled with walnut pieces and coffee DF \"buttercream\""
             },
             {
@@ -1554,7 +1554,7 @@
                     "gluten-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/coffee-walnut.jpg",
+                "image": "choices/flavours/coffee-walnut",
                 "description": "GF DF Coffee and walnut sponge filled with walnut pieces and coffee DF \"buttercream\""
             }
         ],
@@ -1568,7 +1568,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/toffee.jpg",
+                "image": "choices/flavours/toffee",
                 "description": "Caramel sponge filled with salted caramel sauce and caramel buttercream"
             },
             {
@@ -1577,7 +1577,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/toffee.jpg",
+                "image": "choices/flavours/toffee",
                 "description": "GF Caramel sponge filled with salted caramel sauce and caramel buttercream"
             },
             {
@@ -1586,7 +1586,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/toffee-vegan.jpg",
+                "image": "choices/flavours/toffee-vegan",
                 "description": "DF Caramel sponge filled with caramel DF \"buttercream\""
             },
             {
@@ -1596,7 +1596,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/toffee-vegan.jpg",
+                "image": "choices/flavours/toffee-vegan",
                 "description": "GF DF Caramel sponge filled with caramel DF \"buttercream\""
             },
             {
@@ -1604,7 +1604,7 @@
                     "eggless",
                     "nut-free"
                 ],
-                "image": "choices/flavours/toffee-vegan.jpg",
+                "image": "choices/flavours/toffee-vegan",
                 "description": "Eggless Caramel sponge filled with salted caramel sauce and caramel buttercream"
             },
             {
@@ -1614,7 +1614,7 @@
                     "eggless",
                     "nut-free"
                 ],
-                "image": "choices/flavours/toffee-vegan.jpg",
+                "image": "choices/flavours/toffee-vegan",
                 "description": "Vegan Caramel sponge filled with caramel DF \"buttercream\""
             }
         ],
@@ -1628,7 +1628,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/toffee.jpg",
+                "image": "choices/flavours/toffee",
                 "description": "Caramel sponge filled with salted caramel sauce and salted caramel buttercream"
             },
             {
@@ -1637,7 +1637,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/toffee.jpg",
+                "image": "choices/flavours/toffee",
                 "description": "GF Caramel sponge filled with salted caramel sauce and salted caramel buttercream"
             },
             {
@@ -1646,7 +1646,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/toffee-vegan.jpg",
+                "image": "choices/flavours/toffee-vegan",
                 "description": "DF Caramel sponge filled with salted caramel DF \"buttercream\""
             },
             {
@@ -1656,7 +1656,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/toffee-vegan.jpg",
+                "image": "choices/flavours/toffee-vegan",
                 "description": "GF DF Caramel sponge filled with salted caramel DF \"buttercream\""
             },
             {
@@ -1664,7 +1664,7 @@
                     "eggless",
                     "nut-free"
                 ],
-                "image": "choices/flavours/toffee-vegan.jpg",
+                "image": "choices/flavours/toffee-vegan",
                 "description": "Eggless Caramel sponge filled with salted caramel sauce and salted caramel buttercream"
             },
             {
@@ -1674,7 +1674,7 @@
                     "eggless",
                     "nut-free"
                 ],
-                "image": "choices/flavours/toffee-vegan.jpg",
+                "image": "choices/flavours/toffee-vegan",
                 "description": "Vegan Caramel sponge filled with caramel DF \"buttercream\""
             }
         ],
@@ -1688,7 +1688,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/baileys-dreams.jpg",
+                "image": "choices/flavours/baileys-dreams",
                 "description": "Baileys sponge filled with Baileys buttercream"
             },
             {
@@ -1697,7 +1697,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/baileys-dreams.jpg",
+                "image": "choices/flavours/baileys-dreams",
                 "description": "GF Baileys sponge filled with Baileys buttercream"
             },
             {
@@ -1705,7 +1705,7 @@
                     "eggless",
                     "nut-free"
                 ],
-                "image": "choices/flavours/baileys-dreams.jpg",
+                "image": "choices/flavours/baileys-dreams",
                 "description": "Eggless Baileys sponge filled with Baileys buttercream"
             }
         ],
@@ -1719,7 +1719,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/coconut-rasp-champ.jpg",
+                "image": "choices/flavours/coconut-rasp-champ",
                 "description": "Champagne flavoured sponge filled with strawberry jam and strawberry buttercream"
             },
             {
@@ -1728,7 +1728,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/coconut-rasp-champ.jpg",
+                "image": "choices/flavours/coconut-rasp-champ",
                 "description": "GF Champagne flavoured sponge filled with strawberry jam and strawberry buttercream"
             },
             {
@@ -1737,7 +1737,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/coconut-rasp-champ.jpg",
+                "image": "choices/flavours/coconut-rasp-champ",
                 "description": "DF Champagne flavoured sponge filled with strawberry jam and strawberry DF \"buttercream\""
             },
             {
@@ -1747,7 +1747,7 @@
                     "nut-free",
                     "soya-free"
                 ],
-                "image": "choices/flavours/coconut-rasp-champ.jpg",
+                "image": "choices/flavours/coconut-rasp-champ",
                 "description": "GF DF Champagne flavoured sponge filled with strawberry jam and strawberry DF \"buttercream\""
             },
             {
@@ -1755,7 +1755,7 @@
                     "eggless",
                     "nut-free"
                 ],
-                "image": "choices/flavours/coconut-rasp-champ.jpg",
+                "image": "choices/flavours/coconut-rasp-champ",
                 "description": "Eggless Champagne flavoured sponge filled with strawberry jam and strawberry buttercream"
             },
             {
@@ -1765,7 +1765,7 @@
                     "eggless",
                     "nut-free"
                 ],
-                "image": "choices/flavours/coconut-rasp-champ.jpg",
+                "image": "choices/flavours/coconut-rasp-champ",
                 "description": "Vegan Champagne flavoured sponge filled with strawberry jam and strawberry DF \"buttercream\""
             }
         ],

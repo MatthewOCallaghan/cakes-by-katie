@@ -185,7 +185,7 @@
                                     </li>
                                     <li>
                                         <a href="/products/wedding-favours">
-                                            {{ pictureElement("wedding-favours/cake-jar-square.jpg", "Christening cake", "50px") }}
+                                            {{ pictureElement("wedding-favours/cake-jar-square", "Christening cake", "50px") }}
                                             <span>Wedding favours</span>
                                         </a>
                                     </li>
@@ -212,7 +212,7 @@
                                     </li> #}
                                     <li>
                                         <a href="/occasions/wedding">
-                                            {{ pictureElement("portfolio/square/Charlotte-zoomed-square.jpg", "Wedding cake", "50px") }}
+                                            {{ pictureElement("portfolio/square/Charlotte-zoomed-square", "Wedding cake", "50px") }}
                                             <span>Wedding</span>
                                         </a>
                                     </li>
@@ -282,12 +282,12 @@
                     </ul>
 
                     <div id="mobile-nav-image">
-                        {{ pictureElement("features/ukwha-2025-finalist.png", "UK Weddings and Honeymoons Awards Wedding Cake Designer Finalist 2025 Rosette", "126px") }}
+                        {{ pictureElement("features/ukwha-2025-finalist", "UK Weddings and Honeymoons Awards Wedding Cake Designer Finalist 2025 Rosette", "126px") }}
 
-                        {{ pictureElement("cake-cutouts/parker-penguin.png", "Parker penguin", "169px") }}
+                        {{ pictureElement("cake-cutouts/parker-penguin", "Parker penguin", "169px") }}
                         
                         {# Image used at Christmas #}
-                        {# {{ pictureElement("christmas/white-reindeer-cutout.png", "White reindeer cake", "169px") }} #}
+                        {# {{ pictureElement("christmas/white-reindeer-cutout", "White reindeer cake", "169px") }} #}
                     </div>
 
                 </div>
@@ -325,7 +325,7 @@
             <section id="bottom-panel-cta">
                 {{
                     pictureElement(
-                        pages[page].cta.image.path if pages[page].cta.image else "backgrounds/cake-selection.jpg",
+                        pages[page].cta.image.path if pages[page].cta.image else "backgrounds/cake-selection",
                         pages[page].cta.image.alt if pages[page].cta.image else "Selection of cakes",
                         "100vw",
                         "object-position: " ~ pages[page].cta.image.position if pages[page].cta.image.position
@@ -404,9 +404,9 @@
                 </ul>
             </div>
             <div class="image-row">
-                {{ pictureElement("features/ukwha-2025-finalist.png", "UK Weddings and Honeymoons Awards Wedding Cake Designer Finalist 2025 Rosette", "126px") }}
-                {{ pictureElement("features/wh-feature-Rosette.png", "UK Weddings and Honeymoons Top UK Cake Maker February/March Rosette", "134px") }}
-                {{ pictureElement("hygiene-rating.jpg", "5* hygiene rating", "216px") }}
+                {{ pictureElement("features/ukwha-2025-finalist", "UK Weddings and Honeymoons Awards Wedding Cake Designer Finalist 2025 Rosette", "126px") }}
+                {{ pictureElement("features/wh-feature-Rosette", "UK Weddings and Honeymoons Top UK Cake Maker February/March Rosette", "134px") }}
+                {{ pictureElement("hygiene-rating", "5* hygiene rating", "216px") }}
             </div>
             <div class="copyright-container">
                 <p><small>&copy; 2025 Katie&nbsp;O'Callaghan | <a href="/terms">Terms and Conditions</a></small></p>

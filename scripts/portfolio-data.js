@@ -2,9 +2,19 @@ const fs = require("fs");
 const path = require("path");
 const sizeOf = require("image-size");
 const getVideoDimensions = require("get-media-dimensions");
+const { getWidthsArrayForImagePath, FORMATS } = require("../utils/images");
 
 const ROOT = path.join(__dirname, "..");
 const PORTFOLIO_JSON = path.join(ROOT, "src/content/portfolio.json");
+
+// Aspect ratios are read off the generated images/ variants rather than the original files in
+// src/images (which aren't kept in the repo) — resizing by width only (no height) preserves
+// aspect ratio, so any generated variant gives the same ratio as the original.
+function getGeneratedImagePath(portfolioRelativeSrc) {
+    const imagePath = "/portfolio/" + portfolioRelativeSrc;
+    const smallestWidth = getWidthsArrayForImagePath(imagePath)[0];
+    return path.join(ROOT, "images", `${imagePath}-${smallestWidth}.${FORMATS[FORMATS.length - 1]}`);
+}
 
 // Computing this involves probing every portfolio image/video on disk (image-size, video
 // duration), which is expensive enough to memoize rather than redo on every template that
@@ -32,7 +42,7 @@ async function compute() {
         const { images, videos, squareImage } = portfolio[cake];
 
         images.forEach((src, index) => {
-            const { width, height } = sizeOf(path.join(ROOT, "src/images/portfolio", src));
+            const { width, height } = sizeOf(getGeneratedImagePath(src));
             portfolio[cake].images[index] = { src, aspectRatio: width / height };
         });
 
@@ -40,7 +50,7 @@ async function compute() {
             videos.forEach(({ file, thumb }, index) => {
                 // Get thumb aspect ratio if it is not one of the images we have already measured
                 if (!images.find(({ src }) => src === thumb)) {
-                    const { width, height } = sizeOf(path.join(ROOT, "src/images/portfolio", thumb));
+                    const { width, height } = sizeOf(getGeneratedImagePath(thumb));
                     portfolio[cake].videos[index].thumbAspectRatio = width / height;
                 }
                 videoPromises.push(

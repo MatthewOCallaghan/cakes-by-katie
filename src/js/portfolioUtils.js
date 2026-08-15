@@ -50,14 +50,6 @@ const getDefaultSrc = (pathWithoutExtension) => {
 
 /* ---------------------------- End of images.js ---------------------------- */
 
-/* -------------------------------- files.js -------------------------------- */
-
-// Get filename without extension
-const removeExtension = (filename) =>
-    filename.split('.')[0];
-
-/* ----------------------------- End of files.js ---------------------------- */
-
 /* -------------------------------------------------------------------------- */
 /*                             End of copied code                             */
 /* -------------------------------------------------------------------------- */
@@ -69,7 +61,7 @@ const createPictureElement = (container, filename, alt, recommendedSizes) => {
     FORMATS.forEach(format => {
         const source = document.createElement('source');
         source.type = `image/${format}`;
-        source.srcset = getSrcsetAttribute(`/images/portfolio/${removeExtension(filename)}`, format);
+        source.srcset = getSrcsetAttribute(`/images/portfolio/${filename}`, format);
         source.sizes = getSizesAttribute(recommendedSizes);
         picture.appendChild(source);
     });
@@ -77,9 +69,9 @@ const createPictureElement = (container, filename, alt, recommendedSizes) => {
     const img = document.createElement('img');
     img.alt = alt;
     picture.appendChild(img);
-    
+
     // For some reason Safari was fetching both avif and jpg files for each image
     // Not setting img src until it's appended to the DOM seems to fix this
     // Presumably this forces Safari to evaluate the <source> elements first
-    img.src = getDefaultSrc(`/images/portfolio/${removeExtension(filename)}`);
+    img.src = getDefaultSrc(`/images/portfolio/${filename}`);
 }
