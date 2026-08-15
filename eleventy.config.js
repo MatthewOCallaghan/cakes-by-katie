@@ -86,6 +86,10 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy({ "src/js": "js" });
     eleventyConfig.addPassthroughCopy({ favicon: "." });
 
+    // Cloudflare Pages config files — must land at the root of dist/ to take effect.
+    eleventyConfig.addPassthroughCopy({ "src/_headers": "_headers" });
+    eleventyConfig.addPassthroughCopy({ "src/_redirects": "_redirects" });
+
     // Sass isn't part of Eleventy's own build (compiled separately via npm scripts),
     // but watch it here so `npm run dev`'s Eleventy dev server reloads when it changes.
     eleventyConfig.addWatchTarget("src/scss");

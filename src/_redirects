@@ -1,0 +1,7 @@
+# Cloudflare Pages redirects config.
+# Canonical host is https://www.cakesbykatie.co.uk (see JSON-LD in src/_includes/layout.njk),
+# so enforce that at the apex to avoid apex/www duplicate-content indexing once both are
+# attached as custom domains on the Pages project.
+# https://developers.cloudflare.com/pages/configuration/redirects/
+
+https://cakesbykatie.co.uk/*  https://www.cakesbykatie.co.uk/:splat  301!
