@@ -18,6 +18,14 @@ $mobileNavMaxWidth: 1100px; // This value is also hardcoded in nav-menu.js
     scroll-behavior: smooth;
 }
 
+// Inline SVG icons (src/_includes/svgs/) used inline with text, e.g. contact details —
+// matches the sizing/alignment Font Awesome's own default CSS previously gave these.
+svg.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.125em;
+}
+
 // Keep footer at bottom
 body {
     display: flex;
