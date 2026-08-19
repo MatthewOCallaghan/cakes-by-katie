@@ -21,6 +21,17 @@
             <link rel="stylesheet" type="text/css" href="{{ "/css/" ~ page ~ ".css"}}">
         {% endif %}
 
+        {# Swiper (self-hosted, see src/scss/swiper.scss and src/js/testimonialsSlideshow.js /
+        imageSlideshow.js) — kept non-render-blocking via the preload/swap trick since carousels
+        are never above the fold. #}
+        <link
+            rel="preload"
+            as="style"
+            href="/css/swiper.css"
+            onload="this.onload=null;this.rel='stylesheet'"
+        />
+        <noscript><link rel="stylesheet" href="/css/swiper.css"></noscript>
+
         {% block head %}{% endblock %}
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -83,16 +94,6 @@
                 })
             }
         </script>
-
-        {# Swiper for testimonials slideshows and image carousels #}
-        <link
-            rel="preload"
-            as="style"
-            href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-            onload="this.onload=null;this.rel='stylesheet'"
-        />
-        <noscript><link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"></noscript>
-        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
 
     </head>
     <body>

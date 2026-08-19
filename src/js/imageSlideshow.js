@@ -1,3 +1,5 @@
+import Swiper from 'swiper/bundle';
+
 // Every carousel must be at least this width
 const CAROUSEL_TARGET_WIDTH = screen.width * 1.5;
 

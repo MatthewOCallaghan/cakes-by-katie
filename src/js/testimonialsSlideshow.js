@@ -1,3 +1,5 @@
+import Swiper from 'swiper/bundle';
+
 // Currently only supports one testimonial slideshow per page
 if (document.querySelectorAll('.testimonials-slideshow .swiper-wrapper .swiper-slide').length > 1) {
     const swiper = new Swiper('.testimonials-slideshow', {

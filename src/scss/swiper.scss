@@ -1,0 +1,4 @@
+// Self-hosted Swiper stylesheet, kept separate from global.scss so it can still be loaded with
+// the non-blocking preload/swap technique (see layout.njk) — Swiper's carousels are never above
+// the fold, so this shouldn't be part of the render-blocking critical CSS.
+@import 'swiper/swiper-bundle.min';
