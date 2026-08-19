@@ -7,6 +7,9 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        {# Kept render-blocking on purpose: the heading font (Licorice, a script face) has no
+        close-metric fallback, so deferring this would trade a small paint delay for a visible
+        font swap/reflow on headings once the stylesheet arrives late. #}
         <link href="https://fonts.googleapis.com/css2?family=Licorice&family=Open+Sans:ital,wght@0,300;0,500;1,300;1,400&family=Lato:wght@100;300&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" type="text/css" href="/css/global.css">
@@ -33,7 +36,7 @@
         {# Set colour of top bar on iPhone next to notch #}
         <meta name="theme-color" content="#000"/>
 
-        <script src="https://kit.fontawesome.com/c57fec537e.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/c57fec537e.js" crossorigin="anonymous" defer></script>
 
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-QMJVSRWWTY"></script>
@@ -83,10 +86,13 @@
 
         {# Swiper for testimonials slideshows and image carousels #}
         <link
-            rel="stylesheet"
+            rel="preload"
+            as="style"
             href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+            onload="this.onload=null;this.rel='stylesheet'"
         />
-        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <noscript><link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"></noscript>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
 
     </head>
     <body>

@@ -12,14 +12,38 @@
     <div id="header-video">
         
         {# Portrait video #}
-        <video id="portrait-video" autoplay playsinline muted loop>
-            <source src="/videos/landing-mobile.mp4" type="video/mp4">
+        <video id="portrait-video" playsinline muted loop poster="/images/landing-mobile-poster.webp">
+            <source data-src="/videos/landing-mobile.mp4" type="video/mp4">
         </video>
         {# Landscape video #}
-        <video id="landscape-video" autoplay playsinline muted loop>
-            <source src="/videos/landing.mp4" type="video/mp4">
+        <video id="landscape-video" playsinline muted loop poster="/images/landing-poster.webp">
+            <source data-src="/videos/landing.mp4" type="video/mp4">
         </video>
-        
+
+        <script>
+            {# Only the video matching the current orientation gets a src, so the browser never fetches both #}
+            (function () {
+                var mql = window.matchMedia("(orientation: landscape)");
+                var portrait = document.getElementById("portrait-video");
+                var landscape = document.getElementById("landscape-video");
+
+                function activate(video) {
+                    var source = video.querySelector("source");
+                    if (source.dataset.src) {
+                        source.src = source.dataset.src;
+                        delete source.dataset.src;
+                        video.load();
+                    }
+                    video.play().catch(function () {});
+                }
+
+                activate(mql.matches ? landscape : portrait);
+                mql.addEventListener("change", function (e) {
+                    activate(e.matches ? landscape : portrait);
+                });
+            })();
+        </script>
+
         {# Container for Christmas snow particles #}
         {# <div id="snow-particles"></div> #}
 
