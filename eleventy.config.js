@@ -88,6 +88,7 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy({ "src/videos": "videos" });
     eleventyConfig.addPassthroughCopy({ "src/pdfs": "pdfs" });
+    eleventyConfig.addPassthroughCopy({ "src/llms.txt": "llms.txt" });
     // Raw JS, so `npm run dev` alone has working scripts.
     // `npm run build` overwrites these with esbuild-minified versions afterwards.
     // Excludes BUNDLED_JS_ENTRY_POINTS — those use `import` and only work once esbuild has
