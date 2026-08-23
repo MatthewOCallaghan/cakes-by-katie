@@ -1,3 +1,6 @@
+(() => {
+const { Swiper, Autoplay } = window.SwiperVendor;
+
 // Every carousel must be at least this width
 const CAROUSEL_TARGET_WIDTH = screen.width * 1.5;
 
@@ -104,6 +107,7 @@ carousels.forEach(carousel => {
 
 // Initialise Swiper for each carousel
 const swiper = new Swiper('.image-slideshow .swiper', {
+    modules: [Autoplay],
     // Show grab cursor on mouse hover
     grabCursor: true,
     // Infinite loop
@@ -120,3 +124,4 @@ const swiper = new Swiper('.image-slideshow .swiper', {
     // Active slide is in centre rather than far left
     centeredSlides: true,
 });
+})();

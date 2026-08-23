@@ -1,4 +1,11 @@
+const fs = require("fs");
+const path = require("path");
 const { getSrcsetAttribute, getSizesAttribute, getDefaultSrc } = require("./utils/images");
+
+// Kept in sync with BUNDLED_ENTRY_POINTS in scripts/build-js.js — these files `import` an npm
+// package (Swiper) and only run once esbuild has bundled them, so they must never land in dist/js
+// as raw source (see the passthrough copy below).
+const BUNDLED_JS_ENTRY_POINTS = ["swiperVendor.js"];
 
 module.exports = function (eleventyConfig) {
     eleventyConfig.addNunjucksGlobal("createSrcset", getSrcsetAttribute);
@@ -83,7 +90,14 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy({ "src/pdfs": "pdfs" });
     // Raw JS, so `npm run dev` alone has working scripts.
     // `npm run build` overwrites these with esbuild-minified versions afterwards.
-    eleventyConfig.addPassthroughCopy({ "src/js": "js" });
+    // Excludes BUNDLED_JS_ENTRY_POINTS — those use `import` and only work once esbuild has
+    // bundled them, so `npm run dev` runs esbuild in watch mode for those instead (see the
+    // "dev" script in package.json).
+    fs.readdirSync(path.join(__dirname, "src/js"))
+        .filter((file) => file.endsWith(".js") && !BUNDLED_JS_ENTRY_POINTS.includes(file))
+        .forEach((file) => {
+            eleventyConfig.addPassthroughCopy({ [`src/js/${file}`]: `js/${file}` });
+        });
     eleventyConfig.addPassthroughCopy({ favicon: "." });
 
     // Cloudflare Pages config file — must land at the root of dist/ to take effect.

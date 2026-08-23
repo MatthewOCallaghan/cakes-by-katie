@@ -1,0 +1,4 @@
+// Self-hosted Swiper stylesheet, kept separate from global.scss so it can be loaded either
+// render-blocking or via the non-blocking preload/swap technique depending on the page (see
+// layout.njk's hasCarousel check).
+@import 'swiper/swiper-bundle.min';

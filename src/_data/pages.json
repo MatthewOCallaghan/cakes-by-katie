@@ -213,7 +213,8 @@
         "cta": {
             "text": "Get a quote for a celebration cake!"
         },
-        "product": "celebration-cake"
+        "product": "celebration-cake",
+        "hasCarousel": true
     },
     "weddingCakes": {
         "title": "Wedding cakes | Cakes by Katie",
@@ -232,7 +233,8 @@
                 "alt": "Wedding background"
             }
         },
-        "product": "wedding-cake"
+        "product": "wedding-cake",
+        "hasCarousel": true
     },
     "weddingFavours": {
         "title": "Wedding favours | Cakes by Katie",
@@ -286,7 +288,8 @@
                 "alt": "Cupcakes background"
             }
         },
-        "product": "cupcakes"
+        "product": "cupcakes",
+        "hasCarousel": true
     },
     "occasions": {
         "title": "Occasions | Cakes by Katie",
