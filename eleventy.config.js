@@ -5,7 +5,7 @@ const { getSrcsetAttribute, getSizesAttribute, getDefaultSrc } = require("./util
 // Kept in sync with BUNDLED_ENTRY_POINTS in scripts/build-js.js — these files `import` an npm
 // package (Swiper) and only run once esbuild has bundled them, so they must never land in dist/js
 // as raw source (see the passthrough copy below).
-const BUNDLED_JS_ENTRY_POINTS = ["testimonialsSlideshow.js", "imageSlideshow.js"];
+const BUNDLED_JS_ENTRY_POINTS = ["swiperVendor.js"];
 
 module.exports = function (eleventyConfig) {
     eleventyConfig.addNunjucksGlobal("createSrcset", getSrcsetAttribute);

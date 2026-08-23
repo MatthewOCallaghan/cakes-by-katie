@@ -5,13 +5,14 @@ const esbuild = require("esbuild");
 const SRC_DIR = path.join(__dirname, "..", "src", "js");
 const OUT_DIR = path.join(__dirname, "..", "dist", "js");
 
-// Files that `import` an npm package (currently just Swiper, via src/js/testimonialsSlideshow.js
-// and src/js/imageSlideshow.js) need `bundle: true` so that import resolves into the output file.
+// Files that `import` an npm package (currently just swiperVendor.js, which imports Swiper and
+// exposes it as window.SwiperVendor for imageSlideshow.js/testimonialsSlideshow.js to share —
+// see src/js/swiperVendor.js) need `bundle: true` so that import resolves into the output file.
 // Everything else in src/js/ is loaded as a classic, non-module <script> tag and relies on sharing
 // a single global scope across files (see portfolioUtils.js, whose top-level declarations are
 // consumed by portfolioGrid.js/portfolioModal.js via script load order, not imports) — bundling
 // those would make esbuild tree-shake their "unused" top-level declarations away.
-const BUNDLED_ENTRY_POINTS = ["testimonialsSlideshow.js", "imageSlideshow.js"];
+const BUNDLED_ENTRY_POINTS = ["swiperVendor.js"];
 
 const watch = process.argv.includes("--watch");
 

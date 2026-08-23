@@ -438,6 +438,14 @@
             </div>
         </footer>
 
+        {# Swiper (self-hosted, see src/js/swiperVendor.js) is shared via window.SwiperVendor by
+        imageSlideshow.js and testimonialsSlideshow.js so it's only downloaded/parsed once, even
+        on pages with both carousels. Only blocking on carousel pages, where it has to be ready
+        before imageSlideshow.js runs — that one is intentionally not deferred either, see below.
+        On every other page its only consumer is the deferred, below-the-fold
+        testimonialsSlideshow.js, so it's deferred too rather than blocking parse for ~77KB;
+        deferred scripts execute in document order, so the global is still set before that runs. #}
+        <script type="text/javascript" src="/js/swiperVendor.js"{% if not hasCarousel %} defer{% endif %}></script>
         <script type="text/javascript" src="/js/nav-menu.js" defer></script>
         <script type="text/javascript" src="/js/testimonialsSlideshow.js" defer></script>
         {% if hasCarousel %}

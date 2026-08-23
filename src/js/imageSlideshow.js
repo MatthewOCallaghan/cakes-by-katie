@@ -1,4 +1,5 @@
-import Swiper, { Autoplay } from 'swiper';
+(() => {
+const { Swiper, Autoplay } = window.SwiperVendor;
 
 // Every carousel must be at least this width
 const CAROUSEL_TARGET_WIDTH = screen.width * 1.5;
@@ -123,3 +124,4 @@ const swiper = new Swiper('.image-slideshow .swiper', {
     // Active slide is in centre rather than far left
     centeredSlides: true,
 });
+})();
