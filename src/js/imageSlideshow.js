@@ -1,4 +1,4 @@
-import Swiper from 'swiper/bundle';
+import Swiper, { Autoplay } from 'swiper';
 
 // Every carousel must be at least this width
 const CAROUSEL_TARGET_WIDTH = screen.width * 1.5;
@@ -106,6 +106,7 @@ carousels.forEach(carousel => {
 
 // Initialise Swiper for each carousel
 const swiper = new Swiper('.image-slideshow .swiper', {
+    modules: [Autoplay],
     // Show grab cursor on mouse hover
     grabCursor: true,
     // Infinite loop

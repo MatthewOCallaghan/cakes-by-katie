@@ -1,8 +1,9 @@
-import Swiper from 'swiper/bundle';
+import Swiper, { Autoplay, Pagination, Navigation } from 'swiper';
 
 // Currently only supports one testimonial slideshow per page
 if (document.querySelectorAll('.testimonials-slideshow .swiper-wrapper .swiper-slide').length > 1) {
     const swiper = new Swiper('.testimonials-slideshow', {
+        modules: [Autoplay, Pagination, Navigation],
         // Show grab cursor on mouse hover
         grabCursor: true,
         // Infinite loop
