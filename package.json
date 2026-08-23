@@ -17,7 +17,7 @@
     "build:js": "node scripts/build-js.js",
     "build:cachebust": "node scripts/cache-bust.js",
     "build": "npm run clean && npm run build:eleventy && npm run build:scss && npm run build:purge && npm run build:css && npm run build:js && npm run build:cachebust",
-    "dev": "concurrently \"sass --load-path=node_modules src/scss:dist/css --watch --no-source-map\" \"eleventy --config=eleventy.config.js --serve\"",
+    "dev": "concurrently \"sass --load-path=node_modules src/scss:dist/css --watch --no-source-map\" \"node scripts/build-js.js --watch\" \"eleventy --config=eleventy.config.js --serve\"",
     "serve": "eleventy --config=eleventy.config.js --serve",
     "deploy": "node scripts/deploy.js",
     "test": "echo \"Error: no test specified\" && exit 1"

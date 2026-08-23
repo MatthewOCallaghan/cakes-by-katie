@@ -13,19 +13,34 @@ const OUT_DIR = path.join(__dirname, "..", "dist", "js");
 // those would make esbuild tree-shake their "unused" top-level declarations away.
 const BUNDLED_ENTRY_POINTS = ["testimonialsSlideshow.js", "imageSlideshow.js"];
 
-const allFiles = fs.readdirSync(SRC_DIR).filter((file) => file.endsWith(".js"));
-const bundledFiles = allFiles.filter((file) => BUNDLED_ENTRY_POINTS.includes(file));
-const plainFiles = allFiles.filter((file) => !BUNDLED_ENTRY_POINTS.includes(file));
+const watch = process.argv.includes("--watch");
 
-esbuild.buildSync({
-    entryPoints: bundledFiles.map((file) => path.join(SRC_DIR, file)),
-    bundle: true,
-    minify: true,
-    outdir: OUT_DIR,
-});
+if (watch) {
+    // Dev mode: Eleventy's passthrough copy handles every other file in src/js raw (see
+    // eleventy.config.js), so here we only need to keep the bundled entry points up to date —
+    // unminified, for faster rebuilds.
+    esbuild
+        .context({
+            entryPoints: BUNDLED_ENTRY_POINTS.map((file) => path.join(SRC_DIR, file)),
+            bundle: true,
+            outdir: OUT_DIR,
+        })
+        .then((ctx) => ctx.watch());
+} else {
+    const allFiles = fs.readdirSync(SRC_DIR).filter((file) => file.endsWith(".js"));
+    const bundledFiles = allFiles.filter((file) => BUNDLED_ENTRY_POINTS.includes(file));
+    const plainFiles = allFiles.filter((file) => !BUNDLED_ENTRY_POINTS.includes(file));
 
-esbuild.buildSync({
-    entryPoints: plainFiles.map((file) => path.join(SRC_DIR, file)),
-    minify: true,
-    outdir: OUT_DIR,
-});
+    esbuild.buildSync({
+        entryPoints: bundledFiles.map((file) => path.join(SRC_DIR, file)),
+        bundle: true,
+        minify: true,
+        outdir: OUT_DIR,
+    });
+
+    esbuild.buildSync({
+        entryPoints: plainFiles.map((file) => path.join(SRC_DIR, file)),
+        minify: true,
+        outdir: OUT_DIR,
+    });
+}

@@ -21,16 +21,25 @@
             <link rel="stylesheet" type="text/css" href="{{ "/css/" ~ page ~ ".css"}}">
         {% endif %}
 
-        {# Swiper (self-hosted, see src/scss/swiper.scss and src/js/testimonialsSlideshow.js /
-        imageSlideshow.js) — kept non-render-blocking via the preload/swap trick since carousels
-        are never above the fold. #}
-        <link
-            rel="preload"
-            as="style"
-            href="/css/swiper.css"
-            onload="this.onload=null;this.rel='stylesheet'"
-        />
-        <noscript><link rel="stylesheet" href="/css/swiper.css"></noscript>
+        {% set hasCarousel = pages[page].hasCarousel or type === "weddingVenue" %}
+
+        {% if hasCarousel %}
+            {# Swiper (self-hosted, see src/scss/swiper.scss and src/js/imageSlideshow.js) — kept
+            render-blocking here since the image carousel is above the fold on desktop and needs
+            to be styled correctly on first paint. #}
+            <link rel="stylesheet" type="text/css" href="/css/swiper.css">
+        {% else %}
+            {# Swiper (self-hosted, see src/scss/swiper.scss and src/js/testimonialsSlideshow.js)
+            — kept non-render-blocking here via the preload/swap trick since the testimonials
+            slideshow is never above the fold. #}
+            <link
+                rel="preload"
+                as="style"
+                href="/css/swiper.css"
+                onload="this.onload=null;this.rel='stylesheet'"
+            />
+            <noscript><link rel="stylesheet" href="/css/swiper.css"></noscript>
+        {% endif %}
 
         {% block head %}{% endblock %}
 
@@ -431,6 +440,10 @@
 
         <script type="text/javascript" src="/js/nav-menu.js" defer></script>
         <script type="text/javascript" src="/js/testimonialsSlideshow.js" defer></script>
+        {% if hasCarousel %}
+            <script type="text/javascript" src="/js/portfolioUtils.js"></script>
+            <script type="text/javascript" src="/js/imageSlideshow.js"></script>
+        {% endif %}
         {% block scripts %}{% endblock %}
     </body>
 </html>
