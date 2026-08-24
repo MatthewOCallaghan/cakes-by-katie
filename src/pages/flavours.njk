@@ -1,105 +1,107 @@
-{% set page = "flavours" %}
-{% extends "layout.njk" %}
+---
+layout: layout.njk
+title: Flavours | Cakes by Katie
+description: See the wide range of flavours that Cakes by Katie, a cake maker in Thatcham, West Berkshire, offers for their high quality bespoke cakes. I also offer flavours as gluten free, dairy free or vegan.
+heading:
+  text: Flavours
+  image:
+    path: backgrounds/chocolate
+    alt: Chocolate background
+scripts:
+- src: flavours.js
+  defer: true
+---
+<div class="flavours-text">
+    <p>From well-loved classics to more playful or decadent options, there's something to suit every occasion. Flavours are grouped into the following curated collections: <em>The Classics</em>, <em>Truffle Box</em>, <em>Fresh &amp; Fruity</em>, <em>The Biscuit Edit</em>, <em>Nutty Delights</em>, <em>Café Katie</em>, and <em>Indulgence</em>, making it easy to explore and find the perfect fit.</p> 
 
-{% block main %}
+    <p>Use the filters below to tailor the flavour list to your allergen requirements.</p> 
+</div>
+<div class="flavours-menu-section">
+    <div class="flavours-menu-container">
 
-    <div class="flavours-text">
-        <p>From well-loved classics to more playful or decadent options, there's something to suit every occasion. Flavours are grouped into the following curated collections: <em>The Classics</em>, <em>Truffle Box</em>, <em>Fresh &amp; Fruity</em>, <em>The Biscuit Edit</em>, <em>Nutty Delights</em>, <em>Café Katie</em>, and <em>Indulgence</em>, making it easy to explore and find the perfect fit.</p> 
+        {% from "macros/fixed-background.njk" import fixedBackground with context %}
+        {{ fixedBackground("backgrounds/marble-background", "Marble background image") }}
 
-        <p>Use the filters below to tailor the flavour list to your allergen requirements.</p> 
-    </div>
-    <div class="flavours-menu-section">
-        <div class="flavours-menu-container">
+        <div class="flavours-menu">
 
-            {% from "macros/fixed-background.njk" import fixedBackground with context %}
-            {{ fixedBackground("backgrounds/marble-background", "Marble background image") }}
-
-            <div class="flavours-menu">
-
-                <div class="dietary-requirements">
-                    <p>Any dietary requirements?</p>
-                    <div class="dietary-filters">
-                        {% set diets = [
-                            {
-                                "value": "gluten-free",
-                                "label": "Gluten free"
-                            },                            
-                            {
-                                "value": "dairy-free",
-                                "label": "Dairy free"
-                            },
-                            {
-                                "value": "vegan",
-                                "label": "Vegan"
-                            },
-                            {
-                                "value": "eggless",
-                                "label": "Eggless"
-                            },
-                            {
-                                "value": "nut-free",
-                                "label": "Nut free"
-                            },
-                            {
-                                "value": "soya-free",
-                                "label": "Soya free"
-                            }
-                        ] %}
-                        {% for diet in diets %}
-                            <label>
-                                <input type="checkbox" id="{{ diet.value }}-checkbox" name="{{ diet.value }}-checkbox" value="{{ diet.value }}">
-                                <span>{{ diet.label }}</span>
-                            </label>
-                        {% endfor %}
-                    </div>
-                </div>
-
-                <p id="flavours-count-text">Showing {{ flavours | length }} flavours...</p>
-                
-                {% from "macros/picture.njk" import pictureElement with context %}
-
-                <div class="flavours-groups-container no-filters">
-                    {% for key, group in flavourGroups %}
-                        <div class="flavour-group group-valid" data-group="{{ key }}" style="background:{{ group.colour }};">
-                            <h2>{{ group.name }}</h2>
-                            <div class="flavours-list">
-                                {% for flavourKey in group.flavours %}
-                                    <div class="flavour flavour-valid">
-
-                                        {% set flavour = flavours[flavourKey] %}
-
-                                        {% for variant in flavour.variants %}
-                                            <div class="variant variant-valid" data-diets="{{ variant.diets | join(";") }}">
-                                                <div class="image-container">
-                                                    {{ pictureElement(variant.image, flavour.name, "150px") }}
-                                                </div>
-
-                                                <h3>{{flavour.name}}</h3>
-                                                
-                                                <p>{{variant.description}}</p>
-                                            </div>
-                                        {% endfor %}
-                                    </div>
-                                {% endfor %}
-                            </div>
-                        </div>
+            <div class="dietary-requirements">
+                <p>Any dietary requirements?</p>
+                <div class="dietary-filters">
+                    {% set diets = [
+                        {
+                            "value": "gluten-free",
+                            "label": "Gluten free"
+                        },                            
+                        {
+                            "value": "dairy-free",
+                            "label": "Dairy free"
+                        },
+                        {
+                            "value": "vegan",
+                            "label": "Vegan"
+                        },
+                        {
+                            "value": "eggless",
+                            "label": "Eggless"
+                        },
+                        {
+                            "value": "nut-free",
+                            "label": "Nut free"
+                        },
+                        {
+                            "value": "soya-free",
+                            "label": "Soya free"
+                        }
+                    ] %}
+                    {% for diet in diets %}
+                        <label>
+                            <input type="checkbox" id="{{ diet.value }}-checkbox" name="{{ diet.value }}-checkbox" value="{{ diet.value }}">
+                            <span>{{ diet.label }}</span>
+                        </label>
                     {% endfor %}
                 </div>
-                
-                <div class="allergen-info">
-                    <p>Allergen information</p>
-                    <p id="allergen-all-cakes-contain" class="text-valid">All cakes contain: Gluten, Eggs, and Dairy.</p>
-                    <p id="allergen-nuts" class="text-valid">The following flavours contain Nuts: {{ getFlavoursWithDietExclusion(flavours, 'nut-free') }}.</p>
-                    <p id="allergen-soya" class="text-valid">The following flavours contain Soya: {{ getFlavoursWithDietExclusion(flavours, 'soya-free') }}.</p>
-                    <p>Although individual flavours may not include certain ingredients, all cakes are made in a shared kitchen where the other listed allergens are present.</p>
-                    <p>Please note that final finishes and decorative elements may introduce additional allergens.</p>
-                </div>
+            </div>
+
+            <p id="flavours-count-text">Showing {{ flavours | length }} flavours...</p>
+
+            {% from "macros/picture.njk" import pictureElement with context %}
+
+            <div class="flavours-groups-container no-filters">
+                {% for key, group in flavourGroups %}
+                    <div class="flavour-group group-valid" data-group="{{ key }}" style="background:{{ group.colour }};">
+                        <h2>{{ group.name }}</h2>
+                        <div class="flavours-list">
+                            {% for flavourKey in group.flavours %}
+                                <div class="flavour flavour-valid">
+
+                                    {% set flavour = flavours[flavourKey] %}
+
+                                    {% for variant in flavour.variants %}
+                                        <div class="variant variant-valid" data-diets="{{ variant.diets | join(";") }}">
+                                            <div class="image-container">
+                                                {{ pictureElement(variant.image, flavour.name, "150px") }}
+                                            </div>
+
+                                            <h3>{{flavour.name}}</h3>
+
+                                            <p>{{variant.description}}</p>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <div class="allergen-info">
+                <p>Allergen information</p>
+                <p id="allergen-all-cakes-contain" class="text-valid">All cakes contain: Gluten, Eggs, and Dairy.</p>
+                <p id="allergen-nuts" class="text-valid">The following flavours contain Nuts: {{ getFlavoursWithDietExclusion(flavours, 'nut-free') }}.</p>
+                <p id="allergen-soya" class="text-valid">The following flavours contain Soya: {{ getFlavoursWithDietExclusion(flavours, 'soya-free') }}.</p>
+                <p>Although individual flavours may not include certain ingredients, all cakes are made in a shared kitchen where the other listed allergens are present.</p>
+                <p>Please note that final finishes and decorative elements may introduce additional allergens.</p>
             </div>
         </div>
     </div>
-
-{% endblock %}
-
-{% block scripts %}
-    <script type="text/javascript" src="/js/flavours.js" defer></script>
-{% endblock %}
+</div>

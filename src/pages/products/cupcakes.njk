@@ -1,172 +1,184 @@
-{% set page = "cupcakes" %}
-{% extends "layout.njk" %}
+---
+layout: layout.njk
+title: Cupcakes | Cakes by Katie
+description: I'm a cake maker in Thatcham, West Berkshire, near Newbury, offering high quality bespoke cupcakes in a range of flavours.
+heading:
+  text: Cupcakes
+  image:
+    path: portfolio/Pastel-and-Choc-Roses
+    alt: Cupcakes background
+cta:
+  text: Get a quote for your cupcakes!
+  image:
+    path: portfolio/Pastel-and-Choc-Roses
+    alt: Cupcakes background
+product: cupcakes
+hasCarousel: true
+---
+{% from "macros/service-breakdown.njk" import serviceBreakdown with context %}
+<section class="intro">
 
-{% block main %}
+    <div class="intro-text">
+        <p>Cupcakes are perfect for any occasion. Whether as the main event, a complement to your main cake to cater for various dietary requirements, or a thoughtful gift, my cupcakes are sure to delight.</p>
+    </div>
 
-    <section class="intro">
+    <div class="service-breakdown-container">
+        {% from "macros/service-breakdown.njk" import serviceBreakdown %}
+        {{ serviceBreakdown([
+            {
+                image: 'svgs/heart.svg',
+                heading: 'Bespoke designs',
+                description: "I'll work with you to create your perfect cupcakes."
+            },
+            {
+                image: 'svgs/lemon.svg',
+                heading: flavours | length ~ ' flavours',
+                description: "With so many sponge flavours, there's something for everyone."
+            },
+            {
+                image: 'svgs/cow.svg',
+                heading: 'Free from options',
+                description: "I can cater for specific dietary requirements, including gluten free, dairy free, eggless and vegan."
+            },
+            {
+                image: 'svgs/gift-wrap.svg',
+                heading: 'Gift wrapping',
+                description: "Gift wrapping such as ribbon and gift notes are available."
+            },
+            {
+                image: 'svgs/van.svg',
+                heading: 'Delivery available',
+                description: "Delivery is available for an additional fee."
+            }
+        ]) }}
+    </div>
+</section>
 
-        <div class="intro-text">
-            <p>Cupcakes are perfect for any occasion. Whether as the main event, a complement to your main cake to cater for various dietary requirements, or a thoughtful gift, my cupcakes are sure to delight.</p>
-        </div>
+{% from "macros/image-carousel.njk" import imageCarousel with context %}
+{{ imageCarousel(portfolio | getMatchingCakes({ product: 'cupcakes' }), 'linear-gradient(to bottom, #fff, #000)') }}
 
-        <div class="service-breakdown-container">
-            {% from "macros/service-breakdown.njk" import serviceBreakdown %}
-            {{ serviceBreakdown([
-                {
-                    image: 'svgs/heart.svg',
-                    heading: 'Bespoke designs',
-                    description: "I'll work with you to create your perfect cupcakes."
-                },
-                {
-                    image: 'svgs/lemon.svg',
-                    heading: flavours | length ~ ' flavours',
-                    description: "With so many sponge flavours, there's something for everyone."
-                },
-                {
-                    image: 'svgs/cow.svg',
-                    heading: 'Free from options',
-                    description: "I can cater for specific dietary requirements, including gluten free, dairy free, eggless and vegan."
-                },
-                {
-                    image: 'svgs/gift-wrap.svg',
-                    heading: 'Gift wrapping',
-                    description: "Gift wrapping such as ribbon and gift notes are available."
-                },
-                {
-                    image: 'svgs/van.svg',
-                    heading: 'Delivery available',
-                    description: "Delivery is available for an additional fee."
-                }
-            ]) }}
-        </div>
-    </section>
+{% from "macros/design-choices.njk" import designChoices with context %}
+{{
+    designChoices(
+        "Let's design your cupcakes!",
+        "With cupcakes, there are so many options to choose from! Here are some of the most popular...",
+        [
+            {
+                name: "Cases",
+                items: [
+                    {
+                        name: "White paper",
+                        image: "choices/cupcakes/cases/white-paper"
+                    },
+                    {
+                        name: "Coloured paper",
+                        image: "choices/cupcakes/cases/coloured-paper"
+                    },
+                    {
+                        name: "Metallic foil",
+                        image: "choices/cupcakes/cases/foil"
+                    }
+                ]
+            },
+            designChoicesFlavours,
+            {
+                name: "Piping",
+                items: [
+                    {
+                        name: "Swirl",
+                        image: "choices/cupcakes/piping/swirl"
+                    },
+                    {
+                        name: "Mixed",
+                        image: "choices/cupcakes/piping/mixed"
+                    },
+                    {
+                        name: "Colours",
+                        image: "choices/cupcakes/piping/colours"
+                    },
+                    {
+                        name: "Flowers",
+                        image: "choices/cupcakes/piping/flowers2"
+                    },
+                    {
+                        name: "Novelty",
+                        image: "choices/cupcakes/piping/novelty"
+                    }
+                ]
+            },
+            {
+                name: "Toppers",
+                items: [
+                    {
+                        name: "Embossed",
+                        image: "choices/cupcakes/toppers/embossed"
+                    },
+                    {
+                        name: "Embossed - painted",
+                        image: "choices/cupcakes/toppers/emboss-paint"
+                    },
+                    {
+                        name: "Acryllic plaque",
+                        image: "choices/cupcakes/toppers/plaque-acryllic"
+                    },
+                    {
+                        name: "Card",
+                        image: "choices/cupcakes/toppers/card"
+                    },
+                    {
+                        name: "Number",
+                        image: "choices/cupcakes/toppers/number"
+                    },
+                    {
+                        name: "Chocolate number",
+                        image: "choices/cupcakes/toppers/chocolate-number"
+                    },
+                    {
+                        name: "Chocolate",
+                        image: "choices/cupcakes/toppers/chocolate"
+                    },
+                    {
+                        name: "Shape",
+                        image: "choices/cupcakes/toppers/shape"
+                    },
+                    {
+                        name: "Edible image",
+                        image: "choices/cupcakes/toppers/edible-image"
+                    },
+                    {
+                        name: "Novelty",
+                        image: "choices/cupcakes/toppers/novelty"
+                    }
+                ]
+            },
+            {
+                name: "Decoration",
+                items: [
+                    {
+                        name: "Chocolate",
+                        image: "choices/cupcakes/decoration/chocolate"
+                    },
+                    {
+                        name: "Flower",
+                        image: "choices/cupcakes/decoration/flower"
+                    },
+                    {
+                        name: "Rose",
+                        image: "choices/cupcakes/decoration/rose"
+                    },
+                    {
+                        name: "Sprinkles",
+                        image: "choices/cupcakes/decoration/sprinkles"
+                    }
+                ]
+            }
+        ]
+    )
+}}
 
-    {% from "macros/image-carousel.njk" import imageCarousel with context %}
-    {{ imageCarousel(portfolio | getMatchingCakes({ product: 'cupcakes' }), 'linear-gradient(to bottom, #fff, #000)') }}
+{{ imageCarousel(portfolio | getMatchingCakes({ product: 'cupcakes' }), 'linear-gradient(to bottom, #000, ' ~ products.cupcakes.colours.light ~ ')') }}
 
-    {% from "macros/design-choices.njk" import designChoices with context %}
-    {{
-        designChoices(
-            "Let's design your cupcakes!",
-            "With cupcakes, there are so many options to choose from! Here are some of the most popular...",
-            [
-                {
-                    name: "Cases",
-                    items: [
-                        {
-                            name: "White paper",
-                            image: "choices/cupcakes/cases/white-paper"
-                        },
-                        {
-                            name: "Coloured paper",
-                            image: "choices/cupcakes/cases/coloured-paper"
-                        },
-                        {
-                            name: "Metallic foil",
-                            image: "choices/cupcakes/cases/foil"
-                        }
-                    ]
-                },
-                designChoicesFlavours,
-                {
-                    name: "Piping",
-                    items: [
-                        {
-                            name: "Swirl",
-                            image: "choices/cupcakes/piping/swirl"
-                        },
-                        {
-                            name: "Mixed",
-                            image: "choices/cupcakes/piping/mixed"
-                        },
-                        {
-                            name: "Colours",
-                            image: "choices/cupcakes/piping/colours"
-                        },
-                        {
-                            name: "Flowers",
-                            image: "choices/cupcakes/piping/flowers2"
-                        },
-                        {
-                            name: "Novelty",
-                            image: "choices/cupcakes/piping/novelty"
-                        }
-                    ]
-                },
-                {
-                    name: "Toppers",
-                    items: [
-                        {
-                            name: "Embossed",
-                            image: "choices/cupcakes/toppers/embossed"
-                        },
-                        {
-                            name: "Embossed - painted",
-                            image: "choices/cupcakes/toppers/emboss-paint"
-                        },
-                        {
-                            name: "Acryllic plaque",
-                            image: "choices/cupcakes/toppers/plaque-acryllic"
-                        },
-                        {
-                            name: "Card",
-                            image: "choices/cupcakes/toppers/card"
-                        },
-                        {
-                            name: "Number",
-                            image: "choices/cupcakes/toppers/number"
-                        },
-                        {
-                            name: "Chocolate number",
-                            image: "choices/cupcakes/toppers/chocolate-number"
-                        },
-                        {
-                            name: "Chocolate",
-                            image: "choices/cupcakes/toppers/chocolate"
-                        },
-                        {
-                            name: "Shape",
-                            image: "choices/cupcakes/toppers/shape"
-                        },
-                        {
-                            name: "Edible image",
-                            image: "choices/cupcakes/toppers/edible-image"
-                        },
-                        {
-                            name: "Novelty",
-                            image: "choices/cupcakes/toppers/novelty"
-                        }
-                    ]
-                },
-                {
-                    name: "Decoration",
-                    items: [
-                        {
-                            name: "Chocolate",
-                            image: "choices/cupcakes/decoration/chocolate"
-                        },
-                        {
-                            name: "Flower",
-                            image: "choices/cupcakes/decoration/flower"
-                        },
-                        {
-                            name: "Rose",
-                            image: "choices/cupcakes/decoration/rose"
-                        },
-                        {
-                            name: "Sprinkles",
-                            image: "choices/cupcakes/decoration/sprinkles"
-                        }
-                    ]
-                }
-            ]
-        )
-    }}
-
-    {{ imageCarousel(portfolio | getMatchingCakes({ product: 'cupcakes' }), 'linear-gradient(to bottom, #000, ' ~ products.cupcakes.colours.light ~ ')') }}
-
-    <section id="pricing" style="background:{{products.cupcakes.colours.light}}">
-        <h2 style="margin-top:0;">Pricing</h2>
-        {% include "cupcakes-pricing.njk" %}
-    </section>
-{% endblock %}
+<section id="pricing" style="background:{{products.cupcakes.colours.light}}">
+    <h2 style="margin-top:0;">Pricing</h2>
+    {% include "cupcakes-pricing.njk" %}
+</section>

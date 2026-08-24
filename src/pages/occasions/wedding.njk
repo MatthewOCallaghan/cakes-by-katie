@@ -1,48 +1,57 @@
-{% set page = "wedding" %}
-{% extends "layout.njk" %}
+---
+layout: layout.njk
+title: Weddings | Cakes by Katie
+description: Cakes by Katie is a cake maker in Thatcham, Berkshire, near Newbury and Reading, offering bespoke wedding cakes and edible wedding favours in a wide range of flavours and catering for specific dietary requirements.
+heading:
+  text: Weddings
+  image:
+    path: backgrounds/wedding
+    alt: Wedding background
+cta:
+  text: Let's talk about your wedding!
+  image:
+    path: backgrounds/wedding
+    alt: Wedding background
+occasion: wedding
+---
+<section class="intro">
 
-{% block main %}
+    <div class="intro-text">
+        <p>Congratulations! It's always an honour to be entrusted to make a wedding cake, and I look forward to working with you to deliver the perfect cake for your special day.</p>
+        <p>I also offer wedding favours, including cake jars and fondant covered cookies.</p>
+    </div>
 
-    <section class="intro">
+</section>
 
-        <div class="intro-text">
-            <p>Congratulations! It's always an honour to be entrusted to make a wedding cake, and I look forward to working with you to deliver the perfect cake for your special day.</p>
-            <p>I also offer wedding favours, including cake jars and fondant covered cookies.</p>
-        </div>
+{% from "macros/half-image-section.njk" import halfImageSection with context %}
+{{ halfImageSection(
+    'Wedding cakes',
+    [
+        "All of my wedding cakes are meticulously crafted to reflect your unique style and taste, creating a centrepiece that not only looks amazing but tastes delicious too!"
+    ],
+    "/products/wedding-cakes",
+    "See wedding cakes",
+    "portfolio/Charlotte",
+    "Wedding cake",
+    tall = true
+) }}
 
-    </section>
+{{ halfImageSection(
+    'Wedding favours',
+    [
+        "My wedding favours are lovingly crafted to delight your guests and include cake jars, sugar cookies and cakesicles. They are the perfect gesture to thank your guests for sharing in your special day."
+    ],
+    "/products/wedding-favours",
+    "See wedding favours",
+    "wedding-favours/cake-jar-wide",
+    "Cake Jar wedding favour",
+    tall = true,
+    inverse = true,
+    background = '#fff'
+) }}
 
-    {% from "macros/half-image-section.njk" import halfImageSection with context %}
-    {{ halfImageSection(
-        'Wedding cakes',
-        [
-            "All of my wedding cakes are meticulously crafted to reflect your unique style and taste, creating a centrepiece that not only looks amazing but tastes delicious too!"
-        ],
-        "/products/wedding-cakes",
-        "See wedding cakes",
-        "portfolio/Charlotte",
-        "Wedding cake",
-        tall = true
-    ) }}
+{% include "featured-in.njk" %}
 
-    {{ halfImageSection(
-        'Wedding favours',
-        [
-            "My wedding favours are lovingly crafted to delight your guests and include cake jars, sugar cookies and cakesicles. They are the perfect gesture to thank your guests for sharing in your special day."
-        ],
-        "/products/wedding-favours",
-        "See wedding favours",
-        "wedding-favours/cake-jar-wide",
-        "Cake Jar wedding favour",
-        tall = true,
-        inverse = true,
-        background = '#fff'
-    ) }}
-
-    {% include "featured-in.njk" %}
-
-    <section style="background:{{products.weddingCakes.colours.light}}">
-        {% include "wedding-venues.njk" %}
-    </section>
-
-{% endblock %}
+<section style="background:{{products.weddingCakes.colours.light}}">
+    {% include "wedding-venues.njk" %}
+</section>

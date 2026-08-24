@@ -1,73 +1,83 @@
-{% set page = "weddingFavours" %}
-{% extends "layout.njk" %}
-
-{% block main %}
-
-    {% from "macros/product-range.njk" import productRange with context %}
-    {{
-        productRange(
-            [
-                {
-                    name: "Cake Jars",
-                    image: "wedding-favours/cake-jar",
-                    price: "From £5 each",
-                    description: "<p>Sponge cake beautifully presented in a jar with a spoon. All sponge cake flavour options available. Minimum order of 6 jars per flavour.</p>"
-                },
-                {
-                    name: "Cookies",
-                    image: "wedding-favours/cookies",
-                    price: "From £3.50 each",
-                    description: "<p>Sugar cookies finished in either fondant or royal icing. Flavour option: vanilla. Minimum order of 12.</p>"
-                },
-                {
-                    name: "Cakesicles",
-                    image: "wedding-favours/cakesicles",
-                    price: "From £5 each",
-                    description: "<p>Sponge cake mixed with either white or milk chocolate ganache enrobed in finest Belgian Callebaut chocolate. All sponge base flavours available. Chocolate options: dark, milk, white or coloured white. Minimum order of 12 per flavour.</p>"
-                },
-                {
-                    name: "Chocolate Bombes",
-                    image: "wedding-favours/bombe-portrait",
-                    price: "From £5 each",
-                    description: "<p>Finest Belgian Callebaut chocolate shell filled with hot chocolate powder on a bed of marshmallows. Choose from milk, white or dark chocolate shell. Minimum order of 12.</p>"
-                },
-                {
-                    name: "Cake Pops",
-                    image: "wedding-favours/cake-pops",
-                    price: "From £3.50 each",
-                    description: "<p>Sponge cake mixed with milk or white chocolate ganache and dipped in finest Belgian Callebaut chocolate. Stick optional. Various presentation options. All sponge base flavours available. Chocolate options: dark, milk, white or coloured white. Minimum order of 12 per flavour.</p>"
-                },
-                {
-                    name: "Macarons",
-                    image: "wedding-favours/macarons",
-                    price: "From £5 each",
-                    description: "<p>Small box of macarons gift wrapped. Multiple flavour options available. Minimum order of 12 boxes - flavour minimums may apply.</p>"
-                }
-            ],
-            "<p>Congratulations on your engagement! Wedding favours make the perfect gift for your guests, whether on the table or placed elsewhere they will give the finishing touch your venue is looking for. Why not have a look at my wedding cakes too and enquire about yours?</p><p>Discount options are available depending on your order size/requirements.</p><p>If you would like something different as a wedding favour, please let me know and I will do my best to accommodate your request.</p>",
-            [
-                {
-                    title: "Bespoke",
-                    icon: "svgs/heart.svg",
-                    description: "Custom made to compliment your wedding decor."
-                },
-                {
-                    title: "Flavour options",
-                    icon: "svgs/lemon.svg",
-                    description: "Multiple flavour options for each. Free from options are also available for some."
-                },
-                {
-                    title: "Gift wrapping",
-                    icon: "svgs/gift-wrap.svg",
-                    description: "Gift wrapped to match your wedding colour theme/stationery."
-                },
-                {
-                    title: "Delivery available",
-                    icon: "svgs/van.svg",
-                    description: "I can deliver these to the venue."
-                }
-            ]
-        )
-    }}
-
-{% endblock %}
+---
+layout: layout.njk
+title: Wedding favours | Cakes by Katie
+description: I'm a cake maker in Thatcham, West Berkshire, near Newbury and Reading, offering high quality wedding favours.
+heading:
+  text: Wedding favours
+  image:
+    path: backgrounds/wedding
+    alt: Wedding background
+cta:
+  text: Let's talk about your wedding favours!
+  image:
+    path: backgrounds/wedding
+    alt: Wedding background
+testimonialCakes:
+- riding-the-waves
+---
+{% from "macros/product-range.njk" import productRange with context %}
+{{
+    productRange(
+        [
+            {
+                name: "Cake Jars",
+                image: "wedding-favours/cake-jar",
+                price: "From £5 each",
+                description: "<p>Sponge cake beautifully presented in a jar with a spoon. All sponge cake flavour options available. Minimum order of 6 jars per flavour.</p>"
+            },
+            {
+                name: "Cookies",
+                image: "wedding-favours/cookies",
+                price: "From £3.50 each",
+                description: "<p>Sugar cookies finished in either fondant or royal icing. Flavour option: vanilla. Minimum order of 12.</p>"
+            },
+            {
+                name: "Cakesicles",
+                image: "wedding-favours/cakesicles",
+                price: "From £5 each",
+                description: "<p>Sponge cake mixed with either white or milk chocolate ganache enrobed in finest Belgian Callebaut chocolate. All sponge base flavours available. Chocolate options: dark, milk, white or coloured white. Minimum order of 12 per flavour.</p>"
+            },
+            {
+                name: "Chocolate Bombes",
+                image: "wedding-favours/bombe-portrait",
+                price: "From £5 each",
+                description: "<p>Finest Belgian Callebaut chocolate shell filled with hot chocolate powder on a bed of marshmallows. Choose from milk, white or dark chocolate shell. Minimum order of 12.</p>"
+            },
+            {
+                name: "Cake Pops",
+                image: "wedding-favours/cake-pops",
+                price: "From £3.50 each",
+                description: "<p>Sponge cake mixed with milk or white chocolate ganache and dipped in finest Belgian Callebaut chocolate. Stick optional. Various presentation options. All sponge base flavours available. Chocolate options: dark, milk, white or coloured white. Minimum order of 12 per flavour.</p>"
+            },
+            {
+                name: "Macarons",
+                image: "wedding-favours/macarons",
+                price: "From £5 each",
+                description: "<p>Small box of macarons gift wrapped. Multiple flavour options available. Minimum order of 12 boxes - flavour minimums may apply.</p>"
+            }
+        ],
+        "<p>Congratulations on your engagement! Wedding favours make the perfect gift for your guests, whether on the table or placed elsewhere they will give the finishing touch your venue is looking for. Why not have a look at my wedding cakes too and enquire about yours?</p><p>Discount options are available depending on your order size/requirements.</p><p>If you would like something different as a wedding favour, please let me know and I will do my best to accommodate your request.</p>",
+        [
+            {
+                title: "Bespoke",
+                icon: "svgs/heart.svg",
+                description: "Custom made to compliment your wedding decor."
+            },
+            {
+                title: "Flavour options",
+                icon: "svgs/lemon.svg",
+                description: "Multiple flavour options for each. Free from options are also available for some."
+            },
+            {
+                title: "Gift wrapping",
+                icon: "svgs/gift-wrap.svg",
+                description: "Gift wrapped to match your wedding colour theme/stationery."
+            },
+            {
+                title: "Delivery available",
+                icon: "svgs/van.svg",
+                description: "I can deliver these to the venue."
+            }
+        ]
+    )
+}}

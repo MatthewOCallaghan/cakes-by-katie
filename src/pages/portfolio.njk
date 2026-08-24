@@ -1,86 +1,82 @@
-{% set page = "portfolio" %}
-{% extends "layout.njk" %}
+---
+layout: layout.njk
+title: Portfolio | Cakes by Katie
+description: See all the high quality bespoke cakes and cupcakes I have made for birthdays, weddings, anniversaries, corporate events and other occasions. I am based in Thatcham, West Berkshire, near Newbury and Reading.
+heading:
+  text: Portfolio
+  image:
+    path: backgrounds/camera
+    alt: Camera background
+scripts:
+- src: portfolioUtils.js
+- src: portfolioGrid.js
+- src: portfolioModal.js
+  defer: true
+---
 
-{% block head %}
-{% endblock %}
+<div class="portfolio-grid-container">
 
-{% from "macros/picture.njk" import pictureElement with context %}
-
-{% block main %}
-
-    
-    <div class="portfolio-grid-container">
-
-        <div id="portfolio-filters">
-            <button aria-label="Show all cakes"><span>All cakes</span></button>
-            {% for item in [
-            { label: 'Wedding cakes', value: 'wedding-cake', lightColour: products.weddingCakes.colours.light, darkColour: products.weddingCakes.colours.dark },
-                { label: 'Celebration cakes', value: 'celebration-cake', lightColour: products.celebrationCakes.colours.light, darkColour: products.celebrationCakes.colours.dark },
-                { label: 'Cupcakes', value: 'cupcakes', lightColour: products.cupcakes.colours.light, darkColour: products.cupcakes.colours.dark }
-            ]%}
-                <button
-                    style="--selectedBackground: linear-gradient(45deg, {{ item.darkColour }}, {{ item.lightColour }});"
-                    aria-label="Filter by {{ item.label | lower }}"
-                    data-product="{{ item.value }}"
-                ><span>{{ item.label }}</span></button>
-            {% endfor %}
-            {# <button id="portfolio-filter-occasion">Filter by anniversary</button> #}
-        </div>
-
-        {# Grid of images #}
-        <div class="portfolio-grid">
-            {% for key, item in portfolio %}
-                <button
-                    class="grid-item"
-                    style="aspect-ratio: {{ item.images[0].aspectRatio }};"
-                    data-name="{{ item.name }}"
-                    data-images="{{ item.images | stringifyElements | join(';') }}"
-                    data-description="{{ item.description }}"
-                    data-product="{{ item.product }}"
-                    data-occasions="{{ item.occasions }}"
-                    {% if item.videos %}
-                        data-videos="{{ item.videos | stringifyElements | join(';') }}"
-                    {% endif %}
-                    {% if item.testimonial %}
-                        data-testimonial-quote="{{ item.testimonial.text }}"
-                        data-testimonial-customer="{{ item.testimonial.name }}"
-                        data-testimonial-location="{{ item.testimonial.location }}"
-                    {% endif %}
-                >
-                    {# Javascript will create <picture> element here #}
-                </button>
-            {% endfor %}
-        </div>
+    <div id="portfolio-filters">
+        <button aria-label="Show all cakes"><span>All cakes</span></button>
+        {% for item in [
+        { label: 'Wedding cakes', value: 'wedding-cake', lightColour: products.weddingCakes.colours.light, darkColour: products.weddingCakes.colours.dark },
+            { label: 'Celebration cakes', value: 'celebration-cake', lightColour: products.celebrationCakes.colours.light, darkColour: products.celebrationCakes.colours.dark },
+            { label: 'Cupcakes', value: 'cupcakes', lightColour: products.cupcakes.colours.light, darkColour: products.cupcakes.colours.dark }
+        ]%}
+            <button
+                style="--selectedBackground: linear-gradient(45deg, {{ item.darkColour }}, {{ item.lightColour }});"
+                aria-label="Filter by {{ item.label | lower }}"
+                data-product="{{ item.value }}"
+            ><span>{{ item.label }}</span></button>
+        {% endfor %}
+        {# <button id="portfolio-filter-occasion">Filter by anniversary</button> #}
     </div>
 
-    {# Modal #}
-    <div id="portfolio-modal">
-        <div class="close-button-container">
-            <button id="modal-close">Close</button>
-        </div>
-        <div class="scrollable-container">
-            <div class="container">
-                <div class="text">
-                    <h1 id="title"></h1>
-                    <p id="description"></p>
-                    <div id="testimonial">
-                        <blockquote></blockquote>
-                        <span></span>
-                    </div>
+    {# Grid of images #}
+    <div class="portfolio-grid">
+        {% for key, item in portfolio %}
+            <button
+                class="grid-item"
+                style="aspect-ratio: {{ item.images[0].aspectRatio }};"
+                data-name="{{ item.name }}"
+                data-images="{{ item.images | stringifyElements | join(';') }}"
+                data-description="{{ item.description }}"
+                data-product="{{ item.product }}"
+                data-occasions="{{ item.occasions }}"
+                {% if item.videos %}
+                    data-videos="{{ item.videos | stringifyElements | join(';') }}"
+                {% endif %}
+                {% if item.testimonial %}
+                    data-testimonial-quote="{{ item.testimonial.text }}"
+                    data-testimonial-customer="{{ item.testimonial.name }}"
+                    data-testimonial-location="{{ item.testimonial.location }}"
+                {% endif %}
+            >
+                {# Javascript will create <picture> element here #}
+            </button>
+        {% endfor %}
+    </div>
+</div>
+
+{# Modal #}
+<div id="portfolio-modal">
+    <div class="close-button-container">
+        <button id="modal-close">Close</button>
+    </div>
+    <div class="scrollable-container">
+        <div class="container">
+            <div class="text">
+                <h1 id="title"></h1>
+                <p id="description"></p>
+                <div id="testimonial">
+                    <blockquote></blockquote>
+                    <span></span>
                 </div>
-                <div class="images">
-                    <div id="selected-image"></div>
-                    <div id="thumbs"></div>
-                </div>
+            </div>
+            <div class="images">
+                <div id="selected-image"></div>
+                <div id="thumbs"></div>
             </div>
         </div>
     </div>
-
-{% endblock %}
-
-
-{% block scripts %}
-    <script type="text/javascript" src="/js/portfolioUtils.js"></script>
-    <script type="text/javascript" src="/js/portfolioGrid.js"></script>
-    <script type="text/javascript" src="/js/portfolioModal.js" defer></script>
-{% endblock %}
+</div>

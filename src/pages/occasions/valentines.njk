@@ -1,38 +1,45 @@
-{% set page = "valentines" %}
-{% extends "layout.njk" %}
+---
+layout: layout.njk
+title: Valentine's cakes and cupcakes | Cakes by Katie
+description: Cakes by Katie is a cake maker in Thatcham, Berkshire, near Newbury and Reading, offering bespoke Valentine's Day cakes and cupcakes in a wide range of flavours and catering for specific dietary requirements.
+heading:
+  text: Valentine's cakes
+  image:
+    path: backgrounds/hearts
+    alt: Hearts background
+cta:
+  text: Ready to make your Valentine's special?
+occasion: valentines
+---
+<section class="intro">
+    <div class="intro-text">
+        <p>Make this Valentine's Day extra special with my handcrafted cakes, designed to capture the essence of romance and love. Each cake is a delicious expression of affection, perfect for sharing with your loved one or surprising them with a romantic gesture.</p>
+    </div>
+</section>
 
-{% block main %}
+{% from "macros/half-image-section.njk" import halfImageSection with context %}
+{{ halfImageSection(
+    "Valentine's Day cakes",
+    [
+        "Indulge in a taste of romance and let my cakes be the centrepiece of your Valentine's Day celebration."
+    ],
+    "/products/celebration-cakes",
+    "See celebration cakes",
+    "portfolio/A-Touch-of-Pink-space",
+    "Valentine's Day celebration cake",
+    tall = true
+) }}
 
-    <section class="intro">
-        <div class="intro-text">
-            <p>Make this Valentine's Day extra special with my handcrafted cakes, designed to capture the essence of romance and love. Each cake is a delicious expression of affection, perfect for sharing with your loved one or surprising them with a romantic gesture.</p>
-        </div>
-    </section>
-
-    {% from "macros/half-image-section.njk" import halfImageSection with context %}
-    {{ halfImageSection(
-        "Valentine's Day cakes",
-        [
-            "Indulge in a taste of romance and let my cakes be the centrepiece of your Valentine's Day celebration."
-        ],
-        "/products/celebration-cakes",
-        "See celebration cakes",
-        "portfolio/A-Touch-of-Pink-space",
-        "Valentine's Day celebration cake",
-        tall = true
-    ) }}
-
-    {{ halfImageSection(
-        "Valentine's Day cupcakes",
-        [
-            "My cupcakes are the perfect way to show someone you care. With romantic decorations and irresistible flavours, my Valentine's Day cupcakes are sure to steal hearts."
-        ],
-        "/products/cupcakes",
-        "See cupcakes",
-        "portfolio/Be-My-Valentine-Pattern-space",
-        "Valentine's Day cupcakes",
-        tall = true,
-        inverse = true,
-        background = '#fff'
-    ) }}
-{% endblock %}
+{{ halfImageSection(
+    "Valentine's Day cupcakes",
+    [
+        "My cupcakes are the perfect way to show someone you care. With romantic decorations and irresistible flavours, my Valentine's Day cupcakes are sure to steal hearts."
+    ],
+    "/products/cupcakes",
+    "See cupcakes",
+    "portfolio/Be-My-Valentine-Pattern-space",
+    "Valentine's Day cupcakes",
+    tall = true,
+    inverse = true,
+    background = '#fff'
+) }}

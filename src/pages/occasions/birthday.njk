@@ -1,83 +1,135 @@
-{% set page = "birthday" %}
-{% extends "layout.njk" %}
+---
+layout: layout.njk
+title: Birthday cakes and cupcakes | Cakes by Katie
+description: Cakes by Katie is a cake maker in Thatcham, Berkshire, near Newbury and Reading, offering bespoke birthday cakes and cupcakes in a wide range of flavours and catering for specific dietary requirements.
+heading:
+  text: Birthday cakes
+  image:
+    path: backgrounds/birthday-balloons
+    alt: Birthday background
+productExamples:
+- name: Buttercream cakes
+  description: Buttercream cakes are finished completely in buttercream in either one or more colours to produce the desired effect. The finish can be smooth or textured.
+  examples:
+  - shades-of-chocolate
+  - shades-of-pink-and-gold-fault-line-flowers
+  - pink-ombre-daisies
+- name: Fondant cakes
+  description: Cakes are covered in a smooth layer of sugarpaste and can be decorated with flowers, objects or figures modelled from fondant icing.
+  examples:
+  - flower-elegance
+  - come-fly-with-me
+- name: Themed cakes
+  description: Themed cakes allow the design to be tailored to the recipient in terms of their likes, hobbies and personality for example.
+  examples:
+  - ready-set-go-kart
+  - hp-slytherin-edition
+  - birthday-books
+- name: Birthday cupcakes
+  description: Birthday cupcakes are easy to share and customise with a decoration of your choice. If some of your party have dietary requirements, cupcakes are a good way to cater for them separately. Cupcakes can also make a special birthday gift and can be presented in a gift box finished with ribbon and a bow and candle.
+  examples:
+  - rose-mix
+- name: Carved cakes
+  description: Cut to the desired shape, hand carved cakes bring to life the cake design.
+  examples:
+  - parker-penguin
+  - prime-ice-pop
+- name: Edible images
+  description: Edible images can be placed on either a buttercream or fondant finished cake. They offer greater design flexibility and are cheaper than fondant models. An edible image of a favourite photograph will also add that personal touch.
+  examples:
+  - let-it-go
+  - pink-and-bluey
+  - football-print-arsenal
+- name: Airbrushing
+  description: Airbrushing adds an exciting dimension to a fondant cake, introducing additional colour either as an abstract or block design. Blending the colours can also add depth.
+  examples:
+  - psychedelic-symphony
+- name: Pinata cakes
+  description: These cakes have a hidden surprise and have a special appeal to children. They can be filled with sweets or chocolate.
+  examples:
+  - easter-surprise
+- name: Balloons
+  description: Topping the cake with a balloon gives an extra touch.
+  examples:
+  - choc-confetti
+cta:
+  text: Want a quote for a birthday cake?
+occasion: birthday
+---
+<section class="intro">
+    <div class="intro-text">
+        <p>Every birthday deserves a celebration, and what better way to mark the occasion than with a custom birthday cake or cupcakes.  Whether you're turning six or sixty, my birthday cakes add that extra special touch to make your day truly unforgettable.</p>
+    </div>
+</section>
 
-{% block main %}
+{% from "macros/half-image-section.njk" import halfImageSection with context %}
+{{ halfImageSection(
+    'Birthday cakes',
+    [
+        "Birthdays are all about celebrating individuality, and my custom celebration cakes are designed to do just that. Whether you prefer a classic or themed design, or something that reflects the unique personality of the recipient, I've got you covered. Plus, with my commitment to delicious taste, every bite is sure to be as memorable as the celebration itself."
+    ],
+    "/products/celebration-cakes",
+    "See celebration cakes",
+    "portfolio/Pretty-in-Pink",
+    "Birthday cake",
+    tall = true
+) }}
 
-    <section class="intro">
-        <div class="intro-text">
-            <p>Every birthday deserves a celebration, and what better way to mark the occasion than with a custom birthday cake or cupcakes.  Whether you're turning six or sixty, my birthday cakes add that extra special touch to make your day truly unforgettable.</p>
-        </div>
-    </section>
+{{ halfImageSection(
+    'Birthday cupcakes',
+    [
+        "Get ready to add a sprinkle of happiness to your birthday bash with my scrumptious birthday cupcakes!  From classic favourites to creative themes, my birthday cupcakes are baked with love and sure to make your special day even more memorable."
+    ],
+    "/products/cupcakes",
+    "See cupcakes",
+    "portfolio/The-One-Where-its-your-Birthday",
+    "Birthday cupcakes",
+    tall = true,
+    inverse = true,
+    background = '#fff'
+) }}
 
-    {% from "macros/half-image-section.njk" import halfImageSection with context %}
-    {{ halfImageSection(
-        'Birthday cakes',
-        [
-            "Birthdays are all about celebrating individuality, and my custom celebration cakes are designed to do just that. Whether you prefer a classic or themed design, or something that reflects the unique personality of the recipient, I've got you covered. Plus, with my commitment to delicious taste, every bite is sure to be as memorable as the celebration itself."
-        ],
-        "/products/celebration-cakes",
-        "See celebration cakes",
-        "portfolio/Pretty-in-Pink",
-        "Birthday cake",
-        tall = true
-    ) }}
+{% from "macros/picture.njk" import pictureElement with context %}
 
-    {{ halfImageSection(
-        'Birthday cupcakes',
-        [
-            "Get ready to add a sprinkle of happiness to your birthday bash with my scrumptious birthday cupcakes!  From classic favourites to creative themes, my birthday cupcakes are baked with love and sure to make your special day even more memorable."
-        ],
-        "/products/cupcakes",
-        "See cupcakes",
-        "portfolio/The-One-Where-its-your-Birthday",
-        "Birthday cupcakes",
-        tall = true,
-        inverse = true,
-        background = '#fff'
-    ) }}
+<div class="product-types" >
+    {% from "macros/fixed-background.njk" import fixedBackground with context %}
+    {{ fixedBackground("backgrounds/marble-background", "Marble background image") }}
 
-    {% from "macros/picture.njk" import pictureElement with context %}
-    
-    <div class="product-types" >
-        {% from "macros/fixed-background.njk" import fixedBackground with context %}
-        {{ fixedBackground("backgrounds/marble-background", "Marble background image") }}
+    <h2>Some inspiration...</h2>
+    <p>To give you some ideas, here are some of the sorts of birthday cakes you can order. Feel free to come up with your own though!<p>
 
-        <h2>Some inspiration...</h2>
-        <p>To give you some ideas, here are some of the sorts of birthday cakes you can order. Feel free to come up with your own though!<p>
-
-        {% for product in pages[page].products %}
-            <section class="product">
-                <div class="product-text">
-                    <div class="product-sticky-text card {{  'card-pink' if loop.index0 % 2 == 0 else 'card-black' }}">
-                        <div class="card-inner">
-                            <h3>{{ product.name }}</h3>
-                            <p>{{ product.description }}</p>
-                        </div>
+    {% for product in productExamples %}
+        <section class="product">
+            <div class="product-text">
+                <div class="product-sticky-text card {{  'card-pink' if loop.index0 % 2 == 0 else 'card-black' }}">
+                    <div class="card-inner">
+                        <h3>{{ product.name }}</h3>
+                        <p>{{ product.description }}</p>
                     </div>
                 </div>
-                <div class="product-images">
-                    {% for cake in product.examples %}
-                        <div
-                            {% if portfolio[cake].videos[0] %}
-                                class="product-video"
-                                style="aspect-ratio:{{ portfolio[cake].videos[0].aspectRatio }};"
-                            {% endif %}
-                        >
-                            {{ pictureElement("portfolio/" + portfolio[cake].images[0].src, portfolio[cake].name, "50vw") }}
+            </div>
+            <div class="product-images">
+                {% for cake in product.examples %}
+                    <div
+                        {% if portfolio[cake].videos[0] %}
+                            class="product-video"
+                            style="aspect-ratio:{{ portfolio[cake].videos[0].aspectRatio }};"
+                        {% endif %}
+                    >
+                        {{ pictureElement("portfolio/" + portfolio[cake].images[0].src, portfolio[cake].name, "50vw") }}
 
-                            {% if portfolio[cake].videos[0] %}
-                                <video
-                                    src="/videos/portfolio/{{ portfolio[cake].videos[0].file }}"
-                                    loop
-                                    autoplay
-                                    playsinline
-                                    muted
-                                />
-                            {% endif %}
-                        </div>
-                    {% endfor %}
-                </div>
-            </section>
-        {% endfor %}
-    </div>
-{% endblock %}
+                        {% if portfolio[cake].videos[0] %}
+                            <video
+                                src="/videos/portfolio/{{ portfolio[cake].videos[0].file }}"
+                                loop
+                                autoplay
+                                playsinline
+                                muted
+                            />
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+        </section>
+    {% endfor %}
+</div>

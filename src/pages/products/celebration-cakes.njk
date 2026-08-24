@@ -1,163 +1,172 @@
-{% set page = "celebrationCakes" %}
-{% extends "layout.njk" %}
+---
+layout: layout.njk
+title: Celebration cakes | Cakes by Katie
+description: I'm a cake maker in Thatcham, West Berkshire, near Newbury, offering high quality bespoke celebration cakes in a range of flavours.
+heading:
+  text: Celebration cakes
+  image:
+    path: backgrounds/confetti
+    alt: Confetti background
+cta:
+  text: Get a quote for a celebration cake!
+product: celebration-cake
+hasCarousel: true
+---
+{% from "macros/service-breakdown.njk" import serviceBreakdown with context %}
+<section class="intro">
 
-{% block main %}
+    <div class="intro-text">
+        <p class="handwriting" style="font-size:2em;">Perfect for turning life's moments into unforgettable memories.</p>
 
-    <section class="intro">
+        <p>Whether you're looking for a show-stopping centrepiece or a gift for someone special, all my cakes are lovingly handcrafted to make it a celebration to remember.</p>
 
-        <div class="intro-text">
-            <p class="handwriting" style="font-size:2em;">Perfect for turning life's moments into unforgettable memories.</p>
-            
-            <p>Whether you're looking for a show-stopping centrepiece or a gift for someone special, all my cakes are lovingly handcrafted to make it a celebration to remember.</p>
-            
-            {# <p>Let me make your celebration even more special with one of my cakes, all lovingly custom made.</p> #}
-        </div>
+        {# <p>Let me make your celebration even more special with one of my cakes, all lovingly custom made.</p> #}
+    </div>
 
-        <div class="service-breakdown-container">
-            {% from "macros/service-breakdown.njk" import serviceBreakdown %}
-            {{ serviceBreakdown([
-                {
-                    image: 'svgs/heart.svg',
-                    heading: 'Bespoke designs',
-                    description: "I'll work with you to create your perfect cake."
-                },
-                {
-                    image: 'svgs/lemon.svg',
-                    heading: flavours | length ~ ' flavours',
-                    description: "With so many sponge flavours, there's something for everyone."
-                },
-                {
-                    image: 'svgs/cow.svg',
-                    heading: 'Free from options',
-                    description: "I can cater for specific dietary requirements, including gluten free, dairy free, eggless and vegan."
-                },
-                {
-                    image: 'svgs/van.svg',
-                    heading: 'Delivery available',
-                    description: "Delivery is available for an additional fee."
-                }
-            ]) }}
-        </div>
-    </section>
+    <div class="service-breakdown-container">
+        {% from "macros/service-breakdown.njk" import serviceBreakdown %}
+        {{ serviceBreakdown([
+            {
+                image: 'svgs/heart.svg',
+                heading: 'Bespoke designs',
+                description: "I'll work with you to create your perfect cake."
+            },
+            {
+                image: 'svgs/lemon.svg',
+                heading: flavours | length ~ ' flavours',
+                description: "With so many sponge flavours, there's something for everyone."
+            },
+            {
+                image: 'svgs/cow.svg',
+                heading: 'Free from options',
+                description: "I can cater for specific dietary requirements, including gluten free, dairy free, eggless and vegan."
+            },
+            {
+                image: 'svgs/van.svg',
+                heading: 'Delivery available',
+                description: "Delivery is available for an additional fee."
+            }
+        ]) }}
+    </div>
+</section>
 
-    {% from "macros/image-carousel.njk" import imageCarousel with context %}
-    {{ imageCarousel(portfolio | getMatchingCakes({ product: 'celebration-cake' }), 'linear-gradient(to bottom, #fff, #000)') }}
+{% from "macros/image-carousel.njk" import imageCarousel with context %}
+{{ imageCarousel(portfolio | getMatchingCakes({ product: 'celebration-cake' }), 'linear-gradient(to bottom, #fff, #000)') }}
 
-    {% from "macros/design-choices.njk" import designChoices with context %}
-    {{
-        designChoices(
-            "Let's design your cake!",
-            "I'll work with you to create your perfect cake, whether you already know exactly what you want or have absolutely no idea. There are so many options to choose from! Here are some of the most popular...",
-            [
-                {
-                    name: "Finishes",
-                    items: [
-                        {
-                            name: "Smooth buttercream",
-                            image: "choices/wedding-cakes/finishes/buttercream"
-                        },
-                        {
-                            name: "Textured buttercream",
-                            image: "choices/celebration-cakes/finishes/buttercream"
-                        },
-                        {
-                            name: "Fondant",
-                            image: "choices/celebration-cakes/finishes/fondant"
-                        }
-                    ]
-                },
-                designChoicesFlavours,
-                {
-                    name: "Decoration",
-                    items: [
-                        {
-                            name: "Topper",
-                            image: "choices/celebration-cakes/decoration/topper"
-                        },
-                        {
-                            name: "Plaque",
-                            image: "choices/celebration-cakes/decoration/plaque"
-                        },
-                        {
-                            name: "Embossed lettering",
-                            image: "choices/celebration-cakes/decoration/embossed-lettering"
-                        },
-                        {
-                            name: "Chocolate drips",
-                            image: "choices/celebration-cakes/decoration/chocolate-drips"
-                        },
-                        {
-                            name: "Coloured drips",
-                            image: "choices/celebration-cakes/decoration/coloured-drips"
-                        },
-                        {
-                            name: "Edible images",
-                            image: "choices/celebration-cakes/decoration/edible-image"
-                        },
-                        {
-                            name: "Fondant flowers",
-                            image: "choices/celebration-cakes/decoration/fondant-flowers"
-                        },
-                        {
-                            name: "Fresh flowers",
-                            image: "choices/celebration-cakes/decoration/fresh-flowers"
-                        },
-                        {
-                            name: "Silk flowers",
-                            image: "choices/celebration-cakes/decoration/silk-flowers"
-                        },
-                        {
-                            name: "Fondant models",
-                            image: "choices/celebration-cakes/decoration/fondant-model"
-                        },
-                        {
-                            name: "Ball toppers",
-                            image: "choices/celebration-cakes/decoration/ball-toppers"
-                        },
-                        {
-                            name: "Airbrushing",
-                            image: "choices/celebration-cakes/decoration/airbrushing"
-                        },
-                        {
-                            name: "Ruffles",
-                            image: "choices/celebration-cakes/decoration/ruffles"
-                        }
-                    ]
-                },
-                {
-                    name: "Special extras",
-                    items: [
-                        {
-                            name: "Pinata cake",
-                            image: "choices/celebration-cakes/special/pinata"
-                        },
-                        {
-                            name: "Balloon",
-                            image: "choices/celebration-cakes/special/balloon"
-                        }
-                    ]
-                }
-            ]
-        )
-    }}
-
-    {{ imageCarousel(portfolio | getMatchingCakes({ product: 'celebration-cake' }), 'linear-gradient(to bottom, #000, ' ~ products.celebrationCakes.colours.light ~ ')') }}
-
-    <section id="pricing" style="background:{{products.celebrationCakes.colours.light}}">
-        <h2 style="margin-top:0;">Pricing</h2>
-        {% include "celebration-cake-pricing.njk" %}
-    </section>
-
-    {% from "macros/half-image-section.njk" import halfImageSection with context %}
-    {{ halfImageSection(
-        'Why not get some cupcakes too?',
+{% from "macros/design-choices.njk" import designChoices with context %}
+{{
+    designChoices(
+        "Let's design your cake!",
+        "I'll work with you to create your perfect cake, whether you already know exactly what you want or have absolutely no idea. There are so many options to choose from! Here are some of the most popular...",
         [
-            "Cupcakes can be a great accompaniment to a celebration cake. They can match the theme and flavour, or offer something different, and boost the number of portions if needed. They're also a great way to cater for guests with specific dietary requirements."
-        ],
-        "/products/cupcakes",
-        "See cupcakes",
-        "portfolio/Birthday-Shades-Blue-Glitz-2",
-        "Cupcakes",
-        inverse = true
-    ) }}
-{% endblock %}
+            {
+                name: "Finishes",
+                items: [
+                    {
+                        name: "Smooth buttercream",
+                        image: "choices/wedding-cakes/finishes/buttercream"
+                    },
+                    {
+                        name: "Textured buttercream",
+                        image: "choices/celebration-cakes/finishes/buttercream"
+                    },
+                    {
+                        name: "Fondant",
+                        image: "choices/celebration-cakes/finishes/fondant"
+                    }
+                ]
+            },
+            designChoicesFlavours,
+            {
+                name: "Decoration",
+                items: [
+                    {
+                        name: "Topper",
+                        image: "choices/celebration-cakes/decoration/topper"
+                    },
+                    {
+                        name: "Plaque",
+                        image: "choices/celebration-cakes/decoration/plaque"
+                    },
+                    {
+                        name: "Embossed lettering",
+                        image: "choices/celebration-cakes/decoration/embossed-lettering"
+                    },
+                    {
+                        name: "Chocolate drips",
+                        image: "choices/celebration-cakes/decoration/chocolate-drips"
+                    },
+                    {
+                        name: "Coloured drips",
+                        image: "choices/celebration-cakes/decoration/coloured-drips"
+                    },
+                    {
+                        name: "Edible images",
+                        image: "choices/celebration-cakes/decoration/edible-image"
+                    },
+                    {
+                        name: "Fondant flowers",
+                        image: "choices/celebration-cakes/decoration/fondant-flowers"
+                    },
+                    {
+                        name: "Fresh flowers",
+                        image: "choices/celebration-cakes/decoration/fresh-flowers"
+                    },
+                    {
+                        name: "Silk flowers",
+                        image: "choices/celebration-cakes/decoration/silk-flowers"
+                    },
+                    {
+                        name: "Fondant models",
+                        image: "choices/celebration-cakes/decoration/fondant-model"
+                    },
+                    {
+                        name: "Ball toppers",
+                        image: "choices/celebration-cakes/decoration/ball-toppers"
+                    },
+                    {
+                        name: "Airbrushing",
+                        image: "choices/celebration-cakes/decoration/airbrushing"
+                    },
+                    {
+                        name: "Ruffles",
+                        image: "choices/celebration-cakes/decoration/ruffles"
+                    }
+                ]
+            },
+            {
+                name: "Special extras",
+                items: [
+                    {
+                        name: "Pinata cake",
+                        image: "choices/celebration-cakes/special/pinata"
+                    },
+                    {
+                        name: "Balloon",
+                        image: "choices/celebration-cakes/special/balloon"
+                    }
+                ]
+            }
+        ]
+    )
+}}
+
+{{ imageCarousel(portfolio | getMatchingCakes({ product: 'celebration-cake' }), 'linear-gradient(to bottom, #000, ' ~ products.celebrationCakes.colours.light ~ ')') }}
+
+<section id="pricing" style="background:{{products.celebrationCakes.colours.light}}">
+    <h2 style="margin-top:0;">Pricing</h2>
+    {% include "celebration-cake-pricing.njk" %}
+</section>
+
+{% from "macros/half-image-section.njk" import halfImageSection with context %}
+{{ halfImageSection(
+    'Why not get some cupcakes too?',
+    [
+        "Cupcakes can be a great accompaniment to a celebration cake. They can match the theme and flavour, or offer something different, and boost the number of portions if needed. They're also a great way to cater for guests with specific dietary requirements."
+    ],
+    "/products/cupcakes",
+    "See cupcakes",
+    "portfolio/Birthday-Shades-Blue-Glitz-2",
+    "Cupcakes",
+    inverse = true
+) }}

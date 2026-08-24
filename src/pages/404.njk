@@ -1,13 +1,10 @@
 ---
+layout: layout.njk
+title: Page not found | Cakes by Katie
+heading:
+  text: '404'
 # Error page: never a sitemap entry, never indexed.
 unlisted: true
 eleventyExcludeFromCollections: true
 ---
-{% set page = "404" %}
-{% extends "layout.njk" %}
-
-{% block main %}
-
-    <p class="not-found-message">Sorry, that page doesn't exist. <a href="/">Return home.</a></p>
-
-{% endblock %}
+<p class="not-found-message">Sorry, that page doesn't exist. <a href="/">Return home.</a></p>

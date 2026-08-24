@@ -1,30 +1,35 @@
-{% set page = "testimonials" %}
-{% extends "layout.njk" %}
+---
+layout: layout.njk
+title: Testimonials | Cakes by Katie
+description: Read some of the glowing testimonials I have received for my bespoke cakes and cupcakes from my many wonderful customers.
+heading:
+  text: Testimonials
+  image:
+    path: backgrounds/writing
+    alt: Writing background
+testimonialCakes: none
+---
+{% from "macros/picture.njk" import pictureElement with context %}
+<div class="page-content-container">
+    <p class="page-intro">I'm proud to have received many fantastic testimonials from my lovely customers!</p>
 
-{% block main %}
-
-    <div class="page-content-container">
-        <p class="page-intro">I'm proud to have received many fantastic testimonials from my lovely customers!</p>
-
-        {% for testimonial in testimonials %}
-            <div class="testimonial">
-                <div class="testimonial-inner">
-                    <div
-                        class="image"
-                    >
-                        {{ pictureElement("portfolio/" + portfolio[testimonial.cake].images[0].src, portfolio[testimonial.cake].name, { '800': 'calc(100vw - 120px)', any: '500px' }) }}
-                        {% if portfolio[testimonial.cake].flavours %}
-                            <span>{{ "Flavours" if (portfolio[testimonial.cake].flavours | length) > 1 else "Flavour"}}: {{ portfolio[testimonial.cake].flavours | join(", ") }}</span>
-                        {% endif %}
-                    </div>
-                    <div class="quote">
-                        <blockquote>{{ testimonial.text }}</blockquote>
-                        <span>{{ testimonial.name }}{% if testimonial.location %}, {{ testimonial.location }}{% endif %}</span>
-                    </div>
+    {% for testimonial in testimonials %}
+        <div class="testimonial">
+            <div class="testimonial-inner">
+                <div
+                    class="image"
+                >
+                    {{ pictureElement("portfolio/" + portfolio[testimonial.cake].images[0].src, portfolio[testimonial.cake].name, { '800': 'calc(100vw - 120px)', any: '500px' }) }}
+                    {% if portfolio[testimonial.cake].flavours %}
+                        <span>{{ "Flavours" if (portfolio[testimonial.cake].flavours | length) > 1 else "Flavour"}}: {{ portfolio[testimonial.cake].flavours | join(", ") }}</span>
+                    {% endif %}
+                </div>
+                <div class="quote">
+                    <blockquote>{{ testimonial.text }}</blockquote>
+                    <span>{{ testimonial.name }}{% if testimonial.location %}, {{ testimonial.location }}{% endif %}</span>
                 </div>
             </div>
-        {% endfor %}
+        </div>
+    {% endfor %}
 
-    </div>
-
-{% endblock %}
+</div>

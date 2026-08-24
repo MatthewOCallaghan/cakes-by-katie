@@ -1,38 +1,43 @@
-{% set page = "christening" %}
-{% extends "layout.njk" %}
+---
+layout: layout.njk
+title: Christening cakes and cupcakes | Cakes by Katie
+description: Cakes by Katie is a cake maker in Berkshire offering bespoke cakes and cupcakes for christenings in a wide range of flavours and catering for specific dietary requirements.
+heading:
+  text: Christening cakes
+  image:
+    path: backgrounds/christening
+    alt: Christening background
+occasion: christening
+---
+<section class="intro">
+    <div class="intro-text">
+        <p>Welcome your little one into the world with my beautifully designed christening cakes, crafted to make their special day even more memorable. Each cake is meticulously handcrafted with love and attention to detail, making it the perfect centrepiece for your celebration. With my exquisite christening cakes, you can create cherished memories that will last a lifetime.</p>
+    </div>
+</section>
 
-{% block main %}
+{% from "macros/half-image-section.njk" import halfImageSection with context %}
+{{ halfImageSection(
+    'Christening cakes',
+    [
+        "Make your little one's christening day even more special with one of my christening cakes - the perfect way to commemorate this joyous occasion."
+    ],
+    "/products/celebration-cakes",
+    "See celebration cakes",
+    "portfolio/Dreamland-Express-space",
+    "Christening celebration cake",
+    tall = true
+) }}
 
-    <section class="intro">
-        <div class="intro-text">
-            <p>Welcome your little one into the world with my beautifully designed christening cakes, crafted to make their special day even more memorable. Each cake is meticulously handcrafted with love and attention to detail, making it the perfect centrepiece for your celebration. With my exquisite christening cakes, you can create cherished memories that will last a lifetime.</p>
-        </div>
-    </section>
-
-    {% from "macros/half-image-section.njk" import halfImageSection with context %}
-    {{ halfImageSection(
-        'Christening cakes',
-        [
-            "Make your little one's christening day even more special with one of my christening cakes - the perfect way to commemorate this joyous occasion."
-        ],
-        "/products/celebration-cakes",
-        "See celebration cakes",
-        "portfolio/Dreamland-Express-space",
-        "Christening celebration cake",
-        tall = true
-    ) }}
-
-    {{ halfImageSection(
-        'Christening cupcakes',
-        [
-            "Welcome your little one into the world with my adorable christening cupcakes, perfect for celebrating this special milestone, delighting your guests and creating lasting memories."
-        ],
-        "/products/cupcakes",
-        "See cupcakes",
-        "portfolio/Pastel-and-Choc-Roses",
-        "Christening cupcakes",
-        tall = true,
-        inverse = true,
-        background = '#fff'
-    ) }}
-{% endblock %}
+{{ halfImageSection(
+    'Christening cupcakes',
+    [
+        "Welcome your little one into the world with my adorable christening cupcakes, perfect for celebrating this special milestone, delighting your guests and creating lasting memories."
+    ],
+    "/products/cupcakes",
+    "See cupcakes",
+    "portfolio/Pastel-and-Choc-Roses",
+    "Christening cupcakes",
+    tall = true,
+    inverse = true,
+    background = '#fff'
+) }}

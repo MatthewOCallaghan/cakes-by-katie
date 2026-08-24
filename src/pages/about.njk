@@ -1,29 +1,29 @@
-{% set page = "about" %}
-{% extends "layout.njk" %}
+---
+layout: layout.njk
+title: About me | Cakes by Katie
+description: I'm a cake maker in Thatcham, West Berkshire, offering high quality bespoke cakes for birthdays, weddings, anniversaries, christenings, or any occasion.
+heading:
+  text: About me
+---
+<div class="about-container">
 
-{% block main %}
+    {% from "macros/picture.njk" import pictureElement with context %}
+    {{ pictureElement("katie3", "Katie", "min(80vw, 350px)") }}
 
-    <div class="about-container">
+    <h2>Hi, I'm Katie...</h2>
 
-        {% from "macros/picture.njk" import pictureElement with context %}
-        {{ pictureElement("katie3", "Katie", "min(80vw, 350px)") }}
+    <p>I'm the baker, decorator and creative mind behind Cakes by Katie. Located in Thatcham, near Newbury and Reading, West Berkshire.</p>
 
-        <h2>Hi, I'm Katie...</h2>
+    <p>From a very young age, I've loved baking; what started as a school holiday activity, turned into creating cakes for family birthdays and slowly my passion grew into what Cakes by Katie is today.</p>
 
-        <p>I'm the baker, decorator and creative mind behind Cakes by Katie. Located in Thatcham, near Newbury and Reading, West Berkshire.</p>
-        
-        <p>From a very young age, I've loved baking; what started as a school holiday activity, turned into creating cakes for family birthdays and slowly my passion grew into what Cakes by Katie is today.</p>
-        
-        <p>Over the past few years, I've honed my skills, combining artistry with flavour to create cakes that are as beautiful as they are delicious.</p>
-        
-        <p>Now I'm lucky enough to do what I love every day, working closely with customers to bring their dream bespoke cakes to life.</p>
+    <p>Over the past few years, I've honed my skills, combining artistry with flavour to create cakes that are as beautiful as they are delicious.</p>
 
-        <p>I make luxury cakes and cupcakes for all occasions, offering a wide range of flavours and catering for certain dietary requirements as well.</p>
+    <p>Now I'm lucky enough to do what I love every day, working closely with customers to bring their dream bespoke cakes to life.</p>
 
-        <p>I was thrilled to be featured in Weddings &amp; Honeymoons magazine as the top cake maker in Berkshire and I was very honoured to be a finalist in the 'Wedding Cake Designer' category of the 2025 UKWHA awards.</p>
+    <p>I make luxury cakes and cupcakes for all occasions, offering a wide range of flavours and catering for certain dietary requirements as well.</p>
 
-        <p>I can't wait to hear from you and get the process started!</p>
+    <p>I was thrilled to be featured in Weddings &amp; Honeymoons magazine as the top cake maker in Berkshire and I was very honoured to be a finalist in the 'Wedding Cake Designer' category of the 2025 UKWHA awards.</p>
 
-    </div>
+    <p>I can't wait to hear from you and get the process started!</p>
 
-{% endblock %}
+</div>
