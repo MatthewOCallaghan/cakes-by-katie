@@ -6,6 +6,12 @@
     {% set venueKey = pages[page].venue %}
     {% set venue = venues[venueKey] %}
 
+    {# Cakes made at this venue, if there are enough of them to fill a carousel; otherwise fall
+       back to wedding cakes generally. Worked out once here rather than inside each carousel's
+       ternary, which used to call getMatchingCakes twice per carousel. #}
+    {% set venueCakes = portfolio | getMatchingCakes({ venue: venueKey }) %}
+    {% set carouselCakes = venueCakes if venueCakes.length > 5 else (portfolio | getMatchingCakes({ product: 'wedding-cake' })) %}
+
     <section class="intro">
         <div class="venue-intro">
             <div class="venue-image {{ "image-circle" if portfolio[venue.featuredCakes[0]].images[0].aspectRatio > 0.9 and portfolio[venue.featuredCakes[0]].images[0].aspectRatio < 1.1 }}">
@@ -30,7 +36,7 @@
     {% from "macros/image-carousel.njk" import imageCarousel with context %}
     {{
         imageCarousel(
-            (portfolio | getMatchingCakes({ venue: venueKey })) if (portfolio | getMatchingCakes({ venue: venueKey })).length > 5 else (portfolio | getMatchingCakes({ product: 'wedding-cake' })),
+            carouselCakes,
             'linear-gradient(to bottom, #fff, ' ~ products.weddingCakes.colours.light ~ ')'
         )
     }}
@@ -75,7 +81,7 @@
 
     {{
         imageCarousel(
-            (portfolio | getMatchingCakes({ venue: venueKey })) if (portfolio | getMatchingCakes({ venue: venueKey })).length > 5 else (portfolio | getMatchingCakes({ product: 'wedding-cake' })),
+            carouselCakes,
             'linear-gradient(to bottom, #fff, #000)'
         )
     }}

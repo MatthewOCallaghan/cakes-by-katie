@@ -4,9 +4,7 @@
 <p>I've had the joy of creating cakes for many stunning wedding venues across Berkshire and the surrounding counties, from rustic barns and countryside estates to elegant manor houses and chic modern spaces.</p>
 <p>This guide showcases just some of my favourite venues, along with cake inspiration tailored to each setting. Whether you're celebrating in a romantic barn, a grand country house, or a garden marquee, you'll find ideas to help you imagine how your cake can look in your chosen space.</p>
 <ul class="venue-list">
-    {% for key, page in pages %}
-        {% if page.venue and venues[page.venue].occasion === "wedding" %}
-            <li><a href="/delivery/{{ page.venue }}"><span class="venue-name">{{ venues[page.venue].name }}</span><span class="venue-location">{{ venues[page.venue].location }}</span></a></li>
-        {% endif %}
+    {% for key, venue in weddingVenues %}
+        <li><a href="/delivery/{{ key }}"><span class="venue-name">{{ venue.name }}</span><span class="venue-location">{{ venue.location }}</span></a></li>
     {% endfor %}
 </ul>
