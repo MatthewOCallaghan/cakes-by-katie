@@ -9,6 +9,12 @@ module.exports = {
     // Unanchored: PurgeCSS tests this against the full selector text (e.g.
     // ".swiper:not(.swiper-vertical) .swiper-slide-active"), not a bare class name, so a
     // leading `^` would never match.
+    //
+    // This keeps everything Swiper ships, so the way to keep Swiper's CSS small is to import less
+    // of it rather than to narrow this pattern — src/scss/swiper.scss now pulls in only the core
+    // stylesheet plus navigation and pagination, instead of the whole bundle. Enumerating the
+    // runtime class names here instead would be smaller still, but a missed one breaks a carousel
+    // silently and only in production, which is not a trade worth making for a few hundred bytes.
     safelist: {
         greedy: [/swiper-/],
     },
