@@ -43,6 +43,35 @@ npm run build
 
 Builds the full production site into `dist/`: Eleventy renders the HTML (passthrough-copying the committed `images/`), Sass compiles to CSS, PostCSS (autoprefixer + cssnano) and PurgeCSS minify/trim the CSS, and esbuild minifies the JS.
 
+To look at the finished production build (minified, purged, cache-busted) rather than the dev
+output:
+
+```
+npm run build
+npm run preview
+```
+
+## Checks
+
+```
+npm test
+```
+
+Walks the built site and checks that every root-relative `href`/`src`/`srcset` resolves to a file
+that actually exists in `dist/` — the cheapest guard against a mistyped `pages` key, an image
+variant that was never generated, or a page renamed without updating the links to it. Run
+`npm run build` first.
+
+```
+npm run format
+```
+
+Formats with Prettier (`npm run format:check` to check without writing). Templates, generated
+images and hand-edited content files are excluded — see `.prettierignore`.
+
+GitHub Actions runs the build and the link check on every push and pull request
+(`.github/workflows/ci.yml`).
+
 ## Deployment
 
 Deployment is handled by Cloudflare Pages, which builds and publishes on every push — there is
