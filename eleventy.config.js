@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const htmlmin = require("html-minifier-terser");
 const { getSrcsetAttribute, getSizesAttribute, getDefaultSrc } = require("./utils/images");
 
 // Kept in sync with BUNDLED_ENTRY_POINTS in scripts/build-js.js — these files `import` an npm
@@ -80,6 +81,30 @@ module.exports = function (eleventyConfig) {
         return matchingFlavours.length > 2
             ? `${matchingFlavours.slice(0, -1).join(", ")}, and ${matchingFlavours[matchingFlavours.length - 1]}`
             : matchingFlavours.join(" and ");
+    });
+
+    // Minify the rendered HTML. CSS and JS are already minified by their own build steps; this
+    // was the one output that wasn't.
+    //
+    // `conservativeCollapse` always leaves a single space where whitespace was, rather than
+    // removing it entirely. Full collapsing would save another ~50KB raw across the site, but
+    // after gzip the difference is 0.1% — not worth the risk of silently closing up the gap
+    // between two inline elements that the CSS was laid out around.
+    //
+    // Runs before scripts/cache-bust.js rewrites asset paths, which is fine: that step does
+    // plain string replacement on full paths and doesn't care about the surrounding whitespace.
+    eleventyConfig.addTransform("minify-html", function (content) {
+        if (!this.page.outputPath || !this.page.outputPath.endsWith(".html")) {
+            return content;
+        }
+
+        return htmlmin.minify(content, {
+            collapseWhitespace: true,
+            conservativeCollapse: true,
+            removeComments: true,
+            minifyCSS: true,
+            minifyJS: true,
+        });
     });
 
     // Responsive images (AVIF/WebP at multiple widths) are pre-generated and committed to
