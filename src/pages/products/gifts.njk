@@ -1,3 +1,10 @@
+---
+# Linked from nowhere in the site nav (see the commented-out entries in layout.njk and
+# products/index.njk). Keep it out of collections so the generated sitemap doesn't advertise
+# it, and noindex it so it isn't indexed if it's found some other way.
+unlisted: true
+eleventyExcludeFromCollections: true
+---
 {% set page = "gifts" %}
 {% extends "layout.njk" %}
 

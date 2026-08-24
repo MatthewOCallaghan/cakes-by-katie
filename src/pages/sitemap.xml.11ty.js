@@ -2,6 +2,10 @@ const BASE_URL = "https://www.cakesbykatie.co.uk";
 
 // Generated from collections.all rather than hand-maintained, so it stays correct as pages
 // (e.g. the per-venue wedding pages) are added or removed.
+//
+// A page opts out by setting `eleventyExcludeFromCollections: true` in its front matter, which
+// keeps the opt-out next to the page rather than as a filter list here. See src/pages/404.njk
+// and src/pages/products/gifts.njk.
 module.exports = class {
     data() {
         return {
@@ -12,7 +16,6 @@ module.exports = class {
 
     render(data) {
         const urls = data.collections.all
-            .filter((item) => item.url !== "/404.html")
             .map((item) => {
                 const cleanPath = item.url.replace(/\/index\.html$/, "/").replace(/\.html$/, "");
                 return `    <url>\n        <loc>${BASE_URL}${cleanPath}</loc>\n    </url>`;

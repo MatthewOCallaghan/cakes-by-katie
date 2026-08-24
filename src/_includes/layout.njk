@@ -45,6 +45,7 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         {% if pages[page].description %}<meta name="description" content="{{ pages[page].description }}">{% endif %}
+        {% if unlisted %}<meta name="robots" content="noindex">{% endif %}
 
         {# Favicons (put the relevant files in root directory of website) #}
         <link rel="shortcut icon" href="/favicon.ico">
