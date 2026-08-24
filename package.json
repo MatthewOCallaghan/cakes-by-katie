@@ -12,7 +12,7 @@
     "images:clean": "node scripts/images-clean.js",
     "build:eleventy": "eleventy --config=eleventy.config.js",
     "build:scss": "sass --load-path=node_modules src/scss:dist/css --no-source-map",
-    "build:css": "postcss dist/css/*.css --use autoprefixer cssnano --replace",
+    "build:css": "postcss dist/css/*.css --use autoprefixer cssnano --no-map --replace",
     "build:purge": "purgecss --config purgecss.config.js",
     "build:js": "node scripts/build-js.js",
     "build:cachebust": "node scripts/cache-bust.js",
