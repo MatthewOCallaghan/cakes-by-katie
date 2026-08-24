@@ -260,9 +260,12 @@ section.products {
 }
 
 
-// Remove ahead of Christmas when we've updated prices
-.price-labels, .deals {
-    display: none !important;
+// Prices and deals are hidden until they've been updated for the season. Switch them back on
+// with site.christmas.showPrices (src/_data/site.json), which puts `christmas-prices` on <body>.
+body:not(.christmas-prices) {
+    .price-labels, .deals {
+        display: none !important;
+    }
 }
 
 section.products .product-outer-container .product-inner-container .product-contents ~ .product-contents {

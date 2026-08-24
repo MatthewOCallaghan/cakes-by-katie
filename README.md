@@ -118,9 +118,16 @@ Page descripotions, anniversary c akes
 
 # Changes for Christmas
 
-- Navbar link - styled Christmas link at top replaces normal link at bottom
-- Mobile menu image
-- Snow and Christmas hat in homepage hero
-- Christmas section on homepage
-- Prices on Christmas page - remove with CSS at bottom of christmas.scss
-- Collection dates in Christmas page text and bottom panel CTA
+Set `christmas.enabled` to `true` in `src/_data/site.json`. That one flag switches on:
+
+- the styled Christmas link at the top of the Occasions menu, in place of the normal one at the bottom
+- the reindeer image in the mobile menu, in place of the penguin
+- the snow and the Christmas hat in the homepage hero
+- the Christmas section on the homepage
+
+Set `christmas.showPrices` to `true` once prices on the Christmas page have been updated for the
+season; leaving it `false` hides the price labels and deals.
+
+Still a manual edit each year:
+
+- collection dates in the Christmas page text and the bottom panel CTA
