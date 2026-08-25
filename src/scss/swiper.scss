@@ -1,4 +1,18 @@
 // Self-hosted Swiper stylesheet, kept separate from global.scss so it can be loaded either
 // render-blocking or via the non-blocking preload/swap technique depending on the page (see
 // layout.njk's hasCarousel check).
-@import 'swiper/swiper-bundle.min';
+//
+// Only the core stylesheet and the CSS for the modules actually used are pulled in, mirroring
+// the module list in src/js/swiperVendor.js. swiper-bundle carries CSS for every effect, grid,
+// zoom, thumbs, scrollbar and virtual mode as well — none of which this site can reach, since
+// those modules are never registered on the JS side.
+//
+// Autoplay is registered in swiperVendor.js but ships no CSS of its own, so there is nothing to
+// import for it.
+//
+// The pre-minified files are used deliberately: Swiper's .scss sources still use `@import`
+// internally, which would emit a Dart Sass deprecation warning on every build for third-party
+// code we can't fix.
+@use "swiper/swiper.min";
+@use "swiper/modules/navigation/navigation.min";
+@use "swiper/modules/pagination/pagination.min";
