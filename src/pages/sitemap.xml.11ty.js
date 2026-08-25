@@ -4,8 +4,7 @@ const BASE_URL = "https://www.cakesbykatie.co.uk";
 // (e.g. the per-venue wedding pages) are added or removed.
 //
 // A page opts out by setting `eleventyExcludeFromCollections: true` in its front matter, which
-// keeps the opt-out next to the page rather than as a filter list here. See src/pages/404.njk
-// and src/pages/products/gifts.njk.
+// keeps the opt-out next to the page rather than as a filter list here. See src/pages/404.njk.
 module.exports = class {
     data() {
         return {
