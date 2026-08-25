@@ -531,21 +531,6 @@
         "occasion": "christmas",
         "testimonials": "none"
     },
-    "afternoon-tea": {
-        "title": "Afternoon tea cakes and cupcakes | Cakes by Katie",
-        "description": "Cakes by Katie is a cake maker in Thatcham, near Newbury and Reading, in Berkshire offering bespoke cakes and cupcakes for afternoon tea in a wide range of flavours and catering for specific dietary requirements.",
-        "heading": {
-            "text": "Afternoon tea cakes",
-            "image": {
-                "path": "backgrounds/tea-set",
-                "alt": "Afternoon tea background"
-            }
-        },
-        "cta": {
-            "text": "Ready to order?"
-        },
-        "occasion": "afternoon-tea"
-    },
     "delivery": {
         "title": "Delivery | Cakes by Katie",
         "description": "I'm a cake maker in Thatcham, West Berkshire, delivering high quality bespoke cakes for birthdays, weddings, anniversaries, christenings, or any occasion.",
