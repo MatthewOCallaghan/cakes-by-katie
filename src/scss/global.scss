@@ -2,8 +2,7 @@
 
 @use "variables";
 @use "mixins";
-
-@import 'normalize.css/normalize';
+@use "normalize.css/normalize";
 
 // $mobileNavMaxWidth: 750px;
 $mobileNavMaxWidth: 1100px; // This value is also hardcoded in nav-menu.js
@@ -226,7 +225,7 @@ section.intro {
 /* -------------------------------------------------------------------------- */
 
 :root {
-    --colour-pink: variables.$pink;
+    --colour-pink: #{variables.$pink};
 
     --colour-beige-light: #ffefcb;
     --colour-blue-light: #dff6ff;
