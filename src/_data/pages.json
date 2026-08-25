@@ -328,7 +328,6 @@
                 "description": "Cakes are covered in a smooth layer of sugarpaste and can be decorated with flowers, objects or figures modelled from fondant icing.",
                 "examples": [
                     "flower-elegance",
-                    "wonder-woman",
                     "come-fly-with-me"
                 ]
             },
@@ -338,17 +337,14 @@
                 "examples": [
                     "ready-set-go-kart",
                     "hp-slytherin-edition",
-                    "birthday-books",
-                    "90-not-out"
+                    "birthday-books"
                 ]
             },
             {
                 "name": "Birthday cupcakes",
                 "description": "Birthday cupcakes are easy to share and customise with a decoration of your choice. If some of your party have dietary requirements, cupcakes are a good way to cater for them separately. Cupcakes can also make a special birthday gift and can be presented in a gift box finished with ribbon and a bow and candle.",
                 "examples": [
-                    "birthday-beach-mix",
-                    "rose-mix",
-                    "deluxe-mix"
+                    "rose-mix"
                 ]
             },
             {
@@ -534,21 +530,6 @@
         "hasCSSFile": true,
         "occasion": "christmas",
         "testimonials": "none"
-    },
-    "afternoon-tea": {
-        "title": "Afternoon tea cakes and cupcakes | Cakes by Katie",
-        "description": "Cakes by Katie is a cake maker in Thatcham, near Newbury and Reading, in Berkshire offering bespoke cakes and cupcakes for afternoon tea in a wide range of flavours and catering for specific dietary requirements.",
-        "heading": {
-            "text": "Afternoon tea cakes",
-            "image": {
-                "path": "backgrounds/tea-set",
-                "alt": "Afternoon tea background"
-            }
-        },
-        "cta": {
-            "text": "Ready to order?"
-        },
-        "occasion": "afternoon-tea"
     },
     "delivery": {
         "title": "Delivery | Cakes by Katie",
