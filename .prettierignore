@@ -1,0 +1,17 @@
+dist
+node_modules
+package-lock.json
+
+# Generated image variants, committed to the repo.
+images
+
+# Nunjucks templates: Prettier has no parser for them and mangles the tags.
+*.njk
+
+# Content files, hand-edited and reviewed as prose rather than as code.
+src/content
+src/_data/pages.json
+src/_data/flavours.json
+
+# Hand-tuned email signature HTML: whitespace and inline styles are load-bearing in email clients.
+email-signature
