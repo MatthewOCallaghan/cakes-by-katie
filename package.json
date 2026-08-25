@@ -19,7 +19,6 @@
     "build": "npm run clean && npm run build:eleventy && npm run build:scss && npm run build:purge && npm run build:css && npm run build:js && npm run build:cachebust",
     "dev": "concurrently \"sass --load-path=node_modules src/scss:dist/css --watch --no-source-map\" \"node scripts/build-js.js --watch\" \"eleventy --config=eleventy.config.js --serve\"",
     "serve": "eleventy --config=eleventy.config.js --serve",
-    "deploy": "node scripts/deploy.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -46,7 +45,6 @@
     "swiper": "^8.4.7"
   },
   "dependencies": {
-    "basic-ftp": "^5.0.5",
     "get-media-dimensions": "^2.0.2",
     "image-size": "^1.0.2",
     "normalize.css": "^8.0.1",

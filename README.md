@@ -2,7 +2,7 @@
 
 Code for website [cakesbykatie.co.uk](https://www.cakesbykatie.co.uk).
 
-Built with [Eleventy](https://www.11ty.dev/) (Nunjucks templates + a JSON data cascade), Sass, PostCSS and esbuild, with a responsive-image pipeline (AVIF/WebP at multiple widths, via `sharp`). Deployed manually via FTP to the existing host.
+Built with [Eleventy](https://www.11ty.dev/) (Nunjucks templates + a JSON data cascade), Sass, PostCSS and esbuild, with a responsive-image pipeline (AVIF/WebP at multiple widths, via `sharp`). Deployed to Cloudflare Pages on every push.
 
 ## Images
 
@@ -45,11 +45,12 @@ Builds the full production site into `dist/`: Eleventy renders the HTML (passthr
 
 ## Deployment
 
-```
-npm run deploy
-```
+Deployment is handled by Cloudflare Pages, which builds and publishes on every push — there is
+no manual deploy step and no credentials in this repo.
 
-Uploads `dist/` via FTP to the existing host, using `config.js` (git-ignored — not included in this repo) for credentials: `host`, `FTP_USERNAME`, `FTP_PASSWORD`, `remoteFolder`.
+Pages is configured to run `npm run build` and publish `dist/`. Cache headers come from
+`src/_headers`, which is copied to the root of `dist/` at build time, and Pages serves
+`404.html` for unmatched routes automatically.
 
 # Notes for Mum
 
