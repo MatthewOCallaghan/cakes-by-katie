@@ -8,17 +8,13 @@ const VENUES_JSON = path.join(__dirname, "../content/venues.json");
 // `{% set page = "..." %}`.
 //
 // Hand-written pages live in src/content/pages.json. The per-venue wedding pages are generated
-// here instead: they're rendered from one paginated template (src/pages/delivery/venue.njk) and
-// their titles, descriptions, headings and CTAs all follow a fixed pattern around the venue's
-// name, so there was nothing in the 24 entries this replaces that venues.json didn't already
-// know. Adding a venue is now one edit to venues.json.
-//
-// `shortName` is the only knob a venue has over its own copy — Old Gore by Yard Space is
-// referred to as "Old Gore" in its heading and body copy, but the <title> keeps the full name so
-// the page is findable under it.
+// here instead, rendered from one paginated template (src/pages/delivery/venue.njk).
+
 const venuePageKey = (venueKey) => `venue:${venueKey}`;
 
 const buildVenuePage = (venue) => {
+
+    // We use a shorted name for some venues (e.g. "Old Gore by Yard Space" => "Old Gore")
     const name = venue.shortName || venue.name;
 
     return {
