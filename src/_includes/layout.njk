@@ -7,6 +7,8 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        {# PostHog's own asset host (not the API host), which is what actually serves its blocking script — see the PostHog snippet below. #}
+        <link rel="preconnect" href="https://eu-assets.i.posthog.com">
         {# Kept render-blocking on purpose: the heading font (Licorice, a script face) has no
         close-metric fallback, so deferring this would trade a small paint delay for a visible
         font swap/reflow on headings once the stylesheet arrives late. #}
