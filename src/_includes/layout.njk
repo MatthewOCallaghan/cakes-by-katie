@@ -57,8 +57,6 @@
         {# Set colour of top bar on iPhone next to notch #}
         <meta name="theme-color" content="#000"/>
 
-        <script src="https://kit.fontawesome.com/c57fec537e.js" crossorigin="anonymous" defer></script>
-
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-QMJVSRWWTY"></script>
         <script>
@@ -346,17 +344,17 @@
             <div>
                 <h3>Let's talk</h3>
                 <div class="contact-grid">
-                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                    {% include "svgs/map-marker.svg" %}
                     <p><small>West Berkshire, UK</small></p>
-                    <i class="far fa-envelope" aria-hidden="true"></i>
+                    {% include "svgs/envelope.svg" %}
                     <p><small><a href="mailto:katie@cakesbykatie.co.uk">katie@cakesbykatie.co.uk</a></small></p>
-                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    {% include "svgs/phone.svg" %}
                     <p><small><a href="tel:+447436120654" target="_blank">07436120654</a></small></p>
-                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    {% include "svgs/whatsapp.svg" %}
                     <p><small><a href="https://wa.me/447436120654" target="_blank">07436120654</a></small></p>
-                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                    {% include "svgs/instagram.svg" %}
                     <p><small><a href="https://www.instagram.com/cakesbykatieoc" target="_blank">@cakesbykatieoc</a></small></p>
-                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                    {% include "svgs/facebook.svg" %}
                     <p><small><a href="https://www.facebook.com/cakesbykatieoc" target="_blank">@cakesbykatieoc</a></small></p>
                 </div>
             </div>
