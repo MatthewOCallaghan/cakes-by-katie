@@ -1,0 +1,13 @@
+---
+# One page per wedding venue, rendered from src/content/venues.json.
+pagination:
+    data: weddingVenues
+    size: 1
+    alias: venueKey
+    # Without this Eleventy puts only the FIRST generated page into collections.all, which would
+    # silently drop 24 venue pages from the generated sitemap.
+    addAllPagesToCollections: true
+permalink: "delivery/{{ venueKey }}.html"
+---
+{% set page = "venue:" ~ venueKey %}
+{% extends "wedding-venue.njk" %}

@@ -94,11 +94,9 @@ Pages is configured to run `npm run build` and publish `dist/`. Cache headers co
         - Choose an image. You can change which cake is used by putting it at the start of the array in `src/content/venues.json` at `venues['downe-house-school'].featuredCakes`
 - Update Wasing Park page text in `src/content/venues.json` at `venues['wasing-park']`
 - Create page for each wedding venue we want
-    1. Create a new entry in `venues` in `src/content/venues.json`. I suggest you copy the `wasing-park` entry and make relevant changes.
-    2. Create a new entry in `pages` in `src/_data/pages.json` called `venueXXXX` (e.g. `venueWasingPark`). Again I suggest you copy the `venueWasingPark` entry and update accordingly. The `venue` property must match the key you created in the `venues` object.
-    3. Create new `.njk` file in `src/pages/delivery` folder. The name of the file will be the pathname of the web page. Do this by copying `src/pages/delivery/wasing-park.njk` and updating the `page` key to whatever `venueXXXX` key name you added to the `pages` object in `src/_data/pages.json`
+    - Add a new entry to `venues` in `src/content/venues.json` — copy the `wasing-park` entry and change what needs changing. The key you give it becomes the page's address, so `wasing-park` becomes `/delivery/wasing-park`. The page itself is generated; there's nothing else to create.
 - Distinguish wedding anniversary portfolio cakes with occasion `anniversary` by changing occasion to `anniversary-wedding`
-- Review all `description` wording in `pages` objects in `src/_data/pages.json`
+- Review all `description` wording in `pages` objects in `src/content/pages.json`
 - Use venue keys in porfolio cake `venue` rather than name, e.g. `post-barn` instead of `The Post Barn`
 
 
