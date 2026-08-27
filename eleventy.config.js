@@ -124,8 +124,8 @@ module.exports = function (eleventyConfig) {
         });
     eleventyConfig.addPassthroughCopy({ favicon: "." });
 
-    // Cloudflare Pages config file — must land at the root of dist/ to take effect.
-    eleventyConfig.addPassthroughCopy({ "src/_headers": "_headers" });
+    // No passthrough for _headers: scripts/cache-bust.js writes dist/_headers itself, once it
+    // knows which files it has hashed and can generate cache rules that match exactly.
 
     // Sass isn't part of Eleventy's own build (compiled separately via npm scripts),
     // but watch it here so `npm run dev`'s Eleventy dev server reloads when it changes.

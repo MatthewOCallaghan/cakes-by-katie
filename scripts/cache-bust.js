@@ -2,16 +2,14 @@ const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
 
-// Reimplements the gulpfile's cache-busting step (previously gulp-rev-all): content-hash the
-// built CSS/JS/non-portfolio images/videos/PDFs and rewrite every reference to them across the
-// built HTML, so browsers can cache these assets for a year without serving stale content after
-// a deploy.
+// Content-hashes the built CSS/JS/non-portfolio images/videos/PDFs and rewrites every reference
+// to them across the built HTML, so browsers can cache these assets for a year without serving
+// stale content after a deploy.
 //
-// Portfolio images/videos and favicons are deliberately left unhashed — same exclusions
-// gulp-rev-all used. Portfolio image/video paths are reconstructed client-side at runtime (see
-// src/js/portfolioUtils.js and src/js/portfolioModal.js) from raw filenames in portfolio.json, so
-// there's no literal string in the built output to find and replace. Favicons were never run
-// through the old rev pipeline either.
+// Portfolio images/videos and favicons are deliberately left unhashed. Portfolio image/video
+// paths are reconstructed client-side at runtime (see src/js/portfolioUtils.js and
+// src/js/portfolioModal.js) from raw filenames in portfolio.json, so there's no literal string
+// in the built output to find and replace.
 //
 // Assets are processed in dependency order rather than all at once:
 //
@@ -20,13 +18,13 @@ const crypto = require("crypto");
 //   3. hash the CSS and JS, now that their contents are final
 //   4. rewrite references to everything inside the HTML
 //
-// Doing it in one pass — hash everything, then rewrite — is what this script used to do, and it
-// has a quiet failure mode: a stylesheet's hash would be computed before its `url()` references
-// were rewritten, so the filename would no longer reflect the contents and a changed image
-// wouldn't produce a changed stylesheet URL. Nothing in dist/ references an image from CSS or JS
-// today, so this was latent rather than broken, but the ordering costs nothing to get right.
+// The ordering matters: hashing a stylesheet before its `url()` references are rewritten would
+// compute a hash that no longer reflects the file's contents, so a changed image wouldn't
+// produce a changed stylesheet URL. Nothing in dist/ references an image from CSS or JS today,
+// so this is latent rather than broken, but the ordering costs nothing to get right.
 const ROOT = path.join(__dirname, "..");
 const DIST_DIR = path.join(ROOT, "dist");
+const HEADERS_PATH = path.join(DIST_DIR, "_headers");
 
 // Directories (relative to dist/) whose files get hashed. `exclude` is a directory prefix
 // (relative to the directory itself) to skip within it.
@@ -94,6 +92,84 @@ function hashEligibleFiles(dirs) {
     return renames;
 }
 
+// Builds Cloudflare Pages' _headers file, giving every path this script just hashed a
+// year-long, immutable Cache-Control — safe because a changed file gets a changed filename.
+//
+// The rules are derived from `leafRenames` itself rather than from a hand-maintained list of
+// directory names, so a new `images/<category>` directory is covered by construction the moment
+// something in it gets hashed, with nothing to remember.
+//
+// `dir` entries with no `exclude` (css, js, pdfs) are hashed in full, so one splat covers them.
+// `dir` entries with an `exclude` (images, videos — both excluding portfolio) are decomposed
+// into whichever subdirectories and loose top-level files actually turn up in the renames:
+// `/images/:file` for the loose files (`:file` matches exactly one path segment, so this can't
+// reach into a subdirectory) and one `/images/<category>/*` per subdirectory seen. A directory
+// that was entirely excluded, like images/portfolio, never appears in the renames and so never
+// gets a rule.
+function buildHeadersFile(leafRenames, leafDirs, textDirs) {
+    const rules = [];
+
+    for (const { dir } of textDirs) {
+        rules.push(`/${dir}/*`);
+    }
+
+    for (const { dir, exclude } of leafDirs) {
+        if (!exclude) {
+            rules.push(`/${dir}/*`);
+            continue;
+        }
+
+        const prefix = `/${dir}/`;
+        const subdirectories = new Set();
+        let hasLooseFiles = false;
+
+        for (const oldPath of leafRenames.keys()) {
+            if (!oldPath.startsWith(prefix)) {
+                continue;
+            }
+            const relative = oldPath.slice(prefix.length);
+            const slash = relative.indexOf("/");
+            if (slash === -1) {
+                hasLooseFiles = true;
+            } else {
+                subdirectories.add(relative.slice(0, slash));
+            }
+        }
+
+        if (hasLooseFiles) {
+            rules.push(`/${dir}/:file`);
+        }
+        for (const subdirectory of [...subdirectories].sort()) {
+            rules.push(`/${dir}/${subdirectory}/*`);
+        }
+    }
+
+    const header = `# Cloudflare Pages headers config — generated by scripts/cache-bust.js, not hand-edited.
+# https://developers.cloudflare.com/pages/configuration/headers/
+#
+# Every rule below matches only content-hashed files (see the hashing this script just did),
+# so \`immutable\` is safe: a changed file gets a changed filename, nothing here can go stale.
+#
+# The rules themselves are derived from what actually got hashed, not from a maintained list of
+# directory names — see buildHeadersFile in this script for why. Two things stay deliberately
+# uncovered: images/portfolio and videos/portfolio are never hashed (their URLs are rebuilt
+# client-side from bare filenames in portfolio.json — see src/js/portfolioUtils.js and
+# src/js/portfolioModal.js), so a replaced photo isn't stuck behind a year-long cache; favicons
+# aren't hashed either, for the same reason. Both fall back to Cloudflare's default
+# ETag-revalidated caching.
+#
+# Cloudflare Pages applies every matching rule and APPENDS a repeated header rather than
+# overriding it, so two rules matching the same path would double up their Cache-Control value.
+# The rules below are kept mutually exclusive by construction: \`:name\` matches exactly one path
+# segment and \`*\` crosses \`/\`, so a loose-file rule and a subdirectory rule for the same
+# top-level directory can never both match the same path.
+`;
+
+    const body = rules.map((rule) => `${rule}\n  Cache-Control: public, max-age=31536000, immutable\n`).join("\n");
+
+    return `${header}\n${body}`;
+}
+
 // Longest-first so e.g. "/images/foo-1500.avif" is replaced before "/images/foo-150.avif" could
 // partially match inside it.
 function rewriteReferences(renames, extensions) {
@@ -134,6 +210,8 @@ function run() {
     // 4: point the HTML at all of it.
     const renames = new Map([...leafRenames, ...textRenames]);
     rewriteReferences(renames, REWRITABLE_EXTENSIONS);
+
+    fs.writeFileSync(HEADERS_PATH, buildHeadersFile(leafRenames, HASHED_LEAF_DIRS, HASHED_TEXT_DIRS));
 
     console.log(`[cache-bust] Hashed ${renames.size} file(s).`);
 }
