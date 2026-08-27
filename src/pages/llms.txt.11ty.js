@@ -1,9 +1,5 @@
 const BASE_URL = "https://www.cakesbykatie.co.uk";
 
-// Generated from src/_data/navigation.js rather than hand-maintained, so it can't drift from the
-// site's actual menus the way the previous static src/llms.txt could. Only the prose and the
-// contact details live here.
-//
 // https://llmstxt.org/
 const CONTACT = [
     "Email: katie@cakesbykatie.co.uk",

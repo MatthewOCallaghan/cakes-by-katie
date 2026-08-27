@@ -28,7 +28,7 @@
     {% from "macros/grid-menu-links.njk" import gridMenuLinks with context %}
     {{
         gridMenuLinks(
-            navigation.listedOccasions | tiles,
+            navigation.listedOccasions | linkTiles,
             "What's your occasion?",
             "I can cater for all occasions, but here are some of the most common..."
         )

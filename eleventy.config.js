@@ -16,10 +16,8 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addNunjucksFilter("stringifyElements", (array) => array.map((item) => JSON.stringify(item)));
     eleventyConfig.addNunjucksFilter("objectToArray", (object) => Object.values(object));
 
-    // Navigation entries -> the shape macros/grid-menu-links.njk wants, so the tile grids on the
-    // products and occasions index pages read from src/_data/navigation.js rather than repeating
-    // the site's structure inline.
-    eleventyConfig.addNunjucksFilter("tiles", (links) =>
+    // Navigation entries -> the shape macros/grid-menu-links.njk wants
+    eleventyConfig.addNunjucksFilter("linkTiles", (links) =>
         links.map(({ href, tile }) => ({ href, title: tile.title, imageSrc: tile.image, imageAlt: tile.alt, colour: tile.colour }))
     );
 
