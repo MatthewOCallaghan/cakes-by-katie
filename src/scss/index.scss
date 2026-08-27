@@ -71,20 +71,21 @@
                 font-family: inherit;
                 position: relative;
 
-            // Christmas hat
-                // &::before {
-                //     content: "";
-                //     display: block;
-                //     position: absolute;
-                //     top: min(-1.9vw, -15px);
-                //     left: min(-1.9vw, -15px);
-                //     width: max(8.8vw, 70px);
-                //     height: max(6.2vw, 50px);
-                //     background: url('/images/christmas/santa-hat.svg');
-                //     background-size: contain;
-                //     background-repeat: no-repeat;
-                //     transform: rotateZ(-18deg);
-                // }
+                // Santa hat on the first word of the hero, switched on by site.christmas.enabled
+                // (see src/_data/site.json), which puts the `christmas` class on <body>.
+                body.christmas &::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: min(-1.9vw, -15px);
+                    left: min(-1.9vw, -15px);
+                    width: max(8.8vw, 70px);
+                    height: max(6.2vw, 50px);
+                    background: url('/images/christmas/santa-hat.svg');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    transform: rotateZ(-18deg);
+                }
             }
         }
 

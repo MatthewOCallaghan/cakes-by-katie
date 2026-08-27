@@ -94,7 +94,12 @@
         </script>
 
     </head>
-    <body>
+    {# Seasonal switches live in src/_data/site.json; the CSS keys off these classes so the
+       Christmas styling is one flag rather than a hunt for commented-out rules. #}
+    {%- set bodyClasses = [] -%}
+    {%- if site.christmas.enabled -%}{%- set bodyClasses = bodyClasses.concat(["christmas"]) -%}{%- endif -%}
+    {%- if site.christmas.showPrices -%}{%- set bodyClasses = bodyClasses.concat(["christmas-prices"]) -%}{%- endif -%}
+    <body{% if bodyClasses.length %} class="{{ bodyClasses | join(" ") }}"{% endif %}>
         {% from "macros/picture.njk" import pictureElement with context %}
 
         <header>
@@ -202,13 +207,17 @@
                             <button>Occasions</button>
                             <div class="submenu">
                                 <ul>
-                                    {# Festive Christmas link #}
-                                    {# <li>
-                                        <a href="/occasions/christmas" class="christmas">
-                                            {{ pictureElement("portfolio/" ~ portfolio['ruby-reindeer'].squareImage, "Christmas cake", "50px") }}
-                                            <span>Christmas</span>
-                                        </a>
-                                    </li> #}
+                                    {# In December the Christmas link moves to the top of the menu and gets
+                                       the festive treatment; the rest of the year it sits in date order at
+                                       the bottom with everything else. #}
+                                    {% if site.christmas.enabled %}
+                                        <li>
+                                            <a href="/occasions/christmas" class="christmas">
+                                                {{ pictureElement("portfolio/" ~ portfolio['ruby-reindeer'].squareImage, "Christmas cake", "50px") }}
+                                                <span>Christmas</span>
+                                            </a>
+                                        </li>
+                                    {% endif %}
                                     <li>
                                         <a href="/occasions/wedding">
                                             {{ pictureElement("portfolio/square/Charlotte-zoomed-square", "Wedding cake", "50px") }}
@@ -263,13 +272,14 @@
                                             <span>Easter</span>
                                         </a>
                                     </li>
-                                    {# Normal Christmas link #}
-                                    <li>
-                                        <a href="/occasions/christmas">
-                                            {{ pictureElement("portfolio/" ~ portfolio['ruby-reindeer'].squareImage, "Christmas cake", "50px") }}
-                                            <span>Christmas</span>
-                                        </a>
-                                    </li>
+                                    {% if not site.christmas.enabled %}
+                                        <li>
+                                            <a href="/occasions/christmas">
+                                                {{ pictureElement("portfolio/" ~ portfolio['ruby-reindeer'].squareImage, "Christmas cake", "50px") }}
+                                                <span>Christmas</span>
+                                            </a>
+                                        </li>
+                                    {% endif %}
                                 </ul>
                                 <a href="/occasions" class="submenu-grid-more-link">More occasions</a>
                             </div>
@@ -283,10 +293,11 @@
                     <div id="mobile-nav-image">
                         {{ pictureElement("features/ukwha-2025-finalist", "UK Weddings and Honeymoons Awards Wedding Cake Designer Finalist 2025 Rosette", "126px") }}
 
-                        {{ pictureElement("cake-cutouts/parker-penguin", "Parker penguin", "169px") }}
-                        
-                        {# Image used at Christmas #}
-                        {# {{ pictureElement("christmas/white-reindeer-cutout", "White reindeer cake", "169px") }} #}
+                        {% if site.christmas.enabled %}
+                            {{ pictureElement("christmas/white-reindeer-cutout", "White reindeer cake", "169px") }}
+                        {% else %}
+                            {{ pictureElement("cake-cutouts/parker-penguin", "Parker penguin", "169px") }}
+                        {% endif %}
                     </div>
 
                 </div>

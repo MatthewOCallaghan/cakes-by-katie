@@ -2,8 +2,11 @@
 {% extends "layout.njk" %}
 
 {% block head %}
-{# CDN script for Christmas snow particles #}
-{# <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-snow@2/tsparticles.preset.snow.bundle.min.js"></script> #}
+{% if site.christmas.enabled %}
+    {# Snow particles for the hero. Still loaded from a CDN, unlike Swiper — worth self-hosting
+       next time this is switched on. #}
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-snow@2/tsparticles.preset.snow.bundle.min.js"></script>
+{% endif %}
 {% endblock %}
 
 {% from "macros/picture.njk" import pictureElement with context %}
@@ -44,8 +47,9 @@
             })();
         </script>
 
-        {# Container for Christmas snow particles #}
-        {# <div id="snow-particles"></div> #}
+        {% if site.christmas.enabled %}
+            <div id="snow-particles"></div>
+        {% endif %}
 
         <div class="header-video-text">
             <span class="main-text">
@@ -140,8 +144,8 @@
 
     {% include "featured-in.njk" %}
 
-    {# Christmas section #}
-    {# <section id="christmas">
+    {% if site.christmas.enabled %}
+    <section id="christmas">
 
         {{ pictureElement("backgrounds/christmas-tree", "Christmas background", "100vw") }}
 
@@ -166,7 +170,8 @@
                 </div>
             </div>
         </div>
-    </section> #}
+    </section>
+    {% endif %}
 
     <section id="contact">
         {% from "macros/fixed-background.njk" import fixedBackground with context %}
@@ -197,6 +202,7 @@
 
 
 {% block scripts %}
-    {# Christmas snowflakes #}
-    {# <script type="text/javascript" src="/js/snow.js" defer></script> #}
+    {% if site.christmas.enabled %}
+        <script type="text/javascript" src="/js/snow.js" defer></script>
+    {% endif %}
 {% endblock %}
