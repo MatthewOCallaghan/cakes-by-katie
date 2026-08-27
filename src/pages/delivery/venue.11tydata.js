@@ -1,6 +1,4 @@
-// Page metadata for the generated wedding venue pages. Every field follows a fixed pattern
-// around the venue's name, which is why these were worth generating rather than writing out 24
-// times by hand.
+// Page metadata for the generated wedding venue pages.
 //
 // `shortName` is the only knob a venue has over its own copy — Old Gore by Yard Space is
 // referred to as "Old Gore" in its heading and body, but the <title> keeps the full name so the
