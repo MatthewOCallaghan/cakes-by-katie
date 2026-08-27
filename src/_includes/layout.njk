@@ -137,27 +137,11 @@
                             <button>About</button>
                             <div class="submenu">
                                 <ul>
-                                    <li>
-                                        <a href="/about">Meet Katie</a>
-                                    </li>
-                                    <li>
-                                        <a href="/pricing">Pricing</a>
-                                    </li>
-                                    <li>
-                                        <a href="/flavours">Flavours</a>
-                                    </li>
-                                    <li>
-                                        <a href="/testimonials">Testimonials</a>
-                                    </li>
-                                    <li>
-                                        <a href="/delivery">Delivery</a>
-                                    </li>
-                                    <li>
-                                        <a href="/awards">News &amp; Awards</a>
-                                    </li>
-                                    <li>
-                                        <a href="/faqs">FAQs</a>
-                                    </li>
+                                    {% for link in navigation.about %}
+                                        <li>
+                                            <a href="{{ link.href }}">{{ link.label }}</a>
+                                        </li>
+                                    {% endfor %}
                                 </ul>
                             </div>
                         </li>
@@ -175,30 +159,14 @@
                             <button>Products</button>
                             <div class="submenu">
                                 <ul>
-                                    <li>
-                                        <a href="/products/wedding-cakes">
-                                            {{ pictureElement("portfolio/" ~ portfolio['kirsten-buttercream'].squareImage, "Wedding cake", "50px") }}
-                                            <span>Wedding cakes</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/products/celebration-cakes">
-                                            {{ pictureElement("portfolio/" ~ portfolio['parker-penguin'].squareImage, "Birthday cake", "50px") }}
-                                            <span>Celebration cakes</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/products/cupcakes">
-                                            {{ pictureElement("portfolio/" ~ portfolio['rose-mix'].squareImage, "Cupcakes", "50px") }}
-                                            <span>Cupcakes</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/products/wedding-favours">
-                                            {{ pictureElement("wedding-favours/cake-jar-square", "Christening cake", "50px") }}
-                                            <span>Wedding favours</span>
-                                        </a>
-                                    </li>
+                                    {% for link in navigation.listedProducts %}
+                                        <li>
+                                            <a href="{{ link.href }}">
+                                                {{ pictureElement(("portfolio/" ~ portfolio[link.thumb.cake].squareImage) if link.thumb.cake else link.thumb.image, link.thumbAlt, "50px") }}
+                                                <span>{{ link.label }}</span>
+                                            </a>
+                                        </li>
+                                    {% endfor %}
                                 </ul>
                                 <a href="/products" class="submenu-grid-more-link">More products</a>
                             </div>
@@ -218,68 +186,16 @@
                                             </a>
                                         </li>
                                     {% endif %}
-                                    <li>
-                                        <a href="/occasions/wedding">
-                                            {{ pictureElement("portfolio/square/Charlotte-zoomed-square", "Wedding cake", "50px") }}
-                                            <span>Wedding</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/occasions/birthday">
-                                            {{ pictureElement("portfolio/" ~ portfolio['parker-penguin'].squareImage, "Birthday cake", "50px") }}
-                                            <span>Birthday</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/occasions/anniversary">
-                                            {{ pictureElement("portfolio/" ~ portfolio['diamond-toast'].squareImage, "Anniversary cake", "50px") }}
-                                            <span>Anniversary</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/occasions/christening">
-                                            {{ pictureElement("portfolio/" ~ portfolio['dreamland-express'].squareImage, "Christening cake", "50px") }}
-                                            <span>Christening</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/occasions/baby-shower">
-                                            {{ pictureElement("portfolio/" ~ portfolio['fishing-for-dreams'].squareImage, "Baby shower cake", "50px") }}
-                                            <span>Baby shower</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/occasions/gender-reveal">
-                                            {{ pictureElement("portfolio/" ~ portfolio['baby-bears'].squareImage, "Gender reveal cake", "50px") }}
-                                            <span>Gender reveal</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/occasions/corporate">
-                                            {{ pictureElement("portfolio/" ~ portfolio['corporate-thank-you'].squareImage, "Corporate cake", "50px") }}
-                                            <span>Corporate</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/occasions/valentines">
-                                            {{ pictureElement("portfolio/" ~ portfolio['be-my-valentine'].squareImage, "Valentine's cake", "50px") }}
-                                            <span>Valentine&#39;s</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/occasions/easter">
-                                            {{ pictureElement("portfolio/" ~ portfolio['blue-speckle-mini-eggs'].squareImage, "Easter cake", "50px") }}
-                                            <span>Easter</span>
-                                        </a>
-                                    </li>
-                                    {% if not site.christmas.enabled %}
-                                        <li>
-                                            <a href="/occasions/christmas">
-                                                {{ pictureElement("portfolio/" ~ portfolio['ruby-reindeer'].squareImage, "Christmas cake", "50px") }}
-                                                <span>Christmas</span>
-                                            </a>
-                                        </li>
-                                    {% endif %}
+                                    {% for link in navigation.listedOccasions %}
+                                        {% if not (site.christmas.enabled and link.href == "/occasions/christmas") %}
+                                            <li>
+                                                <a href="{{ link.href }}">
+                                                    {{ pictureElement(("portfolio/" ~ portfolio[link.thumb.cake].squareImage) if link.thumb.cake else link.thumb.image, link.thumbAlt, "50px") }}
+                                                    <span>{{ link.label }}</span>
+                                                </a>
+                                            </li>
+                                        {% endif %}
+                                    {% endfor %}
                                 </ul>
                                 <a href="/occasions" class="submenu-grid-more-link">More occasions</a>
                             </div>
@@ -374,41 +290,26 @@
             <div>
                 <h3>Quick links</h3>
                 <ul>
-                    <li><small><a href="/">Home</a></small></li>
-                    <li><small><a href="/about">About</a></small></li>
-                    <li><small><a href="{{ "#contact" if page == "index" else "/#contact" }}">Contact</a></small></li>
-                    <li><small><a href="/portfolio">Portfolio</a></small></li>
-                    <li><small><a href="/pricing">Pricing</a></small></li>
-                    <li><small><a href="/flavours">Flavours</a></small></li>
-                    <li><small><a href="/testimonials">Testimonials</a></small></li>
-                    <li><small><a href="/delivery">Delivery</a></small></li>
-                    <li><small><a href="/awards">News &amp; Awards</a></small></li>
-                    <li><small><a href="/faqs">FAQs</a></small></li>
+                    {% for link in navigation.quickLinks %}
+                        <li><small><a href="{{ ("#contact" if page == "index" else "/#contact") if link.contact else link.href }}">{{ link.label }}</a></small></li>
+                    {% endfor %}
                 </ul>
             </div>
             <div>
                 <h3>Products</h3>
                 <ul>
-                    <li><small><a href="/products/wedding-cakes">Wedding cakes</a></small></li>
-                    <li><small><a href="/products/celebration-cakes">Celebration cakes</a></small></li>
-                    <li><small><a href="/products/cupcakes">Cupcakes</a></small></li>
-                    <li><small><a href="/products/wedding-favours">Wedding favours</a></small></li>
+                    {% for link in navigation.listedProducts %}
+                        <li><small><a href="{{ link.href }}">{{ link.label }}</a></small></li>
+                    {% endfor %}
                     <li><small><a href="/products">More...</a></small></li>
                 </ul>
             </div>
             <div>
                 <h3>Occasions</h3>
                 <ul>
-                    <li><small><a href="/occasions/wedding">Wedding</a></small></li>
-                    <li><small><a href="/occasions/birthday">Birthday</a></small></li>
-                    <li><small><a href="/occasions/anniversary">Anniversary</a></small></li>
-                    <li><small><a href="/occasions/christening">Christening</a></small></li>
-                    <li><small><a href="/occasions/baby-shower">Baby shower</a></small></li>
-                    <li><small><a href="/occasions/gender-reveal">Gender reveal</a></small></li>
-                    <li><small><a href="/occasions/corporate">Corporate</a></small></li>
-                    <li><small><a href="/occasions/valentines">Valentine's</a></small></li>
-                    <li><small><a href="/occasions/easter">Easter</a></small></li>
-                    <li><small><a href="/occasions/christmas">Christmas</a></small></li>
+                    {% for link in navigation.listedOccasions %}
+                        <li><small><a href="{{ link.href }}">{{ link.label }}</a></small></li>
+                    {% endfor %}
                     <li><small><a href="/occasions">More...</a></small></li>
                 </ul>
             </div>
