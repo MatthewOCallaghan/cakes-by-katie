@@ -12,3 +12,26 @@
 //
 // The accessor exists so that dependency is a named import rather than an ambient global.
 export const getSwiper = () => window.SwiperVendor;
+
+// Loads the Swiper bundle on demand and resolves once it has set window.SwiperVendor.
+//
+// Pages without an image carousel don't need Swiper until the testimonials slideshow is nearly
+// on screen, which on most pages is a long way down. `src` is passed in rather than hardcoded
+// because the built filename is content-hashed; layout.njk puts the unhashed path on the
+// consuming <script> tag and cache-bust.js rewrites it there like any other reference.
+let pending = null;
+export const loadSwiper = (src) => {
+    if (window.SwiperVendor) {
+        return Promise.resolve(window.SwiperVendor);
+    }
+    if (!pending) {
+        pending = new Promise((resolve, reject) => {
+            const script = document.createElement('script');
+            script.src = src;
+            script.onload = () => resolve(window.SwiperVendor);
+            script.onerror = reject;
+            document.head.appendChild(script);
+        });
+    }
+    return pending;
+};
