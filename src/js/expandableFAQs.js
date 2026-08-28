@@ -25,7 +25,7 @@ document.querySelectorAll('.question').forEach((element, index) => {
         title.setAttribute('aria-expanded', currentlyExpanded ? 'false' : 'true');
 
         if (!currentlyExpanded) {
-            gtag?.('event', 'expand_faq', {
+            window.posthog?.capture('expand_faq', {
                 question: title.innerText,
             });
         }

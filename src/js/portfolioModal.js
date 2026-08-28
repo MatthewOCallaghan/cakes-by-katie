@@ -102,7 +102,10 @@ const openModal = ({ target }) => {
     // Must be done after it is made visible
     scrollableContainer.scrollTop = 0;
 
-    gtag?.('event', 'open_portfolio_modal', {
+    // window.posthog is a property lookup, so it is safe before the snippet has run (or when
+    // it hasn't, as in development). A bare `gtag?.()` was not: optional chaining doesn't guard
+    // an undeclared identifier, it throws a ReferenceError.
+    window.posthog?.capture('open_portfolio_modal', {
         cake: name,
     });
 };
