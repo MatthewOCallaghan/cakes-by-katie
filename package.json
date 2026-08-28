@@ -1,57 +1,58 @@
 {
-  "name": "cakes-by-katie",
-  "version": "1.0.0",
-  "description": "Code for website [cakesbykatie.co.uk](https://www.cakesbykatie.co.uk).",
-  "main": "index.js",
-  "engines": {
-    "node": ">=20"
-  },
-  "scripts": {
-    "clean": "rm -rf dist",
-    "images:add": "node scripts/images-add.js",
-    "images:clean": "node scripts/images-clean.js",
-    "build:eleventy": "eleventy --config=eleventy.config.js",
-    "build:scss": "sass --load-path=node_modules src/scss:dist/css --no-source-map",
-    "build:css": "postcss dist/css/*.css --use autoprefixer cssnano --no-map --replace",
-    "build:purge": "purgecss --config purgecss.config.js",
-    "build:js": "node scripts/build-js.js",
-    "build:cachebust": "node scripts/cache-bust.js",
-    "build": "npm run clean && npm run build:eleventy && npm run build:scss && npm run build:purge && npm run build:css && npm run build:js && npm run build:cachebust",
-    "preview": "eleventy-dev-server --dir=dist",
-    "format": "prettier --write .",
-    "format:check": "prettier --check .",
-    "dev": "concurrently \"sass --load-path=node_modules src/scss:dist/css --watch --no-source-map\" \"node scripts/build-js.js --watch\" \"eleventy --config=eleventy.config.js --serve\"",
-    "test": "node scripts/check-links.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MatthewOCallaghan/cakes-by-katie.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MatthewOCallaghan/cakes-by-katie/issues"
-  },
-  "homepage": "https://github.com/MatthewOCallaghan/cakes-by-katie#readme",
-  "devDependencies": {
-    "@11ty/eleventy": "^3.0.0",
-    "@11ty/eleventy-dev-server": "^2.0.8",
-    "autoprefixer": "^10.4.20",
-    "concurrently": "^9.1.0",
-    "cssnano": "^7.0.6",
-    "esbuild": "^0.24.0",
-    "html-minifier-terser": "^7.2.0",
-    "postcss": "^8.4.49",
-    "postcss-cli": "^11.0.0",
-    "prettier": "^3.4.2",
-    "purgecss": "^6.0.0",
-    "sass": "^1.83.0",
-    "swiper": "^8.4.7"
-  },
-  "dependencies": {
-    "get-media-dimensions": "^2.0.2",
-    "image-size": "^1.0.2",
-    "normalize.css": "^8.0.1",
-    "sharp": "^0.33.5"
-  }
+    "name": "cakes-by-katie",
+    "version": "1.0.0",
+    "description": "Code for website [cakesbykatie.co.uk](https://www.cakesbykatie.co.uk).",
+    "main": "index.js",
+    "engines": {
+        "node": ">=20"
+    },
+    "scripts": {
+        "clean": "rm -rf dist",
+        "images:add": "node scripts/images-add.js",
+        "images:clean": "node scripts/images-clean.js",
+        "build:eleventy": "eleventy --config=eleventy.config.js",
+        "build:scss": "sass --load-path=node_modules src/scss:dist/css --no-source-map",
+        "build:css": "postcss dist/css/*.css --use autoprefixer cssnano --no-map --replace",
+        "build:inlinecss": "node scripts/inline-css.js",
+        "build:purge": "purgecss --config purgecss.config.js",
+        "build:js": "node scripts/build-js.js",
+        "build:cachebust": "node scripts/cache-bust.js",
+        "build": "npm run clean && npm run build:eleventy && npm run build:scss && npm run build:purge && npm run build:css && npm run build:js && npm run build:inlinecss && npm run build:cachebust",
+        "preview": "eleventy-dev-server --dir=dist",
+        "format": "prettier --write .",
+        "format:check": "prettier --check .",
+        "dev": "concurrently \"sass --load-path=node_modules src/scss:dist/css --watch --no-source-map\" \"node scripts/build-js.js --watch\" \"eleventy --config=eleventy.config.js --serve\"",
+        "test": "node scripts/check-links.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MatthewOCallaghan/cakes-by-katie.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/MatthewOCallaghan/cakes-by-katie/issues"
+    },
+    "homepage": "https://github.com/MatthewOCallaghan/cakes-by-katie#readme",
+    "devDependencies": {
+        "@11ty/eleventy": "^3.0.0",
+        "@11ty/eleventy-dev-server": "^2.0.8",
+        "autoprefixer": "^10.4.20",
+        "concurrently": "^9.1.0",
+        "cssnano": "^7.0.6",
+        "esbuild": "^0.24.0",
+        "html-minifier-terser": "^7.2.0",
+        "postcss": "^8.4.49",
+        "postcss-cli": "^11.0.0",
+        "prettier": "^3.4.2",
+        "purgecss": "^6.0.0",
+        "sass": "^1.83.0",
+        "swiper": "^8.4.7"
+    },
+    "dependencies": {
+        "get-media-dimensions": "^2.0.2",
+        "image-size": "^1.0.2",
+        "normalize.css": "^8.0.1",
+        "sharp": "^0.33.5"
+    }
 }
