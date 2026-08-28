@@ -299,7 +299,12 @@
                     )
                 }}
                 <div>
-                    <h3>{{ cta.text | safe if cta.text else "Get a quote for your occasion!" }}</h3>
+                    {# h2, not h3. This banner and the footer column headings below are the only
+                    headings layout.njk contributes, and they sit directly under the page's h1 —
+                    so on any page whose own content has no h2 (404, occasions, portfolio,
+                    testimonials, wedding favours) an h3 here skipped a level. Sizes are set
+                    explicitly in the stylesheet, so this is a semantic change only. #}
+                    <h2>{{ cta.text | safe if cta.text else "Get a quote for your occasion!" }}</h2>
                     <a
                         class="button button-white"
                         href="/#contact"
@@ -312,7 +317,7 @@
 
         <footer>
             <div>
-                <h3>Let's talk</h3>
+                <h2>Let's talk</h2>
                 <div class="contact-grid">
                     {% include "svgs/map-marker.svg" %}
                     <p><small>West Berkshire, UK</small></p>
@@ -329,7 +334,7 @@
                 </div>
             </div>
             <div>
-                <h3>Quick links</h3>
+                <h2>Quick links</h2>
                 <ul>
                     {% for link in navigation.quickLinks %}
                         <li><small><a href="{{ ("#contact" if page.url == "/" else "/#contact") if link.contact else link.href }}">{{ link.label }}</a></small></li>
@@ -337,7 +342,7 @@
                 </ul>
             </div>
             <div>
-                <h3>Products</h3>
+                <h2>Products</h2>
                 <ul>
                     {% for link in navigation.listedProducts %}
                         <li><small><a href="{{ link.href }}">{{ link.label }}</a></small></li>
@@ -346,7 +351,7 @@
                 </ul>
             </div>
             <div>
-                <h3>Occasions</h3>
+                <h2>Occasions</h2>
                 <ul>
                     {% for link in navigation.listedOccasions %}
                         <li><small><a href="{{ link.href }}">{{ link.label }}</a></small></li>

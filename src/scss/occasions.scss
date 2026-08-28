@@ -1,7 +1,10 @@
 section.intro {
     div.intro-text {
         div.cta {
-            h3 {
+            h2 {
+                // Was an h3 before the heading levels were corrected; keep its size so the
+                // change is semantic only.
+                font-size: 2.34em;
                 margin-top: 0;
             }
 
