@@ -111,12 +111,43 @@
             gtag('config', 'G-QMJVSRWWTY');
         </script>
 
+        {# Was a bare Organization with a url and a logo — and that logo URL 404s, since
+        logo-with-background.svg is not produced by this build or present in the repo.
+
+        Bakery is a LocalBusiness subtype, which is what Google's local results and the LLMs
+        answering "cake maker near Newbury" actually read. Every value comes from
+        src/_data/site.json and every one of them was already published somewhere on the site;
+        nothing here is invented. Deliberately absent, because guessing them would be worse than
+        omitting them: streetAddress, postalCode, geo, openingHours and aggregateRating. #}
         <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
-                "@type": "Organization",
-                "url": "https://www.cakesbykatie.co.uk",
-                "logo": "https://www.cakesbykatie.co.uk/logo-with-background.svg"
+                "@type": "Bakery",
+                "@id": "{{ baseUrl }}/#business",
+                "name": "{{ site.business.name }}",
+                "description": "{{ site.business.description }}",
+                "url": "{{ baseUrl }}/",
+                "logo": "{{ site.business.logo | absoluteUrl }}",
+                "image": "{{ site.business.image | absoluteUrl }}",
+                "telephone": "{{ site.business.telephone }}",
+                "email": "{{ site.business.email }}",
+                "priceRange": "{{ site.business.priceRange }}",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "{{ site.business.addressLocality }}",
+                    "addressRegion": "{{ site.business.addressRegion }}",
+                    "addressCountry": "{{ site.business.addressCountry }}"
+                },
+                "areaServed": [
+                    {% for place in site.business.areaServed %}
+                        { "@type": "Place", "name": "{{ place }}" }{{ "," if not loop.last }}
+                    {% endfor %}
+                ],
+                "sameAs": [
+                    {% for profile in site.business.sameAs %}
+                        "{{ profile }}"{{ "," if not loop.last }}
+                    {% endfor %}
+                ]
             }
         </script>
 
