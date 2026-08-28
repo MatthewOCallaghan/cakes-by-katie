@@ -1,7 +1,7 @@
 $priceFont: 'Courgette', cursive;
 
 section.intro {
-    background: #FFF;
+    background: #fff;
 
     padding: 20px;
 
@@ -18,11 +18,9 @@ section.intro {
             padding: 20px;
         }
     }
-    
 }
 
 section.products {
-
     position: relative;
     background: #58cbff;
     text-align: center;
@@ -38,7 +36,7 @@ section.products {
 
     .product-outer-container {
         padding: 5px;
-        box-shadow: 0 0 12px 4px #c2c2c28c;       
+        box-shadow: 0 0 12px 4px #c2c2c28c;
 
         .product-inner-container {
             padding: 20px 30px;
@@ -72,7 +70,7 @@ section.products {
                         border-radius: 6px;
                     }
                 }
-                
+
                 .price-labels {
                     position: absolute;
                     bottom: -60px;
@@ -140,7 +138,7 @@ section.products {
 
             .product-contents:nth-of-type(odd) {
                 flex-direction: row-reverse;
-            
+
                 .price-labels {
                     left: -10px;
                 }
@@ -156,29 +154,33 @@ section.products {
         }
     }
 
-    .product-outer-container, .deals {
+    .product-outer-container,
+    .deals {
         border-radius: 20px;
         max-width: 1100px;
         margin: auto;
         z-index: 1;
         position: relative;
     }
-    
+
     // Add top margin to all but first product
-    .product-outer-container ~ .product-outer-container, .product-outer-container ~ .deals {
+    .product-outer-container ~ .product-outer-container,
+    .product-outer-container ~ .deals {
         margin-top: 60px;
     }
 
     .deals {
         color: #ebebeb;
-        border: 2px dashed #D3D3D3;
+        border: 2px dashed #d3d3d3;
         padding: 20px 14px;
-        box-shadow: 0 0 7px 1px #f2f2f24f, inset 0 0 7px 1px #f2f2f24f;
+        box-shadow:
+            0 0 7px 1px #f2f2f24f,
+            inset 0 0 7px 1px #f2f2f24f;
 
         h3 {
             font-size: 2.6em;
             text-shadow: 0px 0px 3px #ffffff8a;
-            margin: .5em 0;
+            margin: 0.5em 0;
         }
 
         .deal-row {
@@ -226,17 +228,14 @@ section.products {
                     font-size: 0.9em;
                 }
             }
-
         }
     }
 
     @media (max-width: 800px) {
-
         .product-outer-container {
-
             .product-contents {
                 flex-direction: column !important;
-                
+
                 .price-labels {
                     bottom: -80px !important;
                 }
@@ -253,17 +252,18 @@ section.products {
         }
 
         // Expand top margin as price labels are lower
-        .product-outer-container ~ .product-outer-container, .product-outer-container ~ .deals {
+        .product-outer-container ~ .product-outer-container,
+        .product-outer-container ~ .deals {
             margin-top: 70px;
         }
     }
 }
 
-
 // Prices and deals are hidden until they've been updated for the season. Switch them back on
 // with site.christmas.showPrices (src/_data/site.json), which puts `christmas-prices` on <body>.
 body:not(.christmas-prices) {
-    .price-labels, .deals {
+    .price-labels,
+    .deals {
         display: none !important;
     }
 }
@@ -272,6 +272,7 @@ section.products .product-outer-container .product-inner-container .product-cont
     margin-top: 30px !important;
 }
 
-section.products .product-outer-container ~ .product-outer-container, section.products .product-outer-container ~ .deals {
+section.products .product-outer-container ~ .product-outer-container,
+section.products .product-outer-container ~ .deals {
     margin-top: 40px;
 }

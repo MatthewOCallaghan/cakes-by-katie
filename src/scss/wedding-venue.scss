@@ -19,7 +19,7 @@ div.venue-image {
             border-radius: 8px;
         }
     }
-    
+
     &.image-circle {
         img {
             object-fit: cover;
@@ -57,7 +57,6 @@ div.venue-intro {
 }
 
 div.venue-content {
-
     max-width: 1000px;
     margin: auto;
 
@@ -68,7 +67,7 @@ div.venue-content {
     ul {
         max-width: 800px;
         margin: auto;
-        
+
         li {
             margin: 0.5em 0;
         }
@@ -94,7 +93,6 @@ div.venue-content {
             .flavour-icon {
                 width: 30px;
             }
-            
 
             h3 {
                 margin: 0;
@@ -102,7 +100,7 @@ div.venue-content {
                 font-size: 1.5rem;
             }
         }
-        
+
         p {
             margin-top: 0;
         }

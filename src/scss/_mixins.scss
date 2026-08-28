@@ -16,7 +16,8 @@
         font-style: italic;
         font-weight: 400;
 
-        &::before, &::after {
+        &::before,
+        &::after {
             position: absolute;
             color: white;
             font-family: 'Licorice', cursive;

@@ -13,6 +13,6 @@
 // The pre-minified files are used deliberately: Swiper's .scss sources still use `@import`
 // internally, which would emit a Dart Sass deprecation warning on every build for third-party
 // code we can't fix.
-@use "swiper/swiper.min";
-@use "swiper/modules/navigation/navigation.min";
-@use "swiper/modules/pagination/pagination.min";
+@use 'swiper/swiper.min';
+@use 'swiper/modules/navigation/navigation.min';
+@use 'swiper/modules/pagination/pagination.min';

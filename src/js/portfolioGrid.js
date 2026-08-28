@@ -20,17 +20,17 @@ const GUTTER = 5;
 // We only render <picture> elements within item buttons when they are close to being visible
 // This is so we don't load all images are once
 // This function creates the <picture> element within a button
-const createPictureForItem = item => {
+const createPictureForItem = (item) => {
     // Only create <picture> element if we haven't already done so
     // For example, this function can be called repeatedly for the same item when the screen is resized
     if (!item.querySelector('picture')) {
         createPictureElement(item, JSON.parse(item.getAttribute('data-images').split(';')[0]).src, item.getAttribute('data-name'), '230px');
-        
+
         // Add `image-loaded` class to item when its image loads
         // CSS will then fade it in
         const onLoad = () => {
             item.classList.add('image-loaded');
-        }
+        };
         const image = item.querySelector('img');
         if (image.complete) {
             onLoad();
@@ -38,16 +38,15 @@ const createPictureForItem = item => {
             image.addEventListener('load', onLoad);
         }
     }
-}
+};
 
 // Next item index (out of filtered items) that hasn't had an image created yet
 // Remember items will be rendered in order vertically as they get added in turn to the shortest column
 let nextItemToLoadImage = 0;
 // Function to check if any more images need to be created from screen height and scroll position
 const createItemImagesIfWithinScroll = () => {
-
     // Only filtered items are visible
-    const filteredItems = Array.from(items).filter(item => item.classList.contains('filtered'));
+    const filteredItems = Array.from(items).filter((item) => item.classList.contains('filtered'));
 
     if (nextItemToLoadImage < filteredItems.length) {
         // Items with `top` values less than this boundary should have images
@@ -63,14 +62,14 @@ const createItemImagesIfWithinScroll = () => {
             }
         }
     }
-}
+};
 
 // Function to position grid items
 // Uses absolute positioning to create masonry layout
 const initialiseGrid = () => {
     // Available width
     const containerWidth = gridContainer.clientWidth;
-    
+
     // Number of columns
     // Minimum of 3
     // Aims for each column to be ~200px wide
@@ -79,7 +78,7 @@ const initialiseGrid = () => {
     // Calculate item width
     // Item width = (Container width - total gutter width) / number of columns
     //            = (Container width - (number of gutters * gutter width)) / number of columns
-    const itemWidth = (containerWidth - ((columns - 1) * GUTTER)) / columns;
+    const itemWidth = (containerWidth - (columns - 1) * GUTTER) / columns;
 
     // Width CSS to apply to each item
     const itemWidthCSS = `calc((100% - (${columns - 1} * ${GUTTER}px)) / ${columns})`;
@@ -103,7 +102,7 @@ const initialiseGrid = () => {
         const occasions = item.getAttribute('data-occasions')?.split(',');
         if (
             (filteredProducts.length > 0 && !filteredProducts.includes(product)) ||
-            (filteredOccasions.length > 0 && !filteredOccasions.some(occasion => occasions.includes(occasion)))
+            (filteredOccasions.length > 0 && !filteredOccasions.some((occasion) => occasions.includes(occasion)))
         ) {
             // Filters are being used and this item does not match
             item.classList.remove('filtered');
@@ -140,7 +139,7 @@ const initialiseGrid = () => {
 
     // Create initial images
     createItemImagesIfWithinScroll();
-}
+};
 
 // Position items initially
 initialiseGrid();
@@ -157,9 +156,8 @@ window.addEventListener('resize', initialiseGrid);
 
 // Product filter button handlers
 const productFilterButtons = document.querySelectorAll('#portfolio-filters button');
-productFilterButtons.forEach(button => {
-    button.onclick = function() {
-
+productFilterButtons.forEach((button) => {
+    button.onclick = function () {
         const product = button.getAttribute('data-product');
 
         // Logic supports multiple selected products in attribute (separated by commas), but UI only allows one at a time for now
@@ -177,7 +175,7 @@ productFilterButtons.forEach(button => {
 // Logic has been implemented to support occasion filters, but UI does not currently have any buttons for this
 // const anniversaryFilterButton = document.querySelector('#portfolio-filters button#portfolio-filter-occasion');
 // anniversaryFilterButton.onclick = function() {
-    
+
 //     const OCCASION = 'anniversary';
 //     const currentFilteredOccasions = getFilteredOccasions();
 

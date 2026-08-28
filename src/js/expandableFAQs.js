@@ -8,7 +8,7 @@ document.querySelectorAll('.question').forEach((element, index) => {
     title.setAttribute('aria-expanded', 'false');
     answer.setAttribute('id', `question${index}`);
 
-    const onClick = function() {
+    const onClick = function () {
         const currentlyExpanded = title.getAttribute('aria-expanded') === 'true';
 
         // If expanding, check if any other question is expanded
@@ -26,15 +26,15 @@ document.querySelectorAll('.question').forEach((element, index) => {
 
         if (!currentlyExpanded) {
             gtag?.('event', 'expand_faq', {
-                question: title.innerText
+                question: title.innerText,
             });
         }
-    }
+    };
 
     title.onclick = onClick;
-    title.onkeyup = function(event) {
+    title.onkeyup = function (event) {
         if (event.key === 'Enter') {
             onClick();
         }
-    }
+    };
 });

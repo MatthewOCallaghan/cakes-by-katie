@@ -1,5 +1,4 @@
 div.product-types {
-
     padding: 0 20px;
 
     h2 {
@@ -19,11 +18,12 @@ div.product-types {
         padding-left: 0;
         padding-right: 0;
 
-        &:nth-child(even)  {
+        &:nth-child(even) {
             flex-direction: row-reverse;
         }
 
-        .product-text, .product-images {
+        .product-text,
+        .product-images {
             flex-basis: 0;
             flex-grow: 1;
         }
@@ -34,7 +34,7 @@ div.product-types {
             .product-sticky-text {
                 position: sticky;
                 top: 50px;
-                
+
                 h3 {
                     margin: 0;
                 }
@@ -46,7 +46,6 @@ div.product-types {
         }
 
         .product-images {
-
             div {
                 width: 100%;
 
@@ -56,7 +55,6 @@ div.product-types {
                 }
 
                 &.product-video {
-
                     position: relative;
 
                     video {
@@ -72,8 +70,6 @@ div.product-types {
                     }
                 }
             }
-
-            
         }
 
         @media only screen and (max-width: 700px) {
@@ -81,4 +77,3 @@ div.product-types {
         }
     }
 }
-

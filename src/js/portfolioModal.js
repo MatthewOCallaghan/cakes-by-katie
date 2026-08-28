@@ -7,9 +7,8 @@ const scrollableContainer = modal.querySelector('.scrollable-container');
 const MODAL_OPEN_CLASS = 'portfolio-modal-open';
 
 const openModal = ({ target }) => {
-
     const button = target.closest('button');
-    
+
     const images = button.getAttribute('data-images').split(';').map(JSON.parse);
     const name = button.getAttribute('data-name');
     const description = button.getAttribute('data-description');
@@ -24,7 +23,7 @@ const openModal = ({ target }) => {
         setSelectedVideo(videos[0]);
     } else {
         setSelectedImage(images[0], name);
-    }    
+    }
 
     // Thumbs
     const thumbs = modal.querySelector('#thumbs');
@@ -32,7 +31,7 @@ const openModal = ({ target }) => {
         removeAllChildren(thumbs);
 
         // Videos
-        videos.forEach(video => {
+        videos.forEach((video) => {
             const button = document.createElement('button');
             const thumbAspectRatio = video.thumbAspectRatio ?? images.find(({ src }) => src === video.thumb)?.aspectRatio;
             button.style.aspectRatio = thumbAspectRatio;
@@ -90,7 +89,7 @@ const openModal = ({ target }) => {
     } else {
         container.classList.remove(TITLE_ONLY_CLASS);
     }
-    
+
     /*
         To make mobile dynamic browser UA components appear when modal opens (which helps avoid strange rendering
         issues and the page still being scrollable), we set body to fixed positioning. To maintain scroll appearance,
@@ -104,9 +103,9 @@ const openModal = ({ target }) => {
     scrollableContainer.scrollTop = 0;
 
     gtag?.('event', 'open_portfolio_modal', {
-        cake: name
+        cake: name,
     });
-}
+};
 
 const closeModal = () => {
     // Check <body> `top` CSS to restore scroll position
@@ -118,11 +117,11 @@ const closeModal = () => {
     htmlTag.classList.remove('smooth-scroll');
     htmlTag.scrollTop = scroll;
     htmlTag.classList.add('smooth-scroll');
-}
+};
 
 modal.querySelector('#modal-close').addEventListener('click', closeModal);
 
-document.querySelectorAll('.portfolio-grid button.grid-item').forEach(element => {
+document.querySelectorAll('.portfolio-grid button.grid-item').forEach((element) => {
     element.addEventListener('click', openModal);
 });
 
@@ -140,20 +139,23 @@ const setSelectedMedia = (isVideo, filename, aspectRatio, name) => {
         video.playsInline = true;
         selectedImage.appendChild(video);
     } else {
-        createPictureElement(selectedImage, filename, name, { 1200: `min(100vw, ${60 * aspectRatio}vh)`, any: `min(40vw, ${60 * aspectRatio}vh)` });
+        createPictureElement(selectedImage, filename, name, {
+            1200: `min(100vw, ${60 * aspectRatio}vh)`,
+            any: `min(40vw, ${60 * aspectRatio}vh)`,
+        });
     }
-}
+};
 
 const setSelectedImage = ({ src, aspectRatio }, name) => {
-    setSelectedMedia(false, src, aspectRatio, name);    
-}
+    setSelectedMedia(false, src, aspectRatio, name);
+};
 
 const setSelectedVideo = ({ file, aspectRatio }) => {
     setSelectedMedia(true, file, aspectRatio);
-}
+};
 
-const removeAllChildren = element => {
+const removeAllChildren = (element) => {
     while (element.firstChild) {
         element.removeChild(element.firstChild);
     }
-}
+};

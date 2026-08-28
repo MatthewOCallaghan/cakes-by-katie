@@ -15,15 +15,15 @@ module.exports = {
             `Delivering to ${displayName(data)}, Cakes by Katie offers bespoke wedding cakes and edible wedding favours ` +
             `in a wide range of flavours and catering for specific dietary requirements.`,
         heading: (data) => ({
-            beforeText: "Wedding cakes for",
+            beforeText: 'Wedding cakes for',
             text: displayName(data),
             afterText: data.weddingVenues[data.venueKey].location,
-            image: { path: "backgrounds/wedding", alt: "Wedding background" },
+            image: { path: 'backgrounds/wedding', alt: 'Wedding background' },
         }),
         cta: (data) => ({
             text: `Let's talk about your wedding at ${displayName(data)}!`,
-            image: { path: "backgrounds/wedding", alt: "Wedding background" },
+            image: { path: 'backgrounds/wedding', alt: 'Wedding background' },
         }),
-        occasion: () => "wedding",
+        occasion: () => 'wedding',
     },
 };

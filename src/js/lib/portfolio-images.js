@@ -13,7 +13,7 @@ export const createPictureElement = (container, filename, alt, recommendedSizes)
     const picture = document.createElement('picture');
     container.appendChild(picture);
 
-    FORMATS.forEach(format => {
+    FORMATS.forEach((format) => {
         const source = document.createElement('source');
         source.type = `image/${format}`;
         source.srcset = getSrcsetAttribute(`/images/portfolio/${filename}`, format);

@@ -1,12 +1,12 @@
-const fs = require("fs");
-const path = require("path");
-const readline = require("readline");
-const sharp = require("sharp");
-const { WIDTHS, FORMATS, getWidthsArrayForImagePath } = require("../utils/images");
-const { removeExtension } = require("../utils/files");
+const fs = require('fs');
+const path = require('path');
+const readline = require('readline');
+const sharp = require('sharp');
+const { WIDTHS, FORMATS, getWidthsArrayForImagePath } = require('../utils/images');
+const { removeExtension } = require('../utils/files');
 
-const ROOT = path.join(__dirname, "..");
-const IMAGES_DIR = path.join(ROOT, "images");
+const ROOT = path.join(__dirname, '..');
+const IMAGES_DIR = path.join(ROOT, 'images');
 
 function copySvg(srcImagePath, image) {
     const outputPath = path.join(IMAGES_DIR, image);
@@ -45,8 +45,8 @@ function existingOutputPaths(image, isSvg) {
 }
 
 function buildDestination(category, relativePath) {
-    const categoryPrefix = category === "default" ? "" : category;
-    return "/" + path.posix.join(categoryPrefix, relativePath).replace(/^\/+/, "");
+    const categoryPrefix = category === 'default' ? '' : category;
+    return '/' + path.posix.join(categoryPrefix, relativePath).replace(/^\/+/, '');
 }
 
 // Chains all interactive prompts through nested rl.question() callbacks (rather than
@@ -60,7 +60,7 @@ function buildDestination(category, relativePath) {
 // portfolio.json/etc. now store image references), SVG destinations always keep a real `.svg`.
 function promptForDestination(rl, defaultName, isSvg) {
     const categories = Object.keys(WIDTHS);
-    console.log("\nWhich category does this image belong to?");
+    console.log('\nWhich category does this image belong to?');
     categories.forEach((category, index) => console.log(`  ${index + 1}) ${category}`));
 
     return new Promise((resolve, reject) => {
@@ -71,11 +71,11 @@ function promptForDestination(rl, defaultName, isSvg) {
                 return;
             }
             const category = categories[categoryIndex];
-            const destinationLabel = category === "default" ? "images/" : `images${category}/`;
+            const destinationLabel = category === 'default' ? 'images/' : `images${category}/`;
 
             rl.question(`Destination path within ${destinationLabel} [${defaultName}]: `, (destinationAnswer) => {
                 let image = buildDestination(category, destinationAnswer.trim() || defaultName);
-                image = isSvg ? (image.toLowerCase().endsWith(".svg") ? image : `${image}.svg`) : removeExtension(image);
+                image = isSvg ? (image.toLowerCase().endsWith('.svg') ? image : `${image}.svg`) : removeExtension(image);
 
                 const existing = existingOutputPaths(image, isSvg);
 
@@ -84,9 +84,9 @@ function promptForDestination(rl, defaultName, isSvg) {
                     return;
                 }
 
-                console.log(`\nThese files already exist and will be overwritten:\n  ${existing.join("\n  ")}`);
-                rl.question("Continue? [y/N] ", (overwriteAnswer) => {
-                    if (overwriteAnswer.trim().toLowerCase() === "y") {
+                console.log(`\nThese files already exist and will be overwritten:\n  ${existing.join('\n  ')}`);
+                rl.question('Continue? [y/N] ', (overwriteAnswer) => {
+                    if (overwriteAnswer.trim().toLowerCase() === 'y') {
                         resolve(image);
                     } else {
                         resolve(null);
@@ -100,7 +100,7 @@ function promptForDestination(rl, defaultName, isSvg) {
 async function main() {
     const sourceArg = process.argv[2];
     if (!sourceArg) {
-        console.error("Usage: npm run images:add -- <path-to-image>");
+        console.error('Usage: npm run images:add -- <path-to-image>');
         process.exit(1);
     }
 
@@ -110,7 +110,7 @@ async function main() {
         process.exit(1);
     }
 
-    const isSvg = sourcePath.toLowerCase().endsWith(".svg");
+    const isSvg = sourcePath.toLowerCase().endsWith('.svg');
     const defaultName = isSvg ? path.basename(sourcePath) : removeExtension(path.basename(sourcePath));
 
     const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
@@ -118,7 +118,7 @@ async function main() {
     try {
         const image = await promptForDestination(rl, defaultName, isSvg);
         if (!image) {
-            console.log("Aborted.");
+            console.log('Aborted.');
             return;
         }
 
@@ -126,7 +126,7 @@ async function main() {
 
         console.log(`\n[images:add] Generated ${generated.length} file(s):`);
         generated.forEach((file) => console.log(`  ${path.relative(ROOT, file)}`));
-        console.log("\nRun `git add images` to stage them.");
+        console.log('\nRun `git add images` to stage them.');
     } finally {
         rl.close();
     }
