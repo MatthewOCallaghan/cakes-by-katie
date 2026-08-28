@@ -1,4 +1,4 @@
-const BASE_URL = 'https://www.cakesbykatie.co.uk';
+const { BASE_URL } = require('../../utils/urls');
 
 // https://llmstxt.org/
 const CONTACT = [

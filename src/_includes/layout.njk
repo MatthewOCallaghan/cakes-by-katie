@@ -85,6 +85,10 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         {% if description %}<meta name="description" content="{{ description }}">{% endif %}
+        {# Pages build to <name>.html and are served extensionless, so each one answers at two
+        addresses. Point search engines at the one the sitemap publishes — same helper, so the
+        two can't drift. #}
+        <link rel="canonical" href="{{ page.url | canonicalUrl }}">
         {% if unlisted %}<meta name="robots" content="noindex">{% endif %}
 
         {# Favicons (put the relevant files in root directory of website) #}
