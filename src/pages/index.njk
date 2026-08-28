@@ -2,6 +2,14 @@
 layout: layout.njk
 title: Cakes by Katie
 description: Cake maker in Thatcham, near Newbury and Reading, in West Berkshire, who offers high quality bespoke cakes and cupcakes for birthdays, weddings, anniversaries, corporate events, or any occasion.
+# The hero video poster is the homepage's LCP element, and it sits in a <video poster>
+# attribute picked by a script — preload whichever one matches the viewport so the browser
+# fetches it up front instead of discovering it late.
+preloadImages:
+  - href: /images/landing-poster.webp
+    media: "(orientation: landscape)"
+  - href: /images/landing-mobile-poster.webp
+    media: "(orientation: portrait)"
 # Snow particles for the hero, loaded only when the Christmas flag is on. Still from a CDN,
 # unlike Swiper — worth self-hosting next time this is switched on.
 christmasHeadScripts:
