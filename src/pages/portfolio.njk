@@ -51,6 +51,12 @@ scripts:
                     data-testimonial-location="{{ item.testimonial.location }}"
                 {% endif %}
             >
+                {# The button's accessible name, and the only place a cake's name appears as text
+                rather than as a data attribute. Screen readers announced 464 unlabelled buttons
+                without it, and crawlers that don't execute JavaScript — which is all of the LLM
+                ones — saw 464 empty ones, since the <picture> below (with its alt text) is built
+                client-side on scroll. #}
+                <span class="visually-hidden">{{ item.name }}</span>
                 {# Javascript will create <picture> element here #}
             </button>
         {% endfor %}
