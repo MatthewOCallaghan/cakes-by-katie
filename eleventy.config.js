@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const htmlmin = require("html-minifier-terser");
-const { getSrcsetAttribute, getSizesAttribute, getDefaultSrc } = require("./utils/images");
+const { getSrcsetAttribute, getSizesAttribute, getDefaultSrc, getImageDimensions } = require("./utils/images");
 
 // Kept in sync with BUNDLED_ENTRY_POINTS in scripts/build-js.js — these files `import` an npm
 // package (Swiper) and only run once esbuild has bundled them, so they must never land in dist/js
@@ -11,6 +11,7 @@ const BUNDLED_JS_ENTRY_POINTS = ["swiperVendor.js"];
 module.exports = function (eleventyConfig) {
     eleventyConfig.addNunjucksGlobal("createSrcset", getSrcsetAttribute);
     eleventyConfig.addNunjucksGlobal("getDefaultSrc", getDefaultSrc);
+    eleventyConfig.addNunjucksGlobal("getImageDimensions", getImageDimensions);
     eleventyConfig.addNunjucksFilter("createSizes", getSizesAttribute);
 
     eleventyConfig.addNunjucksFilter("stringifyElements", (array) => array.map((item) => JSON.stringify(item)));

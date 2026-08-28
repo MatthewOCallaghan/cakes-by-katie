@@ -1,4 +1,20 @@
-{% macro pictureElement(path, alt, recommendedSizes, imageStyle) %}
+{#
+    Responsive <picture> for a pre-generated image in images/.
+
+    `path` is relative to images/ and carries no extension, e.g. "portfolio/Rose-Mix" —
+    utils/images.js appends the width and format for each variant.
+
+    Images are lazy by default. Pass `priority=true` for the one above-the-fold image a page
+    is judged on, which loads it eagerly and marks it high priority so the browser fetches it
+    ahead of everything else rather than treating them all the same.
+
+    width/height come from the generated file on disk (see getImageDimensions) so the browser
+    can reserve the right space before the image arrives, instead of reflowing the page around
+    it. Those attributes are presentational hints, so global.scss carries an `img { height:
+    auto }` rule to keep CSS width rules in charge of the rendered size.
+#}
+{% macro pictureElement(path, alt, recommendedSizes, imageStyle, priority=false) %}
+{% set dimensions = getImageDimensions("/images/" + path) %}
 <picture>
     {% for type in imageFormats.formats %}
         <source
@@ -7,6 +23,14 @@
             sizes="{{ recommendedSizes | createSizes }}"
         >
     {% endfor %}
-    <img src="{{ getDefaultSrc("/images/" + path) }}" alt="{{ alt }}" style="{{ imageStyle }}" />
+    <img
+        src="{{ getDefaultSrc("/images/" + path) }}"
+        alt="{{ alt }}"
+        {% if dimensions %}width="{{ dimensions.width }}" height="{{ dimensions.height }}"{% endif %}
+        loading="{{ "eager" if priority else "lazy" }}"
+        decoding="async"
+        {% if priority %}fetchpriority="high"{% endif %}
+        {% if imageStyle %}style="{{ imageStyle }}"{% endif %}
+    />
 </picture>
 {% endmacro %}
