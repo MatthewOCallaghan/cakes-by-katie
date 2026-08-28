@@ -104,6 +104,7 @@ module.exports = function (eleventyConfig) {
     // images/ (via `npm run images:add`), not built by Eleventy — this is a straight passthrough copy.
     eleventyConfig.addPassthroughCopy({ images: 'images' });
 
+    eleventyConfig.addPassthroughCopy({ 'src/fonts': 'fonts' });
     eleventyConfig.addPassthroughCopy({ 'src/videos': 'videos' });
     eleventyConfig.addPassthroughCopy({ 'src/pdfs': 'pdfs' });
     eleventyConfig.addPassthroughCopy({ 'src/robots.txt': 'robots.txt' });

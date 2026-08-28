@@ -5,14 +5,23 @@
         
         <title>{{ title }}</title>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         {# PostHog's own asset host (not the API host), which is what actually serves its blocking script — see the PostHog snippet below. #}
         <link rel="preconnect" href="https://eu-assets.i.posthog.com">
-        {# Kept render-blocking on purpose: the heading font (Licorice, a script face) has no
-        close-metric fallback, so deferring this would trade a small paint delay for a visible
-        font swap/reflow on headings once the stylesheet arrives late. #}
-        <link href="https://fonts.googleapis.com/css2?family=Licorice&family=Open+Sans:ital,wght@0,300;0,500;1,300;1,400&family=Lato:wght@100;300&display=swap" rel="stylesheet">
+
+        {# Fonts are self-hosted (see src/scss/_fonts.scss). They used to come from
+        fonts.googleapis.com, which meant a render-blocking stylesheet on one third-party origin
+        that then pointed at font files on a second — DNS, TCP and TLS twice over before a
+        heading could paint, and the largest single item in Lighthouse's render-blocking list.
+
+        Now they are same-origin on a connection that is already open, and content-hashed like
+        every other asset, so they inherit the year-long immutable cache.
+
+        The @font-face rules live in the sitewide stylesheet, which means the browser only
+        discovers them after parsing it; these two preloads cover the body and heading faces
+        used above the fold on every page. Fonts are fetched in CORS mode even same-origin,
+        hence crossorigin. #}
+        <link rel="preload" as="font" type="font/woff2" href="/fonts/open-sans-normal-latin.woff2" crossorigin>
+        <link rel="preload" as="font" type="font/woff2" href="/fonts/licorice-normal-400-latin.woff2" crossorigin>
 
         <link rel="stylesheet" type="text/css" href="/css/global.css">
         {# `pageStylesheet` is computed in eleventy.config.js from whether src/scss/<slug>.scss
@@ -68,9 +77,6 @@
         poster attribute, say, or one a script decides on. #}
         {% for image in preloadImages or [] %}
             <link rel="preload" as="image" href="{{ image.href }}"{% if image.media %} media="{{ image.media }}"{% endif %}>
-        {% endfor %}
-        {% for family in fonts or [] %}
-            <link href="https://fonts.googleapis.com/css2?family={{ family }}&display=swap" rel="stylesheet">
         {% endfor %}
         {% for src in headScripts or [] %}
             <script src="{{ src }}"></script>
