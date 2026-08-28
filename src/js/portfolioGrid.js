@@ -17,6 +17,13 @@ const getFilteredOccasions = () => pageContainer.getAttribute(ATTRIBUTE_FILTERS_
 // Gap between images in px
 const GUTTER = 5;
 
+// Width a grid item is currently laid out at, in CSS px. The layout function below already
+// works this out exactly, so `sizes` can state it rather than guess: it used to be a hardcoded
+// "230px", which is wrong at every viewport — items are about 126px across on a phone and about
+// 196px on a wide desktop. Set before any image is created, and kept a module-level value
+// because the layout function owns the number and createPictureForItem needs it.
+let currentItemWidth = 230;
+
 // We only render <picture> elements within item buttons when they are close to being visible
 // This is so we don't load all images are once
 // This function creates the <picture> element within a button
@@ -24,7 +31,12 @@ const createPictureForItem = (item) => {
     // Only create <picture> element if we haven't already done so
     // For example, this function can be called repeatedly for the same item when the screen is resized
     if (!item.querySelector('picture')) {
-        createPictureElement(item, JSON.parse(item.getAttribute('data-images').split(';')[0]).src, item.getAttribute('data-name'), '230px');
+        createPictureElement(
+            item,
+            JSON.parse(item.getAttribute('data-images').split(';')[0]).src,
+            item.getAttribute('data-name'),
+            `${Math.ceil(currentItemWidth)}px`
+        );
 
         // Add `image-loaded` class to item when its image loads
         // CSS will then fade it in
@@ -79,6 +91,7 @@ const initialiseGrid = () => {
     // Item width = (Container width - total gutter width) / number of columns
     //            = (Container width - (number of gutters * gutter width)) / number of columns
     const itemWidth = (containerWidth - (columns - 1) * GUTTER) / columns;
+    currentItemWidth = itemWidth;
 
     // Width CSS to apply to each item
     const itemWidthCSS = `calc((100% - (${columns - 1} * ${GUTTER}px)) / ${columns})`;
