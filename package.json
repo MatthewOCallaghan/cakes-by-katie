@@ -21,7 +21,6 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "dev": "concurrently \"sass --load-path=node_modules src/scss:dist/css --watch --no-source-map\" \"node scripts/build-js.js --watch\" \"eleventy --config=eleventy.config.js --serve\"",
-    "serve": "eleventy --config=eleventy.config.js --serve",
     "test": "node scripts/check-links.js"
   },
   "repository": {

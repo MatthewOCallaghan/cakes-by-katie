@@ -7,7 +7,7 @@ const crypto = require("crypto");
 // stale content after a deploy.
 //
 // Portfolio images/videos and favicons are deliberately left unhashed. Portfolio image/video
-// paths are reconstructed client-side at runtime (see src/js/portfolioUtils.js and
+// paths are reconstructed client-side at runtime (see src/js/lib/portfolio-images.js and
 // src/js/portfolioModal.js) from raw filenames in portfolio.json, so there's no literal string
 // in the built output to find and replace.
 //
@@ -153,7 +153,7 @@ function buildHeadersFile(leafRenames, leafDirs, textDirs) {
 # The rules themselves are derived from what actually got hashed, not from a maintained list of
 # directory names — see buildHeadersFile in this script for why. Two things stay deliberately
 # uncovered: images/portfolio and videos/portfolio are never hashed (their URLs are rebuilt
-# client-side from bare filenames in portfolio.json — see src/js/portfolioUtils.js and
+# client-side from bare filenames in portfolio.json — see src/js/lib/portfolio-images.js and
 # src/js/portfolioModal.js), so a replaced photo isn't stuck behind a year-long cache; favicons
 # aren't hashed either, for the same reason. Both fall back to Cloudflare's default
 # ETag-revalidated caching.

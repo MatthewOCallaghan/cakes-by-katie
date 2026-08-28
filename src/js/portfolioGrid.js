@@ -1,4 +1,5 @@
 // Manages the grid of portfolio images
+import { createPictureElement } from './lib/portfolio-images.js';
 
 const pageContainer = document.querySelector('.portfolio-grid-container');
 
