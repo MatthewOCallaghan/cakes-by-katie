@@ -1,3 +1,5 @@
+const { lastModified } = require('../../utils/last-modified');
+
 const BASE_URL = 'https://www.cakesbykatie.co.uk';
 
 // Generated from collections.all rather than hand-maintained, so it stays correct as pages
@@ -17,7 +19,11 @@ module.exports = class {
         const urls = data.collections.all
             .map((item) => {
                 const cleanPath = item.url.replace(/\/index\.html$/, '/').replace(/\.html$/, '');
-                return `    <url>\n        <loc>${BASE_URL}${cleanPath}</loc>\n    </url>`;
+                // Omitted rather than guessed when git can't date the source — see
+                // utils/last-modified.js.
+                const modified = lastModified(item.inputPath);
+                const lastmod = modified ? `\n        <lastmod>${modified}</lastmod>` : '';
+                return `    <url>\n        <loc>${BASE_URL}${cleanPath}</loc>${lastmod}\n    </url>`;
             })
             .join('\n');
 
