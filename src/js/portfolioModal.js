@@ -1,3 +1,5 @@
+import { createPictureElement } from './lib/portfolio-images.js';
+
 const modal = document.querySelector('#portfolio-modal');
 
 const scrollableContainer = modal.querySelector('.scrollable-container');

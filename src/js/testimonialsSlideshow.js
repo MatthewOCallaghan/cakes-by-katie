@@ -1,5 +1,7 @@
+import { getSwiper } from './lib/swiper.js';
+
 (() => {
-    const { Swiper, Autoplay, Pagination, Navigation } = window.SwiperVendor;
+    const { Swiper, Autoplay, Pagination, Navigation } = getSwiper();
 
     // Currently only supports one testimonial slideshow per page
     if (document.querySelectorAll('.testimonials-slideshow .swiper-wrapper .swiper-slide').length > 1) {

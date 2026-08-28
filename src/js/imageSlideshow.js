@@ -1,5 +1,8 @@
+import { getSwiper } from './lib/swiper.js';
+import { createPictureElement } from './lib/portfolio-images.js';
+
 (() => {
-const { Swiper, Autoplay } = window.SwiperVendor;
+const { Swiper, Autoplay } = getSwiper();
 
 // Every carousel must be at least this width
 const CAROUSEL_TARGET_WIDTH = screen.width * 1.5;

@@ -2,46 +2,43 @@ const fs = require("fs");
 const path = require("path");
 const esbuild = require("esbuild");
 
+// Every .js file directly inside src/js is a page entry point, bundled by esbuild. Shared code
+// lives in src/js/lib (and utils/images.js, which the Eleventy build uses too) and is pulled in
+// by `import` rather than by being loaded as a separate <script> and left to share global scope.
+//
+// Bundling as IIFE rather than ESM is deliberate: `<script type="module">` is always deferred,
+// and layout.njk loads imageSlideshow.js render-blocking on purpose so the above-the-fold
+// carousel is built before first paint. IIFE keeps that choice available.
+//
+// Swiper is the one thing not bundled into its consumers: swiperVendor.js bundles it alone and
+// hands it over on `window`, so a page with two carousels downloads and parses it once, and
+// editing a slideshow doesn't re-hash 77KB of vendor code. See src/js/lib/swiper.js.
 const SRC_DIR = path.join(__dirname, "..", "src", "js");
 const OUT_DIR = path.join(__dirname, "..", "dist", "js");
 
-// Files that `import` an npm package (currently just swiperVendor.js, which imports Swiper and
-// exposes it as window.SwiperVendor for imageSlideshow.js/testimonialsSlideshow.js to share —
-// see src/js/swiperVendor.js) need `bundle: true` so that import resolves into the output file.
-// Everything else in src/js/ is loaded as a classic, non-module <script> tag and relies on sharing
-// a single global scope across files (see portfolioUtils.js, whose top-level declarations are
-// consumed by portfolioGrid.js/portfolioModal.js via script load order, not imports) — bundling
-// those would make esbuild tree-shake their "unused" top-level declarations away.
-const BUNDLED_ENTRY_POINTS = ["swiperVendor.js"];
+const entryPoints = fs
+    .readdirSync(SRC_DIR, { withFileTypes: true })
+    .filter((entry) => entry.isFile() && entry.name.endsWith(".js"))
+    .map((entry) => path.join(SRC_DIR, entry.name));
 
-const watch = process.argv.includes("--watch");
+const options = {
+    entryPoints,
+    bundle: true,
+    format: "iife",
+    target: "es2020",
+    outdir: OUT_DIR,
+};
 
-if (watch) {
-    // Dev mode: Eleventy's passthrough copy handles every other file in src/js raw (see
-    // eleventy.config.js), so here we only need to keep the bundled entry points up to date —
-    // unminified, for faster rebuilds.
+if (process.argv.includes("--watch")) {
+    // Unminified in dev, for faster rebuilds and readable stack traces.
     esbuild
-        .context({
-            entryPoints: BUNDLED_ENTRY_POINTS.map((file) => path.join(SRC_DIR, file)),
-            bundle: true,
-            outdir: OUT_DIR,
-        })
-        .then((ctx) => ctx.watch());
+        .context(options)
+        .then((ctx) => ctx.watch())
+        .catch((error) => {
+            // Without this a failure here is silent, and `npm run dev` serves a site with no JS.
+            console.error("[build-js] watch failed to start:", error);
+            process.exitCode = 1;
+        });
 } else {
-    const allFiles = fs.readdirSync(SRC_DIR).filter((file) => file.endsWith(".js"));
-    const bundledFiles = allFiles.filter((file) => BUNDLED_ENTRY_POINTS.includes(file));
-    const plainFiles = allFiles.filter((file) => !BUNDLED_ENTRY_POINTS.includes(file));
-
-    esbuild.buildSync({
-        entryPoints: bundledFiles.map((file) => path.join(SRC_DIR, file)),
-        bundle: true,
-        minify: true,
-        outdir: OUT_DIR,
-    });
-
-    esbuild.buildSync({
-        entryPoints: plainFiles.map((file) => path.join(SRC_DIR, file)),
-        minify: true,
-        outdir: OUT_DIR,
-    });
+    esbuild.buildSync({ ...options, minify: true });
 }
