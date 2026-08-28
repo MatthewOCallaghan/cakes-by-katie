@@ -85,6 +85,32 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         {% if description %}<meta name="description" content="{{ description }}">{% endif %}
+
+        {# Open Graph / Twitter Card. Without these, a link shared on Facebook, WhatsApp or
+        Instagram — the three channels in our own contact block — renders as a bare URL with no
+        picture, which is a poor showing for a business that sells on photographs.
+
+        The image is a WebP, because WebP and AVIF are the only formats the build produces. The
+        major crawlers read WebP, but if a JPEG turns out to be needed for a specific platform,
+        override `shareImage` per page or change site.share — nothing here assumes the format.
+
+        A page can override any of these in its front matter; `shareImage` takes the same shape
+        as site.share. #}
+        {% set share = shareImage or site.share %}
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="{{ site.name }}">
+        <meta property="og:title" content="{{ title }}">
+        {% if description %}<meta property="og:description" content="{{ description }}">{% endif %}
+        <meta property="og:url" content="{{ page.url | canonicalUrl }}">
+        <meta property="og:image" content="{{ share.image | absoluteUrl }}">
+        <meta property="og:image:width" content="{{ share.width }}">
+        <meta property="og:image:height" content="{{ share.height }}">
+        <meta property="og:image:alt" content="{{ share.alt }}">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="{{ title }}">
+        {% if description %}<meta name="twitter:description" content="{{ description }}">{% endif %}
+        <meta name="twitter:image" content="{{ share.image | absoluteUrl }}">
+        <meta name="twitter:image:alt" content="{{ share.alt }}">
         {% if unlisted %}<meta name="robots" content="noindex">{% endif %}
 
         {# Favicons (put the relevant files in root directory of website) #}

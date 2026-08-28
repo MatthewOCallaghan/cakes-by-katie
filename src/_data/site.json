@@ -2,5 +2,12 @@
     "christmas": {
         "enabled": false,
         "showPrices": false
+    },
+    "name": "Cakes by Katie",
+    "share": {
+        "image": "/images/landing-poster.webp",
+        "width": 1080,
+        "height": 608,
+        "alt": "Katie icing a bespoke celebration cake"
     }
 }
