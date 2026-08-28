@@ -1,27 +1,60 @@
-{% set page = "awards" %}
-{% extends "layout.njk" %}
+---
+layout: layout.njk
+title: News and Awards | Cakes by Katie
+description: Cakes by Katie, a cake maker in Thatcham, West Berkshire, is honoured to have received a variety of awards for their wedding cakes, celebration cakes and cupcakes.
+heading:
+  text: News & Awards
+  image:
+    path: backgrounds/champagne
+    alt: Champagne glasses background
+posts:
+- title: The United Kingdom Weddings & Honeymoons Awards 2025
+  subtitle: Cakes by Katie<br>Wedding Cake Designer (Finalist)
+  text: <p>I was delighted to be a finalist in the 'Wedding Cake Designer' category of the UK Weddings and Honeymoons Awards 2025, which were held at The Dorchester Hotel in Mayfair, London in February. These awards recognise excellence in the wedding and honeymoon industries.</p>
+  image:
+    path: features/ukwha-2025-finalist
+    alt: UKWHA 2025 finalist rosette
+- title: South England Prestige Awards 2024/25
+  subtitle: Cakes by Katie<br>Cake Designer of the Year
+  text: <p>The Prestige Awards recognise small and medium-sized businesses that have proven to be the best in their market over the past 12 months.  The judging panel base their decision upon areas such as service excellence, quality of the product/service provided, innovative practices, value, ethical or sustainable methods of working, as well as consistency in performance. The winners selected are those who can best demonstrate their strengths in these areas.</p>
+  image:
+    path: features/prestige-2025-winner
+    alt: South England Prestige Awards 2024/25 Winner
+- title: Luxlife Food & Drinks Awards 2024
+  subtitle: Cakes by Katie<br>Best Bespoke Celebration Cake Bakery - Berkshire
+  text: <p>Luxury Lifestyle Awards is a global award program that selects, recognises, celebrates and promotes the best luxury goods and services worldwide. Through comprehensive market research and a meticulous nomination and selection process, excellence is identified and honoured.</p>
+  image:
+    path: features/luxlife-2024-winner
+    alt: Luxlife Food & Drinks Awards Winner Banner
+- title: Weddings & Honeymoons - February/March 2024
+  subtitle: Top Cake Maker in Berkshire
+  text: <p>I had the privilege of being featured in Weddings & Honeymoons Edition 26. The article ‘Baked with love’ gathered the top ten cake makers in the UK.</p>
+  image:
+    path: features/weddings-and-honeymoons-magazine
+    alt: Weddings and Honeymoons Edition 26 - February/March 2024
+- title: The United Kingdom Weddings & Honeymoons Awards 2024
+  subtitle: Cakes by Katie<br>Rising Star (Finalist)
+  text: <p>The UKWHA recognise excellence in the wedding and honeymoon industries.  I was honoured to be a finalist in the ‘Rising Star’ category of the UKWHA 2024 awards which was held at a spectacular gala evening at Kew Gardens in February 2024.</p>
+  image:
+    path: features/wh-Rising-Star-Rosette
+    alt: The United Kingdom Weddings & Honeymoons Awards 2024 'Rising Star' finalist rosette
+fonts:
+- Roboto+Mono
+---
+{% from "macros/picture.njk" import pictureElement with context %}
+{% from "macros/fixed-background.njk" import fixedBackground with context %}
+{{ fixedBackground("backgrounds/marble-background", "Marble background image") }}
 
-{% block head %}
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-{% endblock %}
+<p class="awards-intro">It's always rewarding to have my hard work recognised and I'm proud to have received industry awards and been featured in top publications.</p>
 
-{% block main %}
-
-    {% from "macros/fixed-background.njk" import fixedBackground with context %}
-    {{ fixedBackground("backgrounds/marble-background", "Marble background image") }}
-
-    <p class="awards-intro">It's always rewarding to have my hard work recognised and I'm proud to have received industry awards and been featured in top publications.</p>
-
-    <div class="awards-grid">
-        {% for post in pages[page].posts %}
-            <div class="award">
-                {{ pictureElement(post.image.path, post.image.alt, "50vw") }}
-                <h2>{{ post.title }}</h2>
-                <h3>{{ post.subtitle | safe }}</h3>
-                <hr />
-                {{ post.text | safe }}
-            </div>
-        {% endfor %}
-    </div>
-
-{% endblock %}
+<div class="awards-grid">
+    {% for post in posts %}
+        <div class="award">
+            {{ pictureElement(post.image.path, post.image.alt, "50vw") }}
+            <h2>{{ post.title }}</h2>
+            <h3>{{ post.subtitle | safe }}</h3>
+            <hr />
+            {{ post.text | safe }}
+        </div>
+    {% endfor %}
+</div>

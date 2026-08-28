@@ -1,39 +1,46 @@
-{% set page = "corporate" %}
-{% extends "layout.njk" %}
+---
+layout: layout.njk
+title: Corporate cakes and cupcakes | Cakes by Katie
+description: Cakes by Katie is a cake maker in Thatcham, Berkshire, near Newbury and Reading, offering bespoke cakes and cupcakes for corporate events in a wide range of flavours and catering for specific dietary requirements.
+heading:
+  text: Corporate cakes and cupcakes
+  image:
+    path: backgrounds/office
+    alt: Office background
+cta:
+  text: Want a quote for your corporate event?
+occasion: corporate
+---
+<section class="intro">
+    <div class="intro-text">
+        <p>Whatever the company event, be it an exhibition, corporate anniversary, retirement, promotional event or party, I can make cakes and cupcakes tailored to your company's brand.</p>
+        <p>Edible images are a great way to advertise your brand. All I need is a high resolution image.</p>
+    </div>
+</section>
 
-{% block main %}
+{% from "macros/half-image-section.njk" import halfImageSection with context %}
+{{ halfImageSection(
+    'Corporate cakes',
+    [
+        "Make a statement at your next corporate event with my bespoke celebration cakes, crafted to reflect your brand's professionalism and creativity. My cakes serve as more than just a sweet treat; they are a unique way to showcase your company's values and leave a lasting impression on clients and colleagues alike."
+    ],
+    "/products/celebration-cakes",
+    "See celebration cakes",
+    "portfolio/Black-Gold-Milestone-space",
+    "Corporate celebration cake",
+    tall = true
+) }}
 
-    <section class="intro">
-        <div class="intro-text">
-            <p>Whatever the company event, be it an exhibition, corporate anniversary, retirement, promotional event or party, I can make cakes and cupcakes tailored to your company's brand.</p>
-            <p>Edible images are a great way to advertise your brand. All I need is a high resolution image.</p>
-        </div>
-    </section>
-
-    {% from "macros/half-image-section.njk" import halfImageSection with context %}
-    {{ halfImageSection(
-        'Corporate cakes',
-        [
-            "Make a statement at your next corporate event with my bespoke celebration cakes, crafted to reflect your brand's professionalism and creativity. My cakes serve as more than just a sweet treat; they are a unique way to showcase your company's values and leave a lasting impression on clients and colleagues alike."
-        ],
-        "/products/celebration-cakes",
-        "See celebration cakes",
-        "portfolio/Black-Gold-Milestone-space",
-        "Corporate celebration cake",
-        tall = true
-    ) }}
-
-    {{ halfImageSection(
-        'Corporate cupcakes',
-        [
-            "My cupcakes are customisable to showcase your company's logo or brand colours, making them a memorable and eye-catching addition to your event. And they taste delicious too!"
-        ],
-        "/products/cupcakes",
-        "See cupcakes",
-        "portfolio/TTMC-Corporate-Cupcakes",
-        "Corporate cupcakes",
-        tall = true,
-        inverse = true,
-        background = '#fff'
-    ) }}
-{% endblock %}
+{{ halfImageSection(
+    'Corporate cupcakes',
+    [
+        "My cupcakes are customisable to showcase your company's logo or brand colours, making them a memorable and eye-catching addition to your event. And they taste delicious too!"
+    ],
+    "/products/cupcakes",
+    "See cupcakes",
+    "portfolio/TTMC-Corporate-Cupcakes",
+    "Corporate cupcakes",
+    tall = true,
+    inverse = true,
+    background = '#fff'
+) }}

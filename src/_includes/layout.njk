@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         
-        <title>{{ pages[page].title }}</title>
+        <title>{{ title }}</title>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,15 +15,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Licorice&family=Open+Sans:ital,wght@0,300;0,500;1,300;1,400&family=Lato:wght@100;300&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" type="text/css" href="/css/global.css">
-        {% if type === "occasion" %}
-            <link rel="stylesheet" type="text/css" href="/css/occasion.css">
-        {% elif type === "weddingVenue" %}
-            <link rel="stylesheet" type="text/css" href="/css/wedding-venue.css">
-        {% elif pages[page].hasCSSFile %}
-            <link rel="stylesheet" type="text/css" href="{{ "/css/" ~ page ~ ".css"}}">
-        {% endif %}
-
-        {% set hasCarousel = pages[page].hasCarousel or type === "weddingVenue" %}
+        {# `pageStylesheet` is computed in eleventy.config.js from whether src/scss/<slug>.scss
+        exists, so a new page stylesheet is picked up by creating the file. `styles` in front
+        matter is for anything beyond that — a layout's own stylesheet, say. #}
+        {% for stylesheet in ([pageStylesheet] if pageStylesheet else []).concat(styles or []) %}
+            <link rel="stylesheet" type="text/css" href="{{ "/css/" ~ stylesheet ~ ".css" }}">
+        {% endfor %}
 
         {% if hasCarousel %}
             {# Swiper (self-hosted, see src/scss/swiper.scss and src/js/imageSlideshow.js) — kept
@@ -43,10 +40,46 @@
             <noscript><link rel="stylesheet" href="/css/swiper.css"></noscript>
         {% endif %}
 
-        {% block head %}{% endblock %}
+        {# FAQPage structured data, rendered from the page's own `questions` — it used to live in
+        a `head` block on faqs.njk, but it's derived from page data, so it belongs wherever that
+        data appears. #}
+        {% if questions %}
+            <script type="application/ld+json">
+                {
+                    "@context": "https://schema.org",
+                    "@type": "FAQPage",
+                    "mainEntity": [
+                        {% for faq in questions %}
+                            {
+                                "@type": "Question",
+                                "name": "{{ faq.question }}",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "{{ faq.answer | safe | replace("\"", "\\\"") }}"
+                                }
+                            }{{ "," if not loop.last }}
+                        {% endfor %}
+                    ]
+                }
+            </script>
+        {% endif %}
+
+        {% for family in fonts or [] %}
+            <link href="https://fonts.googleapis.com/css2?family={{ family }}&display=swap" rel="stylesheet">
+        {% endfor %}
+        {% for src in headScripts or [] %}
+            <script src="{{ src }}"></script>
+        {% endfor %}
+        {# Seasonal head scripts. Kept in the page's own front matter, gated here on the same
+        site.christmas.enabled flag as every other festive switch. #}
+        {% if site.christmas.enabled %}
+            {% for src in christmasHeadScripts or [] %}
+                <script src="{{ src }}"></script>
+            {% endfor %}
+        {% endif %}
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        {% if pages[page].description %}<meta name="description" content="{{ pages[page].description }}">{% endif %}
+        {% if description %}<meta name="description" content="{{ description }}">{% endif %}
         {% if unlisted %}<meta name="robots" content="noindex">{% endif %}
 
         {# Favicons (put the relevant files in root directory of website) #}
@@ -124,7 +157,7 @@
                         </div>
                     </a>
 
-                    <a class="header-contact-link" href="{{ "#contact" if page == "index" else "/#contact" }}">Contact</a>
+                    <a class="header-contact-link" href="{{ "#contact" if page.url == "/" else "/#contact" }}">Contact</a>
                 </div>
 
                 <div id="header-scrollable">
@@ -202,7 +235,7 @@
                         </li>
 
                         <li id="desktop-header-contact-link">
-                            <a class="header-contact-link" href="{{ "#contact" if page == "index" else "/#contact" }}">Contact</a>
+                            <a class="header-contact-link" href="{{ "#contact" if page.url == "/" else "/#contact" }}">Contact</a>
                         </li>
                     </ul>
 
@@ -222,28 +255,31 @@
         </header>
 
         <main>
-            {% if pages[page].heading %}
+            {% if heading %}
                 {% from "macros/page-title.njk" import pageTitle with context %}
-                {% if pages[page].heading.image %}
-                    {{ pageTitle(pages[page].heading.text, pages[page].heading.image.path, pages[page].heading.image.alt, pages[page].heading.beforeText, afterText=pages[page].heading.afterText) }}
+                {% if heading.image %}
+                    {{ pageTitle(heading.text, heading.image.path, heading.image.alt, heading.beforeText, afterText=heading.afterText) }}
                 {% else %}
-                    {{ pageTitle(pages[page].heading.text, beforeText=pages[page].heading.beforeText, afterText=pages[page].heading.afterText) }}
+                    {{ pageTitle(heading.text, beforeText=heading.beforeText, afterText=heading.afterText) }}
                 {% endif %}
             {% endif %}
 
-            {% block main %}{% endblock %}
+            {{ content | safe }}
 
             {% from "macros/testimonials-slideshow.njk" import testimonialsSlideshow with context %}
-            {% if pages[page].testimonials !== "none" %}
+            {# `testimonialCakes` rather than `testimonials`: front matter is flat page data, and
+            src/_data/testimonials.js already owns that name. #}
+            {% if testimonialCakes !== "none" %}
                 {%
                     set cakeFilters =
-                        { occasions: pages[page].occasion } if pages[page].occasion else (
-                        { product: pages[page].product } if pages[page].product else
+                        { occasions: occasion } if occasion else (
+                        { product: product } if product else
                         null)
                 %}
+                {% set matchingCakes = (portfolio | getMatchingCakes(cakeFilters, { testimonials: true })) if cakeFilters else [] %}
                 {{
                     testimonialsSlideshow(
-                        pages[page].testimonials or ((portfolio | getMatchingCakes(cakeFilters, { testimonials: true })) if cakeFilters and (portfolio | getMatchingCakes(cakeFilters, { testimonials: true })).length > 0 else featuredTestimonials)
+                        testimonialCakes or (matchingCakes if matchingCakes.length > 0 else featuredTestimonials)
                     )
                 }}
             {% endif %}
@@ -251,14 +287,14 @@
             <section id="bottom-panel-cta">
                 {{
                     pictureElement(
-                        pages[page].cta.image.path if pages[page].cta.image else "backgrounds/cake-selection",
-                        pages[page].cta.image.alt if pages[page].cta.image else "Selection of cakes",
+                        cta.image.path if cta.image else "backgrounds/cake-selection",
+                        cta.image.alt if cta.image else "Selection of cakes",
                         "100vw",
-                        "object-position: " ~ pages[page].cta.image.position if pages[page].cta.image.position
+                        "object-position: " ~ cta.image.position if cta.image.position
                     )
                 }}
                 <div>
-                    <h3>{{ pages[page].cta.text | safe if pages[page].cta.text else "Get a quote for your occasion!" }}</h3>
+                    <h3>{{ cta.text | safe if cta.text else "Get a quote for your occasion!" }}</h3>
                     <a
                         class="button button-white"
                         href="/#contact"
@@ -291,7 +327,7 @@
                 <h3>Quick links</h3>
                 <ul>
                     {% for link in navigation.quickLinks %}
-                        <li><small><a href="{{ ("#contact" if page == "index" else "/#contact") if link.contact else link.href }}">{{ link.label }}</a></small></li>
+                        <li><small><a href="{{ ("#contact" if page.url == "/" else "/#contact") if link.contact else link.href }}">{{ link.label }}</a></small></li>
                     {% endfor %}
                 </ul>
             </div>
@@ -346,6 +382,13 @@
             <script type="text/javascript" src="/js/portfolioUtils.js"></script>
             <script type="text/javascript" src="/js/imageSlideshow.js"></script>
         {% endif %}
-        {% block scripts %}{% endblock %}
+        {% for script in scripts or [] %}
+            <script type="text/javascript" src="/js/{{ script.src }}"{{ " defer" if script.defer }}></script>
+        {% endfor %}
+        {% if site.christmas.enabled %}
+            {% for script in christmasScripts or [] %}
+                <script type="text/javascript" src="/js/{{ script.src }}"{{ " defer" if script.defer }}></script>
+            {% endfor %}
+        {% endif %}
     </body>
 </html>

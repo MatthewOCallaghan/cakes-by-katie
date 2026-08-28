@@ -1,38 +1,45 @@
-{% set page = "anniversary" %}
-{% extends "layout.njk" %}
+---
+layout: layout.njk
+title: Anniversary cakes and cupcakes | Cakes by Katie
+description: Cakes by Katie is a cake maker in Thatcham, Berkshire, near Newbury and Reading, offering bespoke anniversary cakes and cupcakes in a wide range of flavours and catering for specific dietary requirements.
+heading:
+  text: Anniversary cakes
+  image:
+    path: backgrounds/roses
+    alt: Roses background
+cta:
+  text: Want a quote for an anniversary cake?
+occasion: anniversary-wedding
+---
+<section class="intro">
+    <div class="intro-text">
+        <p>Celebrate your anniversary with one of my bespoke cakes. Whether you're marking one year or fifty, my anniversary cakes are the perfect way to honour your journey together and create cherished memories for years to come.</p>
+    </div>
+</section>
 
-{% block main %}
+{% from "macros/half-image-section.njk" import halfImageSection with context %}
+{{ halfImageSection(
+    'Anniversary cakes',
+    [
+        "From classic elegance to modern designs, my beautifully crafted anniversary cakes are the perfect centrepiece for commemorating your special milestone."
+    ],
+    "/products/celebration-cakes",
+    "See celebration cakes",
+    "portfolio/Diamond-Toast-space",
+    "Anniversary celebration cake",
+    tall = true
+) }}
 
-    <section class="intro">
-        <div class="intro-text">
-            <p>Celebrate your anniversary with one of my bespoke cakes. Whether you're marking one year or fifty, my anniversary cakes are the perfect way to honour your journey together and create cherished memories for years to come.</p>
-        </div>
-    </section>
-
-    {% from "macros/half-image-section.njk" import halfImageSection with context %}
-    {{ halfImageSection(
-        'Anniversary cakes',
-        [
-            "From classic elegance to modern designs, my beautifully crafted anniversary cakes are the perfect centrepiece for commemorating your special milestone."
-        ],
-        "/products/celebration-cakes",
-        "See celebration cakes",
-        "portfolio/Diamond-Toast-space",
-        "Anniversary celebration cake",
-        tall = true
-    ) }}
-
-    {{ halfImageSection(
-        'Anniversary cupcakes',
-        [
-            "Celebrate your anniversary with my irresistible cupcakes, tailor-made for your special milestone. Let my cupcakes be the perfect accompaniment to your memorable celebration."
-        ],
-        "/products/cupcakes",
-        "See cupcakes",
-        "portfolio/Golden-50th-space",
-        "Anniversary cupcakes",
-        tall = true,
-        inverse = true,
-        background = '#fff'
-    ) }}
-{% endblock %}
+{{ halfImageSection(
+    'Anniversary cupcakes',
+    [
+        "Celebrate your anniversary with my irresistible cupcakes, tailor-made for your special milestone. Let my cupcakes be the perfect accompaniment to your memorable celebration."
+    ],
+    "/products/cupcakes",
+    "See cupcakes",
+    "portfolio/Golden-50th-space",
+    "Anniversary cupcakes",
+    tall = true,
+    inverse = true,
+    background = '#fff'
+) }}

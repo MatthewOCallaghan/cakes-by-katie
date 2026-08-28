@@ -1,44 +1,47 @@
-{% set page = "pricing" %}
-{% extends "layout.njk" %}
+---
+layout: layout.njk
+title: Pricing | Cakes by Katie
+description: Get an idea of how much your high quality celebration cake, wedding cake or cupcakes will cost from Cakes by Katie, a bespoke cake maker in Thatcham, West Berkshire, near Newbury and Reading.
+heading:
+  text: Pricing
+  image:
+    path: backgrounds/piggy-bank
+    alt: Piggy bank background
+---
+<div class="intro-text">
+    <p>This page shows the starting prices for each of my products before any decoration. The final price depends on <a href="/flavours">sponge flavour</a>, the overall size and shape of the sponge, the finish (i.e. fondant or buttercream) and the chosen decoration.</p> 
+</div>
+<div class="pricing-section">
 
-{% block main %}
+    {% from "macros/fixed-background.njk" import fixedBackground with context %}
+    {{ fixedBackground("backgrounds/marble-background", "Marble background image") }}
 
-    <div class="intro-text">
-        <p>This page shows the starting prices for each of my products before any decoration. The final price depends on <a href="/flavours">sponge flavour</a>, the overall size and shape of the sponge, the finish (i.e. fondant or buttercream) and the chosen decoration.</p> 
-    </div>
-    <div class="pricing-section">
-        
-        {% from "macros/fixed-background.njk" import fixedBackground with context %}
-        {{ fixedBackground("backgrounds/marble-background", "Marble background image") }}
+    {% from "macros/picture.njk" import pictureElement with context %}
 
-        {% from "macros/picture.njk" import pictureElement with context %}
-
-        <div id="wedding-cakes" class="price-group"  style="background:{{products.weddingCakes.colours.light}}">
-            <div class="image-container">
-                {{ pictureElement("cake-cutouts/" ~ "wedding", "Wedding cake", "220px") }}
-            </div>
-
-            <h2>Wedding cakes</h2>
-            {% include "wedding-cake-pricing.njk" %}
-        </div>
-        
-        <div id="celebration-cakes" class="price-group" style="background:{{products.celebrationCakes.colours.light}}">
-            <div class="image-container">
-                {{ pictureElement("cake-cutouts/" ~ "shades-of-chocolate", "Celebration cake", "220px") }}
-            </div>
-
-            <h2>Celebration cakes</h2>
-            {% include "celebration-cake-pricing.njk" %}
+    <div id="wedding-cakes" class="price-group"  style="background:{{products.weddingCakes.colours.light}}">
+        <div class="image-container">
+            {{ pictureElement("cake-cutouts/" ~ "wedding", "Wedding cake", "220px") }}
         </div>
 
-        <div id="cupcakes" class="price-group" style="background:{{products.cupcakes.colours.light}}">
-            <div class="image-container">
-                {{ pictureElement("cake-cutouts/" ~ "rose-mix-triple", "Cupcakes", "220px") }}
-            </div>
-
-            <h2>Cupcakes</h2>
-            {% include "cupcakes-pricing.njk" %}
-        </div>
+        <h2>Wedding cakes</h2>
+        {% include "wedding-cake-pricing.njk" %}
     </div>
 
-{% endblock %}
+    <div id="celebration-cakes" class="price-group" style="background:{{products.celebrationCakes.colours.light}}">
+        <div class="image-container">
+            {{ pictureElement("cake-cutouts/" ~ "shades-of-chocolate", "Celebration cake", "220px") }}
+        </div>
+
+        <h2>Celebration cakes</h2>
+        {% include "celebration-cake-pricing.njk" %}
+    </div>
+
+    <div id="cupcakes" class="price-group" style="background:{{products.cupcakes.colours.light}}">
+        <div class="image-container">
+            {{ pictureElement("cake-cutouts/" ~ "rose-mix-triple", "Cupcakes", "220px") }}
+        </div>
+
+        <h2>Cupcakes</h2>
+        {% include "cupcakes-pricing.njk" %}
+    </div>
+</div>

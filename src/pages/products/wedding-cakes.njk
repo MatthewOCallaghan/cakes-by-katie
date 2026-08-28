@@ -1,162 +1,174 @@
-{% set page = "weddingCakes" %}
-{% extends "layout.njk" %}
+---
+layout: layout.njk
+title: Wedding cakes | Cakes by Katie
+description: I'm a cake maker in Thatcham, West Berkshire, near Newbury, offering high quality bespoke wedding cakes in a range of flavours.
+heading:
+  text: Wedding cakes
+  image:
+    path: backgrounds/wedding
+    alt: Wedding background
+cta:
+  text: Let's talk about your wedding cake!
+  image:
+    path: backgrounds/wedding
+    alt: Wedding background
+product: wedding-cake
+hasCarousel: true
+---
+{% from "macros/service-breakdown.njk" import serviceBreakdown with context %}
+<section class="intro">
 
-{% block main %}
+    <div class="intro-text">
+        {# Short paragraph here about wedding cakes. Start by congratulating the couple on their engagement. Keep it fun and don't go heavy on detail - it should be covered below. Sell why their wedding needs a cake from us! Also mention that wedding favours are available too. #}
+        <p>Congratulations on your engagement! All of my wedding cakes are meticulously crafted to reflect your unique style and taste, creating a centrepiece that not only looks amazing but tastes delicious too!</p>
+    </div>
 
-    <section class="intro">
+    <div class="service-breakdown-container">
+        {% from "macros/service-breakdown.njk" import serviceBreakdown %}
+        {{ serviceBreakdown([
+            {
+                image: 'svgs/heart.svg',
+                heading: 'Bespoke designs',
+                description: "I'll work with you to create your perfect wedding cake."
+            },
+            {
+                image: 'svgs/lemon.svg',
+                heading: flavours | length ~ ' flavours',
+                description: "With so many sponge flavours, there's something for everyone."
+            },
+            {
+                image: 'svgs/gift-bag.svg',
+                heading: 'Sample bag',
+                description: "You'll receive 5 complimentary flavour samples of your choice from my extensive list."
+            },
+            {
+                image: 'svgs/cow.svg',
+                heading: 'Free from options',
+                description: "I can cater for specific dietary requirements, including gluten free, dairy free, eggless and vegan."
+            },
+            {
+                image: 'svgs/van.svg',
+                heading: 'Set up and delivery',
+                description: "I deliver all wedding cakes to the venue."
+            }
+        ]) }}
+        {# {
+                image: 'svgs/van.svg',
+                heading: 'Florist/venue liasing',
+                description: "Something about that you'll liase with the venue and, if necessary, the florist to arrange timings on the day."
+            } #}
+    </div>
+</section>
 
-        <div class="intro-text">
-            {# Short paragraph here about wedding cakes. Start by congratulating the couple on their engagement. Keep it fun and don't go heavy on detail - it should be covered below. Sell why their wedding needs a cake from us! Also mention that wedding favours are available too. #}
-            <p>Congratulations on your engagement! All of my wedding cakes are meticulously crafted to reflect your unique style and taste, creating a centrepiece that not only looks amazing but tastes delicious too!</p>
-        </div>
+{% from "macros/image-carousel.njk" import imageCarousel with context %}
+{{ imageCarousel(portfolio | getMatchingCakes({ product: 'wedding-cake' }), 'linear-gradient(to bottom, #fff, #000)') }}
 
-        <div class="service-breakdown-container">
-            {% from "macros/service-breakdown.njk" import serviceBreakdown %}
-            {{ serviceBreakdown([
-                {
-                    image: 'svgs/heart.svg',
-                    heading: 'Bespoke designs',
-                    description: "I'll work with you to create your perfect wedding cake."
-                },
-                {
-                    image: 'svgs/lemon.svg',
-                    heading: flavours | length ~ ' flavours',
-                    description: "With so many sponge flavours, there's something for everyone."
-                },
-                {
-                    image: 'svgs/gift-bag.svg',
-                    heading: 'Sample bag',
-                    description: "You'll receive 5 complimentary flavour samples of your choice from my extensive list."
-                },
-                {
-                    image: 'svgs/cow.svg',
-                    heading: 'Free from options',
-                    description: "I can cater for specific dietary requirements, including gluten free, dairy free, eggless and vegan."
-                },
-                {
-                    image: 'svgs/van.svg',
-                    heading: 'Set up and delivery',
-                    description: "I deliver all wedding cakes to the venue."
-                }
-            ]) }}
-            {# {
-                    image: 'svgs/van.svg',
-                    heading: 'Florist/venue liasing',
-                    description: "Something about that you'll liase with the venue and, if necessary, the florist to arrange timings on the day."
-                } #}
-        </div>
-    </section>
+{% from "macros/design-choices.njk" import designChoices with context %}
+{{
+    designChoices(
+        "Let's design your dream wedding cake!",
+        "Together we will create your perfect wedding cake, whether you know exactly what you want or have no idea yet. There are so many options to choose from! Here are some of the most popular...",
+        [
+            {
+                name: "Finishes",
+                items: [
+                    {
+                        name: "Semi naked",
+                        image: "choices/wedding-cakes/finishes/semi-naked"
+                    },
+                    {
+                        name: "Smooth buttercream",
+                        image: "choices/wedding-cakes/finishes/buttercream"
+                    },
+                    {
+                        name: "Textured buttercream",
+                        image: "choices/wedding-cakes/finishes/buttercream-texture"
+                    },
+                    {
+                        name: "Fondant",
+                        image: "choices/wedding-cakes/finishes/fondant"
+                    },
+                    {
+                        name: "Lustre",
+                        image: "choices/wedding-cakes/finishes/lustre"
+                    },
+                    {
+                        name: "Marble",
+                        image: "choices/wedding-cakes/finishes/marble"
+                    },
+                    {
+                        name: "Sparkle sugar",
+                        image: "choices/wedding-cakes/finishes/sparkle-sugar"
+                    },
+                    {
+                        name: "Royal icing texture",
+                        image: "choices/wedding-cakes/finishes/fondant-texture"
+                    }
+                ]
+            },
+            designChoicesFlavours,
+            {
+                name: "Decoration",
+                items: [
+                    {
+                        name: "Fresh flowers",
+                        image: "choices/wedding-cakes/decoration/fresh-flowers"
+                    },
+                    {
+                        name: "Pressed flowers",
+                        image: "choices/wedding-cakes/decoration/pressed-flowers"
+                    },
+                    {
+                        name: "Dried flowers",
+                        image: "choices/wedding-cakes/decoration/dried-flowers"
+                    },
+                    {
+                        name: "Silk flowers",
+                        image: "choices/wedding-cakes/decoration/silk-flowers"
+                    },
+                    {
+                        name: "Fondant flowers",
+                        image: "choices/wedding-cakes/decoration/fondant-flowers"
+                    },
+                    {
+                        name: "Ribbon",
+                        image: "choices/wedding-cakes/decoration/ribbon"
+                    },
+                    {
+                        name: "Topper",
+                        image: "choices/wedding-cakes/decoration/topper"
+                    },
+                    {
+                        name: "Script",
+                        image: "choices/wedding-cakes/decoration/script"
+                    },
+                    {
+                        name: "Piping",
+                        image: "choices/wedding-cakes/decoration/piping"
+                    },
+                    {
+                        name: "Ball toppers",
+                        image: "choices/wedding-cakes/decoration/balls"
+                    }
+                ]
+            }
+        ]
+    )
+}}
 
-    {% from "macros/image-carousel.njk" import imageCarousel with context %}
-    {{ imageCarousel(portfolio | getMatchingCakes({ product: 'wedding-cake' }), 'linear-gradient(to bottom, #fff, #000)') }}
+{{ imageCarousel(portfolio | getMatchingCakes({ product: 'wedding-cake' }), 'linear-gradient(to bottom, #000, ' ~ products.weddingCakes.colours.light ~ ')') }}
 
-    {% from "macros/design-choices.njk" import designChoices with context %}
-    {{
-        designChoices(
-            "Let's design your dream wedding cake!",
-            "Together we will create your perfect wedding cake, whether you know exactly what you want or have no idea yet. There are so many options to choose from! Here are some of the most popular...",
-            [
-                {
-                    name: "Finishes",
-                    items: [
-                        {
-                            name: "Semi naked",
-                            image: "choices/wedding-cakes/finishes/semi-naked"
-                        },
-                        {
-                            name: "Smooth buttercream",
-                            image: "choices/wedding-cakes/finishes/buttercream"
-                        },
-                        {
-                            name: "Textured buttercream",
-                            image: "choices/wedding-cakes/finishes/buttercream-texture"
-                        },
-                        {
-                            name: "Fondant",
-                            image: "choices/wedding-cakes/finishes/fondant"
-                        },
-                        {
-                            name: "Lustre",
-                            image: "choices/wedding-cakes/finishes/lustre"
-                        },
-                        {
-                            name: "Marble",
-                            image: "choices/wedding-cakes/finishes/marble"
-                        },
-                        {
-                            name: "Sparkle sugar",
-                            image: "choices/wedding-cakes/finishes/sparkle-sugar"
-                        },
-                        {
-                            name: "Royal icing texture",
-                            image: "choices/wedding-cakes/finishes/fondant-texture"
-                        }
-                    ]
-                },
-                designChoicesFlavours,
-                {
-                    name: "Decoration",
-                    items: [
-                        {
-                            name: "Fresh flowers",
-                            image: "choices/wedding-cakes/decoration/fresh-flowers"
-                        },
-                        {
-                            name: "Pressed flowers",
-                            image: "choices/wedding-cakes/decoration/pressed-flowers"
-                        },
-                        {
-                            name: "Dried flowers",
-                            image: "choices/wedding-cakes/decoration/dried-flowers"
-                        },
-                        {
-                            name: "Silk flowers",
-                            image: "choices/wedding-cakes/decoration/silk-flowers"
-                        },
-                        {
-                            name: "Fondant flowers",
-                            image: "choices/wedding-cakes/decoration/fondant-flowers"
-                        },
-                        {
-                            name: "Ribbon",
-                            image: "choices/wedding-cakes/decoration/ribbon"
-                        },
-                        {
-                            name: "Topper",
-                            image: "choices/wedding-cakes/decoration/topper"
-                        },
-                        {
-                            name: "Script",
-                            image: "choices/wedding-cakes/decoration/script"
-                        },
-                        {
-                            name: "Piping",
-                            image: "choices/wedding-cakes/decoration/piping"
-                        },
-                        {
-                            name: "Ball toppers",
-                            image: "choices/wedding-cakes/decoration/balls"
-                        }
-                    ]
-                }
-            ]
-        )
-    }}
+<section id="pricing" style="background:{{products.weddingCakes.colours.light}}">
+    <h2 style="margin-top:0;">Pricing</h2>
+    {% include "wedding-cake-pricing.njk" %}
+</section>
 
-    {{ imageCarousel(portfolio | getMatchingCakes({ product: 'wedding-cake' }), 'linear-gradient(to bottom, #000, ' ~ products.weddingCakes.colours.light ~ ')') }}
+{% include "wedding-favours.njk" %}
 
-    <section id="pricing" style="background:{{products.weddingCakes.colours.light}}">
-        <h2 style="margin-top:0;">Pricing</h2>
-        {% include "wedding-cake-pricing.njk" %}
-    </section>
+{% include "featured-in.njk" %}
 
-    {% include "wedding-favours.njk" %}
+{{ imageCarousel(portfolio | getMatchingCakes({ product: 'wedding-cake' }), 'linear-gradient(to bottom, #000, ' ~ products.weddingCakes.colours.light ~ ')') }}
 
-    {% include "featured-in.njk" %}
-
-    {{ imageCarousel(portfolio | getMatchingCakes({ product: 'wedding-cake' }), 'linear-gradient(to bottom, #000, ' ~ products.weddingCakes.colours.light ~ ')') }}
-
-    <section style="background:{{products.weddingCakes.colours.light}}">
-        {% include "wedding-venues.njk" %}
-    </section>
-{% endblock %}
+<section style="background:{{products.weddingCakes.colours.light}}">
+    {% include "wedding-venues.njk" %}
+</section>

@@ -1,36 +1,40 @@
-{% set page = "occasions" %}
-{% extends "layout.njk" %}
+---
+layout: layout.njk
+title: Occasions | Cakes by Katie
+description: I'm a cake maker in Thatcham, near Newbury and Reading, West Berkshire, offering high quality bespoke cakes for birthdays, weddings, anniversaries, corporate events, or any occasion.
+heading:
+  text: Occasions
+  image:
+    path: backgrounds/confetti
+    alt: Confetti background
+---
+<section class="intro">
+    <div class="intro-text">
+        <p>Whatever the occasion, I can design and make your celebration cake, be it for a birthday, wedding, anniversary, corporate event, christening, baby shower, Easter, Christmas...etc.</p>
 
-{% block main %}
+        <p>If you have a design in mind, that's great, or you can choose a cake from my portfolio or let me design the cake for you.</p>
 
-    <section class="intro">
-        <div class="intro-text">
-            <p>Whatever the occasion, I can design and make your celebration cake, be it for a birthday, wedding, anniversary, corporate event, christening, baby shower, Easter, Christmas...etc.</p>
+        <p>Cakes can be finished in either buttercream or fondant and you can choose from an extensive list of <a href="/flavours">sponge flavours</a>. I can also cater for certain dietary requirements like dairy and gluten free.</p>
 
-            <p>If you have a design in mind, that's great, or you can choose a cake from my portfolio or let me design the cake for you.</p>
+        <p>Decorative choices include chocolate or coloured drips, fondant or real flowers, fondant models, airbrushing, edible images and balloons.</p>
 
-            <p>Cakes can be finished in either buttercream or fondant and you can choose from an extensive list of <a href="/flavours">sponge flavours</a>. I can also cater for certain dietary requirements like dairy and gluten free.</p>
-
-            <p>Decorative choices include chocolate or coloured drips, fondant or real flowers, fondant models, airbrushing, edible images and balloons.</p>
-        
-            <div class="cta">
-                <h3>Ready to make your occasion special?</h3>
-                <a
-                    class="button"
-                    href="/#contact"
-                >
-                    Contact me
-                </a>
-            </div>
+        <div class="cta">
+            <h3>Ready to make your occasion special?</h3>
+            <a
+                class="button"
+                href="/#contact"
+            >
+                Contact me
+            </a>
         </div>
-    </section>
+    </div>
+</section>
 
-    {% from "macros/grid-menu-links.njk" import gridMenuLinks with context %}
-    {{
-        gridMenuLinks(
-            navigation.listedOccasions | linkTiles,
-            "What's your occasion?",
-            "I can cater for all occasions, but here are some of the most common..."
-        )
-    }}
-{% endblock %}
+{% from "macros/grid-menu-links.njk" import gridMenuLinks with context %}
+{{
+    gridMenuLinks(
+        navigation.listedOccasions | linkTiles,
+        "What's your occasion?",
+        "I can cater for all occasions, but here are some of the most common..."
+    )
+}}

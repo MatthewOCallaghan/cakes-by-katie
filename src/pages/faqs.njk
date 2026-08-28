@@ -1,44 +1,44 @@
-{% set page = "faqs" %}
-{% extends "layout.njk" %}
+---
+layout: layout.njk
+title: Frequently Asked Questions | Cakes by Katie
+description: Find the answers to some questions I commonly get asked by my customers.
+heading:
+  text: FAQs
+  image:
+    path: backgrounds/question-mark
+    alt: Question mark background
+questions:
+- question: Where are you based?
+  answer: <p>I'm based in Thatcham, West Berkshire, so I am in easy reach of Basingstoke, Newbury, Reading, and their surrounding vicinities such as Basildon, Bucklebury, Coldash, Didcot, Donnington, Hungerford, Pangbourne, Purley, Sulhampstead, Tadley, Theale, Tidmarsh and Tilehurst.</p>
+- question: What occasions do you cater for?
+  answer: <p>I can make cakes for all occasions! Have you got a wedding, birthday or anniversary coming up? Maybe a religious occasion such as a christening, first communion or bar/bat mitzvah? Is there a little one involved - do you need a baby shower, gender reveal or cake smash cake? How about a cake to celebrate Christmas, Easter, Halloween or Valentine's Day? Or maybe you need something completely different? Get in touch with me at <a href="mailto:katie@cakesbykatie.co.uk">katie@cakesbykatie.co.uk</a> and we'll start planning for your occasion!</p>
+- question: What finishes do you provide?
+  answer: <p>Cakes can be finished in either buttercream or fondant. I also provide semi naked cakes for weddings.</p>
+- question: Do you cater for any special dietary requirements?
+  answer: <p>Yes, I offer flavour ranges for gluten free, dairy free, vegan and eggless diets. I encourage you to get in touch and we can discuss whatever requirements you have. Please note that whilst the cakes will be made using free from products, they're made in a kitchen where the allergens are present.</p>
+- question: Do you deliver?
+  answer: <p>Wedding cakes will be delivered and set up at the venue. All other cakes are on a collection basis, but I can deliver for a fee.</p>
+- question: What products do you offer?
+  answer: <p>I offer <a href="/products/wedding-cakes">wedding cakes</a>, <a href="/products/celebration-cakes">celebration cakes</a> and <a href="/products/cupcakes">cupcakes</a> in a range of flavours. I don't produce fresh cream cakes and fresh fruit is only an option for wedding orders. I also offer wedding favours.</p>
+- question: How do I order a cake?
+  answer: <p>Get in touch with me at <a href="mailto:katie@cakesbykatie.co.uk">katie@cakesbykatie.co.uk</a> and we'll start discussing your perfect cake/cupcakes!</p>
+- question: What cake design should I go for?
+  answer: <p>Whether you know exactly what you want or have absolutely no idea, I'll work with you to create the perfect design for your occasion. If you're looking for inspiration why not check out my <a href="/portfolio">portfolio page</a>?</p>
+- question: What are your payment terms?
+  answer: <p>Payment is by bank transfer. For celebration cakes and cupcakes I ask for a 50% deposit on order confirmation to secure your booking with the balance payable 14 days prior to collection/delivery. For wedding cakes, a £100 date reservation deposit is payable when you decide to book with me, with the balance due 30 days before your wedding. All deposits and final balances are non-refundable. Please see full <a href="/terms">Terms & Conditions</a>.</p>
+scripts:
+- src: expandableFAQs.js
+  defer: true
+---
+<div class="page-content-container">
+    <p class="page-intro">Here are answers to the most common questions I receive from my customers. If you can't find what you're looking for, please <a href="/#contact">contact me</a>.</p>
 
-{% block head %}
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-                {% for faq in pages[page].questions %}
-                    {
-                        "@type": "Question",
-                        "name": "{{ faq.question }}",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "{{ faq.answer | safe | replace("\"", "\\\"") }}"
-                        }
-                    }{{ "," if not loop.last }}
-                {% endfor %}
-            ]
-        }
-    </script>
-{% endblock %}
-
-{% block main %}
-
-    <div class="page-content-container">
-        <p class="page-intro">Here are answers to the most common questions I receive from my customers. If you can't find what you're looking for, please <a href="/#contact">contact me</a>.</p>
-
-        {% for faq in pages[page].questions %}
-            <div class="question">
-                <h2 tabindex="0">{{ faq.question }}</h2>
-                <div class="answer">
-                    {{ faq.answer | safe }}
-                </div>
+    {% for faq in questions %}
+        <div class="question">
+            <h2 tabindex="0">{{ faq.question }}</h2>
+            <div class="answer">
+                {{ faq.answer | safe }}
             </div>
-        {% endfor %}
-    </div>
-
-{% endblock %}
-
-{% block scripts %}
-    <script type="text/javascript" src="/js/expandableFAQs.js" defer></script>
-{% endblock %}
+        </div>
+    {% endfor %}
+</div>

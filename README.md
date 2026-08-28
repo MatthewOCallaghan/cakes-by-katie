@@ -26,6 +26,23 @@ npm run images:clean
 
 This scans `images/` for files whose name doesn't turn up anywhere in `src/` (templates, JSON data, JS), lists the candidates, and asks for confirmation before deleting anything.
 
+## Pages
+
+Each page is a `.njk` file in `src/pages`, and its address comes from where the file sits —
+`src/pages/about.njk` is `/about`, `src/pages/occasions/easter.njk` is `/occasions/easter`.
+
+Everything the page needs to know about itself goes in the block at the top of that file, between
+the `---` lines: its `title`, its `description` for search engines, the `heading` shown at the top
+of the page, the `cta` panel at the bottom. `layout: layout.njk` is what wraps it in the site's
+header, nav and footer.
+
+A page picks up its own stylesheet automatically if one exists: `src/pages/faqs.njk` uses
+`src/scss/faqs.scss` if that file is there. For a page inside a folder, like
+`src/pages/occasions/index.njk`, the folder's name is used — `src/scss/occasions.scss`.
+
+The per-venue wedding pages are the exception: they're generated from `src/content/venues.json`
+by `src/pages/delivery/venue.njk`, one page per venue.
+
 ## Development
 
 ```
@@ -97,7 +114,7 @@ unmatched routes automatically.
 - Create page for each wedding venue we want
     - Add a new entry to `venues` in `src/content/venues.json` — copy the `wasing-park` entry and change what needs changing. The key you give it becomes the page's address, so `wasing-park` becomes `/delivery/wasing-park`. The page itself is generated; there's nothing else to create.
 - Distinguish wedding anniversary portfolio cakes with occasion `anniversary` by changing occasion to `anniversary-wedding`
-- Review all `description` wording in `pages` objects in `src/content/pages.json`
+- Review the `description` wording at the top of each page's `.njk` file in `src/pages`
 - Use venue keys in porfolio cake `venue` rather than name, e.g. `post-barn` instead of `The Post Barn`
 
 

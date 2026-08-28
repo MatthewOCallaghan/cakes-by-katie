@@ -1,5 +1,6 @@
 ---
 # One page per wedding venue, rendered from src/content/venues.json.
+layout: wedding-venue.njk
 pagination:
     data: weddingVenues
     size: 1
@@ -9,5 +10,3 @@ pagination:
     addAllPagesToCollections: true
 permalink: "delivery/{{ venueKey }}.html"
 ---
-{% set page = "venue:" ~ venueKey %}
-{% extends "wedding-venue.njk" %}
