@@ -1434,7 +1434,7 @@ footer {
             }
 
             > span:last-child {
-                color: grey;
+                color: variables.$muted-text;
                 font-size: 90%;
             }
         }
@@ -1785,7 +1785,7 @@ section.testimonials {
 
             .quote {
                 width: 40%;
-                color: #6d6d6d;
+                color: variables.$muted-text;
 
                 @include mixins.testimonial-quote;
             }
@@ -1973,7 +1973,7 @@ ul.venue-list {
                 }
 
                 &.venue-location {
-                    color: grey;
+                    color: variables.$muted-text;
                     font-style: italic;
                     font-size: 90%;
                     margin-top: 0.5em;
