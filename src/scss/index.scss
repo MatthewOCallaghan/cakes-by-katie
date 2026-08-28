@@ -1,5 +1,5 @@
-@use "variables";
-@use "mixins";
+@use 'variables';
+@use 'mixins';
 
 #header-video {
     width: 100%;
@@ -66,7 +66,6 @@
             animation-delay: 1s;
             animation-fill-mode: both;
 
-            
             span {
                 font-family: inherit;
                 position: relative;
@@ -74,7 +73,7 @@
                 // Santa hat on the first word of the hero, switched on by site.christmas.enabled
                 // (see src/_data/site.json), which puts the `christmas` class on <body>.
                 body.christmas &::before {
-                    content: "";
+                    content: '';
                     display: block;
                     position: absolute;
                     top: min(-1.9vw, -15px);
@@ -119,7 +118,6 @@
             font-size: max(2vw, 30px);
             margin: 0;
             font-family: 'Lato', sans-serif;
-            
 
             @keyframes fade-in-up {
                 from {
@@ -147,7 +145,7 @@
             align-items: center;
             gap: 15px;
             text-decoration: none;
-            
+
             // SVG container
             div {
                 width: 4vw;
@@ -157,9 +155,9 @@
                 border: 1px solid #fff7;
                 border-radius: 100px;
                 padding: max(1vw, 15px);
-                transition: all .3s;
+                transition: all 0.3s;
             }
-            
+
             @include mixins.hover {
                 div {
                     color: #000;
@@ -173,7 +171,7 @@
             }
 
             // Animation
-            
+
             @keyframes fade-in-down {
                 from {
                     opacity: 0;
@@ -198,7 +196,7 @@
             }
         }
     }
-    
+
     #snow-particles {
         position: absolute;
         width: 100%;
@@ -206,7 +204,6 @@
         top: 0;
         left: 0;
     }
-    
 }
 
 #about {
@@ -233,7 +230,7 @@
         text-align: center;
         display: flex;
         flex-direction: column;
-        justify-content: center;        
+        justify-content: center;
 
         h1 {
             font-size: 2em;
@@ -242,7 +239,6 @@
 }
 
 #portfolio {
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -274,7 +270,6 @@
 }
 
 #christmas {
-    
     color: #fff;
     position: relative;
     text-align: center;
@@ -302,14 +297,13 @@
             border-radius: 15px;
 
             .christmas-contents {
-                
                 display: grid;
                 gap: 40px 30px;
                 grid-template-columns: auto auto;
                 grid-template-rows: auto auto;
                 grid-template-areas:
-                    "text image"
-                    "link image";
+                    'text image'
+                    'link image';
 
                 .christmas-text {
                     grid-area: text;
@@ -317,7 +311,7 @@
                     flex-direction: column;
                     justify-content: flex-end;
                     gap: 20px;
-                    
+
                     h2 {
                         font-size: 2em;
                         margin: 0;
@@ -353,9 +347,9 @@
                     grid-template-columns: 100%;
                     grid-template-rows: auto auto auto;
                     grid-template-areas:
-                        "text"
-                        "image"
-                        "link";
+                        'text'
+                        'image'
+                        'link';
                     gap: 20px;
                     padding: 10px 0;
 
@@ -364,12 +358,11 @@
                     }
                 }
             }
-        }   
+        }
     }
 }
 
 #contact {
-
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -390,7 +383,8 @@
         // Background of second half
         $colour2: #000;
 
-        h2, h3 {
+        h2,
+        h3 {
             margin: 0;
             text-align: center;
         }
@@ -420,7 +414,8 @@
             color: #fff;
         }
 
-        .contact-card-first-half, .contact-card-second-half {
+        .contact-card-first-half,
+        .contact-card-second-half {
             // Initially had .contact-card using `display: grid;` but Safari didn't like padding
             // on these two divs.
             // So instead use flex with flex-basis and flex-grow to ensure both halves are equal width.
@@ -429,7 +424,8 @@
             display: flex;
         }
 
-        .contact-card-first-half .contact-card-first-half-inner, .contact-card-second-half .contact-card-second-half-inner {
+        .contact-card-first-half .contact-card-first-half-inner,
+        .contact-card-second-half .contact-card-second-half-inner {
             border: $border-width solid $colour2;
             padding: $card-padding;
             width: 100%;
@@ -454,9 +450,8 @@
 
             .contact-card-second-half-inner {
                 border-color: $colour1;
-                border-left: none; 
+                border-left: none;
             }
-            
         }
 
         // Switch to vertical layout

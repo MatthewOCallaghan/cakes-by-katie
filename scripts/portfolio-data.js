@@ -1,19 +1,19 @@
-const fs = require("fs");
-const path = require("path");
-const sizeOf = require("image-size");
-const getVideoDimensions = require("get-media-dimensions");
-const { getWidthsArrayForImagePath, FORMATS } = require("../utils/images");
+const fs = require('fs');
+const path = require('path');
+const sizeOf = require('image-size');
+const getVideoDimensions = require('get-media-dimensions');
+const { getWidthsArrayForImagePath, FORMATS } = require('../utils/images');
 
-const ROOT = path.join(__dirname, "..");
-const PORTFOLIO_JSON = path.join(ROOT, "src/content/portfolio.json");
+const ROOT = path.join(__dirname, '..');
+const PORTFOLIO_JSON = path.join(ROOT, 'src/content/portfolio.json');
 
 // Aspect ratios are read off the generated images/ variants rather than the original files in
 // src/images (which aren't kept in the repo) — resizing by width only (no height) preserves
 // aspect ratio, so any generated variant gives the same ratio as the original.
 function getGeneratedImagePath(portfolioRelativeSrc) {
-    const imagePath = "/portfolio/" + portfolioRelativeSrc;
+    const imagePath = '/portfolio/' + portfolioRelativeSrc;
     const smallestWidth = getWidthsArrayForImagePath(imagePath)[0];
-    return path.join(ROOT, "images", `${imagePath}-${smallestWidth}.${FORMATS[FORMATS.length - 1]}`);
+    return path.join(ROOT, 'images', `${imagePath}-${smallestWidth}.${FORMATS[FORMATS.length - 1]}`);
 }
 
 // Computing this involves probing every portfolio image/video on disk (image-size, video
@@ -34,7 +34,7 @@ function computePortfolio() {
 }
 
 async function compute() {
-    const portfolio = JSON.parse(fs.readFileSync(PORTFOLIO_JSON, "utf8"));
+    const portfolio = JSON.parse(fs.readFileSync(PORTFOLIO_JSON, 'utf8'));
 
     const videoPromises = [];
 
@@ -54,7 +54,7 @@ async function compute() {
                     portfolio[cake].videos[index].thumbAspectRatio = width / height;
                 }
                 videoPromises.push(
-                    getVideoDimensions(path.join(ROOT, "src/videos/portfolio", file), "video") // getVideoDimensions also gets duration
+                    getVideoDimensions(path.join(ROOT, 'src/videos/portfolio', file), 'video') // getVideoDimensions also gets duration
                         .then(({ width, height }) => {
                             portfolio[cake].videos[index].aspectRatio = width / height;
                         })
@@ -64,7 +64,7 @@ async function compute() {
 
         if (squareImage) {
             // Add 'square/' to path
-            portfolio[cake].squareImage = "square/" + squareImage;
+            portfolio[cake].squareImage = 'square/' + squareImage;
         }
     }
 

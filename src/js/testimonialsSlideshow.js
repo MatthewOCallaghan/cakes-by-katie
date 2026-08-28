@@ -15,18 +15,18 @@ import { getSwiper } from './lib/swiper.js';
             autoplay: {
                 delay: 10000, // Ms per slide
                 disableOnInteraction: false,
-                pauseOnMouseEnter: true
+                pauseOnMouseEnter: true,
             },
             // Pagination bullets
             pagination: {
                 el: '.testimonials-slideshow .swiper-pagination',
-                clickable: true
+                clickable: true,
             },
             // Navigation arrows
             navigation: {
                 nextEl: '.testimonials-slideshow .swiper-button-next',
                 prevEl: '.testimonials-slideshow .swiper-button-prev',
-            }
+            },
         });
     }
 })();

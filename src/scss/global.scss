@@ -1,8 +1,8 @@
-@use "sass:math";
+@use 'sass:math';
 
-@use "variables";
-@use "mixins";
-@use "normalize.css/normalize";
+@use 'variables';
+@use 'mixins';
+@use 'normalize.css/normalize';
 
 // $mobileNavMaxWidth: 750px;
 $mobileNavMaxWidth: 1100px; // This value is also hardcoded in nav-menu.js
@@ -51,7 +51,10 @@ body {
     }
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: variables.$handwriting;
 }
 
@@ -120,7 +123,7 @@ section.intro {
     $offset: 10px;
 
     &::before {
-        content: "";
+        content: '';
         display: block;
         position: absolute;
         top: -$offset;
@@ -129,7 +132,7 @@ section.intro {
         bottom: $offset;
         background: #{variables.$pink}82;
         z-index: -1;
-        transition: all .3s;
+        transition: all 0.3s;
     }
 
     @include mixins.hover {
@@ -150,7 +153,7 @@ section.intro {
 
 // Creating a mixin as this is needed in .half-image-section below
 // It's used inside a media query so can't simply @extend
-@mixin button-white () {
+@mixin button-white() {
     border-color: #fff;
     color: #000;
 
@@ -159,7 +162,7 @@ section.intro {
     }
 }
 .button-white {
-    @include button-white()
+    @include button-white();
 }
 
 .button-black {
@@ -182,7 +185,6 @@ section.intro {
 }
 
 .card {
-
     box-shadow: 0px 0px 11px 1px #7e7e7e78;
     padding: 20px;
     width: 100%;
@@ -230,12 +232,13 @@ section.intro {
     tr:nth-child(odd) {
         background: #fff6;
     }
-    
+
     th {
         background: #fff;
     }
 
-    th, td {
+    th,
+    td {
         border: 1px solid #e6e6e6;
         padding: 5px;
         width: 33%;
@@ -314,10 +317,10 @@ header {
             border-radius: $logoDiameter;
         }
     }
-    
+
     .header-contact-link {
-        border: 1px solid #FFF;
-        color: #FFF !important;
+        border: 1px solid #fff;
+        color: #fff !important;
         font-family: 'Lato', sans-serif !important;
         font-size: 1.2rem !important;
         height: 34px !important;
@@ -330,12 +333,12 @@ header {
         width: $desktopLinkWidth;
 
         // Must include color and border-color in transition
-        transition: all .3s;
+        transition: all 0.3s;
 
         @include mixins.hover {
             border-color: variables.$pink;
             color: variables.$pink !important;
-        }            
+        }
     }
 
     #desktop-nav-overlay {
@@ -357,7 +360,7 @@ header {
         position: relative;
         border-bottom: 1px solid variables.$pink;
         background: variables.$black;
-        
+
         .hamburger {
             background: none;
             padding: 0;
@@ -373,7 +376,6 @@ header {
                 display: inline-block;
 
                 .hamburger-inner {
-
                     @mixin line {
                         width: 40px;
                         height: 4px;
@@ -382,24 +384,26 @@ header {
                         position: absolute;
                         display: block;
                     }
-                    
+
                     @include line;
                     top: 50%;
                     margin-top: -2px;
-                    transition: transform (.22s) cubic-bezier(.55,.055,.675,.19);
+                    transition: transform (0.22s) cubic-bezier(0.55, 0.055, 0.675, 0.19);
 
                     &::before {
                         top: -10px;
-                        content: "";
+                        content: '';
                         @include line;
-                        transition: top (.1s) ease-in (.25s);
+                        transition: top (0.1s) ease-in (0.25s);
                     }
 
                     &::after {
                         bottom: -10px;
-                        content: "";
+                        content: '';
                         @include line;
-                        transition: bottom (.1s) ease-in (.25s),transform (.22s) cubic-bezier(.55,.055,.675,.19);
+                        transition:
+                            bottom (0.1s) ease-in (0.25s),
+                            transform (0.22s) cubic-bezier(0.55, 0.055, 0.675, 0.19);
                     }
                 }
             }
@@ -429,18 +433,19 @@ header {
         > li {
             list-style-type: none;
             height: 100%;
-            width: $desktopLinkWidth;        
-            transition: color .3s;
+            width: $desktopLinkWidth;
+            transition: color 0.3s;
             display: inline-flex;
             justify-content: center;
             align-items: center;
             position: relative;
-            
+
             @include mixins.hover {
                 color: #fff;
             }
 
-            > a, button {
+            > a,
+            button {
                 font-family: variables.$handwriting;
                 color: inherit;
                 font-size: 1.5rem;
@@ -463,7 +468,7 @@ header {
                 z-index: 1;
 
                 &::after {
-                    content: "";
+                    content: '';
                     margin-left: 12px;
                     margin-bottom: 8px;
                     display: block;
@@ -472,7 +477,7 @@ header {
                     border-bottom: 2px solid currentColor;
                     border-right: 2px solid currentColor;
                     transform-origin: 65% 65%;
-                    transition: transform .3s;
+                    transition: transform 0.3s;
                     transform: rotateZ(45deg);
                 }
             }
@@ -502,7 +507,7 @@ header {
                 }
 
                 animation-name: enter;
-                animation-duration: .5s;
+                animation-duration: 0.5s;
                 animation-fill-mode: forwards;
             }
 
@@ -523,7 +528,7 @@ header {
                             position: relative;
 
                             &::before {
-                                content: "";
+                                content: '';
                                 width: 20%;
                                 max-width: 50px;
                                 position: absolute;
@@ -543,12 +548,11 @@ header {
                             font-size: 1.1rem;
 
                             @media (hover: hover) {
-                                    
                                 position: relative;
-                                padding: 0 .25rem;
+                                padding: 0 0.25rem;
 
                                 &::before {
-                                    content: "";
+                                    content: '';
                                     position: absolute;
                                     width: 100%;
                                     height: 100%;
@@ -557,7 +561,7 @@ header {
                                     left: 0;
                                     transform-origin: right;
                                     transform: scaleX(0);
-                                    transition: transform .25s ease-in-out;
+                                    transition: transform 0.25s ease-in-out;
                                     z-index: -1;
                                 }
 
@@ -568,14 +572,14 @@ header {
                             }
                         }
                     }
-                }                
+                }
             }
 
             &.submenu-grid .submenu {
                 width: $submenuGridWidth;
                 background: #f4f4f4;
                 overflow: hidden;
-                
+
                 ul {
                     padding: 5px 10px;
                     display: grid;
@@ -600,8 +604,8 @@ header {
                             grid-template-rows: 100%;
                             gap: 15px;
                             align-items: center;
-                            box-shadow: 0 1px 6px rgba(0,0,0,0.09);
-                            transition: box-shadow .2s;
+                            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.09);
+                            transition: box-shadow 0.2s;
 
                             picture {
                                 width: 100%;
@@ -615,29 +619,51 @@ header {
                             }
 
                             span {
-                                font-size: .9rem;
+                                font-size: 0.9rem;
                                 font-weight: 400;
                             }
 
                             &:focus-visible {
-                                box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+                                box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
                             }
 
                             @media (hover: hover) {
                                 &:hover {
-                                    box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+                                    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
                                 }
                             }
 
                             &.christmas {
                                 $dark-red: #e52836;
                                 $light-red: #ff4a4a;
-                                background: linear-gradient(44deg,  $dark-red 0,  $dark-red 10%,  $light-red 10%,  $light-red 20%,  $dark-red 20%,  $dark-red 30%,  $light-red 30%,  $light-red 40%,  $dark-red 40%,  $dark-red 50%,  $light-red 50%,  $light-red 60%,  $dark-red 60%,  $dark-red 70%,  $light-red 70%,  $light-red 80%,  $dark-red 80%,  $dark-red 90%,  $light-red 90%,  $light-red 100%);
+                                background: linear-gradient(
+                                    44deg,
+                                    $dark-red 0,
+                                    $dark-red 10%,
+                                    $light-red 10%,
+                                    $light-red 20%,
+                                    $dark-red 20%,
+                                    $dark-red 30%,
+                                    $light-red 30%,
+                                    $light-red 40%,
+                                    $dark-red 40%,
+                                    $dark-red 50%,
+                                    $light-red 50%,
+                                    $light-red 60%,
+                                    $dark-red 60%,
+                                    $dark-red 70%,
+                                    $light-red 70%,
+                                    $light-red 80%,
+                                    $dark-red 80%,
+                                    $dark-red 90%,
+                                    $light-red 90%,
+                                    $light-red 100%
+                                );
                                 color: #fff;
                                 position: relative;
 
                                 &::before {
-                                    content: "";
+                                    content: '';
                                     position: absolute;
                                     width: calc(100% - 6px);
                                     height: calc(100% - 6px);
@@ -650,23 +676,23 @@ header {
                         }
                     }
                 }
-                
+
                 .submenu-grid-more-link {
                     background: #fff;
                     width: 100%;
                     padding: 10px 8px;
                     text-align: center;
-                    font-size: .9rem;
+                    font-size: 0.9rem;
                     font-weight: 400;
                     margin-top: 10px;
                     border-top: 1px solid #ededed;
                     display: block;
-                    box-shadow: 0 0 6px rgba(0,0,0,0.06);
+                    box-shadow: 0 0 6px rgba(0, 0, 0, 0.06);
 
                     &::after {
-                        content: "\2192";
+                        content: '\2192';
                         margin-left: 5px;
-                        transition: transform .2s;
+                        transition: transform 0.2s;
                         display: inline-block;
                     }
 
@@ -684,7 +710,8 @@ header {
         }
 
         // Handle occasions dropdown whose submenu would be behind logo without this
-        > li:nth-child(5).submenu-list .submenu, > li:nth-child(5).submenu-grid .submenu {
+        > li:nth-child(5).submenu-list .submenu,
+        > li:nth-child(5).submenu-grid .submenu {
             left: -4.5vw;
         }
     }
@@ -711,12 +738,11 @@ header[data-nav-submenu] {
     }
 
     @for $i from 1 through 6 {
-        &[data-nav-submenu="#{$i}"] {
+        &[data-nav-submenu='#{$i}'] {
             #main-links > li:nth-child(#{$i}) {
-
                 // Make hover area same width as submenu when open
                 &::before {
-                    content: "";
+                    content: '';
                     position: absolute;
                     height: 100%;
                     top: 0;
@@ -729,7 +755,7 @@ header[data-nav-submenu] {
                     width: $submenuGridWidth;
                     left: 0 - math.div($submenuGridWidth - $desktopLinkWidth, 2);
                 }
-            
+
                 > button::after {
                     transform: rotateZ(-135deg);
                 }
@@ -739,7 +765,8 @@ header[data-nav-submenu] {
                 }
 
                 @media only screen and (max-width: $mobileNavMaxWidth) {
-                    > a, button {
+                    > a,
+                    button {
                         border-bottom: 1px solid grey;
                     }
                 }
@@ -750,9 +777,7 @@ header[data-nav-submenu] {
 
 // Mobile nav menu
 @media only screen and (max-width: $mobileNavMaxWidth) {
-
     header {
-
         #desktop-nav-overlay {
             display: none !important;
         }
@@ -765,22 +790,22 @@ header[data-nav-submenu] {
             display: none;
 
             > li {
-
                 width: 100%;
                 height: auto;
                 flex-direction: column;
 
-                > a, button {
+                > a,
+                button {
                     font-size: 2rem;
                     padding: 20px;
                     border-top: 1px solid grey;
                     height: auto;
-                    
                 }
-                
+
                 // Add bottom border to last visible <li>
                 &:nth-child(6) {
-                    > a, button {
+                    > a,
+                    button {
                         border-bottom: 1px solid grey;
                     }
                 }
@@ -802,9 +827,8 @@ header[data-nav-submenu] {
                 }
 
                 &.submenu-grid .submenu {
-
                     padding: 10px;
-                    
+
                     ul {
                         grid-template-columns: 100%;
                         padding: 0;
@@ -813,17 +837,13 @@ header[data-nav-submenu] {
                     .submenu-grid-more-link {
                         border-radius: 5px;
                     }
-
                 }
             }
-
-            
         }
     }
 
     // Mobile menu open
     body.nav-open {
-
         overflow: hidden;
         // Fixed position makes mobile browser UA components appear expanded and stops page being scrollable
         // This also resets scroll position but to click nav icon they must be very close to top anyway
@@ -849,19 +869,23 @@ header[data-nav-submenu] {
             #mobile-nav {
                 .hamburger {
                     .hamburger-box .hamburger-inner {
-                        transition-delay: .12s;
-                        transition-timing-function: cubic-bezier(.215,.61,.355,1);
+                        transition-delay: 0.12s;
+                        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
                         transform: rotate(225deg);
 
                         &::before {
                             top: 0;
-                            transition: top (.1s) ease-out,opacity (.1s) ease-out (.12s);
+                            transition:
+                                top (0.1s) ease-out,
+                                opacity (0.1s) ease-out (0.12s);
                             opacity: 0;
                         }
 
                         &::after {
                             bottom: 0;
-                            transition: bottom (.1s) ease-out,transform (.22s) cubic-bezier(.215,.61,.355,1) (.12s);
+                            transition:
+                                bottom (0.1s) ease-out,
+                                transform (0.22s) cubic-bezier(0.215, 0.61, 0.355, 1) (0.12s);
                             transform: rotate(-90deg);
                         }
                     }
@@ -884,11 +908,12 @@ header[data-nav-submenu] {
                 border: none;
                 flex-grow: 1;
 
-                #desktop-header-contact-link, .logo-container {
+                #desktop-header-contact-link,
+                .logo-container {
                     display: none !important;
                 }
             }
-            
+
             #mobile-nav-image {
                 display: flex;
             }
@@ -901,10 +926,8 @@ header[data-nav-submenu] {
 /* -------------------------------------------------------------------------- */
 
 section#bottom-panel-cta {
-
     position: relative;
     padding: 50px 20px;
-
 
     > div {
         color: #fff;
@@ -915,7 +938,7 @@ section#bottom-panel-cta {
         justify-content: center;
         align-items: center;
         gap: 3em;
-        
+
         // Show more of background
         @media (min-width: 1300px) {
             min-height: 370px;
@@ -926,7 +949,7 @@ section#bottom-panel-cta {
         font-size: 4em;
         margin: 0;
         text-align: center;
-        
+
         sup {
             font-family: inherit;
         }
@@ -939,7 +962,7 @@ section#bottom-panel-cta {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        filter: brightness(.5);
+        filter: brightness(0.5);
         z-index: -1;
     }
 }
@@ -954,7 +977,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    color: #fff;//variables.$pink;
+    color: #fff; //variables.$pink;
     gap: 30px 40px;
 
     > div {
@@ -1010,7 +1033,7 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
         gap: 30px 3%;
-        
+
         img {
             height: 150px;
             width: auto;
@@ -1021,7 +1044,7 @@ footer {
         width: 100%;
         max-width: none;
     }
-    
+
     .credit-container {
         width: 100%;
         max-width: none;
@@ -1041,7 +1064,6 @@ footer {
                 color: variables.$pink;
             }
         }
-        
     }
 
     @media only screen and (min-width: 1200px) {
@@ -1057,7 +1079,7 @@ footer {
     max-width: 100%;
     position: relative;
     overflow: hidden;
-    
+
     // Allow for logo
     padding-top: $logoDiameter - $headerHeight;
 
@@ -1068,7 +1090,10 @@ footer {
         font-family: variables.$handwriting;
         color: variables.$pink;
         text-align: center;
-        text-shadow: 1px 1px 0px variables.$pink, 2px 2px 0px #{variables.$pink}82, 2px 2px 0px #909090cc;
+        text-shadow:
+            1px 1px 0px variables.$pink,
+            2px 2px 0px #{variables.$pink}82,
+            2px 2px 0px #909090cc;
     }
 
     &.small-text {
@@ -1094,7 +1119,7 @@ footer {
         height: 100%;
         object-fit: cover;
     }
-    
+
     &.darkened {
         img {
             filter: brightness(0.6);
@@ -1116,7 +1141,6 @@ footer {
 }
 
 .grid-menu-links {
-    
     h2 {
         text-align: center;
         margin-top: 0;
@@ -1142,7 +1166,6 @@ footer {
         gap: $gap;
 
         .links-row {
-
             display: flex;
             justify-content: center;
             gap: $gap;
@@ -1151,16 +1174,18 @@ footer {
                 display: block;
                 width: 300px;
                 aspect-ratio: 1;
-                
+
                 border-radius: 20px;
-                box-shadow: 0 0 4px 0 #00000030, inset 0 0 4px 0 #00000030;
+                box-shadow:
+                    0 0 4px 0 #00000030,
+                    inset 0 0 4px 0 #00000030;
                 color: #fff;
                 text-decoration: none;
                 text-align: center;
                 overflow: hidden;
 
                 div.link-inner {
-                    transition: all .5s;
+                    transition: all 0.5s;
                     display: grid;
                     grid-template-rows: 50% 1fr;
                     height: 100%;
@@ -1181,10 +1206,10 @@ footer {
                             width: min-content;
                         }
                     }
-                    
+
                     img {
                         width: 80%;
-                        transition: all .5s;
+                        transition: all 0.5s;
                         transform-origin: top;
                     }
                 }
@@ -1229,9 +1254,9 @@ footer {
     .swiper {
         width: 100%;
         height: 100%;
-        
+
         opacity: 0;
-        transition: opacity .3s;
+        transition: opacity 0.3s;
 
         &.swiper-initialized {
             /* purgecss ignore current */
@@ -1253,7 +1278,7 @@ footer {
     }
 }
 
-.design-choices{
+.design-choices {
     background: #000;
     color: #fff;
     text-align: center;
@@ -1274,7 +1299,7 @@ footer {
         margin-top: $categoryMargin;
 
         &::before {
-            content: "";
+            content: '';
             display: block;
             width: 70%;
             height: 2px;
@@ -1288,7 +1313,6 @@ footer {
         }
 
         .items {
-
             $columnGap: max(30px, 3%);
             $minPerRow: 3;
 
@@ -1296,14 +1320,14 @@ footer {
             flex-wrap: wrap;
             column-gap: $columnGap;
             justify-content: center;
-            
+
             row-gap: 40px;
             @media (max-width: 1000px) {
                 row-gap: 30px;
             }
 
             > div {
-                width: min(210px, calc((100% / $minPerRow) - (($minPerRow - 1)/$minPerRow) * $columnGap));
+                width: min(210px, calc((100% / $minPerRow) - (($minPerRow - 1) / $minPerRow) * $columnGap));
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
@@ -1325,7 +1349,6 @@ footer {
                 }
 
                 &.more {
-
                     position: relative;
 
                     img {
@@ -1333,7 +1356,6 @@ footer {
                     }
 
                     div.overlay-text {
-                        
                         position: absolute;
                         top: 0;
                         left: 0;
@@ -1356,7 +1378,6 @@ footer {
                     }
                 }
             }
-
         }
 
         .see-more-link {
@@ -1368,7 +1389,6 @@ footer {
 }
 
 .service-breakdown {
-
     $gap: min(6vw, 50px);
 
     display: flex;
@@ -1403,7 +1423,6 @@ footer {
         }
 
         .service-description {
-            
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -1438,7 +1457,6 @@ section.half-image-section {
     }
 
     .half-image {
-
         height: 100%;
         overflow: hidden;
         position: relative;
@@ -1471,7 +1489,6 @@ section.half-image-section {
         height: auto !important;
 
         &:not(.tall) {
-            
             .half-image {
                 height: auto;
                 padding: 3%;
@@ -1482,7 +1499,7 @@ section.half-image-section {
                     border-radius: 15px;
                 }
             }
-            
+
             .half-text {
                 padding: 5% 10% 10%;
             }
@@ -1498,7 +1515,6 @@ section.half-image-section {
             }
         }
 
-     
         // Undo inverse styles
         &.inverse .half-image {
             grid-column-start: auto;
@@ -1508,7 +1524,6 @@ section.half-image-section {
 }
 
 section.products-range {
-    
     $aspect-ratio: 0.75;
     $border-radius: 20px;
     $max-product-width: 430px;
@@ -1517,14 +1532,14 @@ section.products-range {
     background: linear-gradient(170deg, #fff 0%, #fff 10%, #{variables.$pink}66 50%, #fff 90%, #fff 100%), #fff;
 
     .products {
-
         display: grid;
         grid-template-columns: auto auto;
         grid-template-rows: auto;
         justify-content: center;
         gap: $column-gap;
 
-        .products-column-left, .products-column-right {
+        .products-column-left,
+        .products-column-right {
             display: flex;
             flex-direction: column;
             gap: 70px;
@@ -1556,7 +1571,6 @@ section.products-range {
             flex-direction: column;
             gap: 20px;
             width: 100%;
-            
 
             .product-image {
                 width: 100%;
@@ -1572,12 +1586,10 @@ section.products-range {
             }
 
             .product-details {
-
                 padding: 0 10px;
                 text-align: left;
 
                 .product-details-top-row {
-
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-between;
@@ -1602,7 +1614,7 @@ section.products-range {
                         color: #6c6c6c;
                     }
                 }
-            }        
+            }
         }
 
         .products-summary-card {
@@ -1669,8 +1681,9 @@ section.products-range {
 
             max-width: $max-product-width;
             margin: auto;
-            
-            .products-column-left, .products-column-right {
+
+            .products-column-left,
+            .products-column-right {
                 display: contents;
             }
 
@@ -1682,7 +1695,7 @@ section.products-range {
             .products-summary-card {
                 order: 999;
             }
-        }        
+        }
     }
 }
 
@@ -1695,7 +1708,6 @@ section.testimonials {
     $itemHorizontalPadding: 45px;
 
     .testimonials-slideshow {
-
         // Needs a fixed height for slideshow to work
         height: 300px;
 
@@ -1714,7 +1726,8 @@ section.testimonials {
             height: calc(100% - var(--swiper-pagination-top-margin) - var(--swiper-pagination-bullet-size));
         }
 
-        .swiper-button-prev, .swiper-button-next {
+        .swiper-button-prev,
+        .swiper-button-next {
             // Make arrow buttons white
             color: #fff;
         }
@@ -1751,7 +1764,7 @@ section.testimonials {
                 display: flex;
                 justify-content: center;
                 overflow: hidden;
-                
+
                 // --aspect-ratio variable gets set in style attribute
                 // This makes sure div is no wider than image on Safari and Firefox
                 aspect-ratio: var(--aspect-ratio);
@@ -1761,7 +1774,7 @@ section.testimonials {
                     justify-self: center;
                     align-items: center;
                 }
-                
+
                 img {
                     max-width: 100%;
                     max-height: 100%;
@@ -1781,7 +1794,6 @@ section.testimonials {
 
     // For narrow screens, show item vertically with image above quote
     @media only screen and (max-width: 900px) {
-
         .testimonials-slideshow {
             height: 400px;
 
@@ -1824,7 +1836,6 @@ section.testimonials {
 
     // Can allow a greater gap between arrow buttons and screen edge on wide devices
     @media only screen and (min-width: 1150px) {
-
         .swiper-button-prev {
             left: 25px;
         }
@@ -1833,7 +1844,6 @@ section.testimonials {
             right: 25px;
         }
     }
-
 
     .testimonials-link-container {
         margin-top: 40px;
@@ -1847,12 +1857,10 @@ section.testimonials {
 /* -------------------------------------------------------------------------- */
 
 section.featured-in {
-
     background: #000;
     color: #fff;
 
     > div {
-
         display: grid;
         grid-template-columns: 1fr 35%;
         gap: 40px;
@@ -1862,9 +1870,8 @@ section.featured-in {
         margin: auto;
 
         .column-left {
-
             h2 {
-                margin:0 0 0.5em;
+                margin: 0 0 0.5em;
                 font-size: 2.5em;
             }
 
@@ -1925,7 +1932,6 @@ section.featured-in {
         }
 
         @media (max-width: 800px) {
-
             display: block;
 
             .column-right {
@@ -1957,7 +1963,6 @@ ul.venue-list {
         flex-basis: 0;
 
         a {
-
             text-decoration: none;
 
             span {

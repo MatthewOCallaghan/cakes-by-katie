@@ -1,6 +1,6 @@
-const fs = require("fs");
-const path = require("path");
-const crypto = require("crypto");
+const fs = require('fs');
+const path = require('path');
+const crypto = require('crypto');
 
 // Content-hashes the built CSS/JS/non-portfolio images/videos/PDFs and rewrites every reference
 // to them across the built HTML, so browsers can cache these assets for a year without serving
@@ -22,25 +22,21 @@ const crypto = require("crypto");
 // compute a hash that no longer reflects the file's contents, so a changed image wouldn't
 // produce a changed stylesheet URL. Nothing in dist/ references an image from CSS or JS today,
 // so this is latent rather than broken, but the ordering costs nothing to get right.
-const ROOT = path.join(__dirname, "..");
-const DIST_DIR = path.join(ROOT, "dist");
-const HEADERS_PATH = path.join(DIST_DIR, "_headers");
+const ROOT = path.join(__dirname, '..');
+const DIST_DIR = path.join(ROOT, 'dist');
+const HEADERS_PATH = path.join(DIST_DIR, '_headers');
 
 // Directories (relative to dist/) whose files get hashed. `exclude` is a directory prefix
 // (relative to the directory itself) to skip within it.
 //
 // Split into the assets nothing else in dist/ links out of, and the text assets that can
 // themselves contain references — see the ordering note above.
-const HASHED_LEAF_DIRS = [
-    { dir: "images", exclude: "portfolio" },
-    { dir: "videos", exclude: "portfolio" },
-    { dir: "pdfs" },
-];
+const HASHED_LEAF_DIRS = [{ dir: 'images', exclude: 'portfolio' }, { dir: 'videos', exclude: 'portfolio' }, { dir: 'pdfs' }];
 
-const HASHED_TEXT_DIRS = [{ dir: "css" }, { dir: "js" }];
+const HASHED_TEXT_DIRS = [{ dir: 'css' }, { dir: 'js' }];
 
 // Extensions whose contents are scanned for references to renamed assets.
-const REWRITABLE_EXTENSIONS = [".html", ".css", ".js"];
+const REWRITABLE_EXTENSIONS = ['.html', '.css', '.js'];
 
 function listFiles(rootDir, dir = rootDir, results = []) {
     if (!fs.existsSync(dir)) {
@@ -51,7 +47,7 @@ function listFiles(rootDir, dir = rootDir, results = []) {
         if (entry.isDirectory()) {
             listFiles(rootDir, absolute, results);
         } else {
-            results.push(path.relative(rootDir, absolute).split(path.sep).join("/"));
+            results.push(path.relative(rootDir, absolute).split(path.sep).join('/'));
         }
     }
     return results;
@@ -59,7 +55,7 @@ function listFiles(rootDir, dir = rootDir, results = []) {
 
 function hashFile(absolutePath) {
     const contents = fs.readFileSync(absolutePath);
-    return crypto.createHash("md5").update(contents).digest("hex").slice(0, 10);
+    return crypto.createHash('md5').update(contents).digest('hex').slice(0, 10);
 }
 
 // Insert the hash before the file's extension, e.g. "global.css" -> "global.3f9a1c2b4e.css".
@@ -79,10 +75,10 @@ function hashEligibleFiles(dirs) {
                 continue;
             }
 
-            const oldAbsolute = path.join(absoluteDir, ...relativePath.split("/"));
+            const oldAbsolute = path.join(absoluteDir, ...relativePath.split('/'));
             const hash = hashFile(oldAbsolute);
             const newRelativePath = path.posix.join(path.dirname(relativePath), hashedName(path.basename(relativePath), hash));
-            const newAbsolute = path.join(absoluteDir, ...newRelativePath.split("/"));
+            const newAbsolute = path.join(absoluteDir, ...newRelativePath.split('/'));
 
             fs.renameSync(oldAbsolute, newAbsolute);
             renames.set(`/${dir}/${relativePath}`, `/${dir}/${newRelativePath}`);
@@ -128,7 +124,7 @@ function buildHeadersFile(leafRenames, leafDirs, textDirs) {
                 continue;
             }
             const relative = oldPath.slice(prefix.length);
-            const slash = relative.indexOf("/");
+            const slash = relative.indexOf('/');
             if (slash === -1) {
                 hasLooseFiles = true;
             } else {
@@ -165,7 +161,7 @@ function buildHeadersFile(leafRenames, leafDirs, textDirs) {
 # top-level directory can never both match the same path.
 `;
 
-    const body = rules.map((rule) => `${rule}\n  Cache-Control: public, max-age=31536000, immutable\n`).join("\n");
+    const body = rules.map((rule) => `${rule}\n  Cache-Control: public, max-age=31536000, immutable\n`).join('\n');
 
     return `${header}\n${body}`;
 }
@@ -177,8 +173,8 @@ function rewriteReferences(renames, extensions) {
     const targetFiles = listFiles(DIST_DIR).filter((relativePath) => extensions.some((extension) => relativePath.endsWith(extension)));
 
     for (const relativePath of targetFiles) {
-        const absolutePath = path.join(DIST_DIR, ...relativePath.split("/"));
-        let contents = fs.readFileSync(absolutePath, "utf8");
+        const absolutePath = path.join(DIST_DIR, ...relativePath.split('/'));
+        let contents = fs.readFileSync(absolutePath, 'utf8');
         let changed = false;
 
         for (const oldPath of orderedPaths) {
@@ -196,13 +192,13 @@ function rewriteReferences(renames, extensions) {
 
 function run() {
     if (!fs.existsSync(DIST_DIR)) {
-        throw new Error("dist/ does not exist — run the rest of the build first.");
+        throw new Error('dist/ does not exist — run the rest of the build first.');
     }
 
     // 1 & 2: hash the leaves, then fix up the CSS/JS that may point at them, before those files
     // are themselves hashed.
     const leafRenames = hashEligibleFiles(HASHED_LEAF_DIRS);
-    rewriteReferences(leafRenames, [".css", ".js"]);
+    rewriteReferences(leafRenames, ['.css', '.js']);
 
     // 3: hash the CSS and JS now their contents are final.
     const textRenames = hashEligibleFiles(HASHED_TEXT_DIRS);

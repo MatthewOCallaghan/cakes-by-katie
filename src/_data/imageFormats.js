@@ -1,6 +1,6 @@
-const { FORMATS } = require("../../utils/images");
+const { FORMATS } = require('../../utils/images');
 
 module.exports = () => ({
     formats: FORMATS,
-    defaultFormat: FORMATS[FORMATS.length - 1]
+    defaultFormat: FORMATS[FORMATS.length - 1],
 });

@@ -1,1 +1,1 @@
-module.exports = require("../../scripts/portfolio-data");
+module.exports = require('../../scripts/portfolio-data');

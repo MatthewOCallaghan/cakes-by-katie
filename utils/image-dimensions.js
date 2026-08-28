@@ -47,5 +47,5 @@ const getImageDimensions = (pathWithoutExtension) => {
 };
 
 module.exports = {
-    getImageDimensions
+    getImageDimensions,
 };

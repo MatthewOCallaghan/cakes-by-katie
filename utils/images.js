@@ -1,5 +1,5 @@
 // Get relevant widths array from WIDTHS for this image
-const getWidthsArrayForImagePath = path => {
+const getWidthsArrayForImagePath = (path) => {
     let imagePath = path.split('/images');
     imagePath = imagePath[imagePath.length - 1];
     for (const folder of Object.keys(WIDTHS)) {
@@ -8,14 +8,13 @@ const getWidthsArrayForImagePath = path => {
         }
     }
     return WIDTHS.default;
-}
+};
 
 // Get srcset attribute for <source> element
 const getSrcsetAttribute = (pathWithoutExtension, extension) => {
     const sizes = getWidthsArrayForImagePath(pathWithoutExtension);
-    return sizes.map(size => `${pathWithoutExtension}-${size}.${extension} ${size}w`).join(', ');
-}
-
+    return sizes.map((size) => `${pathWithoutExtension}-${size}.${extension} ${size}w`).join(', ');
+};
 
 /*
     Get sizes attribute for <source> element.
@@ -36,7 +35,6 @@ const getSrcsetAttribute = (pathWithoutExtension, extension) => {
     Alternatively if recommendedSizes is a string it represents just the `any` value.
 */
 const getSizesAttribute = (recommendedSizes) => {
-
     if (!recommendedSizes) {
         // Max image width is screen width
         return '100vw';
@@ -61,10 +59,10 @@ const getSizesAttribute = (recommendedSizes) => {
     mediaConditions.push(recommendedSizes.any ?? '100vw');
 
     return mediaConditions.join(', ');
-}
+};
 
 // These should go from smallest file size to largest
-const FORMATS = ["avif", "webp"];
+const FORMATS = ['avif', 'webp'];
 
 // Get the src of the largest image in the most widely supported format (used as the fallback `<img src>` for browsers that don't use `<picture>`/`<source>`)
 const getDefaultSrc = (pathWithoutExtension) => {
@@ -72,13 +70,13 @@ const getDefaultSrc = (pathWithoutExtension) => {
     const largestWidth = widths[widths.length - 1];
     const defaultFormat = FORMATS[FORMATS.length - 1];
     return `${pathWithoutExtension}-${largestWidth}.${defaultFormat}`;
-}
+};
 
 const WIDTHS = {
     default: [200, 400, 700, 1920],
     '/portfolio': [150, 300, 700, 1000, 1920],
     '/backgrounds': [640, 768, 1024, 1366, 1600, 1920],
-    '/choices': [150, 300]
+    '/choices': [150, 300],
 };
 
 module.exports = {
@@ -87,5 +85,5 @@ module.exports = {
     getSizesAttribute,
     FORMATS,
     getDefaultSrc,
-    WIDTHS
+    WIDTHS,
 };

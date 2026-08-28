@@ -1,4 +1,4 @@
-const computePortfolio = require("../../scripts/portfolio-data");
+const computePortfolio = require('../../scripts/portfolio-data');
 
 // Collect testimonials separately to make them easier to process
 module.exports = async () => {

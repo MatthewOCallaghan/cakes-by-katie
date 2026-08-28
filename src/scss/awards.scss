@@ -1,4 +1,4 @@
-$monospace-font: "Roboto Mono", serif;
+$monospace-font: 'Roboto Mono', serif;
 
 p.awards-intro {
     padding: min(40px, 5%) 5%;
@@ -15,8 +15,7 @@ p.awards-intro {
     padding: 0 20px;
 
     .award {
-
-        $gold: #FFB606;
+        $gold: #ffb606;
 
         background: #1d1d1d;
         color: #fff;
@@ -37,7 +36,7 @@ p.awards-intro {
             margin-block-end: 0.5em;
             color: $gold;
         }
-        
+
         h3 {
             font-size: 1em;
             font-family: $monospace-font;
@@ -57,6 +56,8 @@ p.awards-intro {
             color: #cecece;
         }
 
-        box-shadow: 0 0 12px 1px #8a8a8a24, 0px 2px 2px 0px #3e3e3e75;
+        box-shadow:
+            0 0 12px 1px #8a8a8a24,
+            0px 2px 2px 0px #3e3e3e75;
     }
 }

@@ -1,18 +1,18 @@
-const htmlmin = require("html-minifier-terser");
-const { getSrcsetAttribute, getSizesAttribute, getDefaultSrc } = require("./utils/images");
-const { getImageDimensions } = require("./utils/image-dimensions");
+const htmlmin = require('html-minifier-terser');
+const { getSrcsetAttribute, getSizesAttribute, getDefaultSrc } = require('./utils/images');
+const { getImageDimensions } = require('./utils/image-dimensions');
 
 module.exports = function (eleventyConfig) {
-    eleventyConfig.addNunjucksGlobal("createSrcset", getSrcsetAttribute);
-    eleventyConfig.addNunjucksGlobal("getDefaultSrc", getDefaultSrc);
-    eleventyConfig.addNunjucksGlobal("getImageDimensions", getImageDimensions);
-    eleventyConfig.addNunjucksFilter("createSizes", getSizesAttribute);
+    eleventyConfig.addNunjucksGlobal('createSrcset', getSrcsetAttribute);
+    eleventyConfig.addNunjucksGlobal('getDefaultSrc', getDefaultSrc);
+    eleventyConfig.addNunjucksGlobal('getImageDimensions', getImageDimensions);
+    eleventyConfig.addNunjucksFilter('createSizes', getSizesAttribute);
 
-    eleventyConfig.addNunjucksFilter("stringifyElements", (array) => array.map((item) => JSON.stringify(item)));
-    eleventyConfig.addNunjucksFilter("objectToArray", (object) => Object.values(object));
+    eleventyConfig.addNunjucksFilter('stringifyElements', (array) => array.map((item) => JSON.stringify(item)));
+    eleventyConfig.addNunjucksFilter('objectToArray', (object) => Object.values(object));
 
     // Navigation entries -> the shape macros/grid-menu-links.njk wants
-    eleventyConfig.addNunjucksFilter("linkTiles", (links) =>
+    eleventyConfig.addNunjucksFilter('linkTiles', (links) =>
         links.map(({ href, tile }) => ({ href, title: tile.title, imageSrc: tile.image, imageAlt: tile.alt, colour: tile.colour }))
     );
 
@@ -22,7 +22,7 @@ module.exports = function (eleventyConfig) {
     // `count` is desired number of cakes. If not specified, all matching cakes are returned
     // `offset` is index of matching cake to return first (use to avoid duplicate image carousels on same page)
     // `testimonials` is a boolean indicating whether these cakes will be used for testimonials
-    eleventyConfig.addNunjucksFilter("getMatchingCakes", (portfolio, filters, { count, offset = 0, testimonials = false } = {}) => {
+    eleventyConfig.addNunjucksFilter('getMatchingCakes', (portfolio, filters, { count, offset = 0, testimonials = false } = {}) => {
         // Cakes in portfolio that match filters
         const matchingCakes = Object.entries(portfolio).reduce((acc, [key, info]) => {
             for (let filterKey in filters) {
@@ -70,7 +70,7 @@ module.exports = function (eleventyConfig) {
     });
 
     // Get list of flavour names as string (with commas and 'and') where first variant excludes specified diet
-    eleventyConfig.addNunjucksGlobal("getFlavoursWithDietExclusion", (flavours, diet) => {
+    eleventyConfig.addNunjucksGlobal('getFlavoursWithDietExclusion', (flavours, diet) => {
         const matchingFlavours = Object.values(flavours).reduce((acc, { name, variants }) => {
             if (!variants[0].diets.includes(diet)) {
                 acc.push(name);
@@ -79,15 +79,15 @@ module.exports = function (eleventyConfig) {
         }, []);
 
         return matchingFlavours.length > 2
-            ? `${matchingFlavours.slice(0, -1).join(", ")}, and ${matchingFlavours[matchingFlavours.length - 1]}`
-            : matchingFlavours.join(" and ");
+            ? `${matchingFlavours.slice(0, -1).join(', ')}, and ${matchingFlavours[matchingFlavours.length - 1]}`
+            : matchingFlavours.join(' and ');
     });
 
     // Minify the rendered HTML.
     // Runs before scripts/cache-bust.js rewrites asset paths, which is fine: that step does
     // plain string replacement on full paths and doesn't care about the surrounding whitespace.
-    eleventyConfig.addTransform("minify-html", function (content) {
-        if (!this.page.outputPath || !this.page.outputPath.endsWith(".html")) {
+    eleventyConfig.addTransform('minify-html', function (content) {
+        if (!this.page.outputPath || !this.page.outputPath.endsWith('.html')) {
             return content;
         }
 
@@ -102,29 +102,29 @@ module.exports = function (eleventyConfig) {
 
     // Responsive images (AVIF/WebP at multiple widths) are pre-generated and committed to
     // images/ (via `npm run images:add`), not built by Eleventy — this is a straight passthrough copy.
-    eleventyConfig.addPassthroughCopy({ images: "images" });
+    eleventyConfig.addPassthroughCopy({ images: 'images' });
 
-    eleventyConfig.addPassthroughCopy({ "src/videos": "videos" });
-    eleventyConfig.addPassthroughCopy({ "src/pdfs": "pdfs" });
-    eleventyConfig.addPassthroughCopy({ "src/robots.txt": "robots.txt" });
+    eleventyConfig.addPassthroughCopy({ 'src/videos': 'videos' });
+    eleventyConfig.addPassthroughCopy({ 'src/pdfs': 'pdfs' });
+    eleventyConfig.addPassthroughCopy({ 'src/robots.txt': 'robots.txt' });
     // No passthrough for src/js: every entry point is bundled by scripts/build-js.js, which
     // `npm run dev` runs in watch mode and `npm run build` runs minified.
-    eleventyConfig.addPassthroughCopy({ favicon: "." });
+    eleventyConfig.addPassthroughCopy({ favicon: '.' });
 
     // No passthrough for _headers: scripts/cache-bust.js writes dist/_headers itself, once it
     // knows which files it has hashed and can generate cache rules that match exactly.
 
     // Sass isn't part of Eleventy's own build (compiled separately via npm scripts),
     // but watch it here so `npm run dev`'s Eleventy dev server reloads when it changes.
-    eleventyConfig.addWatchTarget("src/scss");
-    eleventyConfig.addWatchTarget("src/js");
+    eleventyConfig.addWatchTarget('src/scss');
+    eleventyConfig.addWatchTarget('src/js');
 
     return {
         dir: {
-            input: "src/pages",
-            includes: "../_includes",
-            data: "../_data",
-            output: "dist",
+            input: 'src/pages',
+            includes: '../_includes',
+            data: '../_data',
+            output: 'dist',
         },
     };
 };
