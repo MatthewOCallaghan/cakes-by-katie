@@ -299,11 +299,6 @@
                     )
                 }}
                 <div>
-                    {# h2, not h3. This banner and the footer column headings below are the only
-                    headings layout.njk contributes, and they sit directly under the page's h1 —
-                    so on any page whose own content has no h2 (404, occasions, portfolio,
-                    testimonials, wedding favours) an h3 here skipped a level. Sizes are set
-                    explicitly in the stylesheet, so this is a semantic change only. #}
                     <h2>{{ cta.text | safe if cta.text else "Get a quote for your occasion!" }}</h2>
                     <a
                         class="button button-white"
