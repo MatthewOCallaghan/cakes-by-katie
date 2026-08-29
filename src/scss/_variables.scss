@@ -1,5 +1,8 @@
 $pink: #f7cac9;
 $black: #000;
+// Secondary text. Dark enough to clear WCAG AA (4.5:1) on both grounds it is used
+// over — white (7.00:1) and $pink (4.75:1) — so callers don't have to know which.
+$muted-text: #595959;
 $handwriting: 'Licorice', sans-serif;
 $regular-font: 'Open Sans', sans-serif;
 $thin-font: 'Lato', sans-serif;
