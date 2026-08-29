@@ -31,11 +31,34 @@ christmasScripts:
     </video>
 
     <script>
-        {# Only the video matching the current orientation gets a src, so the browser never fetches both #}
+        {# Only the video matching the current orientation gets a src, so the browser never fetches both.
+
+        The hero videos are 2.4 MB (portrait) and 3.2 MB (landscape). This script used to set the
+        src and call load() the moment the parser reached it, which put a multi-megabyte download
+        in direct competition with the poster behind it — the LCP element — on whatever bandwidth
+        a phone has. Most first-time visitors had left or scrolled past long before it was
+        buffered.
+
+        Two changes. It waits for the load event, so the video asks for bandwidth only once the
+        page has what it needs to paint. And it doesn't start at all when the visitor has asked
+        for reduced motion, or when the browser reports a metered or slow connection — in those
+        cases the poster simply stays, which is a perfectly good hero. #}
         (function () {
             var mql = window.matchMedia("(orientation: landscape)");
             var portrait = document.getElementById("portrait-video");
             var landscape = document.getElementById("landscape-video");
+
+            {# A full-screen autoplaying video is exactly what this preference is for. #}
+            if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+                return;
+            }
+
+            {# Save-Data, or a connection the browser rates 2G-ish. Absent in Safari and Firefox,
+            in which case we carry on as before. #}
+            var connection = navigator.connection;
+            if (connection && (connection.saveData || /^(slow-)?2g$/.test(connection.effectiveType))) {
+                return;
+            }
 
             function activate(video) {
                 var source = video.querySelector("source");
@@ -47,10 +70,18 @@ christmasScripts:
                 video.play().catch(function () {});
             }
 
-            activate(mql.matches ? landscape : portrait);
-            mql.addEventListener("change", function (e) {
-                activate(e.matches ? landscape : portrait);
-            });
+            function start() {
+                activate(mql.matches ? landscape : portrait);
+                mql.addEventListener("change", function (e) {
+                    activate(e.matches ? landscape : portrait);
+                });
+            }
+
+            if (document.readyState === "complete") {
+                start();
+            } else {
+                window.addEventListener("load", start, { once: true });
+            }
         })();
     </script>
 
