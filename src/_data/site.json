@@ -2,5 +2,12 @@
     "christmas": {
         "enabled": false,
         "showPrices": false
+    },
+    "name": "Cakes by Katie",
+    "share": {
+        "image": "/images/portfolio/square/Petals-and-Promises-square-1000.webp",
+        "width": 1000,
+        "height": 1000,
+        "alt": "A tiered wedding cake decorated with fresh flowers"
     }
 }

@@ -10,4 +10,8 @@ const canonicalPath = (url) => url.replace(/\/index\.html$/, '/').replace(/\.htm
 
 const canonicalUrl = (url) => `${BASE_URL}${canonicalPath(url)}`;
 
-module.exports = { BASE_URL, canonicalPath, canonicalUrl };
+// Absolute URL for a root-relative asset path. Open Graph and Twitter Card tags are read by
+// crawlers with no page context, so they can't take a relative href.
+const absoluteUrl = (path) => `${BASE_URL}${path}`;
+
+module.exports = { BASE_URL, canonicalPath, canonicalUrl, absoluteUrl };

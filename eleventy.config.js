@@ -1,7 +1,7 @@
 const htmlmin = require('html-minifier-terser');
 const { getSrcsetAttribute, getSizesAttribute, getDefaultSrc } = require('./utils/images');
 const { getImageDimensions } = require('./utils/image-dimensions');
-const { canonicalUrl } = require('./utils/urls');
+const { canonicalUrl, absoluteUrl } = require('./utils/urls');
 
 module.exports = function (eleventyConfig) {
     eleventyConfig.addNunjucksGlobal('createSrcset', getSrcsetAttribute);
@@ -9,6 +9,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addNunjucksGlobal('getImageDimensions', getImageDimensions);
     eleventyConfig.addNunjucksFilter('createSizes', getSizesAttribute);
     eleventyConfig.addNunjucksFilter('canonicalUrl', canonicalUrl);
+    eleventyConfig.addNunjucksFilter('absoluteUrl', absoluteUrl);
 
     eleventyConfig.addNunjucksFilter('stringifyElements', (array) => array.map((item) => JSON.stringify(item)));
     eleventyConfig.addNunjucksFilter('objectToArray', (object) => Object.values(object));
