@@ -31,7 +31,12 @@ const HEADERS_PATH = path.join(DIST_DIR, '_headers');
 //
 // Split into the assets nothing else in dist/ links out of, and the text assets that can
 // themselves contain references — see the ordering note above.
-const HASHED_LEAF_DIRS = [{ dir: 'images', exclude: 'portfolio' }, { dir: 'videos', exclude: 'portfolio' }, { dir: 'pdfs' }];
+const HASHED_LEAF_DIRS = [
+    { dir: 'images', exclude: 'portfolio' },
+    { dir: 'videos', exclude: 'portfolio' },
+    { dir: 'pdfs' },
+    { dir: 'fonts' },
+];
 
 const HASHED_TEXT_DIRS = [{ dir: 'css' }, { dir: 'js' }];
 
