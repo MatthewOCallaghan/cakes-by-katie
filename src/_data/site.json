@@ -5,7 +5,7 @@
     },
     "business": {
         "name": "Cakes by Katie",
-        "description": "Bespoke wedding cakes, celebration cakes and cupcakes, handmade in Thatcham, West Berkshire.",
+        "description": "Bespoke wedding cakes, celebration cakes, cupcakes and wedding favours, handmade in Thatcham, West Berkshire.",
         "telephone": "+447436120654",
         "email": "katie@cakesbykatie.co.uk",
         "addressLocality": "Thatcham",
@@ -15,7 +15,9 @@
             "Thatcham",
             "Newbury",
             "Reading",
-            "West Berkshire"
+            "Berkshire",
+            "Hampshire",
+            "Oxfordshire"
         ],
         "priceRange": "££",
         "logo": "/android-chrome-512x512.png",
