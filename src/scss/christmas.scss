@@ -11,7 +11,10 @@ section.intro {
         text-align: center;
 
         div.cta {
-            h3 {
+            h2 {
+                // Semantically needs h2 as it sits directly under the page's h1, but h3
+                // size is more appropriate for the design.
+                font-size: 2.34em;
                 margin-top: 0;
             }
 
