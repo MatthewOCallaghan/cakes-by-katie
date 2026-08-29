@@ -1013,6 +1013,16 @@ footer {
         list-style-type: none;
     }
 
+    // Footer links sit inside <small>, which leaves them about 15px tall with 13px between
+    // rows — well under the 24x24 minimum a pointer target needs, and the one thing failing
+    // Lighthouse's target-size audit on every page. Pad the anchors out rather than enlarging
+    // the type, so the footer keeps its look and just gets easier to tap.
+    ul a,
+    .contact-grid a {
+        display: inline-block;
+        padding: 5px 6px;
+    }
+
     .contact-grid {
         display: grid;
         grid-template-columns: min-content min-content;
