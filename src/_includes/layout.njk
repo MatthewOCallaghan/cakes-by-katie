@@ -67,7 +67,7 @@
         {# Images the browser would otherwise discover late — an LCP element behind a <video>
         poster attribute, say, or one a script decides on. #}
         {% for image in preloadImages or [] %}
-            <link rel="preload" as="image" href="{{ image.href }}"{% if image.media %} media="{{ image.media }}"{% endif %}>
+            <link rel="preload" as="image" href="{{ image.href }}" fetchpriority="{{ image.fetchpriority or "high" }}"{% if image.media %} media="{{ image.media }}"{% endif %}>
         {% endfor %}
         {% for family in fonts or [] %}
             <link href="https://fonts.googleapis.com/css2?family={{ family }}&display=swap" rel="stylesheet">
