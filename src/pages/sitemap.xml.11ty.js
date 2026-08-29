@@ -1,6 +1,5 @@
 const { lastModified } = require('../../utils/last-modified');
-
-const BASE_URL = 'https://www.cakesbykatie.co.uk';
+const { canonicalUrl } = require('../../utils/urls');
 
 // Generated from collections.all rather than hand-maintained, so it stays correct as pages
 // (e.g. the per-venue wedding pages) are added or removed.
@@ -18,12 +17,11 @@ module.exports = class {
     render(data) {
         const urls = data.collections.all
             .map((item) => {
-                const cleanPath = item.url.replace(/\/index\.html$/, '/').replace(/\.html$/, '');
                 // Omitted rather than guessed when git can't date the source — see
                 // utils/last-modified.js.
                 const modified = lastModified(item.inputPath);
                 const lastmod = modified ? `\n        <lastmod>${modified}</lastmod>` : '';
-                return `    <url>\n        <loc>${BASE_URL}${cleanPath}</loc>${lastmod}\n    </url>`;
+                return `    <url>\n        <loc>${canonicalUrl(item.url)}</loc>${lastmod}\n    </url>`;
             })
             .join('\n');
 
