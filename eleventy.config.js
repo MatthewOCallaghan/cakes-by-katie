@@ -2,6 +2,7 @@ const htmlmin = require('html-minifier-terser');
 const { getSrcsetAttribute, getSizesAttribute, getDefaultSrc } = require('./utils/images');
 const { getImageDimensions } = require('./utils/image-dimensions');
 const { BASE_URL, canonicalUrl, absoluteUrl } = require('./utils/urls');
+const { breadcrumbTrail } = require('./utils/breadcrumbs');
 
 module.exports = function (eleventyConfig) {
     eleventyConfig.addNunjucksGlobal('createSrcset', getSrcsetAttribute);
@@ -11,6 +12,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addNunjucksFilter('canonicalUrl', canonicalUrl);
     eleventyConfig.addNunjucksFilter('absoluteUrl', absoluteUrl);
     eleventyConfig.addNunjucksGlobal('baseUrl', BASE_URL);
+    eleventyConfig.addNunjucksGlobal('breadcrumbTrail', breadcrumbTrail);
 
     eleventyConfig.addNunjucksFilter('stringifyElements', (array) => array.map((item) => JSON.stringify(item)));
     eleventyConfig.addNunjucksFilter('objectToArray', (object) => Object.values(object));

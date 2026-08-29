@@ -177,6 +177,30 @@
             }
         </script>
 
+        {# BreadcrumbList for the two-level sections — /products, /occasions, /delivery. It tells
+        Google the page's place in the site, which is what turns a bare URL into a
+        "cakesbykatie.co.uk › Delivery › Wasing Park" line in the results. Derived from the URL
+        and the section's own index page rather than a hand-kept map. #}
+        {% set trail = breadcrumbTrail(page.url, collections.all, site.business.name if site.business else "Cakes by Katie") %}
+        {% if trail.length %}
+            <script type="application/ld+json">
+                {
+                    "@context": "https://schema.org",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {% for crumb in trail %}
+                            {
+                                "@type": "ListItem",
+                                "position": {{ loop.index }},
+                                "name": "{{ crumb.name }}",
+                                "item": "{{ crumb.url }}"
+                            }{{ "," if not loop.last }}
+                        {% endfor %}
+                    ]
+                }
+            </script>
+        {% endif %}
+
         {# Posthog #}
         <script>
             if (!/localhost/.test(window.location.pathname)) {
