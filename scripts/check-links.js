@@ -1,13 +1,16 @@
 const fs = require('fs');
 const path = require('path');
+const { BASE_URL } = require('../utils/urls');
 
 // Walks the built site and checks that every root-relative reference resolves to a file that
 // actually exists in dist/. This is the cheapest guard against the failure modes this build
 // invites: a mistyped `pages` key, an image variant that was never generated, a cache-busted
 // path that didn't get rewritten, a page renamed without updating the links to it.
 //
-// Only internal references are checked — external URLs, mailto:, tel:, and fragments are the
-// author's problem, not the build's.
+// Absolute URLs onto our own origin (BASE_URL) are checked too, by their path — the Open Graph
+// and canonical tags emit these via the absoluteUrl/canonicalUrl filters, and a share image
+// that was moved or deleted should fail the build like any other missing asset. Genuinely
+// external URLs, mailto:, tel:, and fragments are the author's problem, not the build's.
 const DIST_DIR = path.join(__dirname, '..', 'dist');
 
 // Attributes that can hold a URL we care about. `srcset` holds a comma-separated list of
@@ -45,14 +48,24 @@ function extractReferences(html) {
     return references;
 }
 
+// The root-relative path a reference should be checked against, or null if it's not ours to
+// check (external origin, protocol-relative, mailto:, tel:, bare fragment, relative path). An
+// absolute URL onto BASE_URL is reduced to its path so it's verified like any local link.
+function internalPath(reference) {
+    let ref = reference;
+    if (ref.startsWith(BASE_URL)) {
+        ref = ref.slice(BASE_URL.length) || '/';
+    }
+    if (!ref.startsWith('/') || ref.startsWith('//')) {
+        return null;
+    }
+    return ref;
+}
+
 // Pages serves `/about` from `about.html` and `/foo/` from `foo/index.html`, so a reference is
 // fine if any of those spellings exists on disk.
 function resolves(reference) {
     const withoutQuery = reference.split(/[?#]/)[0];
-    if (!withoutQuery.startsWith('/')) {
-        return true;
-    }
-
     const relative = withoutQuery.slice(1);
     const candidates = [relative, `${relative}.html`, path.posix.join(relative, 'index.html')];
     return candidates.some((candidate) => candidate !== '' && fs.existsSync(path.join(DIST_DIR, ...candidate.split('/'))));
@@ -70,11 +83,12 @@ function run() {
     for (const file of listHtmlFiles(DIST_DIR)) {
         const page = path.relative(DIST_DIR, file).split(path.sep).join('/');
         for (const reference of extractReferences(fs.readFileSync(file, 'utf8'))) {
-            if (!reference.startsWith('/')) {
+            const target = internalPath(reference);
+            if (target === null) {
                 continue;
             }
             checked++;
-            if (!resolves(reference)) {
+            if (!resolves(target)) {
                 broken.push({ page, reference });
             }
         }
