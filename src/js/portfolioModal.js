@@ -102,7 +102,7 @@ const openModal = ({ target }) => {
     // Must be done after it is made visible
     scrollableContainer.scrollTop = 0;
 
-    gtag?.('event', 'open_portfolio_modal', {
+    window.posthog?.capture('open_portfolio_modal', {
         cake: name,
     });
 };

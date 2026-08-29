@@ -130,20 +130,6 @@
         {# Set colour of top bar on iPhone next to notch #}
         <meta name="theme-color" content="#000"/>
 
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-QMJVSRWWTY"></script>
-        <script>
-            if (/localhost/.test(window.location.pathname)) {
-                // Disable analytics in development
-                window['ga-disable-G-QMJVSRWWTY'] = true;
-            }
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-QMJVSRWWTY');
-        </script>
-
         {# Every value comes from src/_data/site.json. #}
         <script type="application/ld+json">
             {
