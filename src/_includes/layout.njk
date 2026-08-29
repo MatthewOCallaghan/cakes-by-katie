@@ -65,13 +65,7 @@
         {% endif %}
 
         {# Images the browser would otherwise discover late — an LCP element behind a <video>
-        poster attribute, say, or one a script decides on.
-
-        `fetchpriority` defaults to high because that is what this list is for. Chrome gives a
-        preloaded image Low priority unless told otherwise, so without it the preload only fixes
-        *when* the request starts, not how it is queued — which is why Lighthouse's LCP request
-        discovery audit stayed red with the preload in place. An entry can still set
-        `fetchpriority: auto` if it is a genuine below-the-fold preload. #}
+        poster attribute, say, or one a script decides on. #}
         {% for image in preloadImages or [] %}
             <link rel="preload" as="image" href="{{ image.href }}" fetchpriority="{{ image.fetchpriority or "high" }}"{% if image.media %} media="{{ image.media }}"{% endif %}>
         {% endfor %}
