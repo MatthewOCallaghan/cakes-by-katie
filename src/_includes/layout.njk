@@ -86,9 +86,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         {% if description %}<meta name="description" content="{{ description }}">{% endif %}
 
-        {# Open Graph / Twitter Card. Without these, a link shared on Facebook, WhatsApp or
-        Instagram — the three channels in our own contact block — renders as a bare URL with no
-        picture, which is a poor showing for a business that sells on photographs.
+        {# Open Graph / Twitter Card for use in links shared on Facebook, WhatsApp,
+        Instagram, etc.
+
+        The default (site.share) is a square portfolio crop: square survives the centre-crop
+        every platform applies, and portfolio images aren't content-hashed, so replacing the
+        photo keeps the same URL (at the cost of crawler caches lagging a swap).
 
         The image is a WebP, because WebP and AVIF are the only formats the build produces. The
         major crawlers read WebP, but if a JPEG turns out to be needed for a specific platform,
