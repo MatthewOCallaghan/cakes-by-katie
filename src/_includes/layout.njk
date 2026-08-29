@@ -144,12 +144,36 @@
             gtag('config', 'G-QMJVSRWWTY');
         </script>
 
+        {# Every value comes from src/_data/site.json. #}
         <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
-                "@type": "Organization",
-                "url": "https://www.cakesbykatie.co.uk",
-                "logo": "https://www.cakesbykatie.co.uk/logo-with-background.svg"
+                "@type": "Bakery",
+                "@id": "{{ baseUrl }}/#business",
+                "name": "{{ site.business.name }}",
+                "description": "{{ site.business.description }}",
+                "url": "{{ baseUrl }}/",
+                "logo": "{{ site.business.logo | absoluteUrl }}",
+                "image": "{{ site.business.image | absoluteUrl }}",
+                "telephone": "{{ site.business.telephone }}",
+                "email": "{{ site.business.email }}",
+                "priceRange": "{{ site.business.priceRange }}",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "{{ site.business.addressLocality }}",
+                    "addressRegion": "{{ site.business.addressRegion }}",
+                    "addressCountry": "{{ site.business.addressCountry }}"
+                },
+                "areaServed": [
+                    {% for place in site.business.areaServed %}
+                        { "@type": "Place", "name": "{{ place }}" }{{ "," if not loop.last }}
+                    {% endfor %}
+                ],
+                "sameAs": [
+                    {% for profile in site.business.sameAs %}
+                        "{{ profile }}"{{ "," if not loop.last }}
+                    {% endfor %}
+                ]
             }
         </script>
 

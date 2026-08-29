@@ -9,5 +9,29 @@
         "width": 1000,
         "height": 1000,
         "alt": "A tiered wedding cake decorated with fresh flowers"
+    },
+    "business": {
+        "name": "Cakes by Katie",
+        "description": "Bespoke wedding cakes, celebration cakes, cupcakes and wedding favours, handmade in Thatcham, West Berkshire.",
+        "telephone": "+447436120654",
+        "email": "katie@cakesbykatie.co.uk",
+        "addressLocality": "Thatcham",
+        "addressRegion": "West Berkshire",
+        "addressCountry": "GB",
+        "areaServed": [
+            "Thatcham",
+            "Newbury",
+            "Reading",
+            "Berkshire",
+            "Hampshire",
+            "Oxfordshire"
+        ],
+        "priceRange": "££",
+        "logo": "/android-chrome-512x512.png",
+        "image": "/images/landing-poster.webp",
+        "sameAs": [
+            "https://www.instagram.com/cakesbykatieoc",
+            "https://www.facebook.com/cakesbykatieoc"
+        ]
     }
 }
