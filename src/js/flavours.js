@@ -13,15 +13,14 @@ const groupsContainer = document.querySelector('.flavours-groups-container');
 
 // Flavours and their variants
 const groupContainers = document.querySelectorAll('.flavour-group');
-const groups = [...groupContainers].map(groupDiv => {
-    
+const groups = [...groupContainers].map((groupDiv) => {
     const flavours = groupDiv.querySelectorAll('.flavour');
     return {
         element: groupDiv,
-        flavours: [...flavours].map(flavours => ({
+        flavours: [...flavours].map((flavours) => ({
             element: flavours,
-            variants: flavours.querySelectorAll('.variant')
-        }))
+            variants: flavours.querySelectorAll('.variant'),
+        })),
     };
 });
 
@@ -36,9 +35,8 @@ const FLAVOUR_VALID_CLASS = 'flavour-valid';
 const VARIANT_VALID_CLASS = 'variant-valid';
 
 // Event listeners for dietary filters which update visible flavours and variants
-dietaryFilters.forEach(filter => {
+dietaryFilters.forEach((filter) => {
     filter.onchange = () => {
-
         // Update `selectedDiets` array
         if (filter.checked && !selectedDiets.includes(filter.value)) {
             // Diet has just been selected
@@ -58,24 +56,22 @@ dietaryFilters.forEach(filter => {
 
         // Track flavour count for text
         let validFlavourCount = 0;
-        
+
         // Track flavours with nuts/soya for allergen text
         let flavoursWithNuts = [];
         let flavoursWithSoya = [];
 
         // Update groups/flavours/variants visibility
         groups.forEach(({ element: groupElement, flavours }) => {
-
             // Does this group have at least one valid flavour?
             let groupHasValidFlavours = false;
 
             flavours.forEach(({ element: flavourElement, variants }) => {
-
                 // Is there at least one valid variant for this flavour?
                 let flavourValid = false;
 
-                variants.forEach(variant => {
-                    const variantDiets = variant.dataset.diets.split(";");
+                variants.forEach((variant) => {
+                    const variantDiets = variant.dataset.diets.split(';');
 
                     let variantValid = true;
                     for (const diet of selectedDiets) {
@@ -101,9 +97,9 @@ dietaryFilters.forEach(filter => {
                                 // Flavour contains soya
                                 flavoursWithSoya.push(flavourElement.getElementsByTagName('h3')[0].textContent);
                             }
-                        }                        
+                        }
                     } else {
-                        variant.classList.remove(VARIANT_VALID_CLASS); 
+                        variant.classList.remove(VARIANT_VALID_CLASS);
                     }
                 });
 
@@ -127,12 +123,16 @@ dietaryFilters.forEach(filter => {
             }
         });
 
-
         // Update flavours count text
-        const selectedDietsLabels = selectedDiets.map(diet => `<span>${document.querySelector(`${dietaryFilterSelector}[value="${diet}"]`).nextElementSibling.textContent}</span>`);
-        const selectedDietsString = selectedDiets.length > 0 ? ` which ${validFlavourCount === 1 ? 'is' : 'are'} ${joinTextList(selectedDietsLabels)}` : '';
-        flavoursCountText.innerHTML = validFlavourCount === 0 ? `There are no flavours ${selectedDietsString}.` : `Showing ${validFlavourCount} flavour${validFlavourCount !== 1 ? 's' : ''}${selectedDietsString}...`;
-
+        const selectedDietsLabels = selectedDiets.map(
+            (diet) => `<span>${document.querySelector(`${dietaryFilterSelector}[value="${diet}"]`).nextElementSibling.textContent}</span>`
+        );
+        const selectedDietsString =
+            selectedDiets.length > 0 ? ` which ${validFlavourCount === 1 ? 'is' : 'are'} ${joinTextList(selectedDietsLabels)}` : '';
+        flavoursCountText.innerHTML =
+            validFlavourCount === 0
+                ? `There are no flavours ${selectedDietsString}.`
+                : `Showing ${validFlavourCount} flavour${validFlavourCount !== 1 ? 's' : ''}${selectedDietsString}...`;
 
         // Update allergen text
 
@@ -175,4 +175,4 @@ dietaryFilters.forEach(filter => {
 // Join list with commas and "and"
 const joinTextList = (items) => {
     return items.length > 2 ? `${items.slice(0, -1).join(', ')}, and ${items[items.length - 1]}` : items.join(' and ');
-}
+};

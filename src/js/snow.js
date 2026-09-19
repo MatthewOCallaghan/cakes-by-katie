@@ -1,15 +1,15 @@
-tsParticles.load("snow-particles", {
-    preset: "snow",
+tsParticles.load('snow-particles', {
+    preset: 'snow',
     background: {
-        color: 'none'
+        color: 'none',
     },
     fpsLimit: 25,
     particles: {
         move: {
-            speed: 1
-        }
+            speed: 1,
+        },
     },
     fullScreen: {
-        enable: false
-    }
+        enable: false,
+    },
 });

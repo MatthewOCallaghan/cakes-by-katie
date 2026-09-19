@@ -1,60 +1,25 @@
-{% set page = "products" %}
-{% extends "layout.njk" %}
+---
+layout: layout.njk
+title: Products | Cakes by Katie
+description: I'm a cake maker in Thatcham, West Berkshire, near Newbury, offering high quality bespoke celebration cakes, cupcakes, wedding favours, cake jars, and other products.
+heading:
+  text: Products
+  image:
+    path: backgrounds/gift-bags
+    alt: Gift bags background
+---
+<section class="intro">
+    <div class="intro-text">
+        <p>I offer cakes for all occasions. Celebration cakes are the perfect centrepiece to any event, whether you're looking for a memorable show-stopper or an unforgettable gift for someone special. If you're going through the exciting time of wedding planning, I'd love to discuss your dream cake with you, as well as the wedding favours I can provide for your special day. And of course cupcakes can complement any celebration or be a lovely gift on their own.</p>
+        <p>If you have something in mind that I haven't mentioned, please feel free to get in touch!</p>
+    </div>
+</section>
 
-{% block main %}
-
-    <section class="intro">
-        <div class="intro-text">
-            <p>I offer cakes for all occasions. Celebration cakes are the perfect centrepiece to any event, whether you're looking for a memorable show-stopper or an unforgettable gift for someone special. If you're going through the exciting time of wedding planning, I'd love to discuss your dream cake with you, as well as the wedding favours I can provide for your special day. And of course cupcakes can complement any celebration or be a lovely gift on their own.</p>
-            <p>If you have something in mind that I haven't mentioned, please feel free to get in touch!</p>
-        </div>
-    </section>
-
-    {% from "macros/grid-menu-links.njk" import gridMenuLinks with context %}
-    {{
-        gridMenuLinks(
-            [
-                {
-                    href: '/products/wedding-cakes',
-                    title: 'Wedding Cakes',
-                    imageSrc: 'cake-cutouts/wedding.png',
-                    imageAlt: 'Wedding cake',
-                    colour: 'linear-gradient(135deg, ' + products.weddingCakes.colours.dark + ', ' + products.weddingCakes.colours.light + ')'
-                },
-                {
-                    href: '/products/celebration-cakes',
-                    title: 'Celebration Cakes',
-                    imageSrc: 'cake-cutouts/parker-penguin.png',
-                    imageAlt: 'Parker penguin birthday cake',
-                    colour: 'linear-gradient(135deg, ' + products.celebrationCakes.colours.dark + ', ' + products.celebrationCakes.colours.light + ')'
-                },
-                {
-                    href: '/products/cupcakes',
-                    title: 'Cupcakes',
-                    imageSrc: 'cake-cutouts/rose-mix-triple.png',
-                    imageAlt: 'Rose mix cupcakes',
-                    colour: 'linear-gradient(135deg, ' + products.cupcakes.colours.dark + ', ' + products.cupcakes.colours.light + ')'
-                },
-                {
-                    href: '/products/wedding-favours',
-                    title: 'Wedding favours',
-                    imageSrc: 'wedding-favours/cake-jar-cutout.png',
-                    imageAlt: 'Cake jar wedding favour',
-                    colour: 'linear-gradient(135deg, ' + products.weddingFavours.colours.dark + ', ' + products.weddingFavours.colours.light + ')'
-                }
-            ],
-            "What are you looking for?",
-            multiples=2
-        )
-    }}
-
-    {#
-                {
-                    href: '/products/gifts',
-                    title: 'Gifts',
-                    imageSrc: 'cake-cutouts/corporate-cupcakes.png',
-                    imageAlt: 'Corporate cupcakes',
-                    colour: '#85ca5d'
-                } #}
-
-{% endblock %}
+{% from "macros/grid-menu-links.njk" import gridMenuLinks with context %}
+{{
+    gridMenuLinks(
+        navigation.listedProducts | linkTiles,
+        "What are you looking for?",
+        multiples=2
+    )
+}}

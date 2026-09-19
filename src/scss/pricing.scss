@@ -1,5 +1,5 @@
-@use "variables";
-@use "mixins";
+@use 'variables';
+@use 'mixins';
 
 .intro-text {
     background: #fff;
@@ -50,8 +50,6 @@
             z-index: 1;
         }
 
-        
-
         .image-container {
             position: absolute;
             bottom: -30px;
@@ -96,7 +94,7 @@
                     right: -2%;
                 }
             }
-    
+
             &:nth-child(odd) {
                 .image-container {
                     left: -2%;

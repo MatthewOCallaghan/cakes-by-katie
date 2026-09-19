@@ -1,0 +1,50 @@
+{
+    "celebrationCakes": {
+        "pricing": {
+            "round": {
+                "4": 45,
+                "5": 50,
+                "6": 55,
+                "7": 60,
+                "8": 65,
+                "9": 70,
+                "10": 80,
+                "11": 85,
+                "12": 90
+            },
+            "square": {
+                "4": 50,
+                "5": 55,
+                "6": 60,
+                "7": 65,
+                "8": 70,
+                "9": 75,
+                "10": 85,
+                "11": 90,
+                "12": 95
+            }
+        },
+        "colours": {
+            "light": "var(--colour-blue-light)",
+            "dark": "var(--colour-blue-mid)"
+        }
+    },
+    "weddingCakes": {
+        "colours": {
+            "light": "var(--colour-purple-light)",
+            "dark": "var(--colour-purple-dark)"
+        }
+    },
+    "cupcakes": {
+        "colours": {
+            "light": "var(--colour-yellow-light)",
+            "dark": "var(--colour-yellow-dark)"
+        }
+    },
+    "weddingFavours": {
+        "colours": {
+            "light": "var(--colour-orange-light)",
+            "dark": "var(--colour-orange-dark)"
+        }
+    }
+}
