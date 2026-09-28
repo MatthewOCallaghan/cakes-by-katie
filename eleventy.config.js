@@ -117,6 +117,10 @@ module.exports = function (eleventyConfig) {
     // No passthrough for src/js: every entry point is bundled by scripts/build-js.js, which
     // `npm run dev` runs in watch mode and `npm run build` runs minified.
     eleventyConfig.addPassthroughCopy({ favicon: '.' });
+    // Images for Katie's email signature, which sent emails load from fixed absolute URLs
+    // (www.cakesbykatie.co.uk/email-signature/*.png), so they're never hashed or moved.
+    // signature.html is the source pasted into the mail client, not something to publish.
+    eleventyConfig.addPassthroughCopy({ 'email-signature/*.png': 'email-signature' });
 
     // No passthrough for _headers: scripts/cache-bust.js writes dist/_headers itself, once it
     // knows which files it has hashed and can generate cache rules that match exactly.
