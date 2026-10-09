@@ -99,6 +99,10 @@ Pages is configured to run `npm run build` and publish `dist/`. Cache headers co
 there's no source `_headers` file to keep in sync by hand. Pages serves `404.html` for
 unmatched routes automatically.
 
+Redirects live in `src/_redirects`, copied to `dist/_redirects` as-is. PDFs in `src/pdfs` are
+published under their own filenames, unhashed, because other sites and search engines link to
+them — so to update a price list, replace the file under the same name rather than renaming it.
+
 # Notes for Mum
 
 - Run `npm run dev` in terminal to show live version

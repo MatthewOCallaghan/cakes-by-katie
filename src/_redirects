@@ -1,0 +1,19 @@
+# Cloudflare Pages redirects — https://developers.cloudflare.com/pages/configuration/redirects/
+#
+# PDFs used to be content-hashed like the CSS and JS (8 hex characters under the old Gulp build,
+# 10 under scripts/cache-bust.js), so every PDF URL search engines and other sites picked up had
+# a hash in it, and that URL 404'd as soon as the hash changed. PDFs are now published at their
+# plain filenames, and these send every hashed URL that was ever live to the stable one.
+#
+# Exact paths rather than a splat: `/pdfs/wedding-price-list-2025.*` would also match the stable
+# `/pdfs/wedding-price-list-2025.pdf` and redirect it to itself. Each PDF has only ever had one
+# version in git, so this list is complete; nothing new gets hashed, so it won't grow.
+
+/pdfs/brochure-pricing-pages-for-25-26-27.499ad089.pdf    /pdfs/brochure-pricing-pages-for-25-26-27.pdf    301
+/pdfs/brochure-pricing-pages-for-25-26-27.499ad0897e.pdf  /pdfs/brochure-pricing-pages-for-25-26-27.pdf    301
+/pdfs/wedding-price-list-2024.13509218.pdf                /pdfs/wedding-price-list-2024.pdf                301
+/pdfs/wedding-price-list-2024.135092183a.pdf              /pdfs/wedding-price-list-2024.pdf                301
+/pdfs/wedding-price-list-2025.87ed32ac.pdf                /pdfs/wedding-price-list-2025.pdf                301
+/pdfs/wedding-price-list-2025.87ed32ac4c.pdf              /pdfs/wedding-price-list-2025.pdf                301
+/pdfs/wedding-price-list-2026.4ea3e5c1.pdf                /pdfs/wedding-price-list-2026.pdf                301
+/pdfs/wedding-price-list-2026.4ea3e5c172.pdf              /pdfs/wedding-price-list-2026.pdf                301
