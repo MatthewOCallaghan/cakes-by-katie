@@ -114,6 +114,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy({ 'src/videos': 'videos' });
     eleventyConfig.addPassthroughCopy({ 'src/pdfs': 'pdfs' });
     eleventyConfig.addPassthroughCopy({ 'src/robots.txt': 'robots.txt' });
+    eleventyConfig.addPassthroughCopy({ 'src/_redirects': '_redirects' });
     // No passthrough for src/js: every entry point is bundled by scripts/build-js.js, which
     // `npm run dev` runs in watch mode and `npm run build` runs minified.
     eleventyConfig.addPassthroughCopy({ favicon: '.' });
