@@ -51,7 +51,7 @@
       "questions": [
         {
           "question": "Where are you based?",
-          "answer": "<p>I'm based in Thatcham, West Berkshire, so I am in easy reach of Basingstoke, Newbury, Reading, and their surrounding vicinities such as Basildon, Bucklebury, Coldash, Didcot, Donnington, Hungerford, Pangbourne, Purley, Sulhampstead, Tadley, Theale, Tidmarsh and Tilehurst.</p>"
+          "answer": "<p>I'm based in Thatcham, West Berkshire, so I am in easy reach of Basingstoke, Newbury, Reading, and their surrounding vicinities such as Basildon, Bucklebury, Cold Ash, Didcot, Donnington, Hungerford, Pangbourne, Purley, Sulhampstead, Tadley, Theale, Tidmarsh and Tilehurst.</p>"
         },
         {
           "question": "What occasions do you cater for?",
@@ -3014,7 +3014,7 @@
       "images": [
         "Fresh-Flowers-Winter-Pinks.jpg"
       ],
-      "name": "Fresh FLowers - Winter Pinks",
+      "name": "Fresh Flowers - Winter Pinks",
       "product": "celebration-cake",
       "occasions": [
         "birthday"
@@ -3567,7 +3567,7 @@
         "Icey-Stripes2.jpg",
         "Icey-Stripes.jpg"
       ],
-      "name": "Icey Stripes",
+      "name": "Icy Stripes",
       "product": "celebration-cake",
       "occasions": [
         "birthday"
@@ -3667,7 +3667,7 @@
       "images": [
         "Diamond-Quilted.jpg"
       ],
-      "name": "Diamon Quilted",
+      "name": "Diamond Quilted",
       "product": "celebration-cake",
       "occasions": [
         "anniversary-wedding"
@@ -3903,7 +3903,7 @@
       "images": [
         "Saphire-Present.jpg"
       ],
-      "name": "Saphire Present",
+      "name": "Sapphire Present",
       "product": "celebration-cake",
       "occasions": [
         "anniversary-wedding"
@@ -4028,7 +4028,7 @@
       "images": [
         "Edible-Image-Animal.jpg"
       ],
-      "name": "Edibel Image - Animal",
+      "name": "Edible Image - Animal",
       "product": "celebration-cake",
       "occasions": [
         "birthday"
@@ -4055,7 +4055,7 @@
       "images": [
         "Corporate-Cupcakes-Branding-Colour.jpg"
       ],
-      "name": "Corporate Cucakes - Colour",
+      "name": "Corporate Cupcakes - Colour",
       "product": "cupcakes",
       "occasions": [
         "corporate"
@@ -4283,7 +4283,7 @@
       "images": [
         "Champagne-Bubbles.jpg"
       ],
-      "name": "Champange Bubbles",
+      "name": "Champagne Bubbles",
       "product": "celebration-cake",
       "occasions": [
         "birthday"
@@ -4588,7 +4588,7 @@
         "Corporate-Cupcakes-Anniversaries.jpg",
         "Corporate-Cupcakes-20years.jpg"
       ],
-      "name": "Corporate Cupcakes - Anniversaires",
+      "name": "Corporate Cupcakes - Anniversaries",
       "product": "cupcakes",
       "occasions": [
         "corporate"
@@ -6948,7 +6948,7 @@
         {
           "diets": ["eggless","nut-free"],
           "image": "choices/flavours/triple-choc.jpg",
-          "description": "Egggless White chocolate flavoured sponge filled with milk chocolate spread and dark chocolate buttercream"
+          "description": "Eggless White chocolate flavoured sponge filled with milk chocolate spread and dark chocolate buttercream"
         }
       ],
       "group": "truffle-box"
@@ -7026,7 +7026,7 @@
         {
           "diets": ["dairy-free", "vegan", "eggless", "nut-free"],
           "image": "choices/flavours/van-caramel-df.jpg",
-          "description": "Vanilla sponge filled with salted caramel DF \"buttercream\""
+          "description": "Vegan Vanilla sponge filled with salted caramel DF \"buttercream\""
         }
 
       ],
@@ -7409,22 +7409,22 @@
         {
           "diets": ["nut-free"],
           "image": "choices/flavours/van-oreo.jpg",
-          "description": "Vanilla sponge filled Oreo buttercream"
+          "description": "Vanilla sponge filled with Oreo buttercream"
         },
         {
           "diets": ["dairy-free", "nut-free"],
           "image": "choices/flavours/van-oreo.jpg",
-          "description": "DF Vanilla sponge filled Oreo DF \"buttercream\""
+          "description": "DF Vanilla sponge filled with Oreo DF \"buttercream\""
         },
         { 
           "diets": ["eggless", "nut-free"],
           "image": "choices/flavours/van-oreo.jpg",
-          "description": "Eggless Vanilla sponge filled Oreo buttercream"
+          "description": "Eggless Vanilla sponge filled with Oreo buttercream"
         },
         {
           "diets": ["dairy-free", "vegan", "eggless", "nut-free"],
           "image": "choices/flavours/van-oreo.jpg",
-          "description": "Vegan Vanilla sponge filled Oreo DF \"buttercream\""
+          "description": "Vegan Vanilla sponge filled with Oreo DF \"buttercream\""
         }
       ],
       "group": "the-biscuit-edit"
@@ -7435,22 +7435,22 @@
         {
           "diets": ["nut-free"],
           "image": "choices/flavours/oreo.jpg",
-          "description": "Chocolate sponge filled Oreo buttercream"
+          "description": "Chocolate sponge filled with Oreo buttercream"
         },
         {
           "diets": ["dairy-free", "nut-free"],
           "image": "choices/flavours/oreo.jpg",
-          "description": "DF Chocolate sponge filled Oreo DF \"buttercream\""
+          "description": "DF Chocolate sponge filled with Oreo DF \"buttercream\""
         },
         { 
           "diets": ["eggless", "nut-free"],
           "image": "choices/flavours/oreo.jpg",
-          "description": "Eggless Chocolate sponge filled Oreo buttercream"
+          "description": "Eggless Chocolate sponge filled with Oreo buttercream"
         },
         {
           "diets": ["dairy-free", "vegan", "eggless", "nut-free"],
           "image": "choices/flavours/oreo.jpg",
-          "description": "Vegan Chocolate sponge filled Oreo DF \"buttercream\""
+          "description": "Vegan Chocolate sponge filled with Oreo DF \"buttercream\""
         }
       ],
       "group": "the-biscuit-edit"  
@@ -7673,7 +7673,7 @@
         {
           "diets": [],
           "image": "choices/flavours/nutella.jpg",
-          "description": "Chocolate sponge filled with with Nutella spread and Nutella buttercream"
+          "description": "Chocolate sponge filled with Nutella spread and Nutella buttercream"
         },
         {
           "diets": ["gluten-free"],
@@ -7832,7 +7832,7 @@
         {
           "diets": ["dairy-free", "vegan", "eggless", "nut-free"],
           "image": "choices/flavours/toffee-vegan.jpg",
-          "description": "Vegan Caramel sponge filled with caramel DF \"buttercream\""
+          "description": "Vegan Caramel sponge filled with salted caramel DF \"buttercream\""
         }
       ],
       "group": "indulgence"
@@ -8022,7 +8022,7 @@
         "Seasonal florals or dried flower details for a romantic rustic touch"
       ],
       "flavourTip": {
-        "text": "For a modern twist that also complements the champagne tower, choose from the % collection. For something a little different to match the venue's uniquness, choose from the % collection.",
+        "text": "For a modern twist that also complements the champagne tower, choose from the % collection. For something a little different to match the venue's uniqueness, choose from the % collection.",
         "flavourGroups": ["indulgence", "nutty-delights"]
       },
       "myExperience": "I've created cakes for several weddings at the Post Barn, and it's always such a pleasure to see how beautifully each design stands out in the light-filled space. The team are incredibly professional and helpful, making delivery and setup seamless every time.",
@@ -8077,7 +8077,7 @@
       "cakeStylesIntro": "With its natural woodland charm, Forest Edge Tipis is perfectly suited to cakes that feel organic, relaxed and beautifully in tune with nature.",
       "popularCakeStyles": [
         "Semi-naked or rustic buttercream textured cakes that complement the woodland setting",
-        "Foral designs created with wildflowers, greenery and seasonal blooms",
+        "Floral designs created with wildflowers, greenery and seasonal blooms",
         "Woodland inspired decoration such as dried flowers, berries & pressed flowers/foliage",
         "Natural effects like edible bark or natural tones"
       ],
@@ -8102,7 +8102,7 @@
         "Pastel or neutral colour palettes with touches of gold, pearl or lace texture"
       ],
       "flavourTip": {
-        "text": "To complement the airiness of the Orangery, choose froom the % collection. To match the homely feel of this boutique hotel, choose from %.",
+        "text": "To complement the airiness of the Orangery, choose from the % collection. To match the homely feel of this boutique hotel, choose from %.",
         "flavourGroups": ["fresh-fruity", "the-biscuit-edit"]
       },
       "myExperience": "I've had the pleasure of creating wedding cakes for celebrations at The Retreat at Elcot Park, and it's always a joy to see how perfectly my designs fit this elegant country house. The beautiful interiors provide the perfect backdrop for displaying statement wedding cakes.",
@@ -8169,7 +8169,7 @@
       "occasion": "wedding"
     },
     "easthampsted-park": {
-      "name": "Easthampsted Park",
+      "name": "Easthampstead Park",
       "tagline": "A grand Victorian mansion for elegant, timeless weddings",
       "location": "Wokingham",
       "address": ["Off Peacock Lane, Wokingham, RG40 3DF"],
@@ -8194,7 +8194,7 @@
       "location": "Reading",
       "address": ["Beech Hill Road, Beech Hill, Reading, RG7 2AT"],
       "featuredCakes": ["kirsten-3tier"],
-      "cakeStylesIntro": "The relaxed yet elegant Trunkwell House pairs beautfully with wedding cakes that have soft finishes, gentle detailing and a touch of classic charm - designs that sit perfectly within both the country house and marquee settings.",
+      "cakeStylesIntro": "The relaxed yet elegant Trunkwell House pairs beautifully with wedding cakes that have soft finishes, gentle detailing and a touch of classic charm - designs that sit perfectly within both the country house and marquee settings.",
       "popularCakeStyles": [
         "Classic tiered cakes for a refined look that suits the marquee setting beautifully",
         "Modern rustic touches like subtle texture or foliage accents",
@@ -8237,7 +8237,7 @@
       "cakeStylesIntro": "Stanlake Park pairs wonderfully with cakes that feel organic, textural and stylish - inspired by the natural surroundings, soft tones and wine-country ambience.",
       "popularCakeStyles": [
         "Soft buttercream cakes such as semi-naked, textured or modern rustic finishes",
-        "Vineyard inspired designs featuring foliage, grapes or botanitical flowers",
+        "Vineyard inspired designs featuring foliage, grapes or botanical flowers",
         "Romantic floral arrangements that echo the estate's gardens",
         "Elegant neutrals - ivory, soft blush, stone and muted greens"
       ],
@@ -8258,7 +8258,7 @@
       "popularCakeStyles": [
         "Natural or textured finished that reflect a rustic, natural look",
         "Floral or foliage dominant designs in seasonal colours",
-        "Botantical or meadow-inspired accents to echo Sheepdrove's outdoor environment",
+        "Botanical or meadow-inspired accents to echo Sheepdrove's outdoor environment",
         "Earthy, neutral palettes - ivory, soft greens, warm taupes and muted pastels"
       ],
       "flavourTip": {
@@ -8277,7 +8277,7 @@
       "cakeStylesIntro": "Highcliffe Castle's grandeur and historic elegance lend themselves beautifully to sophisticated, timeless cake designs.",
       "popularCakeStyles": [
         "Classic tiered cakes with smooth fondant or refined buttercream",
-        "Statement weddding cakes that complement the Great Hall's soaring windows and grand interior",
+        "Statement wedding cakes that complement the Great Hall's soaring windows and grand interior",
         "Elegant floral arrangements inspired by the castle's gardens & landscaped grounds",
         "Regal touches such as gold leaf, pearls or delicate piping"
       ],
@@ -8296,7 +8296,7 @@
       "featuredCakes": ["louisa-angel", "vintage-hayley"],
       "cakeStylesIntro": "Hedsor House's dramatic interiors and luxurious aesthetic are beautifully complemented by refined, statement wedding cakes.",
       "popularCakeStyles": [
-        "Tall, elegant tiered cakes designedf to stand proudly in the Centre Hall",
+        "Tall, elegant tiered cakes designed to stand proudly in the Centre Hall",
         "Vintage style cakes to compliment the historical decor",
         "Delicate detailing such as fresh floral arrangements, soft ruffles, lacework or pearl accents",
         "Classic ivory or soft pastel palettes to suit Hedsor House's timeless decor"
@@ -8365,7 +8365,7 @@
         "text": "To pair perfectly with this wine-led venue, choose from the % collection. For flavours that add a little luxury, choose from the % collection.",
         "flavourGroups": ["truffle-box", "indulgence"]
       },
-      "myExperience": "I've had the pleasure of creaing wedding cakes for celebrations at The Vineyard, and it's always a wonderful venue to work with. The elegant interiors offer a beautiful setting for showcasing your cake. I liaise directly with the venue team in advance which makes the setup seamless and stress-free for you.",
+      "myExperience": "I've had the pleasure of creating wedding cakes for celebrations at The Vineyard, and it's always a wonderful venue to work with. The elegant interiors offer a beautiful setting for showcasing your cake. I liaise directly with the venue team in advance which makes the setup seamless and stress-free for you.",
       "occasion": "wedding"
     },
     "pembroke-lodge": {
@@ -8398,14 +8398,14 @@
       "popularCakeStyles": [
         "Soft, classic tiered cakes perfect for the hotel's refined interiors",
         "Elegant, understated textured detailing for a timeless look that suits the venue",
-        "Romantic floral arrangments to echo the gardens and riverside surroundings", 
+        "Romantic floral arrangements to echo the gardens and riverside surroundings", 
         "Gentle colour palettes - soft ivories, blushes or pastel tones"
       ],
       "flavourTip": {
         "text": "To complement the relaxing atmosphere, choose from %. For a romantic touch, choose from the % collection.",
         "flavourGroups": ["the-biscuit-edit", "truffle-box"]
       },
-      "myExperience": "I've delivered wedding cakes to The Swan and always enjoy the relaxed atmosphere and friendly team. The layout is very straightforward for setup, and the riverside light makes it an especially beautiful venue to showase your cake.",
+      "myExperience": "I've delivered wedding cakes to The Swan and always enjoy the relaxed atmosphere and friendly team. The layout is very straightforward for setup, and the riverside light makes it an especially beautiful venue to showcase your cake.",
       "occasion": "wedding"
     },
     "great-house": {
@@ -8416,7 +8416,7 @@
       "featuredCakes": ["just-leah"],
       "cakeStylesIntro": "With its relaxed, contemporary interiors, beautiful lawns and charming waterside views, The Great House at Sonning suits cakes that feel fresh, relaxed and effortlessly elegant.",
       "popularCakeStyles": [
-        "Soft, organic finishes that suit the modern yet relaxed atomosphere",
+        "Soft, organic finishes that suit the modern yet relaxed atmosphere",
         "Clean tiers with smooth, modern lines to complement the venue's contemporary aesthetic",
         "Delicate blooms in seasonal, natural tones that echo the riverside gardens",
         "Subtle foliage accents inspired by the riverside surroundings"
@@ -8458,7 +8458,7 @@
       "popularCakeStyles": [
         "A classic smooth finish perfect for complementing the grand, traditional interiors",
         "Subtle metallic or pearl accents echo the luxurious, stately feel of the house",
-        "Soft floral arrangments that reflect the beautiful gardens",
+        "Soft floral arrangements that reflect the beautiful gardens",
         "Understated, delicate, romantic palettes - classic white, pastels, warm tones"
       ],
       "flavourTip": {
