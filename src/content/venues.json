@@ -62,7 +62,7 @@
             "Seasonal florals or dried flower details for a romantic rustic touch"
         ],
         "flavourTip": {
-            "text": "For a modern twist that also complements the champagne tower, choose from the % collection. For something a little different to match the venue's uniquness, choose from the % collection.",
+            "text": "For a modern twist that also complements the champagne tower, choose from the % collection. For something a little different to match the venue's uniqueness, choose from the % collection.",
             "flavourGroups": [
                 "indulgence",
                 "nutty-delights"
@@ -122,7 +122,7 @@
             "Soft ivory or blush tone colour palettes with touches of shine or sparkle for added glamour"
         ],
         "flavourTip": {
-            "text": "For timeless flavours to suit   this refined venue, choose from % collection. To complement this luxurious island hotel, choose from the % collection.",
+            "text": "For timeless flavours to suit this refined venue, choose from % collection. To complement this luxurious island hotel, choose from the % collection.",
             "flavourGroups": [
                 "the-classics",
                 "truffle-box"
@@ -145,7 +145,7 @@
         "cakeStylesIntro": "With its natural woodland charm, Forest Edge Tipis is perfectly suited to cakes that feel organic, relaxed and beautifully in tune with nature.",
         "popularCakeStyles": [
             "Semi-naked or rustic buttercream textured cakes that complement the woodland setting",
-            "Foral designs created with wildflowers, greenery and seasonal blooms",
+            "Floral designs created with wildflowers, greenery and seasonal blooms",
             "Woodland inspired decoration such as dried flowers, berries & pressed flowers/foliage",
             "Natural effects like edible bark or natural tones"
         ],
@@ -178,7 +178,7 @@
             "Pastel or neutral colour palettes with touches of gold, pearl or lace texture"
         ],
         "flavourTip": {
-            "text": "To complement the airiness of the Orangery, choose froom the % collection. To match the homely feel of this boutique hotel, choose from %.",
+            "text": "To complement the airiness of the Orangery, choose from the % collection. To match the homely feel of this boutique hotel, choose from %.",
             "flavourGroups": [
                 "fresh-fruity",
                 "the-biscuit-edit"
@@ -268,8 +268,8 @@
         "myExperience": "I love the opportunity of designing wedding cakes for couples celebrating at Pennyhill Park and always enjoy the refined atmosphere there. I ensure every delivery and setup is handled smoothly, coordinating with your team so your cake is presented just as you imagined.",
         "occasion": "wedding"
     },
-    "easthampsted-park": {
-        "name": "Easthampsted Park",
+    "easthampstead-park": {
+        "name": "Easthampstead Park",
         "tagline": "A grand Victorian mansion for elegant, timeless weddings",
         "location": "Wokingham",
         "address": [
@@ -278,7 +278,7 @@
         "featuredCakes": [
             "lauren"
         ],
-        "cakeStylesIntro": "The elegant Easthampsted Park suits wedding cakes that blend timeless beauty with soft, romantic details - designs that complement the mansion's grand rooms, sweeping staircase and picturesque grounds.",
+        "cakeStylesIntro": "The elegant Easthampstead Park suits wedding cakes that blend timeless beauty with soft, romantic details - designs that complement the mansion's grand rooms, sweeping staircase and picturesque grounds.",
         "popularCakeStyles": [
             "Classic tiered cakes with smooth buttercream or fondant for a refined finish",
             "Tall, graceful silhouettes that suit the grandeur of the mansion's reception spaces",
@@ -286,7 +286,7 @@
             "Elegant detailing such as lace textures or fine piping"
         ],
         "flavourTip": {
-            "text": "To match the refineness of this stately home, choose from % collection. For a more modern twist that suits the elegant ballroom, choose from the % collection.",
+            "text": "To match the refinement of this stately home, choose from % collection. For a more modern twist that suits the elegant ballroom, choose from the % collection.",
             "flavourGroups": [
                 "the-classics",
                 "truffle-box"
@@ -305,7 +305,7 @@
         "featuredCakes": [
             "kirsten-3tier"
         ],
-        "cakeStylesIntro": "The relaxed yet elegant Trunkwell House pairs beautfully with wedding cakes that have soft finishes, gentle detailing and a touch of classic charm - designs that sit perfectly within both the country house and marquee settings.",
+        "cakeStylesIntro": "The relaxed yet elegant Trunkwell House pairs beautifully with wedding cakes that have soft finishes, gentle detailing and a touch of classic charm - designs that sit perfectly within both the country house and marquee settings.",
         "popularCakeStyles": [
             "Classic tiered cakes for a refined look that suits the marquee setting beautifully",
             "Modern rustic touches like subtle texture or foliage accents",
@@ -364,7 +364,7 @@
         "cakeStylesIntro": "Stanlake Park pairs wonderfully with cakes that feel organic, textural and stylish - inspired by the natural surroundings, soft tones and wine-country ambience.",
         "popularCakeStyles": [
             "Soft buttercream cakes such as semi-naked, textured or modern rustic finishes",
-            "Vineyard inspired designs featuring foliage, grapes or botanitical flowers",
+            "Vineyard inspired designs featuring foliage, grapes or botanical flowers",
             "Romantic floral arrangements that echo the estate's gardens",
             "Elegant neutrals - ivory, soft blush, stone and muted greens"
         ],
@@ -378,12 +378,12 @@
         "myExperience": "I've had the pleasure of creating cakes for weddings at Stanlake Park and love working within its beautiful vineyard surroundings. I'm familiar with the layout of the barns and the best setup points. This experience means your cake is thoughtfully placed and styled to suit the space perfectly, working smoothly alongside the venue team on the day.",
         "occasion": "wedding"
     },
-    "sheep-drove": {
+    "sheepdrove": {
         "name": "Sheepdrove",
         "tagline": "A sustainable countryside venue for relaxed, nature-inspired weddings",
         "location": "Lambourn",
         "address": [
-            "Warren Farm, Sheepdrove Road, Lambourn, Hungerford,Berkshire, RG17 7UU"
+            "Warren Farm, Sheepdrove Road, Lambourn, Hungerford, Berkshire, RG17 7UU"
         ],
         "featuredCakes": [
             "charlotte",
@@ -393,7 +393,7 @@
         "popularCakeStyles": [
             "Natural or textured finished that reflect a rustic, natural look",
             "Floral or foliage dominant designs in seasonal colours",
-            "Botantical or meadow-inspired accents to echo Sheepdrove's outdoor environment",
+            "Botanical or meadow-inspired accents to echo Sheepdrove's outdoor environment",
             "Earthy, neutral palettes - ivory, soft greens, warm taupes and muted pastels"
         ],
         "flavourTip": {
@@ -419,7 +419,7 @@
         "cakeStylesIntro": "Highcliffe Castle's grandeur and historic elegance lend themselves beautifully to sophisticated, timeless cake designs.",
         "popularCakeStyles": [
             "Classic tiered cakes with smooth fondant or refined buttercream",
-            "Statement weddding cakes that complement the Great Hall's soaring windows and grand interior",
+            "Statement wedding cakes that complement the Great Hall's soaring windows and grand interior",
             "Elegant floral arrangements inspired by the castle's gardens & landscaped grounds",
             "Regal touches such as gold leaf, pearls or delicate piping"
         ],
@@ -446,7 +446,7 @@
         ],
         "cakeStylesIntro": "Hedsor House's dramatic interiors and luxurious aesthetic are beautifully complemented by refined, statement wedding cakes.",
         "popularCakeStyles": [
-            "Tall, elegant tiered cakes designedf to stand proudly in the Centre Hall",
+            "Tall, elegant tiered cakes designed to stand proudly in the Centre Hall",
             "Vintage style cakes to compliment the historical decor",
             "Delicate detailing such as fresh floral arrangements, soft ruffles, lacework or pearl accents",
             "Classic ivory or soft pastel palettes to suit Hedsor House's timeless decor"
@@ -539,7 +539,7 @@
                 "indulgence"
             ]
         },
-        "myExperience": "I've had the pleasure of creaing wedding cakes for celebrations at The Vineyard, and it's always a wonderful venue to work with. The elegant interiors offer a beautiful setting for showcasing your cake. I liaise directly with the venue team in advance which makes the setup seamless and stress-free for you.",
+        "myExperience": "I've had the pleasure of creating wedding cakes for celebrations at The Vineyard, and it's always a wonderful venue to work with. The elegant interiors offer a beautiful setting for showcasing your cake. I liaise directly with the venue team in advance which makes the setup seamless and stress-free for you.",
         "occasion": "wedding"
     },
     "pembroke-lodge": {
@@ -583,7 +583,7 @@
         "popularCakeStyles": [
             "Soft, classic tiered cakes perfect for the hotel's refined interiors",
             "Elegant, understated textured detailing for a timeless look that suits the venue",
-            "Romantic floral arrangments to echo the gardens and riverside surroundings",
+            "Romantic floral arrangements to echo the gardens and riverside surroundings",
             "Gentle colour palettes - soft ivories, blushes or pastel tones"
         ],
         "flavourTip": {
@@ -593,7 +593,7 @@
                 "truffle-box"
             ]
         },
-        "myExperience": "I've delivered wedding cakes to The Swan and always enjoy the relaxed atmosphere and friendly team. The layout is very straightforward for setup, and the riverside light makes it an especially beautiful venue to showase your cake.",
+        "myExperience": "I've delivered wedding cakes to The Swan and always enjoy the relaxed atmosphere and friendly team. The layout is very straightforward for setup, and the riverside light makes it an especially beautiful venue to showcase your cake.",
         "occasion": "wedding"
     },
     "great-house": {
@@ -608,7 +608,7 @@
         ],
         "cakeStylesIntro": "With its relaxed, contemporary interiors, beautiful lawns and charming waterside views, The Great House at Sonning suits cakes that feel fresh, relaxed and effortlessly elegant.",
         "popularCakeStyles": [
-            "Soft, organic finishes that suit the modern yet relaxed atomosphere",
+            "Soft, organic finishes that suit the modern yet relaxed atmosphere",
             "Clean tiers with smooth, modern lines to complement the venue's contemporary aesthetic",
             "Delicate blooms in seasonal, natural tones that echo the riverside gardens",
             "Subtle foliage accents inspired by the riverside surroundings"
@@ -665,7 +665,7 @@
         "popularCakeStyles": [
             "A classic smooth finish perfect for complementing the grand, traditional interiors",
             "Subtle metallic or pearl accents echo the luxurious, stately feel of the house",
-            "Soft floral arrangments that reflect the beautiful gardens",
+            "Soft floral arrangements that reflect the beautiful gardens",
             "Understated, delicate, romantic palettes - classic white, pastels, warm tones"
         ],
         "flavourTip": {

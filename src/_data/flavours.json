@@ -238,7 +238,7 @@
                     "nut-free"
                 ],
                 "image": "choices/flavours/triple-choc",
-                "description": "Egggless White chocolate flavoured sponge filled with milk chocolate spread and dark chocolate buttercream"
+                "description": "Eggless White chocolate flavoured sponge filled with milk chocolate spread and dark chocolate buttercream"
             }
         ],
         "group": "truffle-box"
@@ -358,7 +358,7 @@
                     "nut-free"
                 ],
                 "image": "choices/flavours/van-caramel-df",
-                "description": "Vanilla sponge filled with salted caramel DF \"buttercream\""
+                "description": "Vegan Vanilla sponge filled with salted caramel DF \"buttercream\""
             }
         ],
         "group": "truffle-box"
@@ -1004,7 +1004,7 @@
                     "nut-free"
                 ],
                 "image": "choices/flavours/van-oreo",
-                "description": "Vanilla sponge filled Oreo buttercream"
+                "description": "Vanilla sponge filled with Oreo buttercream"
             },
             {
                 "diets": [
@@ -1012,7 +1012,7 @@
                     "nut-free"
                 ],
                 "image": "choices/flavours/van-oreo",
-                "description": "DF Vanilla sponge filled Oreo DF \"buttercream\""
+                "description": "DF Vanilla sponge filled with Oreo DF \"buttercream\""
             },
             {
                 "diets": [
@@ -1020,7 +1020,7 @@
                     "nut-free"
                 ],
                 "image": "choices/flavours/van-oreo",
-                "description": "Eggless Vanilla sponge filled Oreo buttercream"
+                "description": "Eggless Vanilla sponge filled with Oreo buttercream"
             },
             {
                 "diets": [
@@ -1030,7 +1030,7 @@
                     "nut-free"
                 ],
                 "image": "choices/flavours/van-oreo",
-                "description": "Vegan Vanilla sponge filled Oreo DF \"buttercream\""
+                "description": "Vegan Vanilla sponge filled with Oreo DF \"buttercream\""
             }
         ],
         "group": "the-biscuit-edit"
@@ -1043,7 +1043,7 @@
                     "nut-free"
                 ],
                 "image": "choices/flavours/oreo",
-                "description": "Chocolate sponge filled Oreo buttercream"
+                "description": "Chocolate sponge filled with Oreo buttercream"
             },
             {
                 "diets": [
@@ -1051,7 +1051,7 @@
                     "nut-free"
                 ],
                 "image": "choices/flavours/oreo",
-                "description": "DF Chocolate sponge filled Oreo DF \"buttercream\""
+                "description": "DF Chocolate sponge filled with Oreo DF \"buttercream\""
             },
             {
                 "diets": [
@@ -1059,7 +1059,7 @@
                     "nut-free"
                 ],
                 "image": "choices/flavours/oreo",
-                "description": "Eggless Chocolate sponge filled Oreo buttercream"
+                "description": "Eggless Chocolate sponge filled with Oreo buttercream"
             },
             {
                 "diets": [
@@ -1069,7 +1069,7 @@
                     "nut-free"
                 ],
                 "image": "choices/flavours/oreo",
-                "description": "Vegan Chocolate sponge filled Oreo DF \"buttercream\""
+                "description": "Vegan Chocolate sponge filled with Oreo DF \"buttercream\""
             }
         ],
         "group": "the-biscuit-edit"
@@ -1419,7 +1419,7 @@
             {
                 "diets": [],
                 "image": "choices/flavours/nutella",
-                "description": "Chocolate sponge filled with with Nutella spread and Nutella buttercream"
+                "description": "Chocolate sponge filled with Nutella spread and Nutella buttercream"
             },
             {
                 "diets": [
@@ -1675,7 +1675,7 @@
                     "nut-free"
                 ],
                 "image": "choices/flavours/toffee-vegan",
-                "description": "Vegan Caramel sponge filled with caramel DF \"buttercream\""
+                "description": "Vegan Caramel sponge filled with salted caramel DF \"buttercream\""
             }
         ],
         "group": "indulgence"
